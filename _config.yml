@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "스케치용논색물감"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "ygre_en"
+description              : "I want to comunicate someone"
 #(12년 12월 26일 변경)
 url                      : "https://Grokeen.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -84,8 +84,8 @@ baidu_site_verification  :
 # Social Sharing
 twitter:
   username               :
-facebook:
-  username               :
+instagram:
+  username               : "ygre_en"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
