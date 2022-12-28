@@ -7,7 +7,7 @@ categories: yongrok update
 
 깃허브 블로그 만드는 법
 1. 깃허브에 레버지토리.io 만들기
-2. jellky 설치파서 git에 푸시하기
+2. jellky 설치해서 git에 푸시하기
 3. 테마 입히기
 4. 게시글 작성하기
 
