@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Github Error, $git push error"
+title:  "Github Error"
 date:   2023-01-0\19 12:45:29 +0900
 categories: yongrok update
 ---
 
-
+, $git push error
 
 현재 브랜치의 끝이 리모트 브랜치보다 뒤에 있으므로 업데이트가
 힌트: 거부되었습니다. 푸시하기 전에 ('git pull ...' 등 명령으로) 리모트
