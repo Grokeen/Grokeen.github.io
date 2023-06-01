@@ -5,7 +5,14 @@ date:   2023-01-0\19 12:45:29 +0900
 categories: yongrok update
 ---
 
+git push https://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@github.com/Grokeen/Learn-conversational-English-by-chatGPT.git
+
+
 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
+
+23년 6월 1일 
+새로 만든 토큰
+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
 
 2022년
 1월
