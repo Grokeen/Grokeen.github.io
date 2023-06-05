@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Github Error"
-date:   2023-01-0\19 12:45:29 +0900
+title:  "Github-Error"
+date:   2023-01-19 12:45:29 +0900
 categories: yongrok update
 ---
 
