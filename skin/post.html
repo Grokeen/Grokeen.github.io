@@ -2,6 +2,24 @@
 <html lang="ko-KR">
 <head>
     <script src="/js/jquery-2.1.0.min.js"></script>
+    <!-- maekdown 파일 내용 불러오기 -->
+    <script>
+      // Markdown 파일을 불러오고 HTML로 렌더링하는 함수
+      function loadMarkdownFile(url) {
+        fetch(url)
+          .then(response => response.text())
+          .then(text => {
+            // Marked.js를 사용하여 Markdown을 HTML로 변환
+            const html = marked(text);
+            // 변환된 HTML을 특정 영역에 삽입
+            document.getElementById('markdownContent').innerHTML = html;
+          })
+          .catch(error => console.error(error));
+      }
+    
+      // Markdown 파일 불러오기
+      loadMarkdownFile("_layout/post/2022-01-01-Idontknowme.md");
+    </script>
 </head>
 <body>
  <!-- 게시글 -->
@@ -22,6 +40,16 @@
       <time datetime="2015-02-12T08:51:13.000Z" itemprop="datePublished">2月 12 2015</time>
     </a>
   </section>
-  </div>
+
+  <!-- markdown 불러오기 -->
+  <section>
+    
+  </section>
+  ㅁㄴㅇㅁㅇ
+  <div id="markdownContent"></div>
+  ㅁㄴㅇㅁㅇㄴㅁ
+
+</div>
+  
   </body>
   </html>
