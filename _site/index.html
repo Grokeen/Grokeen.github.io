@@ -4,53 +4,56 @@ author_profile: true
 참고 : yisuoyanyu111.github.io
 -->
 <!DOCTYPE HTML>
-  <html lang="ko-KR">
-    <head>
-      <script src="/js/jquery-2.1.0.min.js"></script>
-    </head>
-    <body>
+<html lang="ko-KR">
 
-    <!-- 헤더 -->
-    <header>
+<head>
+  <script src="/js/jquery-2.1.0.min.js"></script>
+</head>
+
+<body>
+
+  <!-- 헤더 -->
+  <header>
     <div id="includedHeader"></div>
-      <script>
-        $(function() {
-          $("#includedHeader").load("skin/header.html");
-        });
-      </script>
-    </header>
+    <script>
+      $(function () {
+        $("#includedHeader").load("skin/header.html");
+      });
+    </script>
+  </header>
 
-    <!-- 본문 시작 -->
+  <!-- 본문 시작 -->
   <div id="container">
 
     <!-- 게시글 -->
     <div id="includedpost"></div>
-      <script>
-        $(function() {
-          $("#includedpost").load("skin/post.html");
-        });
-      </script>
+    <script>
+      $(function () {
+        $("#includedpost").load("skin/post.html");
+      });
+    </script>
 
 
-<!-- 우측 바  -->
-<div id="includedRight"></div>
-      <script>
-        $(function() {
-          $("#includedRight").load("skin/rightbar.html");
-        });
-      </script>
+    <!-- 우측 바  -->
+    <div id="includedRight"></div>
+    <script>
+      $(function () {
+        $("#includedRight").load("skin/rightbar.html");
+      });
+    </script>
 
-<!-- 본문 끝  -->
-    </div>
-    
-    <!-- 푸터 -->
-    <div id="includedFooter"></div>
-      <script>
-        $(function() {
-          $("#includedFooter").load("skin/footer.html");
-        });
-      </script>
+    <!-- 본문 끝  -->
+  </div>
+
+  <!-- 푸터 -->
+  <div id="includedFooter"></div>
+  <script>
+    $(function () {
+      $("#includedFooter").load("skin/footer.html");
+    });
+  </script>
 
 
-  </body>
- </html>
+</body>
+
+</html>
