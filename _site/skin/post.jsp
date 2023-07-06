@@ -5,7 +5,29 @@
   <script src="/js/jquery-2.1.0.min.js"></script>
   <!-- maekdown 파일 내용 불러오기 -->
   <script>
-    // Markdown 파일을 불러오고 HTML로 렌더링하는 함수
+    
+
+    // HTML 변경하기 
+    function changeHtml(countMdFile) {
+      // 첫 번째, md 파일 갯수
+      var htmlCopy = '';
+
+      //  if (countMdFile != 0) {
+      //   for (i = 0; i < countMdFile; i++) {
+      //     htmlCopy += "<a href='" + / 2015 /02 / 12 / 몬ㄷ / +"' title='"+몬ㄷ+"'' itemprop='url'>";
+      //     htmlCopy += "<h1 itemprop='name'>"+name+"</h1>";
+      //     htmlCopy += "<p itemprop='description'>"+ㅋㅋㅋㅋ 내용이다+"</p>";
+      //     htmlCopy += "<time datetime='"+2015-02 - 12T08: 51: 13.000Z+"' itemprop='datePublished'>"+2月 12 2015+"</time>";
+      //     htmlCopy += "</a>";
+      //   }
+      // }
+      $('#printColumnOUT').html(htmlCopy);
+
+    }
+
+
+
+    // Markdown 파일 불러오기
     function loadMarkdownFile(url) {
       fetch(url)
         .then(response => response.text())
@@ -13,14 +35,19 @@
           // Marked.js를 사용하여 Markdown을 HTML로 변환
           const html = marked(text);
           // 변환된 HTML을 특정 영역에 삽입
-          document.getElementById('markdownContent').innerHTML = html;
-        })
+          // document.getElementById('markdownContent').innerHTML = html;
+          $('markdownContent').val();
+        }
+        )
         .catch(error => console.error(error));
+      
     }
+    loadMarkdownFile('/layout/post/2023-05-24-Java(1).md');
 
-    // Markdown 파일 불러오기
-    loadMarkdownFile("_layout/post/2022-01-01-Idontknowme.md");
   </script>
+
+
+
 </head>
 
 <body>
@@ -35,26 +62,21 @@
       </a>
     </section>
 
-
+    <!-- markdown 불러오기 -->
     <section class="post" itemscope itemprop="blogPost">
       <a href="/2015/02/12/몬ㄷ/" title="몬ㄷ" itemprop="url">
-        <h1 itemprop="name">몬ㄷ</h1>
+        <h1 itemprop="name"></h1>
         <p itemprop="description">ㅋㅋㅋㅋ 내용이다</p>
         <time datetime="2015-02-12T08:51:13.000Z" itemprop="datePublished">2月 12 2015</time>
       </a>
-    </section>
+      asdsada
+      <div id="markdownContent">asdasd</div>
+      ㅁㄴㅇㅁㅇㄴㅁ
+      <div class="list__item">ㅂㅂㅂㅈㅂㅈ</div>
 
-    <!-- markdown 불러오기 -->
-    <section>
-
     </section>
-    ㅁㄴㅇㅁㅇ
-    <div id="markdownContent"></div>
-    ㅁㄴㅇㅁㅇㄴㅁ
-    <div class="list__item"></div>
 
   </div>
-
 </body>
 
 </html>

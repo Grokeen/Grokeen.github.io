@@ -13,7 +13,7 @@
     <div id="includedHeader"></div>
     <script>
       $(function () {
-        $("#includedHeader").load("skin/header.html");
+        $("#includedHeader").load("skin/header.jsp");
       });
     </script>
   </header>
@@ -188,7 +188,7 @@
     <div id="includedRight"></div>
     <script>
       $(function () {
-        $("#includedRight").load("skin/rightbar.html");
+        $("#includedRight").load("skin/rightbar.jsp");
       });
     </script>
 
@@ -224,7 +224,7 @@
   <div id="includedFooter"></div>
   <script>
     $(function () {
-      $("#includedFooter").load("skin/footer.html");
+      $("#includedFooter").load("skin/footer.jsp");
     });
   </script>
 
@@ -235,7 +235,7 @@
   <div id="includedFooterPlus"></div>
   <script>
     $(function () {
-      $("#includedFooterPlus").load("skin/footerPlusMenu.html");
+      $("#includedFooterPlus").load("skin/footerPlusMenu.jsp");
     });
   </script>
 

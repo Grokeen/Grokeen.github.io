@@ -12,7 +12,7 @@
     <div id="includedHeader"></div>
     <script>
       $(function () {
-        $("#includedHeader").load("skin/header.html");
+        $("#includedHeader").load("skin/header.jsp");
       });
     </script>
   </header>
@@ -61,7 +61,7 @@
   <div id="includedFooter"></div>
   <script>
     $(function () {
-      $("#includedFooter").load("skin/footer.html");
+      $("#includedFooter").load("skin/footer.jsp");
     });
   </script>
 
