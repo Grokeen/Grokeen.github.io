@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE HTML>
 <html lang="ko-KR">
 
@@ -42,7 +44,7 @@
         .catch(error => console.error(error));
       
     }
-    loadMarkdownFile('/layout/post/2023-05-24-Java(1).md');
+    //loadMarkdownFile('/layout/post/2023-05-24-Java(1).md');
 
   </script>
 
@@ -71,10 +73,13 @@
       </a>
       asdsada
       <div id="markdownContent">asdasd</div>
-      ㅁㄴㅇㅁㅇㄴㅁ
+      {% layout post/2023-06-03-GithubBlog(3).md %} 
       <div class="list__item">ㅂㅂㅂㅈㅂㅈ</div>
 
     </section>
+    {% for post in posts %}
+    {% layout archive-single.html type=entries_layout %}
+    {% endfor %}
 
   </div>
 </body>
