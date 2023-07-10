@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+
+<head>
+  <script src="/js/jquery-2.1.0.min.js"></script>
+</head>
+
+<body>
+
+  <!-- 헤더 -->
+  <header>
+    {% include header.html %}
+  </header>
+
+  <!-- 본문 시작 -->
+  <div id="container">
+    <!-- 게시글 -->
+    {% include post.html %}
+
+
+    <!-- 우측 바  -->
+    {% include rightbar.html %}
+    <!-- 본문 끝  -->
+  </div>
+
+  <!-- 푸터 -->
+  {% include footer.html %}
+  <!-- <div id="includedFooter"></div>
+  <script>
+    $(function () {
+      $("#includedFooter").load("_includes/footer.jsp");
+    });
+  </script> -->
+
+
+</body>
+
+</html>

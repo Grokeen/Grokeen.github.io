@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="ko-KR">
 
@@ -25,28 +26,7 @@
 
     }
 
-
-
-    // Markdown 파일 불러오기
-    function loadMarkdownFile(url) {
-      fetch(url)
-        .then(response => response.text())
-        .then(text => {
-          // Marked.js를 사용하여 Markdown을 HTML로 변환
-          const html = marked(text);
-          // 변환된 HTML을 특정 영역에 삽입
-          // document.getElementById('markdownContent').innerHTML = html;
-          $('markdownContent').val();
-        }
-        )
-        .catch(error => console.error(error));
-      
-    }
-    loadMarkdownFile('/layout/post/2023-05-24-Java(1).md');
-
-  </script>
-
-
+</script>
 
 </head>
 
@@ -63,20 +43,11 @@
     </section>
 
     <!-- markdown 불러오기 -->
-    <section class="post" itemscope itemprop="blogPost">
-      <a href="/2015/02/12/몬ㄷ/" title="몬ㄷ" itemprop="url">
-        <h1 itemprop="name"></h1>
-        <p itemprop="description">ㅋㅋㅋㅋ 내용이다</p>
-        <time datetime="2015-02-12T08:51:13.000Z" itemprop="datePublished">2月 12 2015</time>
-      </a>
-      asdsada
-      <div id="markdownContent">asdasd</div>
-      ㅁㄴㅇㅁㅇㄴㅁ
-      <div class="list__item">ㅂㅂㅂㅈㅂㅈ</div>
+    
+    {% include preview.html %}
+    
 
-    </section>
 
-  </div>
-</body>
 
-</html>
+
+</div></body></html>
