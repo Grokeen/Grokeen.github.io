@@ -1,5 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-11T10:31:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">스케치용녹색물감</title><subtitle>I want to change my life</subtitle><author><name>Your Name</name></author><entry><title type="html">sss</title><link href="http://localhost:4000/private/sss/" rel="alternate" type="text/html" title="sss" /><published>2023-06-22T12:45:29+09:00</published><updated>2023-06-22T12:45:29+09:00</updated><id>http://localhost:4000/private/sss</id><content type="html" xml:base="http://localhost:4000/private/sss/"><![CDATA[<p>대체 몇 일을 썼을까,
-_layout에서 _layouts로 변경하니 인식된다.</p>]]></content><author><name>Your Name</name></author><category term="private" /><summary type="html"><![CDATA[대체 몇 일을 썼을까, _layout에서 _layouts로 변경하니 인식된다.]]></summary></entry><entry><title type="html">Taiwan</title><link href="http://localhost:4000/yongrok/update/Taiwan/" rel="alternate" type="text/html" title="Taiwan" /><published>2023-06-14T12:45:29+09:00</published><updated>2023-06-14T12:45:29+09:00</updated><id>http://localhost:4000/yongrok/update/Taiwan</id><content type="html" xml:base="http://localhost:4000/yongrok/update/Taiwan/"><![CDATA[<h1 id="23년-6월-11일-타이완-1일차">23년 6월 11일 타이완 1일차</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-12T15:29:23+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">스케치용녹색물감</title><subtitle>I want to change my life</subtitle><author><name>Your Name</name></author><entry><title type="html">Resume in Korean</title><link href="http://localhost:4000/private/sss/" rel="alternate" type="text/html" title="Resume in Korean" /><published>2023-06-22T12:45:29+09:00</published><updated>2023-06-22T12:45:29+09:00</updated><id>http://localhost:4000/private/sss</id><content type="html" xml:base="http://localhost:4000/private/sss/"><![CDATA[<h1 id="김용록">김용록</h1>
+<table>
+    <thead></thead>
+</table>
+<p>이메일 : ygreen0516@google.com<br />
+깃허브 : https://github.com/Grokeen<br /></p>
+
+<ul>
+  <li>경력
+    <ul>
+      <li>프론트엔드 개발자
+        <ul>
+          <li>2022.03 ~ 2023.03 메타넷 디지털(주) 위택스 개발팀<br />
+            <ul>
+              <li>지방세 중 지역자원시설세,자동차세(주행분),지방세외수입 관련 웹 어플리케이션(UI) 개발 및 유지보수<br /></li>
+              <li>Spring을 활용한 컴포넌트 기반 개발</li>
+              <li>HTML, CSS, JavaScript를 사용하여 사용자 경험 향상 및 웹 성능 최적화<br /></li>
+              <li>SVN을 사용한 소스 코드 관리 및 협업<br /></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>학력
+    <ul>
+      <li>2016.02 ~ 2022.02 한국산업기술대학교 컴퓨터융합학과
+        <ul>
+          <li>졸업 프로젝트 : 라즈베리파이를 이용한 운동자세 교정 스마트미러</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>병역
+    <ul>
+      <li>2018.01 ~ 2019.09 육군 2사단 만기 전역</li>
+    </ul>
+  </li>
+  <li>기타
+    <ul>
+      <li>2017.11.24 제12회 교내 KPU 소프트웨어 경진 대회 입상</li>
+      <li>2020.10.20 ~ 2020.12.15 IOT-인공지능-빅데이터 수업 도우미</li>
+      <li>2021.09.28 ~ 2021.12.08 프로그래밍 기초(파이썬) 비교과 수업 도우미</li>
+      <li>2021.11.02 ~ 2021.12.21 사물인터넷을 품은 미래사회 수업 도우미</li>
+      <li>2021.06 ~ 2021.11 KIC 캠퍼스, 실무 프로젝트 기반 빅데이터 플랫폼 개발 및 분석 전문가 양성 과정 교육 이수</li>
+      <li>2022.11 ADSP 자격증 취득</li>
+      <li>2023.07 정보처리기사 자격증 취득</li>
+      <li>2023.08 SQLD 자격증 취득</li>
+    </ul>
+  </li>
+  <li>프로젝트
+    <ul>
+      <li>온라인 포트폴리오 웹사이트 (2023 - 현재)
+        <ul>
+          <li>개인 프로젝트로 제작한 온라인 포트폴리오 웹사이트</li>
+          <li>Spring을 사용하여 프론트엔드 개발</li>
+          <li>라즈베리파이를 이용한 NAS 구축 및 데이터베이스 연동</li>
+          <li>참고자료 : https://grokeen.github.io</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>Your Name</name></author><category term="private" /><summary type="html"><![CDATA[김용록 이메일 : ygreen0516@google.com 깃허브 : https://github.com/Grokeen]]></summary></entry><entry><title type="html">Taiwan</title><link href="http://localhost:4000/yongrok/update/Taiwan/" rel="alternate" type="text/html" title="Taiwan" /><published>2023-06-14T12:45:29+09:00</published><updated>2023-06-14T12:45:29+09:00</updated><id>http://localhost:4000/yongrok/update/Taiwan</id><content type="html" xml:base="http://localhost:4000/yongrok/update/Taiwan/"><![CDATA[<h1 id="23년-6월-11일-타이완-1일차">23년 6월 11일 타이완 1일차</h1>
 <p>밤을 새세 아버지와 비행기를 타 출발했다. 점심을 먹고 저녁을 먹었다.</p>]]></content><author><name>Your Name</name></author><category term="yongrok" /><category term="update" /><summary type="html"><![CDATA[23년 6월 11일 타이완 1일차 밤을 새세 아버지와 비행기를 타 출발했다. 점심을 먹고 저녁을 먹었다.]]></summary></entry><entry><title type="html">정보처리기사(1)</title><link href="http://localhost:4000/certification/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC(1)/" rel="alternate" type="text/html" title="정보처리기사(1)" /><published>2023-06-09T12:45:29+09:00</published><updated>2023-06-09T12:45:29+09:00</updated><id>http://localhost:4000/certification/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC(1)</id><content type="html" xml:base="http://localhost:4000/certification/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC(1)/"><![CDATA[<h1 id="정보처리기사-실기-7수-후기">정보처리기사 실기 7수 후기.</h1>
 <p>21년 1회차부터 2년이 넘는 기간 동안 정보처리기사를 봐왔다.</p>
 <h1 id="21년-1회차">21년 1회차</h1>
