@@ -40,14 +40,25 @@
 
 
 <!-- for 문으로 출력 -->
-{% for post in posts %}
+{% for post in posts %} 
 <section class="post" itemscope itemprop="blogPost">
     <a href="{{post.url|relative_url}}" title="{{post.title}}" itemprop="url">
-      <h1 itemprop="name">{{post.title}}</h1>
-      <p itemprop="description">{% include no-linenos.html content=post.content %}
-        {{content | markdownify | strip_html | truncate: 200 | escape}}</p>
-      <time datetime="{% include read-time.html content=post.content %}" itemprop="datePublished">{% include read-time.html content=post.content %}</time>
+
+      <h1 itemprop="name">
+        {{post.title}}
+      </h1>
+
+      <p itemprop="description">
+        {% include no-linenos.html content=post.content %}
+        {{content | markdownify | strip_html | truncate: 200 | escape}}
+      </p>
+
+      <time datetime="{% include read-time.html content=post.content %}" itemprop="datePublished">
+        {% include read-time.html content=post.content %}
+      </time>
     </a>
+    {{post}}
+    ㄴㅁㅇㄴㅁ
   </section>
 {% endfor %}
 
