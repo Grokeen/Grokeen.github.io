@@ -3,6 +3,7 @@ layout: content
 title:  "Github-Error"
 date:   2023-01-19 12:45:29 +0900
 categories: github
+pin: true
 ---
 
 , $git push error

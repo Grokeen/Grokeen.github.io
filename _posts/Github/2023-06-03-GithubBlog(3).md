@@ -3,6 +3,7 @@ layout: content
 title:  "GithubBlog(3)"
 date:   2023-06-03 12:45:29 +0900
 categories: Github
+pin: true
 ---
 
 
