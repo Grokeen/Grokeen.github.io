@@ -1,6 +1,11 @@
 
+
+
+<!-- ----------------------------------------------------------------------- -->
 <!-- "pin"이 "true"인 모든 포스트를 allPost에 할당. -->
-{% assign allPost = site.posts | where: "pin", "true" %}
+{% assign pinned = site.posts | where: "pin", "true" %}
+{% assign default = site.posts | where: "pin", "false" %} <!-- 202308161518 추가: pin이 false인 포스트를 default에 할당 -->
+
 
 <!-- 빈 배열 선언 -->
 {% assign posts = "" | split: "" %}
@@ -34,7 +39,7 @@
 <!-- 포스트 안에 값 널기 -->
 {% if default_num > 0 %}
   {% for i in (default_beg..default_end) %}
-    {% assign posts = posts | push: default[i] %}
+    {% assign posts = posts | push: default[i] %} <!-- 202308161518 수정: default 배열에서 값을 가져와 posts에 추가 -->
   {% endfor %}
 {% endif %}
 
@@ -50,15 +55,14 @@
 
       <p itemprop="description">
         {% include no-linenos.html content=post.content %}
-        {{content | markdownify | strip_html | truncate: 200 | escape}}
+        {{post.content | markdownify | strip_html | truncate: 200 | escape}} <!-- 202308161518 수정: content에서 post.content로 변경 -->
+        테스트 값
       </p>
 
-      <time datetime="{% include read-time.html content=post.content %}" itemprop="datePublished">
+      <time datetime='{% include read-time.html content=post.content %}' itemprop='datePublished'>
         {% include read-time.html content=post.content %}
       </time>
     </a>
-    {{post}}
-    ㄴㅁㅇㄴㅁ
   </section>
 {% endfor %}
 

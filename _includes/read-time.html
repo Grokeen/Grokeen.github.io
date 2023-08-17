@@ -1,30 +1,38 @@
-<!--
+
+
+
+
+ <!--
   Calculate the post's reading time, and display the word count in tooltip
- -->
+  Include date information from the post's metadata
+-->
 
- {% assign words = include.content | strip_html | number_of_words: "auto" %}
+{% assign words = include.content | strip_html | number_of_words: "auto" %}
 
- <!-- words per minute  -->
- 
- {% assign wpm = 180 %}
- {% assign min_time = 1 %}
- 
- {% assign read_time = words | divided_by: wpm %}
- 
- {% unless read_time > 0 %}
-   {% assign read_time = min_time %}
- {% endunless %}
- 
- {% capture read_prompt %}
-   {{- site.data.locales[lang].post.read_time.prompt -}}
- {% endcapture %}
- 
- <!-- return element -->
- <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-   title="{{ words }} {{ site.data.locales[lang].post.words }}">
-   <em>{{- read_time -}}{{" "}}{{- site.data.locales[lang].post.read_time.unit -}}</em>
-   {%- if include.prompt -%}
-     {%- assign _prompt_words = read_prompt | number_of_words: 'auto' -%}
-     {%- unless _prompt_words > 1 -%}{{ " " }}{%- endunless -%}{{ read_prompt }}
-   {%- endif -%}
- </span>
+<!-- words per minute -->
+{% assign wpm = 180 %}
+{% assign min_time = 1 %}
+
+{% assign read_time = words | divided_by: wpm %}
+
+{% unless read_time > 0 %}
+  {% assign read_time = min_time %}
+{% endunless %}
+
+{% capture read_prompt %}
+  {{- site.data.locales[lang].post.read_time.prompt -}}
+{% endcapture %}
+
+<!-- 202308161607 추가: post의 날짜 형식 포맷 -->
+<!-- Get the date information from the post's metadata -->
+{% assign post_date = include.post.date | date: "%Y-%m-%d" %} 
+
+<!-- 202308161608 수정: 날짜 정보 포함하기 위해 "- {{ post_date }}" 추가 -->
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="{{ words }} {{ site.data.locales[lang].post.words }} - {{ post_date }}"> 
+  <em>{{- read_time -}}{{" "}}{{- site.data.locales[lang].post.read_time.unit -}}</em>
+  {%- if include.prompt -%}
+    {%- assign _prompt_words = read_prompt | number_of_words: 'auto' -%}
+    {%- unless _prompt_words > 1 -%}{{ " " }}{%- endunless -%}{{ read_prompt }}
+  {%- endif -%}
+</span>
