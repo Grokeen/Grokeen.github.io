@@ -58,7 +58,7 @@
 		<nav class="animated">
 			<ul>
 				<li><a href="/">Home</a></li>
-				<li><a href="layouts/tag.html">Post</a></li>
+				<!-- <li><a href="tag_EX.html">Post</a></li> -->
 				<li>
 
 					<!-- 검색 폼 -->
@@ -99,15 +99,6 @@
       // 첫 번째, md 파일 갯수
       var htmlCopy = '';
 
-      //  if (countMdFile != 0) {
-      //   for (i = 0; i < countMdFile; i++) {
-      //     htmlCopy += "<a href='" + / 2015 /02 / 12 / 몬ㄷ / +"' title='"+몬ㄷ+"'' itemprop='url'>";
-      //     htmlCopy += "<h1 itemprop='name'>"+name+"</h1>";
-      //     htmlCopy += "<p itemprop='description'>"+ㅋㅋㅋㅋ 내용이다+"</p>";
-      //     htmlCopy += "<time datetime='"+2015-02 - 12T08: 51: 13.000Z+"' itemprop='datePublished'>"+2月 12 2015+"</time>";
-      //     htmlCopy += "</a>";
-      //   }
-      // }
       $('#printColumnOUT').html(htmlCopy);
 
     }
@@ -117,19 +108,9 @@
 </head>
 
 <body>
-  <!-- 게시글 -->
+  <!-- 게시글 예시 -->
   <div id="main">
-    <section class="post" itemscope itemprop="blogPost">
-      <a href="menuindex.html" title="Hello World" itemprop="url">
-        <h1 itemprop="name">Hello World</h1>
-        <p itemprop="description">Welcome to Hexo! This is your very first post. Check documentation for more info. If
-          you get any problems when using Hexo, you can find the </p>
-        <time datetime="2015-02-13T04:56:46.000Z" itemprop="datePublished">2月 13 2015</time>
-      </a>
-    </section>
-
     <!-- markdown 불러오기 -->
-    
     <!-- ----------------------------------------------------------------------- -->
 <!-- "pin"이 "true"인 모든 포스트를 allPost에 할당. -->
 
@@ -170,6 +151,7 @@
         markdown(1)
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -178,9 +160,10 @@
 
         
  <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -252,6 +235,7 @@
         Introduce-myself
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -282,9 +266,10 @@
 			    
        
      ... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -356,6 +341,7 @@
         GithubBlog(2)
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -370,9 +356,10 @@
 
 
 2. 다음으... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -444,6 +431,7 @@
         GithubBlog(1)
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -451,9 +439,10 @@
 
 
         https://www.reebonz.co.kr/products/24468108/section/shopping_naver/1?utm_source=naver_shopping&amp;amp;utm_medium=affiliate&amp;amp;utm_term=24468108&amp;amp;service_name=store&amp;amp;utm_campaign=sa_seo_naver_sh... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -525,6 +514,7 @@
         Welcome-to-Jekyll!
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -534,9 +524,10 @@
         여기에 맘ㄹ하는 건 반영이 되네?
 
 You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most com... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -608,6 +599,7 @@ You’ll find this post in your _posts directory. Go ahead and edit it and re-bu
         Welcome-to-Jekyll!
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -617,9 +609,10 @@ You’ll find this post in your _posts directory. Go ahead and edit it and re-bu
         동영상 다운로드 방법
 
  <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -688,133 +681,7 @@ You’ll find this post in your _posts directory. Go ahead and edit it and re-bu
 
 <!-- 페이징 처리 -->
 <br>
-페이징
 
-  <!--
-  The paginator for post list on HomgPage.
--->
-
-<ul class="pagination align-items-center mt-4 mb-0 pl-lg-2">
-    <!-- left arrow -->
-    
-  
-    <li class="page-item ">
-      <a class="page-link btn-box-shadow" href="/page3/" aria-label="previous-page">
-        <i class="fas fa-angle-left"></i>
-      </a>
-    </li>
-  
-    <!-- page numbers -->
-    
-    
-  
-    
-  
-      
-      
-      
-      
-      
-  
-      
-  
-      
-        <!-- show number -->
-        <li class="page-item ">
-          <a class="page-link btn-box-shadow" href="/">1</a>
-        </li>
-      
-  
-    
-  
-      
-      
-      
-      
-      
-  
-      
-  
-      
-        <!-- hide number -->
-        
-          <li class="page-item disabled">
-            <span class="page-link btn-box-shadow">...</span>
-          </li>
-          
-        
-      
-  
-    
-  
-      
-      
-      
-      
-      
-  
-      
-  
-      
-        <!-- show number -->
-        <li class="page-item ">
-          <a class="page-link btn-box-shadow" href="/page3/">3</a>
-        </li>
-      
-  
-    
-  
-      
-      
-      
-      
-      
-  
-      
-  
-      
-        <!-- show number -->
-        <li class="page-item  active">
-          <a class="page-link btn-box-shadow" href="/page4/">4</a>
-        </li>
-      
-  
-    
-  
-      
-      
-      
-      
-      
-  
-      
-  
-      
-        <!-- show number -->
-        <li class="page-item ">
-          <a class="page-link btn-box-shadow" href="/page5/">5</a>
-        </li>
-      
-  
-    
-  
-    <!-- mobile pagination -->
-    <li class="page-index align-middle">
-      <span>4</span>
-      <span class="text-muted">/ 5</span>
-    </li>
-  
-    <!-- right arrow -->
-    
-  
-    <li class="page-item ">
-      <a class="page-link btn-box-shadow" href="/page5/" aria-label="next-page">
-        <i class="fas fa-angle-right"></i>
-      </a>
-    </li>
-  
-  </ul> <!-- .pagination -->
- 
     
 
 

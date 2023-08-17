@@ -50,12 +50,14 @@
         {{post.title}}
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         {% include no-linenos.html content=post.content %}
         {{post.content | markdownify | strip_html | truncate: 200 | escape}} <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='{% include read-time.html content=post.content %}' itemprop='datePublished'>
         {% include read-time.html content=post.content %}
       </time>
@@ -66,7 +68,3 @@
 
 <!-- 페이징 처리 -->
 <br>
-페이징
-{% if paginator.total_pages > 0 %}
-  {% include post-paginator.html %}
-{% endif %} 

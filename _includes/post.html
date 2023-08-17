@@ -13,15 +13,6 @@
       // 첫 번째, md 파일 갯수
       var htmlCopy = '';
 
-      //  if (countMdFile != 0) {
-      //   for (i = 0; i < countMdFile; i++) {
-      //     htmlCopy += "<a href='" + / 2015 /02 / 12 / 몬ㄷ / +"' title='"+몬ㄷ+"'' itemprop='url'>";
-      //     htmlCopy += "<h1 itemprop='name'>"+name+"</h1>";
-      //     htmlCopy += "<p itemprop='description'>"+ㅋㅋㅋㅋ 내용이다+"</p>";
-      //     htmlCopy += "<time datetime='"+2015-02 - 12T08: 51: 13.000Z+"' itemprop='datePublished'>"+2月 12 2015+"</time>";
-      //     htmlCopy += "</a>";
-      //   }
-      // }
       $('#printColumnOUT').html(htmlCopy);
 
     }
@@ -31,19 +22,9 @@
 </head>
 
 <body>
-  <!-- 게시글 -->
+  <!-- 게시글 예시 -->
   <div id="main">
-    <section class="post" itemscope itemprop="blogPost">
-      <a href="menuindex.html" title="Hello World" itemprop="url">
-        <h1 itemprop="name">Hello World</h1>
-        <p itemprop="description">Welcome to Hexo! This is your very first post. Check documentation for more info. If
-          you get any problems when using Hexo, you can find the </p>
-        <time datetime="2015-02-13T04:56:46.000Z" itemprop="datePublished">2月 13 2015</time>
-      </a>
-    </section>
-
     <!-- markdown 불러오기 -->
-    
     {% include preview.html %}
     
 

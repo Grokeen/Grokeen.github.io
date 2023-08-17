@@ -1,1 +1,621 @@
-1-------------------<br>
+<!-- 포스트 내용 인덱스 -->
+
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+
+<head>
+  <script src="/js/jquery-2.1.0.min.js"></script>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header>
+    <!DOCTYPE HTML>
+<html lang="ko-KR">
+<!-- 헤더 -->
+
+<head>
+<meta charset="UTF-8">
+	<title>Grokeen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+	<meta name="author" content="Grokeen">
+	<meta name="description" content="new start">
+
+	<link rel="icon" href="/img/favicon.ico">
+	<link rel="apple-touch-icon" href="/img/pacman.jpg">
+	<link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+
+	<link rel="stylesheet" href="/css/style.css" type="text/css">
+	<script src="/js/jquery-2.1.0.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+	<!-- 본문 시작 -->
+	<div>
+		<!-- 로고 사진 -->
+		<div id="imglogo">
+			<a href="/">
+				<img src="/img/logo.svg" alt="Grokeen" title="Grokeen" />
+			</a>
+		</div>
+
+		<!-- 이름/상태 메세지 -->
+		<div id="textlogo">
+			<h1 class="site-name"><a href="/" title="Grokeen">Grokeen</a></h1>
+			<h2 class="blog-motto">슈렉도 헐크처럼</h2>
+		</div>
+
+
+		<div class="navbar">
+			<a class="navbutton navmobile" href="#" title="나도몰라2">
+			</a>
+		</div>
+
+		<!-- 상단 카테로그 -->
+		<nav class="animated">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<!-- <li><a href="tag_EX.html">Post</a></li> -->
+				<li>
+
+					<!-- 검색 폼 -->
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20"
+							placeholder="search" />
+						<input type="hidden" name="q" value="site:weibo.com/u/1839008305">
+					</form>
+
+				</li>
+			</ul>
+		</nav>
+
+		<!-- 본문 끝 -->
+	</div>
+
+</body>
+
+</html>
+  </header>
+
+
+
+  <!-- 본문 시작 -->
+  <div id="container">
+    <!-- 게시물 내용 시작 -->
+    <div id="main" class="post" itemscope itemprop="blogPost">
+      <article itemprop="articleBody">
+        <!-- 블로그 제목 -->
+        <header class="article-info clearfix">
+          <h1 itemprop="name">
+
+            <a href="#" title="GithubBlog(3)" itemprop="url">GithubBlog(3)</a>
+          </h1>
+          <p class="article-time">
+            <time datetime="2023-06-03 12:45:29 +0900" itemprop="datePublished">June 03, 2023</time>
+          </p>
+        </header>
+
+        <!-- 블로그 내용 -->
+        <figure class="highlight bash">
+          <br>
+          <h1 id="github-로컬-서버에서-실행시키기">GITHUB 로컬 서버에서 실행시키기</h1>
+
+<p>깃허브 블로그를 계속 작성은 했었다. 그런데 서버에 올라가지 않는다. 귀찮아서 오류 해결을 하지 않았었다. 오늘 끝내주마 껄껄</p>
+
+<h1 id="정리">정리</h1>
+<h2 id="gemfile이라는-파일에-아래-네-줄-추가">Gemfile이라는 파일에 아래 네 줄 추가</h2>
+<p>gem ‘jekyll-paginate’
+gem ‘jekyll-sitemap’
+gem ‘jekyll-gist’
+gem ‘jekyll-include-cache’</p>
+
+<h2 id="아래-갱신서버실행-명령어-입력">아래 갱신/서버실행 명령어 입력</h2>
+<p>bundle install
+bundle exec jekyll serve</p>
+
+<h1 id="로컬-서버-실행">로컬 서버 실행</h1>
+<p>깃허브 블로그는 Jekyll이라는 정적 사이트 생성기를 사용합니다. 따라서 Jekyll을 설치해야 합니다. Ruby와 RubyGems가 미리 설치되어 있어야 합니다. 설치되어 있지 않다면 해당 도구를 먼저 설치해야 합니다.</p>
+
+<h2 id="ruby와-rubygems가-설치되었다면-다음-명령어를-사용하여-jekyll과-관련된-종속성을-설치합니다">Ruby와 RubyGems가 설치되었다면, 다음 명령어를 사용하여 Jekyll과 관련된 종속성을 설치합니다:</h2>
+
+<p>gem install bundler jekyll</p>
+
+<h2 id="종속성-설치가-완료되면-다음-명령어를-사용하여-로컬-서버를-실행합니다">종속성 설치가 완료되면, 다음 명령어를 사용하여 로컬 서버를 실행합니다:</h2>
+
+<p>bundle exec jekyll serve</p>
+
+<h3 id="첫-번째-오류-발생">첫 번째 오류 발생</h3>
+<p>Configuration file: /Users/kim-yongrok/Github_Blog/Grokeen.github.io/_config.yml
+                    ————————————————
+      Jekyll 4.3.1   Please append <code class="language-plaintext highlighter-rouge">--trace</code> to the <code class="language-plaintext highlighter-rouge">serve</code> command 
+                     for any additional information or backtrace. 
+                    ————————————————</p>
+
+<p>이 에러는 _config.yml라는 파일에 문제가 있는 듯 싶다. ‘serve’ 뒤에 ‘–trace’를 붙여서 다시 해본다:</p>
+
+<p>bundle exec jekyll serve –trace</p>
+
+<h3 id="두번-째-오류-발생-어디서-부터-잘-못-된-걸까">두번 째 오류 발생, 어디서 부터 잘 못 된 걸까</h3>
+<p>bundler: failed to load command: jekyll (/usr/local/bin/jekyll)</p>
+
+<p>이 에러는 Bundler가 jekyll 명령어를 로드하지 못했음을 나타냅니다. Bundler는 프로젝트의 종속성을 관리하는 도구로서, Jekyll과 관련된 종속성을 올바르게 설치하고 로드해야 한다.</p>
+
+<h4 id="bundler가-설치되어-있는지-확인합니다-bundler가-설치되어-있지-않다면-다음-명령어를-사용하여-설치합니다">Bundler가 설치되어 있는지 확인합니다. Bundler가 설치되어 있지 않다면 다음 명령어를 사용하여 설치합니다:</h4>
+
+<p>sudo gem install bundler</p>
+
+<h4 id="bundler를-사용하여-jekyll과-관련된-종속성을-설치합니다-깃허브-블로그-저장소의-루트-디렉토리예-userskim-yongrokgithub_bloggrokeengithubio로-이동한-후-다음-명령어를-실행합니다">Bundler를 사용하여 Jekyll과 관련된 종속성을 설치합니다. 깃허브 블로그 저장소의 루트 디렉토리(예: /Users/kim-yongrok/Github_Blog/Grokeen.github.io)로 이동한 후 다음 명령어를 실행합니다:</h4>
+
+<p>bundle install</p>
+
+<p>이 명령어는 Gemfile과 Gemfile.lock 파일을 기반으로 필요한 종속성을 설치합니다.</p>
+
+<h4 id="설치가-완료되면-jekyll-명령어를-다시-실행해-봅니다">설치가 완료되면 jekyll 명령어를 다시 실행해 봅니다:</h4>
+
+<p>bundle exec jekyll serve</p>
+
+<h3 id="세번-째-오류-발생-아까랑-똑같지만-다른-에러">세번 째 오류 발생, 아까랑 똑같지만 다른 에러</h3>
+<p>Your RubyGems version (3.0.3.1) has a bug that prevents <code class="language-plaintext highlighter-rouge">required_ruby_version</code> from working for Bundler. Any scripts that use <code class="language-plaintext highlighter-rouge">gem install bundler</code> will break as soon as Bundler drops support for your Ruby version. Please upgrade RubyGems to avoid future breakage and silence this warning by running <code class="language-plaintext highlighter-rouge">gem update --system 3.2.3</code></p>
+
+<p>위 에러는 친절하게 다른 버전을 설치하는 방법을 알려준다:</p>
+
+<p>sudo gem update –system 3.2.3</p>
+
+<p>이후에 ‘bundle exec jekyll serve’를 다시 해준다.</p>
+
+<h3 id="네번-째-오류-아놔-첫-번째-오류랑-같다ㅋ">네번 째 오류, 아놔 첫 번째 오류랑 같다.ㅋ</h3>
+<p>Chat GPT의 힘을 빌렸다. 오류문을 스크랩해서 줬더니, 에러의 원인은 jekyll-4.3.1 버전의 jekyll/cache.rb 파일에서 발생한 것으로 보입니다. 더 구체적으로는 load 함수의 호출에서 dump format error가 발생하여 에러가 발생했다고 알려줬다.</p>
+
+<h4 id="jekyll의-캐시를-삭제해-보세요-다음-명령어를-실행하여-jekyll의-캐시를-지웁니다">Jekyll의 캐시를 삭제해 보세요. 다음 명령어를 실행하여 Jekyll의 캐시를 지웁니다:</h4>
+
+<p>bundle exec jekyll clean</p>
+
+<h4 id="bundler를-사용하여-jekyll과-관련된-종속성을-다시-설치합니다-깃허브-블로그-저장소의-루트-디렉토리로-이동한-후-다음-명령어를-실행합니다">Bundler를 사용하여 Jekyll과 관련된 종속성을 다시 설치합니다. 깃허브 블로그 저장소의 루트 디렉토리로 이동한 후 다음 명령어를 실행합니다:</h4>
+
+<p>bundle install</p>
+
+<h4 id="위-단계를-마치면-다시-bundle-exec-jekyll-serve-명령을-실행해-보세요-새로운-캐시가-생성되며-문제가-해결되었을-것입니다">위 단계를 마치면 다시 bundle exec jekyll serve 명령을 실행해 보세요. 새로운 캐시가 생성되며 문제가 해결되었을 것입니다.</h4>
+
+<p>bundle exec jekyll serve</p>
+
+<h4 id="또한-만약-위-단계가-도움이-되지-않는다면-jekyll-및-bundler를-최신-버전으로-업데이트해-보는-것도-고려해-볼-수-있습니다-다음-명령어를-실행하여-최신-버전으로-업데이트할-수-있습니다">또한, 만약 위 단계가 도움이 되지 않는다면 Jekyll 및 Bundler를 최신 버전으로 업데이트해 보는 것도 고려해 볼 수 있습니다. 다음 명령어를 실행하여 최신 버전으로 업데이트할 수 있습니다:</h4>
+
+<p>gem update jekyll bundler</p>
+
+<h3 id="다섯-번-째-오류-발생-jekyll-paginate가-없다는-거-같은데">다섯 번 째 오류 발생, ‘jekyll-paginate’가 없다는 거 같은데</h3>
+<p>Dependency Error: Yikes! It looks like you don’t have jekyll-paginate or one of its dependencies installed. In order to use Jekyll as currently configured, you’ll need to install this gem. If you’ve run Jekyll with <code class="language-plaintext highlighter-rouge">bundle exec</code>, ensure that you have included the jekyll-paginate gem in your Gemfile as well. The full error message from Ruby is: ‘cannot load such file – jekyll-paginate’ If you run into trouble, you can find helpful resources at https://jekyllrb.com/help/! 
+                    ————————————————
+      Jekyll 4.3.1   Please append <code class="language-plaintext highlighter-rouge">--trace</code> to the <code class="language-plaintext highlighter-rouge">serve</code> command 
+                     for any additional information or backtrace. 
+                    ————————————————</p>
+
+<h4 id="gemfile을-열어서-jekyll-paginate-gem이-명시적으로-포함되어-있는지-확인">Gemfile을 열어서 jekyll-paginate gem이 명시적으로 포함되어 있는지 확인:</h4>
+
+<p>find / -name Gemfile(비추)</p>
+
+<p>회사에서 사용하던 방식으로 찾아봤는데 너무 많이 나온다…
+아 확인해보니 github 블로그 하위 디렉토리에 저 파일이 존재했다.</p>
+
+<h4 id="만약-없다면-gemfile라는-파일에서-가장-아래에-gem-jekyll-paginate-줄을-추가해라">만약 없다면, Gemfile라는 파일에서 가장 아래에 gem ‘jekyll-paginate’ 줄을 추가해라:</h4>
+
+<p>gem ‘jekyll-paginate’</p>
+
+<h4 id="다시-bundle-install-명령을-실행하여-종속성을-설치한다">다시 bundle install 명령을 실행하여 종속성을 설치한다:</h4>
+
+<p>bundle install</p>
+
+<h4 id="bundle-exec-jekyll-serve-명령을-실행하여-jekyll을-다시-시작">bundle exec jekyll serve 명령을 실행하여 Jekyll을 다시 시작.</h4>
+
+<p>bundle exec jekyll serve</p>
+
+<h3 id="여섯-번-째-오류-발생-도루마무인가-첫번-째-오류-발생">여섯 번 째 오류 발생, 도루마무인가… 첫번 째 오류 발생</h3>
+<p>Configuration file: /Users/kim-yongrok/Github_Blog/Grokeen.github.io/_config.yml
+  Dependency Error: Yikes! It looks like you don’t have jekyll-sitemap or one of its dependencies installed. In order to use Jekyll as currently configured, you’ll need to install this gem. If you’ve run Jekyll with <code class="language-plaintext highlighter-rouge">bundle exec</code>, ensure that you have included the jekyll-sitemap gem in your Gemfile as well. The full error message from Ruby is: ‘cannot load such file – jekyll-sitemap’ If you run into trouble, you can find helpful resources at https://jekyllrb.com/help/! 
+                    ————————————————
+      Jekyll 4.3.1   Please append <code class="language-plaintext highlighter-rouge">--trace</code> to the <code class="language-plaintext highlighter-rouge">serve</code> command 
+                     for any additional information or backtrace. 
+                    ————————————————</p>
+
+<p>이번엔 뭔 sitemap 이라는 녀석이다. 다시 반복해본다.</p>
+
+<h4 id="gemfile라는-파일에서-가장-아래에-gem-jekyll-paginate-줄을-추가해라">Gemfile라는 파일에서 가장 아래에 gem ‘jekyll-paginate’ 줄을 추가해라:</h4>
+
+<p>gem ‘jekyll-sitemap’</p>
+
+<h4 id="다시-bundle-install-명령을-실행하여-종속성을-설치한다-1">다시 bundle install 명령을 실행하여 종속성을 설치한다:</h4>
+
+<p>bundle install</p>
+
+<h4 id="bundle-exec-jekyll-serve-명령을-실행하여-jekyll을-다시-시작-1">bundle exec jekyll serve 명령을 실행하여 Jekyll을 다시 시작.</h4>
+
+<p>bundle exec jekyll serve</p>
+
+<h3 id="여섯-번-째-오류-발생-이번에-jekyll-gist-이-녀석-고지가-눈-앞이다">여섯 번 째 오류 발생. 이번에 jekyll-gist 이 녀석… 고지가 눈 앞이다:</h3>
+
+<p>gem ‘jekyll-gist’ 추가</p>
+
+<p>bundle install
+bundle exec jekyll serve</p>
+
+<h3 id="일곱-번-째-오류-발생-jekyll-include-cache-도루마무-이-자식-처음부터-알려-주던가">일곱 번 째 오류 발생. jekyll-include-cache 도루마무 이 자식 처음부터 알려 주던가…</h3>
+
+<p>gem ‘jekyll-include-cache’ 추가</p>
+
+<p>bundle install
+bundle exec jekyll serve</p>
+
+<h3 id="여덟-번-째-오류-발생-오-성과가-있다-다른-애러가-발생했다">여덟 번 째 오류 발생. 오 성과가 있다. 다른 애러가 발생했다.</h3>
+<p>내가 작성한 마크 다운 중에 날짜 문제가 있다고 한다.
+2022-12-0\28 라고 적어 놨는데 \가 문제인 거 같다.
+마크다운 처음을 대부분 복붙으로 해놨더니 생각보다 많은 파일을 저렇게 작성했었다.</p>
+
+<p>모두 수정 완료….</p>
+
+<p>왓더 뻐어어어어어어어억 
+성공했다!!!!!</p>
+
+<h2 id="로컬-서버가-실행되면-커맨드-라인에-서버가-실행-중인-주소http1270014000-또는-httplocalhost4000가-표시된다">로컬 서버가 실행되면 커맨드 라인에 서버가 실행 중인 주소(http://127.0.0.1:4000 또는 http://localhost:4000)가 표시된다.</h2>
+<p>웹 브라우저에서 해당 주소를 열면 깃허브 블로그가 로컬 서버에서 실행되는 것을 확인할 수 있다:</p>
+
+<p>http://localhost:4000</p>
+
+<h3 id="하-또-오류냐-페이지가-안-보인다">하 또 오류냐 페이지가 안 보인다.</h3>
+<h4 id="첫-번째-오류-발생-error-faviconico-not-found">첫 번째 오류 발생, ERROR `/favicon.ico’ not found.</h4>
+<p>간단히 새로운 파일 만들고 ‘favicon.ico’로 이름을 바꿔줬다. 다시 로컬서버로 접속해보니 오류는 없다. 그러나 아무 화면이 안 나온다.</p>
+
+<p>index.html 내부에 경로 지정이라도 해줘야 하나? 개꿀잼 몰카가 아닌가 싶다.</p>
+
+<h4 id="두-번째-오류-발생-option--command--i">두 번째 오류 발생, Option + Command + I</h4>
+<p>[Error] Failed to load resource: You do not have permission to access the requested resource.</p>
+
+<p>단축키로 브라우저(맥북 사파리)에 오류 확인하려고 보니까 소스를 엑세스 할 권한이 없다는데? 지랄도 병이다.</p>
+
+<p>Option + Command + E</p>
+
+<p>로 캐시를 삭제 시켜줘 봤다. 추가적으로 모든 브라우저를 종료했다.</p>
+
+<h4 id="세-번째-오류-발생-갑자기-로그에-애플-뭐시기-발생">세 번째 오류 발생, 갑자기 로그에 애플 뭐시기 발생</h4>
+<p>[2023-06-03 16:37:01] ERROR <code class="language-plaintext highlighter-rouge">/apple-touch-icon-precomposed.png' not found.
+[2023-06-03 16:37:01] ERROR </code>/apple-touch-icon.png’ not found.</p>
+
+<p>이건 사파리 이것 저것 누르니까 자동으로 사라졌다. 크롬에서 돌려봤는데 똑같이 아무 화면이 안 나오고 오류 문도 없다.</p>
+
+<h4 id="네-번째-오류-발생-알아-버렸다-노란-글씨로-나와서-에러가-아닌-줄-알았다">네 번째 오류 발생, 알아 버렸다. 노란 글씨로 나와서 에러가 아닌 줄 알았다.</h4>
+<p>Build Warning: Layout ‘post’ requested in _posts/2022-12-06-welcome-to-jekyll.md does not exist.</p>
+
+<p>이런 식으로 에러가 나온다.</p>
+
+<p>예를 들어
+‘—
+layout: post
+title:  “Github Blog(3)”
+date:   2023-06-03 12:45:29 +0900
+categories: person update
+—’
+각 마크다운 마다 ‘2023-06-03-GithubBlog(3).md’ 제목과 날짜와 내부에 작성한 제목과 날짜가 달라서 난 거 같아 노가다로 수정해줬다. 
+실패 1, 여전히 오류가 발생한다.</p>
+
+<p>혹시 몰라 /GithubBlog/_Layout 이라는 디렉토리를 만들고, post,home,default 등 추가 하위 디렉토리를 만들어 줬다. 
+실패 2, 서버 재시작 해도 똑같다.</p>
+
+<p>아. 알았다. 서버는 정상적으로 실행 중인게 맞다. /GithubBlog/index.html과 index.md 를 수정하면 흰 화면에 반영된다. 아까 보니 서버 실행을 위한 _config.yml 파일이 리셋 됐나 보다.</p>
+
+<h4 id="실행">실행</h4>
+<p>bundle exec jekyll serve</p>
+
+<h4 id="서버-실행시-포트-중복-오류ex4000">서버 실행시 포트 중복 오류(Ex:4000)</h4>
+<p>lsof -i :4000</p>
+
+<h4 id="다른-포트로-실행시키는-법">다른 포트로 실행시키는 법</h4>
+<p>bundle exec jekyll serve –port 3000</p>
+
+          <br>
+        </figure>
+
+        <!-- 블로그 하단 -->
+        <footer class="article-footer clearfix">
+          <div class="article-share" id="share">
+            <div data-url="http://localhost:4000/github/GithubBlog(3)/" data-title="GithubBlog(3) | 스케치용녹색물감"
+              data-tsina="null" class="share clearfix">
+            </div>
+          </div>
+          
+        </footer>
+      </article>
+    </div>
+    <!-- 게시물 내용 끝 -->
+
+
+
+
+    <!-- 우측 바  -->
+    <!DOCTYPE HTML>
+<html lang="ko-KR">
+
+<head>
+
+</head>
+
+<body>
+
+
+    <!-- 우측바 첫 번째 -->
+    <div class="openaside">
+        <a class="navbutton" href="#" title="니도몰라1"></a>
+    </div>
+
+    <div id="asidepart">
+        <div class="closeaside">
+            <a class="closebutton" href="#" title="Menu"></a>
+        </div>
+        <aside class="clearfix">
+
+
+            <div class="categorieslist">
+                <p class="asidetitle">Menu</p>
+                <ul>
+
+                    <li><a href="/categories/Diary/" title="Diary">Diary<sup>1</sup></a></li>
+
+                </ul>
+            </div>
+
+
+            <!-- 우측바 Tag 카테고리 -->
+            <div class="tagslist">
+                <p class="asidetitle">Tag</p>
+                <ul class="clearfix">
+                    <li><a href="/tags/Blog/" title="Blog">Blog<sup>1</sup></a></li>
+                    <li><a href="/tags/Start/" title="Start">Start<sup>1</sup></a></li>
+                    <li><a href="/tags/Diary/" title="Diary">Diary<sup>1</sup></a></li>
+                    <li><a href="/tags/Again/" title="Again">Again<sup>1</sup></a></li>
+                </ul>
+            </div>
+
+            <div class="rsspart">
+                <a href="null" target="_blank" title="rss">RSS Reservation</a>
+            </div>
+
+        </aside>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+    <!-- 코멘트 -->
+    <section id="comment">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'zhaoleiteng'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+          Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </section>
+
+
+  </div>
+  <!-- 본문 끝 -->
+
+
+  <!-- 푸터 -->
+  <!DOCTYPE HTML>
+<html lang="ko-KR">
+
+<head>
+  <script src="/js/jquery-2.1.0.min.js"></script>
+</head>
+
+<body>
+  <footer>
+    <!-- 푸터 본문 -->
+    <div id="footer">
+
+      <div class="line">
+        <span></span>
+        <div class="author"></div>
+      </div>
+
+      <div class="social-font clearfix">
+      </div>
+
+      <p class="copyright">Powered by
+        <a href="http://hexo.io" target="_blank" title="hexo">
+          hexo
+        </a>
+        and Theme by
+        <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">
+          Pacman
+        </a>
+        © 2022
+        <a href="mailto:ygreen0516@gmail.com" target="_blank" title="Grokeen">
+          Grokeen
+        </a>
+      </p>
+    </div>
+    <!-- mathjax config similar to math.stackexchange -->
+
+    <!-- 푸터 기능 -->
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+  </footer>
+
+  <!-- 주요 Home 페이지 기능 -->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.navbar').click(function () {
+        $('header nav').toggleClass('shownav');
+      });
+      var myWidth = 0;
+      function getSize() {
+        if (typeof (window.innerWidth) == 'number') {
+          myWidth = window.innerWidth;
+        } else if (document.documentElement && document.documentElement.clientWidth) {
+          myWidth = document.documentElement.clientWidth;
+        };
+      };
+      var m = $('#main'),
+        a = $('#asidepart'),
+        c = $('.closeaside'),
+        o = $('.openaside');
+      $(window).resize(function () {
+        getSize();
+        if (myWidth >= 1024) {
+          $('header nav').removeClass('shownav');
+        } else {
+          m.removeClass('moveMain');
+          a.css('display', 'block').removeClass('fadeOut');
+          o.css('display', 'none');
+
+        }
+      });
+      c.click(function () {
+        a.addClass('fadeOut').css('display', 'none');
+        o.css('display', 'block').addClass('fadeIn');
+        m.addClass('moveMain');
+      });
+      o.click(function () {
+        o.css('display', 'none').removeClass('beforeFadeIn');
+        a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');
+        m.removeClass('moveMain');
+      });
+      $(window).scroll(function () {
+        o.css("top", Math.max(80, 260 - $(this).scrollTop()));
+      });
+    });
+  </script>
+
+</body>
+
+</html>
+
+
+
+
+
+  <!-- 추가 푸터 -->
+  <!-- 게시글에 추적으로 푸터 위에 넣주는 html -->
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+
+<head>
+</head>
+
+<body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var ai = $('.article-content>iframe'),
+        ae = $('.article-content>embed'),
+        t = $('#toc'),
+        h = $('article h2')
+      ah = $('article h2'),
+        ta = $('#toc.toc-aside'),
+        o = $('.openaside'),
+        c = $('.closeaside');
+      if (ai.length > 0) {
+        ai.wrap('<div class="video-container" />');
+      };
+      if (ae.length > 0) {
+        ae.wrap('<div class="video-container" />');
+      };
+      if (ah.length == 0) {
+        t.css('display', 'none');
+      } else {
+        c.click(function () {
+          ta.css('display', 'block').addClass('fadeIn');
+        });
+        o.click(function () {
+          ta.css('display', 'none');
+        });
+        $(window).scroll(function () {
+          ta.css("top", Math.max(140, 320 - $(this).scrollTop()));
+        });
+      };
+    });
+  </script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var $this = $('.share'),
+        url = $this.attr('data-url'),
+        encodedUrl = encodeURIComponent(url),
+        title = $this.attr('data-title'),
+        tsina = $this.attr('data-tsina');
+      var html = [
+        '<a href="#" class="overlay" id="qrcode"></a>',
+        '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+        '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+        '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+        '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+        '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+        '<a href="http://service.weibo.com/share/share.php?title=' + title + '&url=' + encodedUrl + '&ralateUid=' + tsina + '&searchPic=true&style=number' + '" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+        '<span title="Share to"></span>'
+      ].join('');
+      $this.append(html);
+      $('.article-share-qrcode').click(function () {
+        var imgSrc = $('#qrcode-pic').attr('data-src');
+        $('#qrcode-pic').attr('src', imgSrc);
+        $('#qrcode-pic').load(function () {
+          $('.qrcode strong').text(' ');
+        });
+      });
+    });     
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>

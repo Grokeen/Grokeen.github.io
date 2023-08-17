@@ -58,7 +58,7 @@
 		<nav class="animated">
 			<ul>
 				<li><a href="/">Home</a></li>
-				<li><a href="layouts/tag.html">Post</a></li>
+				<!-- <li><a href="tag_EX.html">Post</a></li> -->
 				<li>
 
 					<!-- 검색 폼 -->
@@ -99,15 +99,6 @@
       // 첫 번째, md 파일 갯수
       var htmlCopy = '';
 
-      //  if (countMdFile != 0) {
-      //   for (i = 0; i < countMdFile; i++) {
-      //     htmlCopy += "<a href='" + / 2015 /02 / 12 / 몬ㄷ / +"' title='"+몬ㄷ+"'' itemprop='url'>";
-      //     htmlCopy += "<h1 itemprop='name'>"+name+"</h1>";
-      //     htmlCopy += "<p itemprop='description'>"+ㅋㅋㅋㅋ 내용이다+"</p>";
-      //     htmlCopy += "<time datetime='"+2015-02 - 12T08: 51: 13.000Z+"' itemprop='datePublished'>"+2月 12 2015+"</time>";
-      //     htmlCopy += "</a>";
-      //   }
-      // }
       $('#printColumnOUT').html(htmlCopy);
 
     }
@@ -117,19 +108,9 @@
 </head>
 
 <body>
-  <!-- 게시글 -->
+  <!-- 게시글 예시 -->
   <div id="main">
-    <section class="post" itemscope itemprop="blogPost">
-      <a href="menuindex.html" title="Hello World" itemprop="url">
-        <h1 itemprop="name">Hello World</h1>
-        <p itemprop="description">Welcome to Hexo! This is your very first post. Check documentation for more info. If
-          you get any problems when using Hexo, you can find the </p>
-        <time datetime="2015-02-13T04:56:46.000Z" itemprop="datePublished">2月 13 2015</time>
-      </a>
-    </section>
-
     <!-- markdown 불러오기 -->
-    
     <!-- ----------------------------------------------------------------------- -->
 <!-- "pin"이 "true"인 모든 포스트를 allPost에 할당. -->
 
@@ -170,6 +151,7 @@
         GithubBlog(3)
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -186,9 +168,10 @@ gem ‘jekyll-paginate’
 gem ‘jekyll-sitemap’
 gem ‘jekyll-gist’
 gem ‘jekyll-in... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -260,6 +243,7 @@ gem ‘jekyll-in... <!-- 202308161518 수정: content에서 post.content로 변�
         Tableau(1)
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -274,9 +258,10 @@ Tableau를 사용하여 다음과 같은 작업을 수행할 수 있습니다:
 
 데이터 연결:
 Tableau는 다양한 데이터 소스와 연결할 수 있습니다. Excel, CSV, 데이터베이스, 웹 ... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -348,6 +333,7 @@ Tableau는 다양한 데이터 소스와 연결할 수 있습니다. Excel, CSV,
         Java(2)
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -359,9 +345,10 @@ Mac에서 Oracle 데이터베이스를 설치하고 설정하는 방법은 다�
 
 Oracle 홈페이지에서 다운로드:
 맥에서 Oracle 데이터베이스를 설치하려면 Oracle 홈페이지(https://www.oracle.com/database/technologies/oracle-databa... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -433,6 +420,7 @@ Oracle 홈페이지에서 다운로드:
         Java(1)
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -446,9 +434,10 @@ https://www.java.com/en/download/
 
 2. VS Code 설치:
 맥 앱 스토어 또는 Visual Studio Code 공식 웹 사이트(https://code.visualstudio.co... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -520,6 +509,7 @@ https://www.java.com/en/download/
         markdown(2)
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -528,9 +518,10 @@ https://www.java.com/en/download/
 
         
  <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -602,6 +593,7 @@ https://www.java.com/en/download/
         NAS
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -610,9 +602,10 @@ https://www.java.com/en/download/
 
         
  <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -684,6 +677,7 @@ https://www.java.com/en/download/
         RaspberryPI
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -698,9 +692,10 @@ import time
 with picamera.PiCamera() as camera:
     camera.resolution = (1024, 768) # 카메라 해상도 설정
     camera.start_preview() # 미리보기 화... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -772,6 +767,7 @@ with picamera.PiCamera() as camera:
         Imformation
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -780,9 +776,10 @@ with picamera.PiCamera() as camera:
 
         
  <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -854,6 +851,7 @@ with picamera.PiCamera() as camera:
         명언
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -870,9 +868,10 @@ with picamera.PiCamera() as camera:
   내가 잘 때 돈을 벌어다 줄 무언가 필요하다. 그게 없다면 평생 일을 해야한다. - 워렌 버핏
   과시하는 것은 의미가 없다.
   양떼 효과(Herding Effect) : 주식 투자에서 처음으로 사용된 용어로, 투자자가 주식을 거래... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -944,6 +943,7 @@ with picamera.PiCamera() as camera:
         Github-Error
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -958,9 +958,10 @@ with picamera.PiCamera() as camera:
 힌트: 자세한 정보는 ‘git push –help’의 “Note about fast-forwards’ 부분을
 힌트: 참고하십시오.
  <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -1032,6 +1033,7 @@ with picamera.PiCamera() as camera:
         markdown(1)
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -1040,9 +1042,10 @@ with picamera.PiCamera() as camera:
 
         
  <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -1114,6 +1117,7 @@ with picamera.PiCamera() as camera:
         Introduce-myself
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -1144,9 +1148,10 @@ with picamera.PiCamera() as camera:
 			    
        
      ... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -1218,6 +1223,7 @@ with picamera.PiCamera() as camera:
         GithubBlog(2)
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -1232,9 +1238,10 @@ with picamera.PiCamera() as camera:
 
 
 2. 다음으... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -1306,6 +1313,7 @@ with picamera.PiCamera() as camera:
         GithubBlog(1)
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -1313,9 +1321,10 @@ with picamera.PiCamera() as camera:
 
 
         https://www.reebonz.co.kr/products/24468108/section/shopping_naver/1?utm_source=naver_shopping&amp;amp;utm_medium=affiliate&amp;amp;utm_term=24468108&amp;amp;service_name=store&amp;amp;utm_campaign=sa_seo_naver_sh... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -1387,6 +1396,7 @@ with picamera.PiCamera() as camera:
         Welcome-to-Jekyll!
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -1396,9 +1406,10 @@ with picamera.PiCamera() as camera:
         여기에 맘ㄹ하는 건 반영이 되네?
 
 You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most com... <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -1470,6 +1481,7 @@ You’ll find this post in your _posts directory. Go ahead and edit it and re-bu
         Welcome-to-Jekyll!
       </h1>
 
+      <!-- 본문 미리보가 -->
       <p itemprop="description">
         
 
@@ -1479,9 +1491,10 @@ You’ll find this post in your _posts directory. Go ahead and edit it and re-bu
         동영상 다운로드 방법
 
  <!-- 202308161518 수정: content에서 post.content로 변경 -->
-        테스트 값
+        
       </p>
 
+      <!-- 작성 시간 -->
       <time datetime='
 
 
@@ -1550,133 +1563,7 @@ You’ll find this post in your _posts directory. Go ahead and edit it and re-bu
 
 <!-- 페이징 처리 -->
 <br>
-페이징
 
-  <!--
-  The paginator for post list on HomgPage.
--->
-
-<ul class="pagination align-items-center mt-4 mb-0 pl-lg-2">
-    <!-- left arrow -->
-    
-  
-    <li class="page-item ">
-      <a class="page-link btn-box-shadow" href="/" aria-label="previous-page">
-        <i class="fas fa-angle-left"></i>
-      </a>
-    </li>
-  
-    <!-- page numbers -->
-    
-    
-  
-    
-  
-      
-      
-      
-      
-      
-  
-      
-  
-      
-        <!-- show number -->
-        <li class="page-item ">
-          <a class="page-link btn-box-shadow" href="/">1</a>
-        </li>
-      
-  
-    
-  
-      
-      
-      
-      
-      
-  
-      
-  
-      
-        <!-- show number -->
-        <li class="page-item  active">
-          <a class="page-link btn-box-shadow" href="/page2/">2</a>
-        </li>
-      
-  
-    
-  
-      
-      
-      
-      
-      
-  
-      
-  
-      
-        <!-- show number -->
-        <li class="page-item ">
-          <a class="page-link btn-box-shadow" href="/page3/">3</a>
-        </li>
-      
-  
-    
-  
-      
-      
-      
-      
-      
-  
-      
-  
-      
-        <!-- hide number -->
-        
-          <li class="page-item disabled">
-            <span class="page-link btn-box-shadow">...</span>
-          </li>
-          
-        
-      
-  
-    
-  
-      
-      
-      
-      
-      
-  
-      
-  
-      
-        <!-- show number -->
-        <li class="page-item ">
-          <a class="page-link btn-box-shadow" href="/page5/">5</a>
-        </li>
-      
-  
-    
-  
-    <!-- mobile pagination -->
-    <li class="page-index align-middle">
-      <span>2</span>
-      <span class="text-muted">/ 5</span>
-    </li>
-  
-    <!-- right arrow -->
-    
-  
-    <li class="page-item ">
-      <a class="page-link btn-box-shadow" href="/page3/" aria-label="next-page">
-        <i class="fas fa-angle-right"></i>
-      </a>
-    </li>
-  
-  </ul> <!-- .pagination -->
- 
     
 
 
