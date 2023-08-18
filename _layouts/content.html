@@ -37,7 +37,11 @@ layout: default
         <!-- 블로그 내용 -->
         <figure class="highlight bash">
           <br>
-          {{ content }}
+          <!-- Fixme 마크다운이 css가 적용이 안되게 적용해야함 -->
+          <div class="no-style-markdown">
+            {{ content }}
+          </div>
+          
           <br>
         </figure>
 

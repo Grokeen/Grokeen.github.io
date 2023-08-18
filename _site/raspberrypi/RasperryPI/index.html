@@ -93,19 +93,26 @@
         <header class="article-info clearfix">
           <h1 itemprop="name">
 
-            <a href="#" title="RaspberryPI" itemprop="url">RaspberryPI</a>
+            <a href="#" title="Raspberry Pi 카메라 모듈 구매 후기" itemprop="url">Raspberry Pi 카메라 모듈 구매 후기</a>
           </h1>
           <p class="article-time">
-            <time datetime="2023-04-26 12:45:29 +0900" itemprop="datePublished">April 26, 2023</time>
+            <time datetime="2023-03-17 12:45:29 +0900" itemprop="datePublished">March 17, 2023</time>
           </p>
         </header>
 
         <!-- 블로그 내용 -->
         <figure class="highlight bash">
           <br>
-          <p>라즈베리파이 카메라 모듈을 사용하여 파이썬으로 사진을 찍는 코드는 다음과 같습니다.</p>
+          <!-- Fixme 마크다운이 css가 적용이 안되게 적용해야함 -->
+          <div class="no-style-markdown">
+            <p><img src="IMG_3344.jpeg" alt="라즈베리파이 카메라" title="카메라 모듈" /></p>
 
-<p>import picamera
+<h1 id="라즈베리파이-카메라-모듈을-사용하여-파이썬으로-사진-찍기">라즈베리파이 카메라 모듈을 사용하여 파이썬으로 사진 찍기</h1>
+
+<p>라즈베리파이 카메라 모듈을 사용하여 파이썬으로 사진을 찍는 코드는 다음과 같습니다.</p>
+
+<p>```python
+import picamera
 import time</p>
 
 <p>with picamera.PiCamera() as camera:
@@ -113,38 +120,45 @@ import time</p>
     camera.start_preview() # 미리보기 화면 시작
     # 2초간 대기하여 카메라가 미리보기를 시작하도록 함
     time.sleep(10)
-    camera.capture(‘image.jpg’) # 사진 촬영 후 파일로 저장</p>
+    camera.capture(‘image.jpg’) # 사진 촬영 후 파일로 저장
+```</p>
 
-<p>해당 코드에서는 picamera 모듈을 사용하여 라즈베리파이 카메라 모듈을 제어하고, resolution 속성으로 카메라 해상도를 설정합니다. 그리고 start_preview() 메서드로 미리보기 화면을 시작하고, capture() 메서드로 사진을 촬영하고 파일로 저장합니다.</p>
+<p>해당 코드에서는 <code class="language-plaintext highlighter-rouge">picamera</code> 모듈을 사용하여 라즈베리파이 카메라 모듈을 제어하고, <code class="language-plaintext highlighter-rouge">resolution</code> 속성으로 카메라 해상도를 설정합니다. 그리고 <code class="language-plaintext highlighter-rouge">start_preview()</code> 메서드로 미리보기 화면을 시작하고, <code class="language-plaintext highlighter-rouge">capture()</code> 메서드로 사진을 촬영하고 파일로 저장합니다. 추가적으로, <code class="language-plaintext highlighter-rouge">time</code> 모듈을 사용하여 사진을 찍기 전에 2초간 대기하여 카메라가 미리보기를 시작하도록 하였습니다.</p>
 
-<p>추가적으로, time 모듈을 사용하여 사진을 찍기 전에 2초간 대기하여 카메라가 미리보기를 시작하도록 하였습니다.</p>
+<h2 id="라즈베리파이-카메라-모듈과-관련된-파이썬-코드">라즈베리파이 카메라 모듈과 관련된 파이썬 코드</h2>
 
-<p>라즈베리파이 카메라 모듈과 관련된 파이썬 코드에서 자주 사용되는 몇 가지 문법과 메서드를 소개합니다.</p>
+<h3 id="자주-사용되는-몇-가지-문법과-메서드">자주 사용되는 몇 가지 문법과 메서드</h3>
 
-<p>picamera.PiCamera() : 라즈베리파이 카메라 모듈을 사용하기 위한 객체 생성
-camera.start_preview() : 라즈베리파이 카메라 모듈의 미리보기 화면 시작
-camera.stop_preview() : 라즈베리파이 카메라 모듈의 미리보기 화면 종료
-camera.capture(‘filename.jpg’) : 라즈베리파이 카메라 모듈로부터 이미지 캡처 및 저장
-camera.resolution : 라즈베리파이 카메라 모듈의 해상도 설정
-camera.brightness : 라즈베리파이 카메라 모듈의 밝기 설정
-camera.contrast : 라즈베리파이 카메라 모듈의 명암 대비 설정
-camera.sharpness : 라즈베리파이 카메라 모듈의 선명도 설정
-camera.rotation : 라즈베리파이 카메라 모듈의 이미지 회전 설정
-camera.annotate_text : 라즈베리파이 카메라 모듈의 미리보기 화면에 텍스트 추가
-camera.annotate_text_size : 라즈베리파이 카메라 모듈의 미리보기 화면에 텍스트 크기 설정
-camera.annotate_foreground : 라즈베리파이 카메라 모듈의 미리보기 화면에 텍스트 색상 설정
-camera.annotate_background : 라즈베리파이 카메라 모듈의 미리보기 화면에 텍스트 배경 색상 설정
-camera.annotate_text_width : 라즈베리파이 카메라 모듈의 미리보기 화면에 텍스트 가로폭 설정
-camera.annotate_text_alpha : 라즈베리파이 카메라 모듈의 미리보기 화면에 텍스트 투명도 설정
-위와 같은 문법과 메서드를 활용하여 라즈베리파이 카메라 모듈로부터 이미지를 캡처하고, 설정을 변경하며 미리보기 화면을 제어할 수 있습니다.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">picamera.PiCamera()</code> : 라즈베리파이 카메라 모듈을 사용하기 위한 객체 생성</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.start_preview()</code> : 미리보기 화면 시작</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.stop_preview()</code> : 미리보기 화면 종료</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.capture('filename.jpg')</code> : 이미지 캡처 및 저장</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.resolution</code> : 해상도 설정</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.brightness</code> : 밝기 설정</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.contrast</code> : 명암 대비 설정</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.sharpness</code> : 선명도 설정</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.rotation</code> : 이미지 회전 설정</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.annotate_text</code> : 미리보기 화면에 텍스트 추가</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.annotate_text_size</code> : 텍스트 크기 설정</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.annotate_foreground</code> : 텍스트 색상 설정</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.annotate_background</code> : 텍스트 배경 색상 설정</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.annotate_text_width</code> : 텍스트 가로폭 설정</li>
+  <li><code class="language-plaintext highlighter-rouge">camera.annotate_text_alpha</code> : 텍스트 투명도 설정</li>
+</ul>
 
+<p>위와 같은 문법과 메서드를 활용하여 라즈베리파이 카메라 모듈로부터 이미지를 캡처하고, 설정을 변경하며 미리보기 화면을 제어할 수 있습니다.</p>
+
+
+          </div>
+          
           <br>
         </figure>
 
         <!-- 블로그 하단 -->
         <footer class="article-footer clearfix">
           <div class="article-share" id="share">
-            <div data-url="http://localhost:4000/raspberrypi/RasperryPI/" data-title="RaspberryPI | 스케치용녹색물감"
+            <div data-url="http://localhost:4000/raspberrypi/RasperryPI/" data-title="Raspberry Pi 카메라 모듈 구매 후기 | 스케치용녹색물감"
               data-tsina="null" class="share clearfix">
             </div>
           </div>
