@@ -12,7 +12,7 @@
 
 # 테마 설정인데 내 가져온 css 파일은 어떡하지
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes" # 샵 지웠음(22년12월26일 변경)
+# remote_theme           : "mmistakes/minimal-mistakes" # 샵 지웠음(22년12월26일 변경)
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Setting
@@ -20,7 +20,7 @@ locale                   : "ko-KR"
 title                    : "스케치용녹색물감"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-# name                     : "스케치용녹색물감"
+name                     : "스케치용녹색물감"
 description              : "I want to change my life"
 #(12년 12월 26일 변경)
 url                      : "https://Grokeen.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
