@@ -13,7 +13,7 @@
 # 테마 설정인데 내 가져온 css 파일은 어떡하지
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes" # 샵 지웠음(22년12월26일 변경)
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Setting
 locale                   : "ko-KR"
