@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/private/Idontknowme/</loc>
+<loc>http://localhost:4000/Idontknowme/</loc>
 <lastmod>2022-01-01T12:45:29+09:00</lastmod>
 </url>
 <url>
@@ -13,7 +13,7 @@
 <lastmod>2022-12-26T12:45:29+09:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/private/introduse-myself/</loc>
+<loc>http://localhost:4000/resume/introduse-myself/</loc>
 <lastmod>2022-12-26T12:45:29+09:00</lastmod>
 </url>
 <url>
@@ -61,7 +61,7 @@
 <lastmod>2023-06-09T12:45:29+09:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/private/resume/</loc>
+<loc>http://localhost:4000/resume/resume/</loc>
 <lastmod>2023-06-22T12:45:29+09:00</lastmod>
 </url>
 <url>
@@ -126,7 +126,7 @@
 <loc>http://localhost:4000/_posts/RaspberryPi/2023-03-17-RasperryPI/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/_posts/NAS/2023-05-22-NAS/</loc>
+<loc>http://localhost:4000/_posts/RaspberryPi/NAS/2023-05-22-NAS/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/_posts/Github/2023-05-24-GithubBlog(2)/</loc>

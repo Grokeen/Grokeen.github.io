@@ -2,7 +2,7 @@
 layout: content
 title:  "Introduce-myself"
 date:   2022-12-26 12:45:29 +0900
-categories: private
+categories: resume
 
 ---
 

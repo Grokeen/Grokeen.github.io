@@ -2,7 +2,7 @@
 layout: content
 title:  "Idontknowme"
 date:   2022-01-01 12:45:29 +0900
-categories: private
+categories: 
 
 ---
 

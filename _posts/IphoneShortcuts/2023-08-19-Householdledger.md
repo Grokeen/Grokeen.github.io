@@ -2,7 +2,7 @@
 layout: content
 title:  "[단축어]아이폰 단축어로 반자동 가계부 만들기"
 date:   2023-08-19 12:45:29 +0900
-categories: shortcuts
+categories: Shortcuts
 pin: true
 ---
 

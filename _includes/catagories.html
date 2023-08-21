@@ -1,0 +1,11 @@
+---
+layout: content
+title: "Private 카테고리의 포스트"
+---
+
+
+<!-- Todo 카테고리별로 출력할 수 있게 해야한다. 2중 for문을 사용하면 됧 듯 하다. -->
+{% for post in site.categories.private %}
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p>{{ post.excerpt }}</p>
+{% endfor %}

@@ -58,8 +58,8 @@
       </p>
 
       <!-- 작성 시간 -->
-      <time datetime='{% include read-time.html content=post.content %}' itemprop='datePublished'>
-        {% include read-time.html content=post.content %}
+      <time itemprop='datePublished'>
+        {{ post.date | date: "%B %d, %Y" }}
       </time>
     </a>
   </section>
