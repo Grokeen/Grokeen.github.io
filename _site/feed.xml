@@ -1,46 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-19T16:41:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">스케치용녹색물감</title><subtitle>I want to change my life</subtitle><author><name>Your Name</name></author><entry><title type="html">아이폰 단축어로 반자동 가계부 만들기</title><link href="http://localhost:4000/shortcuts/Householdledger/" rel="alternate" type="text/html" title="아이폰 단축어로 반자동 가계부 만들기" /><published>2023-08-19T12:45:29+09:00</published><updated>2023-08-19T12:45:29+09:00</updated><id>http://localhost:4000/shortcuts/Householdledger</id><content type="html" xml:base="http://localhost:4000/shortcuts/Householdledger/"><![CDATA[<p>매일 사용한 금액을 확인하며, 엑셀에 가계부를 일일히 적는 건 매우 귀찮았다. 미루는 날이 대부분이고 작심 3일에 의지박약이 아닌가 하는 의구심 마저 들었다. 평소에도 귀찮아서 단축어를 자주 사용하는 앱등이다. 하루가 귀찮다. 다들 어떻게 그렇게 열심히 사는걸까.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-21T16:49:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">스케치용녹색물감</title><subtitle>I want to change my life</subtitle><author><name>Your Name</name></author><entry><title type="html">빅데이터분석기사 강의 메일</title><link href="http://localhost:4000/certification/%EA%B0%95%EC%9D%98%EB%A9%94%EC%9D%BC/" rel="alternate" type="text/html" title="빅데이터분석기사 강의 메일" /><published>2023-08-20T12:45:29+09:00</published><updated>2023-08-20T12:45:29+09:00</updated><id>http://localhost:4000/certification/%EA%B0%95%EC%9D%98%EB%A9%94%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/certification/%EA%B0%95%EC%9D%98%EB%A9%94%EC%9D%BC/"><![CDATA[<p>안녕하세요!</p>
+
+<p>참여 감사합니다 ^_^ 꼬옥 합격해 보자구요~~</p>
+
+<p>참여 방법입니다.</p>
+
+<ol>
+  <li>구글 클래스룸에 참여합니다.
+    <ul>
+      <li>핸드폰으로 앱을 설치해도 편하실 것입니다.</li>
+      <li>퀴즈를 위한 구글 클래스룸 : <a href="https://classroom.google.com/c/NjE2MDU1NzAxMDEy?cjc=eeax4e3">Google Classroom Link</a></li>
+    </ul>
+  </li>
+  <li>풀이를 하신 뒤에는 잊지말고 풀이하신 것에 대한 기록을 합니다.
+    <ul>
+      <li>링크 정보를 카톡 등에 고정해 두시고 사용하시면서, 핸드폰으로 Google 스프레드 시트 입을 설치하시면 편하게 작성하실 수 있습니다.</li>
+      <li>매일 퀴즈를 풀이하고 풀이한 날짜 및 시간을 표시하실 곳 : <a href="https://docs.google.com/spreadsheets/d/1HOW9CXaRjY4-nUEOmYy14IopC15Yg8GcTepQRmeu2KY/edit#gid=0">Google Spreadsheet Link</a></li>
+      <li>다른 분들의 컬럼은 접근하지 말아주세요!</li>
+    </ul>
+  </li>
+</ol>
+
+<p>약간 번거롭기는 하지만 ^^ 매일 매일 루틴처럼 진행해 보시길 바랍니다.</p>
+
+<p>퀴즈는 풀이하신 뒤에 PDF로 인쇄하셔서 다시 보기 하셔도 좋습니다.
+아직 빅분기는 문제은행에 문제가 많이 쌓여 있어서 동일한 문제 출제 비율이 아주 높은 편이 아니어서 내용을 확실하게 이해하시는 것을 추천드립니다.</p>
+
+<p>합격을 기원합니다!<br />
+윤소영 드림</p>]]></content><author><name>Your Name</name></author><category term="certification" /><summary type="html"><![CDATA[안녕하세요!]]></summary></entry><entry><title type="html">아이폰 단축어로 반자동 가계부 만들기</title><link href="http://localhost:4000/shortcuts/Householdledger/" rel="alternate" type="text/html" title="아이폰 단축어로 반자동 가계부 만들기" /><published>2023-08-19T12:45:29+09:00</published><updated>2023-08-19T12:45:29+09:00</updated><id>http://localhost:4000/shortcuts/Householdledger</id><content type="html" xml:base="http://localhost:4000/shortcuts/Householdledger/"><![CDATA[<p>매일 사용한 금액을 확인하며, 엑셀에 가계부를 일일히 적는 건 매우 귀찮았다. 미루는 날이 대부분이고 작심 3일에 의지박약이 아닌가 하는 의구심 마저 들었다. 평소에도 귀찮아서 단축어를 자주 사용하는 앱등이다. 하루가 귀찮다. 다들 어떻게 그렇게 열심히 사는걸까.</p>
 
 <h1 id="메시지-클립보드에-복사">메시지 클립보드에 복사</h1>
-<p><img src="1.jpeg" style="height:500px" /> 
-<img src="2.jpeg" style="height:500px" /> 보내는 사람을 설정해야 한다. 나는 크게 신용카드와 체크카드 두 가지 만 사용한다. 그리고 나 자신을 넣었다. 그 이유는 마지막에 설명하겠다.</p>
+<p><img src="1.jpg" style="height:500px" /></p>
 
-<p><img src="3.jpeg" style="height:500px" /> 클립 보드에 나에게 보내진 메세지를 받아온다. 그리고 줄 바꿈 별로 분할했다. 인데스 별로 사용한 금액 그리고 사용처를 알기 위함이다.</p>
+<p><img src="1.jpg" style="height:500px" /></p>
+
+<p><img src="2.jpeg" style="height:500px" /></p>
+
+<p><img src="2.jpeg" style="height:500px" /></p>
+
+<ul>
+  <li>보내는 사람을 설정해야 한다. 나는 크게 신용카드와 체크카드 두 가지 만 사용한다. 그리고 나 자신을 넣었다. 그 이유는 마지막에 설명하겠다.</li>
+</ul>
+
+<p><img src="3.jpeg" style="height:500px" /></p>
+
+<ul>
+  <li>클립 보드에 나에게 보내진 메세지를 받아온다. 그리고 줄 바꿈 별로 분할했다. 인데스 별로 사용한 금액 그리고 사용처를 알기 위함이다.</li>
+</ul>
 
 <h1 id="사용처와-사용금액">사용처와 사용금액</h1>
 <p><img src="4.jpeg" style="height:500px" /> 
 <img src="5.jpeg" style="height:500px" /> 
-<img src="6.jpeg" style="height:500px" /><br />
-첫 번째 조건문은 사실 크게 신용카드을 따로 찾고자 그렇게 진행하였다. 물론 카드사 별로 문자 방식이 다르면 따로 바꿔 줘야 할 것 같다.</p>
+<img src="6.jpeg" style="height:500px" /></p>
+
+<ul>
+  <li>첫 번째 조건문은 사실 크게 신용카드을 따로 찾고자 그렇게 진행하였다. 물론 카드사 별로 문자 방식이 다르면 따로 바꿔 줘야 할 것 같다.</li>
+</ul>
 
 <h1 id="닐찌-장보">닐찌 장보</h1>
 <p><img src="7.jpeg" style="height:500px" /> 
 <img src="8.jpeg" style="height:500px" /> 
-<img src="9.jpeg" style="height:500px" /> 
-솔직히 날짜는 노가다였다. 확인은 안해봤지만 현재 날짜, 아마도 내 핸드폰 세션 기준으로 받아오는 거 같다. 방식은 간단하다. 글을 작성하면서 생각해보니 일도 마찬가지 겟지만, 한 자리 수 달은 0이 생략되서 한 자리로 나온다. 따라서 10월 &gt;= 이런 식으로 조건문을 달았다면 훨신 쉽게 했을 것이다. 그러나 방법을 모르겠다…</p>
+<img src="9.jpeg" style="height:500px" /></p>
 
-<p><img src="10.jpeg" style="height:500px" /> 그래서 여기 보면 10월 11월 12월을 따로 해뒀다. 방법을 찾고 싶은데 정보가 별로 없었다.</p>
+<ul>
+  <li>솔직히 날짜는 노가다였다. 확인은 안해봤지만 현재 날짜, 아마도 내 핸드폰 세션 기준으로 받아오는 거 같다. 방식은 간단하다. 글을 작성하면서 생각해보니 일도 마찬가지 겟지만, 한 자리 수 달은 0이 생략되서 한 자리로 나온다. 따라서 10월 &gt;= 이런 식으로 조건문을 달았다면 훨신 쉽게 했을 것이다. 그러나 방법을 모르겠다…</li>
+</ul>
+
+<p><img src="10.jpeg" style="height:500px" /></p>
+
+<ul>
+  <li>그래서 여기 보면 10월 11월 12월을 따로 해뒀다. 방법을 찾고 싶은데 정보가 별로 없었다.</li>
+</ul>
 
 <p><img src="11.jpeg" style="height:500px" /> 
 <img src="12.jpeg" style="height:500px" /> 
-<img src="13.jpeg" style="height:500px" /> 
-그리고 한 자리 수의 달일 때, 분할한 인덱스에 각각 변수에 저장해서 마지막 텍스트로 한 번에 합쳤다. 엄청난 노가다다.</p>
+<img src="13.jpeg" style="height:500px" /></p>
+
+<ul>
+  <li>그리고 한 자리 수의 달일 때, 분할한 인덱스에 각각 변수에 저장해서 마지막 텍스트로 한 번에 합쳤다. 엄청난 노가다다.</li>
+</ul>
 
 <h1 id="위치-정보">위치 정보</h1>
 <p><img src="14.jpeg" style="height:500px" /> 
-<img src="15.jpeg" style="height:500px" /> 마지막으로 위치 정보를 받아온다. 혹시나 모를 도용? 그런 것을 확인하고자 넣었다. 그리고 텍스트 파일을 엑셀 파일로 확장자 변환하기 쉽게 형식(, , ,)을 짜놨다.</p>
+<img src="15.jpeg" style="height:500px" /></p>
 
-<h1 id="사용-해보기-시-발-오류-발생">사용 해보기, 시-발 오류 발생</h1>
-<p><img src="16.jpeg" style="height:500px" /> 이렇게 테스트로 신용카드와 체크카드 결제 내역을 붙여넣기 해보았다.</p>
+<ul>
+  <li>마지막으로 위치 정보를 받아온다. 혹시나 모를 도용? 그런 것을 확인하고자 넣었다. 그리고 텍스트 파일을 엑셀 파일로 확장자 변환하기 쉽게 형식(, , ,)을 짜놨다.</li>
+</ul>
+
+<h1 id="사용-해보기">사용 해보기</h1>
+<p><img src="16.jpeg" style="height:500px" /></p>
+
+<ul>
+  <li>이렇게 테스트로 신용카드와 체크카드 결제 내역을 붙여넣기 해보았다.</li>
+</ul>
 
 <p><img src="17.jpeg" style="height:500px" /> 
-<img src="18.jpeg" style="height:500px" /> 두 개를 한 번에 보낼 떄, 승인하게 되면 승인한 단축어 만 실행되고 나머지 하나는 사라지게 된다. 생각과는 다른 착오다. 이게 다른 단축어는 허가 없이 자동 실행이 가능하게 가능한데 메시지를 받아오는 건 승인이 필요한가 보다.</p>
+<img src="18.jpeg" style="height:500px" /></p>
 
-<p><img src="19.jpeg" style="height:500px" /> 내 메모장에 하나 만 들어온 것을 확인할 수 있다. 이것을 어떻게 보완활 수 있을까 고민하다가,</p>
+<ul>
+  <li>두 개를 한 번에 보낼 떄, 승인하게 되면 승인한 단축어 만 실행되고 나머지 하나는 사라지게 된다. 생각과는 다른 착오다. 이게 다른 단축어는 허가 없이 자동 실행이 가능하게 가능한데 메시지를 받아오는 건 승인이 필요한가 보다.</li>
+</ul>
+
+<p><img src="19.jpeg" style="height:500px" /></p>
+
+<ul>
+  <li>내 메모장에 하나 만 들어온 것을 확인할 수 있다. 이것을 어떻게 보완활 수 있을까 고민하다가,</li>
+</ul>
 
 <h1 id="결과적으로">결과적으로</h1>
-<p><img src="20.jpeg" style="height:500px" /> 그래서 전화번호 리스트 중 내 번호를 추가한 이유다. 미처 승인하지 못한 내 결제 내역을 나한테 보내기 위함이다.</p>
+<p><img src="20.jpeg" style="height:500px" /></p>
 
-<p>이걸 해결할 수 있는 방법을 생각해봐야겠다.</p>]]></content><author><name>Your Name</name></author><category term="shortcuts" /><summary type="html"><![CDATA[매일 사용한 금액을 확인하며, 엑셀에 가계부를 일일히 적는 건 매우 귀찮았다. 미루는 날이 대부분이고 작심 3일에 의지박약이 아닌가 하는 의구심 마저 들었다. 평소에도 귀찮아서 단축어를 자주 사용하는 앱등이다. 하루가 귀찮다. 다들 어떻게 그렇게 열심히 사는걸까.]]></summary></entry><entry><title type="html">빅데이터분석기사 강의</title><link href="http://localhost:4000/certification/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/" rel="alternate" type="text/html" title="빅데이터분석기사 강의" /><published>2023-08-16T12:45:29+09:00</published><updated>2023-08-16T12:45:29+09:00</updated><id>http://localhost:4000/certification/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC</id><content type="html" xml:base="http://localhost:4000/certification/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/"><![CDATA[<h3 id="23년-빅데이터-분석-기사-학습안내">23년 빅데이터 분석 기사 학습안내</h3>
+<ul>
+  <li>그래서 전화번호 리스트 중 내 번호를 추가한 이유다. 미처 승인하지 못한 내 결제 내역을 나한테 보내기 위함이다.</li>
+</ul>
+
+<p>이걸 해결할 수 있는 방법을 생각해봐야겠다.</p>]]></content><author><name>Your Name</name></author><category term="shortcuts" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">빅데이터분석기사 강의</title><link href="http://localhost:4000/certification/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/" rel="alternate" type="text/html" title="빅데이터분석기사 강의" /><published>2023-08-16T12:45:29+09:00</published><updated>2023-08-16T12:45:29+09:00</updated><id>http://localhost:4000/certification/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC</id><content type="html" xml:base="http://localhost:4000/certification/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/"><![CDATA[<h3 id="23년-빅데이터-분석-기사-학습안내">23년 빅데이터 분석 기사 학습안내</h3>
 <p>4과목의 내용이 겹치는 경우가 있으나 교재의 pdf로 제공됩니다. ADsP와 겹치는 내용이 있으나 출제 방향이 다르므로 문제 풀이가 필요합니다.</p>
 
 <h4 id="0-정오표-및-qna-링크">0. 정오표 및 QnA 링크</h4>
@@ -908,35 +982,4 @@ __double underscores__
   <li>Atom(<a href="https://atom.io/">https://atom.io/</a>)</li>
   <li>Visual Studio Code(<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>)</li>
   <li>Notepad++(<a href="https://notepad-plus-plus.org/">https://notepad-plus-plus.org/</a>)</li>
-</ul>]]></content><author><name>Your Name</name></author><category term="markdown" /><summary type="html"><![CDATA[[공통] 마크다운 markdown 작성법]]></summary></entry><entry><title type="html">Java(1)</title><link href="http://localhost:4000/java/Java(1)/" rel="alternate" type="text/html" title="Java(1)" /><published>2023-05-24T12:45:29+09:00</published><updated>2023-05-24T12:45:29+09:00</updated><id>http://localhost:4000/java/Java(1)</id><content type="html" xml:base="http://localhost:4000/java/Java(1)/"><![CDATA[<h1 id="윈도우-이클립스에-스프링-프로젝트-옮기기-1-맥북-vscode에서-자바-spring-실행-및-설치-방법">윈도우 이클립스에 스프링 프로젝트 옮기기 1. 맥북 vscode에서 자바 Spring 실행 및 설치 방법</h1>
-
-<h1 id="1-아래-링크-클릭하여-자바-설치">1. 아래 링크 클릭하여 자바 설치</h1>
-<p>https://www.java.com/en/download/</p>
-
-<h1 id="2-vs-code-설치">2. VS Code 설치:</h1>
-<p>맥 앱 스토어 또는 Visual Studio Code 공식 웹 사이트(https://code.visualstudio.com/)에서 VS Code를 다운로드하고 설치합니다.</p>
-
-<h1 id="3-vs-code에-java-extension-pack-설치">3. VS Code에 Java Extension Pack 설치:</h1>
-<p>VS Code를 열고 좌측 사이드바의 Extensions(확장) 아이콘을 클릭합니다.
-검색 상자에 “Java Extension Pack”을 입력하고 해당 확장을 찾아 설치합니다.
-Java Extension Pack은 Java 개발을 위한 필수 도구 및 확장을 제공합니다.</p>
-
-<h1 id="4-spring-boot-프로젝트-생성">4. Spring Boot 프로젝트 생성:</h1>
-<p>터미널에서 Spring Boot 프로젝트를 생성할 디렉토리로 이동합니다.</p>
-<h2 id="다음-명령을-실행하여-spring-initializr를-사용하여-프로젝트를-생성합니다">다음 명령을 실행하여 Spring Initializr를 사용하여 프로젝트를 생성합니다:</h2>
-<ul>
-  <li>curl https://start.spring.io/starter.zip -o Spring_Project_Factory.zip</li>
-  <li>파일에 압축 풀기 : unzip Spring_Project_Factory.zip -d Spring_Project_Factory</li>
-  <li>현재 디렉토리에 압축풀기 : unzip Spring_Project_Factory.zip</li>
-  <li>cd Spring_Project_Factory</li>
-</ul>
-
-<h1 id="5-프로젝트를-vs-code에서-열기">5. 프로젝트를 VS Code에서 열기:</h1>
-<p>터미널에서 다음 명령을 실행하여 VS Code에서 프로젝트를 엽니다:
-code .</p>
-
-<h1 id="6-vs-code에서-spring-boot-개발">6. VS Code에서 Spring Boot 개발:</h1>
-<p>VS Code의 왼쪽 사이드바에서 프로젝트 폴더 구조를 확인하고, Java 파일이나 리소스 파일을 엽니다.
-Spring Boot 애플리케이션을 개발하고, 코드 편집, 디버깅 등의 작업을 수행합니다.</p>
-
-<p>위 단계를 따라 맥북에서 VS Code에서 Spring을 사용할 수 있습니다. 또한 VS Code의 Java Extension Pack은 Spring 개발을 위한 추가 기능과 도구를 제공하기 때문에 개발 작업을 보다 효율적으로 수행할 수 있습니다.</p>]]></content><author><name>Your Name</name></author><category term="Java" /><summary type="html"><![CDATA[윈도우 이클립스에 스프링 프로젝트 옮기기 1. 맥북 vscode에서 자바 Spring 실행 및 설치 방법]]></summary></entry></feed>
+</ul>]]></content><author><name>Your Name</name></author><category term="markdown" /><summary type="html"><![CDATA[[공통] 마크다운 markdown 작성법]]></summary></entry></feed>
