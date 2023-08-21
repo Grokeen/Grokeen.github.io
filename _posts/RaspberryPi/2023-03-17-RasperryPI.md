@@ -6,7 +6,8 @@ categories: RaspberryPi
 pin: true
 ---
 
-![라즈베리파이 카메라](IMG_3344.jpeg "카메라 모듈")
+<img src="/img/blogimg/RaspberryPi/IMG_3344.jpeg" style="height:500px">
+<!-- ![라즈베리파이 카메라]({{site.img}}/blogimg/RaspberryPi/IMG_3344.jpeg "카메라 모듈") -->
 
 # 라즈베리파이 카메라 모듈을 사용하여 파이썬으로 사진 찍기
 
@@ -23,7 +24,7 @@ with picamera.PiCamera() as camera:
     time.sleep(10)
     camera.capture('image.jpg') # 사진 촬영 후 파일로 저장
 \```
-
+<br>
 해당 코드에서는 `picamera` 모듈을 사용하여 라즈베리파이 카메라 모듈을 제어하고, `resolution` 속성으로 카메라 해상도를 설정합니다. 그리고 `start_preview()` 메서드로 미리보기 화면을 시작하고, `capture()` 메서드로 사진을 촬영하고 파일로 저장합니다. 추가적으로, `time` 모듈을 사용하여 사진을 찍기 전에 2초간 대기하여 카메라가 미리보기를 시작하도록 하였습니다.
 
 ## 라즈베리파이 카메라 모듈과 관련된 파이썬 코드
@@ -48,4 +49,6 @@ with picamera.PiCamera() as camera:
 
 위와 같은 문법과 메서드를 활용하여 라즈베리파이 카메라 모듈로부터 이미지를 캡처하고, 설정을 변경하며 미리보기 화면을 제어할 수 있습니다.
 
+
+### 결론
 사용해보니 화질이 내가 생각한 것 보다 훨신 안 좋았다. 유튜브에서 라즈베리파이를 이용해 카메라로 만드는 영상 보고 해볼까 했는데 매우 실망스러웠다.
