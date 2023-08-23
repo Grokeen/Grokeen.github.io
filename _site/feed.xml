@@ -1,5 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-22T01:57:00+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">스케치용녹색물감</title><subtitle>I want to change my life</subtitle><author><name>Your Name</name></author><entry><title type="html">ChatGPT 알면 좋은 것들 정리</title><link href="http://localhost:4000/gpters/Tips/" rel="alternate" type="text/html" title="ChatGPT 알면 좋은 것들 정리" /><published>2023-08-21T12:45:29+09:00</published><updated>2023-08-21T12:45:29+09:00</updated><id>http://localhost:4000/gpters/Tips</id><content type="html" xml:base="http://localhost:4000/gpters/Tips/"><![CDATA[<h1 id="custom-instruction-어디서-전체본을-확인-할수-있을까">custom instruction 어디서 전체본을 확인 할수 있을까</h1>
-<p><img src="T1-1.png" style="height:500px" /><br /></p>]]></content><author><name>Your Name</name></author><category term="GPTers" /><summary type="html"><![CDATA[custom instruction 어디서 전체본을 확인 할수 있을까]]></summary></entry><entry><title type="html">빅데이터분석기사 데일리퀴즈 메일</title><link href="http://localhost:4000/certification/%EB%8D%B0%EC%9D%BC%EB%A6%AC%ED%80%B4%EC%A6%88%EB%A9%94%EC%9D%BC/" rel="alternate" type="text/html" title="빅데이터분석기사 데일리퀴즈 메일" /><published>2023-08-20T12:45:29+09:00</published><updated>2023-08-20T12:45:29+09:00</updated><id>http://localhost:4000/certification/%EB%8D%B0%EC%9D%BC%EB%A6%AC%ED%80%B4%EC%A6%88%EB%A9%94%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/certification/%EB%8D%B0%EC%9D%BC%EB%A6%AC%ED%80%B4%EC%A6%88%EB%A9%94%EC%9D%BC/"><![CDATA[<p>안녕하세요!</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-22T17:01:36+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">스케치용녹색물감</title><subtitle>I want to change my life</subtitle><author><name>Your Name</name></author><entry><title type="html">[빅데이터분석기사][D-102] 네이버 데이터포럼카페 스터디 정보</title><link href="http://localhost:4000/big/data/analyse/certification/StudyImfo/" rel="alternate" type="text/html" title="[빅데이터분석기사][D-102] 네이버 데이터포럼카페 스터디 정보" /><published>2023-08-22T12:45:29+09:00</published><updated>2023-08-22T12:45:29+09:00</updated><id>http://localhost:4000/big/data/analyse/certification/StudyImfo</id><content type="html" xml:base="http://localhost:4000/big/data/analyse/certification/StudyImfo/"><![CDATA[<h3 id="스터디-관련-공지-및-질문-응답">스터디 관련 공지 및 질문 응답</h3>
+
+<h4 id="킥오프-및-스터디-참여-규칙"><strong>킥오프 및 스터디 참여 규칙</strong></h4>
+<ul>
+  <li>참가자는 실명과 닉네임으로 프로필을 설정해야 함.</li>
+  <li>킥오프 참석 투표가 필요하며, 신청 절차 및 일정에 대한 안내가 있음.</li>
+</ul>
+
+<h4 id="참가자의-질문-및-운영진의-답변"><strong>참가자의 질문 및 운영진의 답변</strong></h4>
+<ul>
+  <li>교재: 킥오프당일 공개, 시중에 판매되는 교재 사용.</li>
+  <li>스터디 시작일: 킥오프 다음날인 27일부터 시작 예정.</li>
+  <li>스터디 형태: 멘토링은 있으나 별도의 강의 형태는 아님.</li>
+  <li>스터디 일정: 스터디 구성원과 협의하여 결정.</li>
+  <li>온라인/오프라인 참석: 일부 참가자는 온라인 참석이 어려움, 오프라인 참석만 가능한 경우도 있음.</li>
+  <li>교재 지급: 오프라인 참석자에 한해 제공, 온라인 참석자는 스터디원과 협의하여 교재 선정.</li>
+  <li>질문 공유: 톡방에 공부하며 궁금한 질문을 공유할 수 있음.</li>
+</ul>
+
+<h4 id="참가자의-의견-및-반응"><strong>참가자의 의견 및 반응</strong></h4>
+<ul>
+  <li>일부 참가자는 강의 형태로 진행될 것으로 오해하고 퇴장.</li>
+  <li>일부 참가자는 지방거주로 인해 온라인 참석이 어려움.</li>
+  <li>일부 참가자는 킥오프에서 교재를 받고 온라인으로 참여하고자 함.</li>
+</ul>
+
+<h4 id="기타"><strong>기타</strong></h4>
+<ul>
+  <li>빅분기필기 시험접수 안내 및 접수 완료 소식.</li>
+</ul>]]></content><author><name>Your Name</name></author><category term="Big" /><category term="Data" /><category term="Analyse" /><category term="Certification" /><summary type="html"><![CDATA[스터디 관련 공지 및 질문 응답]]></summary></entry><entry><title type="html">ChatGPT 알면 좋은 것들 정리</title><link href="http://localhost:4000/gpters/Tips/" rel="alternate" type="text/html" title="ChatGPT 알면 좋은 것들 정리" /><published>2023-08-21T12:45:29+09:00</published><updated>2023-08-21T12:45:29+09:00</updated><id>http://localhost:4000/gpters/Tips</id><content type="html" xml:base="http://localhost:4000/gpters/Tips/"><![CDATA[<h1 id="custom-instruction-어디서-전체본을-확인-할수-있을까">custom instruction 어디서 전체본을 확인 할수 있을까</h1>
+<p><img src="/img/blogimg/ChatGPT/Tips/T1-1.png" style="height:auto" /><br /></p>]]></content><author><name>Your Name</name></author><category term="GPTers" /><summary type="html"><![CDATA[custom instruction 어디서 전체본을 확인 할수 있을까]]></summary></entry><entry><title type="html">[빅데이터분석기사][D-104][D-96] Edu A to Z 데일리 퀴즈 안내 메일</title><link href="http://localhost:4000/big/data/analyse/certification/%EB%8D%B0%EC%9D%BC%EB%A6%AC%ED%80%B4%EC%A6%88%EB%A9%94%EC%9D%BC/" rel="alternate" type="text/html" title="[빅데이터분석기사][D-104][D-96] Edu A to Z 데일리 퀴즈 안내 메일" /><published>2023-08-20T12:45:29+09:00</published><updated>2023-08-20T12:45:29+09:00</updated><id>http://localhost:4000/big/data/analyse/certification/%EB%8D%B0%EC%9D%BC%EB%A6%AC%ED%80%B4%EC%A6%88%EB%A9%94%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/big/data/analyse/certification/%EB%8D%B0%EC%9D%BC%EB%A6%AC%ED%80%B4%EC%A6%88%EB%A9%94%EC%9D%BC/"><![CDATA[<p>안녕하세요!</p>
 
 <p>참여 감사합니다 ^_^ 꼬옥 합격해 보자구요~~</p>
 
@@ -24,35 +53,7 @@
 아직 빅분기는 문제은행에 문제가 많이 쌓여 있어서 동일한 문제 출제 비율이 아주 높은 편이 아니어서 내용을 확실하게 이해하시는 것을 추천드립니다.</p>
 
 <p>합격을 기원합니다!
-윤소영 드림</p>]]></content><author><name>Your Name</name></author><category term="certification" /><summary type="html"><![CDATA[안녕하세요!]]></summary></entry><entry><title type="html">빅데이터분석기사 강의 메일</title><link href="http://localhost:4000/certification/%EA%B0%95%EC%9D%98%EB%A9%94%EC%9D%BC/" rel="alternate" type="text/html" title="빅데이터분석기사 강의 메일" /><published>2023-08-20T12:45:29+09:00</published><updated>2023-08-20T12:45:29+09:00</updated><id>http://localhost:4000/certification/%EA%B0%95%EC%9D%98%EB%A9%94%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/certification/%EA%B0%95%EC%9D%98%EB%A9%94%EC%9D%BC/"><![CDATA[<p>안녕하세요!</p>
-
-<p>참여 감사합니다 ^_^ 꼬옥 합격해 보자구요~~</p>
-
-<p>참여 방법입니다.</p>
-
-<ol>
-  <li>구글 클래스룸에 참여합니다.
-    <ul>
-      <li>핸드폰으로 앱을 설치해도 편하실 것입니다.</li>
-      <li>퀴즈를 위한 구글 클래스룸 : <a href="https://classroom.google.com/c/NjE2MDU1NzAxMDEy?cjc=eeax4e3">Google Classroom Link</a></li>
-    </ul>
-  </li>
-  <li>풀이를 하신 뒤에는 잊지말고 풀이하신 것에 대한 기록을 합니다.
-    <ul>
-      <li>링크 정보를 카톡 등에 고정해 두시고 사용하시면서, 핸드폰으로 Google 스프레드 시트 입을 설치하시면 편하게 작성하실 수 있습니다.</li>
-      <li>매일 퀴즈를 풀이하고 풀이한 날짜 및 시간을 표시하실 곳 : <a href="https://docs.google.com/spreadsheets/d/1HOW9CXaRjY4-nUEOmYy14IopC15Yg8GcTepQRmeu2KY/edit#gid=0">Google Spreadsheet Link</a></li>
-      <li>다른 분들의 컬럼은 접근하지 말아주세요!</li>
-    </ul>
-  </li>
-</ol>
-
-<p>약간 번거롭기는 하지만 ^^ 매일 매일 루틴처럼 진행해 보시길 바랍니다.</p>
-
-<p>퀴즈는 풀이하신 뒤에 PDF로 인쇄하셔서 다시 보기 하셔도 좋습니다.
-아직 빅분기는 문제은행에 문제가 많이 쌓여 있어서 동일한 문제 출제 비율이 아주 높은 편이 아니어서 내용을 확실하게 이해하시는 것을 추천드립니다.</p>
-
-<p>합격을 기원합니다!<br />
-윤소영 드림</p>]]></content><author><name>Your Name</name></author><category term="certification" /><summary type="html"><![CDATA[안녕하세요!]]></summary></entry><entry><title type="html">[단축어]아이폰 단축어로 반자동 가계부 만들기</title><link href="http://localhost:4000/shortcuts/Householdledger/" rel="alternate" type="text/html" title="[단축어]아이폰 단축어로 반자동 가계부 만들기" /><published>2023-08-19T12:45:29+09:00</published><updated>2023-08-19T12:45:29+09:00</updated><id>http://localhost:4000/shortcuts/Householdledger</id><content type="html" xml:base="http://localhost:4000/shortcuts/Householdledger/"><![CDATA[<p>매일 사용한 금액을 확인하며, 엑셀에 가계부를 일일히 적는 건 매우 귀찮았다. 미루는 날이 대부분이고 작심 3일에 의지박약이 아닌가 하는 의구심 마저 들었다. 평소에도 귀찮아서 단축어를 자주 사용하는 앱등이다. 하루가 귀찮다. 다들 어떻게 그렇게 열심히 사는걸까.</p>
+윤소영 드림</p>]]></content><author><name>Your Name</name></author><category term="Big" /><category term="Data" /><category term="Analyse" /><category term="Certification" /><summary type="html"><![CDATA[안녕하세요!]]></summary></entry><entry><title type="html">[단축어]아이폰 단축어로 반자동 가계부 만들기</title><link href="http://localhost:4000/shortcuts/Householdledger/" rel="alternate" type="text/html" title="[단축어]아이폰 단축어로 반자동 가계부 만들기" /><published>2023-08-19T12:45:29+09:00</published><updated>2023-08-19T12:45:29+09:00</updated><id>http://localhost:4000/shortcuts/Householdledger</id><content type="html" xml:base="http://localhost:4000/shortcuts/Householdledger/"><![CDATA[<p>매일 사용한 금액을 확인하며, 엑셀에 가계부를 일일히 적는 건 매우 귀찮았다. 미루는 날이 대부분이고 작심 3일에 의지박약이 아닌가 하는 의구심 마저 들었다. 평소에도 귀찮아서 단축어를 자주 사용하는 앱등이다. 하루가 귀찮다. 다들 어떻게 그렇게 열심히 사는걸까.</p>
 
 <h1 id="메시지-클립보드에-복사">메시지 클립보드에 복사</h1>
 <p><img src="/img/blogimg/IphoneShortcuts/1.jpg" style="height:500px" /> 
@@ -203,7 +204,7 @@
 <p>이라고 생각이 되어 아래의 순서로 정리를 해보았습니다.</p>
 
 <p>먼저 시작하기전에 아래와 같이 custom instruction 에 지정 합니다.
-<img src="/img/blogimg/GPTers-GoogleSEO/1-1.png" style="height:500px" /><img src="/img/blogimg/GPTers-GoogleSEO/1-2.png" style="height:500px" /><br /></p>
+<img src="/img/blogimg/ChatGPT/GPTers-GoogleSEO/1-1.png" style="height:500px" /><img src="/img/blogimg/ChatGPT/GPTers-GoogleSEO/1-2.png" style="height:500px" /><br /></p>
 
 <p>실제 개발을 할때는 system prompt 라는걸 사용하는데 custom instruction 기능이 나와서 chatgpt에서도 쉽게 활용 할수 있습니다.</p>
 
@@ -211,7 +212,7 @@
 
 <p>키워드 조사를 할때는 키워드를 추천해달라고 하기 보다는 keyword volume과 keyword difficulty 를 같이 알려달라고 하면 조금더 좋은 키워드를 제안 해줍니다. 참고로 semrush 의 실제 값과 비료를 해보면 차이가 나는데 keyword volume과 keyword difficulty를 넣어주는것만으로 일반적인 프롬프트 보다 SEO에 맞는 키워드가 제안 되었습니다.</p>
 
-<p><img src="/img/blogimg/GPTers-GoogleSEO/1-3.png" style="height:500px" /><img src="/img/blogimg/GPTers-GoogleSEO/1-4.png" style="height:500px" /><br /></p>
+<p><img src="/img/blogimg/ChatGPT/GPTers-GoogleSEO/1-3.png" style="height:500px" /><img src="/img/blogimg/ChatGPT/GPTers-GoogleSEO/1-4.png" style="height:500px" /><br /></p>
 
 <p>custom instruction 에 입력하기에는 글자 제한이 있어 따로 사용 했지만 custom instruction 에 넣어 사용 할수 있습니다.</p>
 
@@ -220,21 +221,21 @@
 <p>키워드를 고르고 아래와 같이 블로그 제목을 요청 합니다.</p>
 
 <p>custom instruction 덕분에 요구사항에 맞게 작성을 잘 해줍니다.
-<img src="/img/blogimg/GPTers-GoogleSEO/1-5.png" style="height:500px" /><br /></p>
+<img src="/img/blogimg/ChatGPT/GPTers-GoogleSEO/1-5.png" style="height:500px" /><br /></p>
 
 <h3 id="3-글-작성-초안">3) 글 작성 초안</h3>
 
 <p>그 다음으로는 meta와 outline을 요청 합니다.</p>
 
 <p>custom instruction 덕분에 쉽게 가능 합니다.
-<img src="/img/blogimg/GPTers-GoogleSEO/1-6.png" style="height:500px" /><br /></p>
+<img src="/img/blogimg/ChatGPT/GPTers-GoogleSEO/1-6.png" style="height:500px" /><br /></p>
 
 <p>Meta 와 Outline이 작성 되었으니 이번에는 블로그 글을 작성해달라고 합니다.</p>
 
 <p>‘위의 meta 와 outline을 기반으로 ‘개발자 공부 방법: 프로젝트 기반 학습’ 블로그 글을 작성해줘.’</p>
 
 <p>역시 custom instruction의 도움으로 SEO 요구사항에 맞는 글을 작성 해줍니다.
-<img src="/img/blogimg/GPTers-GoogleSEO/1-7.png" style="height:500px" /><br /></p>
+<img src="/img/blogimg/ChatGPT/GPTers-GoogleSEO/1-7.png" style="height:500px" /><br /></p>
 
 <p>이렇게 블로그 작성 방법을 알아보았는데요 ChatGPT로 원하는 주제가 있고 블로그를 쓰고 싶은 사람이라면</p>
 
@@ -253,22 +254,22 @@
 <p><a href="https://www.magicaiprompts.com/projects/blog-flow">데모 사이트</a></p>
 
 <p>1) 키워드 조사
-<img src="/img/blogimg/GPTers-GoogleSEO/1-8.png" style="height:500px" /><br /></p>
+<img src="/img/blogimg/ChatGPT/GPTers-GoogleSEO/1-8.png" style="height:500px" /><br /></p>
 
 <p>2) 제목선정
-<img src="/img/blogimg/GPTers-GoogleSEO/1-9.png" style="height:500px" /><br /></p>
+<img src="/img/blogimg/ChatGPT/GPTers-GoogleSEO/1-9.png" style="height:500px" /><br /></p>
 
 <p>3) outline 및 초안 작성
-<img src="/img/blogimg/GPTers-GoogleSEO/1-10.png" style="height:500px" /><img src="/img/blogimg/GPTers-GoogleSEO/1-11.png" style="height:500px" /><br /></p>
+<img src="/img/blogimg/ChatGPT/GPTers-GoogleSEO/1-10.png" style="height:500px" /><img src="/img/blogimg/ChatGPT/GPTers-GoogleSEO/1-11.png" style="height:500px" /><br /></p>
 
 <p>아직 프로토타입 수준이라 부족한 부분이 많지만 구글 SEO 블로그 작성하고자 하시는 분들에게 도움이 되셨으면 좋겠습니다.</p>
 
 <p>혹시라도 <a href="https://www.magicaiprompts.com/projects/blog-flow">이 링크</a> 사용해서 키워드 조사 해보신분 있으시면 실제 키워드 조사 결과의 volume과 keyword difficulty 도 확인 해드려보겠습니다.</p>
 
 <p>성과도 궁금하신 분들이 있으실텐데 4개월전에 만든 블로그인데 Google SEO만으로 월 10,000명 가까이 방문하는 사이트가 되었습니다.
-<img src="/img/blogimg/GPTers-GoogleSEO/1-12.png" style="height:500px" /><br /></p>
+<img src="/img/blogimg/ChatGPT/GPTers-GoogleSEO/1-12.png" style="height:500px" /><br /></p>
 
-<p><a href="https://www.magicaiprompts.com/blog/google-seo-blog-writing-with-chatgpt">본문 작성자님 링크</a></p>]]></content><author><name>Your Name</name></author><category term="GPTers" /><summary type="html"><![CDATA[지피터스(GPTers)에서 흥미로웠던 글을 가져왔다.]]></summary></entry><entry><title type="html">빅데이터분석기사 강의</title><link href="http://localhost:4000/certification/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/" rel="alternate" type="text/html" title="빅데이터분석기사 강의" /><published>2023-08-16T12:45:29+09:00</published><updated>2023-08-16T12:45:29+09:00</updated><id>http://localhost:4000/certification/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC</id><content type="html" xml:base="http://localhost:4000/certification/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/"><![CDATA[<h3 id="23년-빅데이터-분석-기사-학습안내">23년 빅데이터 분석 기사 학습안내</h3>
+<p><a href="https://www.magicaiprompts.com/blog/google-seo-blog-writing-with-chatgpt">본문 작성자님 링크</a></p>]]></content><author><name>Your Name</name></author><category term="GPTers" /><summary type="html"><![CDATA[지피터스(GPTers)에서 흥미로웠던 글을 가져왔다.]]></summary></entry><entry><title type="html">[빅데이터분석기사][D-108][D-100] Edu A to Z 100일 강의 메일 정리</title><link href="http://localhost:4000/big/data/analyse/certification/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/" rel="alternate" type="text/html" title="[빅데이터분석기사][D-108][D-100] Edu A to Z 100일 강의 메일 정리" /><published>2023-08-16T12:45:29+09:00</published><updated>2023-08-16T12:45:29+09:00</updated><id>http://localhost:4000/big/data/analyse/certification/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC</id><content type="html" xml:base="http://localhost:4000/big/data/analyse/certification/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC/"><![CDATA[<h3 id="23년-빅데이터-분석-기사-학습안내">23년 빅데이터 분석 기사 학습안내</h3>
 <p>4과목의 내용이 겹치는 경우가 있으나 교재의 pdf로 제공됩니다. ADsP와 겹치는 내용이 있으나 출제 방향이 다르므로 문제 풀이가 필요합니다.</p>
 
 <h4 id="0-정오표-및-qna-링크">0. 정오표 및 QnA 링크</h4>
@@ -327,7 +328,7 @@
   <li>구글 클래스룸 문제는 7월에 업데이트 됩니다.</li>
 </ul>
 
-<p>화이팅!!</p>]]></content><author><name>Your Name</name></author><category term="certification" /><summary type="html"><![CDATA[23년 빅데이터 분석 기사 학습안내 4과목의 내용이 겹치는 경우가 있으나 교재의 pdf로 제공됩니다. ADsP와 겹치는 내용이 있으나 출제 방향이 다르므로 문제 풀이가 필요합니다.]]></summary></entry><entry><title type="html">[지피터스]Azure Open AI의 강력한 기능 활용하기</title><link href="http://localhost:4000/gpters/Azre-open-AI/" rel="alternate" type="text/html" title="[지피터스]Azure Open AI의 강력한 기능 활용하기" /><published>2023-08-15T12:45:29+09:00</published><updated>2023-08-15T12:45:29+09:00</updated><id>http://localhost:4000/gpters/Azre-open-AI</id><content type="html" xml:base="http://localhost:4000/gpters/Azre-open-AI/"><![CDATA[<p>지피터스(<a href="https://www.gpters.org/c/news/github-azure-open-ai">GPTers</a>)에서 흥미로웠던 글을 가져왔다.</p>
+<p>화이팅!!</p>]]></content><author><name>Your Name</name></author><category term="Big" /><category term="Data" /><category term="Analyse" /><category term="Certification" /><summary type="html"><![CDATA[23년 빅데이터 분석 기사 학습안내 4과목의 내용이 겹치는 경우가 있으나 교재의 pdf로 제공됩니다. ADsP와 겹치는 내용이 있으나 출제 방향이 다르므로 문제 풀이가 필요합니다.]]></summary></entry><entry><title type="html">[지피터스]Azure Open AI의 강력한 기능 활용하기</title><link href="http://localhost:4000/gpters/Azre-open-AI/" rel="alternate" type="text/html" title="[지피터스]Azure Open AI의 강력한 기능 활용하기" /><published>2023-08-15T12:45:29+09:00</published><updated>2023-08-15T12:45:29+09:00</updated><id>http://localhost:4000/gpters/Azre-open-AI</id><content type="html" xml:base="http://localhost:4000/gpters/Azre-open-AI/"><![CDATA[<p>지피터스(<a href="https://www.gpters.org/c/news/github-azure-open-ai">GPTers</a>)에서 흥미로웠던 글을 가져왔다.</p>
 
 <p><a href="https://github.com/microsoft/azurechatgpt#readme">깃허브 링크</a></p>
 
