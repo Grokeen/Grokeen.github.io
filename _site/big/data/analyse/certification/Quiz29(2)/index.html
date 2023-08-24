@@ -107,30 +107,65 @@
           <br>
           <!-- Fixme 마크다운이 css가 적용이 안되게 적용해야함 -->
           <div class="no-style-markdown">
-            <h3 id="-s3-03-3q-5-다음-중-시계열-분해-결과로-구해지지-않는-것은">❌ [S3-03] 3Q-5. 다음 중 시계열 분해 결과로 구해지지 않는 것은?</h3>
+            <h1 id="데일리-퀴즈-2일차-오답-정리">데일리 퀴즈 2일차 오답 정리</h1>
+<p>거의 대부분 찍듯이 풀어서 전체 오답했습니다.</p>
+
+<h3 id="-s3-03-3q-5-다음-중-시계열-분해-결과로-구해지지-않는-것은">❌ [S3-03] 3Q-5. 다음 중 시계열 분해 결과로 구해지지 않는 것은?</h3>
 <p><img src="/img/blogimg/BigData/DailyQuiz/29-2.png" style="height:500px" /></p>
 
 <ul>
   <li><input type="radio" name="S3033Q05" value="3" /> 관측치</li>
   <li><input type="radio" name="S3033Q05" value="4" /> 트랜드</li>
   <li><input type="radio" name="S3033Q05" value="5" /> 잔차</li>
-  <li><input type="radio" name="S3033Q05" value="6" /> 예측값
-정답 : 예측값
-    <h3 id="오답--시계열-분해결과로-관측치-추세트랜드-계절성-잔차를-확인할-수-있다">오답 : 시계열 분해결과로 관측치, 추세(트랜드), 계절성, 잔차를 확인할 수 있다.</h3>
-    <hr />
-    <h3 id="️-s3-03-3q-6-아래가-설명하는-a는-무엇에-대한-설명인가-a는-시계열의-시차-값lagged-values-사이의-선형관계를-나타냄">⭕️ [S3-03] 3Q-6. 아래가 설명하는 A는 무엇에 대한 설명인가? (A)는 시계열의 시차 값(lagged values) 사이의 선형관계를 나타냄</h3>
+  <li><input type="radio" name="S3033Q05" value="6" /> 예측값</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>정답 : 예측값
+</code></pre></div></div>
+
+<h3 id="오답--시계열-분해결과로-관측치-추세트랜드-계절성-잔차를-확인할-수-있다">오답 : 시계열 분해결과로 관측치, 추세(트랜드), 계절성, 잔차를 확인할 수 있다.</h3>
+<p>시계열 분해는 관측된 시계열 데이터를 여러 구성 요소로 나누는 과정입니다. 이러한 분해를 통해 시계열의 복잡한 패턴을 이해하고 분석할 수 있게 됩니다.</p>
+<ol>
+  <li>관측치 (Observed)
+ 정의: <strong>원래의 시계열 데이터</strong>입니다. <strong>측정된 값 그대로의 형태</strong>로, 분석하려는 실제 데이터를 나타냅니다.
+ 예시: 일별 판매량, 월별 기온 등</li>
+  <li>추세 (Trend)
+ 정의: 시계열 데이터의 장기적인 움직임을 나타냅니다. 추세는 데이터의 기울기나 방향을 나타내며, 시간에 따라 증가하거나 감소할 수 있습니다.(=일정하지는 않다.) 
+ 분석 방법: “ <strong>이동 평균이</strong> “나 “ <strong>다항식 회귀</strong> “와 같은 방법을 사용하여 추세 성분을 추정할 수 있습니다.
+ 예시: 경제 성장, 인구 증가 등의 장기 추세</li>
+  <li>계절성 (Seasonality)
+ 정의: 시계열 데이터에서 반복되는 주기적인 패턴을 나타냅니다. 계절성은 일, 월, 년 등 특정 주기에서 나타날 수 있으며, 일반적으로 한 주기 내에서 동일한 패턴이 반복됩니다.
+ 분석 방법: 계절성 성분은 주기적인 변동을 나타내는 신호를 사용하여 추정할 수 있습니다.
+ 예시: 주말에 판매량이 증가하는 경우, 여름에 전력 사용량이 증가하는 경우 등</li>
+  <li>잔차 (Residual)
+ 정의: <strong>추세와 계절성을 제거한 후 남은 노이즈나 불규칙한 변동을 나타냅니다.</strong> 잔차는 분석할 수 있는 패턴이 없는 무작위 변동일 수 있습니다.
+ 분석 방법: 원래의 관측치에서 추세와 계절성 성분을 빼면 잔차를 얻을 수 있습니다.
+ 예시: 불규칙한 공급 차질, 예기치 않은 이벤트 등
+    <h4 id="분해-방법">분해 방법</h4>
+    <p>시계열 분해는 고전적인 분해, STL(Seasonal-Trend decomposition using LOESS), X-13ARIMA-SEATS 등 다양한 방법으로 수행될 수 있습니다. 분해 방법의 선택은 시계열의 특성과 분석 목적에 따라 달라집니다.</p>
   </li>
+</ol>
+
+<p>시계열 분해를 통해 데이터의 구조와 패턴을 이해하고, 예측, 모니터링, 제어 등의 작업을 수행하는 데 도움이 됩니다.</p>
+
+<hr />
+<h3 id="️-s3-03-3q-6-아래가-설명하는-a는-무엇에-대한-설명인가-a는-시계열의-시차-값lagged-values-사이의-선형관계를-나타냄">⭕️ [S3-03] 3Q-6. 아래가 설명하는 A는 무엇에 대한 설명인가? (A)는 시계열의 시차 값(lagged values) 사이의 선형관계를 나타냄.</h3>
+<ul>
   <li><input type="radio" name="S3033Q06" value="1" /> 자기상관</li>
   <li><input type="radio" name="S3033Q06" value="2" /> 지수평활법</li>
   <li><input type="radio" name="S3033Q06" value="3" /> 이동평균법</li>
-  <li><input type="radio" name="S3033Q06" value="4" /> 백색잡음
-정답 : 자기상관
-    <h3 id="오답----자기상관--시계열의-시차값-사이의-상관관계선형관계를-나타냄">오답 : - 자기상관 : 시계열의 시차값 사이의 상관관계(선형)관계를 나타냄</h3>
-  </li>
-  <li>부분자기상관 : 시차가 다른 두 시계열 데이터 간의 상관관계를 나타냄</li>
-  <li>이동평균, 지수평활 : 시계열의 요인 중 계절성과 불규칙요인을 제거하고, 추세와 주기에 대한 것을 측정하는 방법</li>
-  <li>백색잡음 : 시계열 자료 중 자기상관이 전혀 없는 특별한 경우, 현재 값이 미래 예측에 도움이 되지 못함, 회귀분석의 오차항과 비슷한 개념</li>
+  <li><input type="radio" name="S3033Q06" value="4" /> 백색잡음</li>
 </ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>정답 : 자기상관
+</code></pre></div></div>
+<h3 id="오답--시계열-분석에서-자주-사용되는-중요한-개념">오답 : 시계열 분석에서 자주 사용되는 중요한 개념</h3>
+<p>| 단어 | 개념 | 
+|:—–:|:—–:|
+| 자기상관(AR) | 시계열의 <strong>특정 시차값과 일정 시차 만큼 떨어진 사이의 상관관계(선형)관계</strong>를 나타냄 | 
+| 부분자기상관 | 시차가 다른 두 시계열 데이터 간의 상관관계를 나타냄 | 
+| 이동평균(MA), 지수평활 | 시계열의 요인 중, 계절성과 불규칙 요인을 제거하고, 추세와 주기에 대한 것을 측정하는 방법 | 
+| 백색잡음 | <strong>시계열 자료 중 자기상관이 전혀 없는 특별한 경우</strong>, 현재 값이 미래 <strong>예측에 도움이 되지 못함</strong>, 회귀분석의 오차항과 비슷한 개념 |</p>
 
 <hr />
 
@@ -139,12 +174,11 @@
   <li><input type="radio" name="S3033Q07" value="1" /> 지역별 특산물 데이터</li>
   <li><input type="radio" name="S3033Q07" value="2" /> 연령별 질병 데이터</li>
   <li><input type="radio" name="S3033Q07" value="3" /> 일별 기온 변화 데이터</li>
-  <li><input type="radio" name="S3033Q07" value="4" /> 직군별 임금 데이터
-정답 : 일별 기온 변화 데이터
-    <h3 id="오답--시계열-분석은-시간에-따른-변화를-확인할-수-있는-데이터를-대상으로-분석하는-방법이다">오답 : 시계열 분석은 시간에 따른 변화를 확인할 수 있는 데이터를 대상으로 분석하는 방법이다</h3>
-    <p>일별이라고 했으므로 시간에 따른 변화를 기록해 놓은 데이터로 시계열 분석에 적합한 데이터이다</p>
-  </li>
+  <li><input type="radio" name="S3033Q07" value="4" /> 직군별 임금 데이터</li>
 </ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>정답 : 일별 기온 변화 데이터
+</code></pre></div></div>
 
 <hr />
 
@@ -156,12 +190,50 @@
   <li><input type="radio" name="S3033Q08" value="4" /> 백색 잡음은 서로 독립적이지 않다.</li>
 </ul>
 
-<p>정답 : 백색 잡음은 서로 독립적이지 않다.</p>
-<h3 id="오답-">오답 :</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>정답 : 백색 잡음은 서로 독립적이지 않다.
+</code></pre></div></div>
+
+<h3 id="오답--시계열-모형">오답 : 시계열 모형</h3>
+<p>정상성을 보이는 시계열은 추세나 계절성이 없다.
+    정상성은 시계열 데이터의 통계적 특성이 시간에 따라 일정하다는 것을 의미하며 정상성을 보이는 시계열은 <strong>평균, 분산, 공분산</strong>이 일정한 특성을 갖는다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">단어</th>
+      <th style="text-align: center">개념</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">평균</td>
+      <td style="text-align: center">시계열의 평균이 시간에 따라 일정해야 합니다. 즉, <strong>추세(trend)가 없어야 합니다.</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">분산</td>
+      <td style="text-align: center">시계열의 분산이 시간에 따라 일정해야 합니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">공분산</td>
+      <td style="text-align: center">시계열의 두 시점 간의 공분산이 해당 <strong>시점 간의 시차에만 의존</strong>하며, <strong>절대 시간에 의존하지 않아야 합니다.</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>정상성은 많은 시계열 모델이 필요로 하는 가정 중 하나이며, 정상성을 보이지 않는 시계열은 일반적으로 추세나 계절성 등의 비정상성 요소를 제거한 후 모델링해야 합니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1) 추세는 시계열 데이터의 장기 패턴을 나타냅니다. 
+데이터가 시간에 따라 선형적으로 증가하거나 감소하는 경향이 있다면, 추세가 있는 것으로 간주합니다.
+정상성을 보이는 시계열에는 추세가 없어야 합니다.
+
+2) 계절성은 시계열 데이터에서 일정한 주기로 반복되는 패턴을 의미합니다. 
+예를 들어, 매년 같은 계절에 일어나는 온도 변화와 같은 것이 있습니다. 
+정상성을 보이는 시계열에는 계절성이 없어야 합니다.
+</code></pre></div></div>
+
 <ul>
   <li>AR 모형 : 현 시점의 자료를 p 시점 전의 유한 개의 자기 자신의 과거 값을 사용하여 설명</li>
   <li>MA 모형 : 과거 q 시점 이전 오차들에서 현재항의 상태를 추론함</li>
-  <li>정상성을 보이는 시계열은 추세, 계절성, 주기의 성분이 포함되어 있지 않음</li>
   <li>백색 잡음은 서로 자기 상관이 전혀 없는 특별한 경우로 서로 독립적임</li>
 </ul>
 

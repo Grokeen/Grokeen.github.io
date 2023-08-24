@@ -1,6 +1,6 @@
 ---
 layout: content
-title:  "[지피터스]Azure Open AI의 강력한 기능 활용하기"
+title:  "[지피터스] Azure Open AI의 강력한 기능 활용하기"
 date:   2023-08-15 12:45:29 +0900
 categories: GPTers
 pin: true

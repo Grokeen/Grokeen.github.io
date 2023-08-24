@@ -1,6 +1,6 @@
 ---
 layout: content
-title:  "[지피터스]ChatGPT를 활용한 Google SEO 글쓰기 활용 사례 및 경험 공유"
+title:  "[지피터스] ChatGPT를 활용한 Google SEO 글쓰기 활용 사례 및 경험 공유"
 date:   2023-08-17 12:45:29 +0900
 categories: GPTers
 pin: true

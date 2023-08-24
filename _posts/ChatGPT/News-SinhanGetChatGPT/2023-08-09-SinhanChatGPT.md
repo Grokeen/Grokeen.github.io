@@ -1,6 +1,6 @@
 ---
 layout: content
-title:  "[뉴스]신한 챗GPT 연내 출시… 업무·학습 데이터 활용"
+title:  "[뉴스] 신한 챗GPT 연내 출시… 업무·학습 데이터 활용"
 date:   2023-08-17 12:45:29 +0900
 categories: News
 pin: true

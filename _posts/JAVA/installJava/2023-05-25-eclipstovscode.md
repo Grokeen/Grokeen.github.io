@@ -1,6 +1,6 @@
 ---
 layout: content
-title:  "Java(2)"
+title:  "[Java] Window Eclips에서 M1 Mac VS code로 Spring 프로젝트 옮기기"
 date:   2023-05-25 12:45:29 +0900
 categories: Java
 pin: true
@@ -8,7 +8,7 @@ pin: true
 
 
 
-윈도우 이클립스에 스프링 프로젝트 옮기기 2. DB를 옮겨보자.
+두 번째, DB를 옮겨보자.
 ================
 Mac에서 Oracle 데이터베이스를 설치하고 설정하는 방법은 다음과 같습니다:
 

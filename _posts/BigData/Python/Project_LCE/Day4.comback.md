@@ -1,0 +1,46 @@
+
+Day4 맥북에 환경변수 설정
+===
+
+
+Spring에 시달리다가 이제야 돌아왔다. 아마 3달 정도 걸렸을 것이다.
+현재 8월 중순이다.
+
+# open ai key 발급 및
+open ai api 키를 적용하기 위해 .gitignore 만들고 github에 백업이 안되게 설정했다.
+[Open AI](https://platform.openai.com/docs/api-reference)에 들어가서 키를 발급 받고 코드도 일정 부분 확인했다.
+
+# Django 명령어 오류
+장고를 사용하려는데 찾을 수 없다는 오류가 나왔다. 아마도 환경변수를 설정 안해서 그런가 보다.
+```
+python3 -c "import django; print(django.__path__)"
+```
+나오는데로 들어가 보니 보통 bin 디렉토리를 잡아주는데 여기에는 안 보인다.
+
+|     Column1     |     Column2     |    Column3    |     Column4     |     Column5     |     Column6     |     
+|:---------------:|:---------------:|:-------------:|:---------------:|:---------------:|:---------------:|
+|  \_\_init\_\_.py  |      conf       |      db       |      http       |    template     |      urls       |                 |
+|  \_\_main\_\_.py  |     contrib     |   dispatch    |   middleware    |  templatetags   |      utils      |                 |
+|      apps       |      core       |     forms     |  shortcuts.py   |      test       |     views       |                 |
+
+
+# 흠, 일단 맥북 환경변수 설정을 해줘야 한다.
+
+```
+nano ~/.zshrc
+```
+직전에 생각해보니 장고를 보통 환경변수에 등록하진 않을 거 같고. 파이썬은 환경변수가 되어 있었나? 그런 생각이 들었다. 확인해보니 파이썬은 안 보이고, 아나콘다가 환경변수에 등록 되어있었다. conda를 사용해야 하나 하는 의문이 들었다. 내가 기억하는 아나콘다의 단점은 최신성이었다. 그래서 파이썬을 계속 사용하기로 했다.
+
+
+라이브러리가 설치가 안됐나? 확인해봤다. 4.2.1 버전을 확인했다.
+```
+pip3 freeze
+
+```
+
+# 찾았다 가상 환경 설정을 안했다.
+```
+python3 -m venv myenv     # 가상 환경 생성
+source myenv/bin/activate    # 가상 환경 활성화 (Windows에서는 'myenv\Scripts\activate'를 사용)
+
+```
