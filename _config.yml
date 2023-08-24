@@ -17,11 +17,11 @@
 
 # Site Setting
 locale                   : "ko-KR"
-title                    : ""
-title_separator          : "-"
+title                    : 
+title_separator          : 
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : ""
-description              : ""
+name                     : "스케치용녹색물감"
+description              : "I want to change my life"
 #(12년 12월 26일 변경)
 url                      : "https://Grokeen.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
