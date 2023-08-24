@@ -95,7 +95,7 @@
         <header class="article-info clearfix">
           <h1 itemprop="name">
 
-            <a href="#" title="NAS" itemprop="url">NAS</a>
+            <a href="#" title="[Raspberry Pi] NAS, 나만의 클라우드 만들기" itemprop="url">[Raspberry Pi] NAS, 나만의 클라우드 만들기</a>
           </h1>
           <p class="article-time">
             <time datetime="2023-05-22 12:45:29 +0900" itemprop="datePublished">May 22, 2023</time>
@@ -107,26 +107,37 @@
           <br>
           <!-- Fixme 마크다운이 css가 적용이 안되게 적용해야함 -->
           <div class="no-style-markdown">
-            <ul>
-  <li>알리에서 16만원 정도에 EON을 구매했다.
-<img src="/img/blogimg/RaspberryPi/NAS/N1-1.jpeg" style="height:500px" /></li>
-</ul>
-
-<p>EON 조립 중, 라즈베리파이는 전원이 들어오지만 EON의 전원이 켜지지 않는다.</p>
-<iframe width="560" height="315" src="https://youtube.com/shorts/zcJkP_KT2-g?feature=share" frameborder="0" allowfullscreen=""></iframe>
-
-<p>베터리를 넣어야 하는 곳을 발견했다.
-<img src="/img/blogimg/NAS/N1-2.jpeg" style="height:500px" /></p>
-
-<p>사진과 영상은 여기까지다… 그 이후는 집중하느라 찍지 않았다.</p>
-
-<p><img src="/img/blogimg/NAS/N1-3.jpeg" style="height:500px" /></p>
+            <h1 id="시작은-알리에서-16만원-정도에-eon을-구매하면서였댜">시작은 알리에서 16만원 정도에 EON을 구매하면서였댜.</h1>
+<p><img src="/img/blogimg/RaspberryPi/NAS/N1-1.jpeg" style="height:500px" /></p>
 
 <ul>
-  <li>7월 현재는 외부에서 사용할 수 있도록 포트포워딩 중 포트를 잃었다…. 인터넷에 검색해보니 다시 하는 방법을 추천하더라, 그냥 집에서 내부 IP로 연결했던 맥북이나 다른 컴퓨터들은 여전히 사용할 수 있었다.</li>
+  <li>회사를 다닐 때, 사람들이 알리를 많이 사용하는 것을 알게됐다. 아이폰에 알리를 처음 다운로드 하고, 찾아봤던 것이 라즈베리파이 키트들이었다.
+구매는 상당히 오래전에 했지만, 사용하지 않았다. 가격이 부담스러웠다. 찾는 사람도 없이 지내는 와중에 그러다 문득 사용해도 될 거 같다는 생각이 들었다.
+집 데스크탑에는 6TB 하드디스크가 있었다. 그걸 NAS로 사용해서 맥북이나 XPS에서도 사용할 수 있게 만들면 좋겠다 생각했다.</li>
 </ul>
 
-<p>그래서 어쩔 수 없이 가정용으로 사용하는 중이다.</p>
+<h1 id="eon-조립-중-라즈베리파이는-전원이-들어오지만-eon의-전원이-켜지지-않는다">EON 조립 중, 라즈베리파이는 전원이 들어오지만 EON의 전원이 켜지지 않는다.</h1>
+<iframe width="560" height="315" src="https://youtube.com/shorts/zcJkP_KT2-g?feature=share" frameborder="0" allowfullscreen=""></iframe>
+
+<ul>
+  <li>테스트 삼아 가벼운 128G SSD를 사용해서 전원을 키려고 시도했다. ??? 전원이 켜지지 않는다. 라즈베리파이는 전원이 들어오는 반면 전반적으로 안된다. 위 영상처럼 계속 돌려가면서 찾았지만 보이지 않는다.</li>
+</ul>
+
+<h1 id="베터리를-넣어야-하는-곳을-발견했다">베터리를 넣어야 하는 곳을 발견했다.</h1>
+<p><img src="/img/blogimg/RaspberryPi/NAS/N1-2.jpeg" style="height:500px" /></p>
+
+<ul>
+  <li>베터리를 넣는 곳을 찾았다. 집에 있는 여러가지 고장난 애들을 분해해서 베터리를 찾았지만 맞지 않아 다음 날 다이소에가서 종류별로 사왔다. 결국 맞는 걸 찾아서 넣어주니 전원이 들어온다. 개인적으로 베터리를 넣어주는 이유는 전원이 꺼져도 소량의 베터리로 미처 저장하지 못한 데이터를 저장하는 걸로 알고 있는데 전원이랑은 무슨 상관인지 잘 모르겠다.<br />
+사진과 영상은 여기까지다… 그 이후는 집중하느라 찍지 않았다.</li>
+</ul>
+
+<h1 id="tapo-스마트-콘센트">Tapo 스마트 콘센트</h1>
+<p><img src="/img/blogimg/RaspberryPi/NAS/N1-3.jpeg" style="height:500px" /></p>
+
+<ul>
+  <li>7월 현재는 외부에서 사용할 수 있도록 DNS 섭정 중 포트를 잃었다…. DNS 설정이 잘 안돼 포트포워딩을 한 상태로 NAS의 포트를 변경했다. 그러나 기존 포트에 접속이 안될 뿐만 아니라 변경한 포트는 겹치는 모양이다. 인터넷에 검색해보니 처음부터 다시 하는 방법을 추천하더라, 전에 집에서 내부 IP로 연결했던 맥북이나 다른 컴퓨터들은 여전히 사용할 수 있었다. 휴… 그래서 어쩔 수 없이 가정용으로 사용하는 중이다.</li>
+</ul>
+
 
           </div>
           
@@ -136,7 +147,7 @@
         <!-- 블로그 하단 -->
         <footer class="article-footer clearfix">
           <div class="article-share" id="share">
-            <div data-url="http://localhost:4000/raspberrypi/NAS/" data-title="NAS | 스케치용녹색물감"
+            <div data-url="http://localhost:4000/raspberrypi/NAS/" data-title="[Raspberry Pi] NAS, 나만의 클라우드 만들기 | 스케치용녹색물감"
               data-tsina="null" class="share clearfix">
             </div>
           </div>
@@ -195,29 +206,29 @@
                 <p class="asidetitle">Categories<sup>⚽️</sup></p>
                 <ul>
                     
-                        <li><a href="/categories/jekyll"title="jekyll">jekyll<sup>1</sup></a></li>
+                        <li><a href="/categories/boost"title="Boost">Boost<sup>1</sup></a></li>
                     
-                        <li><a href="/categories/update"title="update">update<sup>1</sup></a></li>
+                        <li><a href="/categories/course"title="Course">Course<sup>1</sup></a></li>
                     
                         <li><a href="/categories/github"title="Github">Github<sup>1</sup></a></li>
                     
                         <li><a href="/categories/resume"title="resume">resume<sup>1</sup></a></li>
                     
-                        <li><a href="/categories/markdown"title="markdown">markdown<sup>1</sup></a></li>
-                    
-                        <li><a href="/categories/github"title="github">github<sup>1</sup></a></li>
-                    
                         <li><a href="/categories/certification"title="Certification">Certification<sup>1</sup></a></li>
                     
                         <li><a href="/categories/raspberrypi"title="RaspberryPi">RaspberryPi<sup>1</sup></a></li>
                     
-                        <li><a href="/categories/raspberrypi"title="RaspberryPI">RaspberryPI<sup>1</sup></a></li>
+                        <li><a href="/categories/markdown"title="Markdown">Markdown<sup>1</sup></a></li>
                     
                         <li><a href="/categories/java"title="Java">Java<sup>1</sup></a></li>
                     
                         <li><a href="/categories/tableau"title="Tableau">Tableau<sup>1</sup></a></li>
                     
                         <li><a href="/categories/certification"title="certification">certification<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/nlp"title="NLP">NLP<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/news"title="News">News<sup>1</sup></a></li>
                     
                         <li><a href="/categories/gpters"title="GPTers">GPTers<sup>1</sup></a></li>
                     
@@ -226,8 +237,6 @@
                         <li><a href="/categories/data"title="Data">Data<sup>1</sup></a></li>
                     
                         <li><a href="/categories/analyse"title="Analyse">Analyse<sup>1</sup></a></li>
-                    
-                        <li><a href="/categories/news"title="News">News<sup>1</sup></a></li>
                     
                         <li><a href="/categories/shortcuts"title="Shortcuts">Shortcuts<sup>1</sup></a></li>
                     
