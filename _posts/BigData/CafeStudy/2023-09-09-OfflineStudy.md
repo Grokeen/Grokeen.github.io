@@ -12,22 +12,35 @@
 
 
 
-2단원
-[바이너리 인코딩과 원핫 인코딩 차이 참고](https://jjeongil.tistory.com/583)
+## 2단원
+- [바이너리 인코딩과 원핫 인코딩 차이 참고](https://jjeongil.tistory.com/583)
+- [맨하튼 거리와 유클리드 거리 차이 참고](https://ko.wikipedia.org/wiki/맨해튼_거리)
 
-3단원
-[질적자료와 양적자료 참고](https://kiyoo.tistory.com/584}
-[범주형과 수치형 참고](https://horae.tistory.com/entry/범주형수치형이상형연속형명목형순서형-정리)
+## 3단원
+- [질적자료와 양적자료 참고](https://kiyoo.tistory.com/584}
+- [범주형과 수치형 참고](https://horae.tistory.com/entry/범주형수치형이상형연속형명목형순서형-정리)
+- [오토인코더 개념 참고](https://velog.io/@cha-suyeon/오토인코더Autoencoder)
+- [마할라노비스 거리 개념 참고](https://angeloyeo.github.io/2022/09/28/Mahalanobis_distance.html)
+- [민코프스키 거리 개념 참고](https://velog.io/@poiu8944/머신러닝Distance-Metric-Types)
+
+## 4단원
+- [히스토그램 개념 참고](https://ko.wikipedia.org/wiki/히스토그램)
+- [트리맵 개념 참고](https://www.tibco.com/ko/reference-center/what-is-a-treemap-chart)
+
+비교 시각화 모델
+- [레이더 차트 참고](https://www.tibco.com/ko/reference-center/what-is-a-radar-chart)
+- [체르노프페이스 참고](https://rfriend.tistory.com/170)
+- [평행좌표계 참고](https://wikidocs.net/166188)
+
+
 
 9월 10일까지 서평 작성을 해야한다고 했다.
-확실히 
+
+- 최**님 알려주신 내용
+    [이기적 기출 풀이 영상](https://license.youngjin.com/free_edu/free_edu_mp4.asp?elc_cd=2573&cate_cd=2448)
 
 
-
-# 서평 작성(9월 11일)
-서평 제출 기간을 초과 한 거 같은데 늦게 작성해서 죄송합니다.
-
-​
+# 서평 작성(9월 11일)​
 
 2022 수제비 빅분기 필기 책을 가지고 있는데, 이기적 저자 분들이 독자에게 얼마나 많은 내용을 전달하고 싶으셨는지, 이런 점에서 한국인의 정 마저 느껴졌던 거 같아요. 수제비 책에 비해 더 두껍고, 보다 깊게 자세한 내용을 다룹니다. 또 맨 앞 쪽에 Big 6? 거기 보면, 별 자료를 다 줍니다. 정보처리기사 때도 느꼈지만, 이기적이 자료를 무료로 참 많이 제공을 해주는 구나를 느꼈던 거 같아요.
 
