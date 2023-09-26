@@ -23,6 +23,7 @@ pin: false
 - [빅데이터 분석기획 참고](https://roi-data.com/entry/빅데이터분석기사빅분기-필기-요약-I-빅데이터-분석-기획-1-빅데이터의-이해-②)
 
 # 2단원
+- [주성분 분석 참고](https://ddongwon.tistory.com/114)
 - [계통추출법 참고](https://specialscene.tistory.com/77)
 - [F-통계/분산분석 참고](https://blog.minitab.com/ko/adventures-in-statistics-2/understanding-analysis-of-variance-anova-and-the-f-test)
 - [베이즈 공식 참고](https://velog.io/@aischool/bayezrule)
@@ -32,13 +33,23 @@ pin: false
 - [다차원 척도법 참고](https://asthtls.tistory.com/500)
 - [R 다차원척도법 Im() 참고](https://dbrang.tistory.com/1102)
 - [R 이상치 판별 참고](https://ceo-ming.tistory.com/51)
+- [오즈비 참고](http://333yyy333.com/bbs/board.php?bo_table=m41&wr_id=1465)
 
 # 3단원
 - [ROC/오분류표 참고](https://m.blog.naver.com/PostView.naver?blogId=sharp_kiss&logNo=221599009671&targetKeyword=&targetRecommendationCode=1)
 - [SVM 커널트릭 참고](https://sikmulation.tistory.com/13)
 - [의사결정나무 참고](https://rsas.tistory.com/288)
-- [IQR/Box Plot 참고]()
+- [IQR/Box Plot 계산식 참고](https://ko.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/box-whisker-plots/a/identifying-outliers-iqr-rule)
+- [자기조직화지도(SOM) 참고](https://ratsgo.github.io/machine%20learning/2017/05/01/SOM/)
+- [k-means,DBCSAN 참고](https://yganalyst.github.io/ml/ML_clustering/)
+- [거리측도(유클리드,멘하탄) 참고](https://syj9700.tistory.com/8)
+- [유전 알고리즘 참고](https://untitledtblog.tistory.com/110)
 
 # 4단원
 - [레이더차트 참고](https://www.tibco.com/ko/reference-center/what-is-a-radar-chart)
+- [오버피팅 참고](https://sy-log.tistory.com/50)
+- [버블플롯맵 참고](https://swrush.tistory.com/570)
+- [버블차트 참고](https://newsjel.ly/archives/contents/587)
+
+
 
