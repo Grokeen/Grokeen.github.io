@@ -1,0 +1,645 @@
+<!-- 포스트 내용 인덱스 -->
+
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+
+<head>
+  <script src="/js/jquery-2.1.0.min.js"></script>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header>
+    <!DOCTYPE HTML>
+<html lang="ko-KR">
+<!-- 헤더 -->
+
+<head>
+	<meta charset="UTF-8">
+	<title>스케치용녹색물감</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+	<meta name="author" content="Grokeen">
+	<meta name="description" content="new start">
+
+	<link rel="icon" href="/favicon.ico">
+	<!-- 20230824 운영에서 오류나던 부분 img 디렉토리에서 변경 -->
+	<link rel="apple-touch-icon" href="/pacman.jpg">
+	<link rel="apple-touch-icon-precomposed" href="/pacman.jpg">
+
+	<link rel="stylesheet" href="/css/style.css" type="text/css">
+	<script src="/js/jquery-2.1.0.min.js"></script>
+
+	<!-- 20230821 깃허브 빌드 중 보안 CSP가 걸려서 작성 -->
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://example.com;">
+
+</head>
+
+
+<body>
+
+	<!-- 본문 시작 -->
+	<div>
+		<!-- 로고 사진 -->
+		<div id="imglogo">
+			<a href="/">
+				<img src="/img/logo.svg" alt="Grokeen" title="Grokeen" />
+			</a>
+		</div>
+
+		<!-- 이름/상태 메세지 -->
+		<div id="textlogo">
+			<h1 class="site-name"><a href="/" title="Grokeen">Grokeen</a></h1>
+			<h2 class="blog-motto">슈렉도 헐크처럼</h2>
+		</div>
+
+
+		<div class="navbar">
+			<a class="navbutton navmobile" href="#" title="나도몰라2">
+			</a>
+		</div>
+
+		<!-- 상단 카테로그 -->
+		<nav class="animated">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<!-- <li><a href="tag_EX.html">Post</a></li> -->
+				<li>
+
+					<!-- 검색 폼 -->
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20"
+							placeholder="search" />
+						<input type="hidden" name="q" value="site:weibo.com/u/1839008305">
+					</form>
+
+				</li>
+			</ul>
+		</nav>
+
+		<!-- 본문 끝 -->
+	</div>
+
+</body>
+
+</html>
+  </header>
+
+
+
+  <!-- 본문 시작 -->
+  <div id="container">
+    <!-- 게시물 내용 시작 -->
+    <div id="main" class="post" itemscope itemprop="blogPost">
+      <article itemprop="articleBody">
+        <!-- 블로그 제목 -->
+        <header class="article-info clearfix">
+          <h1 itemprop="name">
+
+            <a href="#" title="[빅데이터분석기사][D-84] 네이버 데이터포럼카페 오프라인 스터디" itemprop="url">[빅데이터분석기사][D-84] 네이버 데이터포럼카페 오프라인 스터디</a>
+          </h1>
+          <p class="article-time">
+            <time datetime="2023-09-09 12:45:29 +0900" itemprop="datePublished">September 09, 2023</time>
+          </p>
+        </header>
+
+        <!-- 블로그 내용 -->
+        <figure class="highlight bash">
+          <br>
+          <!-- Fixme 마크다운이 css가 적용이 안되게 적용해야함 -->
+          <div class="no-style-markdown">
+            <p>9월 6일에 온라인 스터디는 SQLD 시험 보는 분이나 다른 사정으로 인해 바쁜 분들이 있어 점프하게 되었다.</p>
+
+<p>13시 부터 두 시간 동안 강남311이라는 곳에서 진행하였다.
+이번에는 다른 분이 오셨는데, 이번 스터디를 참관하셨다. SQLD를 보고 오는 사람도 있었고 일하느라, 학교 다니느라 나와 다른 한 분 제외하고 다 못한 분들이 있었다.</p>
+
+<p>스터디에서는 거의 오류 문제 찾기로 진행한 것 같다.
+전 날에 친구와 패션 위크 갔다가 몸살이 심하게 와서 간신히 버텼다.</p>
+
+<h2 id="1단원">1단원</h2>
+<ul>
+  <li><a href="https://blog.naver.com/PostView.naver?blogId=gkenq&amp;logNo=10188552802">군집분석 예시 참고</a></li>
+  <li><a href="http://www.incodom.kr/hadoop_총정리_2편">하둡 개념 총정리 참고</a></li>
+  <li><a href="https://warm-uk.tistory.com/62">Pig 개념 참고</a></li>
+  <li><a href="">GDPR, 개이정보보호법 참고</a></li>
+  <li><a href="https://newstellar.tistory.com/30">카산드라 개념 참고</a></li>
+</ul>
+
+<h3 id="용어-개념-정리">용어 개념 정리</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">단어</th>
+      <th style="text-align: center">개념</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Oozie(우지)</td>
+      <td style="text-align: center"><strong>하둡의 워크플로우를 관리</strong>한다. 일정한 시간이 경과하거나 또는 <strong>주기적으로 반복해서 실행될 수 있는 “잡”들에 대하여 관리</strong>하며, 맵리듀스 잡, 피그 잡 등의 시작과 완료 그리고 실행 중 에러등의 이벤트를 콜 백할 수 있다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Avro(에이브로)</td>
+      <td style="text-align: center">데이터 직렬화 프레임워크이다. 가장 큰 특징은 ‘특정 언어에 종속되지 않는다’ 이다. 다양한 언어(C, 자바, 펄, 파이썬, 루비 등)로 데이터를 쉽게 공유할 수 있는 것이다. 따라서 어떤 언어가 사라진다 하더라도 에이브로를 통한 데이터 직렬화가 가능하다. 스키마를 보통 JSON으로 작성하며 바이너리 형태로 인코딩한다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Parquet(파케이)</td>
+      <td style="text-align: center">컬럼 기준으로 데이터를 저장하는 포맷이다. 컬럼 단위의 중첩된 데이터 저장은 효율적으로 저장공간을 절약한다. 또한, 특정 열 값을 가져오는 쿼리가 전체 행을 읽을 필요가 없기 때문에 성능이 좋은 프레임워크이다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Flume(플룸)</td>
+      <td style="text-align: center">플룸은 <strong>수집 기능을 담당</strong>하는 프레임워크이다. <strong>웹서버에서 로그 파일</strong>을 수집하고 로그 이벤트를 저장소로 전달한다. 플룸 에이전트는 소스, 채널, 싱크로 구성된다. 소스는 이벤트를 수집하여 채널로 전달하고, 채널은 소스와 싱크의 통로이다. USB 케이블의 입력 단자, 케이블, 출력 단자를 생각하면 이해가 쉽다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Sqoop(스쿱)</td>
+      <td style="text-align: center">스쿱은 플룸과 같이 <strong>수집 기능을 담당</strong>하는 프레임워크이다. 하지만 스쿱은 <strong>관계형 데이터베이스 관리시스템(RDBMS)</strong>과 같은 정형적인 데이터 저장소에서 데이터를 추출하도록 도와준다. <strong>관계형 데이터베이스의 데이터를 HBase로 옮기는 데 사용</strong>하는 것이 대표적이다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Pig(피그)</td>
+      <td style="text-align: center"><strong>하둡 시스템의 맵리듀스 API를 단순화시킨 프레임워크</strong>이다. 사용하는 이유는 대용량 데이터를 처리할 때 맵리듀스 함수가 처리하기 어려운 조인 기능 등으로 쉽게 처리할 수 있다. 피그 라틴언어를 사용하는데 이를 통해 데이터 흐름을 표현할 수 있다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Crunch(크런치)</td>
+      <td style="text-align: center">맵리듀스 파이프라인을 작성하는 API이다. Work Flow 상 개별 맵리듀스 Job을 직접 관리할 필요가 없기 때문에 여러 단계의 파이프라인에만 개발자가 집중할 수 있도록 해준다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">HBase</td>
+      <td style="text-align: center"><strong>분산형 파일 시스템을 사용하는 컬럼기반 데이터베이스</strong>이다. <strong>실시간</strong>으로 랜덤에이터 조회 및 수정이 가능하며 <strong>비동기적으로 데이터를 수정</strong>할 수 있다. RDBMS의 비확장성 비분산 등의 단점을 완벽히 커버한다. 단지 <strong>노드만 추가하면 선형으로 확장</strong>할 수 있다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Hive(하이브)</td>
+      <td style="text-align: center">하이브는 <strong>자바 프로그래밍을 모르는 사용자도 빅데이터를 분석하고 처리할 수 있도록 도와주는 프레임워크</strong>이다. HiveQL이라는 자체 쿼리를 제공한다. HiveQL은 실핼 될 때 맵리듀스의 Job으로 변환되어 실행된다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Impala</td>
+      <td style="text-align: center">하이브와 같이 <strong>SQL 질의 시스템</strong>이다. 다만 맵리듀스를 사용하지 않고 자체 개발한 엔진을 사용한다. 쿼리는 HiveQL을 사용하고 Hbase와도 연동된다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Tajo</td>
+      <td style="text-align: center"><strong>하둡 기반의 DW시스템</strong>이다. 하둡 분산파일 시스템(HDFS)에 저장된 빅데이터를 <strong>ETL 작업이 가능</strong>한 시스템이며, Hive보다 2~3배 정도 빠르고 임팔라와는 비슷한 속도를 가진다. 특정한 솔루션에 종속되지 않는 장점이 있다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Cassandra(카산드라)</td>
+      <td style="text-align: center">HBase와 비슷하게 Java 등의 언어로 작성하며 Column 형태로 저장한다는 방식도 같습니다. 다만 Consistency &amp; Partial Tolerance를 허용하는 HBase와 다르게 Availability, 즉 가용성을 위주로 확장성을 유지한 채 데이터를 핸들링한다는 점이 차이점입니다.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="기출-5회-1번-wbs">기출 5회 1번 WBS</h4>
+<p>WBS는 “Work Breakdown Structure”의 약자로, <strong>프로젝트를 관리하고 계획할 때 사용되는 도구</strong> 중 하나입니다. WBS는 <strong>큰 프로젝트나 작업을 더 작고 관리 가능한 부분으로 나누는 과정을 도와줍니다</strong>. 이 구조는 일반적으로 <strong>계층적 트리 구조</strong>로 표시되며, 최상위 레벨에서는 전체 프로젝트를 나타내고 하위 레벨에서는 개별 작업, 작업 패키지, 그리고 그에 따른 하위 작업으로 세분화됩니다.</p>
+
+<p>데이터 분석기획의 경우, WBS는 다음과 같은 형태로 구성될 수 있습니다:</p>
+
+<ol>
+  <li>프로젝트 정의 및 목표 설정
+ 비즈니스 문제 이해
+ 분석 목표 설정</li>
+  <li>데이터 수집
+ 데이터 소스 식별
+ 데이터 수집 방법 설정</li>
+  <li>데이터 전처리
+ 결측치 처리
+ 데이터 변환</li>
+  <li>데이터 분석
+ 통계 분석
+ 머신러닝 모델링</li>
+  <li>결과 해석 및 보고
+ 결과 요약
+ 비즈니스 인사이트 도출</li>
+  <li>프로젝트 평가 및 마무리</li>
+</ol>
+
+<p>WBS를 통해 각 단계에서 필요한 작업을 명확히 할 수 있으며, 시간, 비용, 리소스를 효과적으로 할당할 수 있습니다.</p>
+
+<h2 id="2단원">2단원</h2>
+<ul>
+  <li><a href="https://jjeongil.tistory.com/583">바이너리 인코딩과 원핫 인코딩 차이 참고</a></li>
+  <li><a href="https://ko.wikipedia.org/wiki/맨해튼_거리">맨하튼 거리와 유클리드 거리 차이 참고</a></li>
+</ul>
+
+<h2 id="3단원">3단원</h2>
+<ul>
+  <li><a href="https://horae.tistory.com/entry/범주형수치형이상형연속형명목형순서형-정리">범주형과 수치형 참고</a></li>
+  <li><a href="https://velog.io/@cha-suyeon/오토인코더Autoencoder">오토인코더 개념 참고</a></li>
+  <li><a href="https://angeloyeo.github.io/2022/09/28/Mahalanobis_distance.html">마할라노비스 거리 개념 참고</a></li>
+  <li><a href="https://velog.io/@poiu8944/머신러닝Distance-Metric-Types">민코프스키 거리 개념 참고</a></li>
+  <li><a href="https://kiyoo.tistory.com/584">질적자료와 양적자료 차이 참고</a></li>
+</ul>
+
+<h2 id="4단원">4단원</h2>
+<ul>
+  <li><a href="https://www.mathway.com/ko/popular-problems/Finite%20Math/600013">3C2, 컴비네이션 계산법 참고</a></li>
+  <li><a href="https://m.blog.naver.com/PostView.nhn?blogId=at3650&amp;logNo=220041816572&amp;proxyReferer=https:%2F%2F">3P2, 퍼뮤테이션 참고</a></li>
+  <li><a href="https://ko.wikipedia.org/wiki/히스토그램">히스토그램 개념 참고</a></li>
+  <li><a href="https://www.tibco.com/ko/reference-center/what-is-a-treemap-chart">트리맵 개념 참고</a></li>
+</ul>
+
+<p>비교 시각화 모델</p>
+<ul>
+  <li><a href="https://www.tibco.com/ko/reference-center/what-is-a-radar-chart">레이더 차트 참고</a></li>
+  <li><a href="https://rfriend.tistory.com/170">체르노프페이스 참고</a></li>
+  <li><a href="https://wikidocs.net/166188">평행좌표계 참고</a></li>
+</ul>
+
+<h2 id="최님-알려주신-내용">최**님 알려주신 내용</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[이기적 기출 풀이 영상](https://license.youngjin.com/free_edu/free_edu_mp4.asp?elc_cd=2573&amp;cate_cd=2448)
+</code></pre></div></div>
+
+<h1 id="9월-10일까지-서평-작성을-해야한다고-했다">9월 10일까지 서평 작성을 해야한다고 했다.</h1>
+<h2 id="서평-작성9월-11일">서평 작성(9월 11일)​</h2>
+
+<p>2022 수제비 빅분기 필기 책을 가지고 있는데, 이기적 저자 분들이 독자에게 얼마나 많은 내용을 전달하고 싶으셨는지, 이런 점에서 한국인의 정 마저 느껴졌던 거 같아요. 수제비 책에 비해 더 두껍고, 보다 깊게 자세한 내용을 다룹니다. 또 맨 앞 쪽에 Big 6? 거기 보면, 별 자료를 다 줍니다. 정보처리기사 때도 느꼈지만, 이기적이 자료를 무료로 참 많이 제공을 해주는 구나를 느꼈던 거 같아요.</p>
+
+<p>그리고 마지막에 요약 본이 있더라고요. 상황에 따라 시간이 없다면 마지막 요약 본이라도 보는 식으로 가도 될 거 같습니다. 유튜브에 기출 같은 건 무료로 문제 풀이 영상도 있습니다. 이 점은 참 괜찮았어요.</p>
+
+<p>상황에 따라 유동적으로 공부 방식을 선택할 수 있는 거 같아요. 약간 독학하시는 분들에게도 괜찮은 책인 거 같습니다.</p>
+
+<p>​</p>
+
+<p>개인적으로 문제집을 선택할 때, 두껍게 만 만들어 놓고 출제율 100% 라고 적어논?,,, 쓸데 없이 자세하게 개념이 많고, 두껍고 무거운 책을 별로 안 좋아해요. 근데 빅분기 같은 경우는 빈출이 많지 않으니까 오히려 이런 부분이 장점이라는 생각이 듭니다. 수제비 보다 이기적이 참고 할 게 많아서 훨신 괜찮았어요.</p>
+
+<p>​</p>
+
+<p>단점은 특정 용어의 개념이 중요하다 생각하는 부분에 형광펜으로 표시가 돼 있더라고요. 그런 부분을 중심 적으로 보는 편인데, 문제 풀 때, 오히려 표시가 안된 부분에서 나오는 경우가 많았던 거 같아요. 빅분기가 기출도 별로 없고, 지금까지는 개념 문제가 많다 보니, 개인적으로 형광펜으로 표시 된 부분이 개념을 볼 때, 방해가 되는 거 같습니다. 이런 부분은 수제비 보다 못하다고 느꼈어요. 수제비가 Tip 이나 두음으로 외우기 쉽게 잘 되어 있거든요.</p>
+
+<p>​</p>
+
+<p>두 번째로 내용이 중구난방 합니다. 찾기가 힘들어요. 그리고 부록를 많이 보는 편인데, 부록에 원하는 용어가 많이 안 보입니다. 찾더라도 몇몇 부분이 개념 보다는 사이드에 Tip 느낌으로 적혀 있다고 해야하나,, 그런 부분이 있습니다.</p>
+
+<p>기출은 오타가 좀 보여요. 아는 내용이라면 “이거 틀렸는데?” 하고 찾아보고 지나가겠지만, 만약에 모르는 내용이라면 문제 통제로 외우는 편이라 아주 아찔 합니다.</p>
+
+<p>​</p>
+
+<p>​</p>
+
+          </div>
+          
+          <br>
+        </figure>
+
+        <!-- 블로그 하단 -->
+        <footer class="article-footer clearfix">
+          <div class="article-share" id="share">
+            <div data-url="http://localhost:4000/_posts/BigData/CafeStudy/2023-09-09-OfflineStudy/" data-title="[빅데이터분석기사][D-84] 네이버 데이터포럼카페 오프라인 스터디 | 스케치용녹색물감"
+              data-tsina="null" class="share clearfix">
+            </div>
+          </div>
+          
+        </footer>
+      </article>
+    </div>
+    <!-- 게시물 내용 끝 -->
+
+
+
+
+    <!-- 우측 바  -->
+    <!DOCTYPE HTML>
+<html lang="ko-KR">
+
+<head>
+
+</head>
+
+<body>
+
+
+    <!-- 우측바 첫 번째 -->
+    <div class="openaside">
+        <a class="navbutton" href="#" title="니도몰라1"></a>
+    </div>
+
+    <div id="asidepart">
+        <div class="closeaside">
+            <a class="closebutton" href="#" title="Menu"></a>
+        </div>
+        <aside class="clearfix">
+            <div class="rsspart">
+                <img src="/img/SR.avif" style="width: 100%;">
+                <a href="#" target="_blank" title="rss">RSS Reservation</a>
+            </div>
+
+            <!-- 202308202322 우측바 Contact me 카테고리 -->
+            <div class="tagslist">
+                <p class="asidetitle">Contact me<sup>🎱</sup></p>
+                <ul class="clearfix">
+                    <li><a href="https://www.instagram.com/ygre_en/" title="instagram">Instagram<sup>1</sup></a></li>
+                    <li><a href="https://twitter.com/groke_en" title="twitter">Twitter<sup>1</sup></a></li>
+                    <li><a href="https://www.reddit.com/user/Embarrassed_Edge_378" title="reddit">Reddit<sup>1</sup></a></li>
+                    <li><a href="https://github.com/Grokeen" title="github">Github<sup>1</sup></a></li>
+                    <li><a href="mailto:ygreen0516@gmail.com" title="gmail">Gmail<sup>1</sup></a></li>
+                    <li><a href="https://disqus.com/by/grokeen/" title="disqus">Disqus<sup>1</sup></a></li>
+                    <li><a href="https://www.linkedin.com/in/grokeen-b551a8283/" title="linkedin">Linkedin<sup>1</sup></a></li>
+                </ul>
+            </div>
+
+
+            <!-- 202308220128 카테고리 추가 -->
+            <div class="categorieslist">
+                <p class="asidetitle">Categories<sup>⚽️</sup></p>
+                <ul>
+                    
+                        <li><a href="/categories/resume"title="Resume">Resume<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/boost"title="Boost">Boost<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/course"title="Course">Course<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/github"title="Github">Github<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/resume"title="resume">resume<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/certification"title="Certification">Certification<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/raspberrypi"title="RaspberryPi">RaspberryPi<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/big"title="Big">Big<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/data"title="Data">Data<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/analyse"title="Analyse">Analyse<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/markdown"title="Markdown">Markdown<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/java"title="Java">Java<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/tableau"title="Tableau">Tableau<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/certification"title="certification">certification<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/learning"title="Learning">Learning<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/conversation"title="Conversation">Conversation<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/in"title="in">in<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/english"title="English">English<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/with"title="with">with<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/chatgpt"title="ChatGPT">ChatGPT<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/project"title="Project">Project<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/nlp"title="NLP">NLP<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/news"title="News">News<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/gpters"title="GPTers">GPTers<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/shortcuts"title="Shortcuts">Shortcuts<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/python"title="Python">Python<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/mathematics"title="Mathematics">Mathematics<sup>1</sup></a></li>
+                    
+                    <!-- 202308291504 false 카테고리 -->
+                    <li><a href="/url.html/indexfalse/index.html"title="etc">etc<sup>1</sup></a></li>
+
+                </ul>
+            </div>
+
+
+            
+
+            
+
+        </aside>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+    <!-- 코멘트 -->
+    <section id="comment">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'zhaoleiteng'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+          Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </section>
+
+
+  </div>
+  <!-- 본문 끝 -->
+
+
+  <!-- 푸터 -->
+  <!DOCTYPE HTML>
+<html lang="ko-KR">
+
+<head>
+  <script src="/js/jquery-2.1.0.min.js"></script>
+</head>
+
+<body>
+  <footer>
+    <!-- 푸터 본문 -->
+    <div id="footer">
+
+      <div class="line">
+        <span></span>
+        <div class="author"></div>
+      </div>
+
+      <div class="social-font clearfix">
+      </div>
+
+      <p class="copyright">Powered by
+        <a href="http://hexo.io" target="_blank" title="hexo">
+          hexo
+        </a>
+        and Theme by
+        <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">
+          Pacman
+        </a>
+        © 2022
+        <a href="mailto:ygreen0516@gmail.com" target="_blank" title="Grokeen">
+          Grokeen
+        </a>
+      </p>
+    </div>
+    <!-- mathjax config similar to math.stackexchange -->
+
+    <!-- 푸터 기능 -->
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+  </footer>
+
+  <!-- 주요 Home 페이지 기능 -->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.navbar').click(function () {
+        $('header nav').toggleClass('shownav');
+      });
+      var myWidth = 0;
+      function getSize() {
+        if (typeof (window.innerWidth) == 'number') {
+          myWidth = window.innerWidth;
+        } else if (document.documentElement && document.documentElement.clientWidth) {
+          myWidth = document.documentElement.clientWidth;
+        };
+      };
+      var m = $('#main'),
+        a = $('#asidepart'),
+        c = $('.closeaside'),
+        o = $('.openaside');
+      $(window).resize(function () {
+        getSize();
+        if (myWidth >= 1024) {
+          $('header nav').removeClass('shownav');
+        } else {
+          m.removeClass('moveMain');
+          a.css('display', 'block').removeClass('fadeOut');
+          o.css('display', 'none');
+
+        }
+      });
+      c.click(function () {
+        a.addClass('fadeOut').css('display', 'none');
+        o.css('display', 'block').addClass('fadeIn');
+        m.addClass('moveMain');
+      });
+      o.click(function () {
+        o.css('display', 'none').removeClass('beforeFadeIn');
+        a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');
+        m.removeClass('moveMain');
+      });
+      $(window).scroll(function () {
+        o.css("top", Math.max(80, 260 - $(this).scrollTop()));
+      });
+    });
+  </script>
+
+</body>
+
+</html>
+
+
+
+
+
+  <!-- 추가 푸터 -->
+  <!-- 게시글에 추적으로 푸터 위에 넣주는 html -->
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+
+<head>
+</head>
+
+<body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var ai = $('.article-content>iframe'),
+        ae = $('.article-content>embed'),
+        t = $('#toc'),
+        h = $('article h2')
+      ah = $('article h2'),
+        ta = $('#toc.toc-aside'),
+        o = $('.openaside'),
+        c = $('.closeaside');
+      if (ai.length > 0) {
+        ai.wrap('<div class="video-container" />');
+      };
+      if (ae.length > 0) {
+        ae.wrap('<div class="video-container" />');
+      };
+      if (ah.length == 0) {
+        t.css('display', 'none');
+      } else {
+        c.click(function () {
+          ta.css('display', 'block').addClass('fadeIn');
+        });
+        o.click(function () {
+          ta.css('display', 'none');
+        });
+        $(window).scroll(function () {
+          ta.css("top", Math.max(140, 320 - $(this).scrollTop()));
+        });
+      };
+    });
+  </script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var $this = $('.share'),
+        url = $this.attr('data-url'),
+        encodedUrl = encodeURIComponent(url),
+        title = $this.attr('data-title'),
+        tsina = $this.attr('data-tsina');
+      var html = [
+        '<a href="#" class="overlay" id="qrcode"></a>',
+        '<div class="qrcode clearfix"><span>Share on QR Code</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+        '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+        '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+        '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+        '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+        '<a href="http://service.weibo.com/share/share.php?title=' + title + '&url=' + encodedUrl + '&ralateUid=' + tsina + '&searchPic=true&style=number' + '" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+        '<span title="Share to"></span>'
+      ].join('');
+      $this.append(html);
+      $('.article-share-qrcode').click(function () {
+        var imgSrc = $('#qrcode-pic').attr('data-src');
+        $('#qrcode-pic').attr('src', imgSrc);
+        $('#qrcode-pic').load(function () {
+          $('.qrcode strong').text(' ');
+        });
+      });
+    });     
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>
