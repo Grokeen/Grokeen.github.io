@@ -1,4 +1,332 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-09-27T15:59:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">스케치용녹색물감</title><entry><title type="html">[빅데이터분석기사][D-70][D-62] Edu AtoZ 실기 관련 메일</title><link href="http://localhost:4000/big/data/analyse/certification/%EC%8B%A4%EA%B8%B0%EA%B4%80%EB%A0%A8%EB%A9%94%EC%9D%BC/" rel="alternate" type="text/html" title="[빅데이터분석기사][D-70][D-62] Edu AtoZ 실기 관련 메일" /><published>2023-09-25T12:45:29+09:00</published><updated>2023-09-25T12:45:29+09:00</updated><id>http://localhost:4000/big/data/analyse/certification/%EC%8B%A4%EA%B8%B0%EA%B4%80%EB%A0%A8%EB%A9%94%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/big/data/analyse/certification/%EC%8B%A4%EA%B8%B0%EA%B4%80%EB%A0%A8%EB%A9%94%EC%9D%BC/"><![CDATA[<p>빅분기 7회 실기 대비</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-05T21:55:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">스케치용녹색물감</title><entry><title type="html">[Github] 깃허브 README 포트폴리오로 수정해 보기</title><link href="http://localhost:4000/github/README/" rel="alternate" type="text/html" title="[Github] 깃허브 README 포트폴리오로 수정해 보기" /><published>2023-10-04T12:45:29+09:00</published><updated>2023-10-04T12:45:29+09:00</updated><id>http://localhost:4000/github/README</id><content type="html" xml:base="http://localhost:4000/github/README/"><![CDATA[<!-- 깃허브 메인 README.md -->
+
+<ul>
+  <li>천사도 두려워 하는 곳에 바보가 달려든다</li>
+  <li>개관사정, 끝날 때까지 끝난게 아니다</li>
+</ul>
+
+<!-- 
+|No.|  날짜  |  |
+|:-----:|:-----:|:-----:|
+ -->
+<p><a href="mailto:ygreen0516@gmail.com">메일 보내기</a></p>
+
+<!-- ```
+``` -->
+
+<hr />
+
+<h1 id="경력">경력</h1>
+
+<p><img src="/img/blogimg/Github/README.md/메타넷디지털.jpeg" style="height:20%" />
+<!-- <img src="metanetdigital.jpeg" style="height:100px"> --></p>
+
+<ul>
+  <li>⚽️ 2022.03.17 ~ 2023.03.17 메타넷 디지털(주) 위택스 개발팀
+    <ul>
+      <li>
+        <p>프론트엔드 개발자</p>
+
+        <ul>
+          <li>
+            <p>당담 업무
+지방세(지역자원시설세,자동차세(주행분),지방세외수입) 관련 웹 어플리케이션(UI) 개발 및 유지보수</p>
+          </li>
+          <li>수행 업무
+            <ul>
+              <li>Spring을 활용한 컴포넌트 기반 개발</li>
+              <li>HTML, CSS, JavaScript를 사용하여 사용자 경험 향상 및 웹 성능 최적화</li>
+              <li>
+                <p>SVN을 사용한 소스 코드 관리 및 협업</p>
+
+                <p>위택스 개발팀에서 Spring을 활용한 컴포넌트 기반 프론트엔드와 백엔드 개발 및 유지보수와 SVN을 사용한 소스 코드 관리 및 협업을 진행하였습니다. 주로 기업이나 자치단체 공무원의 시스템 에러 문의 시, Log나 DB를 확인하고, 소스코드에서 부재의 원인을 찾아 SR을 진행하였습니다.</p>
+              </li>
+            </ul>
+          </li>
+          <li>프로젝트 :
+            <ul>
+              <li>지방세미리계산 자동차세(소유) UI 개편</li>
+              <li>지방세미리계산 재산세(세율특례) 계산식 기능 개편</li>
+              <li>지방세외수입 실명인증 기능 개발</li>
+              <li>시가표준액 조회 UI 개편</li>
+              <li>상세신고특별징수 가감 조정금액 표기 UI 개편</li>
+              <li>23년 법개정에 따른 주민세 사업소본 가산세 특례(면제) 기능 개편</li>
+              <li>레저세 안내 메세지 기능 개발</li>
+              <li>우편모아 각 자치단체 설치 및 연동, 한국지역정보개발원 지원</li>
+              <li>차세대 프로젝트 QA
+<em>**</em></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="프로젝트">프로젝트</h1>
+<ul>
+  <li>🏀 Chat GPT를 활용한 영어 회화 서비스(2023.05.27 ~ 2023.06.03)
+    <ul>
+      <li>
+        <p>주요 내용 :</p>
+
+        <p>영어 학원이나 어학연수 등 요즘 물가가 너무 비싸 혼자 영어회화를 공부해보고자 토이 프로젝트를 진행했습니다. prompt에 저의 영어 회화 말, 즉 값이 입력되면 Chat GPT의 답변 값을 받아오는 방식으로 진행하였습니다. 4.0 버전은 custom instruction에 기본 학습 값을 세팅하고 사용할 수 있지만, API로 가져오는 Chat GPT는 3.5 버전을 지원하다 보니, 결과적으로 매번 세팅을 다시 해줘야 한다는 점이 있었습니다.</p>
+      </li>
+      <li>
+        <p>담당 업무 : <strong>Open AI API 활용</strong></p>
+      </li>
+    </ul>
+  </li>
+  <li>🏀 온라인 포트폴리오 웹사이트 (2023 - 현재)
+    <ul>
+      <li>
+        <p>주요 내용 :</p>
+
+        <p>Github를 활용해 개인 프로젝트를 정리하기 위해 제작한 온라인 포트폴리오 웹사이트 입니다.</p>
+      </li>
+      <li>
+        <p><a href="&quot;https://grokeen.github.io">방문하기</a></p>
+      </li>
+    </ul>
+
+    <p><img src="https://github-readme-stats.vercel.app/api?username=Grokeen&amp;show_icons=true&amp;theme=radical" alt="Anurag's GitHub stats" /><!-- 깃허브 상태 표시 --></p>
+
+    <ul>
+      <li>담당 업무 : <strong>Git, Markdown, Liquid 문법과 YAML Front Matter 활용</strong></li>
+    </ul>
+  </li>
+  <li>🏀 Spring Framework을 이용한 적성평가 후, 업무역량에 맞는 인사분류 웹 사이트(2021.11.18 ~ 2021.12.10)
+    <ul>
+      <li>한국공학대학교(한국산업기술대학교)</li>
+      <li>
+        <p>주요 내용 :</p>
+
+        <p>신입 사원 중 조기 퇴사자가 기업측에 밝힌 퇴사 사유는 1위 ‘적성과 안 맞는 직무’ 가 59.2%(복수응답)로 가장 많았으며, 2위로 ‘대인관계 등 조직 부적응(26.4%)’ , ‘담당 업무 불만족(23.2%)’이 그 다음을 차지하였고, 사전에 방지하고자 Spring을 활용한 인사 분류 웹 사이트를 개발하였습니다. 프로젝트에서 UI를 맡았으며, 각 기능에서 막히는 부분을 도우며, 서브적인 역할로 전반적인 Spring 로직에 대한 이해를 높일 수 있었습니다. DB 설계 같은 경우, 시간이 촉박하여 기획을 안하고 프로젝트를 먼저 진행하다 보니, 다 개발된 후에 DB 설계에서 결함을 발견했고, 단 기간에 프로젝트를 책임지고 리팩토링 했던 경험이 있습니다.</p>
+      </li>
+      <li>담당 업무 : <strong>MVC 패턴 View, DB 설계, 프로젝트의 전반적인 서포터</strong></li>
+    </ul>
+  </li>
+  <li>🏀 Django를 이용한 초보 개발자 이력서/자소서 도움 사이트(2021.10.24 ~ 2021.11.17)
+    <ul>
+      <li>KIC 캠퍼스</li>
+      <li>
+        <p>주요 내용 :</p>
+
+        <p>많은 사람들이 개발자로 취업을 준비하는 요즘, 이력서나 자소서에 대한 정보가 부족합니다. 텍스트 마이닝을 통하여 성공 자소서의 빈도 결과를 통계분석에 활용합니다. DJango와 Spring을 비교하면서 Python에서 웹 개발의 흐름 파악하여 개발을 진행하였습니다.</p>
+      </li>
+      <li>담당 임무 : <strong>웹 크롤링을 통한 데이터 수집, Django, 프론트엔드</strong></li>
+    </ul>
+  </li>
+  <li>🏀 Spring 프레임워크를 이용한 음식점 예약 웹 사이트(2021.08.30 ~ 2021.09.23)
+    <ul>
+      <li>KIC 캠퍼스</li>
+      <li>
+        <p>주요 내용 :</p>
+
+        <p>COVID-19 확산이 우려돼 거리두기 4단계가 시행 되던 당시, 사용자의 간단한 조작만으로 고객이 직접 줄을 서지 않아도 대신 서주는 일종의 예약 서비스를 Spring을 활용하여 구현하였습니다. 담당했던 예약 기능을 구현 하면서 완성도를 높이기 위해 Google Map API를 활용하여, 소비자가 보다 직관적으로 음식점의 위치까지 확인할 수 있게 구현 하였으며, 예약 시, Ajax를 활용하여 음식점 주인에게 예약 메세지가 실시간 비동기 전송이 가능하게 개발하였습니다.</p>
+      </li>
+      <li>담당 업무 : <strong>프론트엔드, Google Map API 활용한 음식점 정보 도출, 예약 기능 구현, 기능 연결</strong></li>
+    </ul>
+  </li>
+  <li>🏀 라즈베리파이를 이용한 운동자세 교정 스마트미러(2020.03 ~ 2020.12)
+    <ul>
+      <li>한국공학대학교(한국산업기술대학교)</li>
+      <li>
+        <p>주요 내용 :</p>
+
+        <p>COVID-19로 인해 생활 습관이 바뀌었 듯이 운동에 대한 인식 또한 다르게 변화되어 가고 있는 현 시대에 초점을 맞췄습니다. 거리두기 2.5단계 명령이 떨어지면서 헬스장 접근 금지명이 떨어졌습니다. 그로 인해 홈트레이닝이 유행함에 따라 라즈베라파이를 이용하여 운동 시, CNN을 통한 자세를 통계 분석하고 교정 정보를 제공하는 스마트미러를 제작하였습니다.</p>
+      </li>
+      <li>담당 업무 : <strong>라즈베리파이 스마트미러 코드 분석 및 수정, UI 설계</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="기타">기타</h1>
+<ul>
+  <li>⚾️ 2020.10.20 ~ 2021.12.21 한국공학대학교(한국산업기술대학교) 교내 수업 도우미
+    <ul>
+      <li>2020.10.20 ~ 2020.12.15 IOT-인공지능-빅데이터 수업 도우미</li>
+      <li>2021.09.28 ~ 2021.12.08 프로그래밍 기초(파이썬) 비교과 수업 도우미</li>
+      <li>2021.11.02 ~ 2021.12.21 사물인터넷을 품은 미래사회 수업 도우미</li>
+    </ul>
+  </li>
+  <li>
+    <p>⚾️ 2021.06.14 ~ 2021.11.18 KIC 캠퍼스, 실무 프로젝트 기반 빅데이터 플랫폼 개발 및 분석 전문가 양성 과정 교육 이수</p>
+  </li>
+  <li>⚾️ 2022.11.25 ADSP 자격증 취득 (한국데이터산업진흥원)</li>
+  <li>⚾️ 2023.09.01 정보처리기사 자격증 취득 (한국산업인력공단)</li>
+</ul>
+
+<hr />
+
+<h1 id="사용가능-언어">사용가능 언어</h1>
+
+<p><img src="/JAVA.png" style="height:160px" /> <img src="/Javascript.jpeg" style="height:100px" /> <img src="/python.png" style="height:160px" /> <img src="/CL.png" style="height:70px" /> <img src="/Jquery.png" style="height:120px" /></p>
+
+<p><img src="/oracle.png" style="height:100px" /> <img src="/mysql.jpeg" style="height:70px" /></p>
+
+<p><img src="/markdown.jpeg" style="height:130px" /> <img src="/xml.png" style="height:100px" /> <img src="/html.jpeg" style="height:140px" /> <img src="/css.png" style="height:100px" /></p>
+
+<p><img src="/Spring.png" style="height:150px" /> <img src="/django.png" style="height:130px" /></p>
+
+<p><img src="/svn.png" style="height:100px" /> <img src="/git.jpeg" style="height:120px" /></p>
+
+<hr />
+
+<!--
+**Grokeen/Grokeen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->]]></content><author><name></name></author><category term="Github" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">[이력서] 롯데정보통신</title><link href="http://localhost:4000/resume/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/" rel="alternate" type="text/html" title="[이력서] 롯데정보통신" /><published>2023-10-03T12:45:29+09:00</published><updated>2023-10-03T12:45:29+09:00</updated><id>http://localhost:4000/resume/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4</id><content type="html" xml:base="http://localhost:4000/resume/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/"><![CDATA[]]></content><author><name></name></author><category term="Resume" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">[이력서] 롯데정보통신</title><link href="http://localhost:4000/resume/%EB%A1%AF%EB%8D%B0%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0/" rel="alternate" type="text/html" title="[이력서] 롯데정보통신" /><published>2023-10-03T12:45:29+09:00</published><updated>2023-10-03T12:45:29+09:00</updated><id>http://localhost:4000/resume/%EB%A1%AF%EB%8D%B0%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0</id><content type="html" xml:base="http://localhost:4000/resume/%EB%A1%AF%EB%8D%B0%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0/"><![CDATA[<p>18시 까지</p>
+
+<p><a href="https://recruit.lotte.co.kr/apply/announcement/detail/21115485?compcd=?id=bookmark1000">공고</a>
+<a href="https://recruit.lotte.co.kr/apply/write/21111882">이력서 작성</a></p>
+
+<h1 id="모집-요강">모집 요강</h1>
+<h2 id="직무">직무</h2>
+<p>호텔영업지원 시스템 운영[호텔IS팀]</p>
+
+<h2 id="업무">업무</h2>
+<ul>
+  <li>계정/권한 및 기준정보 관리</li>
+  <li>고객 문의대응 및 요구사항 분석·협의</li>
+  <li>데이터 관리(검증, 추출, 수정, 삭제 등)</li>
+  <li>사용자 및 관리자 메뉴얼 제·개정</li>
+  <li>업무 프로세스 개선 제안</li>
+  <li>⭕️ 장애 예방활동 및 대응(DR 모의훈련 등)</li>
+  <li>⭕️ 진단 및 감사 결과 조치</li>
+  <li>⭕️ 프로그램 개발 및 테스트</li>
+  <li>⭕️ 화면 및 업무 프로세스 분석·설계</li>
+</ul>
+
+<h2 id="기본-자격">기본 자격</h2>
+<ul>
+  <li>⭕️ JAVA, DB, Spring 개발 및 운영 경험</li>
+  <li>⭕️ 장애관리 경험</li>
+  <li>⭕️ 시스템 운영 경험</li>
+  <li>⭕️ App, DB, Sever 등 로그 분석 경험</li>
+</ul>
+
+<h2 id="우대사항">우대사항</h2>
+<ul>
+  <li>⭕️ IT 관련 전공자</li>
+</ul>
+
+<h2 id="근무지">근무지</h2>
+<p>서울시 중구</p>
+
+<h1 id="경력기술서">경력기술서</h1>
+<h2 id="담당-업무">담당 업무</h2>
+<p>지방세 관련 웹 어플리케이션(UI) 개발 및 유지보수</p>
+<h2 id="수행-업무150자">수행 업무(150자)</h2>
+
+<h1 id="자기소개서">자기소개서</h1>
+<h2 id="본인의-지식-및-기술역량을-지원직무-수행-시-어떻게-발휘할-수-있을지-설명해-주세요-최소-300자-최대-700자-작성방법---지식-및-기술역량--해당-역량을-어떻게-발휘할-수-있을지에-관한-내용-포함">본인의 지식 및 기술역량을 지원직무 수행 시 어떻게 발휘할 수 있을지 설명해 주세요. (최소 300자, 최대 700자) (*작성방법 : ① 지식 및 기술역량 ② 해당 역량을 어떻게 발휘할 수 있을지에 관한 내용 포함)</h2>
+<p>전공 / 정보처리기사 / 국비 교육 / 회사 경험</p>
+
+<p>저에게 롯데정보통신 호텔IS팀에 어올리는 2가지 경험이 있습니다.
+첫 번째, 차세대 개발로 팀원의 66%가 공석인 상황에서 무리 없이 대처.
+Spring을 사용하는 공공기관 SI에 근무한 경험이 있습니다. 평소에 SVN을 사용한 프로젝트 소스 코드 관리 및 협업을 진행하였습니다. 차세대 개발로 팀원의 66%가 공석인 상황이 발생하게 되었습니다. 공무원 분들의, 요구사항의 니즈를 파악하여 먼저 Log 데이터나 DB에 값이 제대로 들어 갔는지 확인하고, 문제 발견 시에는 소스코드를 개선하여 해결하였습니다. Spring 로직 개발 경험을 얻을 수 있었으며, 결과적으로 트래픽 대처 및 문제해결능력을 기를 수 있었습니다.
+두 번째, 사물 인터넷 수업에 조교로 참여하여 전년 대비 수업 만족도 12% 증가.
+각종 라이브러리를 활용해 센서의 사용 가능 유무를 직접 코딩 하며 실험해, 동작하는 센서를 구분 하였습니다. 과전류에 따른 브레드 보드 및 센서의 손상 문제에 대해 사전에 방지하였습니다. 마지막으로 뒤쳐진 학생들을 도와 수업 참여 율을 높였습니다. 그리하여 시간은 절약되고, 수업의 질을 높일 수 있었습니다. 결과적으로 기말고사 후 작년 대비 수업 만족도 12% 증가한 것을 확인하였으며, 교수님의 만족도 충족 시킬 수 있었습니다. 니즈를 파악하기 위한 원인 분석을 기를 수 있었습니다.
+이러한 경험으로 호텔IS팀에 기여하고 싶습니다.</p>
+
+<h2 id="프로젝트를-완수하기-위해-노력한-경험을-구체적으로-소개해-주세요-최소-300자-최대-700자-작성방법---프로젝트-종류--규모--본인-역할-및-기여도--수행-과정--배운-점-포함--직무-관련-과제대외활동동아리인턴경험개인-프로젝트-등-규모-및-종류에-관계-없이-작성-가능">프로젝트를 완수하기 위해 노력한 경험을 구체적으로 소개해 주세요. (최소 300자, 최대 700자) (*작성방법 : ① 프로젝트 종류 / 규모 / 본인 역할 및 기여도 / 수행 과정 / 배운 점 포함) ② 직무 관련 과제/대외활동/동아리/인턴경험/개인 프로젝트 등 규모 및 종류에 관계 없이 작성 가능)</h2>
+
+<p>국비지원 교육에서 당시 COVID-19가 진행 중인데도 불가하고, 유명 음식점 앞에 줄서 서 먹는 문화에 대해 거리두기가 필요하다고 인지하여, Spring을 이용한 음식점 예약 플렛폼을 4주간 4명에서 진행한 경험이 있습니다. 제가 맡은 주 임무는 예약 기능을 구현이었습니다.
+학교를 다니면서 수업 도우미로 참여하는 중이었기 때문에 시간이 매우 촉박한 상황이었습니다. 담당했던 예약 기능을 구현 하면서, 완성도를 높이기 위해 Google Map API를 활용하였습니다. 소비자가 보다 직관적으로 음식점의 위치까지 확인할 수 있게 구현 하였으며, 예약 시, Ajax를 활용하여 음식점 주인에게 예약 메세지가 실시간 비동기 전송이 가능하게 개발하였습니다.
+그러나 프로젝트 시작 당시 발표를 위해 프로토타입을 설계한 사람이 저였기 때문에, 결과적으로 기능 연결하는 부분도 소스코드에 이해가 높은 제가 맡게 되었습니다. 발표 직전까지 프로젝트를 진행하였고, 프로젝트에 대한 책임감과 리더십을 기르며, 성공적으로 프로젝트를 마무리 할 수 있었습니다.</p>
+
+<h2 id="본인-삶의-가치관-한-가지를-소개하고-이를-회사에서-실현할-수-있는-방법을-작성해-주세요-최소-300자-최대-700자-작성방법---본인의-가치관--회사에서의-가치관-실현-방법-포함">본인 삶의 가치관 한 가지를 소개하고, 이를 회사에서 실현할 수 있는 방법을 작성해 주세요. (최소 300자, 최대 700자) (*작성방법 : ① 본인의 가치관 ② 회사에서의 가치관 실현 방법 포함)</h2>
+<p>도전/열정/협력
+정보처리기사/</p>
+
+<p>chmod -R 751 김용록</p>
+
+<p>저의 가치관은 특이하게 리눅스 명령어인 chmod -R 751 입니다. 파일 소유자는 “읽고/쓰고/실행” 모든 권한을 가지고 있고, 그룹은 “읽고/실행”을 할 수 있으며, 그 밖에 사용자는 그저 볼 수 만 있습니다.
+여기서 제가 말하는 파일 소유자는 저 자신이고, 그룹은 가족이나 학교,회사입니다.
+컴퓨터 서버처럼 누구도 제 안에 들어 올 수 없습니다. 파일를 수정할 수 있는 건 결국 자신 뿐이라고 생각합니다.
+인생도 마찬가지로 자기 생각을 실천으로 옮기는 것은 어렵기 때문에, 그것을 개발하려는 노력이 없다면 작은 것 하나 바꿀 수 없습니다. 그래서 실천하고, 도전하며 행동하는 것이 다양한 경험을 얻을 수 있어 가장 중요하다고 생학합니다.
+행동하는 사람이 성공할 기회를 가질 수 있습니다. 롯데정보통신에서 새로운 사람들과 협력하며, 경험을 통해 새로운 저를 만들어 갈 수 있는 안생에 몇 없는 좋은 기회라고 생각합니다.</p>
+
+<!-- 
+chmod -R 751 김용록
+
+저의 가치관은 리눅스 명령어인 chmod에 빛 대어 표현할 수 있습니다. 파일 소유자는 "읽고/쓰고/실행" 모든 권한을 가지고 있고, 그룹은 "읽고/실행"을 할 수 있으며, 그 밖에 사용자는 그저 볼 수 만 있습니다.
+여기서 제가 말하는 파일 소유자는 저 자신이고, 그룹은 회사입니다. 
+
+파일에 쓸 수 있는 결국 자신압니다. 
+
+공공기관 SI에 근무하던 당시, 일이 적다고 느꼈습니다. 조금 더 일이 많을 거 같은 회사에 도전하고자
+
+롯데정보통신에서 개발자로 끝까지 노력하겠습다
+ -->
+
+<h1 id="참고">참고</h1>
+<p>롯데정보통신 후기
+    - <a href="https://yuna0125.tistory.com/235">최종합격</a></p>]]></content><author><name></name></author><category term="Resume" /><summary type="html"><![CDATA[18시 까지]]></summary></entry><entry><title type="html">[이력서] CJ 올리브 네트웍스</title><link href="http://localhost:4000/resume/CJ%EC%98%AC%EB%A6%AC%EB%B8%8C%EB%84%A4%ED%8A%B8%EC%9B%8D%EC%8A%A4/" rel="alternate" type="text/html" title="[이력서] CJ 올리브 네트웍스" /><published>2023-10-03T12:45:29+09:00</published><updated>2023-10-03T12:45:29+09:00</updated><id>http://localhost:4000/resume/CJ%EC%98%AC%EB%A6%AC%EB%B8%8C%EB%84%A4%ED%8A%B8%EC%9B%8D%EC%8A%A4</id><content type="html" xml:base="http://localhost:4000/resume/CJ%EC%98%AC%EB%A6%AC%EB%B8%8C%EB%84%A4%ED%8A%B8%EC%9B%8D%EC%8A%A4/"><![CDATA[<p>18시 까지</p>
+
+<p><a href="https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=7647">공고</a>
+<a href="https://recruit.cj.net/recruit/ko/resume/resume/resume.fo?zz_jo_num=7647&amp;zz_page_seq=1">이력서 작성</a></p>
+
+<p>RUSINESS CYSTEM ENGINEER
+식품/유통/물류/그룹통합시스템구축및운영
+•Web/App시스템개발및운영</p>
+<h1 id="자기소개서">자기소개서</h1>
+<h2 id="우리-회사에-지원한-동기와-해당-직무-역량을-키우기-위해-어떤-노력을-했는지-기술하세요-1000자">우리 회사에 지원한 동기와 해당 직무 역량을 키우기 위해 어떤 노력을 했는지 기술하세요. (1,000자)</h2>
+<p>저에게 CJ올리브네트웍스에 어올리는 2가지 경험이 있습니다.</p>
+
+<p>첫 번째, 차세대 개발로 팀원의 66%가 공석인 상황에서 무리 없이 대처.
+Spring을 사용하는 공공기관 SI에 근무한 경험이 있습니다. 평소에 SVN을 사용한 프로젝트 소스 코드 관리 및 협업을 진행하였습니다. 차세대 개발로 팀원의 66%가 공석인 상황이 발생하게 되었습니다. 공무원 분들의, 요구사항의 니즈를 파악하여 먼저 Log 데이터나 DB에 값이 제대로 들어 갔는지 확인하고, 문제 발견 시에는 소스코드를 개선하여 해결하였습니다. Spring 로직 개발 경험을 얻을 수 있었으며, 결과적으로 트래픽 대처 및 문제해결능력을 기를 수 있었습니다.
+두 번째, 사물 인터넷 수업에 조교로 참여하여 전년 대비 수업 만족도 12% 증가.
+각종 라이브러리를 활용해 센서의 사용 가능 유무를 직접 코딩 하며 실험해, 동작하는 센서를 구분 하였습니다. 과전류에 따른 브레드 보드 및 센서의 손상 문제에 대해 사전에 방지하였습니다. 마지막으로 뒤쳐진 학생들을 도와 수업 참여 율을 높였습니다. 그리하여 시간은 절약되고, 수업의 질을 높일 수 있었습니다. 결과적으로 기말고사 후 작년 대비 수업 만족도 12% 증가한 것을 확인하였으며, 교수님의 만족도 충족 시킬 수 있었습니다. 니즈를 파악하기 위한 원인 분석을 기를 수 있었습니다.</p>
+
+<p>이러한 경험을 바탕으로 CJ올리브네트웍스에 기여하고 싶습니다.</p>
+
+<h2 id="본인의-성장과정에서-현재의-자신에게-가장-큰-영향을-끼친-사건과-입사-후의-자신이-꿈꾸는-모습에-대해-작성하세요-1000자">본인의 성장과정에서 현재의 자신에게 가장 큰 영향을 끼친 사건과 입사 후의 자신이 꿈꾸는 모습에 대해 작성하세요. (1,000자)</h2>
+
+<p>국비지원 교육 중에 진행한 4주간의 음식점 예약 플랫폼 프로젝트가 제 성장과정에서 빼놓을 수 없는 중요한 이정표입니다. 당시 COVID-19 확산과 거리두기가 철저히 이행되어야 하는 상황 속에서 이 프로젝트를 시작하게 되었고, 제 역할은 예약 기능의 구현이었습니다. 프론트엔드와 Google Map API를 활용하여 사용자에게 음식점의 위치를 직관적으로 제공하였고, Ajax를 이용해 예약 메시지를 실시간으로 음식점 주인에게 전달 가능하게 하였습니다. 더불어, Twilio를 활용해 예약 승인 시 문자 알림을 전송하는 기능까지 추가하였습니다.
+학교 수업도 병행하고 있어 시간이 매우 촉박했으나, 프로젝트 초반에 설계한 프로토타입의 개발자로서 그 책임을 다하고 싶었습니다. 각 기능의 연결에서 문제가 발생했을 때, Git을 도입하여 형상 관리를 강화하고 프로젝트를 성공적으로 마무리할 수 있었습니다. 이 경험을 통해 클린 코드 작성과 형상 관리의 중요성을 몸소 느끼고, 팀원들과의 원활한 협업 능력을 향상시켰습니다.</p>
+
+<p>입사 후 꿈꾸는 모습은 ‘변화의 주역’입니다. 새로운 기술 도입이나 업무 프로세스 개선을 주도하여, 회사가 보다 빠르게 변화하는 시장 환경에 적응할 수 있도록 하고 싶습니다. 특히, 인공지능과 머신러닝을 활용한 데이터 분석 역량을 갖추어 고객의 필요를 미리 파악하고 이를 제품에 반영하는 것을 목표로 하고 있습니다.</p>
+
+<h2 id="cj그룹의-다양한-비즈니스상품서비스와-it기술을-접목한-아이디어신규-또는-개선를-제안하고-구체적으로-설명하세요-500자">CJ그룹의 다양한 비즈니스/상품/서비스와 IT기술을 접목한 아이디어(신규 또는 개선)를 제안하고 구체적으로 설명하세요. (500자)</h2>
+<p>택배 종합 플랫폼
+저는 집 밖을 잘 안 나가는 스타일이라 물건을 구매할 때, CJ 대한통운 같은 택배를 자주 애용합니다. 대한통운 같은 경우 어플리케이션에 한 번에 정보가 출력돼서 자주 사용하고 있습니다. 그러나 연동할 수 있는 쇼핑몰의 수도 매우 적은데 가끔 경쟁사인 로젠택배, 우체국으로 택배가 올 때가 있습니다. 그럴 때는 하루에 여러번 접속하게 됩니다. 물론 운송장 번호를 우측 위에 + 버튼 눌러서 하나하나 추가하는 것은 가능합니다. 개인적으로 매우 불편하고 요즘 토스처럼 마이데이터를 이용하여 간단하게 정보를 입력하면 다른 경쟁사 택배 정보도 연동이 가능하게 되었으면 좋겠습니다.</p>
+
+<p>두 번째로 UI가 딱딱하다고 생각했는데, 택배물품 3개 마다 광고가 나와서 그렇지, 마치 인스타그램에 선전하는 게임을 다운로드 한 거 같습니다.</p>
+
+<p>펜데믹 이후, 택배가 급증한 것으로 알고있습니다. 택배를 기다리는 사람들에게 안심을 줄 수 있는 택배 종합 플랫폼으로서 다가가는 건 어떨까 건의드립니다.</p>
+
+<h2 id="지원-직무와-관련된-포트폴리오를-url-또는-첨부파일-중-하나만-선택하여-등록하세요-반드시-1개의-url-주소-또는-파일만-등록">지원 직무와 관련된 포트폴리오를 ‘URL 또는 첨부파일’ 중 하나만 선택하여 등록하세요. (반드시 1개의 URL 주소 또는 파일만 등록)</h2>
+<p>https://github.com/Grokeen</p>]]></content><author><name></name></author><category term="Resume" /><summary type="html"><![CDATA[18시 까지]]></summary></entry><entry><title type="html">[이력서] 한화 시스템</title><link href="http://localhost:4000/resume/%ED%95%9C%ED%99%94%EC%8B%9C%EC%8A%A4%ED%85%9C/" rel="alternate" type="text/html" title="[이력서] 한화 시스템" /><published>2023-10-03T12:45:29+09:00</published><updated>2023-10-03T12:45:29+09:00</updated><id>http://localhost:4000/resume/%ED%95%9C%ED%99%94%EC%8B%9C%EC%8A%A4%ED%85%9C</id><content type="html" xml:base="http://localhost:4000/resume/%ED%95%9C%ED%99%94%EC%8B%9C%EC%8A%A4%ED%85%9C/"><![CDATA[<p>15시 까지</p>
+
+<p><a href="https://www.hanwhain.com/web/apply/notification/view.do?rtSeq=11007">공고</a>
+<a href="https://dbgroup.recruiter.co.kr/mrs2/applicant/resume/writeResume">이력서 작성</a></p>
+
+<p>특이하게 학년 별 학점을 넣어야 한다.</p>
+
+<h1 id="자기소개서">자기소개서</h1>
+<h2 id="한화시스템에-지원하는-동기에-대하여-구체적으로-작성하시오">한화시스템에 지원하는 동기에 대하여 구체적으로 작성하시오</h2>
+
+<h2 id="지원-직무를-위해-노력했던-준비사항과-직무를-잘-수행-할-수-있는-본인의-전공직무-경험-역량-등에-대하여-구체적으로-작성하시오">지원 직무를 위해 노력했던 준비사항과 직무를 잘 수행 할 수 있는 본인의 전공/직무 경험, 역량 등에 대하여 구체적으로 작성하시오</h2>
+
+<h2 id="자신의-보편적인-가치관에-따라-일관되게-행동하고-이를-지키기-어려운-상황에서도-그것을-지키고자-했던-사례에-대하여-구체적으로-작성하시오">자신의 보편적인 가치관에 따라 일관되게 행동하고, 이를 지키기 어려운 상황에서도 그것을 지키고자 했던 사례에 대하여 구체적으로 작성하시오</h2>
+
+<h2 id="목표를-달성하기-위한-의지와-끝까지-노력하는-자세를-가지고-저항이나-장애에-쉽게-굴복하지-않고-끝까지-최선을-다해서-추진했던-사례에-대하여-구체적으로-작성하시오">목표를 달성하기 위한 의지와 끝까지 노력하는 자세를 가지고, 저항이나 장애에 쉽게 굴복하지 않고 끝까지 최선을 다해서 추진했던 사례에 대하여 구체적으로 작성하시오</h2>
+
+<h2 id="팀의-일원으로-다른-팀원들과-협력하여-일하고-팀의-원활한-운영을-위해-양보하고-협조하여-win-win을-이끌어-내었던-사례에-대하여-구체적으로-작성하시오">팀의 일원으로 다른 팀원들과 협력하여 일하고, 팀의 원활한 운영을 위해 양보하고 협조하여 Win-Win을 이끌어 내었던 사례에 대하여 구체적으로 작성하시오</h2>]]></content><author><name></name></author><category term="Resume" /><summary type="html"><![CDATA[15시 까지]]></summary></entry><entry><title type="html">[빅데이터분석기사][D-70][D-62] Edu AtoZ 실기 관련 메일</title><link href="http://localhost:4000/big/data/analyse/certification/%EC%8B%A4%EA%B8%B0%EA%B4%80%EB%A0%A8%EB%A9%94%EC%9D%BC/" rel="alternate" type="text/html" title="[빅데이터분석기사][D-70][D-62] Edu AtoZ 실기 관련 메일" /><published>2023-09-25T12:45:29+09:00</published><updated>2023-09-25T12:45:29+09:00</updated><id>http://localhost:4000/big/data/analyse/certification/%EC%8B%A4%EA%B8%B0%EA%B4%80%EB%A0%A8%EB%A9%94%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/big/data/analyse/certification/%EC%8B%A4%EA%B8%B0%EA%B4%80%EB%A0%A8%EB%A9%94%EC%9D%BC/"><![CDATA[<p>빅분기 7회 실기 대비</p>
 
 <p>빅분기 6회 필기 강의를 듣고 남은 기간을 알려주세요!
 빅분기 7회 실기 대비 강의에 남은 기간을 이전해 드립니다.</p>
@@ -38,7 +366,7 @@
       <td style="text-align: center"><a href="https://www.jobkorea.co.kr/Recruit/GI_Read/42578660">인사이드정보</a></td>
       <td style="text-align: center">중소</td>
       <td style="text-align: center">검색/챗봇 개발자</td>
-      <td style="text-align: center">1차 면접 탈락</td>
+      <td style="text-align: center">❌ 1차 면접 탈락</td>
       <td style="text-align: center">1차 면접에서 떨어진 거는 기술 부족이겠지, 상관과의 마찰에 대해서도 너무 솔직하게 말했음.</td>
       <td style="text-align: center">MSA가 무엇인지.</td>
     </tr>
@@ -48,7 +376,7 @@
       <td style="text-align: center"><a href="">SK 머터리얼즈</a></td>
       <td style="text-align: center">대</td>
       <td style="text-align: center"> </td>
-      <td style="text-align: center">서류 탈락</td>
+      <td style="text-align: center">❌ 서류 탈락</td>
       <td style="text-align: center">서류 제출 후 3일 만에 연락이 왔다. 이건 자기소개서 보다는 이력 문제인 듯 싶다. 부족한 부분은 아마도 영어 성적이나 학교가 문제 였겠지.</td>
       <td style="text-align: center">더 열심히 하자</td>
     </tr>
@@ -58,7 +386,7 @@
       <td style="text-align: center"><a href="">삼성 SDS</a></td>
       <td style="text-align: center">대</td>
       <td style="text-align: center"> </td>
-      <td style="text-align: center">미지원</td>
+      <td style="text-align: center">❌ 미지원</td>
       <td style="text-align: center">영어성적</td>
       <td style="text-align: center">Opic 준비가 필요해 보인다.</td>
     </tr>
@@ -68,7 +396,7 @@
       <td style="text-align: center"><a href="">LG CNS</a></td>
       <td style="text-align: center">대</td>
       <td style="text-align: center">DX Engineer SI/SM</td>
-      <td style="text-align: center"> </td>
+      <td style="text-align: center">❌ 서류 탈락</td>
       <td style="text-align: center"> </td>
       <td style="text-align: center"> </td>
     </tr>
@@ -88,7 +416,7 @@
       <td style="text-align: center"><a href="">포스코 DX</a></td>
       <td style="text-align: center">대</td>
       <td style="text-align: center"> </td>
-      <td style="text-align: center">미지원</td>
+      <td style="text-align: center">❌ 미지원</td>
       <td style="text-align: center">영어성적</td>
       <td style="text-align: center">Opic 준비가 필요해 보인다.</td>
     </tr>
@@ -122,45 +450,45 @@
       <td style="text-align: center"> </td>
       <td style="text-align: center"> </td>
     </tr>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">2023 10 03</td>
+      <td style="text-align: center"><a href="https://recruit.cj.net/recruit/ko/recruit/recruit/detail.fo?zz_jo_num=7647">CJ올리브네트웍스</a></td>
+      <td style="text-align: center">대</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11</td>
+      <td style="text-align: center">2023 10 03</td>
+      <td style="text-align: center"><a href="https://recruit.lotte.co.kr/apply/announcement/detail/21115485?compcd=?id=bookmark1000">롯데정보통신</a></td>
+      <td style="text-align: center">대</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">12</td>
+      <td style="text-align: center">2023 10 03</td>
+      <td style="text-align: center"><a href="">한화시스템</a></td>
+      <td style="text-align: center">대</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">❌ 미지원</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">일정 관리 부족</td>
+    </tr>
   </tbody>
 </table>
 
 <table>
   <tbody>
     <tr>
-      <td>10</td>
-      <td>2023 09 30</td>
-      <td><a href="https://nice.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&amp;jobnoticeSn=158255">NICE 그룹</a></td>
-      <td>대</td>
-      <td>신입 Java 개발</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>2023 10 03</td>
-      <td><a href="">CJ올리브네트웍스</a></td>
-      <td>대</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>2023 10 03</td>
-      <td><a href="">롯데정보통신</a></td>
-      <td>대</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
       <td>13</td>
-      <td>2023 10 03</td>
-      <td><a href="">한화시스템</a></td>
+      <td>2023 10 06</td>
+      <td><a href="">DB금융투자</a></td>
       <td>대</td>
       <td> </td>
       <td> </td>
@@ -169,10 +497,10 @@
     </tr>
     <tr>
       <td>14</td>
-      <td>2023 10 06</td>
-      <td><a href="">DB금융투자</a></td>
+      <td>2023 10 09</td>
+      <td><a href="https://nice.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&amp;jobnoticeSn=158255">NICE 그룹</a></td>
       <td>대</td>
-      <td> </td>
+      <td>신입 Java 개발</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -212,12 +540,12 @@
 (표준 -&gt; 특례)
 (특례 -&gt; 특례)</p>
 
-<h1 id="우편-모아">우편 모아</h1>
+<h1 id="리눅스-환경-원격-세팅-경험우편-모아">리눅스 환경 원격 세팅 경험(우편 모아)</h1>
 <p>이제 위택스 차세대를 진행하면서, 우편 모아라고 자치단체 마다 파일 전송할 수 있는 프로그램을 리눅스에 설치해야 했습니다.
 일주일 동안 하는 작업ㅈ에 직접 자원해서, 163개?의 자치단체 서버 마다 직접 접속해서 환경변수 설정 후 우편 모아를 설치했던 기억이 있습니다.
 Telnet이나 SSH를 이용했으며, 개발원에서 리눅스를 잘 다룬다고, 과장님인 줄 알았다고, 과장님이라 부르셨던 기억이 있습니다.</p>
 
-<h1 id="단점-1-공무원의-연락">단점 1. 공무원의 연락</h1>
+<h1 id="db-및-사람-상대한-경험공무원의-연락담배소비세">DB 및 사람 상대한 경험(공무원의 연락,담배소비세)</h1>
 <p>행안부 소속 한국지역정보개발원
 형식상 절차는
     민원 -&gt; 자치단체 공무원 -&gt; 행안부 -&gt; 한국지역정보개발원 -&gt; 회사 콜팀 -&gt; 운영팀 -&gt; 개발팀</p>
@@ -232,305 +560,53 @@ Telnet이나 SSH를 이용했으며, 개발원에서 리눅스를 잘 다룬다�
 또는 DB 삭제 권한이 없으므로 쿼리 작성 후 PM님이나 팀장님에게 부탁 드리기도 했다.</p>]]></content><author><name></name></author><category term="Resume" /><summary type="html"><![CDATA[프론트엔드 개발자 - 2022.03 ~ 2023.03 메타넷 디지털(주) 위택스 개발팀 - 지방세 중 지역자원시설세,자동차세(주행분),지방세외수입 관련 웹 어플리케이션(UI) 개발 및 유지보수 - Spring을 활용한 컴포넌트 기반 개발 - HTML, CSS, JavaScript를 사용하여 사용자 경험 향상 및 웹 성능 최적화 - SVN을 사용한 소스 코드 관리 및 협업]]></summary></entry><entry><title type="html">[이력서] DB 금융투자</title><link href="http://localhost:4000/resume/DB%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90/" rel="alternate" type="text/html" title="[이력서] DB 금융투자" /><published>2023-09-19T12:45:29+09:00</published><updated>2023-09-19T12:45:29+09:00</updated><id>http://localhost:4000/resume/DB%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90</id><content type="html" xml:base="http://localhost:4000/resume/DB%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90/"><![CDATA[<p><a href="https://dbgroup.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&amp;jobnoticeSn=155109">공고</a>
 <a href="https://dbgroup.recruiter.co.kr/mrs2/applicant/resume/writeResume">이력서 작성</a></p>
 
-<h1 id="특기">특기</h1>
-<p>자격증 공부라던가 취미 생활에 Chat GPT를 이용해 삶에 녹아들 수 있도록, 각종 상황에서 사용하며 커스텀하고 있습니다.</p>
+<h1 id="모집-요강">모집 요강</h1>
+<h2 id="모집-직무">모집 직무</h2>
+<p>∙ IT관련 구매, 계약, 예산, 자산관리 및 IT사업 전략수립
+∙ 증권업무 프로세스 및 온라인서비스(MTS/HTS 등) 기획, 분석,
+ 설계
+∙ 법규/제도 변경, 신규 서비스, 컨텐츠 기획 및 IT 프로젝트 관리</p>
 
-<h1 id="취미">취미</h1>
-<p>헬스와 수영로 부족한 체력을 보충하거나, 고장난 기계를 사서 고치고 있습니다.</p>
+<h2 id="모집-전공">모집 전공</h2>
+<p>∙ 전공 제한없음
+∙ ⭕️ JAVA, DBMS(Oracle 등), C 등
+ 개발언어 가능자 우대
+∙ ⭕️ IT, 금융관련 자격증 보유자 우대
+∙ 영어 가능자 우대</p>
+
+<h2 id="근무지역">근무지역</h2>
+<p>여의도</p>
+
+<h2 id="응시자격">응시자격</h2>
+<ul>
+  <li>대학(대학원) 졸업 또는 2024년 2월 졸업예정자로서 모집 해당전공 및 관련학과 이수자, 동등학력 소지자</li>
+  <li>전 학년 성적 평균 B학점 이상 (4.5만점 환산 시 3.0 이상)인 자</li>
+  <li>지원하는 회사 및 직무에 대한 열정과 역량을 보유한 자</li>
+  <li>병역필 또는 면제자로 해외여행에 결격사유가 없는 자</li>
+</ul>
+
+<h2 id="전형방법">전형방법</h2>
+<ul>
+  <li>서류전형</li>
+  <li>인적성전형 (AI역량검사)</li>
+  <li>면접전형 (1단계 실무진, 2단계 임원)</li>
+</ul>
+
+<h1 id="이력서">이력서</h1>
+<h2 id="취미">취미</h2>
+<p>특정 브랜드의 중고 옷을 모으고 있습니다.</p>
+
+<h2 id="특기">특기</h2>
+<p>특정 브랜드의 오래된 옷을 요즘 스타일로 트랜디하게 맞추어 입는 것이 제 특기입니다.</p>
 
 <h1 id="자기소개서">자기소개서</h1>
 <h2 id="금융투자업에-관심을-갖게된-계기를-쓰고-그-중에서도-우리회사에-지원하게-된-동기를-기술하십시오-최소-100자-최대-600자-입력가능">금융투자업에 관심을 갖게된 계기를 쓰고, 그 중에서도 우리회사에 지원하게 된 동기를 기술하십시오. (최소 100자, 최대 600자 입력가능)</h2>
 
 <h2 id="본인의-희망하는-상세-직무를-쓰고-그-직무를-수행하기-위해-어떠한-노력을-해왔는지-기술하십시오-최소-100자-최대-600자-입력가능">본인의 희망하는 상세 직무를 쓰고, 그 직무를 수행하기 위해 어떠한 노력을 해왔는지 기술하십시오. (최소 100자, 최대 600자 입력가능)</h2>
 
-<h2 id="우리-회사에-입사하여-어떤-경로로-성장하고-싶은지와-그-포부를-기술하십시오-최소-100자-최대-600자-입력가능">우리 회사에 입사하여 어떤 경로로 성장하고 싶은지와 그 포부를 기술하십시오. (최소 100자, 최대 600자 입력가능)</h2>]]></content><author><name></name></author><category term="Resume" /><summary type="html"><![CDATA[공고 이력서 작성]]></summary></entry><entry><title type="html">[이력서] SK 머터리얼즈</title><link href="http://localhost:4000/resume/SK%EB%A8%B8%ED%84%B0%EB%A6%AC%EC%96%BC%EC%A6%88/" rel="alternate" type="text/html" title="[이력서] SK 머터리얼즈" /><published>2023-09-17T12:45:29+09:00</published><updated>2023-09-17T12:45:29+09:00</updated><id>http://localhost:4000/resume/SK%EB%A8%B8%ED%84%B0%EB%A6%AC%EC%96%BC%EC%A6%88</id><content type="html" xml:base="http://localhost:4000/resume/SK%EB%A8%B8%ED%84%B0%EB%A6%AC%EC%96%BC%EC%A6%88/"><![CDATA[<p><a href="https://careers.sk-materials.com/apply/jobView/380580952">공고</a>
-<a href="https://careers.sk-materials.com/apply/formCareer/380580952/37378">이력서 작성</a></p>
+<h2 id="우리-회사에-입사하여-어떤-경로로-성장하고-싶은지와-그-포부를-기술하십시오-최소-100자-최대-600자-입력가능">우리 회사에 입사하여 어떤 경로로 성장하고 싶은지와 그 포부를 기술하십시오. (최소 100자, 최대 600자 입력가능)</h2>
 
-<h1 id="경력-기술서">경력 기술서</h1>
-<h2 id="업무프로젝트명">업무(프로젝트)명</h2>
-<p>프론트엔드 개발자</p>
+<p>국비지원 교육 중에 진행한 4주간의 음식점 예약 플랫폼 프로젝트가 제 성장과정에서 빼놓을 수 없는 중요한 이정표입니다. 당시 COVID-19 확산과 거리두기가 철저히 이행되어야 하는 상황 속에서 이 프로젝트를 시작하게 되었고, 제 역할은 예약 기능의 구현이었습니다. 프론트엔드와 Google Map API를 활용하여 사용자에게 음식점의 위치를 직관적으로 제공하였고, Ajax를 이용해 예약 메시지를 실시간으로 음식점 주인에게 전달 가능하게 하였습니다. 더불어, Twilio를 활용해 예약 승인 시 문자 알림을 전송하는 기능까지 추가하였습니다.
+학교 수업도 병행하고 있어 시간이 매우 촉박했으나, 프로젝트 초반에 설계한 프로토타입의 개발자로서 그 책임을 다하고 싶었습니다. 각 기능의 연결에서 문제가 발생했을 때, Git을 도입하여 형상 관리를 강화하고 프로젝트를 성공적으로 마무리할 수 있었습니다. 이 경험을 통해 클린 코드 작성과 형상 관리의 중요성을 몸소 느끼고, 팀원들과의 원활한 협업 능력을 향상시켰습니다.</p>
 
-<h2 id="업무프로젝트-설명">업무(프로젝트) 설명</h2>
-<p>지방세 중 지역자원시설세,자동차세(주행분),지방세외수입 관련 웹 어플리케이션(UI) 개발 및 유지보수</p>
-
-<h2 id="본인-역활-및-성과">본인 역활 및 성과</h2>
-<ul>
-  <li>Spring을 활용한 컴포넌트 기반 개발</li>
-  <li>HTML, CSS, JavaScript를 사용하여 사용자 경험 향상 및 웹 성능 최적화</li>
-  <li>SVN을 사용한 소스 코드 관리 및 협업</li>
-</ul>
-
-<h1 id="자기소개서">자기소개서</h1>
-<h2 id="지원-분야를-선택하여-주십시오-ad직군-ds직군--50자">지원 분야를 선택하여 주십시오 (AD직군, DS직군) * 50자</h2>
-<p>AD 직군</p>
-
-<h2 id="지원동기이직사유경력개발-계획-등을-자유롭게-기술하여-주십시오--1000자">지원동기/이직사유/경력개발 계획 등을 자유롭게 기술하여 주십시오. * 1000자</h2>
-<p>1) 공고
-    AD 직군 (Application Development)
-    - AD 직군은 소재 생산, 공정 최적화, 품질관리, R&amp;D 데이터 관리와 관련된 시스템과 솔루션을 개발합니다.
-    - C#, JAVA, C++, Python 등 프로그래밍 경험을 보유한 인원을 찾습니다.
-    - 입사 시, 프로그램 개발에 필요한 기술역량 교육 후 본격적인 프로젝트를 수행합니다.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>용어 정리
-- 소재 생산
-데이터 분석: 생산 과정에서 발생하는 다양한 데이터를 분석하여 생산 효율을 높이는 알고리즘을 개발할 수 있습니다.
-자동화: 생산 라인의 자동화를 위한 소프트웨어를 개발하며, 이를 통해 오류를 줄이고 생산성을 향상시킬 수 있습니다.
-- 공정 최적화
-시뮬레이션: 공정의 다양한 변수와 조건을 컴퓨터 시뮬레이션을 통해 테스트하고, 최적의 조건을 찾을 수 있습니다.
-AI/ML 활용: 인공지능이나 머신러닝 모델을 사용하여 공정을 더욱 똑똑하게 만들 수 있습니다. 예를 들어, 불량률을 줄이기 위한 모델을 학습시킬 수 있습니다.
-- 품질 관리
-센서 데이터 분석: 제품의 품질을 실시간으로 모니터링하기 위한 센서 데이터를 분석하는 소프트웨어를 개발할 수 있습니다.
-보고서 자동화: 품질 검사 결과를 자동으로 분석하고 보고서를 생성하는 시스템을 개발할 수 있습니다
-</code></pre></div></div>
-
-<p>2) 이전 자기소개서
-    사물 인터넷 수업에 조교로 참여하여 라즈베리파이 분석을 통해 전년 대비 수업 만족도 12% 증가. 학교에서 강의 영상 편집을 하던 중 한 교수님을 만나 실습 수업 진행 시 많은 학생들을 혼자 보지 못하여 도우미를 구하시고 있다는 소식을 접했습니다. 졸업작품에 관한 라즈베리파이의 이해와 학생들이 원활하게 수업 진행하면서 교수님의 졸업작품에 대한 도움을 얻기 위해 도우미로 참여하였습니다. 우선 학생들이 원하는 수업 방식을 가벼운 대화를 통해 니즈를 파악하였습니다. 학생 별로 ` 진도가 빠르다. ` 혹은 ` 느리다. ` 라며, 수업의 진도에 대한 불만이 많았습니다. 
-    라즈베리파이의 GPIO를 실습하다 보면 많은 하드웨어(물리)적 문제가 발생합니다. 첫 번째로 ` 라즈베리파이4 정석 `, 책을 이용하여 센서에 대한 정보를 탐색하였습니다. 두 번째, 구글링을 통하여 센서의 사용 가능 유무를 직접 코딩하며 실험해, 동작하는 센서를 구분하였습니다. 과전류에 따른 브레드 보드 및 센서의 손상 문제에 대해 사전에 방지하였습니다. 마지막으로 진도 문제를 해결하기 위해 뒤처진 학생들을 맡았으며, 학생들의 수업 참여율을 높였습니다. 그리하여 시간은 절약되고, 수업의 질을 높일 수 있었습니다. 결과적으로 기말고사 후 작년 대비 수업 만족도 12% 증가한 것을 확인하였으며, 교수님의 만족도 충족시킬 수 있었습니다. 
-    이러한 경험을 바탕으로 생각을 했으면 실천에 옮길 수 있는 개발자로 성장하겠습니다.</p>
-
-<p>3) 새로 작성한 자기소개서
-    사물 인터넷 수업에 조교로 참여하여 라즈베리파이 분석을 통해 전년 대비 수업 만족도 12% 증가. 학교에서 강의 영상 편집을 하던 중 한 교수님을 만나 실습 수업 진행 시 많은 학생들을 혼자 보지 못하여 도우미를 구하시고 있다는 소식을 접했습니다. 졸업작품에 관한 라즈베리파이의 이해와 학생들이 원활하게 수업 진행하면서 교수님의 졸업작품에 대한 도움을 얻기 위해 도우미로 참여하였습니다. 우선 학생들이 원하는 수업 방식을 가벼운 대화를 통해 니즈를 파악하였습니다. 학생 별로 ` 진도가 빠르다. ` 혹은 ` 느리다. ` 라며, 수업의 진도에 대한 불만이 많았습니다. 
-    라즈베리파이의 GPIO를 실습하다 보면 많은 하드웨어(물리)적 문제가 발생합니다. 첫 번째로 ` 라즈베리파이4 정석 `, 책을 이용하여 센서에 대한 정보를 탐색하였습니다. 두 번째, 구글링을 통하여 센서의 사용 가능 유무를 직접 코딩하며 실험해, 동작하는 센서를 구분하였습니다. 과전류에 따른 브레드 보드 및 센서의 손상 문제에 대해 사전에 방지하였습니다. 마지막으로 진도 문제를 해결하기 위해 뒤처진 학생들을 맡았으며, 학생들의 수업 참여율을 높였습니다. 그리하여 시간은 절약되고, 수업의 질을 높일 수 있었습니다. 결과적으로 기말고사 후 작년 대비 수업 만족도 12% 증가한 것을 확인하였으며, 교수님의 만족도 충족시킬 수 있었습니다. 
-    이러한 경험을 바탕으로 SK머티리얼즈에서 생각을 했으면 실천에 옮길 수 있는 개발자로 성장하겠습니다.</p>
-
-<h2 id="지원-직무를-어떻게-이해하고-있는지-기술하고-본인이-적합하다고-판단하는-이유를-보유역량기술경험을-바탕으로-기술하여-주십시오--1000자">지원 직무를 어떻게 이해하고 있는지 기술하고, 본인이 적합하다고 판단하는 이유를 보유역량/기술/경험을 바탕으로 기술하여 주십시오. * 1000자</h2>
-<p>AD 직군 (Application Development)
-    - AD 직군은 소재 생산, 공정 최적화, 품질관리, R&amp;D 데이터 관리와 관련된 시스템과 솔루션을 개발합니다.
-    - C#, JAVA, C++, Python 등 프로그래밍 경험을 보유한 인원을 찾습니다.
-    - 입사 시, 프로그램 개발에 필요한 기술역량 교육 후 본격적인 프로젝트를 수행합니다.</p>
-
-<p>SK 머티리얼즈 AD 직군은 공정 중 발생할 수 있는 여러 변수를 고려하여 불량률을 예측하고, 공정 조건을 실시간으로 조정하거나, 센서 데이터를 분석하여 품질 이상이 발생하는 지 확인하고 불량률을 줄이는 모델이나 소프트웨어를 개발 및 유지보수를 합니다. 여기에는 두 가지 기술이 필요합니다. 공정을 담당하는 다른 부서의 니즈를 파악하는 소프트스킬과 소프트웨어를 다루는 하드스킬 역량이 요구됩니다.</p>
-
-<p>저는 지방세를 신고/납부를 할 수 있는 위택스에서 웹개발자로 직무를 해본 경력이 입습니다. 맡은 일 중 하나가 각 지역 자치단체나 행안부 소속 공무원의 요구사항을 파악하고 대응해서, PL님께 보고드리는 것이었습니다. 22년 연말에는 차세대 개발로 인해 대부분 인력이 지원을 나가게 되었으며, 전체 세목의 40%를 혼자서 담당했고 문제 없이 해결한 경험이 있었습니다.</p>
-
-<p>저는 IOT 관련해서 수업 도우미 및 라즈베리파이를 이용한 프로젝트를 진행해 본 경험이 있습니다. 이전에 도우미로 참여했던 수업에서 주로 센서 데이터를 활용하고, Python을 사용해 데이터를 분석하여 결과를 도출하는 것이었습니다. 센서 데이터 처리에 이해를 갖추고 있습니다.</p>
-
-<p>다른 부서의 의사결정에 도움을 줄 수 있는 AD직군에 적합한 개발자로 성장하고 싶습니다.</p>
-
-<h2 id="상위-항목에-기재하지-못한-내용이나-추로-작성을-원하는-사항을-자유롭게-기입하여-주십시오장단점-가치관--1000자">상위 항목에 기재하지 못한 내용이나 추로 작성을 원하는 사항을 자유롭게 기입하여 주십시오(장단점, 가치관) * 1000자</h2>
-<p>사회 생활을 하면서 생겨진 3가지 주관이 있습니다. 
-첫 번째로는 시간 관리를 철저히 하면서 업무 진행을 통하여 맡은 업무에 있어 정해진 기한 내에 마무리 지을 수 있도록 하였습니다. 두 번째로는 회사 부서 내에 그 누구보다 일찍 출근하여 일과를 시작하기 전 금일 업무파악 및 부족한 공부를 한 후, 업무를 수행하기 시작하였습니다. 이에 따라 동기 및 상사분들이 ‘ 성실하다 ’ 라는 얘기를 많이 하였습니다. 마지막으로 상사의 질문이나 행동에 대한 의도를 파악하여 보다 정확한 답변을 하였습니다. 의견이 상이한 경우에 얘기하는 내용의 주된 내용을 대화로 니즈를 찾고, 업무 처리방향을 고려하여 진행하였습니다.</p>
-
-<h1 id="1분-자기소개">1분 자기소개</h1>]]></content><author><name></name></author><category term="Resume" /><summary type="html"><![CDATA[공고 이력서 작성]]></summary></entry><entry><title type="html">[빅데이터분석기사][D-77] 네이버 데이터포럼카페 오프라인 스터디</title><link href="http://localhost:4000/big/data/analyse/certification/OfflineStudy/" rel="alternate" type="text/html" title="[빅데이터분석기사][D-77] 네이버 데이터포럼카페 오프라인 스터디" /><published>2023-09-16T12:45:29+09:00</published><updated>2023-09-16T12:45:29+09:00</updated><id>http://localhost:4000/big/data/analyse/certification/OfflineStudy</id><content type="html" xml:base="http://localhost:4000/big/data/analyse/certification/OfflineStudy/"><![CDATA[<p>김다<em>님과 단 둘이 진행하였다.
-딱히 공부를 한 것은 아니다. 살아가는 이야기를 했다.
-다</em>님은 판교에 N**프트에서 PM을 하고 계신다고 했다. 항공사에서 비행기 프라이싱 관련 일을 하다가 4년 경력을 가지고 이 회사로 온지 3년 정도 됐다고 했다.</p>
-
-<h1 id="다은-님이-주신-tip">다은 님이 주신 TIP</h1>
-<ul>
-  <li>
-    <p>자격요건 안 지켜도 된다. 그냥 지원해라. 우리가 하는 일을 굳이 설명하자면 이런 거지, 이런 사람을 구하는 건 아니다. 
-  결과는 성격에 따라 달라질 수 있다.</p>
-  </li>
-  <li>
-    <p>책 추천, 가상 면접 사례로 배우는 대규모 시스템 설계 기초
-  위 책은 면접 볼 때, 매우 유용하다. 한 번쯤 읽어 봤으면 한다.</p>
-  </li>
-</ul>
-
-<h1 id="1단원">1단원</h1>
-<ul>
-  <li><a href="https://roi-data.com/entry/빅데이터분석기사빅분기-필기-요약-I-빅데이터-분석-기획-1-빅데이터의-이해-②">빅데이터 분석기획 참고</a></li>
-</ul>
-
-<h1 id="2단원">2단원</h1>
-<ul>
-  <li><a href="https://ddongwon.tistory.com/114">주성분 분석 참고</a></li>
-  <li><a href="https://specialscene.tistory.com/77">계통추출법 참고</a></li>
-  <li><a href="https://blog.minitab.com/ko/adventures-in-statistics-2/understanding-analysis-of-variance-anova-and-the-f-test">F-통계/분산분석 참고</a></li>
-  <li><a href="https://velog.io/@aischool/bayezrule">베이즈 공식 참고</a></li>
-  <li><a href="https://blog.naver.com/mykepzzang/220837877074">기댓값 공식 참고</a></li>
-  <li><a href="https://m.blog.naver.com/PostView.naver?blogId=prayer2k&amp;logNo=222624821291&amp;categoryNo=21&amp;proxyReferer=">분산 공식 참고</a></li>
-  <li><a href="https://brunch.co.kr/@chris-song/34">RSME/MAPE 계산식 참고</a></li>
-  <li><a href="https://asthtls.tistory.com/500">다차원 척도법 참고</a></li>
-  <li><a href="https://dbrang.tistory.com/1102">R 다차원척도법 Im() 참고</a></li>
-  <li><a href="https://ceo-ming.tistory.com/51">R 이상치 판별 참고</a></li>
-  <li><a href="http://333yyy333.com/bbs/board.php?bo_table=m41&amp;wr_id=1465">오즈비 참고</a></li>
-</ul>
-
-<h1 id="3단원">3단원</h1>
-<ul>
-  <li><a href="https://m.blog.naver.com/PostView.naver?blogId=sharp_kiss&amp;logNo=221599009671&amp;targetKeyword=&amp;targetRecommendationCode=1">ROC/오분류표 참고</a></li>
-  <li><a href="https://sikmulation.tistory.com/13">SVM 커널트릭 참고</a></li>
-  <li><a href="https://rsas.tistory.com/288">의사결정나무 참고</a></li>
-  <li><a href="https://ko.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/box-whisker-plots/a/identifying-outliers-iqr-rule">IQR/Box Plot 계산식 참고</a></li>
-  <li><a href="https://ratsgo.github.io/machine%20learning/2017/05/01/SOM/">자기조직화지도(SOM) 참고</a></li>
-  <li><a href="https://yganalyst.github.io/ml/ML_clustering/">k-means,DBCSAN 참고</a></li>
-  <li><a href="https://syj9700.tistory.com/8">거리측도(유클리드,멘하탄) 참고</a></li>
-  <li><a href="https://untitledtblog.tistory.com/110">유전 알고리즘 참고</a></li>
-</ul>
-
-<h1 id="4단원">4단원</h1>
-<ul>
-  <li><a href="https://www.tibco.com/ko/reference-center/what-is-a-radar-chart">레이더차트 참고</a></li>
-  <li><a href="https://sy-log.tistory.com/50">오버피팅 참고</a></li>
-  <li><a href="https://swrush.tistory.com/570">버블플롯맵 참고</a></li>
-  <li><a href="https://newsjel.ly/archives/contents/587">버블차트 참고</a></li>
-</ul>]]></content><author><name></name></author><category term="Big" /><category term="Data" /><category term="Analyse" /><category term="Certification" /><summary type="html"><![CDATA[김다님과 단 둘이 진행하였다. 딱히 공부를 한 것은 아니다. 살아가는 이야기를 했다. 다님은 판교에 N**프트에서 PM을 하고 계신다고 했다. 항공사에서 비행기 프라이싱 관련 일을 하다가 4년 경력을 가지고 이 회사로 온지 3년 정도 됐다고 했다.]]></summary></entry><entry><title type="html">[빅데이터분석기사][D-84] 네이버 데이터포럼카페 오프라인 스터디</title><link href="http://localhost:4000/big/data/analyse/certification/OfflineStudy/" rel="alternate" type="text/html" title="[빅데이터분석기사][D-84] 네이버 데이터포럼카페 오프라인 스터디" /><published>2023-09-09T12:45:29+09:00</published><updated>2023-09-09T12:45:29+09:00</updated><id>http://localhost:4000/big/data/analyse/certification/OfflineStudy</id><content type="html" xml:base="http://localhost:4000/big/data/analyse/certification/OfflineStudy/"><![CDATA[<p>9월 6일에 온라인 스터디는 SQLD 시험 보는 분이나 다른 사정으로 인해 바쁜 분들이 있어 점프하게 되었다.</p>
-
-<p>13시 부터 두 시간 동안 강남311이라는 곳에서 진행하였다.
-이번에는 다른 분이 오셨는데, 이번 스터디를 참관하셨다. SQLD를 보고 오는 사람도 있었고 일하느라, 학교 다니느라 나와 다른 한 분 제외하고 다 못한 분들이 있었다.</p>
-
-<p>스터디에서는 거의 오류 문제 찾기로 진행한 것 같다.
-전 날에 친구와 패션 위크 갔다가 몸살이 심하게 와서 간신히 버텼다.</p>
-
-<h2 id="1단원">1단원</h2>
-<ul>
-  <li><a href="https://blog.naver.com/PostView.naver?blogId=gkenq&amp;logNo=10188552802">군집분석 예시 참고</a></li>
-  <li><a href="http://www.incodom.kr/hadoop_총정리_2편">하둡 개념 총정리 참고</a></li>
-  <li><a href="https://warm-uk.tistory.com/62">Pig 개념 참고</a></li>
-  <li><a href="">GDPR, 개이정보보호법 참고</a></li>
-  <li><a href="https://newstellar.tistory.com/30">카산드라 개념 참고</a></li>
-</ul>
-
-<h3 id="용어-개념-정리">용어 개념 정리</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">단어</th>
-      <th style="text-align: center">개념</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">Oozie(우지)</td>
-      <td style="text-align: center"><strong>하둡의 워크플로우를 관리</strong>한다. 일정한 시간이 경과하거나 또는 <strong>주기적으로 반복해서 실행될 수 있는 “잡”들에 대하여 관리</strong>하며, 맵리듀스 잡, 피그 잡 등의 시작과 완료 그리고 실행 중 에러등의 이벤트를 콜 백할 수 있다.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Avro(에이브로)</td>
-      <td style="text-align: center">데이터 직렬화 프레임워크이다. 가장 큰 특징은 ‘특정 언어에 종속되지 않는다’ 이다. 다양한 언어(C, 자바, 펄, 파이썬, 루비 등)로 데이터를 쉽게 공유할 수 있는 것이다. 따라서 어떤 언어가 사라진다 하더라도 에이브로를 통한 데이터 직렬화가 가능하다. 스키마를 보통 JSON으로 작성하며 바이너리 형태로 인코딩한다.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Parquet(파케이)</td>
-      <td style="text-align: center">컬럼 기준으로 데이터를 저장하는 포맷이다. 컬럼 단위의 중첩된 데이터 저장은 효율적으로 저장공간을 절약한다. 또한, 특정 열 값을 가져오는 쿼리가 전체 행을 읽을 필요가 없기 때문에 성능이 좋은 프레임워크이다.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Flume(플룸)</td>
-      <td style="text-align: center">플룸은 <strong>수집 기능을 담당</strong>하는 프레임워크이다. <strong>웹서버에서 로그 파일</strong>을 수집하고 로그 이벤트를 저장소로 전달한다. 플룸 에이전트는 소스, 채널, 싱크로 구성된다. 소스는 이벤트를 수집하여 채널로 전달하고, 채널은 소스와 싱크의 통로이다. USB 케이블의 입력 단자, 케이블, 출력 단자를 생각하면 이해가 쉽다.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Sqoop(스쿱)</td>
-      <td style="text-align: center">스쿱은 플룸과 같이 <strong>수집 기능을 담당</strong>하는 프레임워크이다. 하지만 스쿱은 <strong>관계형 데이터베이스 관리시스템(RDBMS)</strong>과 같은 정형적인 데이터 저장소에서 데이터를 추출하도록 도와준다. <strong>관계형 데이터베이스의 데이터를 HBase로 옮기는 데 사용</strong>하는 것이 대표적이다.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Pig(피그)</td>
-      <td style="text-align: center"><strong>하둡 시스템의 맵리듀스 API를 단순화시킨 프레임워크</strong>이다. 사용하는 이유는 대용량 데이터를 처리할 때 맵리듀스 함수가 처리하기 어려운 조인 기능 등으로 쉽게 처리할 수 있다. 피그 라틴언어를 사용하는데 이를 통해 데이터 흐름을 표현할 수 있다.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Crunch(크런치)</td>
-      <td style="text-align: center">맵리듀스 파이프라인을 작성하는 API이다. Work Flow 상 개별 맵리듀스 Job을 직접 관리할 필요가 없기 때문에 여러 단계의 파이프라인에만 개발자가 집중할 수 있도록 해준다.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">HBase</td>
-      <td style="text-align: center"><strong>분산형 파일 시스템을 사용하는 컬럼기반 데이터베이스</strong>이다. <strong>실시간</strong>으로 랜덤에이터 조회 및 수정이 가능하며 <strong>비동기적으로 데이터를 수정</strong>할 수 있다. RDBMS의 비확장성 비분산 등의 단점을 완벽히 커버한다. 단지 <strong>노드만 추가하면 선형으로 확장</strong>할 수 있다.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Hive(하이브)</td>
-      <td style="text-align: center">하이브는 <strong>자바 프로그래밍을 모르는 사용자도 빅데이터를 분석하고 처리할 수 있도록 도와주는 프레임워크</strong>이다. HiveQL이라는 자체 쿼리를 제공한다. HiveQL은 실핼 될 때 맵리듀스의 Job으로 변환되어 실행된다.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Impala</td>
-      <td style="text-align: center">하이브와 같이 <strong>SQL 질의 시스템</strong>이다. 다만 맵리듀스를 사용하지 않고 자체 개발한 엔진을 사용한다. 쿼리는 HiveQL을 사용하고 Hbase와도 연동된다.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Tajo</td>
-      <td style="text-align: center"><strong>하둡 기반의 DW시스템</strong>이다. 하둡 분산파일 시스템(HDFS)에 저장된 빅데이터를 <strong>ETL 작업이 가능</strong>한 시스템이며, Hive보다 2~3배 정도 빠르고 임팔라와는 비슷한 속도를 가진다. 특정한 솔루션에 종속되지 않는 장점이 있다.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Cassandra(카산드라)</td>
-      <td style="text-align: center">HBase와 비슷하게 Java 등의 언어로 작성하며 Column 형태로 저장한다는 방식도 같습니다. 다만 Consistency &amp; Partial Tolerance를 허용하는 HBase와 다르게 Availability, 즉 가용성을 위주로 확장성을 유지한 채 데이터를 핸들링한다는 점이 차이점입니다.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="기출-5회-1번-wbs">기출 5회 1번 WBS</h4>
-<p>WBS는 “Work Breakdown Structure”의 약자로, <strong>프로젝트를 관리하고 계획할 때 사용되는 도구</strong> 중 하나입니다. WBS는 <strong>큰 프로젝트나 작업을 더 작고 관리 가능한 부분으로 나누는 과정을 도와줍니다</strong>. 이 구조는 일반적으로 <strong>계층적 트리 구조</strong>로 표시되며, 최상위 레벨에서는 전체 프로젝트를 나타내고 하위 레벨에서는 개별 작업, 작업 패키지, 그리고 그에 따른 하위 작업으로 세분화됩니다.</p>
-
-<p>데이터 분석기획의 경우, WBS는 다음과 같은 형태로 구성될 수 있습니다:</p>
-
-<ol>
-  <li>프로젝트 정의 및 목표 설정
- 비즈니스 문제 이해
- 분석 목표 설정</li>
-  <li>데이터 수집
- 데이터 소스 식별
- 데이터 수집 방법 설정</li>
-  <li>데이터 전처리
- 결측치 처리
- 데이터 변환</li>
-  <li>데이터 분석
- 통계 분석
- 머신러닝 모델링</li>
-  <li>결과 해석 및 보고
- 결과 요약
- 비즈니스 인사이트 도출</li>
-  <li>프로젝트 평가 및 마무리</li>
-</ol>
-
-<p>WBS를 통해 각 단계에서 필요한 작업을 명확히 할 수 있으며, 시간, 비용, 리소스를 효과적으로 할당할 수 있습니다.</p>
-
-<h2 id="2단원">2단원</h2>
-<ul>
-  <li><a href="https://jjeongil.tistory.com/583">바이너리 인코딩과 원핫 인코딩 차이 참고</a></li>
-  <li><a href="https://ko.wikipedia.org/wiki/맨해튼_거리">맨하튼 거리와 유클리드 거리 차이 참고</a></li>
-</ul>
-
-<h2 id="3단원">3단원</h2>
-<ul>
-  <li><a href="https://horae.tistory.com/entry/범주형수치형이상형연속형명목형순서형-정리">범주형과 수치형 참고</a></li>
-  <li><a href="https://velog.io/@cha-suyeon/오토인코더Autoencoder">오토인코더 개념 참고</a></li>
-  <li><a href="https://angeloyeo.github.io/2022/09/28/Mahalanobis_distance.html">마할라노비스 거리 개념 참고</a></li>
-  <li><a href="https://velog.io/@poiu8944/머신러닝Distance-Metric-Types">민코프스키 거리 개념 참고</a></li>
-  <li><a href="https://kiyoo.tistory.com/584">질적자료와 양적자료 차이 참고</a></li>
-</ul>
-
-<h2 id="4단원">4단원</h2>
-<ul>
-  <li><a href="https://www.mathway.com/ko/popular-problems/Finite%20Math/600013">3C2, 컴비네이션 계산법 참고</a></li>
-  <li><a href="https://m.blog.naver.com/PostView.nhn?blogId=at3650&amp;logNo=220041816572&amp;proxyReferer=https:%2F%2F">3P2, 퍼뮤테이션 참고</a></li>
-  <li><a href="https://ko.wikipedia.org/wiki/히스토그램">히스토그램 개념 참고</a></li>
-  <li><a href="https://www.tibco.com/ko/reference-center/what-is-a-treemap-chart">트리맵 개념 참고</a></li>
-</ul>
-
-<p>비교 시각화 모델</p>
-<ul>
-  <li><a href="https://www.tibco.com/ko/reference-center/what-is-a-radar-chart">레이더 차트 참고</a></li>
-  <li><a href="https://rfriend.tistory.com/170">체르노프페이스 참고</a></li>
-  <li><a href="https://wikidocs.net/166188">평행좌표계 참고</a></li>
-</ul>
-
-<h2 id="최님-알려주신-내용">최**님 알려주신 내용</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[이기적 기출 풀이 영상](https://license.youngjin.com/free_edu/free_edu_mp4.asp?elc_cd=2573&amp;cate_cd=2448)
-</code></pre></div></div>
-
-<h1 id="9월-10일까지-서평-작성을-해야한다고-했다">9월 10일까지 서평 작성을 해야한다고 했다.</h1>
-<h2 id="서평-작성9월-11일">서평 작성(9월 11일)​</h2>
-
-<p>2022 수제비 빅분기 필기 책을 가지고 있는데, 이기적 저자 분들이 독자에게 얼마나 많은 내용을 전달하고 싶으셨는지, 이런 점에서 한국인의 정 마저 느껴졌던 거 같아요. 수제비 책에 비해 더 두껍고, 보다 깊게 자세한 내용을 다룹니다. 또 맨 앞 쪽에 Big 6? 거기 보면, 별 자료를 다 줍니다. 정보처리기사 때도 느꼈지만, 이기적이 자료를 무료로 참 많이 제공을 해주는 구나를 느꼈던 거 같아요.</p>
-
-<p>그리고 마지막에 요약 본이 있더라고요. 상황에 따라 시간이 없다면 마지막 요약 본이라도 보는 식으로 가도 될 거 같습니다. 유튜브에 기출 같은 건 무료로 문제 풀이 영상도 있습니다. 이 점은 참 괜찮았어요.</p>
-
-<p>상황에 따라 유동적으로 공부 방식을 선택할 수 있는 거 같아요. 약간 독학하시는 분들에게도 괜찮은 책인 거 같습니다.</p>
-
-<p>​</p>
-
-<p>개인적으로 문제집을 선택할 때, 두껍게 만 만들어 놓고 출제율 100% 라고 적어논?,,, 쓸데 없이 자세하게 개념이 많고, 두껍고 무거운 책을 별로 안 좋아해요. 근데 빅분기 같은 경우는 빈출이 많지 않으니까 오히려 이런 부분이 장점이라는 생각이 듭니다. 수제비 보다 이기적이 참고 할 게 많아서 훨신 괜찮았어요.</p>
-
-<p>​</p>
-
-<p>단점은 특정 용어의 개념이 중요하다 생각하는 부분에 형광펜으로 표시가 돼 있더라고요. 그런 부분을 중심 적으로 보는 편인데, 문제 풀 때, 오히려 표시가 안된 부분에서 나오는 경우가 많았던 거 같아요. 빅분기가 기출도 별로 없고, 지금까지는 개념 문제가 많다 보니, 개인적으로 형광펜으로 표시 된 부분이 개념을 볼 때, 방해가 되는 거 같습니다. 이런 부분은 수제비 보다 못하다고 느꼈어요. 수제비가 Tip 이나 두음으로 외우기 쉽게 잘 되어 있거든요.</p>
-
-<p>​</p>
-
-<p>두 번째로 내용이 중구난방 합니다. 찾기가 힘들어요. 그리고 부록를 많이 보는 편인데, 부록에 원하는 용어가 많이 안 보입니다. 찾더라도 몇몇 부분이 개념 보다는 사이드에 Tip 느낌으로 적혀 있다고 해야하나,, 그런 부분이 있습니다.</p>
-
-<p>기출은 오타가 좀 보여요. 아는 내용이라면 “이거 틀렸는데?” 하고 찾아보고 지나가겠지만, 만약에 모르는 내용이라면 문제 통제로 외우는 편이라 아주 아찔 합니다.</p>
-
-<p>​</p>
-
-<p>​</p>]]></content><author><name></name></author><category term="Big" /><category term="Data" /><category term="Analyse" /><category term="Certification" /><summary type="html"><![CDATA[9월 6일에 온라인 스터디는 SQLD 시험 보는 분이나 다른 사정으로 인해 바쁜 분들이 있어 점프하게 되었다.]]></summary></entry><entry><title type="html">[빅데이터분석기사][D-101][D-93] Edu A to Z 데일리 퀴즈 35 오답</title><link href="http://localhost:4000/big/data/analyse/certification/Quiz27/" rel="alternate" type="text/html" title="[빅데이터분석기사][D-101][D-93] Edu A to Z 데일리 퀴즈 35 오답" /><published>2023-09-03T12:45:29+09:00</published><updated>2023-09-03T12:45:29+09:00</updated><id>http://localhost:4000/big/data/analyse/certification/Quiz27</id><content type="html" xml:base="http://localhost:4000/big/data/analyse/certification/Quiz27/"><![CDATA[]]></content><author><name></name></author><category term="Big" /><category term="Data" /><category term="Analyse" /><category term="Certification" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">[빅데이터분석기사][D-93][D-85] Edu A to Z 데일리 퀴즈 3(5/9) 오답</title><link href="http://localhost:4000/big/data/analyse/certification/Quiz5/" rel="alternate" type="text/html" title="[빅데이터분석기사][D-93][D-85] Edu A to Z 데일리 퀴즈 3(5/9) 오답" /><published>2023-09-02T12:45:29+09:00</published><updated>2023-09-02T12:45:29+09:00</updated><id>http://localhost:4000/big/data/analyse/certification/Quiz5</id><content type="html" xml:base="http://localhost:4000/big/data/analyse/certification/Quiz5/"><![CDATA[<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>정답 : 
-</code></pre></div></div>
-
-<h4 id="오답">오답</h4>
-
-<hr />]]></content><author><name></name></author><category term="Big" /><category term="Data" /><category term="Analyse" /><category term="Certification" /><summary type="html"><![CDATA[정답 :]]></summary></entry></feed>
+<p>입사 후 꿈꾸는 모습은 ‘변화의 주역’입니다. 새로운 기술 도입이나 업무 프로세스 개선을 주도하여, 회사가 보다 빠르게 변화하는 시장 환경에 적응할 수 있도록 하고 싶습니다. 특히, 인공지능과 머신러닝을 활용한 데이터 분석 역량을 갖추어 고객의 필요를 미리 파악하고 이를 제품에 반영하는 것을 목표로 하고 있습니다.</p>]]></content><author><name></name></author><category term="Resume" /><summary type="html"><![CDATA[공고 이력서 작성]]></summary></entry></feed>
