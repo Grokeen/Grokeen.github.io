@@ -1,0 +1,70 @@
+<!-- ----------------------------------------------------------------------- -->
+<!-- "pin"이 "true"인 모든 포스트를 allPost에 할당. -->
+{% assign pinned = site.posts | where: "pin", "true" %}
+<!-- {% assign default = site.posts | where: "pin", "false" %} 202308161518 추가: pin이 false인 포스트를 default에 할당 -->
+
+
+<!-- 빈 배열 선언 -->
+{% assign posts = "" | split: "" %}
+
+<!-- 페이징을 위해 -->
+<!--  offset을 계산하여 현재 페이지의 오프셋을 구한 다음, 
+    pinned 배열의 일부를 posts 배열에 추가합니다. 이후, 
+    default 배열의 일부도 추가 -->
+{% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
+{% assign pinned_num = pinned.size | minus: offset %}
+
+{% if pinned_num > 0 %}
+  {% for i in (offset..pinned.size) limit: pinned_num %}
+    {% assign posts = posts | push: pinned[i] %}
+  {% endfor %}
+{% else %}
+  {% assign pinned_num = 0 %}
+{% endif %}
+
+
+<!-- 포스트 안에 값 널기 -->
+{% assign default_beg = offset | minus: pinned.size %}
+
+{% if default_beg < 0 %}
+  {% assign default_beg = 0 %}
+{% endif %}
+
+{% assign default_num = paginator.posts | size | minus: pinned_num  %}
+{% assign default_end = default_beg | plus: default_num | minus: 1 %}
+
+<!-- 포스트 안에 값 널기 -->
+{% if default_num > 0 %}
+  {% for i in (default_beg..default_end) %}
+    {% assign posts = posts | push: default[i] %} <!-- 202308161518 수정: default 배열에서 값을 가져와 posts에 추가 -->
+  {% endfor %}
+{% endif %}
+
+
+<!-- for 문으로 출력 -->
+{% for post in posts %} 
+<section class="post" itemscope itemprop="blogPost">
+    <a href="{{post.url|relative_url}}" title="{{post.title}}" itemprop="url">
+
+      <h1 itemprop="name">
+        {{post.title}}
+      </h1>
+
+      <!-- 본문 미리보가 -->
+      <p itemprop="description">
+        {% include no-linenos.html content=post.content %}
+        {{post.content | markdownify | strip_html | truncate: 200 | escape}} <!-- 202308161518 수정: content에서 post.content로 변경 -->
+        
+      </p>
+
+      <!-- 작성 시간 -->
+      <time itemprop='datePublished'>
+        {{ post.date | date: "%B %d, %Y" }}
+      </time>
+    </a>
+  </section>
+{% endfor %}
+
+
+<!-- 페이징 처리 -->
+<br>

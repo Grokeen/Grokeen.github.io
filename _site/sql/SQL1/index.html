@@ -15,22 +15,6 @@
 <!-- 헤더 -->
 
 <head>
-	<meta charset="UTF-8">
-	<title>스케치용녹색물감</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
-	<meta name="author" content="Grokeen">
-	<meta name="description" content="new start">
-
-	<link rel="icon" href="/favicon.ico">
-	<!-- 20230824 운영에서 오류나던 부분 img 디렉토리에서 변경 -->
-	<link rel="apple-touch-icon" href="/pacman.jpg">
-	<link rel="apple-touch-icon-precomposed" href="/pacman.jpg">
-
-	<link rel="stylesheet" href="/css/style.css" type="text/css">
-	<script src="/js/jquery-2.1.0.min.js"></script>
-
-	<!-- 20230821 깃허브 빌드 중 보안 CSP가 걸려서 작성 -->
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://example.com;">
 
 </head>
 
@@ -61,7 +45,7 @@
 		<!-- 상단 카테로그 -->
 		<nav class="animated">
 			<ul>
-				<li><a href="/">Home</a></li>
+				<li><a href="/url.html/index/blogindex.html">Home</a></li>
 				<!-- <li><a href="tag_EX.html">Post</a></li> -->
 				<li>
 
@@ -96,10 +80,10 @@
         <header class="article-info clearfix">
           <h1 itemprop="name">
 
-            <a href="#" title="[이력서] 롯데정보통신" itemprop="url">[이력서] 롯데정보통신</a>
+            <a href="#" title="[SQL] 코딩테스트 문제 풀어보기 1일차" itemprop="url">[SQL] 코딩테스트 문제 풀어보기 1일차</a>
           </h1>
           <p class="article-time">
-            <time datetime="2023-10-03 12:45:29 +0900" itemprop="datePublished">October 03, 2023</time>
+            <time datetime="2022-08-12 04:45:29 +0100" itemprop="datePublished">August 12, 2022</time>
           </p>
         </header>
 
@@ -108,7 +92,122 @@
           <br>
           <!-- Fixme 마크다운이 css가 적용이 안되게 적용해야함 -->
           <div class="no-style-markdown">
-            
+            <p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/131124?language=oracle">문제</a></p>
+
+<pre><code class="language-SQL">-- 코드를 입력하세요
+-- 리뷰를 가장 많이 작성한 회원의 리뷰들을 조회하는 SQL문을 작성해주세요. 
+-- 회원 이름, 리뷰 텍스트, 리뷰 작성일이 출력되도록 작성해주시고, 
+-- 결과는 리뷰 작성일을 기준으로 오름차순, 
+-- 리뷰 작성일이 같다면 리뷰 텍스트를 기준으로 오름차순 정렬해주세요.
+SELECT a.MEMBER_NAME as MEMBER_NAME, b.REVIEW_TEXT as REVIEW_TEXT,b.REVIEW_DATE as REVIEW_DATE
+from MEMBER_PROFILE a,REST_REVIEW b
+where a.MEMBER_ID = b.MEMBER_ID
+order by b.REVIEW_DATE asc, b.REVIEW_TEXT asc
+</code></pre>
+
+<h1 id="체점">체점</h1>
+<h2 id="뭐지-체점했는데-결과가-안-나온다">뭐지 체점했는데 결과가 안 나온다.</h2>
+
+<pre><code class="language-SQL">DATE_FORMAT(b.REVIEW_DATE,' %Y-%m-%d')
+</code></pre>
+<p>데이터 포맷 방식 때문인가 해서 다시 해본다.</p>
+
+<pre><code class="language-SQL">SELECT a.MEMBER_NAME as MEMBER_NAME, b.REVIEW_TEXT as REVIEW_TEXT,DATE_FORMAT(b.REVIEW_DATE,' %Y-%m-%d') as REVIEW_DATE
+from MEMBER_PROFILE a,REST_REVIEW b
+where a.MEMBER_ID = b.MEMBER_ID
+order by b.REVIEW_DATE asc, b.REVIEW_TEXT asc
+</code></pre>
+
+<p>DATE_FORMAT 이거 에러난다. 오라클은 달랐나? 확인해봐야겠다.
+리뷰를 가장 많이 작성한 회원의 리뷰들을 조회하는 SQL문을 작성해주세요. 이 부분을 빼먹은 거 같아 다시 작성한다.</p>
+
+<h2 id="다시-풀기">다시 풀기</h2>
+
+<pre><code class="language-SQL">SELECT a.MEMBER_NAME as MEMBER_NAME, 
+    b.REVIEW_TEXT as REVIEW_TEXT, 
+    b.REVIEW_DATE as REVIEW_DATE
+from MEMBER_PROFILE a,REST_REVIEW b, 
+
+    (select c.MEMBER_ID as MEMBER_ID, 
+        count(*) as review_count , 
+        RANK() OVER(ORDER BY COUNT(REVIEW_TEXT) DESC) AS RANKING
+    from REST_REVIEW c 
+    group by c.MEMBER_ID) d
+
+
+where a.MEMBER_ID = b.MEMBER_ID 
+    and a.MEMBER_ID = d.MEMBER_ID 
+    and d.review_count =&gt; d.Ranking -- 아 이 병신 부등호 틀렸네. 정보처리기사 볼 때도 틀리더니. "=&gt;" 이건 안된다. "=" 이거 중앙에 기준으로 "&gt;=" 나 "=&lt;"가 되어야 한다.  
+order by b.REVIEW_DATE asc, b.REVIEW_TEXT asc
+
+
+</code></pre>
+
+<p>아 안된다. 에러다. 왜지 뭐가 잘 못된 걸까? Rank 함수 쪽 같은데,,, 저거 문법 맞을텐데, 다른 사람 거 한 번 봐야겠다.</p>
+
+<h2 id="다른-사람-정답">다른 사람 정답</h2>
+
+<pre><code class="language-SQL">SELECT p.member_name 멤버명, 
+    r.review_text 리뷰, 
+    DATE_FORMAT(r.review_date, '%Y-%m-%d') 리뷰작성일
+FROM member_profile p, rest_review r
+WHERE p.member_id = r.member_id
+      AND p.member_id = (SELECT r.member_id -- 얘는 where 문에다가 바로 서브쿼리를 넣었네
+                        FROM rest_review r
+                        GROUP BY r.member_id
+                        ORDER BY COUNT(*) DESC -- order by에는 count,,,
+                        LIMIT 1) -- 이건 첫 번째 줄 만 출력하려는 거 같고, 약간 tail이랑 top이었나 이거란 비슷한 거 같다.
+ORDER BY 리뷰작성일, 리뷰;
+</code></pre>
+
+<h2 id="다다시-풀기-3번째-도전">다다시 풀기 3번째 도전</h2>
+
+<pre><code class="language-SQL">SELECT a.MEMBER_NAME as MEMBER_NAME, 
+    b.REVIEW_TEXT as REVIEW_TEXT, 
+    b.REVIEW_DATE as REVIEW_DATE
+from MEMBER_PROFILE a,REST_REVIEW b, 
+
+    (select c.MEMBER_ID as MEMBER_ID, 
+        count(*) as review_count , 
+        RANK() OVER(ORDER BY COUNT(REVIEW_TEXT) DESC) AS RANKING
+    from REST_REVIEW c 
+    group by c.MEMBER_ID) d
+
+
+where a.MEMBER_ID = b.MEMBER_ID 
+    and a.MEMBER_ID = d.MEMBER_ID 
+    and d.Ranking = 1
+order by b.REVIEW_DATE asc, b.REVIEW_TEXT asc
+
+
+</code></pre>
+
+<p>REVIEW_DATE의 데이트 포맷이 예시와 동일해야 정답처리 됩니다. 이걸 또 빼먹었다 시,,,바</p>
+<pre><code class="language-SQL">to_char(b.REVIEW_DATE,yyyy-mm-dd) as REVIEW_DATE 
+</code></pre>
+<p>찾아보니 msSQL과 다르게 이 방식일 듯 싶다</p>
+
+<h1 id="정답">정답</h1>
+
+<pre><code class="language-SQL">SELECT a.MEMBER_NAME as MEMBER_NAME, 
+    b.REVIEW_TEXT as REVIEW_TEXT, 
+    to_char(b.REVIEW_DATE,'yyyy-mm-dd') as REVIEW_DATE 
+from MEMBER_PROFILE a,REST_REVIEW b, 
+
+    (select c.MEMBER_ID as MEMBER_ID, 
+        count(*) as review_count , 
+        RANK() OVER(ORDER BY COUNT(REVIEW_TEXT) DESC) AS RANKING
+    from REST_REVIEW c 
+    group by c.MEMBER_ID) d
+
+
+where a.MEMBER_ID = b.MEMBER_ID 
+    and a.MEMBER_ID = d.MEMBER_ID 
+    and d.Ranking = 1
+order by b.REVIEW_DATE asc, b.REVIEW_TEXT asc
+</code></pre>
+
+<p>낄낄 이지</p>
 
           </div>
           
@@ -118,7 +217,7 @@
         <!-- 블로그 하단 -->
         <footer class="article-footer clearfix">
           <div class="article-share" id="share">
-            <div data-url="http://localhost:4000/_posts/Resume/2023-10-03-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/" data-title="[이력서] 롯데정보통신 | 스케치용녹색물감"
+            <div data-url="http://localhost:4000/sql/SQL1/" data-title="[SQL] 코딩테스트 문제 풀어보기 1일차 | 스케치용녹색물감"
               data-tsina="null" class="share clearfix">
             </div>
           </div>
@@ -184,6 +283,8 @@
                         <li><a href="/categories/company"title="Company">Company<sup>1</sup></a></li>
                     
                         <li><a href="/categories/java"title="Java">Java<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/sql"title="SQL">SQL<sup>1</sup></a></li>
                     
                         <li><a href="/categories/boost"title="Boost">Boost<sup>1</sup></a></li>
                     

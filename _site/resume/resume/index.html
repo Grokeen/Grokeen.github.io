@@ -15,22 +15,6 @@
 <!-- 헤더 -->
 
 <head>
-	<meta charset="UTF-8">
-	<title>스케치용녹색물감</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
-	<meta name="author" content="Grokeen">
-	<meta name="description" content="new start">
-
-	<link rel="icon" href="/favicon.ico">
-	<!-- 20230824 운영에서 오류나던 부분 img 디렉토리에서 변경 -->
-	<link rel="apple-touch-icon" href="/pacman.jpg">
-	<link rel="apple-touch-icon-precomposed" href="/pacman.jpg">
-
-	<link rel="stylesheet" href="/css/style.css" type="text/css">
-	<script src="/js/jquery-2.1.0.min.js"></script>
-
-	<!-- 20230821 깃허브 빌드 중 보안 CSP가 걸려서 작성 -->
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://example.com;">
 
 </head>
 
@@ -61,7 +45,7 @@
 		<!-- 상단 카테로그 -->
 		<nav class="animated">
 			<ul>
-				<li><a href="/">Home</a></li>
+				<li><a href="/url.html/index/blogindex.html">Home</a></li>
 				<!-- <li><a href="tag_EX.html">Post</a></li> -->
 				<li>
 
@@ -99,7 +83,7 @@
             <a href="#" title="이력 정리" itemprop="url">이력 정리</a>
           </h1>
           <p class="article-time">
-            <time datetime="2022-12-26 12:45:29 +0900" itemprop="datePublished">December 26, 2022</time>
+            <time datetime="2022-12-26 03:45:29 +0000" itemprop="datePublished">December 26, 2022</time>
           </p>
         </header>
 
@@ -118,6 +102,9 @@
 <h1 id="경력">경력</h1>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 프론트엔드 개발자 
     - 2022.03.17 ~ 2023.03.17 메타넷 디지털(주) 위택스 개발팀
+        - 회사 정보
+            직원 수 : 536명
+            
         - 당담 업무
             지방세(지역자원시설세,자동차세(주행분),지방세외수입) 관련 웹 어플리케이션(UI) 개발 및 유지보수
 
@@ -208,8 +195,8 @@
 
 <h2 id="지방세외수입-실명인증-기능-개발20220719--20220809">지방세외수입 실명인증 기능 개발(2022.07.19 ~ 2022.08.09)</h2>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    - 메타넷 디지털(주)
-    - 주요 내용 : 지방세외수입 항목인 건설업등록수수료와 총포수수료에는 비회원 신고 시 실명인증 없이 주민번호 만 입력하면 신고가 가능하게 되어 있었다. 사용자가 페이지에 입력한 주민번호로 시민 정보를 가지고 있는 API를 연계하여, 실명인증 기능을 개발하였습니다. 
-    - 담당 업무 : 지방세외수입에 실명인증 기능 개발
+    - 주요 내용 : 지방세외수입 항목인 건설업등록수수료와 총포수수료에는 비회원 신고 시, 실명인증 없이 주민번호 만 입력하면 신고가 가능하게 되어 있었습니다. 사용자가 페이지에 입력한 주민번호로 행안부의 시민 정보를 가지고 있는 API와 연계하여, DB Table에서 가져오는 방식이 아닌 XML에 쿼리를 작성해서 ESB을 활용해서 Massage Bus로 보내는 방식이었습니다. 그 이후에는 Drill Down 방식으로 실명인증 기능을 개발을 진행하였습니다. 이러한 경험으로 개인 프로젝트에서는 배울 수 없었던 대규모 시스템 설계 방식에 대한 이해를 높일 수 있었습니다.
+    - 담당 업무 : 지방세외수입 실명인증 기능 개발
 </code></pre></div></div>
 
 <h2 id="spring-framework을-이용한-적성평가-후-업무역량에-맞는-인사분류-웹-사이트20211118--20211210">Spring Framework을 이용한 적성평가 후, 업무역량에 맞는 인사분류 웹 사이트(2021.11.18 ~ 2021.12.10)</h2>
@@ -323,6 +310,8 @@
                         <li><a href="/categories/company"title="Company">Company<sup>1</sup></a></li>
                     
                         <li><a href="/categories/java"title="Java">Java<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/sql"title="SQL">SQL<sup>1</sup></a></li>
                     
                         <li><a href="/categories/boost"title="Boost">Boost<sup>1</sup></a></li>
                     
