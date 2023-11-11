@@ -44,6 +44,7 @@ pin: false
 - [k-means,DBCSAN 참고](https://yganalyst.github.io/ml/ML_clustering/)
 - [거리측도(유클리드,멘하탄) 참고](https://syj9700.tistory.com/8)
 - [유전 알고리즘 참고](https://untitledtblog.tistory.com/110)
+- [R 선형 회귀 실습 참고 ](https://rython.tistory.com/6)
 
 # 4단원
 - [레이더차트 참고](https://www.tibco.com/ko/reference-center/what-is-a-radar-chart)
