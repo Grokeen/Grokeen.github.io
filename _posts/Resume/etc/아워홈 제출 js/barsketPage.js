@@ -60,6 +60,7 @@ function App() {
         });
         setSumVal(sumVal);
     },[sum]);
+    
     let deliPrice=3000;
     if(sum=>30000){
          deliPrice=0;
