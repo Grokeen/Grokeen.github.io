@@ -80,7 +80,7 @@
     - 실행 화면 : 
         ![ㅇㅇ](/pacman.jpg)
 
-        [사이트 들어가 보기](Grokeen.github.io)
+        [사이트 들어가 보기](https://grokeen.github.io/)
 
 
     - 후기
