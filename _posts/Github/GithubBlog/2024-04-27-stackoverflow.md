@@ -24,3 +24,7 @@ How do I install Homebrew on macOS?
 
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+
+
+[참고2](https://stackoverflow.com/questions/66666134/how-to-install-homebrew-on-m1-mac)
