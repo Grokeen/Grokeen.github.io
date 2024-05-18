@@ -1,0 +1,44 @@
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/176963">문제</a></p>
+
+<h1 id="문제">문제</h1>
+<p>사진들을 보며 추억에 젖어 있던 루는 사진별로 추억 점수를 매길려고 합니다. 사진 속에 나오는 인물의 그리움 점수를 모두 합산한 값이 해당 사진의 추억 점수가 됩니다.</p>
+
+<p>예를 들어 사진 속 인물의 이름이 <strong>[“may”, “kein”, “kain”]이고 각 인물의 그리움 점수가 [5점, 10점, 1점]일 때 해당 사진의 추억 점수는 16(5 + 10 + 1)점</strong>이 됩니다. 다른 사진 속 인물의 이름이 <strong>[“kali”, “mari”, “don”, “tony”]이고 [“kali”, “mari”, “don”]의 그리움 점수가 각각 [11점, 1점, 55점]</strong>이고, <strong>“tony”는 그리움 점수가 없을 때, 이 사진의 추억 점수는 3명의 그리움 점수를 합한 67(11 + 1 + 55)점</strong>입니다.</p>
+
+<p>그리워하는 사람의 이름을 담은 문자열 배열 name, 각 사람별 그리움 점수를 담은 정수 배열 yearning, 각 사진에 찍힌 인물의 이름을 담은 이차원 문자열 배열 photo가 매개변수로 주어질 때, 사진들의 추억 점수를 photo에 주어진 순서대로 배열에 담아 return하는 solution 함수를 완성해주세요.</p>
+
+<h1 id="정답">정답</h1>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">solution</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">yearning</span><span class="o">,</span> <span class="nc">String</span><span class="o">[][]</span> <span class="n">photo</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">answer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">photo</span><span class="o">.</span><span class="na">length</span><span class="o">];</span> <span class="c1">// 🇰🇷 각 사진의 기억 점수를 저장할 배열</span>
+
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">photo</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span> <span class="c1">// 🇰🇷 photo의 length</span>
+            <span class="kt">int</span> <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="c1">// 현재 사진의 기억 점수</span>
+            <span class="k">for</span><span class="o">(</span><span class="nc">String</span> <span class="n">person</span> <span class="o">:</span> <span class="n">photo</span><span class="o">[</span><span class="n">i</span><span class="o">])</span> <span class="o">{</span>
+
+                <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">name</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
+                    <span class="k">if</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">name</span><span class="o">[</span><span class="n">j</span><span class="o">]))</span> <span class="o">{</span>
+                        <span class="n">score</span> <span class="o">+=</span> <span class="n">yearning</span><span class="o">[</span><span class="n">j</span><span class="o">];</span> <span class="c1">// 🇰🇷 += 문법, 해당 사람의 그리움 점수를 더함</span>
+
+                        <span class="k">break</span><span class="o">;</span> <span class="c1">// 🇬🇧 같은 이름을 찾았으면 더 이상 순회할 필요 없음</span>
+                    <span class="o">}</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+            <span class="n">answer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">score</span><span class="o">;</span> <span class="c1">// 해당 사진의 기억 점수 저장</span>
+        <span class="o">}</span>
+
+        <span class="k">return</span> <span class="n">answer</span><span class="o">;</span> <span class="c1">// 모든 사진에 대한 기억 점수를 담은 배열 반환</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>🇰🇷 표시는 내가 생각했던 부분과 유사하지만 다른 부분이다. 이론상 가능하지만 뭐가 틀렸는지 그 작은 차이가 안 보여서 정답을 확인했다.
+결과적으로 사용하려 했던 문법이나 전반적인 부분은 같았다.</p>
+
+<p>🇬🇧 표시는 생각지도 못한 부분이다.</p>
+
+<p>뮨법적으로 어려운 부분은 없었다. 그러나 간단한 차이로 해결하지 못했다.</p>
+
+<p>결과적으로 받은 점수는 958(+2)다. 이게 무슨 의미가 있을까.</p>

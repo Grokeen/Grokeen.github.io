@@ -1,0 +1,210 @@
+
+<h1 id="문제">문제</h1>
+<p>지나다니는 길을 ‘O’, 장애물을 ‘X’로 나타낸 직사각형 격자 모양의 공원에서 로봇 강아지가 산책을 하려합니다. 산책은 로봇 강아지에 미리 입력된 명령에 따라 진행하며, 명령은 다음과 같은 형식으로 주어집니다.
+[“방향 거리”, “방향 거리” … ]
+예를 들어 “E 5”는 로봇 강아지가 현재 위치에서 동쪽으로 5칸 이동했다는 의미입니다. 로봇 강아지는 명령을 수행하기 전에 다음 두 가지를 먼저 확인합니다.</p>
+
+<ul>
+  <li>주어진 방향으로 이동할 때 공원을 벗어나는지 확인합니다.</li>
+  <li>주어진 방향으로 이동 중 장애물을 만나는지 확인합니다.</li>
+</ul>
+
+<p>위 두 가지중 어느 하나라도 해당된다면, 로봇 강아지는 해당 명령을 무시하고 다음 명령을 수행합니다.
+공원의 가로 길이가 W, 세로 길이가 H라고 할 때, 공원의 <strong>좌측 상단의 좌표는 (0, 0), 우측 하단의 좌표는 (H - 1, W - 1)</strong> 입니다.</p>
+
+<p><img src="https://user-images.githubusercontent.com/62426665/217702316-1bd5d3ba-c1d7-4133-bfb5-36bdc85a08ba.png" alt="예시" />
+위 그림은 cdn 주소가 변경될 시 안 보일 수 있음</p>
+
+<p><strong>공원을 나타내는 문자열 배열 park</strong>, 로봇 강아지가 <strong>수행할 명령이 담긴 문자열 배열 routes가 매개변수로 주어질 때</strong>, 로봇 강아지가 모든 명령을 수행 후 놓인 위치를 [세로 방향 좌표, 가로 방향 좌표] 순으로 배열에 담아 return 하도록 solution 함수를 완성해주세요.</p>
+
+<h2 id="문제-해석">문제 해석</h2>
+<p>확률 공부할 때 배웠던, 맨해튼 거리 문제 같다. 유클리드 거리랑 차이를 알아두면 좋을 거 같다.</p>
+
+<p><img src="https://commons.wikimedia.org/wiki/File:Manhattan_distance.svg" alt="맨해튼 거리" /></p>
+
+<ul>
+  <li>입출력 문을 확인해 보니 맨해튼 거리와 사뭇 달라 보인다.</li>
+</ul>
+
+<p>아래가 입출력 예시인데</p>
+<ol>
+  <li>[“SOO”,”OOO”,”OOO”]	[“E 2”,”S 2”,”W 1”]	[2,1]</li>
+  <li>[“SOO”,”OXX”,”OOO”]	[“E 2”,”S 2”,”W 1”]	[0,1]</li>
+  <li>[“OSO”,”OOO”,”OXO”,”OOO”]	[“E 2”,”S 3”,”W 1”]	[0,0]</li>
+</ol>
+
+<p>1번 부터 보자
+[“SOO”,
+“OOO”,
+“OOO”]</p>
+
+<p>2자원 배열에 3x3 이런 모양이지 않을까 싶다. 거기서 동쪽으로 2 서쪽으로 2니까 0이 되고, 남쪽으로 1.
+따라서 0,1 이 아닌가?</p>
+
+<p>분명 S는 시작 지점, O은 길 X는 갈 수 없는 장애물이었다. 흠,,,왜지? 아 영문 번역 오류다. 내 잘 못이 맞다.
+East South West ,,,, 순간 우리나라가 사우스 코리아 라는 걸 까먹었다.
+동쪽으로 2 남쪽으로 2 서쪽으로 1이니 2,1이 맞다.</p>
+
+<p>2번을 보자
+[“SOO”,
+“OXX”,
+“OOO”]</p>
+
+<p>중간에 장애물이 존재할 때, 똑같이 동2 남2 서1를 한다면, 남쪽으로 갈 수 없으니 0에 머문다. 0,1이 맞다.
+오케이 문제 파악했다.</p>
+
+<h1 id="개같이-실패">개같이 실패</h1>
+<p>오랜만에 코테 준비를 했다. 아 하기 싪더라 이게 뭐라고;;;
+일단 생각나는데로 막 푸는데 직장에서 코드 짜던 습관 때문에 class 나누고 function 나누고 하다 보니 햇갈렸다.</p>
+
+<p>일단 풀다가 안 풀리니까 어지럽길래 몇 일동안 나뒀다. 이런 식으로 풀다가 이미 망하지 않았나 싶어서 아에 다시 짰다.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">park_Calculation</span><span class="o">(</span><span class="nc">String</span> <span class="n">park</span><span class="o">,</span><span class="kt">int</span> <span class="n">val</span><span class="o">,</span><span class="kt">int</span><span class="o">[]</span> <span class="n">point</span><span class="o">,</span> <span class="nc">String</span> <span class="n">direction</span><span class="o">){</span>
+        
+        <span class="k">if</span><span class="o">(</span><span class="n">direction</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">"S"</span><span class="o">),</span><span class="n">direction</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">"N"</span><span class="o">)){</span> <span class="c1">// 상하</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">point</span><span class="o">[</span><span class="mi">0</span><span class="o">],</span><span class="n">point</span><span class="o">[</span><span class="mi">1</span><span class="o">])</span>
+        <span class="o">}</span><span class="k">else</span><span class="o">{</span> <span class="c1">// 좌우</span>
+            
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">point</span><span class="o">;</span>
+    <span class="o">}</span>
+    
+    
+    <span class="kd">public</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">solution</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">park</span><span class="o">,</span> <span class="nc">String</span><span class="o">[]</span> <span class="n">routes</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">answer</span> <span class="o">=</span> <span class="o">{</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">};</span>
+        <span class="kt">int</span> <span class="no">EW</span><span class="o">=</span><span class="mi">0</span><span class="o">,</span><span class="no">SN</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span>
+        
+        
+        <span class="c1">// park 배열로 변환</span>
+        <span class="nc">String</span><span class="o">[][]</span> <span class="n">S_park</span> <span class="k">new</span> <span class="nf">String</span><span class="o">();</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">park</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">i</span><span class="o">++){</span>
+            <span class="nc">String</span><span class="o">[]</span> <span class="n">park_wi</span> <span class="o">=</span><span class="n">park</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">split</span><span class="o">(</span><span class="s">" "</span><span class="o">);</span>
+            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">park_wi</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">j</span><span class="o">++){</span>
+                <span class="n">S_park</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]=</span><span class="n">park_wi</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        
+        
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">routes</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">i</span><span class="o">++){</span> <span class="c1">// 3</span>
+            <span class="kt">int</span><span class="o">[]</span> <span class="n">routes_array</span> <span class="o">=</span><span class="n">routes</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">split</span><span class="o">(</span><span class="s">" "</span><span class="o">);</span>
+            
+            <span class="k">if</span><span class="o">(</span><span class="n">routes_array</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">equals</span><span class="o">(</span><span class="s">"E"</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="n">routes_array</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">equals</span><span class="o">(</span><span class="s">"S"</span><span class="o">)){</span>
+                <span class="no">ES</span><span class="o">+=</span><span class="n">routes_array</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">];</span>
+                <span class="n">park_Calculation</span><span class="o">(</span><span class="n">S_park</span><span class="o">,</span><span class="no">EW</span><span class="o">,</span><span class="n">answer</span><span class="o">,</span><span class="n">routes_array</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+            <span class="o">}</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">routes_array</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">equals</span><span class="o">(</span><span class="s">"W"</span><span class="o">)</span> <span class="o">&amp;&amp;</span> <span class="n">routes_array</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">equals</span><span class="o">(</span><span class="s">"N"</span><span class="o">)){</span>
+                <span class="no">WN</span><span class="o">-=</span><span class="n">routes_array</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">];</span>
+                <span class="n">park_Calculation</span><span class="o">(</span><span class="n">S_park</span><span class="o">,</span><span class="no">SN</span><span class="o">,</span><span class="n">answer</span><span class="o">,</span><span class="n">routes_array</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        
+        <span class="k">return</span> <span class="n">answer</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h2 id="풀이-중간에-찾은-에러문">풀이 중간에 찾은 에러문</h2>
+<ul>
+  <li>
+    <p>Non-static method cannot be referenced from a static context:
+solution 메소드가 non-static으로 선언되어 있으며, main 메소드(정적 컨텍스트)에서 직접 호출하려고 하고 있습니다. 이를 해결하려면 solution 메소드를 static으로 선언하거나, Main 클래스의 인스턴스를 생성하고 그 인스턴스를 통해 solution 메소드를 호출해야 합니다.</p>
+  </li>
+  <li>
+    <p>Incompatible types: String[] cannot be converted to int[]:
+routes[i].split(“ “)는 String[] 타입을 반환하는데, routes_sp[i]가 int[] 타입으로 선언된 것으로 보입니다. routes_sp[i]의 타입을 String[]으로 선언해야 합니다.</p>
+  </li>
+  <li>
+    <p>Cannot find symbol ‘part’:
+part라는 변수가 선언되지 않았거나 올바르게 선언되지 않았습니다. 변수를 선언하거나 올바른 변수 이름을 사용해야 합니다.</p>
+  </li>
+  <li>
+    <p>Variable length of the String type:
+park[i].length는 올바른 표현이 아닙니다. 문자열의 길이를 얻으려면 park[i].length()를 사용해야 합니다.</p>
+  </li>
+  <li>
+    <p>Char cannot be dereferenced:
+park[i].charAt(j).equal(‘S’)와 같은 표현은 잘못되었습니다. charAt() 메소드는 char 타입을 반환하며, char는 객체가 아니므로 메소드를 가질 수 없습니다. 대신 park[i].charAt(j) == ‘S’를 사용해야 합니다.</p>
+  </li>
+  <li>
+    <p>Unexpected type required: variable found: value:
+Java에서는 문자열의 특정 문자를 직접 변경할 수 없습니다. park[i].charAt(j)=’S’와 같은 표현은 허용되지 않습니다. 문자열을 변경하려면 새 문자열을 생성하거나 문자열 빌더를 사용해야 합니다.</p>
+  </li>
+</ul>
+
+<h1 id="풀이-임시저장">풀이 임시저장</h1>
+
+<p>import java.util.<em>;
+import java.lang.</em>;
+import java.io.*;</p>
+
+<p>// The main method must be in a class named “Main”.
+class Main {
+    public static void main(String[] args) {
+        String[] park1={“SOO”,”OOO”,”OOO”};
+        // 1 3 4 7 나와야 하는데?
+        String[] routes1={“E 2”,”S 2”,”W 1”};</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    int[] answer = solution(park1,routes1);
+    System.out.println(Arrays.toString(answer));
+}
+
+   
+public static int[] solution(String[] park, String[] routes) {
+    int[] answer = {0,0};
+
+
+    System.out.println("(park) : "+Arrays.toString(park)+" "+park.length);
+    System.out.println("(routes) : "+Arrays.toString(routes)+" "+routes.length);
+    
+    // 뻑킹 왜 이따구로 값을 넣어놨어, routes 처리
+    String[][] routes_sp = new String[routes.length][2]; // 수정 2 : new int 라고 잘 못 선언
+    for(int i=0; i&lt;routes.length ; i++){
+        routes_sp[i] = routes[i].split(" ");
+    }
+
+
+    
+    // S 위치 어디노?
+    int a=0,b=0;
+    for(int i=0; i&lt; park.length; i++){
+        for(int j=0; j&lt; park[i].length; j++){ // Todo : park[i].length 이게 왜 틀린 거지? park[i] 이거 문제?
+            if(park[i].charAt(j)=='S'){
+                a=i;
+                b=j;
+            }
+        }
+    }
+
+
+
+    // 계산
+    for(int i=0; i&lt;park.length;i++){
+        for(int j=0; j&lt;park[i].length;j++){
+            
+            // E일 때
+            if(a==i &amp;&amp; b-j==1){
+                if(park[i].charAt(j)=='X'){ // 수정 1 : equal 사용 불가
+                    continue;
+                }else if(park[i].charAt(j)=='O'){
+                    for(String val_A : park[i]){
+                        if(val_A.equal('S')){ // Todo : 여기도 틀렸네???? 
+                            park[i]+='O';
+                            park[i]+='S';
+                        }else if(park[i].length != 3){
+                            park[i]+='O';
+                        }
+                    }
+                    
+                    a=i;
+                    b=j;
+                }
+            }
+            
+            
+        }
+    }
+    
+    return answer;
+} }
+</code></pre></div></div>

@@ -1,0 +1,587 @@
+<!-- 포스트 내용 인덱스 -->
+
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+
+<head>
+  <script src="/js/jquery-2.1.0.min.js"></script>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header>
+    <!DOCTYPE HTML>
+<html lang="ko-KR">
+<!-- 헤더 -->
+
+<head>
+
+</head>
+
+
+<body>
+
+	<!-- 본문 시작 -->
+	<div>
+		<!-- 로고 사진 -->
+		<div id="imglogo">
+			<a href="/">
+				<img src="/img/logo.svg" alt="Grokeen" title="Grokeen" />
+			</a>
+		</div>
+
+		<!-- 이름/상태 메세지 -->
+		<div id="textlogo">
+			<h1 class="site-name"><a href="/" title="Grokeen">Grokeen</a></h1>
+			<h2 class="blog-motto">슈렉도 헐크처럼</h2>
+		</div>
+
+
+		<div class="navbar">
+			<a class="navbutton navmobile" href="#" title="나도몰라2">
+			</a>
+		</div>
+
+		<!-- 상단 카테로그 -->
+		<nav class="animated">
+			<ul>
+				<li><a href="/url.html/index/blogindex.html">Home</a></li>
+				<!-- <li><a href="tag_EX.html">Post</a></li> -->
+				<li>
+
+					<!-- 검색 폼 -->
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20"
+							placeholder="search" />
+						<input type="hidden" name="q" value="site:weibo.com/u/1839008305">
+					</form>
+
+				</li>
+			</ul>
+		</nav>
+
+		<!-- 본문 끝 -->
+	</div>
+
+</body>
+
+</html>
+  </header>
+
+
+
+  <!-- 본문 시작 -->
+  <div id="container">
+    <!-- 게시물 내용 시작 -->
+    <div id="main" class="post" itemscope itemprop="blogPost">
+      <article itemprop="articleBody">
+        <!-- 블로그 제목 -->
+        <header class="article-info clearfix">
+          <h1 itemprop="name">
+
+            <a href="#" title="[SQL] 코딩테스트 문제 풀어보기 1일차" itemprop="url">[SQL] 코딩테스트 문제 풀어보기 1일차</a>
+          </h1>
+          <p class="article-time">
+            <time datetime="2022-08-12 12:45:29 +0900" itemprop="datePublished">August 12, 2022</time>
+          </p>
+        </header>
+
+        <!-- 블로그 내용 -->
+        <figure class="highlight bash">
+          <br>
+          <!-- Fixme 마크다운이 css가 적용이 안되게 적용해야함 -->
+          <div class="no-style-markdown">
+            <p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/131124?language=oracle">문제</a></p>
+
+<pre><code class="language-SQL">-- 코드를 입력하세요
+-- 리뷰를 가장 많이 작성한 회원의 리뷰들을 조회하는 SQL문을 작성해주세요. 
+-- 회원 이름, 리뷰 텍스트, 리뷰 작성일이 출력되도록 작성해주시고, 
+-- 결과는 리뷰 작성일을 기준으로 오름차순, 
+-- 리뷰 작성일이 같다면 리뷰 텍스트를 기준으로 오름차순 정렬해주세요.
+SELECT a.MEMBER_NAME as MEMBER_NAME, b.REVIEW_TEXT as REVIEW_TEXT,b.REVIEW_DATE as REVIEW_DATE
+from MEMBER_PROFILE a,REST_REVIEW b
+where a.MEMBER_ID = b.MEMBER_ID
+order by b.REVIEW_DATE asc, b.REVIEW_TEXT asc
+</code></pre>
+
+<h1 id="체점">체점</h1>
+<h2 id="뭐지-체점했는데-결과가-안-나온다">뭐지 체점했는데 결과가 안 나온다.</h2>
+
+<pre><code class="language-SQL">DATE_FORMAT(b.REVIEW_DATE,' %Y-%m-%d')
+</code></pre>
+<p>데이터 포맷 방식 때문인가 해서 다시 해본다.</p>
+
+<pre><code class="language-SQL">SELECT a.MEMBER_NAME as MEMBER_NAME, b.REVIEW_TEXT as REVIEW_TEXT,DATE_FORMAT(b.REVIEW_DATE,' %Y-%m-%d') as REVIEW_DATE
+from MEMBER_PROFILE a,REST_REVIEW b
+where a.MEMBER_ID = b.MEMBER_ID
+order by b.REVIEW_DATE asc, b.REVIEW_TEXT asc
+</code></pre>
+
+<p>DATE_FORMAT 이거 에러난다. 오라클은 달랐나? 확인해봐야겠다.
+리뷰를 가장 많이 작성한 회원의 리뷰들을 조회하는 SQL문을 작성해주세요. 이 부분을 빼먹은 거 같아 다시 작성한다.</p>
+
+<h2 id="다시-풀기">다시 풀기</h2>
+
+<pre><code class="language-SQL">SELECT a.MEMBER_NAME as MEMBER_NAME, 
+    b.REVIEW_TEXT as REVIEW_TEXT, 
+    b.REVIEW_DATE as REVIEW_DATE
+from MEMBER_PROFILE a,REST_REVIEW b, 
+
+    (select c.MEMBER_ID as MEMBER_ID, 
+        count(*) as review_count , 
+        RANK() OVER(ORDER BY COUNT(REVIEW_TEXT) DESC) AS RANKING
+    from REST_REVIEW c 
+    group by c.MEMBER_ID) d
+
+
+where a.MEMBER_ID = b.MEMBER_ID 
+    and a.MEMBER_ID = d.MEMBER_ID 
+    and d.review_count =&gt; d.Ranking -- 아 이 병신 부등호 틀렸네. 정보처리기사 볼 때도 틀리더니. "=&gt;" 이건 안된다. "=" 이거 중앙에 기준으로 "&gt;=" 나 "=&lt;"가 되어야 한다.  
+order by b.REVIEW_DATE asc, b.REVIEW_TEXT asc
+
+
+</code></pre>
+
+<p>아 안된다. 에러다. 왜지 뭐가 잘 못된 걸까? Rank 함수 쪽 같은데,,, 저거 문법 맞을텐데, 다른 사람 거 한 번 봐야겠다.</p>
+
+<h2 id="다른-사람-정답">다른 사람 정답</h2>
+
+<pre><code class="language-SQL">SELECT p.member_name 멤버명, 
+    r.review_text 리뷰, 
+    DATE_FORMAT(r.review_date, '%Y-%m-%d') 리뷰작성일
+FROM member_profile p, rest_review r
+WHERE p.member_id = r.member_id
+      AND p.member_id = (SELECT r.member_id -- 얘는 where 문에다가 바로 서브쿼리를 넣었네
+                        FROM rest_review r
+                        GROUP BY r.member_id
+                        ORDER BY COUNT(*) DESC -- order by에는 count,,,
+                        LIMIT 1) -- 이건 첫 번째 줄 만 출력하려는 거 같고, 약간 tail이랑 top이었나 이거란 비슷한 거 같다.
+ORDER BY 리뷰작성일, 리뷰;
+</code></pre>
+
+<h2 id="다다시-풀기-3번째-도전">다다시 풀기 3번째 도전</h2>
+
+<pre><code class="language-SQL">SELECT a.MEMBER_NAME as MEMBER_NAME, 
+    b.REVIEW_TEXT as REVIEW_TEXT, 
+    b.REVIEW_DATE as REVIEW_DATE
+from MEMBER_PROFILE a,REST_REVIEW b, 
+
+    (select c.MEMBER_ID as MEMBER_ID, 
+        count(*) as review_count , 
+        RANK() OVER(ORDER BY COUNT(REVIEW_TEXT) DESC) AS RANKING
+    from REST_REVIEW c 
+    group by c.MEMBER_ID) d
+
+
+where a.MEMBER_ID = b.MEMBER_ID 
+    and a.MEMBER_ID = d.MEMBER_ID 
+    and d.Ranking = 1
+order by b.REVIEW_DATE asc, b.REVIEW_TEXT asc
+
+
+</code></pre>
+
+<p>REVIEW_DATE의 데이트 포맷이 예시와 동일해야 정답처리 됩니다. 이걸 또 빼먹었다 시,,,바</p>
+<pre><code class="language-SQL">to_char(b.REVIEW_DATE,yyyy-mm-dd) as REVIEW_DATE 
+</code></pre>
+<p>찾아보니 msSQL과 다르게 이 방식일 듯 싶다</p>
+
+<h1 id="정답">정답</h1>
+
+<pre><code class="language-SQL">SELECT a.MEMBER_NAME as MEMBER_NAME, 
+    b.REVIEW_TEXT as REVIEW_TEXT, 
+    to_char(b.REVIEW_DATE,'yyyy-mm-dd') as REVIEW_DATE 
+from MEMBER_PROFILE a,REST_REVIEW b, 
+
+    (select c.MEMBER_ID as MEMBER_ID, 
+        count(*) as review_count , 
+        RANK() OVER(ORDER BY COUNT(REVIEW_TEXT) DESC) AS RANKING
+    from REST_REVIEW c 
+    group by c.MEMBER_ID) d
+
+
+where a.MEMBER_ID = b.MEMBER_ID 
+    and a.MEMBER_ID = d.MEMBER_ID 
+    and d.Ranking = 1
+order by b.REVIEW_DATE asc, b.REVIEW_TEXT asc
+</code></pre>
+
+<p>낄낄 이지</p>
+
+          </div>
+          
+          <br>
+        </figure>
+
+        <!-- 블로그 하단 -->
+        <footer class="article-footer clearfix">
+          <div class="article-share" id="share">
+            <div data-url="http://localhost:4000/_posts/Resume/Xprograming/Java/CodingTest/2023-10-06-SQL1/" data-title="[SQL] 코딩테스트 문제 풀어보기 1일차 | 스케치용녹색물감"
+              data-tsina="null" class="share clearfix">
+            </div>
+          </div>
+          
+        </footer>
+      </article>
+    </div>
+    <!-- 게시물 내용 끝 -->
+
+
+
+
+    <!-- 우측 바  -->
+    <!DOCTYPE HTML>
+<html lang="ko-KR">
+
+<head>
+
+</head>
+
+<body>
+
+
+    <!-- 우측바 첫 번째 -->
+    <div class="openaside">
+        <a class="navbutton" href="#" title="니도몰라1"></a>
+    </div>
+
+    <div id="asidepart">
+        <div class="closeaside">
+            <a class="closebutton" href="#" title="Menu"></a>
+        </div>
+        <aside class="clearfix">
+            <div class="rsspart">
+                <img src="/img/SR.avif" style="width: 100%;">
+                <a href="#" target="_blank" title="rss">RSS Reservation</a>
+            </div>
+
+            <!-- 202308202322 우측바 Contact me 카테고리 -->
+            <div class="tagslist">
+                <p class="asidetitle">Contact me<sup>🎱</sup></p>
+                <ul class="clearfix">
+                    <li><a href="https://www.instagram.com/ygre_en/" title="instagram">Instagram<sup>1</sup></a></li>
+                    <li><a href="https://twitter.com/groke_en" title="twitter">Twitter<sup>1</sup></a></li>
+                    <li><a href="https://www.reddit.com/user/Embarrassed_Edge_378" title="reddit">Reddit<sup>1</sup></a></li>
+                    <li><a href="https://github.com/Grokeen" title="github">Github<sup>1</sup></a></li>
+                    <li><a href="mailto:ygreen0516@gmail.com" title="gmail">Gmail<sup>1</sup></a></li>
+                    <li><a href="https://disqus.com/by/grokeen/" title="disqus">Disqus<sup>1</sup></a></li>
+                    <li><a href="https://www.linkedin.com/in/grokeen-b551a8283/" title="linkedin">Linkedin<sup>1</sup></a></li>
+                </ul>
+            </div>
+
+
+            <!-- 202308220128 카테고리 추가 -->
+            <div class="categorieslist">
+                <p class="asidetitle">Categories<sup>⚽️</sup></p>
+                <ul>
+                    
+                        <li><a href="/categories/cp"title="CP">CP<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/company"title="Company">Company<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/resume"title="Resume">Resume<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/java"title="Java">Java<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/sql"title="SQL">SQL<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/boost"title="Boost">Boost<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/course"title="Course">Course<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/github"title="Github">Github<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/resume"title="resume">resume<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/certification"title="Certification">Certification<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/raspberrypi"title="RaspberryPi">RaspberryPi<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/big"title="Big">Big<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/data"title="Data">Data<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/analyse"title="Analyse">Analyse<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/markdown"title="Markdown">Markdown<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/tableau"title="Tableau">Tableau<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/certification"title="certification">certification<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/learning"title="Learning">Learning<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/conversation"title="Conversation">Conversation<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/in"title="in">in<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/english"title="English">English<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/with"title="with">with<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/chatgpt"title="ChatGPT">ChatGPT<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/project"title="Project">Project<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/nlp"title="NLP">NLP<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/news"title="News">News<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/gpters"title="GPTers">GPTers<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/shortcuts"title="Shortcuts">Shortcuts<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/python"title="Python">Python<sup>1</sup></a></li>
+                    
+                        <li><a href="/categories/mathematics"title="Mathematics">Mathematics<sup>1</sup></a></li>
+                    
+                    <!-- 202308291504 false 카테고리 -->
+                    <li><a href="/url.html/indexfalse/index.html"title="etc">etc<sup>1</sup></a></li>
+
+                </ul>
+            </div>
+
+
+            
+
+            
+
+        </aside>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+    <!-- 코멘트 -->
+    <section id="comment">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'zhaoleiteng'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+          Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </section>
+
+
+  </div>
+  <!-- 본문 끝 -->
+
+
+  <!-- 푸터 -->
+  <!DOCTYPE HTML>
+<html lang="ko-KR">
+
+<head>
+  <script src="/js/jquery-2.1.0.min.js"></script>
+</head>
+
+<body>
+  <footer>
+    <!-- 푸터 본문 -->
+    <div id="footer">
+
+      <div class="line">
+        <span></span>
+        <div class="author"></div>
+      </div>
+
+      <div class="social-font clearfix">
+      </div>
+
+      <p class="copyright">Powered by
+        <a href="http://hexo.io" target="_blank" title="hexo">
+          hexo
+        </a>
+        and Theme by
+        <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">
+          Pacman
+        </a>
+        © 2022
+        <a href="mailto:ygreen0516@gmail.com" target="_blank" title="Grokeen">
+          Grokeen
+        </a>
+      </p>
+    </div>
+    <!-- mathjax config similar to math.stackexchange -->
+
+    <!-- 푸터 기능 -->
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+  </footer>
+
+  <!-- 주요 Home 페이지 기능 -->
+  <script src="/js/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.navbar').click(function () {
+        $('header nav').toggleClass('shownav');
+      });
+      var myWidth = 0;
+      function getSize() {
+        if (typeof (window.innerWidth) == 'number') {
+          myWidth = window.innerWidth;
+        } else if (document.documentElement && document.documentElement.clientWidth) {
+          myWidth = document.documentElement.clientWidth;
+        };
+      };
+      var m = $('#main'),
+        a = $('#asidepart'),
+        c = $('.closeaside'),
+        o = $('.openaside');
+      $(window).resize(function () {
+        getSize();
+        if (myWidth >= 1024) {
+          $('header nav').removeClass('shownav');
+        } else {
+          m.removeClass('moveMain');
+          a.css('display', 'block').removeClass('fadeOut');
+          o.css('display', 'none');
+
+        }
+      });
+      c.click(function () {
+        a.addClass('fadeOut').css('display', 'none');
+        o.css('display', 'block').addClass('fadeIn');
+        m.addClass('moveMain');
+      });
+      o.click(function () {
+        o.css('display', 'none').removeClass('beforeFadeIn');
+        a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');
+        m.removeClass('moveMain');
+      });
+      $(window).scroll(function () {
+        o.css("top", Math.max(80, 260 - $(this).scrollTop()));
+      });
+    });
+  </script>
+
+</body>
+
+</html>
+
+
+
+
+
+  <!-- 추가 푸터 -->
+  <!-- 게시글에 추적으로 푸터 위에 넣주는 html -->
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+
+<head>
+</head>
+
+<body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var ai = $('.article-content>iframe'),
+        ae = $('.article-content>embed'),
+        t = $('#toc'),
+        h = $('article h2')
+      ah = $('article h2'),
+        ta = $('#toc.toc-aside'),
+        o = $('.openaside'),
+        c = $('.closeaside');
+      if (ai.length > 0) {
+        ai.wrap('<div class="video-container" />');
+      };
+      if (ae.length > 0) {
+        ae.wrap('<div class="video-container" />');
+      };
+      if (ah.length == 0) {
+        t.css('display', 'none');
+      } else {
+        c.click(function () {
+          ta.css('display', 'block').addClass('fadeIn');
+        });
+        o.click(function () {
+          ta.css('display', 'none');
+        });
+        $(window).scroll(function () {
+          ta.css("top", Math.max(140, 320 - $(this).scrollTop()));
+        });
+      };
+    });
+  </script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var $this = $('.share'),
+        url = $this.attr('data-url'),
+        encodedUrl = encodeURIComponent(url),
+        title = $this.attr('data-title'),
+        tsina = $this.attr('data-tsina');
+      var html = [
+        '<a href="#" class="overlay" id="qrcode"></a>',
+        '<div class="qrcode clearfix"><span>Share on QR Code</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+        '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+        '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+        '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+        '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+        '<a href="http://service.weibo.com/share/share.php?title=' + title + '&url=' + encodedUrl + '&ralateUid=' + tsina + '&searchPic=true&style=number' + '" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+        '<span title="Share to"></span>'
+      ].join('');
+      $this.append(html);
+      $('.article-share-qrcode').click(function () {
+        var imgSrc = $('#qrcode-pic').attr('data-src');
+        $('#qrcode-pic').attr('src', imgSrc);
+        $('#qrcode-pic').load(function () {
+          $('.qrcode strong').text(' ');
+        });
+      });
+    });     
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>

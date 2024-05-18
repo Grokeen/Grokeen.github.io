@@ -1,0 +1,71 @@
+
+<p><a href="https://www.acmicpc.net/problem/17281">문제</a></p>
+
+<h1 id="문제">문제</h1>
+<p>⚾는 9명으로 이루어진 두 팀이 공격과 수비를 번갈아 하는 게임이다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>📌 시바 일단 나는 야구를 모른다. 이닝이 뭘까 검색해봤더니 야구장 전광판에 나오는 거더라.
+📌 그래서 문제를 좀 더 자세하게 짤라서 분석해보려 한다.
+</code></pre></div></div>
+
+<p>하나의 이닝은 공격과 수비로 이루어져 있고, 
+총 N이닝 동안 게임을 진행해야 한다.</p>
+
+<p>한 이닝에 3아웃이 발생하면 이닝이 종료되고, 
+두 팀이 공격과 수비를 서로 바꾼다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>📌 '총 N이닝 동안 게임을 진행해야 한다.'이란 말은 나를 뜻하는 건가?
+📌 내 침이 n이닝 동안 진행을 하는 것인가?
+📌 아니면 다른 팀인가?
+</code></pre></div></div>
+
+<p>두 팀은 경기가 시작하기 전까지 타순(타자가 타석에 서는 순서)을 정해야 하고, 
+경기 중에는 타순을 변경할 수 없다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>📌 경기가 시작 전에 타순을 정해야 하는데, 문제 자체가 이해가 너무 안 가서 다른 사람들이 이해한 내용을 미리 보긴 했다.
+📌 순열이라고 하더라. 그럼 이 부분에서 느낀 것일까? 
+</code></pre></div></div>
+
+<p>9번 타자까지 공을 쳤는데 3아웃이 발생하지 않은 상태면 이닝은 끝나지 않고, 
+1번 타자가 다시 타석에 선다. 
+타순은 이닝이 변경되어도 순서를 유지해야 한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>📌 3진이 아니면 이닝도 끝나지 않고, '내가 정한(순열)' 1번 타자가 다시 선다.
+📌 타순은 유지가 된다는,,, 말은 뭔 개소리일까?
+</code></pre></div></div>
+
+<p>예를 들어, 2이닝에 6번 타자가 마지막 타자였다면, 
+3이닝은 7번 타자부터 타석에 선다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>📌 2이닝에 6번(내가 정한, 순열) 타자가 9번째에 쳤다면, 
+📌 3이닝 1번째에는 7번(내가 정한, 순열) 타자부터 타석에 선다는 거 아니냐?
+</code></pre></div></div>
+
+<p>공격은 투수가 던진 공을 타석에 있는 타자가 치는 것이다. 
+공격 팀의 선수가 1루, 2루, 3루를 거쳐서 홈에 도착하면 1점을 득점한다. 
+타자가 홈에 도착하지 못하고 1루, 2루, 3루 중 하나에 머물러있을 수 있다. 
+루에 있는 선수를 주자라고 한다. 
+이닝이 시작될 때는 주자는 없다.
+타자가 공을 쳐서 얻을 수 있는 결과는 안타, 2루타, 3루타, 홈런, 아웃 중 하나이다. 
+각각이 발생했을 때, 벌어지는 일은 다음과 같다.
+안타: 타자와 모든 주자가 한 루씩 진루한다.
+2루타: 타자와 모든 주자가 두 루씩 진루한다.
+3루타: 타자와 모든 주자가 세 루씩 진루한다.
+홈런: 타자와 모든 주자가 홈까지 진루한다.
+아웃: 모든 주자는 진루하지 못하고, 공격 팀에 아웃이 하나 증가한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>📌 기초 야구 룰은 알고있고
+</code></pre></div></div>
+
+<p>한 야구팀의 감독 아인타는 타순을 정하려고 한다. 
+아인타 팀의 선수는 총 9명이 있고, 1번부터 9번까지 번호가 매겨져 있다. 
+아인타는 자신이 가장 좋아하는 선수인 1번 선수를 4번 타자로 미리 결정했다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>📌 1번 선수는 4번으로 고정 돼 이미 정해져 있고
+</code></pre></div></div>
+
+<p>이제 다른 선수의 타순을 모두 결정해야 한다. 
+아인타는 각 선수가 각 이닝에서 어떤 결과를 얻는지 미리 알고 있다. 
+가장 많은 득점을 하는 타순을 찾고, 그 때의 득점을 구해보자.</p>
+
+<h1 id="예시가-아에-모르겠다">예시가 아에 모르겠다.</h1>

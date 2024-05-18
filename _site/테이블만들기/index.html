@@ -1,0 +1,90 @@
+
+<p>Chat GPT를 활용해서 업무 분석을 할 것이다. 
+<a href="https://gallaxy19.tistory.com/23">출처</a></p>
+
+<h1 id="토이-프로젝트로-은행-구조-파악해보기">토이 프로젝트로 은행 구조 파악해보기.</h1>
+<h2 id="테이블-만들어서-구조-이해하기">테이블 만들어서 구조 이해하기</h2>
+<p>테이블을 간단하게 짜 보면서 업무에 대해 생각해보았다. 간단하게 프로세스가 어떻게 움직일지 고민해 보았다. 테이블은 간단하게 3가지를 생각했고, 사용자 개인 정보와 거래내역, 그리고 계좌 정보가 필요할 것이다.</p>
+
+<ol>
+  <li>
+    <p>User (사용자): 고객의 기본 정보를 담는 테이블
+ id (고유 식별자)
+ username (사용자 이름)
+ password (비밀번호)
+ email (이메일 주소)
+ full_name (전체 이름)
+ date_of_birth (생년월일)
+ address (주소)
+ phone_number (전화번호)
+ created_at (계정 생성 날짜)
+ updated_at (계정 정보 업데이트 날짜)</p>
+  </li>
+  <li>
+    <p>Account (계좌): 사용자의 은행 계좌 정보
+ id (고유 식별자)
+ user_id (User 테이블과 연결된 외래 키)
+ account_number (계좌 번호)
+ account_type (계좌 종류, 예: 저축, 체크)
+ balance (잔액)
+ created_at (계좌 생성 날짜)
+ updated_at (계좌 정보 업데이트 날짜)</p>
+  </li>
+  <li>
+    <p>Transaction (거래): 계좌 간의 금융 거래
+ id (고유 식별자)
+ from_account_id (출금 계좌, Account 테이블의 외래 키)
+ to_account_id (입금 계좌, Account 테이블의 외래 키)
+ amount (거래 금액)
+ transaction_type (거래 유형, 예: 입금, 출금, 이체)
+ created_at (거래 날짜)</p>
+  </li>
+</ol>
+
+<h2 id="테이블-create-문">테이블 CREATE 문</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">BankUser</span> <span class="p">(</span>
+    <span class="n">id</span> <span class="nb">INT</span> <span class="n">AUTO_INCREMENT</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+    <span class="n">username</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">password</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">email</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">full_name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">date_of_birth</span> <span class="nb">DATE</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">address</span> <span class="nb">TEXT</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">phone_number</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">created_at</span> <span class="nb">TIMESTAMP</span> <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span>
+    <span class="n">updated_at</span> <span class="nb">TIMESTAMP</span> <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span> <span class="k">ON</span> <span class="k">UPDATE</span> <span class="k">CURRENT_TIMESTAMP</span>
+<span class="p">);</span>
+
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">BankAccount</span> <span class="p">(</span>
+    <span class="n">id</span> <span class="nb">INT</span> <span class="n">AUTO_INCREMENT</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+    <span class="n">user_id</span> <span class="nb">INT</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">account_number</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">account_type</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">balance</span> <span class="nb">DECIMAL</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">created_at</span> <span class="nb">TIMESTAMP</span> <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span>
+    <span class="n">updated_at</span> <span class="nb">TIMESTAMP</span> <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span> <span class="k">ON</span> <span class="k">UPDATE</span> <span class="k">CURRENT_TIMESTAMP</span>
+<span class="p">);</span>
+
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">BankTransaction</span> <span class="p">(</span>
+    <span class="n">id</span> <span class="nb">INT</span> <span class="n">AUTO_INCREMENT</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+    <span class="n">from_account_id</span> <span class="nb">INT</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">to_account_id</span> <span class="nb">INT</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">amount</span> <span class="nb">DECIMAL</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">transaction_type</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">created_at</span> <span class="nb">TIMESTAMP</span> <span class="k">DEFAULT</span> <span class="k">CURRENT_TIMESTAMP</span>
+<span class="p">);</span>
+
+</code></pre></div></div>
+
+<h3 id="테이블-insert-문">테이블 INSERT 문</h3>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">BankUser</span> <span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">full_name</span><span class="p">,</span> <span class="n">date_of_birth</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="n">phone_number</span><span class="p">,</span> <span class="n">created_at</span><span class="p">,</span> <span class="n">updated_at</span><span class="p">)</span> 
+<span class="k">VALUES</span> <span class="p">(</span><span class="s1">'username'</span><span class="p">,</span> <span class="s1">'encrypted_password'</span><span class="p">,</span> <span class="s1">'user@example.com'</span><span class="p">,</span> <span class="s1">'Full Name'</span><span class="p">,</span> <span class="s1">'1990-01-01'</span><span class="p">,</span> <span class="s1">'123 Main St, City, Country'</span><span class="p">,</span> <span class="s1">'123-456-7890'</span><span class="p">,</span> <span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span> <span class="k">CURRENT_TIMESTAMP</span><span class="p">);</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">BankAccount</span> <span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">account_number</span><span class="p">,</span> <span class="n">account_type</span><span class="p">,</span> <span class="n">balance</span><span class="p">,</span> <span class="n">created_at</span><span class="p">,</span> <span class="n">updated_at</span><span class="p">)</span> 
+<span class="k">VALUES</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'1234567890'</span><span class="p">,</span> <span class="s1">'Savings'</span><span class="p">,</span> <span class="mi">1000</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="k">CURRENT_TIMESTAMP</span><span class="p">,</span> <span class="k">CURRENT_TIMESTAMP</span><span class="p">);</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">BankTransaction</span> <span class="p">(</span><span class="n">from_account_id</span><span class="p">,</span> <span class="n">to_account_id</span><span class="p">,</span> <span class="n">amount</span><span class="p">,</span> <span class="n">transaction_type</span><span class="p">,</span> <span class="n">created_at</span><span class="p">)</span> 
+<span class="k">VALUES</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">100</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="s1">'Transfer'</span><span class="p">,</span> <span class="k">CURRENT_TIMESTAMP</span><span class="p">);</span>
+</code></pre></div></div>
+

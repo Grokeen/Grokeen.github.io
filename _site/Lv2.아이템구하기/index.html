@@ -1,0 +1,12 @@
+
+<p>문제 이해하는게 오래 걸려서 그렇지 쉬웠다.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="n">b</span><span class="p">.</span><span class="n">ITEM_ID</span><span class="p">,</span> <span class="n">a</span><span class="p">.</span><span class="n">ITEM_NAME</span><span class="p">,</span> <span class="n">a</span><span class="p">.</span><span class="n">RARITY</span>
+<span class="k">From</span> <span class="n">ITEM_INFO</span> <span class="n">a</span><span class="p">,</span> <span class="n">ITEM_TREE</span> <span class="n">b</span>
+<span class="k">where</span> <span class="n">a</span><span class="p">.</span><span class="n">ITEM_ID</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">ITEM_ID</span>
+<span class="k">and</span> <span class="n">b</span><span class="p">.</span><span class="n">PARENT_ITEM_ID</span>
+<span class="k">in</span> <span class="p">(</span><span class="k">select</span> <span class="n">ITEM_ID</span>  
+    <span class="k">from</span> <span class="n">ITEM_INFO</span> 
+    <span class="k">where</span> <span class="n">RARITY</span> <span class="o">=</span> <span class="s1">'RARE'</span><span class="p">)</span>
+<span class="k">Order</span> <span class="k">by</span> <span class="n">ITEM_ID</span> <span class="k">desc</span><span class="p">;</span>
+</code></pre></div></div>

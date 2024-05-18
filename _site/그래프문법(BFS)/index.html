@@ -1,0 +1,76 @@
+
+<h1 id="bfs-너비-우선-탐색">BFS (너비 우선 탐색)</h1>
+<p>BFS는 그래프의 가까운 노드를 우선적으로 탐색하는 방식입니다. 큐를 사용하여 구현할 수 있습니다. 다음은 BFS 구현 예시입니다.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Graph</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="no">V</span><span class="o">;</span>   <span class="c1">// 노드의 개수</span>
+    <span class="kd">private</span> <span class="nc">LinkedList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">adj</span><span class="o">[];</span> <span class="c1">// 인접 리스트</span>
+
+    <span class="c1">// 생성자</span>
+    <span class="nc">Graph</span><span class="o">(</span><span class="kt">int</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+        <span class="no">V</span> <span class="o">=</span> <span class="n">v</span><span class="o">;</span>
+        <span class="n">adj</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LinkedList</span><span class="o">[</span><span class="n">v</span><span class="o">];</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">v</span><span class="o">;</span> <span class="o">++</span><span class="n">i</span><span class="o">)</span>
+            <span class="n">adj</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LinkedList</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="c1">// 간선 추가 , 여기까지는 모든 그래프가 동일하겠네, 인접 노드를 표시하는 거니까</span>
+    <span class="kt">void</span> <span class="nf">addEdge</span><span class="o">(</span><span class="kt">int</span> <span class="n">v</span><span class="o">,</span><span class="kt">int</span> <span class="n">w</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">adj</span><span class="o">[</span><span class="n">v</span><span class="o">].</span><span class="na">add</span><span class="o">(</span><span class="n">w</span><span class="o">);</span>
+    <span class="o">}</span>
+
+
+
+
+    <span class="c1">// ------------------------------------------</span>
+    <span class="c1">// BFS 실행</span>
+    <span class="kt">void</span> <span class="nf">BFS</span><span class="o">(</span><span class="kt">int</span> <span class="n">s</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">boolean</span> <span class="n">visited</span><span class="o">[]</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">boolean</span><span class="o">[</span><span class="no">V</span><span class="o">];</span>
+        <span class="nc">LinkedList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">queue</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LinkedList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;();</span>
+
+        <span class="n">visited</span><span class="o">[</span><span class="n">s</span><span class="o">]=</span><span class="kc">true</span><span class="o">;</span>
+        <span class="n">queue</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+
+        <span class="k">while</span> <span class="o">(</span><span class="n">queue</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">!=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="na">poll</span><span class="o">();</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">s</span><span class="o">+</span><span class="s">" "</span><span class="o">);</span>
+
+            <span class="c1">// iterator가 반복해주는 애였나</span>
+            <span class="nc">Iterator</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">i</span> <span class="o">=</span> <span class="n">adj</span><span class="o">[</span><span class="n">s</span><span class="o">].</span><span class="na">listIterator</span><span class="o">();</span>
+            <span class="k">while</span> <span class="o">(</span><span class="n">i</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span>
+                <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+                <span class="k">if</span> <span class="o">(!</span><span class="n">visited</span><span class="o">[</span><span class="n">n</span><span class="o">])</span> <span class="o">{</span> <span class="c1">// 마킹, 노드를 지나갔으면 , true로 표시하네</span>
+                    <span class="n">visited</span><span class="o">[</span><span class="n">n</span><span class="o">]</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+                    <span class="n">queue</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">n</span><span class="o">);</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
+        <span class="nc">Graph</span> <span class="n">g</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Graph</span><span class="o">(</span><span class="mi">4</span><span class="o">);</span>
+
+        <span class="c1">// 코드 줄은 그래프에서 노드 0과 노드 1 사이에 간선을 추가하는 명령입니다. 여기서 사용된 addEdge 메서드는 그래프의 인접 리스트 표현 방식에서 두 노드를 연결하는 간선을 추가하는 기능을 수행합니다.</span>
+        <span class="n">g</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+        <span class="n">g</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+        <span class="n">g</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+        <span class="n">g</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+        <span class="n">g</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
+        <span class="n">g</span><span class="o">.</span><span class="na">addEdge</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"BFS 시작 (시작 노드: 2)"</span><span class="o">);</span>
+        <span class="n">g</span><span class="o">.</span><span class="na">BFS</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>DFS는 스택(명시적이거나 재귀 호출을 통한)을 사용하여 가장 깊은 노드를 먼저 방문하고, BFS는 큐를 사용하여 가장 가까운 노드를 먼저 방문합니다.</p>
+
+<p>DFS는 미로 탐색이나 경로 탐색에 유용하며, BFS는 최단 경로 문제나 그래프의 연결성 체크에 주로 사용됩니다.</p>
+<ul>
+  <li>DFS : 퍼즐이나 미로 탐색, 경로 탐색, 트리나 그래프의 높이나 길이 계산, 위상정렬</li>
+  <li>BFS : 최단 경로, 그래프의 연결성 체크 , 소셜 네트워크 서비스의 친구 찾기, 레벨별 탐색이 필요한 경우</li>
+</ul>

@@ -1,0 +1,177 @@
+
+<h1 id="posteresql로-변경">❌postereSQL로 변경</h1>
+<h2 id="설치">설치</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install postgresql
+brew services start postgresql
+</code></pre></div></div>
+
+<h2 id="데이터베이스-생성">데이터베이스 생성</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>createdb rpa_image_recognition
+</code></pre></div></div>
+
+<h2 id="데이터-베이스-연결">데이터 베이스 연결</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psql rpa_image_recognition
+</code></pre></div></div>
+
+<h2 id="시간-관계상-mysql로-사용하기로-했음">시간 관계상 mysql로 사용하기로 했음</h2>
+<h3 id="사용환경-특징-비교">사용환경 특징 비교</h3>
+<p>PostgreSQL은 견고성, 확장성 및 복잡한 쿼리와 광범위한 데이터 유형을 처리하는 능력으로 유명합니다. 고급 데이터 처리 기능이 필요한 애플리케이션에 이상적입니다.</p>
+
+<p>MySQL은 사용 용이성과 효율성으로 잘 알려져 있어 웹 애플리케이션, 특히 PHP 기반 애플리케이션에서 선호됩니다.</p>
+
+<p>Oracle은 고성능, 확장성 및 광범위한 데이터 처리 기능이 필요한 대기업(종종 대용량 트랜잭션 시스템에 적합)에 가장 적합합니다.</p>
+
+<hr />
+
+<h1 id="db를-설계해보자">DB를 설계해보자</h1>
+<h2 id="1단계-요구-사항-정의">1단계: 요구 사항 정의</h2>
+<p>먼저, 어떤 종류의 데이터를 저장해야 하는지 정의하세요. 이미지 인식 RPA 시스템의 경우 다음을 저장해야 할 수 있습니다.</p>
+
+<p>처리된 이미지에 대한 정보(예: 파일 경로, 타임스탬프 및 소스 식별자와 같은 메타데이터)</p>
+
+<p>이미지 분석 결과(예: 감지된 개체, OCR을 통해 추출된 텍스트)</p>
+
+<p>분석을 기반으로 취한 조치(예: 내린 결정, 실행된 작업)에 대한 로그입니다.</p>
+
+<hr />
+
+<h2 id="️-2단계-데이터베이스-스키마-설계">⭐️ 2단계: 데이터베이스 스키마 설계</h2>
+<p>요구사항에 따라 스키마를 설계할 수 있습니다. 간단한 예는 다음과 같습니다.</p>
+
+<ul>
+  <li>이미지 테이블</li>
+</ul>
+
+<p>image_id(기본 키)</p>
+
+<p>파일_경로(문자열)</p>
+
+<p>uploaded_timestamp(타임스탬프)</p>
+
+<p>소스(문자열)</p>
+
+<ul>
+  <li>분석 결과 표</li>
+</ul>
+
+<p>result_id(기본 키)</p>
+
+<p>image_id(이미지 테이블ru에 연결된 외래 키)</p>
+
+<p>감지된_텍스트(텍스트)</p>
+
+<p>Detected_objects(텍스트)</p>
+
+<p>analytic_timestamp(타임스탬프)</p>
+
+<ul>
+  <li>작업 로그 테이블</li>
+</ul>
+
+<p>action_id(기본 키)</p>
+
+<p>result_id (분석 결과 테이블에 연결된 외래 키)</p>
+
+<p>action_description(텍스트)</p>
+
+<p>action_timestamp(타임스탬프)</p>
+
+<h2 id="3단계-postgresql-설치">❌3단계: PostgreSQL 설치</h2>
+<p>PostgreSQL이 아직 설치되지 않은 경우:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install postgresql
+brew services start postgresql
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="️-3단계-mysql-실행-및-데이터베이스-연결">⭐️ 3단계: mySQL 실행 및 데이터베이스 연결</h2>
+<ul>
+  <li>로컬 mySQL 접속
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql -u root -p
+20165270
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="error-1046-3d000-no-database-selected">ERROR 1046 (3D000): No database selected</h3>
+<ul>
+  <li>데이터베이스에 연결을 안해서 나오는 문제, 연결 방법</li>
+</ul>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">USE</span> <span class="n">information_schema</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="데이터베이스-생성이미-있다면-생략-가능">❌데이터베이스 생성(이미 있다면 생략 가능)</h3>
+<p>터미널을 열고 다음을 실행하세요.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">main</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>삭제할 땐 drop을 사용하면 된다.</p>
+
+<hr />
+
+<h2 id="️4단계-테이블-만들기">⭐️4단계: 테이블 만들기</h2>
+<h3 id="-psql을-사용하여-postgresql-데이터베이스에-연결합니다">❌ psql을 사용하여 PostgreSQL 데이터베이스에 연결합니다.</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psql rpa_image_recognition
+</code></pre></div></div>
+
+<h3 id="다음-sql-명령을-실행하여-설계한-스키마를-기반으로-테이블을-생성합니다">다음 SQL 명령을 실행하여 설계한 스키마를 기반으로 테이블을 생성합니다.</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">Images</span> <span class="p">(</span>
+    <span class="n">image_id</span> <span class="nb">SERIAL</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+    <span class="n">file_path</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span>
+    <span class="n">uploaded_timestamp</span> <span class="nb">TIMESTAMP</span><span class="p">,</span>
+    <span class="k">source</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="p">);</span>
+
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">Analysis_Results</span> <span class="p">(</span>
+    <span class="n">result_id</span> <span class="nb">SERIAL</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+    <span class="n">image_id</span> <span class="nb">INTEGER</span> <span class="k">REFERENCES</span> <span class="n">Images</span><span class="p">(</span><span class="n">image_id</span><span class="p">),</span>
+    <span class="n">detected_text</span> <span class="nb">TEXT</span><span class="p">,</span>
+    <span class="n">detected_objects</span> <span class="nb">TEXT</span><span class="p">,</span>
+    <span class="n">analysis_timestamp</span> <span class="nb">TIMESTAMP</span>
+<span class="p">);</span>
+
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">Actions_Log</span> <span class="p">(</span>
+    <span class="n">action_id</span> <span class="nb">SERIAL</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+    <span class="n">result_id</span> <span class="nb">INTEGER</span> <span class="k">REFERENCES</span> <span class="n">Analysis_Results</span><span class="p">(</span><span class="n">result_id</span><span class="p">),</span>
+    <span class="n">action_description</span> <span class="nb">TEXT</span><span class="p">,</span>
+    <span class="n">action_timestamp</span> <span class="nb">TIMESTAMP</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="error-1044-42000-access-denied-for-user-rootlocalhost-to-database-information_schema">ERROR 1044 (42000): Access denied for user ‘root’@’localhost’ to database ‘information_schema’</h3>
+<ul>
+  <li>권한 문제인데, 테이블을 만들 수 없다는 거임, 권환 확인
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SHOW</span> <span class="n">GRANTS</span> <span class="k">FOR</span> <span class="s1">'root'</span><span class="o">@</span><span class="s1">'localhost'</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>전체 권한 부여
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">GRANT</span> <span class="k">ALL</span> <span class="k">PRIVILEGES</span> <span class="k">ON</span> <span class="o">*</span><span class="p">.</span><span class="o">*</span> <span class="k">TO</span> <span class="s1">'root'</span><span class="o">@</span><span class="s1">'localhost'</span> <span class="k">WITH</span> <span class="k">GRANT</span> <span class="k">OPTION</span><span class="p">;</span>
+<span class="n">FLUSH</span> <span class="k">PRIVILEGES</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="information_schema를-쿼리하려는-테이블에-대한-세부정보-확인">information_schema를 쿼리하려는 테이블에 대한 세부정보 확인</h2>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">information_schema</span><span class="p">.</span><span class="n">tables</span> <span class="k">WHERE</span> <span class="n">table_schema</span> <span class="o">=</span> <span class="s1">'main'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>확인해 보니 information_schema는 mysql의 정보를 담고 있는 녀석이라 그냥 하나 만들어서 해야할듯 싶다.</p>
+
+<p>왠지 안되더라…;;;;;</p>
+
+<hr />
+
+<h2 id="5단계-확인-및-사용">5단계: 확인 및 사용</h2>
+<p>다음을 사용하여 테이블을 나열하여 테이블이 올바르게 생성되었는지 확인하세요.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\dt
+</code></pre></div></div>
+
+<p>이제 데이터베이스와 테이블을 사용할 준비가 되었습니다. RPA 시스템이 이미지를 처리하고, 분석 결과를 저장하고, 해당 결과를 기반으로 작업을 기록할 때 이러한 테이블에 데이터를 삽입할 수 있습니다.</p>
+
+<h2 id="최종-메모">최종 메모</h2>
+<p>애플리케이션의 특정 요구 사항과 복잡성을 기반으로 이 데이터베이스 스키마를 조정하고 확장해야 합니다. 특히 외래 키 및 자주 쿼리되는 필드에 대한 빠른 검색을 위해 인덱싱과 같은 추가 기능 구현을 고려할 수도 있습니다.</p>
+

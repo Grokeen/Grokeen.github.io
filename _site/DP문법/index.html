@@ -1,0 +1,46 @@
+
+<h1 id="dp동적-계획법-dynamic-programming">DP(동적 계획법, Dynamic Programming)</h1>
+<p>DP(동적 계획법, Dynamic Programming)는 복잡한 문제를 여러 개의 작은 문제로 나누어 해결하는 방법입니다. 이 방법은 각 작은 문제의 결과를 저장하고 재사용함으로써 전체 문제의 해결을 효율적으로 달성합니다. DP는 주로 최적화 문제에 사용되며, 같은 작업을 반복하지 않도록 이전에 계산된 값을 저장하는 메모이제이션(Memoization) 기법을 자주 활용합니다.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">FibonacciDP</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">long</span> <span class="nf">fib</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">n</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="kt">long</span><span class="o">[]</span> <span class="n">fibCache</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">long</span><span class="o">[</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="o">];</span>
+        <span class="n">fibCache</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="n">fibCache</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">fibCache</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">fibCache</span><span class="o">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="o">]</span> <span class="o">+</span> <span class="n">fibCache</span><span class="o">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">2</span><span class="o">];</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">fibCache</span><span class="o">[</span><span class="n">n</span><span class="o">];</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span> <span class="c1">// 예를 들어, 10번째 피보나치 수를 계산</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Fibonacci number of "</span> <span class="o">+</span> <span class="n">n</span> <span class="o">+</span> <span class="s">" is: "</span> <span class="o">+</span> <span class="n">fib</span><span class="o">(</span><span class="n">n</span><span class="o">));</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>이 코드는 피보나치 수열의 n번째 값을 효율적으로 계산하기 위해 DP를 사용하는 간단한 예시입니다. 배열 fibCache는 계산된 피보나치 수를 저장하여, 이미 계산된 값을 재사용합니다. 이 방식은 계산 시간을 크게 줄여줍니다.</p>
+
+<p>이제 여러분이 직접 문제를 풀어보면서 DP의 개념과 활용 방법에 더 익숙해질 수 있기를 바랍니다.</p>
+
+<h1 id="사용-예시">사용 예시</h1>
+<ul>
+  <li>
+    <p>피보나치 수열 계산: 
+피보나치 수열의 n번째 값을 구할 때, 재귀만 사용하면 같은 계산을 여러 번 반복하게 되어 비효율적입니다. DP를 사용하면 이미 계산된 값은 저장해두고 필요할 때 재사용할 수 있습니다.</p>
+  </li>
+  <li>
+    <p>최단 경로 문제: 
+여러 개의 도시가 있고, 각 도시를 잇는 경로의 비용이 주어졌을 때, 한 도시에서 다른 도시로 가는 최소 비용을 구하는 문제에 사용할 수 있습니다.</p>
+  </li>
+  <li>
+    <p>배낭 문제(Knapsack Problem): 
+무게 제한이 있는 배낭에 최대 가치를 가지도록 물건을 담는 방법을 찾는 문제입니다.</p>
+  </li>
+</ul>
+
+<h1 id="최단경로-bfs-vs-dp동적할당-차이">최단경로 BFS vs DP동적할당 차이</h1>
+<p>BFS는 주로 가중치 없이 간선의 개수로 거리를 측정할 때 사용되며, 그래프의 탐색이 주 목적일 때 활용됩니다. 반면, 최단 경로 알고리즘은 가중치가 있는 그래프에서 한 정점에서 다른 정점까지의 최단 거리를 계산할 때 사용됩니다.</p>
