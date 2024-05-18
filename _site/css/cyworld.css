@@ -1,4 +1,8 @@
-
+/* 202405191253 김용록 audio 태그 */
+.audioplayer{
+    width: 50%;
+    position: absolute;
+}
 
 .container {
     background-color: #b4d1da;
