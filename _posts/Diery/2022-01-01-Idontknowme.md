@@ -3,7 +3,7 @@ layout: content
 title:  "Idontknowme"
 date:   2022-01-01 12:45:29 +0900
 categories: 
-
+pin: false
 ---
 
 # 23년 6월 1일 

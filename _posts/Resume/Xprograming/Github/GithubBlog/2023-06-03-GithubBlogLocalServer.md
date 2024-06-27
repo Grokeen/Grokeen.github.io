@@ -3,7 +3,7 @@ layout: content
 title:  "[Github Blog] 깃허브 블로그 로컬 서버 실행"
 date:   2023-06-03 12:45:29 +0900
 categories: Github
-pin: true
+pin: false
 ---
 
 

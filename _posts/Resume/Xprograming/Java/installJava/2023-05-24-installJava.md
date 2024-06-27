@@ -3,7 +3,7 @@ layout: content
 title:  "[Java] 맥북에 자바 설치"
 date:   2023-05-24 12:45:29 +0900
 categories: Java
-pin: true
+pin: false
 ---
 
 

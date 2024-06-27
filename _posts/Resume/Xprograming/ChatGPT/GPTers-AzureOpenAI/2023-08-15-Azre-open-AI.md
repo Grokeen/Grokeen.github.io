@@ -3,7 +3,7 @@ layout: content
 title:  "[지피터스] Azure Open AI의 강력한 기능 활용하기"
 date:   2023-08-15 12:45:29 +0900
 categories: GPTers
-pin: true
+pin: false
 ---
 
 지피터스([GPTers](https://www.gpters.org/c/news/github-azure-open-ai))에서 흥미로웠던 글을 가져왔다.

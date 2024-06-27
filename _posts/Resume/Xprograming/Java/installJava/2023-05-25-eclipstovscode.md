@@ -3,7 +3,7 @@ layout: content
 title:  "[Java] Window Eclips에서 M1 Mac VS code로 Spring 프로젝트 옮기기"
 date:   2023-05-25 12:45:29 +0900
 categories: Java
-pin: true
+pin: false
 ---
 
 

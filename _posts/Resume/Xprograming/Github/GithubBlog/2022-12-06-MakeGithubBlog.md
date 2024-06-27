@@ -3,7 +3,7 @@ layout: content
 title:  "[Github Blog] 나만의 블로그 만들기"
 date:   2022-12-06 12:45:29 +0900
 categories: Github
-pin: true
+pin: false
 ---
 
 

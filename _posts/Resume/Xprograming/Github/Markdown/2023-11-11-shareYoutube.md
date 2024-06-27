@@ -6,11 +6,14 @@ categories: Markdown
 pin: true
 ---
 
+# 방법
 유튜브 영상에서 share를 클릭 후 <> 태그 모양을 누르면 html 코드가 나온다.
 방금 처음 알았다.
 
-iframe을 활용하는 방법이다.
+- iframe을 활용하는 방법이다.
 
+~~~
 <img src="/img/blogimg/Github/유튜브영상 공유 방법.png" style="height:500px">
+~~~
 
-[이미지 출처](https://arphabeta.github.io/forbeginner/HTML/video.html)
+[참고 링크](https://arphabeta.github.io/forbeginner/HTML/video.html)
