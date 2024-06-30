@@ -74,7 +74,12 @@ bundle exec jekyll serve
 ~~~
 Your RubyGems version (3.0.3.1) has a bug that prevents `required_ruby_version` from working for Bundler. Any scripts that use `gem install bundler` will break as soon as Bundler drops support for your Ruby version. Please upgrade RubyGems to avoid future breakage and silence this warning by running `gem update --system 3.2.3`
 ~~~
-위 에러는 친절하게 다른 버전을 설치하는 방법을 알려준다:
+
+
+
+- 위 에러는 친절하게 다른 버전을 설치하는 방법을 알려준다:
+
+
 ~~~
 sudo gem update --system 3.2.3
 ~~~

@@ -23,7 +23,7 @@ with picamera.PiCamera() as camera:
     # 2초간 대기하여 카메라가 미리보기를 시작하도록 함
     time.sleep(10)
     camera.capture('image.jpg') # 사진 촬영 후 파일로 저장
-\```
+```
 <br>
 해당 코드에서는 `picamera` 모듈을 사용하여 라즈베리파이 카메라 모듈을 제어하고, `resolution` 속성으로 카메라 해상도를 설정합니다. 그리고 `start_preview()` 메서드로 미리보기 화면을 시작하고, `capture()` 메서드로 사진을 촬영하고 파일로 저장합니다. 추가적으로, `time` 모듈을 사용하여 사진을 찍기 전에 2초간 대기하여 카메라가 미리보기를 시작하도록 하였습니다.
 
