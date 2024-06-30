@@ -1,8 +1,12 @@
 /* 202405191253 김용록 audio 태그 */
 .audioplayer{
-    width: 50%;
+    width: 40%;
+    left: 385px;
+    top: -57px;
+    color: #fff;
     position: absolute;
 }
+
 
 .container {
     background-color: #b4d1da;
