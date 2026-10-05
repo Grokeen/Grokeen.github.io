@@ -1,0 +1,233 @@
+{% assign wedding = site.data.wedding %}
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="{{ wedding.description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ wedding.title | escape }}">
+  <meta property="og:description" content="{{ wedding.description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self';">
+  <title>{{ wedding.title | escape }}</title>
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/wedding.css' | relative_url }}">
+  <script src="{{ '/js/wedding.js' | relative_url }}" defer></script>
+  <script src="{{ '/js/wedding-motion.js' | relative_url }}" defer></script>
+  <script type="module" src="{{ '/js/wedding-opening.js' | relative_url }}"></script>
+</head>
+<body class="wedding-page" data-wedding-datetime="{{ wedding.event.datetime | escape }}">
+  <a class="wedding-skip-link" href="#invitation">청첩장 본문으로 이동</a>
+  <section class="wedding-opening" data-opening aria-labelledby="opening-title">
+    <div class="wedding-opening-sticky">
+      <div class="wedding-opening-heading">
+        <p class="wedding-eyebrow">A MOMENT, A PROMISE</p>
+        <h2 id="opening-title">마음이 닿는 순간</h2>
+        <p>{{ wedding.groom.name | escape }} <span aria-hidden="true">&amp;</span> {{ wedding.bride.name | escape }}</p>
+      </div>
+      <div class="wedding-opening-scene">
+        <img class="wedding-opening-poster" src="{{ wedding.photos.hero | default: '/img/wedding/cover.svg' | relative_url }}" alt="" decoding="async">
+        <canvas class="wedding-opening-canvas" data-opening-canvas aria-hidden="true"></canvas>
+      </div>
+      <div class="wedding-opening-footer">
+        <p class="wedding-opening-caption" data-opening-caption>서로를 향한 마음, 같은 시작.</p>
+        <div class="wedding-opening-phases" aria-hidden="true">
+          <span data-opening-phase class="is-current">설렘</span><span data-opening-phase>약속</span><span data-opening-phase>너에게</span><span data-opening-phase>함께</span>
+        </div>
+        <p class="wedding-opening-instruction" data-opening-instruction>우리의 이야기가 시작됩니다.</p>
+        <a class="wedding-opening-skip" href="#invitation">청첩장 바로 보기 <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </section>
+  <main class="wedding-paper" id="invitation">
+    <nav class="wedding-topbar" aria-label="청첩장 탐색">
+      <a href="{{ '/url.html/homeindex/' | relative_url }}"><span aria-hidden="true">←</span> 게시판으로</a>
+      <span class="wedding-monogram" aria-hidden="true">W / D</span>
+      <a href="#location">오시는 길 <span aria-hidden="true">↗</span></a>
+    </nav>
+
+    <header class="wedding-hero">
+      <p class="wedding-eyebrow" data-reveal>WEDDING INVITATION</p>
+      <h1 data-reveal>{{ wedding.title | escape }}</h1>
+      <p class="wedding-hero-note" data-reveal>함께할 모든 날에, 사랑을 약속합니다.</p>
+      <div class="wedding-cover" data-scroll-photo>
+        {% if wedding.photos.hero.size > 0 %}
+        <img src="{{ wedding.photos.hero | relative_url }}" alt="{{ wedding.groom.name | escape }} · {{ wedding.bride.name | escape }} 웨딩 사진" fetchpriority="high">
+        {% else %}
+        <img src="{{ '/img/wedding/cover.svg' | relative_url }}" alt="꽃과 두 개의 반지로 그린 청첩장 일러스트" width="480" height="600" fetchpriority="high">
+        {% endif %}
+        <span class="wedding-cover-caption" aria-hidden="true">A new chapter, together.</span>
+      </div>
+      <p class="wedding-couple-names" data-reveal>
+        <span>{{ wedding.groom.name | escape }}</span>
+        <span class="wedding-ampersand" aria-hidden="true">&amp;</span>
+        <span>{{ wedding.bride.name | escape }}</span>
+      </p>
+      <div class="wedding-hero-details" data-reveal>
+        {% if wedding.event.datetime.size > 0 %}
+        <time datetime="{{ wedding.event.datetime | escape }}">
+          <span data-event-day>{{ wedding.event.datetime | date: "%Y년 %m월 %d일" }}</span>
+          <span class="wedding-detail-dot" aria-hidden="true">·</span>
+          <span data-event-time>{{ wedding.event.datetime | date: "%H:%M" }}</span>
+        </time>
+        {% else %}
+        <p>예식 날짜 <span class="wedding-detail-dot" aria-hidden="true">·</span> 예식 시간</p>
+        {% endif %}
+        <p>{{ wedding.venue.name | escape }} <span>{{ wedding.venue.hall | escape }}</span></p>
+      </div>
+      <a class="wedding-scroll-cue" href="#greeting">초대의 글 <span aria-hidden="true">↓</span></a>
+    </header>
+
+    <section class="wedding-section wedding-greeting" id="greeting" aria-labelledby="greeting-title">
+      <p class="wedding-eyebrow">WITH LOVE</p>
+      <h2 id="greeting-title">소중한 당신을 초대합니다</h2>
+      <span class="wedding-sprig" aria-hidden="true">❦</span>
+      <div class="wedding-message" data-reveal>
+        {% for line in wedding.message %}<p>{{ line | escape }}</p>{% endfor %}
+      </div>
+      <div class="wedding-families">
+        <p><span>{{ wedding.groom.parents | escape }}</span><small>의 아들</small><strong>{{ wedding.groom.name | escape }}</strong></p>
+        <p><span>{{ wedding.bride.parents | escape }}</span><small>의 딸</small><strong>{{ wedding.bride.name | escape }}</strong></p>
+      </div>
+      {% if wedding.groom.phone.size > 0 or wedding.bride.phone.size > 0 %}
+      <div class="wedding-contact-links">
+        {% if wedding.groom.phone.size > 0 %}<a href="tel:{{ wedding.groom.phone | escape }}">신랑에게 연락하기</a>{% endif %}
+        {% if wedding.bride.phone.size > 0 %}<a href="tel:{{ wedding.bride.phone | escape }}">신부에게 연락하기</a>{% endif %}
+      </div>
+      {% endif %}
+    </section>
+
+    <section class="wedding-section wedding-ceremony" id="ceremony" aria-labelledby="ceremony-title">
+      <p class="wedding-eyebrow">SAVE THE DATE</p>
+      <h2 id="ceremony-title">우리의 결혼식</h2>
+      <div class="wedding-date-card" data-reveal>
+        {% if wedding.event.datetime.size > 0 %}
+        <p class="wedding-event-day" data-event-day>{{ wedding.event.datetime | date: "%Y년 %m월 %d일" }}</p>
+        <p data-event-time>{{ wedding.event.datetime | date: "%H:%M" }}</p>
+        {% else %}
+        <p class="wedding-event-day">예식 날짜</p>
+        <p>예식 시간</p>
+        {% endif %}
+        <span class="wedding-card-divider" aria-hidden="true"></span>
+        <p>{{ wedding.venue.name | escape }}</p>
+        <p class="wedding-muted">{{ wedding.venue.hall | escape }}</p>
+      </div>
+      <table class="wedding-calendar" hidden aria-label="예식일 달력">
+        <caption></caption>
+        <thead><tr><th scope="col">일</th><th scope="col">월</th><th scope="col">화</th><th scope="col">수</th><th scope="col">목</th><th scope="col">금</th><th scope="col">토</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p class="wedding-countdown" hidden aria-live="polite"></p>
+    </section>
+
+    <section class="wedding-section wedding-moments" id="gallery" aria-labelledby="gallery-title">
+      <div class="wedding-moments-heading" data-reveal>
+      <p class="wedding-eyebrow">OUR MOMENTS</p>
+      <h2 id="gallery-title">함께한 순간들</h2>
+      <p class="wedding-section-note">서로의 곁에서 쌓아온 작은 행복들.</p>
+      </div>
+      {% if wedding.photos.gallery.size > 0 %}
+      <div class="wedding-story" data-scroll-story>
+        <div class="wedding-story-visual" aria-hidden="true">
+          <div class="wedding-story-frame">
+            {% for photo in wedding.photos.gallery %}
+            <img class="wedding-story-image{% if forloop.first %} is-current{% endif %}" data-story-image src="{{ photo.src | relative_url }}" alt="" loading="lazy" decoding="async">
+            {% endfor %}
+          </div>
+          <div class="wedding-story-caption"><span>A LITTLE STORY OF US</span><span data-story-counter>01 / {{ wedding.photos.gallery.size | prepend: '0' | slice: -2, 2 }}</span></div>
+        </div>
+        <div class="wedding-story-steps">
+          {% for photo in wedding.photos.gallery %}
+          <article class="wedding-story-step{% if forloop.first %} is-current{% endif %}" data-story-step>
+            <div class="wedding-story-step-copy">
+              <p class="wedding-eyebrow">MOMENT {{ forloop.index | prepend: '0' | slice: -2, 2 }}</p>
+              <h3>{{ photo.title | default: '함께한 순간' | escape }}</h3>
+              <p>{{ photo.caption | default: '서로의 곁에서, 같은 마음으로.' | escape }}</p>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      <div class="wedding-gallery" data-reveal>
+        {% if wedding.photos.gallery.size > 0 %}
+        {% for photo in wedding.photos.gallery %}
+        <a class="wedding-gallery-photo" href="{{ photo.src | relative_url }}" data-gallery-image>
+          <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | default: '웨딩 사진' | escape }}" loading="lazy">
+        </a>
+        {% endfor %}
+        {% else %}
+        <div class="wedding-photo-placeholder"><span aria-hidden="true">01</span><p>우리의 시작</p></div>
+        <div class="wedding-photo-placeholder"><span aria-hidden="true">02</span><p>함께한 시간</p></div>
+        <div class="wedding-photo-placeholder"><span aria-hidden="true">03</span><p>앞으로의 날들</p></div>
+        {% endif %}
+      </div>
+    </section>
+
+    <section class="wedding-section wedding-location" id="location" aria-labelledby="location-title">
+      <p class="wedding-eyebrow">LOCATION</p>
+      <h2 id="location-title">오시는 길</h2>
+      <div class="wedding-location-grid">
+      <div class="wedding-venue-card" data-reveal>
+        <svg class="wedding-location-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 28S6 18 6 12a10 10 0 0 1 20 0c0 6-10 16-10 16Z"/><circle cx="16" cy="12" r="3.5"/></svg>
+        <h3>{{ wedding.venue.name | escape }}</h3>
+        <p>{{ wedding.venue.hall | escape }}</p>
+        <p class="wedding-address">{{ wedding.venue.address | default: '예식장 주소' | escape }}</p>
+        <div class="wedding-location-actions">
+          {% if wedding.venue.map_url.size > 0 %}<a class="wedding-button wedding-button-primary" href="{{ wedding.venue.map_url | escape }}" target="_blank" rel="noopener noreferrer">지도에서 보기 <span aria-hidden="true">↗</span></a>{% endif %}
+          {% if wedding.venue.address.size > 0 %}<button class="wedding-button" type="button" data-copy="{{ wedding.venue.address | escape }}" data-copy-label="주소">주소 복사</button>{% endif %}
+        </div>
+      </div>
+      <div class="wedding-travel">
+        <div><h3>지하철</h3><p>{{ wedding.venue.subway | default: '가까운 지하철역과 출구 안내' | escape | newline_to_br }}</p></div>
+        <div><h3>버스</h3><p>{{ wedding.venue.bus | default: '인근 버스 정류장과 노선 안내' | escape | newline_to_br }}</p></div>
+        <div><h3>주차</h3><p>{{ wedding.venue.parking | default: '주차 위치와 이용 안내' | escape | newline_to_br }}</p></div>
+      </div>
+      </div>
+    </section>
+
+    <section class="wedding-section wedding-gift" aria-labelledby="gift-title">
+      <p class="wedding-eyebrow">THANK YOU</p>
+      <h2 id="gift-title">마음을 전하실 곳</h2>
+      <p class="wedding-section-note" data-reveal>축하해 주시는 따뜻한 마음,<br>오래도록 감사히 간직하겠습니다.</p>
+      {% if wedding.accounts.size > 0 %}
+      <div class="wedding-accounts">
+        {% for account in wedding.accounts %}
+        <details class="wedding-account">
+          <summary>{{ account.group | escape }} <span aria-hidden="true">+</span></summary>
+          <div class="wedding-account-content">
+            <p>{{ account.bank | escape }} <strong>{{ account.holder | escape }}</strong></p>
+            <p class="wedding-account-number">{{ account.number | escape }}</p>
+            {% if account.number.size > 0 %}<button class="wedding-button" type="button" data-copy="{{ account.number | escape }}" data-copy-label="계좌번호">계좌번호 복사</button>{% endif %}
+          </div>
+        </details>
+        {% endfor %}
+      </div>
+      {% else %}
+      <p class="wedding-gift-note">함께해 주시는 마음만으로도<br>저희에게는 큰 선물입니다.</p>
+      {% endif %}
+      {% if wedding.rsvp_url.size > 0 %}
+      <a class="wedding-button wedding-button-primary wedding-rsvp" href="{{ wedding.rsvp_url | escape }}" target="_blank" rel="noopener noreferrer">참석 여부 전하기 <span aria-hidden="true">↗</span></a>
+      {% endif %}
+    </section>
+
+    <footer class="wedding-footer">
+      <span class="wedding-sprig" aria-hidden="true">❦</span>
+      <p>우리의 첫 페이지를<br>함께해 주셔서 감사합니다.</p>
+      <span>{{ wedding.groom.name | escape }} &amp; {{ wedding.bride.name | escape }}</span>
+    </footer>
+  </main>
+
+  <div class="wedding-bottom-bar" role="group" aria-label="청첩장 바로가기">
+    <a href="#ceremony">예식 안내 <span aria-hidden="true">↓</span></a>
+    <button type="button" data-share>청첩장 공유 <span aria-hidden="true">↗</span></button>
+  </div>
+  <div class="wedding-toast" role="status" aria-live="polite" hidden></div>
+  <dialog class="wedding-lightbox" aria-label="웨딩 사진 크게 보기">
+    <button type="button" class="wedding-lightbox-close" aria-label="사진 닫기">닫기 <span aria-hidden="true">×</span></button>
+    <img alt="">
+  </dialog>
+</body>
+</html>

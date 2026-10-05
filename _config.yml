@@ -27,7 +27,7 @@ name                     : # "스케치용녹색물감"
 # description              : # "I want to change my life"
 #(12년 12월 26일 변경)
 url                      : "https://Grokeen.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-# baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -181,8 +181,11 @@ exclude:
   - vendor
   - .asset-cache
   - .bundle
+  - .jekyll-cache
+  - .jekyll-local
   - .jekyll-assets-cache
   - .sass-cache
+  - _site
   - assets/js/plugins
   - assets/js/_main.js
   - assets/js/vendor
@@ -190,6 +193,7 @@ exclude:
   - CHANGELOG
   - config
   - Gemfile
+  - Gemfile.lock
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
@@ -199,6 +203,9 @@ exclude:
   - package-lock.json
   - Rakefile
   - README
+  - README.md
+  - start-server.ps1
+  - stop-server.ps1
   - tmp
   #- /docs # ignore Minimal Mistakes /docs
   #- /test # ignore Minimal Mistakes /test
@@ -240,7 +247,7 @@ kramdown:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)

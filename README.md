@@ -1,17 +1,46 @@
 
 
-# 로컬서버 실행 방법
-```
-bundle exec jekyll serve
-```
-로컬에서 실행해도 github 운영서버에 올릴 시, jekyll에 의해 로컬에서 작성한 css가 깨질 수 있음.
-이 부분 수정 필요.
+# 로컬 서버 실행 방법
 
-## 안될 시, bundle install로 종속해줘야 함
-(#비밀번호는 컴퓨터 잠금번호)
+자세한 설명은 [실행 가이드](_docs/RUNNING.md), 변경 내역과 작업 일시는 [업데이트 기록](_docs/UPDATE_HISTORY.md)을 참고합니다.
 
+청첩장은 `/wedding/`에서 열 수 있습니다. 내용과 디자인 수정 방법은 [청첩장 가이드](_docs/WEDDING.md)를 참고합니다.
+
+Windows에서는 Ruby 3.3과 MSYS2 Devkit이 필요합니다. 설치 후 새 PowerShell 창을 열어 사용합니다.
+
+```powershell
+winget install --id RubyInstallerTeam.RubyWithDevKit.3.3 --exact --source winget --scope user
 ```
+
+저장소 폴더에서 다음 명령으로 서버를 실행합니다. 필요한 gem은 처음 실행할 때 설치됩니다.
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\start-server.ps1
+```
+
+접속 주소는 http://localhost:4000 입니다. 종료하려면 `Ctrl+C`를 누릅니다.
+
+창을 닫아도 서버가 실행되도록 하려면 다음 명령을 사용합니다.
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\start-server.ps1 -Background
+```
+
+백그라운드 서버 종료:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\stop-server.ps1
+```
+
+다른 포트를 사용하려면 실행 명령에 `-Port 4001`을 추가합니다. 빌드 결과와 로그는 `.jekyll-local/`에 저장됩니다. `_config.local.yml`은 로컬 주소와 빌드 제외 경로를 적용합니다.
+
+배포용 빌드와 GitHub 업로드 방법은 [실행 가이드의 10번 항목](_docs/RUNNING.md#10-배포용-빌드와-github-업로드)에 있습니다. 배포용 출력 경로는 `.jekyll-local/production-site/`입니다.
+
+macOS/Linux에서는 다음 명령을 사용합니다.
+
+```sh
 bundle install
+bundle exec jekyll serve --config _config.yml,_config.local.yml --destination .jekyll-local/site
 ```
 
 

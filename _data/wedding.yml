@@ -1,0 +1,60 @@
+# 이름·날짜·장소·사진은 이 파일에서 수정합니다.
+# 자세한 설명: _docs/WEDDING.md
+title: "우리의 결혼식에 초대합니다"
+description: "소중한 분들과 함께하고 싶은 우리의 새로운 시작."
+
+groom:
+  name: "신랑 이름"
+  parents: "신랑 부모님 성함"
+  phone: ""
+bride:
+  name: "신부 이름"
+  parents: "신부 부모님 성함"
+  phone: ""
+
+message:
+  - "서로의 하루에 가장 따뜻한 사람이 되어"
+  - "이제 같은 방향으로 걸어가려 합니다."
+  - "저희의 새로운 시작에 함께하시어"
+  - "소중한 자리를 빛내 주세요."
+
+event:
+  # 예: "2027-05-16T14:00:00+09:00". 실제 예식일로 수정하세요.
+  datetime: ""
+venue:
+  name: "예식장 이름"
+  hall: "예식장 홀"
+  address: ""
+  map_url: ""
+  subway: ""
+  bus: ""
+  parking: ""
+
+photos:
+  # AI로 만든 가상 인물·장면의 테스트 사진입니다. 실제 웨딩 사진으로 교체하세요.
+  # hero를 비워두면 기본 일러스트가 표시됩니다.
+  hero: "/img/wedding/sample-hero.jpg"
+  gallery:
+    - src: "/img/wedding/sample-bouquet.jpg"
+      alt: "테스트 사진: 아이보리 부케를 든 신부"
+      title: "작은 설렘에서"
+      caption: "서로를 향한 마음이, 가장 아름다운 하루로 피어납니다."
+    - src: "/img/wedding/sample-rings.jpg"
+      alt: "테스트 사진: 리넨 위에 놓인 두 개의 결혼반지"
+      title: "변하지 않을 약속으로"
+      caption: "같은 마음을 나누며, 함께할 모든 날을 약속합니다."
+    - src: "/img/wedding/sample-walk.jpg"
+      alt: "테스트 사진: 정원을 함께 걷는 신랑과 신부의 뒷모습"
+      title: "같은 방향으로"
+      caption: "오늘부터 시작되는 우리의 길에 함께해 주세요."
+
+# 외부 참석 여부 설문 링크가 있으면 입력합니다.
+rsvp_url: ""
+
+# 비워두면 계좌번호와 복사 버튼을 표시하지 않습니다.
+accounts: []
+# accounts:
+#   - group: "신랑 측"
+#     bank: "은행명"
+#     holder: "예금주 성함"
+#     number: "계좌번호"

@@ -1,0 +1,14 @@
+url: "http://localhost:4000"
+baseurl: ""
+exclude:
+  - vendor
+  - .bundle
+  - .jekyll-cache
+  - .jekyll-local
+  - .sass-cache
+  - _site
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - start-server.ps1
+  - stop-server.ps1

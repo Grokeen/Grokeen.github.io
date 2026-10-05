@@ -1,0 +1,136 @@
+# 청첩장 화면 사용·수정 방법
+
+## 열기
+
+- 청첩장: http://localhost:4000/wedding/
+- 게시판: http://localhost:4000/url.html/homeindex/
+
+게시판의 **[청첩장] 우리의 결혼식에 초대합니다** 글을 누르면 청첩장으로 이동합니다. 청첩장은 전용 레이아웃을 사용하며, 게시판의 헤더와 오른쪽 사이드바가 없는 독립 화면입니다. 위쪽의 **게시판으로** 링크로 돌아갈 수 있습니다.
+
+서버 실행·종료 방법은 [실행 가이드](RUNNING.md)를 참고하세요.
+
+## 내용 수정
+
+이름, 인사말, 날짜, 장소, 사진 등 청첩장 내용은 [`_data/wedding.yml`](../_data/wedding.yml)에서 수정합니다. 아직 실제 정보가 없는 항목은 입력 자리 또는 기본 일러스트로 표시됩니다.
+
+| 항목 | 설정 | 표시 방식 |
+| --- | --- | --- |
+| 제목·설명 | `title`, `description` | 청첩장 제목, 페이지 설명 |
+| 신랑·신부 | `groom`, `bride`의 `name`, `parents` | 이름과 부모님 성함 |
+| 전화번호 | `groom.phone`, `bride.phone` | 입력하면 연락 버튼 표시 |
+| 초대 글 | `message` | 배열의 각 줄을 문단으로 표시 |
+| 예식 날짜·시간 | `event.datetime` | 한국 시간으로 날짜·요일·시간, 달력, D-day 표시 |
+| 예식장 | `venue.name`, `venue.hall`, `venue.address` | 장소, 홀, 주소; 주소 입력 시 복사 버튼 표시 |
+| 지도 | `venue.map_url` | 입력하면 외부 지도 링크 표시 |
+| 교통 안내 | `venue.subway`, `venue.bus`, `venue.parking` | 지하철·버스·주차 안내 |
+| 대표 사진 | `photos.hero` | 비워두면 꽃과 반지 일러스트 표시 |
+| 사진 목록 | `photos.gallery` | 입력하면 사진 목록 및 확대 보기 표시 |
+| 참석 여부 | `rsvp_url` | 입력하면 외부 설문 링크 표시 |
+| 계좌 안내 | `accounts` | 입력하면 접이식 안내와 계좌번호 복사 버튼 표시 |
+
+YAML 들여쓰기는 공백을 사용하고, 전화번호·계좌번호·날짜는 따옴표 안에 적습니다. 빈 선택 항목은 `""`, 빈 목록은 `[]`로 둡니다.
+
+### 예식일
+
+아래는 입력 형식 예시입니다. 실제 예식 날짜로 바꾸세요.
+
+```yaml
+event:
+  datetime: "2027-05-16T14:00:00+09:00"
+```
+
+날짜와 시간을 입력하면 예식일이 강조된 달력과 한국 날짜 기준 D-day가 자동으로 나타납니다. 날짜가 비어 있으면 달력과 D-day는 표시하지 않습니다.
+
+### 사진
+
+현재 대표 사진 1장과 갤러리 사진 3장은 AI로 만든 가상 인물·장면의 테스트 이미지입니다. 파일 위치와 생성 프롬프트는 [테스트 사진 기록](WEDDING_PHOTOS.md)에 정리했습니다. 실제 사진을 준비하면 아래 방법으로 경로를 바꾸세요.
+
+사진 파일을 `img/wedding/`에 넣고, 다음처럼 경로를 입력합니다. 사진은 사이트 내부 경로를 사용하세요.
+
+```yaml
+photos:
+  hero: "/img/wedding/main.jpg"
+  gallery:
+    - src: "/img/wedding/photo-01.jpg"
+      alt: "함께한 순간"
+      title: "작은 설렘에서"
+      caption: "서로를 향한 마음이, 가장 아름다운 하루로 피어납니다."
+    - src: "/img/wedding/photo-02.jpg"
+      alt: "웨딩 사진"
+```
+
+대표 사진은 세로 비율에 맞게 잘라 표시합니다. 갤러리 사진을 누르면 원본 비율로 크게 볼 수 있습니다. 사진 목록을 비워두면 세 개의 기본 자리 표시자가 나옵니다.
+
+### 스크롤 효과와 반응형 화면
+
+- 첫 화면은 신부가 부케를 던지고 신랑이 받는 **3D 일러스트 오프닝**입니다. 스크롤로 준비·던지기·비행·받기를 재생하며 카메라가 두 사람 주위를 한 바퀴 돕니다. 위로 올리면 같은 장면이 되감깁니다.
+- 오프닝이 끝나면 기존 청첩장과 사진 갤러리로 이어집니다. **청첩장 바로 보기** 링크로 오프닝을 건너뛸 수 있습니다.
+- 대표 사진은 스크롤 위치에 따라 천천히 이동하며 확대됩니다. 초대 글과 안내 카드는 화면에 들어올 때 부드럽게 나타납니다.
+- 갤러리에서는 큰 사진이 고정된 상태로 문구가 지나가고, 부케·반지·뒷모습 사진이 차례로 전환됩니다. 위로 스크롤하면 이전 사진으로 돌아갑니다. 아래 작은 사진은 클릭해서 확대할 수 있습니다.
+- 각 사진의 `title`과 `caption`은 스크롤 장면의 제목과 문구입니다. 생략하면 기본 문구를 사용합니다. 사진 목록을 늘리거나 줄이면 스크롤 장면 수도 함께 바뀝니다.
+- 600px 미만은 모바일 구성, 600~899px은 태블릿 구성입니다. 900px 이상에서는 첫 화면의 글과 사진, 갤러리의 사진과 문구, 장소와 교통 안내를 각각 나란히 배치합니다. 전체 콘텐츠 최대 너비는 1160px입니다.
+- 기기의 **동작 줄이기** 설정을 켜면 스크롤 효과를 끄고 일반 사진 목록을 표시합니다. JavaScript나 필요한 브라우저 기능이 없어도 청첩장과 사진 확대 링크를 볼 수 있습니다.
+- 기본 휠·터치 스크롤을 그대로 사용합니다. 화면 안에 있는 사진만 갱신하고, 스크롤 이벤트는 한 프레임으로 모아서 처리합니다.
+
+효과의 구현은 [`js/wedding-motion.js`](../js/wedding-motion.js), 고정 사진과 화면 크기별 배치는 [`css/wedding.css`](../css/wedding.css)에서 수정합니다. 외부 애니메이션 라이브러리는 필요하지 않습니다.
+
+구현에 사용한 브라우저 API의 공식 설명: [Intersection Observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API), [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame), [동작 줄이기 설정](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion).
+
+### 360도 오프닝 수정
+
+오프닝은 사진을 회전시키는 방식이 아니라, 입체적인 인물·부케·정원을 직접 그리는 장면입니다. 별도의 영상이나 인물 사진은 필요하지 않습니다.
+
+- 화면 구조와 문구: [`_layouts/wedding.html`](../_layouts/wedding.html)의 `wedding-opening` 부분. 이름은 기존 `_data/wedding.yml` 설정을 사용합니다.
+- 인물·드레스·정원·조명·카메라 구도: [`js/wedding-opening-scene.js`](../js/wedding-opening-scene.js)
+- 부케 궤적·손동작·360도 회전: [`js/wedding-opening-state.js`](../js/wedding-opening-state.js)의 `openingState()`. 진행률 0~1에 따라 같은 동작을 재현합니다.
+- 스크롤 연결·크기 변경·성능·대체 화면: [`js/wedding-opening.js`](../js/wedding-opening.js)
+- 오프닝 높이와 모바일 배치: [`css/wedding.css`](../css/wedding.css)의 `.wedding-opening` 부분. 기본 스크롤 구간은 화면 높이의 480%입니다.
+
+기기의 **동작 줄이기**를 켜면 부케를 받은 정지 장면을 표시하고 긴 스크롤 구간을 없앱니다. WebGL 2를 사용할 수 없거나 3D 모듈이 로드되지 않으면 대표 사진을 표시하며, 청첩장 본문은 계속 사용할 수 있습니다. 화면을 벗어난 장면은 렌더링을 멈춥니다.
+
+Three.js **r186**을 `js/vendor/three-r186/`에 보관하므로 페이지 실행 중 외부 CDN에 접속하지 않습니다. [공식 릴리스](https://github.com/mrdoob/three.js/releases/tag/r186)와 [MIT 라이선스](../js/vendor/three-r186/LICENSE)를 참고하세요. WebGL 2 렌더러의 공식 설명은 [Three.js 문서](https://threejs.org/docs/pages/WebGLRenderer.html)에 있습니다.
+
+### 교통·참석·계좌 안내
+
+`venue.map_url`에는 원하는 지도 서비스에서 복사한 장소 링크를 넣습니다. 교통 안내를 여러 줄로 적으려면 YAML의 `|` 문법을 사용합니다.
+
+```yaml
+venue:
+  name: "예식장 이름"
+  hall: "예식장 홀"
+  address: "예식장 주소"
+  map_url: ""
+  subway: |
+    가까운 역과 출구 안내
+    도보 이동 안내
+  bus: "버스 정류장과 노선 안내"
+  parking: "주차장 위치와 이용 안내"
+```
+
+참석 여부를 받을 경우 외부 설문을 만든 뒤 `rsvp_url`에 링크를 입력합니다. 이 정적 페이지 자체에는 응답 저장 기능이 없습니다.
+
+계좌가 필요한 경우 `accounts: []`를 아래 형식으로 교체합니다. 계좌번호는 복사 기능만 제공합니다.
+
+```yaml
+accounts:
+  - group: "신랑 측"
+    bank: "은행명"
+    holder: "예금주 성함"
+    number: "계좌번호"
+```
+
+## 게시판 글과 디자인
+
+- 게시판 글: [`_posts/Invitations/2026-10-05-wedding-invitation.md`](../_posts/Invitations/2026-10-05-wedding-invitation.md). `title`과 본문을 바꾸면 글 목록의 제목과 미리보기가 바뀝니다.
+- `layout: wedding`은 독립 청첩장 디자인을 적용하고, `permalink: /wedding/`은 접속 주소를 지정합니다.
+- `pin: true`로 기존 게시판 글 목록에 노출합니다.
+- 전용 화면 구조: [`_layouts/wedding.html`](../_layouts/wedding.html)
+- 전용 디자인: [`css/wedding.css`](../css/wedding.css)
+- 공유·복사·달력·사진 확대: [`js/wedding.js`](../js/wedding.js)
+- 스크롤 사진 이동·확대·전환: [`js/wedding-motion.js`](../js/wedding-motion.js)
+- 360도 부케 오프닝: [`js/wedding-opening.js`](../js/wedding-opening.js), [`장면 모델`](../js/wedding-opening-scene.js), [`동작과 궤적`](../js/wedding-opening-state.js)
+- 기본 일러스트: [`img/wedding/cover.svg`](../img/wedding/cover.svg)
+
+서버 실행 중 파일을 저장하면 자동으로 다시 빌드합니다. 이 프로젝트의 빌드는 약 45~60초 걸릴 수 있으므로, 완료 후 브라우저를 새로고침하세요. 스타일이 이전 상태라면 `Ctrl+F5`로 새로고침합니다.
+
+하단 **청첩장 공유**는 기기의 공유 메뉴 또는 링크 복사를 사용합니다. 현재 로컬 서버의 `localhost` 링크는 다른 사람의 기기에서 접속할 수 없습니다. 사이트를 공개 배포한 뒤 공개 주소에서 공유하세요.
