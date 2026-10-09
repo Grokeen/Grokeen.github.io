@@ -1,4 +1,5 @@
 {% assign wedding = site.data.wedding %}
+{% assign story_photos = wedding.photos.gallery | slice: 0, 6 %}
 {% assign opening_default = wedding.opening.default | default: 'proposal' %}
 {% assign proposal_motion = wedding.opening.proposal_motion | default: '/img/wedding/opening-proposal-motion-v2.png' %}
 {% assign bouquet_motion = wedding.opening.bouquet_motion | default: '/img/wedding/opening-bouquet-motion-v3.png' %}
@@ -145,14 +146,14 @@
       <div class="wedding-story" data-scroll-story>
         <div class="wedding-story-visual" aria-hidden="true">
           <div class="wedding-story-frame">
-            {% for photo in wedding.photos.gallery %}
+            {% for photo in story_photos %}
             <img class="wedding-story-image{% if forloop.first %} is-current{% endif %}" data-story-image src="{{ photo.src | relative_url }}" alt="" loading="lazy" decoding="async">
             {% endfor %}
           </div>
-          <div class="wedding-story-caption"><span>A LITTLE STORY OF US</span><span data-story-counter>01 / {{ wedding.photos.gallery.size | prepend: '0' | slice: -2, 2 }}</span></div>
+          <div class="wedding-story-caption"><span>A LITTLE STORY OF US</span><span data-story-counter>01 / {{ story_photos.size | prepend: '0' | slice: -2, 2 }}</span></div>
         </div>
         <div class="wedding-story-steps">
-          {% for photo in wedding.photos.gallery %}
+          {% for photo in story_photos %}
           <article class="wedding-story-step{% if forloop.first %} is-current{% endif %}" data-story-step>
             <div class="wedding-story-step-copy">
               <p class="wedding-eyebrow">MOMENT {{ forloop.index | prepend: '0' | slice: -2, 2 }}</p>

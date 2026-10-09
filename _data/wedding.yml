@@ -41,6 +41,7 @@ photos:
   # AI로 만든 가상 인물·장면의 테스트 사진입니다. 실제 웨딩 사진으로 교체하세요.
   # hero를 비워두면 기본 일러스트가 표시됩니다.
   hero: "/img/wedding/sample-hero.jpg"
+  # 스크롤 장면은 앞의 최대 6장, 아래 사진 목록은 모든 사진을 표시합니다.
   gallery:
     - src: "/img/wedding/sample-bouquet.jpg"
       alt: "테스트 사진: 아이보리 부케를 든 신부"
@@ -66,6 +67,22 @@ photos:
       alt: "테스트 사진: 노을빛 정원에서 가볍게 춤추는 신랑과 신부"
       title: "함께할 모든 날"
       caption: "오늘의 따뜻한 빛을 간직하며, 같은 마음으로 내일을 맞이합니다."
+    - src: "/img/wedding/sample-seaside.jpg"
+      alt: "테스트 사진: 노을빛 바닷가를 함께 걷는 신랑과 신부"
+      title: "함께 걷는 바다"
+      caption: "어디로 향하든, 너와 나란히 걷고 싶습니다."
+    - src: "/img/wedding/sample-window-portrait.jpg"
+      alt: "테스트 사진: 밝은 창가에 나란히 앉은 신랑과 신부"
+      title: "편안한 나의 자리"
+      caption: "너의 곁이, 언제나 가장 편안한 곳이 됩니다."
+    - src: "/img/wedding/sample-bride-portrait.jpg"
+      alt: "테스트 사진: 정원에서 부케를 든 신부의 단독 사진"
+      title: "가장 빛나는 오늘"
+      caption: "작은 설렘과 웃음을 담아, 우리의 오늘을 기억합니다."
+    - src: "/img/wedding/sample-groom-portrait.jpg"
+      alt: "테스트 사진: 정원에서 미소 짓는 신랑의 단독 사진"
+      title: "너를 향한 약속"
+      caption: "같은 마음으로 오래도록, 너의 편이 되겠습니다."
 
 # 외부 참석 여부 설문 링크가 있으면 입력합니다.
 rsvp_url: ""

@@ -1,5 +1,61 @@
 # 청첩장 테스트 사진 기록
 
+## 2026-10-10 — 갤러리 예시 10장, 스크롤 최대 6장
+
+- 내장 `image_gen` 도구로 바닷가 산책·창가 커플·신부 단독·신랑 단독 사진 4장을 추가했습니다. 기존 대표 사진을 가상의 성인 커플의 인물·의상 참고 이미지로 사용했습니다.
+- 갤러리는 10장을 모두 표시하며 확대 링크도 제공합니다. ‘함께한 순간들’의 스크롤 사진·문구·카운터는 갤러리 앞의 최대 6장으로 제한합니다.
+- JPEG는 원본 해상도와 구도를 유지하고 품질 88로 내보냈습니다. PNG 원본은 생성 폴더와 `.jekyll-local/imagegen-originals/2026-10-10-ten/`에 보관합니다.
+
+| 최종 저장 파일 | 구도 | 해상도 |
+| --- | --- | --- |
+| [sample-seaside.jpg](../img/wedding/sample-seaside.jpg) | 바닷가 산책 | 1086 × 1448 |
+| [sample-window-portrait.jpg](../img/wedding/sample-window-portrait.jpg) | 창가의 커플 | 1086 × 1448 |
+| [sample-bride-portrait.jpg](../img/wedding/sample-bride-portrait.jpg) | 신부 단독 사진 | 1086 × 1448 |
+| [sample-groom-portrait.jpg](../img/wedding/sample-groom-portrait.jpg) | 신랑 단독 사진 | 1086 × 1448 |
+
+### 최종 생성 프롬프트
+
+#### 바닷가 산책
+
+```text
+Use case: photorealistic-natural.
+Asset type: new example photograph for a Korean wedding invitation gallery.
+Input image 1 is a reference for the FICTIONAL ADULT Korean couple's identity, outfits and photographic mood, not an edit target. Use the same groom with short dark hair, charcoal suit, white shirt and small white boutonniere, and the same bride with a low dark updo and ivory floral lace wedding gown. Natural adult proportions, recognizable faces, real skin and hair texture, detailed fabric, believable hands.
+Output ONE high-resolution vertical 3:4 editorial photograph, subject comfortably centered with crop-safe margins. Warm cream, muted sage and delicate blush tones, realistic soft light. Opaque background. No text, watermark, logo, collage, grid, borders, cartoon, plastic skin or extra people.
+Scene: the couple walking slowly together beside a calm pale-blue sea at soft early-evening light. Full-body view on dry light sand, groom and bride look toward each other with quiet smiles, their arms linked naturally rather than complex hand poses. Her lace train and veil move only gently in a small breeze. Sparse horizon and warm neutral sky, ocean subtly blurred, relaxed and elegant. Show both heads, shoes and dress hem with breathing room.
+```
+
+#### 창가의 커플
+
+```text
+Use case: photorealistic-natural.
+Asset type: new example photograph for a Korean wedding invitation gallery.
+Input image 1 is a reference for the FICTIONAL ADULT Korean couple's identity, outfits and photographic mood, not an edit target. Use the same groom with short dark hair, charcoal suit, white shirt and small white boutonniere, and the same bride with a low dark updo and ivory floral lace wedding gown. Natural adult proportions, recognizable faces, real skin and hair texture, detailed fabric, believable hands.
+Output ONE high-resolution vertical 3:4 editorial photograph, subject comfortably centered with crop-safe margins. Warm cream, muted sage and delicate blush tones, realistic soft light. Opaque background. No text, watermark, logo, collage, grid, borders, cartoon, plastic skin or extra people.
+Scene: the couple seated close together on a simple cream upholstered bench near a large softly lit window in a quiet ivory room. A natural waist-up portrait, bride leans lightly toward the groom, they smile warmly at the camera. Hands relaxed on their own laps, no intertwined fingers. Realistic diffused window light, sheer curtain and softly blurred neutral background, calm intimate wedding editorial. Keep faces and shoulders well inside the crop.
+```
+
+#### 신부 단독 사진
+
+```text
+Use case: photorealistic-natural.
+Asset type: new example photograph for a Korean wedding invitation gallery.
+Input image 1 is a reference for the FICTIONAL ADULT Korean couple's identity, outfits and photographic mood, not an edit target. Use the same groom with short dark hair, charcoal suit, white shirt and small white boutonniere, and the same bride with a low dark updo and ivory floral lace wedding gown. Natural adult proportions, recognizable faces, real skin and hair texture, detailed fabric, believable hands.
+Output ONE high-resolution vertical 3:4 editorial photograph, subject comfortably centered with crop-safe margins. Warm cream, muted sage and delicate blush tones, realistic soft light. Opaque background. No text, watermark, logo, collage, grid, borders, cartoon, plastic skin or extra people.
+Scene: portrait of ONLY the bride from the reference, standing in the same style of gentle cream-stone garden with soft green foliage. Three-quarter body portrait. She holds a small ivory-and-blush bouquet naturally at waist height and smiles softly toward the camera. Lace texture and low updo clearly visible, a light veil falls behind her shoulders. Soft daylight, understated beauty, realistic anatomy and delicate flower details. No groom in this photo.
+```
+
+#### 신랑 단독 사진
+
+```text
+Use case: photorealistic-natural.
+Asset type: new example photograph for a Korean wedding invitation gallery.
+Input image 1 is a reference for the FICTIONAL ADULT Korean couple's identity, outfits and photographic mood, not an edit target. Use the same groom with short dark hair, charcoal suit, white shirt and small white boutonniere, and the same bride with a low dark updo and ivory floral lace wedding gown. Natural adult proportions, recognizable faces, real skin and hair texture, detailed fabric, believable hands.
+Output ONE high-resolution vertical 3:4 editorial photograph, subject comfortably centered with crop-safe margins. Warm cream, muted sage and delicate blush tones, realistic soft light. Opaque background. No text, watermark, logo, collage, grid, borders, cartoon, plastic skin or extra people.
+Scene: portrait of ONLY the groom from the reference, standing near a cream stone wall and muted olive foliage in a quiet garden. Three-quarter body portrait, shoulders relaxed, one hand resting naturally in his trouser pocket, the other at his side. Gentle genuine smile toward the camera, charcoal suit and small white boutonniere sharply detailed. Soft natural daylight, restrained editorial style, realistic skin and hair. No bride in this photo.
+```
+
+
 ## 2026-10-10 — 사진 예시 세 장 추가
 
 - 생성 방식: 내장 `image_gen` 도구. 기존 `sample-hero.jpg`를 인물·의상·색감 참고 이미지로 사용했습니다.
