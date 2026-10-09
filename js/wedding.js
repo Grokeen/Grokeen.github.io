@@ -46,25 +46,102 @@
   const lightbox = document.querySelector(".wedding-lightbox");
   if (lightbox && typeof lightbox.showModal === "function") {
     const fullPhoto = lightbox.querySelector("img");
+    const motionPreference = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : null;
+    const canAnimate = typeof fullPhoto.animate === "function";
     let photoLink;
+    let photoAnimation;
+    let preparing = false;
+    let closing = false;
+    lightbox.classList.toggle("has-photo-motion", canAnimate);
+
+    function reduceMotion() { return motionPreference && motionPreference.matches; }
+
+    function thumbnailTransform() {
+      const photo = fullPhoto.getBoundingClientRect();
+      const thumbnail = photoLink && photoLink.getBoundingClientRect();
+      if (!thumbnail || !photo.width || !photo.height || thumbnail.bottom <= 0 || thumbnail.top >= window.innerHeight) {
+        return "translate3d(0, 16px, 0) scale(.94)";
+      }
+      const x = thumbnail.left + thumbnail.width / 2 - photo.left - photo.width / 2;
+      const y = thumbnail.top + thumbnail.height / 2 - photo.top - photo.height / 2;
+      return "translate3d(" + x + "px, " + y + "px, 0) scale(" + thumbnail.width / photo.width + ", " + thumbnail.height / photo.height + ")";
+    }
+
+    function finishClosing() {
+      if (lightbox.open) lightbox.close();
+    }
+
+    function closePhoto() {
+      if (!lightbox.open || closing) return;
+      closing = true;
+      const current = window.getComputedStyle(fullPhoto);
+      const transform = current.transform;
+      const opacity = current.opacity;
+      if (photoAnimation) photoAnimation.cancel();
+      lightbox.classList.remove("is-opening");
+      lightbox.classList.add("is-closing");
+      if (reduceMotion()) {
+        finishClosing();
+      } else if (canAnimate) {
+        photoAnimation = fullPhoto.animate([
+          { transform: transform, opacity: opacity },
+          { transform: thumbnailTransform(), opacity: 0 }
+        ], { duration: 260, easing: "cubic-bezier(.4, 0, 1, 1)", fill: "forwards" });
+        photoAnimation.finished.then(finishClosing, finishClosing);
+      } else {
+        window.setTimeout(finishClosing, 260);
+      }
+    }
+
     document.querySelectorAll("[data-gallery-image]").forEach(function (link) {
-      link.addEventListener("click", function (event) {
+      link.addEventListener("click", async function (event) {
         if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
         event.preventDefault();
+        if (preparing || lightbox.open) return;
+        preparing = true;
         photoLink = link;
         fullPhoto.src = link.href;
         fullPhoto.alt = link.querySelector("img").alt;
+        // Decode before measuring, so the first frame already has the right size.
+        try {
+          if (typeof fullPhoto.decode === "function") await fullPhoto.decode();
+        } catch (_) {
+          if (!fullPhoto.naturalWidth) {
+            preparing = false;
+            fullPhoto.removeAttribute("src");
+            notify("사진을 불러올 수 없습니다. 잠시 후 다시 눌러 주세요.");
+            return;
+          }
+        }
+        preparing = false;
+        document.documentElement.classList.add("has-wedding-lightbox");
+        lightbox.classList.add("is-opening");
         lightbox.showModal();
+        if (canAnimate && !reduceMotion()) {
+          photoAnimation = fullPhoto.animate([
+            { transform: thumbnailTransform(), opacity: .35 },
+            { transform: "none", opacity: 1 }
+          ], { duration: 460, easing: "cubic-bezier(.22, 1, .36, 1)" });
+        }
       });
     });
-    lightbox.querySelector(".wedding-lightbox-close").addEventListener("click", function () { lightbox.close(); });
+    lightbox.querySelector(".wedding-lightbox-close").addEventListener("click", closePhoto);
     lightbox.addEventListener("click", function (event) {
-      const rect = lightbox.getBoundingClientRect();
-      if (event.target === lightbox && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) lightbox.close();
+      if (event.target === lightbox) closePhoto();
+    });
+    lightbox.addEventListener("cancel", function (event) {
+      event.preventDefault();
+      closePhoto();
     });
     lightbox.addEventListener("close", function () {
+      if (photoAnimation) photoAnimation.cancel();
+      photoAnimation = null;
+      closing = false;
+      lightbox.classList.remove("is-opening", "is-closing");
+      document.documentElement.classList.remove("has-wedding-lightbox");
       fullPhoto.removeAttribute("src");
-      if (photoLink) photoLink.focus();
+      if (photoLink) photoLink.focus({ preventScroll: true });
+      photoLink = null;
     });
   }
 

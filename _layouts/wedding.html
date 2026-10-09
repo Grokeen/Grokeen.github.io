@@ -1,10 +1,14 @@
 {% assign wedding = site.data.wedding %}
+{% assign opening_default = wedding.opening.default | default: 'proposal' %}
+{% assign proposal_motion = wedding.opening.proposal_motion | default: '/img/wedding/opening-proposal-motion-v2.png' %}
+{% assign bouquet_motion = wedding.opening.bouquet_motion | default: '/img/wedding/opening-bouquet-motion-v3.png' %}
+{% assign bouquet_sprite = wedding.opening.bouquet_sprite | default: '/img/wedding/opening-bouquet-sprite-v2.png' %}
 <!doctype html>
 <html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f5ef">
+  <meta name="theme-color" content="{% if opening_default == 'bouquet' %}#fcf4f2{% else %}#f7f5ef{% endif %}">
   <meta name="description" content="{{ wedding.description | escape }}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ wedding.title | escape }}">
@@ -18,26 +22,35 @@
   <script src="{{ '/js/wedding-motion.js' | relative_url }}" defer></script>
   <script type="module" src="{{ '/js/wedding-opening.js' | relative_url }}"></script>
 </head>
-<body class="wedding-page" data-wedding-datetime="{{ wedding.event.datetime | escape }}">
+<body class="wedding-page" data-wedding-theme="{% if opening_default == 'bouquet' %}bride{% else %}groom{% endif %}" data-wedding-datetime="{{ wedding.event.datetime | escape }}">
   <a class="wedding-skip-link" href="#invitation">청첩장 본문으로 이동</a>
-  <section class="wedding-opening" data-opening aria-labelledby="opening-title">
+  <section class="wedding-opening{% if opening_default == 'bouquet' %} is-bouquet-opening{% endif %}" data-opening data-opening-default="{{ opening_default | escape }}" data-proposal-motion="{{ proposal_motion | relative_url }}" data-bouquet-motion="{{ bouquet_motion | relative_url }}" data-bouquet-sprite="{{ bouquet_sprite | relative_url }}" aria-labelledby="opening-title">
     <div class="wedding-opening-sticky">
       <div class="wedding-opening-heading">
         <p class="wedding-eyebrow">A MOMENT, A PROMISE</p>
-        <h2 id="opening-title">마음이 닿는 순간</h2>
-        <p>{{ wedding.groom.name | escape }} <span aria-hidden="true">&amp;</span> {{ wedding.bride.name | escape }}</p>
+        <h2 id="opening-title" data-opening-title>{% if opening_default == 'bouquet' %}마음이 닿는 순간{% else %}너와 함께할 모든 날{% endif %}</h2>
+        <p class="wedding-opening-couple">{{ wedding.groom.name | escape }} <span aria-hidden="true">&amp;</span> {{ wedding.bride.name | escape }}</p>
+        <div class="wedding-opening-choices" role="group" aria-label="신랑측·신부측 테마 선택">
+          <button type="button" data-opening-select="proposal" aria-label="신랑측 테마와 청혼 장면 보기" aria-pressed="{% if opening_default == 'bouquet' %}false{% else %}true{% endif %}" disabled>신랑측</button>
+          <button type="button" data-opening-select="bouquet" aria-label="신부측 테마와 부케 장면 보기" aria-pressed="{% if opening_default == 'bouquet' %}true{% else %}false{% endif %}" disabled>신부측</button>
+        </div>
       </div>
       <div class="wedding-opening-scene">
-        <img class="wedding-opening-poster" src="{{ wedding.photos.hero | default: '/img/wedding/cover.svg' | relative_url }}" alt="" decoding="async">
-        <canvas class="wedding-opening-canvas" data-opening-canvas aria-hidden="true"></canvas>
+        <div class="wedding-opening-poster" data-opening-poster-frame="{% if opening_default == 'bouquet' %}0{% else %}2{% endif %}" role="img" aria-label="{% if opening_default == 'bouquet' %}부케를 던지고 받을 준비를 하는 신랑과 신부{% else %}신부의 어깨를 가볍게 두드리는 신랑{% endif %}">
+          <img data-opening-poster src="{% if opening_default == 'bouquet' %}{{ bouquet_motion | relative_url }}{% else %}{{ proposal_motion | relative_url }}{% endif %}" alt="" decoding="async" fetchpriority="high">
+        </div>
+        <canvas class="wedding-opening-canvas" data-opening-canvas role="img" aria-label="실사풍 청혼 또는 부케 던지기 장면"></canvas>
       </div>
       <div class="wedding-opening-footer">
-        <p class="wedding-opening-caption" data-opening-caption>서로를 향한 마음, 같은 시작.</p>
+        <p class="wedding-opening-caption" data-opening-caption>{% if opening_default == 'bouquet' %}멀리서도, 내 마음은 너에게.{% else %}어깨를 툭툭, 너를 부르는 작은 신호.{% endif %}</p>
         <div class="wedding-opening-phases" aria-hidden="true">
-          <span data-opening-phase class="is-current">설렘</span><span data-opening-phase>약속</span><span data-opening-phase>너에게</span><span data-opening-phase>함께</span>
+          <span data-opening-phase class="is-current">{% if opening_default == 'bouquet' %}던질 준비{% else %}툭툭{% endif %}</span><span data-opening-phase>{% if opening_default == 'bouquet' %}던지기{% else %}돌아보기{% endif %}</span><span data-opening-phase>{% if opening_default == 'bouquet' %}받기{% else %}청혼{% endif %}</span>
         </div>
         <p class="wedding-opening-instruction" data-opening-instruction>우리의 이야기가 시작됩니다.</p>
-        <a class="wedding-opening-skip" href="#invitation">청첩장 바로 보기 <span aria-hidden="true">↓</span></a>
+        <div class="wedding-opening-footer-actions">
+          <button type="button" class="wedding-opening-replay" data-opening-replay hidden>처음부터 보기 <span aria-hidden="true">↺</span></button>
+          <a class="wedding-opening-skip" href="#invitation">청첩장 바로 보기 <span aria-hidden="true">↓</span></a>
+        </div>
       </div>
     </div>
   </section>
@@ -154,7 +167,7 @@
       <div class="wedding-gallery" data-reveal>
         {% if wedding.photos.gallery.size > 0 %}
         {% for photo in wedding.photos.gallery %}
-        <a class="wedding-gallery-photo" href="{{ photo.src | relative_url }}" data-gallery-image>
+        <a class="wedding-gallery-photo" href="{{ photo.src | relative_url }}" aria-haspopup="dialog" aria-label="{{ photo.alt | default: '웨딩 사진' | escape }} 크게 보기" data-gallery-image>
           <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | default: '웨딩 사진' | escape }}" loading="lazy">
         </a>
         {% endfor %}
@@ -226,8 +239,8 @@
   </div>
   <div class="wedding-toast" role="status" aria-live="polite" hidden></div>
   <dialog class="wedding-lightbox" aria-label="웨딩 사진 크게 보기">
-    <button type="button" class="wedding-lightbox-close" aria-label="사진 닫기">닫기 <span aria-hidden="true">×</span></button>
-    <img alt="">
+    <button type="button" class="wedding-lightbox-close" aria-label="사진 닫기" autofocus>닫기 <span aria-hidden="true">×</span></button>
+    <img alt="" decoding="async">
   </dialog>
 </body>
 </html>

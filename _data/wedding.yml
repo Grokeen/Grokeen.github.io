@@ -30,6 +30,13 @@ venue:
   bus: ""
   parking: ""
 
+opening:
+  # 첫 선택: proposal(신랑측·청혼) 또는 bouquet(신부측·부케). 버튼을 누르면 테마도 바뀝니다.
+  default: "proposal"
+  proposal_motion: "/img/wedding/opening-proposal-motion-v2.png"
+  bouquet_motion: "/img/wedding/opening-bouquet-motion-v3.png"
+  bouquet_sprite: "/img/wedding/opening-bouquet-sprite-v2.png"
+
 photos:
   # AI로 만든 가상 인물·장면의 테스트 사진입니다. 실제 웨딩 사진으로 교체하세요.
   # hero를 비워두면 기본 일러스트가 표시됩니다.
@@ -47,6 +54,18 @@ photos:
       alt: "테스트 사진: 정원을 함께 걷는 신랑과 신부의 뒷모습"
       title: "같은 방향으로"
       caption: "오늘부터 시작되는 우리의 길에 함께해 주세요."
+    - src: "/img/wedding/sample-garden-portrait.jpg"
+      alt: "테스트 사진: 정원에서 서로를 바라보며 웃는 신랑과 신부"
+      title: "너의 미소가 좋아서"
+      caption: "함께 웃는 평범한 순간들이, 우리의 가장 소중한 날이 됩니다."
+    - src: "/img/wedding/sample-veil-portrait.jpg"
+      alt: "테스트 사진: 베일 아래 가까이 마주한 신랑과 신부"
+      title: "서로의 곁에서"
+      caption: "가까이 마주한 눈빛처럼, 늘 서로의 마음에 닿아 있겠습니다."
+    - src: "/img/wedding/sample-sunset-dance.jpg"
+      alt: "테스트 사진: 노을빛 정원에서 가볍게 춤추는 신랑과 신부"
+      title: "함께할 모든 날"
+      caption: "오늘의 따뜻한 빛을 간직하며, 같은 마음으로 내일을 맞이합니다."
 
 # 외부 참석 여부 설문 링크가 있으면 입력합니다.
 rsvp_url: ""

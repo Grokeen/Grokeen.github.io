@@ -1,5 +1,55 @@
 # 청첩장 테스트 사진 기록
 
+## 2026-10-10 — 사진 예시 세 장 추가
+
+- 생성 방식: 내장 `image_gen` 도구. 기존 `sample-hero.jpg`를 인물·의상·색감 참고 이미지로 사용했습니다.
+- 가상의 성인 커플로 만든 새로운 사진이며, 기존 사진을 교체하지 않고 갤러리에 추가했습니다. 갤러리는 총 6장입니다.
+- 웹용 JPEG는 원본 해상도를 유지하고 품질 88로 내보냈습니다. PNG 원본은 기본 생성 폴더와 `.jekyll-local/imagegen-originals/2026-10-10-extra/`에 보존합니다.
+
+| 최종 저장 파일 | 구도 | 해상도 |
+| --- | --- | --- |
+| [sample-garden-portrait.jpg](../img/wedding/sample-garden-portrait.jpg) | 정원에서 웃는 커플 | 1086 × 1448 |
+| [sample-veil-portrait.jpg](../img/wedding/sample-veil-portrait.jpg) | 베일 아래의 가까운 커플 | 1086 × 1448 |
+| [sample-sunset-dance.jpg](../img/wedding/sample-sunset-dance.jpg) | 노을 속의 느린 춤 | 1086 × 1448 |
+
+### 추가 사진의 최종 생성 프롬프트
+
+#### 정원에서 웃는 커플: sample-garden-portrait.jpg
+
+```text
+Use case: photorealistic-natural.
+Asset type: additional example photo for an elegant Korean wedding invitation gallery.
+Input image 1 is an APPEARANCE AND STYLE REFERENCE, not an edit target. Create a NEW standalone photo of the same fictional adult Korean couple: groom with short dark hair in a charcoal tailored suit and white shirt, bride with a low dark updo in an ivory floral lace wedding gown. Preserve recognizable faces, clothing and natural adult proportions.
+Style: realistic editorial wedding photography, real skin and hair texture, tactile lace and suit fabric, restrained warm ivory, sage foliage and soft blush tones. Natural expressions and believable hands. One vertical 3:4 portrait, high resolution, centered composition with enough edge space for a gallery crop. Opaque photographic background.
+Constraints: no text, logos, watermarks, collage, panel grid, frame borders, cartoon, doll appearance or extra people.
+Scene: a quiet cream-stone garden courtyard with soft olive foliage and white flowers, gently blurred. Waist-up to mid-thigh candid couple portrait. They stand together and look at each other with warm, spontaneous smiles, not at the camera. Bride rests one hand naturally on the groom's forearm, their other hands relaxed and uncomplicated. Soft overcast daylight, fresh and intimate. Keep both faces comfortably inside the top half with breathing room above their heads.
+```
+
+#### 베일 아래의 가까운 커플: sample-veil-portrait.jpg
+
+```text
+Use case: photorealistic-natural.
+Asset type: additional example photo for an elegant Korean wedding invitation gallery.
+Input image 1 is an APPEARANCE AND STYLE REFERENCE, not an edit target. Create a NEW standalone photo of the same fictional adult Korean couple: groom with short dark hair in a charcoal tailored suit and white shirt, bride with a low dark updo in an ivory floral lace wedding gown. Preserve recognizable faces, clothing and natural adult proportions.
+Style: realistic editorial wedding photography, real skin and hair texture, tactile lace and suit fabric, restrained warm ivory, sage foliage and soft blush tones. Natural expressions and believable hands. One vertical 3:4 portrait, high resolution, centered composition with enough edge space for a gallery crop. Opaque photographic background.
+Constraints: no text, logos, watermarks, collage, panel grid, frame borders, cartoon, doll appearance or extra people.
+Scene: a softly blurred garden, photographed through the bride's light translucent veil. An intimate shoulder-up portrait of both people under the same veil, leaning their foreheads gently close, eyes softly open or lowered, quiet smiles. The veil catches diffused window-like daylight with realistic fine threads; both faces remain clearly visible. Hands below the crop to keep the image simple. Calm warm cream and faint rose tones, tasteful romantic wedding editorial, no kiss and no exaggerated glamour.
+```
+
+#### 노을 속의 느린 춤: sample-sunset-dance.jpg
+
+```text
+Use case: photorealistic-natural.
+Asset type: additional example photo for an elegant Korean wedding invitation gallery.
+Input image 1 is an APPEARANCE AND STYLE REFERENCE, not an edit target. Create a NEW standalone photo of the same fictional adult Korean couple: groom with short dark hair in a charcoal tailored suit and white shirt, bride with a low dark updo in an ivory floral lace wedding gown. Preserve recognizable faces, clothing and natural adult proportions.
+Style: realistic editorial wedding photography, real skin and hair texture, tactile lace and suit fabric, restrained warm ivory, sage foliage and soft blush tones. Natural expressions and believable hands. One vertical 3:4 portrait, high resolution, centered composition with enough edge space for a gallery crop. Opaque photographic background.
+Constraints: no text, logos, watermarks, collage, panel grid, frame borders, cartoon, doll appearance or extra people.
+Scene: a quiet garden terrace beside a cream stone wall at golden hour, muted olive trees in the background. Full-body view of the couple sharing a gentle slow-dance moment. Groom and bride face each other with one simple natural hand connection, his other arm resting lightly near her waist, her free hand relaxed. Her ivory lace skirt curves softly with their small movement. No exaggerated spin or flying fabric. Warm backlight around hair and veil, soft golden evening light, realistic shoes and natural body proportions. Entire couple and hem visible with clear margins, people centered rather than filling every edge.
+```
+
+## 기존 사진 생성 기록
+
+
 - 생성·반영 일시: 2026-10-06 00:15:10 KST
 - 생성 방식: 내장 `image_gen` 도구. 별도 API·CLI는 사용하지 않았습니다.
 - 용도: 청첩장 대표 이미지와 갤러리를 확인하기 위한 테스트 사진. 인물과 장면은 가상으로 생성했습니다.
