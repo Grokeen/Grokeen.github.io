@@ -1,0 +1,104 @@
+{
+  "reviewed_at": "2026-10-16",
+  "articles": [
+    {
+      "file": "2021-02-16-sc제일은행마이데이터최초.md",
+      "title": "SC제일은행 마이데이터 클라우드 구축",
+      "source_date": "2021-02-16",
+      "urls": [
+        "https://www.hankyung.com/article/202102161578Y"
+      ],
+      "summary": "SK텔레콤과 SC제일은행이 마이데이터 서비스를 위한 금융 클라우드 구축 협력을 발표했다."
+    },
+    {
+      "file": "2023-02-12-크롬로더.md",
+      "title": "불법 게임·프로그램으로 위장한 크롬로더 유포",
+      "source_date": "2023-02-16",
+      "urls": [
+        "https://www.boannews.com/media/view.asp?idx=114266"
+      ],
+      "summary": "보안뉴스는 불법 게임과 프로그램으로 위장해 유포되는 크롬로더의 위험을 다뤘다."
+    },
+    {
+      "file": "2023-08-02-NH농협캐피탈.md",
+      "title": "NH농협캐피탈 실적과 농촌 상생 활동",
+      "source_date": "2023-08-02",
+      "urls": [
+        "https://www.fntimes.com/html/view.php?ud=202308021553193710d260cda75_18",
+        "https://biz.chosun.com/stock/finance/2023/10/22/LIGSKJIFP5B3HFT53PUBUN7SZE/",
+        "https://www.fetv.co.kr/mobile/article.html?no=153058"
+      ],
+      "summary": "NH농협캐피탈의 2023년 상반기 충당금 확대와 농촌 지원 활동을 기사별로 정리했다."
+    },
+    {
+      "file": "2024-03-29-엔디비아영업이익10배.md",
+      "title": "엔비디아 실적 급증과 AI 반도체 수요",
+      "source_date": "2024-02-22",
+      "urls": [
+        "https://m.khan.co.kr/economy/economy-general/article/202402222122035",
+        "https://www.khan.co.kr/article/202402222122035"
+      ],
+      "summary": "엔비디아의 2024회계연도 4분기 실적은 생성 AI용 데이터센터 반도체 수요의 급증을 보여줬다."
+    },
+    {
+      "file": "2024-04-08-마우스안움직이면잡는기업.md",
+      "title": "마우스 비활동 기록과 근무 관리 논란",
+      "source_date": "2024-04-08",
+      "urls": [
+        "https://n.news.naver.com/article/009/0005284907",
+        "https://v.daum.net/v/20240408111204256?s=print_news"
+      ],
+      "summary": "LIG넥스원의 PC 비활동 기반 근무 관리 계획을 둘러싸고 공정한 기록과 과도한 감시의 문제가 제기됐다."
+    },
+    {
+      "file": "2024-04-08-제4인터넷은행.md",
+      "title": "제4인터넷은행 경쟁, 자본과 협업이 관건",
+      "source_date": "2024-04-08",
+      "urls": [
+        "https://n.news.naver.com/mnews/article/366/0000983904",
+        "https://biz.chosun.com/stock/finance/2024/04/08/JI5HN6BIYZGG3MADWVLZIXMVKQ/",
+        "https://v.daum.net/v/VRSJJSDx37?f=p"
+      ],
+      "summary": "제4인터넷은행을 추진하는 네 컨소시엄의 차별화 전략과 자본 조달·시중은행 협업 과제를 정리했다."
+    },
+    {
+      "file": "2024-04-12-농협분노.md",
+      "title": "농협은행 경력 채용, 경력과 보상 기준의 설명 문제",
+      "source_date": "2023-03-22",
+      "urls": [
+        "https://m.mk.co.kr/news/business/10691788",
+        "https://www.mk.co.kr/news/all/10691788"
+      ],
+      "summary": "NH농협은행의 경력직 채용에서 이전 경력을 보상에 반영하는 방식이 구직자 불만으로 이어졌다는 보도를 정리했다."
+    },
+    {
+      "file": "2024-04-28-엔씨구조조정.md",
+      "title": "게임업계 구조조정, 비용 절감과 인력 유출의 위험",
+      "source_date": "2024-04-26",
+      "urls": [
+        "https://www.kukinews.com/newsView/kuk202404250177",
+        "https://www.kukinews.com/article/view/kuk202404250177"
+      ],
+      "summary": "게임업계의 구조조정이 단기 비용을 줄이는 동시에 숙련 인력과 장기 개발 역량을 약화시킬 수 있다는 보도다."
+    },
+    {
+      "file": "2024-05-08-정보24개인정보유출.md",
+      "title": "정부24 타인 서류 오발급과 개인정보 보호",
+      "source_date": "2024-05-05",
+      "urls": [
+        "https://n.news.naver.com/article/022/0003930347?sid=102",
+        "https://www.segye.com/newsView/20240505506873"
+      ],
+      "summary": "정부24에서 타인의 증명서와 식별 정보가 발급되는 오류가 발생했다는 확인 가능한 세계일보 보도로 기존 링크를 보완했다."
+    },
+    {
+      "file": "2024-05-14-클라우드.금융권.md",
+      "title": "공공·금융권 클라우드 전환과 보안의 조건",
+      "source_date": "2024-05-13",
+      "urls": [
+        "https://www.ddaily.co.kr/page/view/2024051313494239491"
+      ],
+      "summary": "공공·금융권 클라우드 전환과 함께 권한·암호화·모니터링을 설계해야 한다는 보안 기획 기사를 정리했다."
+    }
+  ]
+}

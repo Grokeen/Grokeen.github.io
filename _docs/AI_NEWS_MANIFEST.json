@@ -1,0 +1,2167 @@
+{
+  "period_start": "2025-10-16",
+  "period_end": "2026-10-16",
+  "reviewed_at": "2026-10-16",
+  "articles": [
+    {
+      "key": "g108",
+      "filename": "2025-10-16-AI-Fusion-Plasma-Control.md",
+      "date": "2025-10-16",
+      "title": "핵융합 제어에 들어간 AI, 실험실의 에너지 문제를 다루다",
+      "topic": "과학·에너지",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/bringing-ai-to-the-next-generation-of-fusion-energy/",
+      "source_title": "Bringing AI to the next generation of fusion energy",
+      "source_published_at": "2025-10-16T02:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글 딥마인드는 Commonwealth Fusion Systems와 핵융합 연구 협력을 발표했다. 플라스마 시뮬레이션, 운전 경로 최적화, 실시간 제어가 협력 대상이다.",
+        "기존 플라스마 제어 연구와 TORAX 시뮬레이터를 SPARC 연구에 연결한다는 계획이며, 상용 발전 달성 발표는 아니다."
+      ],
+      "change": "AI 적용 범위가 문서 생성에서 복잡한 물리 장치의 운전 조건 탐색으로 넓어졌다. 실험 장비와 계산 모델을 함께 개선하는 연구가 중요해졌다.",
+      "outlook": "전력망에 공급할 수 있는 발전으로 이어지려면 실험 재현성, 장시간 안정 운전, 장치 경제성을 차례로 입증해야 한다.",
+      "risk": "핵융합의 잠재력을 현재 데이터센터 전력 부족의 즉각적인 해결책으로 계산해서는 안 된다. 에너지 투자에서는 연구 성과와 실제 공급 능력을 구분해야 한다."
+    },
+    {
+      "key": "g107",
+      "filename": "2025-10-29-AI-AI-for-Math.md",
+      "date": "2025-10-29",
+      "title": "수학 연구기관과 AI 연구소의 협력, 문제 풀이를 넘어 연구 도구로",
+      "topic": "수학 연구",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/technology/google-deepmind/ai-for-math/",
+      "source_title": "Accelerating discovery with the AI for Math Initiative",
+      "source_published_at": "2025-10-29",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 다섯 연구기관과 함께하는 AI for Math Initiative를 발표했다. 수학 문제 발굴과 AI 연구 도구 개발을 지원하는 사업이다.",
+        "Gemini Deep Think와 AlphaEvolve 같은 기술을 연구자의 문제 탐색에 활용한다는 방향을 제시했다."
+      ],
+      "change": "정답을 맞히는 경진대회 중심 평가에서 연구자가 실제로 사용하는 작업 환경과 문제 선정으로 무게중심이 이동했다.",
+      "outlook": "생성된 증명의 형식 검증과 전문가 검토가 협업의 핵심이 될 수 있다. 공개 문제와 도구가 축적되는지가 장기적인 파급력을 좌우한다.",
+      "risk": "계산 자원과 대형 모델에 접근하기 쉬운 연구기관에 성과가 집중될 수 있다. AI가 제안한 아이디어의 기여와 저자 표기 원칙도 필요하다."
+    },
+    {
+      "key": "g100",
+      "filename": "2025-11-18-AI-Gemini-3.md",
+      "date": "2025-11-18",
+      "title": "Gemini 3 발표, 추론과 멀티모달을 제품 유통망에 연결하다",
+      "topic": "범용 모델",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/products/gemini/gemini-3/",
+      "source_title": "A new era of intelligence with Gemini 3",
+      "source_published_at": "2025-11-18",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 Gemini 3를 공개하며 추론·멀티모달·코딩 성능 향상을 자사 평가로 제시했다. Gemini 앱, AI Studio, Vertex AI 등으로 배포한다고 밝혔다.",
+        "더 복잡한 문제를 위한 Deep Think 모드도 소개했지만, 제공 일정과 대상은 발표된 배포 계획을 기준으로 구분할 필요가 있다."
+      ],
+      "change": "모델 발표와 대중 서비스·개발 도구 배포가 한 흐름으로 결합됐다. 성능 외에 사용자가 이미 쓰는 제품에 얼마나 빨리 스며드는지가 경쟁 요소가 됐다.",
+      "outlook": "기업 도입에서는 벤치마크 순위보다 실제 문서·이미지·업무 도구를 함께 쓰는 과제의 성공률과 총비용을 비교해야 한다.",
+      "risk": "검색과 업무 환경이 같은 회사의 모델에 묶이면 대체 서비스로 옮기는 비용이 커질 수 있다. 공급업체가 공개한 성능은 독립적인 업무 평가와 구별해야 한다."
+    },
+    {
+      "key": "g101",
+      "filename": "2025-11-18-AI-Google-Antigravity.md",
+      "date": "2025-11-18",
+      "title": "Antigravity, 코드 자동완성에서 작업 수행형 개발 환경으로",
+      "topic": "개발 에이전트",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://antigravity.google/blog/introducing-google-antigravity",
+      "source_title": "Introducing Google Antigravity, a new era in AI-assisted software development",
+      "source_published_at": "2025-11-18T18:19:47.807Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 에이전트 중심 개발 플랫폼 Antigravity를 공개 프리뷰로 소개했다. 편집기와 브라우저 제어를 이용해 여러 단계의 개발 작업을 수행하는 방향이다.",
+        "개발자가 개별 도구 호출보다 높은 수준에서 작업을 지시하고 결과를 검토하는 상호작용을 강조했다."
+      ],
+      "change": "AI가 다음 줄의 코드를 제안하는 보조 기능에서 계획·실행·검증을 연결하는 개발 작업 단위로 확장됐다.",
+      "outlook": "검토 가능한 변경 내역, 테스트 증거, 작업 중단 및 복구 기능이 도입 성패를 가를 수 있다. 자동 실행 시간만 늘리는 것으로 품질이 보장되지는 않는다.",
+      "risk": "실행 권한을 가진 에이전트는 저장소나 외부 문서의 악성 지시에 노출될 수 있다. 비밀정보 접근과 배포 권한을 최소화하는 설계가 필요하다."
+    },
+    {
+      "key": "g102",
+      "filename": "2025-11-17-AI-WeatherNext-2.md",
+      "date": "2025-11-17",
+      "title": "WeatherNext 2, 단일 예보에서 다수의 기상 시나리오로",
+      "topic": "기후·재난",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/technology/google-deepmind/weathernext-2",
+      "source_title": "WeatherNext 2: Our most advanced weather forecasting model",
+      "source_published_at": "2025-11-17",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 WeatherNext 2를 발표하며 더 빠르고 정밀한 세계 기상 예측을 제시했다. 하나의 TPU로 짧은 시간에 여러 가능한 예보 시나리오를 생성한다고 설명했다.",
+        "예보 데이터를 Earth Engine과 BigQuery 등에서 제공하고, 공공 서비스와 기업 활용을 연결하는 계획을 밝혔다."
+      ],
+      "change": "예측값 하나뿐 아니라 가능한 경로의 분포를 활용해 불확실성을 다루는 방식이 강조됐다. 물류·항공·재난 대응에서 의사결정 지원 범위가 넓어진다.",
+      "outlook": "지역별 극한기상 사례에서 예보의 보정 정도와 실제 대응 개선 효과를 검증하는 것이 중요하다.",
+      "risk": "낮은 계산 비용이 관측망과 기상 전문가의 필요성을 없애지는 않는다. 데이터가 부족한 지역의 정확도와 경보 접근성 격차를 따로 살펴야 한다."
+    },
+    {
+      "key": "g103",
+      "filename": "2025-11-13-AI-SIMA-2.md",
+      "date": "2025-11-13",
+      "title": "SIMA 2, 가상 세계에서 목표를 이해하고 행동하는 에이전트",
+      "topic": "가상 환경",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/",
+      "source_title": "SIMA 2: An Agent that Plays, Reasons, and Learns With You in Virtual 3D Worlds",
+      "source_published_at": "2025-11-13T18:55:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "딥마인드는 SIMA 2가 Gemini를 바탕으로 가상 3D 환경에서 지시를 이해하고 목표를 추론하며 행동하는 연구 결과를 공개했다.",
+        "화면과 가상 키보드·마우스를 이용하는 접근을 이어가면서 대화와 일반화 능력을 강화했다고 설명했다."
+      ],
+      "change": "명령에 대응하는 개별 동작 학습에서 상황을 해석하고 여러 행동을 연결하는 목표 중심 상호작용으로 진전했다.",
+      "outlook": "보지 못한 게임과 더 긴 작업에서 실패를 회복할 수 있는지 검증해야 한다. 가상 환경 성과가 현실 로봇으로 이전되는지도 별도의 연구 문제다.",
+      "risk": "게임 안의 성공이 물리적 안전성이나 범용 지능의 완성을 의미하지 않는다. 가상 세계에서 학습한 행동을 현실에 적용할 때는 추가 제약이 필요하다."
+    },
+    {
+      "key": "g84",
+      "filename": "2025-12-19-AI-Gemma-Scope-2.md",
+      "date": "2025-12-19",
+      "title": "Gemma Scope 2, 모델의 내부 행동을 관찰하는 도구 공개",
+      "topic": "해석가능성",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/gemma-scope-2-helping-the-ai-safety-community-deepen-understanding-of-complex-language-model-behavior/",
+      "source_title": "Gemma Scope 2: helping the AI safety community deepen understanding of complex language model behavior",
+      "source_published_at": "2025-12-19T12:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "딥마인드는 Gemma 3의 여러 크기에 적용할 수 있는 해석가능성 도구 모음 Gemma Scope 2를 공개했다.",
+        "희소 오토인코더와 트랜스코더를 활용해 모델 내부 특징과 행동 사이의 관계를 조사하도록 설계했다."
+      ],
+      "change": "출력 결과만 검사하는 평가에 더해 내부 표현을 탐색하는 연구 기반이 넓어졌다. 공개 도구를 이용한 재현과 비교가 쉬워질 수 있다.",
+      "outlook": "내부 특징 관찰이 실제 환각·탈옥 감소로 이어지는지 확인해야 한다. 설명하기 쉬운 사례만 고르는 평가도 경계할 필요가 있다.",
+      "risk": "내부 특징에 사람이 붙인 의미가 모델의 의도를 그대로 설명한다고 단정할 수 없다. 해석 도구가 있다는 사실을 안전성 인증으로 오인해서는 안 된다."
+    },
+    {
+      "key": "g90",
+      "filename": "2025-12-09-AI-FACTS-Benchmark.md",
+      "date": "2025-12-09",
+      "title": "FACTS 평가군, 지식·검색·이미지의 사실성을 따로 재다",
+      "topic": "사실성 평가",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/facts-benchmark-suite-systematically-evaluating-the-factuality-of-large-language-models/",
+      "source_title": "FACTS Benchmark Suite: Systematically evaluating the factuality of large language models",
+      "source_published_at": "2025-12-09T11:29:03.922000+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "딥마인드는 Kaggle과 FACTS Benchmark Suite를 공개했다. 내부 지식, 검색 활용, 이미지 이해, 주어진 문맥에 대한 근거성을 나누어 평가한다.",
+        "공개 예제와 비공개 평가 집합을 함께 운영하고 여러 과제의 정확도를 종합하는 구조를 설명했다."
+      ],
+      "change": "하나의 시험 점수로 신뢰성을 판단하기보다, 사실 오류가 발생하는 경로를 분리해 측정하는 접근이 강화됐다.",
+      "outlook": "서비스 운영자는 자신의 문서와 이용자 질문으로 별도 시험을 구성해야 한다. 검색을 붙였을 때도 출처와 답변이 실제로 일치하는지 확인해야 한다.",
+      "risk": "벤치마크 평균은 희귀하지만 치명적인 오류를 가릴 수 있다. 의료·공공 정보처럼 영향이 큰 분야에는 별도의 오류 기준과 책임 체계가 필요하다."
+    },
+    {
+      "key": "g91",
+      "filename": "2025-12-04-AI-Heat-Resilient-Crops.md",
+      "date": "2025-12-04",
+      "title": "AlphaFold를 활용한 내열성 효소 연구, 기후 적응 농업의 가능성",
+      "topic": "농업·생명과학",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/engineering-more-resilient-crops-for-a-warming-climate/",
+      "source_title": "Engineering more resilient crops for a warming climate",
+      "source_published_at": "2025-12-04T16:23:24.486965+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "딥마인드는 연구진이 AlphaFold로 광합성 관련 GLYK 효소의 구조를 예측하고 열에 약한 부분을 찾은 사례를 소개했다.",
+        "열에 강한 조류의 구조에서 아이디어를 얻은 효소 변형을 연구했으며, 실제 식물의 내열성 향상은 후속 검증 대상으로 남겨뒀다."
+      ],
+      "change": "AI 구조 예측이 관찰하기 어려운 분자의 연구 가설을 세우는 도구로 활용됐다. 분자 수준 후보 발굴과 작물 성능 검증은 서로 다른 단계다.",
+      "outlook": "변형 효소가 식물 생장과 수확량에 미치는 효과를 재배 환경에서 확인해야 한다. 실험실의 온도 안정성만으로 농가 성과를 예측하기는 어렵다.",
+      "risk": "품종 지식재산권과 기술 접근 비용에 따라 소농의 혜택이 달라질 수 있다. 기후 적응 연구가 특정 작물이나 지역에 편중되는지도 검토해야 한다."
+    },
+    {
+      "key": "g86",
+      "filename": "2025-12-17-AI-Gemini-3-Flash.md",
+      "date": "2025-12-17",
+      "title": "Gemini 3 Flash, 빠른 추론과 비용 경쟁의 확대",
+      "topic": "추론 경제성",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/products/gemini/gemini-3-flash",
+      "source_title": "Gemini 3 Flash: frontier intelligence built for speed",
+      "source_published_at": "2025-12-17",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 Gemini 3 Flash를 발표하며 추론과 멀티모달 능력을 유지하면서 지연 시간과 비용을 낮추는 방향을 제시했다.",
+        "Gemini 앱과 검색 AI Mode, 개발자 도구 등 여러 경로로 제공한다고 밝혔다."
+      ],
+      "change": "최고 성능 모델의 능력을 가벼운 제품군으로 확산하는 경쟁이 빨라졌다. 대량 호출 업무에서는 응답 속도와 단가가 더 중요해진다.",
+      "outlook": "실제 서비스에서는 짧은 요청뿐 아니라 재시도·검증을 포함한 완료 비용을 비교해야 한다. 경량 모델과 고성능 모델을 나누어 쓰는 구성이 늘어날 수 있다.",
+      "risk": "호출 단가가 내려가도 이용량 증가로 총비용과 자원 사용은 커질 수 있다. 빠른 응답이 사실성 검토를 생략할 이유가 되어서는 안 된다."
+    },
+    {
+      "key": "a137",
+      "filename": "2025-10-16-AI-Agent-Skills.md",
+      "date": "2025-10-16",
+      "title": "Agent Skills, 업무 지식을 재사용 가능한 묶음으로",
+      "topic": "업무 자동화",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/skills",
+      "source_title": "Introducing Agent Skills",
+      "source_published_at": "2025-10-16",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "앤트로픽은 지침·스크립트·참고 자료를 폴더 형태로 제공하는 Agent Skills를 발표했다. 모델은 작업에 필요한 자료를 선택적으로 불러오도록 설계됐다.",
+        "초기 발표는 Claude 앱·Claude Code·API에 걸쳐 전문 작업 방식을 재사용하는 데 초점을 맞췄다."
+      ],
+      "change": "매번 긴 프롬프트를 복사하는 방식에서 업무 절차와 실행 도구를 함께 관리하는 방식으로 이동했다.",
+      "outlook": "조직에서는 스킬의 버전, 담당자, 검증 결과를 관리해야 한다. 재사용 빈도보다 실제 산출물의 일관성과 오류 감소가 평가 기준이 될 수 있다.",
+      "risk": "외부 스킬에 실행 코드나 잘못된 지침이 포함될 수 있다. 출처 검토 없이 설치하거나 필요 이상의 파일 접근 권한을 부여하는 것은 위험하다."
+    },
+    {
+      "key": "a136",
+      "filename": "2025-10-20-AI-Claude-Life-Sciences.md",
+      "date": "2025-10-20",
+      "title": "생명과학 특화 Claude, 논문 요약에서 연구 흐름 지원으로",
+      "topic": "생명과학 도구",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/claude-for-life-sciences",
+      "source_title": "Claude for Life Sciences",
+      "source_published_at": "2025-10-20T16:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "앤트로픽은 생명과학용 도구와 연결 기능을 발표했다. 실험 프로토콜 이해와 생물정보학 작업 평가에서의 자사 모델 성능도 제시했다.",
+        "과학 플랫폼 연결과 전문 지침을 통해 연구 초기부터 규제 관련 업무까지 지원 범위를 넓히겠다는 구상이다."
+      ],
+      "change": "범용 챗봇에 질문하는 방식보다 연구 데이터와 전문 도구를 연결하는 업무 환경이 중요해졌다.",
+      "outlook": "실험실 도입에서는 데이터 형식, 분석 재현성, 기관 보안 규정을 함께 맞춰야 한다. 문헌 분석의 편의와 실제 발견의 기여도는 따로 평가해야 한다.",
+      "risk": "벤치마크에서 사람 기준을 넘었다는 결과가 임상적 유효성이나 실험 안전성을 입증하지는 않는다. 민감한 연구 정보와 생물학적 악용 가능성을 관리해야 한다."
+    },
+    {
+      "key": "a134",
+      "filename": "2025-10-23-AI-Anthropic-TPU.md",
+      "date": "2025-10-23",
+      "title": "앤트로픽의 TPU 확대, AI 연산 공급망을 분산하다",
+      "topic": "반도체·연산",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services",
+      "source_title": "Expanding our use of Google Cloud TPUs and Services",
+      "source_published_at": "2025-10-23T18:46:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "앤트로픽은 Google Cloud 이용 확대와 최대 100만 개 TPU 활용 계획을 발표했다. 추가 연산 능력은 2026년 가동을 목표로 설명됐다.",
+        "거액의 다년 인프라 확장이며, 발표 시점에 모든 설비가 이미 운영 중이라는 뜻은 아니다."
+      ],
+      "change": "모델 개발 기업이 특정 GPU만이 아니라 여러 종류의 가속기와 클라우드를 조합하는 조달 전략을 강화했다.",
+      "outlook": "계획한 용량이 실제 가동되는 일정과 전력·네트워크 연결이 중요하다. 서로 다른 가속기에서 학습과 추론을 운영하는 효율도 확인해야 한다.",
+      "risk": "대형 클라우드와 모델 기업의 장기 계약은 자금과 설비 접근의 격차를 키울 수 있다. 데이터센터가 들어서는 지역의 전력 부담도 함께 봐야 한다."
+    },
+    {
+      "key": "a132",
+      "filename": "2025-10-27-AI-Claude-Finance-Excel.md",
+      "date": "2025-10-27",
+      "title": "금융 AI의 스프레드시트 진입, 분석 과정의 추적이 중요해지다",
+      "topic": "금융 업무",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/advancing-claude-for-financial-services",
+      "source_title": "Advancing Claude for Financial Services",
+      "source_published_at": "2025-10-27T19:24:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "앤트로픽은 금융 서비스용 Claude에 Excel 추가 기능, 시장 데이터 연결, 사전 구성된 업무 스킬을 확대한다고 발표했다.",
+        "스프레드시트를 읽고 수정하면서 참조 셀과 변경 내용을 설명하는 연구 프리뷰를 소개했다."
+      ],
+      "change": "재무 분석 지원이 별도 대화창에서 실제 계산 문서 안으로 들어왔다. 답변의 설득력보다 셀·수식·가정의 추적 가능성이 중요해졌다.",
+      "outlook": "실무에서는 수식 의존성 보존과 데이터 기준 시점을 검증해야 한다. 사람의 승인과 변경 이력을 갖춘 분석 절차가 경쟁력이 될 수 있다.",
+      "risk": "그럴듯한 가치평가 결과가 투자 판단의 정확성을 보장하지 않는다. 유료 시장 데이터의 이용 권한과 비공개 재무 정보의 취급에도 주의가 필요하다."
+    },
+    {
+      "key": "a129",
+      "filename": "2025-11-04-AI-Iceland-Teacher-Pilot.md",
+      "date": "2025-11-04",
+      "title": "아이슬란드의 교사 AI 시범사업, 국가 단위 교육 실험",
+      "topic": "교육·격차",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-education-pilots",
+      "source_title": "Anthropic and Iceland announce one of the world’s first national AI education pilots",
+      "source_published_at": "2025-11-04T15:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "앤트로픽과 아이슬란드 교육 당국은 전국 여러 지역의 교사에게 Claude와 교육 자료를 제공하는 시범사업을 발표했다.",
+        "수업 준비와 행정 부담 경감, 학습 자료 조정 등을 살펴보는 사업으로 소개됐으며, 학생 성적 향상 효과를 입증한 발표는 아니다."
+      ],
+      "change": "개별 교사의 자발적 이용에서 공교육 기관이 도입 조건과 지원 체계를 마련하는 단계로 나아갔다.",
+      "outlook": "절감된 시간이 실제 학생 지도에 쓰이는지와 교사의 업무 부담 변화를 함께 측정해야 한다. 현지 언어·교육과정 적합성도 관건이다.",
+      "risk": "학생 데이터가 서비스에 입력되는 경로와 교사의 검토 책임이 명확해야 한다. 한 공급업체에 대한 교육 현장의 의존이 커지는지도 살펴야 한다."
+    },
+    {
+      "key": "a123",
+      "filename": "2025-11-13-AI-AI-Cyber-Espionage.md",
+      "date": "2025-11-13",
+      "title": "AI 주도 사이버 첩보 시도 공개, 방어 체계의 속도 문제",
+      "topic": "사이버보안",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/disrupting-AI-espionage",
+      "source_title": "Disrupting the first reported AI-orchestrated cyber espionage campaign",
+      "source_published_at": "2025-11-13T16:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "앤트로픽은 2025년 9월 탐지한 첩보 활동에서 공격자가 Claude Code를 악용했다고 보고했다. 약 30개 조직이 표적이 됐고 일부 침해가 있었다는 자사 조사다.",
+        "회사는 관련 계정을 차단하고 피해 조직 통지와 당국 협력을 진행했다고 밝혔다. 공격 주체에 대한 평가는 회사의 귀속 판단이다."
+      ],
+      "change": "AI가 공격 조언을 제공하는 수준을 넘어 실제 공격 단계 일부를 실행하는 도구로 악용될 수 있다는 사례가 제시됐다.",
+      "outlook": "보안팀은 계정 행위, 도구 호출, 비정상 작업 속도를 함께 탐지해야 한다. 공격과 방어 양쪽의 자동화가 대응 시간을 줄일 가능성이 있다.",
+      "risk": "한 기업의 조사만으로 전체 공격의 자율성이나 모든 피해 규모를 확정할 수는 없다. 방어 연구 지원과 공격 능력 확산 방지 사이의 균형이 필요하다."
+    },
+    {
+      "key": "g80",
+      "filename": "2026-01-29-AI-Project-Genie.md",
+      "date": "2026-01-29",
+      "title": "프로젝트 지니, 설명을 탐색 가능한 가상 세계로 바꾸다",
+      "topic": "가상 세계",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie",
+      "source_title": "Project Genie: Experimenting with infinite, interactive worlds",
+      "source_published_at": "2026-01-29",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 글과 이미지로 상호작용 가능한 환경을 만드는 실험적 연구 시제품 Project Genie를 공개했다. 미국의 18세 이상 Google AI Ultra 이용자를 대상으로 제공한다고 밝혔다.",
+        "미리 제작한 영상을 재생하는 방식과 달리 사용자의 이동에 맞춰 장면을 생성하고, 만든 세계를 탐색하거나 변형하는 흐름을 제시했다."
+      ],
+      "change": "생성형 AI의 결과물이 고정된 이미지·영상에서 사용자가 움직이는 공간으로 확장됐다. 게임 속 행동을 수행하는 에이전트와도 다른 생성 기술이다.",
+      "outlook": "게임 기획과 시뮬레이션 시안에 활용하려면 장면의 일관성, 조작 정확성, 실행 비용을 함께 확인해야 한다. 연구 시제품의 성능을 완성된 게임 엔진의 대체 능력으로 보기는 이르다.",
+      "risk": "특정 작품의 배경·인물을 모방하는 문제와 생성 공간의 유해 콘텐츠 관리가 쟁점이다. 몰입감이 높아질수록 이용자의 연령과 체류 경험에 대한 설계도 중요해진다."
+    },
+    {
+      "key": "g81",
+      "filename": "2026-01-22-AI-D4RT.md",
+      "date": "2026-01-22",
+      "title": "D4RT, 영상에서 공간과 움직임을 함께 복원하다",
+      "topic": "공간 인식",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/",
+      "source_title": "D4RT: Teaching AI to see the world in four dimensions",
+      "source_published_at": "2026-01-22T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 2차원 영상으로부터 3차원 공간과 시간에 따른 움직임을 추정하는 D4RT 연구를 소개했다.",
+        "카메라 이동, 물체의 움직임, 가려진 부분을 함께 다루는 통합 접근으로 기존의 여러 모델을 조합하는 방식의 한계를 줄이려 했다."
+      ],
+      "change": "AI가 한 장면의 물체 이름을 맞히는 수준에서 시간에 따라 변화하는 공간 구조를 이해하는 쪽으로 발전하는 사례다.",
+      "outlook": "로봇과 증강현실에 적용하려면 실제 센서의 잡음, 조명 변화, 새로운 환경에서도 복원 결과가 유지되는지 검증해야 한다. 논문의 성능이 현장 안전성을 바로 보장하지 않는다.",
+      "risk": "영상에 담긴 사람의 이동 경로와 사적 공간을 더 정밀하게 재구성할 수 있어 동의와 데이터 보관 범위가 중요하다. 공간 오인식의 책임 소재도 남는다."
+    },
+    {
+      "key": "g82",
+      "filename": "2026-01-13-AI-Veo-Reference-Video.md",
+      "date": "2026-01-13",
+      "title": "Veo 3.1의 참조 이미지 영상, 제작의 일관성을 높이다",
+      "topic": "영상 제작",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-ingredients-to-video/",
+      "source_title": "Veo 3.1 Ingredients to Video: More consistency, creativity and control",
+      "source_published_at": "2026-01-13",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 Veo 3.1의 참조 이미지 기반 영상 기능을 강화하며 인물과 배경의 일관성을 개선했다고 발표했다.",
+        "세로형 9:16 영상과 고해상도 출력 지원 등 모바일 영상 제작에 필요한 기능도 함께 소개했다."
+      ],
+      "change": "단발성 영상 생성에서 같은 등장인물과 시각적 설정을 유지하는 제작 흐름으로 초점이 이동했다. 모델의 최초 공개와 구별되는 제작 기능 업데이트다.",
+      "outlook": "광고·숏폼 제작에서는 초안 생성 시간뿐 아니라 수정 횟수와 원하는 구도의 재현성을 비교할 필요가 있다. 해상도 수치만으로 실제 세부 묘사 품질을 판단하기 어렵다.",
+      "risk": "배우·창작자의 외모와 작업물을 참조 자료로 쓰는 과정에서 이용 허락이 필요하다. 생성 영상의 표시와 사칭 방지 수단도 배포 단계까지 이어져야 한다."
+    },
+    {
+      "key": "g75",
+      "filename": "2026-02-19-AI-Gemini-3-1-Pro.md",
+      "date": "2026-02-19",
+      "title": "Gemini 3.1 Pro, 복잡한 문제를 다루는 추론 경쟁",
+      "topic": "추론 모델",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro",
+      "source_title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+      "source_published_at": "2026-02-19",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 Gemini 3.1 Pro를 공개하고 복잡한 문제 해결과 여러 정보를 종합하는 능력이 향상됐다고 설명했다.",
+        "개발자와 기업을 위한 API·클라우드 제공 및 소비자 제품 적용을 발표했으며, 일부 제공 경로는 프리뷰 단계로 안내했다."
+      ],
+      "change": "신모델 경쟁의 평가 대상이 짧은 질의응답에서 조건이 많은 분석과 여러 단계의 작업으로 옮겨가고 있다. 성능 수치는 공급자 평가라는 점을 함께 읽어야 한다.",
+      "outlook": "기업 도입은 공개 벤치마크보다 실제 문서·업무 사례에서 정답률, 처리 시간, 비용을 비교하는 방향으로 진행될 가능성이 크다. 프리뷰의 변경 가능성도 고려할 요소다.",
+      "risk": "복잡한 설명이 설득력 있게 보일수록 오류를 놓치기 쉽다. 중요한 결정에는 근거 자료를 대조하고 사람이 최종 판단하는 절차가 필요하다."
+    },
+    {
+      "key": "g78",
+      "filename": "2026-02-12-AI-Deep-Think-Science.md",
+      "date": "2026-02-12",
+      "title": "Gemini Deep Think, 연구·공학의 어려운 문제에 집중하다",
+      "topic": "과학 추론",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+      "source_title": "Gemini 3 Deep Think: Advancing science, research and engineering",
+      "source_published_at": "2026-02-12",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 과학·공학 분야의 복잡한 문제를 겨냥한 Gemini 3 Deep Think 업데이트를 발표했다.",
+        "연구자와의 협업 사례를 소개하고, 일부 연구자를 대상으로 API 조기 접근을 추진한다고 밝혔다."
+      ],
+      "change": "정답과 조건이 명확한 시험 문제를 넘어 불완전한 정보가 섞인 연구 현장으로 추론 모델의 활용 범위를 넓히려는 시도다.",
+      "outlook": "연구 보조의 가치는 제안의 참신함과 함께 재현 가능한 계산, 반례 검토, 실험 확인으로 평가해야 한다. 특정 성공 사례만으로 전체 연구 생산성 향상을 단정할 수 없다.",
+      "risk": "연구 성과의 기여 표시와 잘못된 가설에 소모되는 비용이 쟁점이다. 유료 고성능 도구에 접근할 수 있는 기관과 그렇지 못한 기관 사이의 격차도 관찰해야 한다."
+    },
+    {
+      "key": "g69",
+      "filename": "2026-03-26-AI-Manipulation-Evaluation.md",
+      "date": "2026-03-26",
+      "title": "AI의 유해한 설득, 어떻게 측정할 것인가",
+      "topic": "설득과 조작",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/",
+      "source_title": "Protecting people from harmful manipulation",
+      "source_published_at": "2026-03-26T13:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 AI의 유해한 조작과 설득을 평가하기 위한 연구 도구와 사람 참여형 실험 자료를 공개했다.",
+        "정보를 바탕으로 판단을 돕는 설득과 취약성·기만을 이용하는 조작을 구분하고, 실제 사람에게 미치는 영향을 평가하려는 접근을 설명했다."
+      ],
+      "change": "안전 평가가 금지된 문장을 출력하는지 여부를 넘어 이용자의 선택과 행동에 주는 영향으로 확장됐다.",
+      "outlook": "현장에서는 반복 대화, 개인화, 상업적 유인이 결합되므로 실험 결과가 얼마나 일반화되는지 확인해야 한다. 측정 도구의 공개는 독립 연구에 도움이 될 수 있다.",
+      "risk": "AI 상담·광고·정치 메시지가 개인의 취약성을 이용할 가능성이 있다. 동의와 설명만으로 충분한지, 특히 미성년자에게 어떤 제한이 필요한지가 남은 문제다."
+    },
+    {
+      "key": "g71",
+      "filename": "2026-03-17-AI-AGI-Cognitive-Framework.md",
+      "date": "2026-03-17",
+      "title": "AGI 논의에 인지 능력별 평가 틀을 제안하다",
+      "topic": "능력 평가",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework",
+      "source_title": "Measuring progress toward AGI: A cognitive framework",
+      "source_published_at": "2026-03-17",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 일반 지능을 평가하기 위해 열 가지 인지 능력을 나눠 살펴보는 프레임워크를 발표했다.",
+        "단일 점수에 의존하지 않는 평가 과제를 제안하고 외부 참여를 위한 Kaggle 행사도 소개했다."
+      ],
+      "change": "AGI라는 용어를 도달 시점의 예측 대신 어떤 능력을 어떤 과제로 측정할지의 문제로 다루었다. 프레임워크 발표 자체가 AGI 달성의 증거는 아니다.",
+      "outlook": "새로운 평가가 공개 모델과 실제 업무에서 같은 결론을 주는지 확인하는 연구가 중요하다. 평가 문제가 알려진 뒤 점수만 높아지는 현상도 점검해야 한다.",
+      "risk": "지능의 정의를 소수 기업의 시험으로 고정하면 돌봄·협업 등 측정하기 어려운 능력이 소외될 수 있다. 평가 기준과 데이터의 공개가 논의의 출발점이다."
+    },
+    {
+      "key": "g67",
+      "filename": "2026-04-02-AI-Gemma-4.md",
+      "date": "2026-04-02",
+      "title": "Gemma 4, 공개 모델의 선택지를 기기까지 넓히다",
+      "topic": "공개 모델",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+      "source_title": "Gemma 4: Byte for byte, the most capable open models",
+      "source_published_at": "2026-04-02",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 E2B·E4B·26B MoE·31B Dense 등 여러 크기의 Gemma 4 모델을 발표했다.",
+        "Apache 2.0 라이선스와 다양한 하드웨어에서의 실행을 강조하며 개발자가 배포 환경에 맞춰 모델을 선택하도록 했다."
+      ],
+      "change": "고성능 AI 이용 방식이 대형 서비스의 원격 호출뿐 아니라 기기·자체 서버에서의 운용으로 다양해지고 있다. 공개 가중치와 학습 데이터 전체 공개는 구별해야 한다.",
+      "outlook": "실제 선택은 메모리, 지연 시간, 한국어 품질과 유지보수 비용에 달려 있다. 작은 모델이 모든 작업에서 클라우드 모델을 대체하기보다 역할을 나눌 가능성이 있다.",
+      "risk": "자체 운용은 개인정보 전송을 줄일 수 있지만 안전 필터와 업데이트 책임도 운영자에게 돌아간다. 공개 모델의 재사용 조건과 악용 대응을 함께 검토해야 한다."
+    },
+    {
+      "key": "g62",
+      "filename": "2026-04-27-AI-Korea-AI-Partnership.md",
+      "date": "2026-04-27",
+      "title": "구글 딥마인드와 한국, 과학 AI 협력을 확대하다",
+      "topic": "한국 AI 생태계",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/",
+      "source_title": "Announcing our partnership with the Republic of Korea",
+      "source_published_at": "2026-04-27T08:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 한국 과학기술정보통신부와 AI 협력 계획을 발표했다. 생명과학, 기상·기후 등 과학 분야의 공동 연구와 K-Moonshot 연계를 소개했다.",
+        "서울의 구글 사무실 내 AI 캠퍼스를 통한 학계·연구기관 교류 계획도 제시했다."
+      ],
+      "change": "해외 모델의 단순 도입을 넘어 국내 연구 역량과 과학 문제를 연결하는 협력 기반을 논의했다는 점이 핵심이다. 발표된 계획과 이미 실현된 성과는 나눠 봐야 한다.",
+      "outlook": "공동 연구의 데이터 접근권, 연구 성과의 공개, 국내 인력 양성 규모가 협력의 실질적 효과를 가를 수 있다. 후속 사업과 평가 결과를 확인할 필요가 있다.",
+      "risk": "공공 연구가 특정 플랫폼에 의존할 경우 전환 비용과 지식재산 배분 문제가 생길 수 있다. 지역·기관별 참여 기회와 공공성이 확보되는지도 중요하다."
+    },
+    {
+      "key": "g63",
+      "filename": "2026-04-23-AI-Decoupled-DiLoCo.md",
+      "date": "2026-04-23",
+      "title": "분산 학습 DiLoCo, 떨어진 데이터센터를 연결하다",
+      "topic": "학습 인프라",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/decoupled-diloco/",
+      "source_title": "Decoupled DiLoCo: A new frontier for resilient, distributed AI training",
+      "source_published_at": "2026-04-23T16:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 학습 작업을 분리된 계산 집단으로 나누고 비동기적으로 연결하는 Decoupled DiLoCo를 발표했다.",
+        "장애를 일부 집단에 격리하고 서로 다른 세대의 칩을 활용하는 실험을 소개했다. 일부 비교는 시뮬레이션이며 실제 분산 학습 실험도 별도로 제시했다."
+      ],
+      "change": "대규모 학습에 필요한 칩의 수뿐 아니라 통신 병목과 고장에 견디는 구조가 경쟁 요소로 부각됐다.",
+      "outlook": "여러 지역의 남는 계산 자원을 활용할 여지가 있지만 네트워크 조건과 모델 규모에 따라 효과가 달라질 수 있다. 발표의 속도 개선을 모든 학습 환경에 적용할 수는 없다.",
+      "risk": "기존 장비 수명 연장은 자원 효율에 도움이 될 수 있으나 전체 학습량 증가가 에너지 절감을 상쇄할 가능성도 있다. 국가 간 데이터 이동과 운영 책임도 검토 대상이다."
+    },
+    {
+      "key": "a119",
+      "filename": "2025-11-24-AI-Claude-Opus-4-5.md",
+      "date": "2025-11-24",
+      "title": "Claude Opus 4.5, 긴 작업의 비용과 효율을 겨루다",
+      "topic": "업무 자동화",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/claude-opus-4-5",
+      "source_title": "Introducing Claude Opus 4.5",
+      "source_published_at": "2025-11-24T19:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 Claude Opus 4.5를 출시하고 코딩·컴퓨터 사용·문서 작업 성능 개선을 발표했다.",
+        "작업에 들이는 추론 노력의 조절, 긴 맥락 관리 등과 함께 토큰 사용량의 효율을 강조했다. 제시된 비교 결과는 회사의 평가다."
+      ],
+      "change": "모델 경쟁에서 최고 점수뿐 아니라 같은 결과를 얻기 위한 비용과 사람의 개입 횟수가 중요해졌다. 긴 업무를 지속하는 에이전트의 실용성을 겨냥했다.",
+      "outlook": "실제 개발팀에서는 변경 품질, 보안 결함, 검토 시간까지 포함한 비용을 측정해야 한다. 코딩 시험 점수가 협업과 운영 역량 전체를 대신하지 않는다.",
+      "risk": "자동 수정이 쉬워질수록 검토되지 않은 코드가 늘어날 수 있다. 신입의 학습 기회와 책임 있는 승인 절차를 어떻게 유지할지가 조직의 과제다."
+    },
+    {
+      "key": "a114",
+      "filename": "2025-12-09-AI-MCP-Foundation.md",
+      "date": "2025-12-09",
+      "title": "MCP의 재단 이관, 에이전트 연결 표준의 공동 관리",
+      "topic": "개방형 표준",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation",
+      "source_title": "Donating the Model Context Protocol and establishing the Agentic AI Foundation",
+      "source_published_at": "2025-12-09T17:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 MCP를 Linux Foundation 산하 Agentic AI Foundation에 기부한다고 발표했다. Anthropic·Block·OpenAI가 재단을 공동 설립했다.",
+        "외부 시스템과 AI를 연결하는 표준을 중립적으로 발전시키려는 취지이며, 기존 MCP의 관리 방식은 유지한다고 설명했다."
+      ],
+      "change": "도구 연결 규격이 한 기업의 기능을 넘어 여러 서비스가 함께 쓰는 기반으로 자리 잡는 흐름이다. 표준의 공동 관리는 개별 연결 도구의 안전성 보증과 다르다.",
+      "outlook": "표준 확산은 연결 개발 비용을 낮출 수 있지만 인증·권한·오류 처리의 구현 품질이 실제 상호운용성을 좌우한다. 독립 구현의 호환성을 살펴볼 필요가 있다.",
+      "risk": "외부 도구가 늘수록 과도한 권한과 악성 지시 유입의 위험도 커진다. 이용자가 접근 범위를 이해하고 철회할 수 있도록 설계해야 한다."
+    },
+    {
+      "key": "a113",
+      "filename": "2025-12-18-AI-Chatbot-Wellbeing.md",
+      "date": "2025-12-18",
+      "title": "챗봇의 공감과 아첨 사이, 이용자 안녕 보호책",
+      "topic": "이용자 보호",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/protecting-well-being-of-users",
+      "source_title": "Protecting the wellbeing of our users",
+      "source_published_at": "2025-12-18T19:05:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 정서적 지원 대화에서의 안전 대책과 평가 결과를 공개했다. 위험한 대화 대응, 인간 지원으로의 연결, 이용자에게 무조건 동조하는 행동의 축소를 다뤘다.",
+        "모델 학습뿐 아니라 대화 분류기와 제품 안내 기능을 함께 사용한다고 설명했다. 단일 문답과 긴 대화의 평가 결과를 따로 제시했다."
+      ],
+      "change": "친절하게 응답하는 것과 이용자의 판단·정서에 도움이 되는 것은 같지 않다는 점이 제품 안전의 과제로 드러났다.",
+      "outlook": "평가 점수 외에 장기간 사용과 취약한 이용자에게 미치는 영향을 독립적으로 살펴야 한다. 회사가 제시한 시험 결과는 치료 효과나 위험의 완전한 제거를 뜻하지 않는다.",
+      "risk": "지나친 동조는 잘못된 믿음을 강화하고, 과도한 개입은 정상적 대화를 제한할 수 있다. 민감한 대화를 감지하는 과정의 개인정보 처리도 설명이 필요하다."
+    },
+    {
+      "key": "a108",
+      "filename": "2026-01-15-AI-Economic-Primitives.md",
+      "date": "2026-01-15",
+      "title": "AI 사용 기록으로 본 업무의 복잡성·자율성",
+      "topic": "노동 변화",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/anthropic-economic-index-january-2026-report",
+      "source_title": "Anthropic Economic Index report: Economic primitives",
+      "source_published_at": "2026-01-15T10:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic의 Economic Index는 2025년 11월 Claude 사용 표본을 바탕으로 작업 복잡성·자율성·성공 여부 등의 지표를 분석했다.",
+        "소비자 대화와 API 사용을 구분해 살펴봤으며 코딩 업무의 높은 비중과 두 경로의 자동화·보조 사용 차이를 보고했다."
+      ],
+      "change": "직업이 사라지는지를 단순 예측하기보다 어떤 업무를 얼마나 맡기는지 세분화한 자료다. 특정 제품의 이용 기록은 경제 전체의 고용 통계와 다르다.",
+      "outlook": "실제 생산성 효과를 판단하려면 이용자 구성 변화와 작업 완료 후의 품질까지 추적해야 한다. 관측된 사용 패턴만으로 일자리 감소의 원인을 확정할 수 없다.",
+      "risk": "이미 디지털 도구를 잘 쓰는 집단이 먼저 혜택을 얻을 수 있다. 교육과 접근성 격차, 업무 기록 분석의 익명화 및 동의 범위를 함께 살펴야 한다."
+    },
+    {
+      "key": "a103",
+      "filename": "2026-01-22-AI-Claude-Constitution.md",
+      "date": "2026-01-22",
+      "title": "Claude의 새 헌법, 모델의 판단 원칙을 설명하다",
+      "topic": "AI 가치와 거버넌스",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/claude-new-constitution",
+      "source_title": "Claude's new constitution",
+      "source_published_at": "2026-01-22T04:15:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 Claude 학습에 사용하는 새 헌법을 공개했다. 금지 목록에 그치지 않고 가치와 충돌 상황의 판단 이유를 설명하는 문서다.",
+        "문서를 CC0로 공개해 외부에서도 검토하고 활용할 수 있도록 했다. 이 문서는 회사가 지향하는 행동 기준이며 모든 출력이 이를 따른다는 증명은 아니다."
+      ],
+      "change": "모델의 행동 원칙이 내부 설정에 머물지 않고 공개적으로 논의할 수 있는 문서가 됐다.",
+      "outlook": "공개 원칙과 실제 모델 행동의 차이를 독립적으로 평가하는 연구가 중요하다. 서로 다른 문화와 제도에서 같은 원칙을 어떻게 해석하는지도 지켜볼 부분이다.",
+      "risk": "대규모 이용자의 판단에 영향을 주는 가치를 민간 기업이 정한다는 대표성 문제가 있다. 이의 제기와 수정 과정에 다양한 이용자가 참여할 수 있어야 한다."
+    },
+    {
+      "key": "a102",
+      "filename": "2026-01-27-AI-GOV-UK-Assistant.md",
+      "date": "2026-01-27",
+      "title": "영국 공공서비스 AI 비서, 취업 지원부터 시험하다",
+      "topic": "공공서비스",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/gov-UK-partnership",
+      "source_title": "Anthropic partners with the UK Government to bring AI assistance to GOV.UK services",
+      "source_published_at": "2026-01-27T08:01:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 영국 정부와 공공서비스 AI 비서 구축·시험을 추진한다고 발표했다. 초기 초점은 구직·훈련·지원 정보의 안내다.",
+        "여러 서비스를 찾고 이용하는 과정을 돕는 구상을 설명했으며, 발표 시점의 개발 계획을 이미 전면 운영 중인 제도로 볼 수는 없다."
+      ],
+      "change": "공공 웹사이트에서 정보를 검색하는 기능이 개인의 상황에 맞춰 절차를 안내하는 대화형 서비스로 확장되는 사례다.",
+      "outlook": "효과는 상담 응답률보다 실제 이용 완료율과 잘못된 안내의 수정 속도로 평가해야 한다. 자격 판정과 같은 행정 결정의 책임은 별도로 정해야 한다.",
+      "risk": "디지털 접근이 어려운 시민을 위한 대체 창구가 필요하다. 민감한 생활 정보의 처리, 차별적 안내, 이의 신청 경로가 공공 도입의 핵심 쟁점이다."
+    },
+    {
+      "key": "g61",
+      "filename": "2026-04-30-AI-AI-Co-Clinician.md",
+      "date": "2026-04-30",
+      "title": "AI 공동 진료자 연구, 의사 감독 아래의 의료 보조",
+      "topic": "의료 AI",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/ai-co-clinician/",
+      "source_title": "Enabling a new model for healthcare with AI co-clinician",
+      "source_published_at": "2026-04-30T16:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 의사의 임상적 권한 아래 환자와 의료진을 돕는 AI co-clinician 연구를 발표했다.",
+        "현실적 진료 질문에 대한 근거 종합과 약물 지식 등을 평가했다. 발표된 비교 실험은 환자 치료 성과를 입증한 임상시험과 구별된다."
+      ],
+      "change": "의학 시험의 정답률에서 의료진·환자·AI가 협력하는 진료 구조로 연구 질문이 이동했다. 잘못 말하는 오류뿐 아니라 필요한 정보를 빠뜨리는 오류도 다뤘다.",
+      "outlook": "실제 도입은 전향적 검증과 의료진의 검토 부담, 환자가 이해하는 방식까지 평가해야 한다. 연구 모델의 좋은 답변이 의료기관 전체의 안전성으로 이어지는지 확인이 필요하다.",
+      "risk": "민감한 건강 정보 보호와 잘못된 조언의 책임이 핵심이다. 자동화에 접근하기 어려운 환자와 의료 취약 지역의 격차를 줄이는 설계도 요구된다."
+    },
+    {
+      "key": "g49",
+      "filename": "2026-05-19-AI-Media-Provenance.md",
+      "date": "2026-05-19",
+      "title": "검색과 브라우저로 확대되는 AI 콘텐츠 출처 확인",
+      "topic": "미디어 신뢰",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/innovation-and-ai/products/identifying-ai-generated-media-online",
+      "source_title": "Making it easier to understand how content was created and edited",
+      "source_published_at": "2026-05-19",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 SynthID와 C2PA Content Credentials를 활용한 생성·편집 이력 확인 기능을 검색·Gemini·Chrome 등으로 확대한다고 발표했다.",
+        "AI 생성 여부뿐 아니라 카메라로 촬영한 원본의 출처도 확인하는 접근과 다른 기업과의 기술 협력을 소개했다."
+      ],
+      "change": "콘텐츠가 만들어지는 도구에만 있던 표시를 이용자가 발견하고 소비하는 경로까지 연결하려는 변화다. 일부 기능은 순차 제공 계획이다.",
+      "outlook": "표준 간 호환성과 플랫폼 밖으로 재배포될 때의 표시 유지 여부가 실효성을 좌우한다. 검출되지 않았다는 결과만으로 진짜 콘텐츠라고 확정할 수는 없다.",
+      "risk": "조작 영상에 의한 사기와 명예 훼손을 줄일 수 있지만 출처 표시는 내용의 사실 여부를 보증하지 않는다. 오탐과 표시 제거에 대응할 이의 제기 절차도 필요하다."
+    },
+    {
+      "key": "g47",
+      "filename": "2026-05-19-AI-Co-Scientist-Hypotheses.md",
+      "date": "2026-05-19",
+      "title": "Co-Scientist, 여러 AI가 가설을 만들고 비판하다",
+      "topic": "과학 연구",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
+      "source_title": "Co-Scientist: A multi-agent AI partner to accelerate research",
+      "source_published_at": "2026-05-19T10:42:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 가설 생성·비판·순위화·수정을 나눠 수행하는 다중 에이전트 Co-Scientist 연구를 소개했다.",
+        "Nature 논문 발표와 함께 연구자가 이용할 실험적 가설 생성 도구의 제공 계획을 밝혔다. 생물학 등에서의 협업 사례도 제시했다."
+      ],
+      "change": "문헌 요약을 넘어 새로운 연구 질문을 제안하고 반론을 통해 다듬는 과정으로 과학 AI의 역할이 확장됐다.",
+      "outlook": "유망한 가설의 가치는 실제 실험과 재현에서 결정된다. 에이전트끼리 합의했다는 사실과 독립적인 과학적 검증은 다르므로 실패 사례도 함께 공개할 필요가 있다.",
+      "risk": "연구비가 AI가 선호하는 방향에 집중되거나 기존 문헌의 편향을 확대할 수 있다. 발견의 기여·저자 표시와 위험한 생물학적 제안의 관리도 쟁점이다."
+    },
+    {
+      "key": "g60",
+      "filename": "2026-05-07-AI-AlphaEvolve-Applications.md",
+      "date": "2026-05-07",
+      "title": "AlphaEvolve의 응용 확대, 알고리즘 개선을 자동 탐색하다",
+      "topic": "알고리즘 연구",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/alphaevolve-impact/",
+      "source_title": "AlphaEvolve: How our Gemini-powered coding agent is scaling impact across fields",
+      "source_published_at": "2026-05-07T16:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 AlphaEvolve의 1년간 적용 사례를 정리했다. 유전체 분석 오류 보정, 전력망 최적화, 계산 인프라 등에서 알고리즘을 개선한 결과를 보고했다.",
+        "코드를 제안하고 평가 결과를 바탕으로 더 나은 해법을 찾는 접근을 여러 분야로 확장했다고 설명했다. 성과 수치는 각 실험 조건의 결과다."
+      ],
+      "change": "코딩 보조가 사람의 구현 시간을 줄이는 데서 나아가 사람이 쓰던 알고리즘 자체를 개선하는 연구 수단으로 쓰이고 있다.",
+      "outlook": "평가 함수가 명확한 문제에서 특히 활용 여지가 있다. 계산상 개선이 운영 비용·현장 신뢰성의 개선으로 연결되는지 후속 검증이 필요하다.",
+      "risk": "평가 기준에 잡히지 않는 안전·공정성 비용을 희생한 최적화가 일어나지 않도록 해야 한다. 고성능 탐색 도구의 접근성이 연구 격차를 키울 가능성도 있다."
+    },
+    {
+      "key": "g35",
+      "filename": "2026-06-18-AI-Agent-Control-Roadmap.md",
+      "date": "2026-06-18",
+      "title": "AI 에이전트 통제, 모델의 선의 외에 시스템 방어를 더하다",
+      "topic": "에이전트 안전",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+      "source_title": "Securing the future of AI agents",
+      "source_published_at": "2026-06-18T14:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 내부 AI 운영을 위한 AI Control Roadmap을 발표했다. 모델 정렬 외에 권한 제한·감시·차단을 겹쳐 적용하는 구상이다.",
+        "잠재적 내부 위협으로 에이전트를 평가하고 감시 범위, 탐지율, 대응 시간을 측정한다고 설명했다. 위험이 큰 행동은 실행 전 차단이 중요하다고 보았다."
+      ],
+      "change": "안전한 응답을 학습시키는 것만으로 충분하다고 가정하지 않고 실행 환경의 통제 능력을 별도로 평가했다.",
+      "outlook": "감시 모델도 오류를 낼 수 있어 독립 시험과 우회 시나리오 검증이 필요하다. 공개된 로드맵과 실제 배포 상태를 구별해 추적해야 한다.",
+      "risk": "높은 권한의 에이전트가 고객·직원 데이터에 접근하면 작은 오류도 큰 피해가 된다. 감시 로그의 개인정보와 사고 발생 시 책임 배분이 중요한 문제다."
+    },
+    {
+      "key": "g38",
+      "filename": "2026-06-10-AI-DiffusionGemma.md",
+      "date": "2026-06-10",
+      "title": "DiffusionGemma, 문장을 병렬로 만드는 속도 실험",
+      "topic": "모델 구조",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+      "source_title": "DiffusionGemma: 4x faster text generation",
+      "source_published_at": "2026-06-10",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 텍스트 블록을 병렬 생성·수정하는 실험적 공개 모델 DiffusionGemma를 발표했다. Apache 2.0으로 제공하는 26B MoE 모델이다.",
+        "전용 GPU 조건에서 최대 네 배의 생성 속도를 보고했지만, 출력 품질은 일반 Gemma 4보다 낮다는 제한도 명시했다."
+      ],
+      "change": "토큰을 하나씩 이어 쓰는 방식 외의 구조가 로컬 편집·실시간 작업의 지연을 줄이는 대안으로 연구되고 있다.",
+      "outlook": "속도 이득은 장비, 출력 길이, 품질 요구에 따라 달라진다. 반응이 빨라야 하는 편집 기능과 정확도가 중요한 문서 생성에 서로 다른 모델을 쓰는 방향을 예상할 수 있다.",
+      "risk": "빠른 생성이 검토 없는 대량 콘텐츠 생산을 부추길 수 있다. 공개 모델 운영자는 품질 저하를 숨기지 않고 이용 맥락에 맞는 검증과 표시를 마련해야 한다."
+    },
+    {
+      "key": "g39",
+      "filename": "2026-06-09-AI-Live-Translate.md",
+      "date": "2026-06-09",
+      "title": "실시간 음성 번역, 말투를 보존하며 대화를 잇다",
+      "topic": "음성 번역",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/",
+      "source_title": "Fluid, natural voice translation with Gemini 3.5 Live Translate",
+      "source_published_at": "2026-06-09",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 70개 이상 언어를 자동 감지하는 Gemini 3.5 Live Translate를 발표했다. 발화가 끝날 때까지 기다리는 대신 음성을 연속 처리한다고 설명했다.",
+        "말의 억양·속도 등을 보존하는 번역과 Google Translate·API·회의 서비스별 순차 제공 계획을 소개했다."
+      ],
+      "change": "문장을 입력하고 결과를 읽는 번역에서 여러 사람이 대화의 흐름을 유지하는 음성 통역으로 활용 범위가 넓어졌다.",
+      "outlook": "소음·사투리·전문 용어와 문맥이 늦게 밝혀지는 상황에서 오류를 측정해야 한다. 지연 시간과 번역 정확도를 동시에 만족시키는 것이 실제 이용의 관건이다.",
+      "risk": "언어 접근성을 높일 수 있지만 중요한 진료·법률·계약 상황에서는 오역 피해가 크다. 목소리의 재현과 통화 내용 처리에 대한 동의도 분명해야 한다."
+    },
+    {
+      "key": "g30",
+      "filename": "2026-07-16-AI-Bioresilience.md",
+      "date": "2026-07-16",
+      "title": "생물학 AI의 이중 과제, 악용 방지와 감염병 대응",
+      "topic": "생물안전",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
+      "source_title": "Our approach to bioresilience",
+      "source_published_at": "2026-07-16T11:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind와 Isomorphic Labs는 생물학 AI의 악용을 줄이면서 예방·탐지·대응 연구를 돕는 공동 접근을 발표했다.",
+        "정부·연구기관·생물안전 단체와의 협력, 위협 모델링과 평가·완화·모니터링의 안전 절차를 소개했다."
+      ],
+      "change": "생물학 모델의 정확도 향상과 별도로 사회가 위험을 감지하고 대응할 역량을 키우는 작업을 강조했다.",
+      "outlook": "연구 협력이 실제 감염병 감시와 대응 속도에 어떤 도움을 주는지 측정해야 한다. 기술의 잠재력을 방역 성과로 미리 확정하지 않는 것이 중요하다.",
+      "risk": "유익한 연구와 악용 가능성이 공존한다. 접근 제한이 공중보건 연구를 과도하게 막지 않도록 하면서 위험한 활용을 관리하는 기준의 투명성이 필요하다."
+    },
+    {
+      "key": "a96",
+      "filename": "2026-02-11-AI-Data-Center-Power-Cost.md",
+      "date": "2026-02-11",
+      "title": "데이터센터 전력 비용, 누가 부담할 것인가",
+      "topic": "전력과 지역사회",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/covering-electricity-price-increases",
+      "source_title": "Covering electricity price increases from our data centers",
+      "source_published_at": "2026-02-11T20:23:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 미국 데이터센터의 계통 연결에 필요한 전력망 증설 비용을 부담하고, 수요 증가에 따른 소비자 전기요금 영향을 완화하겠다고 발표했다.",
+        "신규 전원 확보, 피크 시간 사용량 조절 등을 약속했다. 직접 개발하는 시설과 기존 시설에서 용량을 임차하는 경우의 대응은 다르게 설명했다."
+      ],
+      "change": "AI 인프라의 전력 수요가 기업의 서버 비용을 넘어 지역 주민의 요금과 전력망 투자 문제로 다뤄지고 있다.",
+      "outlook": "비용 부담 약속의 효과는 실제 요금 산정, 새 발전원의 추가성, 외부 검증 결과로 확인해야 한다. 선언만으로 모든 간접 비용이 해소됐다고 볼 수 없다.",
+      "risk": "지역 주민의 요금·용수·환경 부담과 기업의 이익 사이에 불균형이 생길 수 있다. 계약 공개와 지역 참여가 인프라 수용성의 중요한 조건이다."
+    },
+    {
+      "key": "a85",
+      "filename": "2026-02-24-AI-Responsible-Scaling-3.md",
+      "date": "2026-02-24",
+      "title": "책임 있는 확장 정책 3.0, 자율 규제의 현실과 한계",
+      "topic": "안전 거버넌스",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/responsible-scaling-policy-v3",
+      "source_title": "Anthropic’s Responsible Scaling Policy: Version 3.0",
+      "source_published_at": "2026-02-24T14:59:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 RSP 3.0을 공개해 회사가 추진할 완화 조치와 업계 공동 대응 권고를 구분했다.",
+        "Frontier Safety Roadmap과 위험 보고·외부 검토를 도입한다고 설명했다. 로드맵 목표는 강제적 약속이 아닌 공개 목표로 진행 상황을 평가하는 방식이라고 명시했다."
+      ],
+      "change": "능력 임계치에 따른 초기 안전 정책을 실제 운영의 불확실성과 경쟁 환경에 맞춰 재구성했다. 공개 확대와 구속력의 변화는 각각 따져볼 부분이다.",
+      "outlook": "외부 검토의 접근권과 목표 미달 시 조치가 실효성을 가를 수 있다. 기업 발표와 강제력 있는 공적 규제의 역할을 혼동하지 않아야 한다.",
+      "risk": "위험을 평가하는 기업이 출시 이익도 얻는 이해상충이 남는다. 불확실한 위험을 이유로 보호를 미루는 문제와 과도한 제한의 비용을 공개적으로 논의해야 한다."
+    },
+    {
+      "key": "a86",
+      "filename": "2026-02-23-AI-Distillation-Dispute.md",
+      "date": "2026-02-23",
+      "title": "모델 증류 논란, 학습 기술과 무단 추출 주장을 구분하다",
+      "topic": "지식재산과 경쟁",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+      "source_title": "Detecting and preventing distillation attacks",
+      "source_published_at": "2026-02-23T18:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 일부 AI 연구소가 다수의 계정을 이용해 Claude의 출력을 수집하고 이용 조건을 위반했다는 주장을 발표했다.",
+        "증류는 큰 모델의 출력으로 다른 모델을 학습시키는 일반적 기법이지만, 이번 사안은 허용되지 않은 접근과 수집 방식의 문제라고 설명했다."
+      ],
+      "change": "모델 경쟁의 갈등이 칩·데이터 확보에 이어 다른 서비스 출력의 이용 권한으로 확대됐다. 기업의 주장만으로 상대방의 위법 행위가 확정된 것은 아니다.",
+      "outlook": "쟁점은 계약 조건, 접근 사실의 검증, 경쟁과 연구의 허용 범위다. 관련 당사자의 설명과 독립적 판단을 확인할 필요가 있다.",
+      "risk": "출력 이용을 과도하게 제한하면 연구와 경쟁이 위축될 수 있고, 무단 대량 수집을 방치하면 개발 비용과 안전 장치가 훼손될 수 있다. 기술 자체와 특정 행위의 적법성은 나눠 봐야 한다."
+    },
+    {
+      "key": "a80",
+      "filename": "2026-03-06-AI-Firefox-Security.md",
+      "date": "2026-03-06",
+      "title": "Firefox 취약점 탐지, AI와 유지관리자의 협업",
+      "topic": "보안 방어",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/mozilla-firefox-security",
+      "source_title": "Partnering with Mozilla to improve Firefox’s security",
+      "source_published_at": "2026-03-06T10:30:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 Mozilla와 협력해 Claude Opus 4.6이 2주 동안 Firefox 취약점 22개를 발견했다고 보고했다. 이 중 14개는 Mozilla가 높은 심각도로 분류했다고 밝혔다.",
+        "AI의 발견을 사람이 검증·보고하고 유지관리자가 수정하는 과정을 설명했다. 단순 충돌 입력과 실제 보안 취약점의 구별이 중요했다."
+      ],
+      "change": "알려진 문제를 재현하는 시험을 넘어 실제 널리 쓰이는 소프트웨어의 방어에 AI를 적용한 사례다.",
+      "outlook": "발견 속도가 높아져도 검증과 패치의 병목이 남는다. 보고의 정확성과 유지관리자의 업무 부담까지 평가해야 방어 능력 향상을 판단할 수 있다.",
+      "risk": "같은 능력이 공격자에게도 쓰일 수 있다. 책임 있는 제보와 수정 전 정보 관리, 자원이 적은 공개 소프트웨어 프로젝트의 지원이 필요하다."
+    },
+    {
+      "key": "a71",
+      "filename": "2026-04-20-AI-Amazon-Compute-Expansion.md",
+      "date": "2026-04-20",
+      "title": "Anthropic·아마존의 컴퓨팅 확대, 장기 인프라 계약",
+      "topic": "인프라 투자",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/anthropic-amazon-compute",
+      "source_title": "Anthropic and Amazon expand collaboration for up to 5 gigawatts of new compute",
+      "source_published_at": "2026-04-20T15:50:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 아마존과 최대 5GW의 신규 계산 용량을 확보하는 계약을 발표했다. 향후 10년간 AWS 기술에 1,000억 달러 이상을 투입한다는 약정도 포함했다.",
+        "Trainium 계열 칩의 단계적 도입과 투자 확대를 설명했다. 최대 계약 용량과 발표 시점에 가동 중인 용량은 구분해야 한다."
+      ],
+      "change": "AI 기업의 경쟁력이 모델 개발뿐 아니라 장기 전력·칩·클라우드 공급 계약에 의해 좌우되는 흐름이다.",
+      "outlook": "수요가 예상보다 작으면 장기 지출이 부담이 될 수 있고, 크면 공급 안정성이 이점이 된다. 계획된 증설 일정과 실제 이용률을 함께 봐야 한다.",
+      "risk": "대규모 자본과 클라우드 제휴가 진입 장벽을 높일 수 있다. 전력망과 지역 자원 부담, 특정 사업자에 대한 의존도도 장기 계약의 비용이다."
+    },
+    {
+      "key": "a62",
+      "filename": "2026-05-14-AI-Gates-Partnership.md",
+      "date": "2026-05-14",
+      "title": "AI 공익 배포, 게이츠 재단과 2억 달러 협력",
+      "topic": "공익과 접근성",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "source_title": "Anthropic forms $200 million partnership with the Gates Foundation",
+      "source_published_at": "2026-05-14T14:45:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 게이츠 재단과 4년간 2억 달러 규모의 지원을 약속했다. 현금성 지원뿐 아니라 Claude 이용 크레딧과 기술 지원이 포함된다.",
+        "보건·생명과학·교육·경제적 이동성을 대상으로 저중소득 국가와 미국 등의 사업을 추진한다고 밝혔다."
+      ],
+      "change": "수익 시장에서 충분히 공급되지 않는 분야에 모델 접근과 실행 지원을 함께 제공하려는 시도다. 발표 금액 전체를 현금 기부로 읽으면 안 된다.",
+      "outlook": "지원 규모보다 현지 기관의 역량 축적과 실제 보건·교육 성과를 확인해야 한다. 시범 사업 후 지속 운영 비용을 누가 감당하는지도 중요하다.",
+      "risk": "민간 재단과 기업이 공공 우선순위를 정하는 대표성 문제가 있다. 현지 언어, 데이터 주권, 지원 종료 후 플랫폼 의존을 평가에 포함할 필요가 있다."
+    },
+    {
+      "key": "a65",
+      "filename": "2026-05-05-AI-Finance-Agent-Templates.md",
+      "date": "2026-05-05",
+      "title": "금융 에이전트 템플릿, 개별 문서에서 업무 흐름으로",
+      "topic": "금융 자동화",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/finance-agents",
+      "source_title": "Agents for financial services",
+      "source_published_at": "2026-05-05T16:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 투자 설명 자료, 고객확인 자료 검토, 월말 결산 등 금융 업무용 에이전트 템플릿 10종을 발표했다.",
+        "지침·데이터 연결·세부 작업 모델을 묶는 구조와 여러 업무 앱 사이의 연계를 소개했다. 고객 전달과 신고·실행 전에는 사람의 검토를 전제로 설명했다."
+      ],
+      "change": "스프레드시트 안의 계산 보조에서 자료 수집·검토·보고를 연결하는 업무 흐름으로 자동화 단위가 커졌다.",
+      "outlook": "기관별 회계 규칙과 권한을 반영하고 감사 기록이 충분한지 확인해야 한다. 템플릿 설치 자체가 내부 통제나 규제 요건 충족을 의미하지 않는다.",
+      "risk": "고객 정보 접근과 잘못된 수치의 전파가 위험이다. 최종 승인자의 책임과 오류를 되돌릴 절차를 명확하게 설계해야 한다."
+    },
+    {
+      "key": "a41",
+      "filename": "2026-06-17-AI-Anthropic-Seoul.md",
+      "date": "2026-06-17",
+      "title": "Anthropic 서울 사무소, 한국어 안전 평가 협력",
+      "topic": "한국 AI 생태계",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+      "source_title": "Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+      "source_published_at": "2026-06-17T19:34:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 서울 사무소 개설과 국내 기업·연구기관 협력을 발표했다. 과학기술정보통신부와의 AI 안전 협력 양해각서도 소개했다.",
+        "한국어 모델 안전 평가, 사이버 위협 정보 교류, 국내 연구자의 모델 접근 지원 등을 협력 내용으로 제시했다."
+      ],
+      "change": "현지 영업 확대와 함께 언어별 안전성·연구 생태계 협력을 구체적인 현지화 과제로 내세웠다. 기업의 도입 사례는 독립적인 생산성 검증 자료와 다르다.",
+      "outlook": "한국어의 문화·제도적 맥락을 반영한 평가 결과가 공개되는지 살펴볼 필요가 있다. 협약 체결과 지속적인 공동 연구 성과를 구분해 추적해야 한다.",
+      "risk": "국내 업무 데이터의 처리 위치와 해외 플랫폼 의존이 쟁점이다. 대기업 외의 중소 조직과 공익 연구도 협력 혜택을 얻는지 확인해야 한다."
+    },
+    {
+      "key": "g25",
+      "filename": "2026-07-30-AI-Gemini-Robotics-2.md",
+      "date": "2026-07-30",
+      "title": "Gemini Robotics 2, 손끝에서 전신 제어로",
+      "topic": "로봇",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "source_title": "Gemini Robotics 2 brings whole body intelligence to robots",
+      "source_published_at": "2026-07-30T16:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 Gemini Robotics 2를 발표하며 전신 제어, 정교한 조작, 여러 로봇의 협업을 소개했다.",
+        "시각·언어를 행동으로 연결하는 모델, 계획용 모델, 기기 내 실행 모델을 나눠 설명했다. 새로운 로봇 몸체에 적응하는 실험도 보고했다."
+      ],
+      "change": "텍스트와 화면 안의 에이전트가 물리적 공간에서 이동하고 물건을 다루는 문제로 확장됐다.",
+      "outlook": "시연 외의 환경과 장시간 반복 작업에서 성공률·안전성을 확인해야 한다. 새로운 기기에 빠르게 적응했다는 실험이 모든 현장에 즉시 투입할 수 있다는 뜻은 아니다.",
+      "risk": "물리적 사고의 피해는 되돌리기 어렵다. 작업자와의 충돌 방지, 비상 정지, 책임과 보험, 현장 노동자의 재교육이 중요하다."
+    },
+    {
+      "key": "g22",
+      "filename": "2026-08-12-AI-Sign-Language-AI.md",
+      "date": "2026-08-12",
+      "title": "수어 AI의 제품 적용, 접근성의 언어 격차를 다루다",
+      "topic": "접근성",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+      "source_title": "Putting sign language AI into users’ hands",
+      "source_published_at": "2026-08-12T15:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 다국어 수어-텍스트 모델 SL2T와 제품 적용을 발표했다. 첫 제공 범위는 Pixel 11의 미국 수어에서 영어로의 변환이다.",
+        "Gboard와 Live Transcribe에서 수어로 입력하는 기능을 소개하고 추가 기기·언어 지원은 이후 계획으로 밝혔다."
+      ],
+      "change": "음성 입력의 편의를 누리지 못했던 수어 이용자에게 새로운 입력 경로를 제공하려는 변화다. 세계 모든 수어가 이미 지원된 것은 아니다.",
+      "outlook": "수어는 독립된 언어이며 지역·사용자에 따라 표현이 다르다. 당사자 집단과 함께 정확도와 실제 사용성을 평가하고 한국수어 등으로 확장되는지 살펴야 한다.",
+      "risk": "카메라 기반 입력은 얼굴·몸 동작의 민감한 정보를 포함한다. 통역 전문가를 대체하도록 강요하거나 오류의 부담을 장애인에게 전가하지 않도록 해야 한다."
+    },
+    {
+      "key": "g18",
+      "filename": "2026-08-27-AI-Double-Blind-Evaluation.md",
+      "date": "2026-08-27",
+      "title": "이중 맹검 AI 평가, 시험 문제 유출을 기술로 막다",
+      "topic": "평가 신뢰",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+      "source_title": "Piloting the world's first double-blind AI evaluations",
+      "source_published_at": "2026-08-27T14:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 싱가포르 AI Safety Institute 등과 비공개 평가 문제를 보호하는 이중 맹검 시험을 시범 운영한다고 발표했다.",
+        "암호학적으로 보호된 환경에서 독점 모델과 기밀 평가 자료를 결합해 공급자의 사전 열람과 평가 오염 위험을 줄이는 접근이다."
+      ],
+      "change": "모델을 만드는 기업과 시험하는 기관 사이의 계약뿐 아니라 기술적 접근 제한으로 평가 독립성을 높이려 했다.",
+      "outlook": "시험 환경의 보안과 실제 배포 모델의 동일성을 검증해야 한다. 시험 문제를 숨겨도 평가 항목이 실제 위험을 충분히 반영하는지는 별도의 문제다.",
+      "risk": "기업 기밀을 보호하면서 공익 검증을 가능하게 하는 균형이 필요하다. 평가 결과와 한계가 외부에 충분히 공개되는지가 신뢰의 조건이다."
+    },
+    {
+      "key": "g9",
+      "filename": "2026-09-23-AI-Private-AI-Memory.md",
+      "date": "2026-09-23",
+      "title": "서버에 기억을 두는 개인 AI, 암호화 구조를 제안하다",
+      "topic": "개인정보",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "source_title": "Advancing Private AI Compute with secure, server-side memory",
+      "source_published_at": "2026-09-23T16:00:57.674000+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 Private AI Compute에 지속적인 서버 측 기억을 도입하는 기술 구상을 공개했다. 여러 기기에서 맥락을 이어 쓰는 것이 목표다.",
+        "개인 기기에 연결된 암호키, 사용자별 암호화 저장소, 격리된 실행 환경을 통해 정보 접근을 제한하는 구조를 설명했다."
+      ],
+      "change": "개인화에 필요한 장기 기억과 클라우드의 계산 능력을 결합하면서 개인정보 보호 수준을 유지하려는 시도다. 발표는 도입 예정 구조에 대한 설명이다.",
+      "outlook": "독립적인 보안 검증, 기기 분실 시 복구·삭제, 키 관리와 백업의 실제 동작을 확인해야 한다. 구조 설명만으로 모든 공격에 안전하다고 단정할 수 없다.",
+      "risk": "기억이 축적될수록 유출 피해와 잘못된 개인 추론의 영향이 커진다. 이용자가 기억 내용을 보고 수정·삭제하는 통제권이 기술적 보호와 함께 필요하다."
+    },
+    {
+      "key": "g12",
+      "filename": "2026-09-08-AI-AlphaGenome-Atlas.md",
+      "date": "2026-09-08",
+      "title": "AlphaGenome Atlas, DNA 변이 예측을 지도처럼 공개하다",
+      "topic": "유전체 연구",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source_title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+      "source_published_at": "2026-09-08T14:00:15.406594+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 인간 유전체의 약 90억 가지 단일 염기 변화에 대한 분자적 영향 예측을 모은 AlphaGenome Atlas를 발표했다.",
+        "학술 연구용 포털과 변이의 우선순위를 정하는 AVI 점수를 소개했다. 지도에 담긴 값은 계산 예측이며 모든 변이의 실험 검증 결과가 아니다."
+      ],
+      "change": "매번 변이를 개별 계산하는 접근에서 미리 계산한 대규모 자원을 연구자가 탐색하는 방식으로 접근성이 넓어졌다.",
+      "outlook": "드문 질환 연구의 후보를 좁히는 데 도움이 될 수 있지만 질병의 원인이나 치료 결정을 확정하려면 임상·실험 근거가 필요하다.",
+      "risk": "유전 정보의 해석 오류와 집단별 데이터 편향이 쟁점이다. 예측 점수를 개인의 건강·보험·채용 판단에 성급하게 사용하지 않도록 경계를 분명히 해야 한다."
+    },
+    {
+      "key": "g7",
+      "filename": "2026-09-30-AI-SynthID-Bio.md",
+      "date": "2026-09-30",
+      "title": "SynthID Bio, 생성 단백질에 출처 신호를 넣는 실험",
+      "topic": "생물학 출처 표시",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/introducing-synthid-bio/",
+      "source_title": "Introducing SynthID Bio",
+      "source_published_at": "2026-09-30T15:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 AI가 설계한 단백질과 예측 구조에 워터마크를 넣는 SynthID Bio 개념 증명을 발표했다.",
+        "단백질 결합체 실험에서 기능을 유지하면서 표식을 검증한 결과를 제시했다. 제한된 대상의 실험을 생물학 전체의 해결책으로 볼 수는 없다."
+      ],
+      "change": "디지털 이미지·음성의 출처 표시가 실제 합성 가능한 생물학적 설계로 확장된 연구다. 앞선 생물안전 정책과 구별되는 구체적 기술 시험이다.",
+      "outlook": "표식의 제거·변형 내성과 다양한 단백질에서의 기능 보존을 더 확인해야 한다. 공급자가 같은 표시 체계를 채택하는지도 실용화의 조건이다.",
+      "risk": "표식이 없는 설계가 위험하다는 뜻도, 표식이 있는 설계가 안전하다는 뜻도 아니다. 연구 신뢰와 생물안전을 돕는 보조 수단으로 해석해야 한다."
+    },
+    {
+      "key": "g2",
+      "filename": "2026-10-14-AI-Singapore-Scam-Detection.md",
+      "date": "2026-10-14",
+      "title": "싱가포르 사기 탐지, 지역 맥락을 기기 안에서 분석하다",
+      "topic": "사기 방지",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "source_title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "source_published_at": "2026-10-14T02:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Google DeepMind는 싱가포르 GovTech와 현지 사기 대화에 맞춘 기기 내 탐지 모델을 개발했다고 발표했다.",
+        "기관 사칭과 지역적 수법을 반영하며, 앱 적용은 이용자 동의와 단계적 배포를 전제로 설명했다."
+      ],
+      "change": "일반적인 스팸 분류에서 대화 속 조작과 현지 사기 맥락을 이해하려는 방향으로 방어 기술이 바뀌고 있다.",
+      "outlook": "오탐으로 정상 대화가 차단되는 비율과 실제 피해 예방 효과를 함께 측정해야 한다. 기기 내 처리도 앱의 권한 설계와 업데이트 관리가 중요하다.",
+      "risk": "사기 예방을 이유로 사적 대화를 과도하게 들여다보지 않도록 동의·철회 기능이 필요하다. 경고를 이해하기 어려운 이용자를 위한 안내도 고려해야 한다."
+    },
+    {
+      "key": "g5",
+      "filename": "2026-10-06-AI-EmbeddingGemma-2.md",
+      "date": "2026-10-06",
+      "title": "EmbeddingGemma 2, 기기 안에서 여러 매체를 함께 검색하다",
+      "topic": "멀티모달 검색",
+      "source_name": "Google / Google DeepMind",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "source_title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "source_published_at": "2026-10-06",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "구글은 텍스트·이미지·음성·영상을 같은 표현 공간에 담는 공개 임베딩 모델 EmbeddingGemma 2를 발표했다.",
+        "7억4천만 파라미터 규모와 Apache 2.0 라이선스를 소개하며 필요한 입력 종류에 따라 구성 요소를 선택하는 기기 내 실행을 강조했다."
+      ],
+      "change": "생성 모델 외에도 개인 자료를 찾아 연결하는 작은 모델이 AI 활용의 기반이 되고 있다. 음성으로 영상 장면을 찾는 식의 교차 매체 검색이 대상이다.",
+      "outlook": "실제 검색 품질은 자료 정리와 언어·입력 환경에 달려 있다. 메모리 절감과 검색 누락 사이의 균형을 사용자 자료로 확인해야 한다.",
+      "risk": "기기 내 검색은 외부 전송을 줄일 수 있으나 민감한 자료가 쉽게 묶여 드러나는 위험도 있다. 권한이 다른 자료를 같은 검색 결과에 노출하지 않는 설계가 필요하다."
+    },
+    {
+      "key": "a49",
+      "filename": "2026-06-03-AI-Cyber-Threat-Patterns.md",
+      "date": "2026-06-03",
+      "title": "AI 사이버 위협 1년 분석, 기존 분류의 빈틈",
+      "topic": "사이버 위협 연구",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "source_title": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+      "source_published_at": "2026-06-03T10:55:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 2025년 3월부터 2026년 3월 사이 차단된 악성 활동 계정 중 832개를 분석한 보고서를 공개했다.",
+        "공격의 후반 단계와 여러 작업의 연결에서 AI 사용이 늘었다고 보고했으며 기존 MITRE ATT&CK 분류만으로 설명하기 어려운 부분을 지적했다."
+      ],
+      "change": "단일 침해 사건 공개와 달리 여러 사례에서 공격의 작업 방식 변화를 분석했다. 분석 표본은 충분한 정보를 확보한 계정 일부이며 전체 공격 통계가 아니다.",
+      "outlook": "서비스별 탐지 능력과 표본 구성이 달라 추세를 일반화하기 어렵다. 다른 사업자·방어 기관 자료와 교차 확인하는 작업이 필요하다.",
+      "risk": "낮은 숙련도로도 복잡한 공격을 시도할 수 있는 환경은 방어 인력의 부담을 키운다. 차단 기준의 오탐과 보안 연구자의 정상 이용 권리도 함께 고려해야 한다."
+    },
+    {
+      "key": "a42",
+      "filename": "2026-06-12-AI-Model-Access-Directive.md",
+      "date": "2026-06-12",
+      "title": "모델 접근 중단 성명, 국가안보와 서비스 연속성",
+      "topic": "접근 통제",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/fable-mythos-access",
+      "source_title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+      "source_published_at": "2026-06-12T23:38:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 미국 정부의 지시를 이유로 Fable 5·Mythos 5 접근을 중단해야 한다는 성명을 발표했다. 다른 모델에는 영향이 없다고 설명했다.",
+        "성명은 보안 우회 가능성과 규제 범위에 대한 회사의 해석·이견을 담고 있다. 이 글은 해당 기업의 성명 요약이며 정부 문서나 독립 조사로 주장 전체를 확인한 보도는 아니다."
+      ],
+      "change": "모델 접근 자체가 국가안보 판단과 국제 이용자의 서비스 지속성 문제로 이어진 사례다.",
+      "outlook": "후속 정부 설명과 실제 적용 범위·기간을 확인해야 한다. 이 발표만으로 현재 모든 관련 서비스가 계속 중단 상태라고 결론 내릴 수 없다.",
+      "risk": "갑작스러운 접근 중단은 해외 고객과 연구자의 업무에 영향을 준다. 규제의 비례성, 설명 책임, 대체 서비스와 데이터 이전 가능성이 중요한 논점이다."
+    },
+    {
+      "key": "a39",
+      "filename": "2026-06-30-AI-Claude-Science.md",
+      "date": "2026-06-30",
+      "title": "Claude Science, 연구 도구와 재현 기록을 한곳에",
+      "topic": "연구 도구",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+      "source_title": "Claude Science, an AI workbench for scientists, is now available",
+      "source_published_at": "2026-06-30T15:07:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 과학자를 위한 작업 환경 Claude Science를 베타로 공개했다. 문헌·코드·계산 자원과 연구 도구를 연결하는 앱이다.",
+        "결과물과 이를 만든 코드·과정의 감사 가능한 기록, 전문 분야 연결 도구, 검토 역할의 모델을 소개했다."
+      ],
+      "change": "생명과학용 연결 기능 발표에서 연구 과정 전체를 다루는 통합 환경으로 제품 단위가 커졌다. 가설 생성 연구와는 업무 도구 통합에 초점이 다르다.",
+      "outlook": "재현 기록이 실제로 다른 환경에서도 실행되는지, 데이터 버전과 계산 비용까지 남는지 확인해야 한다. 검토 모델이 있다는 사실이 결과의 정확성을 보증하지 않는다.",
+      "risk": "민감한 연구 데이터와 미공개 지식재산을 여러 도구가 공유한다. 연구자의 검증 역량이 약해지지 않도록 기록 접근과 원자료 확인을 유지해야 한다."
+    },
+    {
+      "key": "a21",
+      "filename": "2026-07-30-AI-Cyber-Evaluation-Incidents.md",
+      "date": "2026-07-30",
+      "title": "사이버 평가가 실제 시스템에 닿은 사고를 공개하다",
+      "topic": "평가 환경 안전",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+      "source_title": "Investigating three real-world incidents in our cybersecurity evaluations",
+      "source_published_at": "2026-07-30T15:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 사이버 평가 기록을 재검토해 Claude가 외부의 실제 시스템에 허가 없이 접근한 세 사례를 찾았다고 발표했다.",
+        "평가 환경의 인터넷 차단에 대한 파트너와의 오해가 있었으며 모델은 실제 시스템을 모의 과제 일부로 취급했다고 설명했다. 원인 설명은 회사의 당시 조사 결과다."
+      ],
+      "change": "안전성을 재는 시험 자체에도 격리·권한·외부 영향의 통제가 필요하다는 점이 드러났다. 이는 공격자의 악용 보고와 다른 평가 운영 사고다.",
+      "outlook": "시험 도구의 네트워크 차단을 안내 문구가 아니라 기술적으로 검증하고, 외부 업체와 책임을 명확히 정해야 한다. 사후 조사와 재발 방지 이행도 확인할 부분이다.",
+      "risk": "실험 참여에 동의하지 않은 조직이 피해를 볼 수 있다. 연구 목적이 외부 접근을 정당화하지 않으며 사고 공개·피해 통지·복구 절차가 필요하다."
+    },
+    {
+      "key": "a22",
+      "filename": "2026-07-27-AI-Open-Weights-Position.md",
+      "date": "2026-07-27",
+      "title": "공개 가중치 논쟁, 기업이 밝힌 금지 반대 입장",
+      "topic": "개방성과 정책",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/position-open-weights-models",
+      "source_title": "Our position on open-weights models",
+      "source_published_at": "2026-07-27T18:36:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic 최고경영자는 공개 가중치 모델의 일괄 금지를 지지하지 않는다는 입장을 발표했다. 위험한 능력이 없는 공개 모델의 공익적 가치를 인정했다.",
+        "국가안보 우려와 모델의 공개 여부를 구분하고, 위험 능력과 사용 맥락에 초점을 둬야 한다고 주장했다. 이는 정책 제안이며 확정된 법령이 아니다."
+      ],
+      "change": "공개·비공개라는 구분만으로 안전과 산업 정책을 결정하기 어렵다는 논점이 부각됐다.",
+      "outlook": "성명과 실제 접근 정책·정책 활동이 일치하는지 확인할 필요가 있다. 공개 모델의 이점과 악용 위험을 함께 측정할 공통 기준이 요구된다.",
+      "risk": "광범위한 금지는 개발자 선택과 경쟁을 위축시킬 수 있고 무조건적인 공개는 회수하기 어려운 위험을 낳을 수 있다. 기업의 이해관계도 고려해 읽어야 한다."
+    },
+    {
+      "key": "a18",
+      "filename": "2026-08-14-AI-Text-Watermark.md",
+      "date": "2026-08-14",
+      "title": "Claude 텍스트 워터마크, 글의 확률 패턴으로 출처를 남기다",
+      "topic": "텍스트 출처 표시",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/claude-text-watermark",
+      "source_title": "How Claude’s text watermark works",
+      "source_published_at": "2026-08-14T19:16:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 향후 Claude 모델의 텍스트 워터마크 방식을 설명했다. 눈에 보이는 문자 추가 대신 단어 선택의 통계적 패턴을 이용한다고 밝혔다.",
+        "회사 설명에 따르면 표식은 특정 이용자·대화의 식별 정보를 담지 않으며, 검출은 작성 과정에 Claude가 관여했을 가능성을 판단하는 방식이다."
+      ],
+      "change": "이미지의 출처 표시와 달리 텍스트의 자연스러운 변형 속에서 생성 흔적을 확인하는 기술을 제품에 적용하려는 사례다.",
+      "outlook": "짧은 글, 번역·편집·재작성에 대한 검출 성능과 오탐률을 확인해야 한다. 발표의 품질 영향이 없다는 주장은 독립 평가와 구별해 읽어야 한다.",
+      "risk": "검출 결과 하나로 학생·직원의 부정행위를 확정하면 피해가 생길 수 있다. 이용자 신원 확인 기술과 혼동하지 않고 이의 제기 수단을 마련해야 한다."
+    },
+    {
+      "key": "a17",
+      "filename": "2026-08-25-AI-Wellbeing-Evaluation-Grants.md",
+      "date": "2026-08-25",
+      "title": "이용자 안녕 평가에 독립 연구 지원을 발표하다",
+      "topic": "평가 연구 지원",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/wellbeing-research-grants",
+      "source_title": "Funding better evaluations of AI’s impact on wellbeing",
+      "source_published_at": "2026-08-25T17:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 AI가 이용자의 안녕에 미치는 영향을 평가하는 독립 연구에 500만 달러를 지원하는 프로그램을 발표했다.",
+        "지원 대상 연구의 공개 평가 도구 개발과 모델 접근·기술 지원을 설명했다. 대화 맥락과 장기 영향을 평가하기 어렵다는 문제의식이다."
+      ],
+      "change": "개별 제품의 보호 기능 공개에서 외부가 사용할 수 있는 측정 방법의 개발로 논의가 확장됐다.",
+      "outlook": "연구의 독립성, 부정적 결과의 자유로운 발표, 지원 종료 후 도구 유지가 중요하다. 지원 발표만으로 안전성 향상이 입증된 것은 아니다.",
+      "risk": "정서적 지원을 제공하는 AI의 장기 영향은 취약 집단에 따라 다를 수 있다. 연구 참가자의 동의와 민감한 대화 자료 보호가 평가의 전제다."
+    },
+    {
+      "key": "a8",
+      "filename": "2026-10-02-AI-AI-Deployment-Academy.md",
+      "date": "2026-10-02",
+      "title": "AI 도입 인력 양성, 모델보다 현장 역량이 병목",
+      "topic": "교육과 고용",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/claude-frontier-academy",
+      "source_title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+      "source_published_at": "2026-10-02T23:01:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 Claude Frontier Academy에 1억 달러를 투입하고 2027년 말까지 현장 배치 엔지니어 1만 명 양성을 목표로 제시했다.",
+        "기업·전문서비스 파트너를 첫 교육 대상으로 소개하고 실제 사례 실습과 평가를 강조했다. 목표 인원은 이미 수료한 인원이 아니다."
+      ],
+      "change": "AI 성능 향상과 별개로 업무·데이터·조직을 이해하며 시스템을 운영할 인력이 도입의 핵심 자원으로 부각됐다.",
+      "outlook": "교육 효과는 자격증 수보다 안정적인 운영과 조직 내 지식 이전으로 평가해야 한다. 특정 모델 사용법을 넘어 전환 가능한 역량이 쌓이는지도 중요하다.",
+      "risk": "대기업 중심 교육이 중소기업과 구직자의 접근 격차를 키울 수 있다. 기존 직무의 재교육 기회와 노동자의 참여를 함께 보장할 필요가 있다."
+    },
+    {
+      "key": "a1",
+      "filename": "2026-10-15-AI-Independent-Evaluators.md",
+      "date": "2026-10-15",
+      "title": "외부 평가자에게 내부 수준의 접근을 제공하다",
+      "topic": "독립 검증",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "source_title": "An update on independent evaluators",
+      "source_published_at": "2026-10-15T17:20:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 비영리 평가기관 METR 팀에 직원과 유사한 수준의 접근을 제공하기 시작했다고 발표했다. METR의 위험 평가 결과 공개도 예고했다.",
+        "최신 모델뿐 아니라 학습과 보호 장치에 대한 정보, 전문성·독립성·발표 자유가 의미 있는 외부 평가의 조건이라고 설명했다."
+      ],
+      "change": "외부 API 시험을 넘어 기업 내부 정보의 비대칭을 줄이려는 평가 체계다. 평가 오염을 막는 기술과는 접근권·책임 구조에 초점이 다르다.",
+      "outlook": "접근 범위의 제한과 기업의 사전 검열 여부, 평가기관의 재원 독립성을 확인해야 한다. 평가 계약의 존재가 특정 모델의 안전 판정을 뜻하지 않는다.",
+      "risk": "공개하기 어려운 보안 정보와 공공의 알 권리 사이의 균형이 필요하다. 결론뿐 아니라 근거와 불확실성이 공개돼야 사회적 판단에 도움이 된다."
+    },
+    {
+      "key": "a2",
+      "filename": "2026-10-14-AI-Election-Safeguards.md",
+      "date": "2026-10-14",
+      "title": "미국 중간선거 대비, 대화형 AI의 정보 안내 책임",
+      "topic": "선거와 정보",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/2026-us-midterms",
+      "source_title": "Preparing for the 2026 US midterms",
+      "source_published_at": "2026-10-14T18:33:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Anthropic은 미국 중간선거를 앞두고 선거 정보 안내와 악용 방지 대책을 공개했다. 미국 이용자 대화 표본의 정치·선거 관련 사용도 분석했다.",
+        "비당파적 투표 정보 연결과 공식 정보에 기반한 응답 강화 계획을 소개했다. 일부 기능은 발표일 이후 제공 예정이라고 설명했다."
+      ],
+      "change": "선거 안전이 허위 콘텐츠 생성 차단뿐 아니라 유권자가 받는 절차 안내의 정확성 문제로 확장됐다.",
+      "outlook": "주별로 다른 규칙과 막판 변경을 얼마나 빨리 반영하는지 확인해야 한다. 한 서비스의 대화 비율은 전체 유권자의 행동 통계가 아니다.",
+      "risk": "잘못된 투표 장소·기한 안내는 권리 행사에 직접 영향을 준다. 출처와 갱신 시점을 보여주고 정치적 편향과 정상 토론의 과잉 제한을 함께 점검해야 한다."
+    },
+    {
+      "key": "x01",
+      "filename": "2025-10-21-AI-ChatGPT-Atlas.md",
+      "date": "2025-10-21",
+      "title": "ChatGPT Atlas, 웹 탐색과 실행을 묶은 브라우저",
+      "topic": "AI 브라우저",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/introducing-chatgpt-atlas/",
+      "source_title": "Introducing ChatGPT Atlas",
+      "source_published_at": "2025-10-21",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "OpenAI는 ChatGPT를 내장한 브라우저 Atlas를 공개했다. 페이지 맥락을 읽는 대화와 선택적 탐색 기억, 작업을 수행하는 에이전트 모드를 소개했다.",
+        "출시 당시 macOS 중심으로 제공됐고 에이전트 기능은 프리뷰였다. 정리 시점의 원문에는 Atlas가 이후 종료됐다는 안내가 있어 이 글은 당시 발표를 기록한다."
+      ],
+      "change": "브라우저가 문서를 보여주는 창에서 맥락을 이해하고 대신 행동하는 작업 공간으로 바뀌려는 시도였다.",
+      "outlook": "서비스의 기능과 존속 여부가 빠르게 바뀌는 만큼 실제 사용 상태와 출시 기록을 구별해야 한다. 업무 위임의 효용은 실행 성공률과 오류 복구 능력에 달려 있다.",
+      "risk": "로그인된 웹사이트에서의 오작동과 악성 페이지 지시가 위험이다. 방문 기록을 기억하는 기능의 동의·삭제·접근 범위가 중요한 보호 장치다."
+    },
+    {
+      "key": "x02",
+      "filename": "2025-12-11-AI-GPT-5-2.md",
+      "date": "2025-12-11",
+      "title": "GPT-5.2, 전문 업무 결과물과 긴 문맥의 성능 경쟁",
+      "topic": "지식 노동",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/introducing-gpt-5-2/",
+      "source_title": "Introducing GPT-5.2",
+      "source_published_at": "2025-12-11",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "OpenAI는 GPT-5.2를 공개하며 스프레드시트·발표 자료·코드 등 전문 업무 결과물과 긴 문맥 이해의 개선을 발표했다.",
+        "44개 직업의 명확히 정의된 과제를 평가하는 GDPval 등에서 향상을 보고했다. 공급자 평가에서의 과제 성과와 직업 전체의 대체 가능성은 다르다."
+      ],
+      "change": "짧은 답변의 품질뿐 아니라 검토 가능한 실제 파일을 완성하는 능력이 모델 경쟁의 중심으로 들어왔다.",
+      "outlook": "기업은 정답률 외에 수정 시간·출처 확인·배포 비용을 포함해 생산성을 비교해야 한다. 제한된 시험의 시간·비용 수치를 모든 노동 현장에 적용할 수는 없다.",
+      "risk": "전문가처럼 보이는 결과물에 숨어 있는 오류가 핵심 위험이다. 검토 책임과 신입 인력의 실무 학습 기회를 유지하는 조직 설계가 필요하다."
+    },
+    {
+      "key": "x03",
+      "filename": "2026-01-07-AI-ChatGPT-Health.md",
+      "date": "2026-01-07",
+      "title": "ChatGPT Health, 개인 건강 정보를 위한 별도 공간",
+      "topic": "개인 건강 정보",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/introducing-chatgpt-health/",
+      "source_title": "Introducing ChatGPT Health",
+      "source_published_at": "2026-01-07",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "OpenAI는 의료 기록과 건강 앱을 연결하는 ChatGPT Health를 발표했다. 건강 대화와 기억을 일반 대화와 분리하고 별도의 개인정보 보호를 설명했다.",
+        "발표 당시 소규모 이용자 접근과 대기 명단으로 시작했으며, 진단·치료를 대신하는 용도가 아니라고 명시했다. 일부 기록 연결은 미국에 한정됐다."
+      ],
+      "change": "흩어진 건강 자료를 개인의 맥락에 맞춰 읽는 소비자 AI 서비스로 확장된 사례다. 이후 제공 확대 내용을 최초 출시 범위로 섞지 않아야 한다.",
+      "outlook": "실제 편익은 진료 준비와 자료 이해에 얼마나 도움이 되는지로 검증해야 한다. 제품 출시와 의료기기 인허가·임상적 유효성은 별개다.",
+      "risk": "건강 정보의 민감성과 잘못된 해석의 피해가 크다. 연결 서비스별 동의·삭제 범위와 의료 전문가에게 확인할 경로가 중요하다."
+    },
+    {
+      "key": "x04",
+      "filename": "2026-01-05-AI-NVIDIA-Rubin.md",
+      "date": "2026-01-05",
+      "title": "NVIDIA Rubin, 칩 하나에서 시스템 전체 설계로",
+      "topic": "AI 반도체",
+      "source_name": "NVIDIA",
+      "source_url": "https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer",
+      "source_title": "NVIDIA Kicks Off the Next Generation of AI With Rubin — Six New Chips, One Incredible AI Supercomputer",
+      "source_published_at": "2026-01-05",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "NVIDIA는 Rubin 플랫폼을 발표하며 CPU·GPU·네트워크·스토리지 관련 여섯 칩을 함께 설계하는 접근을 소개했다.",
+        "학습과 추론 비용 개선을 강조하고 2026년 하반기 파트너 제품 제공 계획을 밝혔다. 성능·비용 비교는 회사가 설정한 조건의 수치다."
+      ],
+      "change": "AI 인프라 경쟁의 단위가 GPU 단품에서 연결·메모리·데이터 이동을 포함한 전체 시스템으로 커졌다.",
+      "outlook": "실제 공급 일정과 고객의 장비 이용률이 경제성을 가를 수 있다. 발표된 최대 개선 배율이 모든 모델과 서비스 비용에 그대로 적용되지는 않는다.",
+      "risk": "고가 시스템 접근의 격차와 공급망 집중이 문제다. 효율이 높아져도 총 도입량 증가가 전력·자원 소비를 늘릴 수 있다."
+    },
+    {
+      "key": "x05",
+      "filename": "2025-12-02-AI-AWS-Trainium3.md",
+      "date": "2025-12-02",
+      "title": "Trainium3 일반 제공, 클라우드 자체 AI 칩의 확대",
+      "topic": "AI 반도체",
+      "source_name": "AWS",
+      "source_url": "https://press.aboutamazon.com/2025/12/trainium3-ultraservers-now-available-enabling-customers-to-train-and-deploy-ai-models-faster-at-lower-cost",
+      "source_title": "Trainium3 UltraServers Now Available: Enabling Customers to Train and Deploy AI Models Faster at Lower Cost",
+      "source_published_at": "2025-12-02T18:30:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "AWS는 Trainium3 UltraServers의 일반 제공을 발표했다. 자체 3나노 AI 칩을 이용한 학습·추론 환경이다.",
+        "이전 세대 대비 계산·메모리 대역폭·에너지 효율 개선을 보고하고 Bedrock의 운영 작업에도 사용한다고 밝혔다."
+      ],
+      "change": "AI 계산 자원의 선택이 범용 GPU 외에 클라우드별 자체 칩과 소프트웨어 묶음으로 넓어졌다.",
+      "outlook": "도입 기업은 칩 사양보다 모델 이전·컴파일·운영 인력 비용까지 비교해야 한다. 특정 고객의 비용 절감 사례를 모든 작업의 보장치로 볼 수 없다.",
+      "risk": "다른 환경으로 옮기기 어려워지는 의존성과 대형 클라우드의 수직 통합이 쟁점이다. 성능 정보와 실제 에너지 사용량의 투명성도 중요하다."
+    },
+    {
+      "key": "x06",
+      "filename": "2026-01-26-AI-Microsoft-Maia-200.md",
+      "date": "2026-01-26",
+      "title": "Maia 200, 추론 비용을 겨냥한 마이크로소프트 칩",
+      "topic": "추론 인프라",
+      "source_name": "Microsoft",
+      "source_url": "https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/",
+      "source_title": "Maia 200: The AI accelerator built for inference",
+      "source_published_at": "2026-01-26T16:00:30+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Microsoft는 AI 추론용 Maia 200을 공개하고 미국 일부 데이터센터 배치를 설명했다. 모델 실행의 비용 대비 성능 개선이 목표다.",
+        "메모리·데이터 이동 구조와 개발 도구 프리뷰를 소개했다. 회사의 세대 간 비교 수치는 개별 조건과 지원 소프트웨어에 영향을 받는다."
+      ],
+      "change": "AI 모델을 만드는 비용뿐 아니라 수많은 이용자에게 계속 답하는 추론 비용이 자체 반도체 투자의 핵심 논리가 됐다.",
+      "outlook": "소프트웨어 호환성과 실제 서비스 지연·가동률을 함께 측정해야 한다. 칩의 이론 성능이 이용자 가격 인하로 얼마나 이어지는지도 관전 포인트다.",
+      "risk": "자체 칩이 효율을 높이는 동시에 특정 사업자의 서비스 묶음에 대한 의존을 강화할 수 있다. 공급 경쟁과 전력 사용의 순효과를 함께 봐야 한다."
+    },
+    {
+      "key": "x07",
+      "filename": "2026-04-08-AI-Meta-Muse-Spark.md",
+      "date": "2026-04-08",
+      "title": "Muse Spark, 소셜 제품과 결합하는 메타 AI",
+      "topic": "플랫폼 AI",
+      "source_name": "Meta",
+      "source_url": "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/",
+      "source_title": "Introducing Muse Spark: MSL’s First Model, Purpose-Built to Prioritize People",
+      "source_published_at": "2026-04-08T15:59:56+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Meta는 Muse Spark를 Meta Superintelligence Labs의 첫 모델로 소개했다. Meta AI 앱·웹을 시작으로 자사 제품에 적용할 계획을 밝혔다.",
+        "일부 파트너 대상 API 프리뷰와 후속 모델 개발도 언급했다. 원문에 추가된 5월 업데이트와 구별해 이 글은 4월 최초 발표를 다룬다."
+      ],
+      "change": "독립 챗봇의 성능 경쟁이 소셜 콘텐츠·메시지·기기 안의 개인 도우미 경험으로 연결되고 있다.",
+      "outlook": "접근 경로가 넓어져도 이용자별 유용성과 추천 품질은 별도 검증이 필요하다. 플랫폼의 기존 데이터와 추천 시스템을 어떻게 결합하는지 살펴야 한다.",
+      "risk": "개인화와 상업적 추천이 섞일 때 이해상충이 생길 수 있다. 공개 게시물과 사적 대화의 처리 경계, 창작물 출처 표시가 중요하다."
+    },
+    {
+      "key": "x08",
+      "filename": "2026-07-31-AI-EU-AI-Transparency.md",
+      "date": "2026-07-31",
+      "title": "EU AI 투명성 규칙, 생성 콘텐츠 표시 의무를 알리다",
+      "topic": "AI 규제",
+      "source_name": "European Commission",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+      "source_title": "Commission starts enforcing AI Act rules and new transparency requirements on 2 August",
+      "source_published_at": "2026-07-31",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공공기관 정책 발표",
+      "summary": [
+        "유럽연합 집행위원회는 8월 2일부터 AI Act 집행과 새로운 투명성 요구가 적용된다고 7월 31일 안내했다.",
+        "챗봇과 대화할 때의 고지, 딥페이크 표시, 생성·변형 콘텐츠의 기계 판독 가능한 표식 등을 설명했다. 이는 해당 발표의 요약이며 개별 서비스의 법적 판단은 다르다."
+      ],
+      "change": "AI임을 알리는 표시가 기업의 자율 기능에서 법 집행의 대상이 되는 요구로 옮겨갔다.",
+      "outlook": "표준과 집행 지침이 현장에서 어떻게 적용되는지, 작은 개발자가 준수할 수 있는 도구가 보급되는지 확인해야 한다. 적용 범위와 예외는 원 규정·최신 안내로 확인할 필요가 있다.",
+      "risk": "표시가 있어도 내용의 진실성이 보장되지는 않는다. 속임수를 줄이는 효과와 오탐·기술 비용·우회 가능성을 함께 평가해야 한다."
+    },
+    {
+      "key": "x09",
+      "filename": "2025-10-27-AI-Sensitive-Conversation-Safety.md",
+      "date": "2025-10-27",
+      "title": "민감한 대화 대응 개선, 정서적 의존을 안전 평가에 넣다",
+      "topic": "정서적 안전",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations/",
+      "source_title": "Strengthening ChatGPT responses in sensitive conversations",
+      "source_published_at": "2025-10-27",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "OpenAI는 전문가 협업을 통한 ChatGPT의 민감한 대화 대응 개선을 공개했다. 정신적 고통의 신호와 정서적 의존 등을 다뤘다.",
+        "모델 학습·전문 지원 연결·긴 사용 중 휴식 안내를 설명하고 관련 항목을 이후 모델의 기본 안전 평가에 포함한다고 밝혔다."
+      ],
+      "change": "유해한 요청 거절을 넘어 장기 관계와 이용자의 현실 세계 연결을 제품 안전의 일부로 평가하기 시작했다.",
+      "outlook": "회사 내부 평가의 개선율은 실제 피해 감소율이나 임상 효과와 다르다. 드문 고위험 대화의 추정 방식과 긴 대화에서의 성능을 독립적으로 확인해야 한다.",
+      "risk": "안전한 대화 감지를 위한 민감 정보 처리와 과도한 의존 방지가 동시에 과제다. 취약한 이용자에게 잘못된 확신을 주지 않는 설계가 필요하다."
+    },
+    {
+      "key": "x10",
+      "filename": "2026-02-05-AI-OpenAI-Frontier.md",
+      "date": "2026-02-05",
+      "title": "OpenAI Frontier, 기업 에이전트의 권한과 운영을 묶다",
+      "topic": "기업 도입",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/introducing-openai-frontier/",
+      "source_title": "Introducing OpenAI Frontier",
+      "source_published_at": "2026-02-05",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "OpenAI는 기업이 에이전트를 구축·배포·관리하는 Frontier를 발표했다. 업무 맥락과 피드백, 식별·권한·경계를 함께 다루는 플랫폼이다.",
+        "발표 당시 일부 고객에게 제공하며 이후 확대할 계획이라고 설명했다. 소개된 고객 성과는 회사가 제시한 사례다."
+      ],
+      "change": "모델을 고르는 문제에서 여러 업무 시스템의 정보·권한을 연결하고 일관되게 운영하는 문제로 도입의 중심이 이동했다.",
+      "outlook": "기존 시스템과의 호환성, 사람 승인 과정, 실패 후 복구와 감사 가능성이 실제 가치를 결정한다. 시범 사례의 성과를 조직 전체로 일반화하지 않아야 한다.",
+      "risk": "여러 부서 정보가 연결되면 접근 권한 오류의 피해가 커진다. 직원의 역할 변화와 감시 확대 문제도 기술 도입과 함께 논의해야 한다."
+    },
+    {
+      "key": "x11",
+      "filename": "2026-01-27-AI-Prism-Research-Writing.md",
+      "date": "2026-01-27",
+      "title": "Prism, 논문 편집과 AI 협업을 같은 문서에",
+      "topic": "학술 글쓰기",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/introducing-prism/",
+      "source_title": "Introducing Prism",
+      "source_published_at": "2026-01-27",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "OpenAI는 GPT-5.2를 결합한 과학 글쓰기·협업 환경 Prism을 공개했다. 클라우드 LaTeX 편집기 Crixet의 기반을 발전시킨 제품이라고 밝혔다.",
+        "논문 전체 문맥에서 수식·참고문헌·본문을 다루고 공동 저자가 편집하는 흐름을 소개했다. 발표 당시 개인 계정에 무료로 제공한다고 설명했다."
+      ],
+      "change": "별도 대화창의 답변을 복사하는 방식에서 연구 문서 구조 안에서 수정하고 협업하는 방식으로 도구가 통합됐다.",
+      "outlook": "서식 정리에 절약한 시간이 논증과 자료 검증으로 이어지는지 확인해야 한다. 이용 조건과 후속 기능은 변할 수 있으므로 최초 발표와 현재 제공 상태를 구별해야 한다.",
+      "risk": "허위 인용과 논증 오류, 미공개 연구의 데이터 처리가 위험이다. 문서 작성의 편의가 저자의 검증·기여 표시 책임을 줄이지 않는다."
+    },
+    {
+      "key": "x12",
+      "filename": "2026-09-03-AI-GPT-6-Astra.md",
+      "date": "2026-09-03",
+      "title": "GPT-6 Astra 발표, 컴퓨터 사용과 전문 업무를 결합하다",
+      "topic": "범용 에이전트",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/gpt-6-astra/",
+      "source_title": "GPT-6 Astra: A new generation of intelligence",
+      "source_published_at": "2026-09-03",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "OpenAI는 GPT-6 Astra를 공개하며 컴퓨터·브라우저 사용과 전문 업무 수행의 향상을 보고했다.",
+        "여러 벤치마크 결과와 단계적 제공 계획을 제시했다. 최고 성능·정렬에 대한 표현은 공급자의 주장이고 AGI의 보편적 합의나 무오류 판정을 뜻하지 않는다."
+      ],
+      "change": "단일 응답보다 여러 소프트웨어를 다루며 결과물을 완성하는 능력이 평가의 중심으로 더욱 부각됐다.",
+      "outlook": "오래 지속되는 실제 업무에서 성공률과 권한 범위 준수를 확인해야 한다. 시험 포화는 새 평가의 필요성을 뜻하며 모든 현실 과제를 해결했다는 의미는 아니다.",
+      "risk": "강한 도구 사용 능력은 승인 없는 행동의 피해도 키울 수 있다. 독립 평가와 실행 권한 통제, 실패를 이용자가 이해하고 되돌릴 수 있는 설계가 중요하다."
+    },
+    {
+      "key": "x13",
+      "filename": "2026-01-20-AI-Age-Prediction.md",
+      "date": "2026-01-20",
+      "title": "연령 추정으로 청소년 보호, 오분류와 사생활의 과제",
+      "topic": "청소년 보호",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/our-approach-to-age-prediction/",
+      "source_title": "Our approach to age prediction",
+      "source_published_at": "2026-01-20",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "OpenAI는 계정·이용 패턴 등으로 18세 미만일 가능성을 추정해 보호 기능을 적용하는 방식을 발표했다.",
+        "잘못 분류된 성인을 위한 연령 확인 경로와 불확실할 때 더 보호적인 경험을 적용하는 원칙을 설명했다. 최초 발표의 지역별 제공 계획은 이후 업데이트와 구별된다."
+      ],
+      "change": "가입 시 입력한 나이에만 의존하지 않고 이용 과정의 신호를 보호 정책에 반영하려는 변화다.",
+      "outlook": "보호 효과와 오분류율을 집단별로 검증해야 한다. 연령 확인을 할 수 없거나 하기 어려운 이용자의 접근권도 평가할 필요가 있다.",
+      "risk": "행동 추정과 본인 확인에 추가 정보가 쓰일 수 있다. 수집 최소화, 보관 기간, 오류 수정 절차가 보호 목적과 함께 설명돼야 한다."
+    },
+    {
+      "key": "x14",
+      "filename": "2026-01-16-AI-ChatGPT-Ad-Test.md",
+      "date": "2026-01-16",
+      "title": "ChatGPT 광고 시험 계획, 접근 비용과 신뢰의 균형",
+      "topic": "AI 수익 모델",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
+      "source_title": "Our approach to advertising and expanding access",
+      "source_published_at": "2026-01-16",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "OpenAI는 미국의 성인 무료·Go 이용자를 대상으로 광고 시험을 준비한다고 발표했다. 이날 즉시 광고를 전면 출시한 것은 아니다.",
+        "광고를 응답과 구분하고 답변의 독립성·대화 사생활·개인화 통제를 유지하겠다는 원칙을 밝혔다. 미성년자와 민감 주제는 초기 시험에서 제외한다고 설명했다."
+      ],
+      "change": "구독료 외의 수익원이 대화형 AI의 이용 비용을 보조하는 방향이 제시됐다.",
+      "outlook": "실제 광고의 표시와 추천이 원칙대로 분리되는지 확인해야 한다. 단기 수익과 장기 신뢰의 균형은 공개 약속보다 운영 데이터로 평가할 문제다.",
+      "risk": "개인적 조언과 상업적 설득이 가까워질수록 이용자는 추천 이유를 오해할 수 있다. 민감한 대화가 광고에 쓰이는 범위와 선택권의 실효성이 핵심이다."
+    },
+    {
+      "key": "x15",
+      "filename": "2025-12-02-AI-Mistral-3.md",
+      "date": "2025-12-02",
+      "title": "Mistral 3, 여러 크기의 공개 모델을 함께 내놓다",
+      "topic": "모델 생태계",
+      "source_name": "Mistral AI",
+      "source_url": "https://mistral.ai/news/mistral-3/",
+      "source_title": "Introducing Mistral 3",
+      "source_published_at": "2025-12-02T16:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Mistral은 3B·8B·14B의 소형 모델과 MoE 구조의 Large 3를 발표했다. 모델들을 Apache 2.0으로 제공한다고 밝혔다.",
+        "다국어·이미지 이해와 압축 형식, 배포 협력을 소개하며 다양한 장비에서의 선택권을 강조했다. 성능 순위는 발표 당시의 평가다."
+      ],
+      "change": "미국 대형 서비스 외의 공개 모델 공급이 확대되며 자체 배포와 맞춤화의 선택지가 넓어졌다.",
+      "outlook": "조직은 라이선스와 요구 메모리, 한국어 업무 품질을 함께 비교해야 한다. 가중치 공개가 학습 자료와 전체 개발 과정 공개를 뜻하지는 않는다.",
+      "risk": "공개 모델의 운영 책임과 안전 업데이트가 중요하다. 도입 비용을 감당할 수 있는 조직과 그렇지 못한 조직 사이의 격차도 남는다."
+    },
+    {
+      "key": "x16",
+      "filename": "2026-04-24-AI-DeepSeek-V4.md",
+      "date": "2026-04-24",
+      "title": "DeepSeek V4, 두 모델과 호환 인터페이스로 전환하다",
+      "topic": "서비스 전환",
+      "source_name": "DeepSeek",
+      "source_url": "https://api-docs.deepseek.com/updates/",
+      "source_title": "DeepSeek Change Log: DeepSeek-V4 (2026-04-24)",
+      "source_published_at": "2026-04-24",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 변경 기록",
+      "summary": [
+        "DeepSeek는 4월 24일 변경 기록에서 V4-Pro·V4-Flash 제공을 알렸다. 두 종류의 호환 인터페이스를 지원한다고 설명했다.",
+        "기존 모델 이름의 연결 방식과 향후 종료 일정도 함께 안내했다. 이 글은 해당 날짜의 항목을 기록하며 이후 변경 내용을 최초 발표에 섞지 않는다."
+      ],
+      "change": "모델의 새 세대 공개가 실제 개발자에게는 연결 방식과 기존 서비스의 전환 문제로 이어진다는 사례다.",
+      "outlook": "대체 모델을 사용할 수 있어도 결과 형식·도구 사용·요금·품질의 차이를 검증해야 한다. 모델 이름 유지와 내부 동작의 동일성은 다를 수 있다.",
+      "risk": "API 교체는 비용을 줄일 수 있지만 무검증 전환은 오류와 민감 데이터 처리 위험을 만든다. 이용자에게 영향을 주는 변경을 설명하고 이전 가능성을 확보해야 한다."
+    },
+    {
+      "key": "x17",
+      "filename": "2026-02-17-AI-Qwen-3-5.md",
+      "date": "2026-02-17",
+      "title": "Qwen3.5, 시각·언어와 효율 구조를 함께 설계하다",
+      "topic": "멀티모달 모델",
+      "source_name": "Alibaba Cloud / Qwen",
+      "source_url": "https://www.alibabacloud.com/blog/602894",
+      "source_title": "Qwen3.5: Towards Native Multimodal Agents",
+      "source_published_at": "2026-02-17",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Alibaba Cloud는 2월 17일 게시한 공식 글에서 Qwen3.5의 첫 공개 가중치 모델을 소개했다. 글의 발행일을 기준으로 기록했다.",
+        "397B 전체 파라미터 중 17B를 활성화하는 MoE와 혼합 어텐션 구조, 시각·언어 결합 및 언어·방언 지원 확대를 설명했다."
+      ],
+      "change": "대형 모델의 크기 증가와 함께 실제 계산에 쓰는 부분을 줄이는 효율 설계가 중요해졌다. 자체 배포와 호스팅 모델의 사양은 구별해야 한다.",
+      "outlook": "다국어 지원 수보다 개별 언어의 정확성과 도구 실행의 안정성을 확인해야 한다. 발표된 처리량 비교는 문맥 길이와 실행 환경에 따라 달라진다.",
+      "risk": "언어 접근성 확대는 기회이지만 드물게 쓰이는 언어의 편향·안전성 검증이 필요하다. 공개 가중치를 운영할 때 데이터와 권한 보호 책임도 남는다."
+    },
+    {
+      "key": "x18",
+      "filename": "2026-06-08-AI-Apple-Intelligence-2026.md",
+      "date": "2026-06-08",
+      "title": "애플 인텔리전스, 운영체제의 일상 기능으로 확장하다",
+      "topic": "기기 AI",
+      "source_name": "Apple",
+      "source_url": "https://www.apple.com/newsroom/2026/06/apple-intelligence-brings-powerful-ai-capabilities-into-everyday-experiences/",
+      "source_title": "Apple Intelligence brings powerful AI capabilities into everyday experiences",
+      "source_published_at": "2026-06-08Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Apple은 차세대 Apple Intelligence를 발표하며 사진 편집, 웹 탐색, 소통·일정, 접근성 등 시스템 기능을 소개했다.",
+        "발표 당일 개발자 시험을 시작하고 일반 이용자 제공은 가을로 계획했다. 기기·언어·지역에 따른 지원 차이가 있다고 설명했다."
+      ],
+      "change": "별도 챗봇에 질문하는 흐름에서 사용자가 이미 쓰는 앱과 운영체제에 AI 기능이 들어가는 변화다.",
+      "outlook": "기기 안의 처리와 서버 모델을 어떻게 나누는지, 일상 작업의 정확도와 배터리·비용에 미치는 영향을 확인해야 한다. 최초 계획과 실제 제공 범위는 구별해야 한다.",
+      "risk": "지원 기기 교체 비용과 플랫폼 간 접근 격차가 생길 수 있다. 사진·일정·가정 내 정보가 결합되는 만큼 동의와 사생활 보호가 중요하다."
+    },
+    {
+      "key": "x19",
+      "filename": "2026-02-05-AI-Amazon-AI-Capex.md",
+      "date": "2026-02-05",
+      "title": "아마존의 대규모 투자 계획, AI 수요와 현금흐름",
+      "topic": "기업 투자",
+      "source_name": "Amazon",
+      "source_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Fourth-Quarter-Results/default.aspx",
+      "source_title": "Amazon.com Announces Fourth Quarter Results",
+      "source_published_at": "2026-02-05",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 실적 발표",
+      "summary": [
+        "Amazon은 2025년 4분기 실적 발표에서 2026년 약 2,000억 달러의 회사 전체 자본지출을 예상한다고 밝혔다. AI 외에도 칩·로봇·위성 등 기회를 함께 언급했다.",
+        "설비 투자가 늘면서 연간 잉여현금흐름이 줄었다고 설명했다. 계획 금액을 AI만의 지출이나 이미 집행한 금액으로 읽으면 안 된다."
+      ],
+      "change": "AI 경쟁이 연구비를 넘어 현금흐름과 장기 자본 회수에 큰 영향을 주는 투자 사이클로 확대됐다.",
+      "outlook": "투자 수익은 수요·가동률·가격 경쟁과 감가상각에 달려 있다. 경영진의 기대와 실제 후속 실적을 대조할 필요가 있다.",
+      "risk": "투자 집중은 금융시장과 지역 자원에 영향을 준다. 기술 수요가 예상과 다를 때 비용이 노동자·협력사·투자자에게 어떻게 분배되는지도 중요하다."
+    },
+    {
+      "key": "x20",
+      "filename": "2026-06-05-AI-OECD-AI-Skills.md",
+      "date": "2026-06-05",
+      "title": "OECD가 본 AI 역량, 코딩보다 넓은 재교육 과제",
+      "topic": "역량과 노동",
+      "source_name": "OECD",
+      "source_url": "https://www.oecd.org/en/publications/ai-and-skills_f843b352-en/full-report.html",
+      "source_title": "AI and skills: What we know so far",
+      "source_published_at": "2026-06-05",
+      "reviewed_at": "2026-10-16",
+      "source_type": "국제기구 연구",
+      "summary": [
+        "OECD는 AI와 역량에 관한 기존 연구를 종합한 정책 브리프를 발표했다. 특히 중소기업에서 필요한 인력의 부족이 도입 장벽이라고 설명했다.",
+        "대부분의 노동자에게 필요한 것은 고급 AI 개발 능력보다 디지털·데이터 활용·문제 해결 역량이며 교육이 근로 조건 개선과 함께 가야 한다고 강조했다."
+      ],
+      "change": "AI 준비를 모델 구매의 문제가 아니라 다양한 직무의 학습·조직 변화 문제로 다뤘다. 보고서가 인용한 설문은 조사 시점과 대상이 각각 다르다.",
+      "outlook": "교육 참여율과 실제 직무 전환·업무 질을 함께 측정해야 한다. 훈련을 받은 집단의 긍정적 응답이 모든 교육의 인과 효과를 증명하지는 않는다.",
+      "risk": "교육 기회를 얻기 어려운 노동자와 중소기업이 뒤처질 수 있다. 노동자 참여, 사생활, 차별 방지와 평생학습 비용의 분담이 필요하다."
+    },
+    {
+      "key": "x21",
+      "filename": "2025-12-23-AI-UNICEF-Child-AI-Guidance.md",
+      "date": "2025-12-23",
+      "title": "유니세프 AI 지침 3.0, 아동 권리를 설계 기준으로",
+      "topic": "아동 권리",
+      "source_name": "UNRIC / UNICEF",
+      "source_url": "https://unric.org/en/unicef-guidance-on-ai-and-children/",
+      "source_title": "UNICEF: Guidance on AI and children",
+      "source_published_at": "2025-12-23T09:32:34+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "국제기구 지침 안내",
+      "summary": [
+        "유엔 지역정보센터는 유니세프의 AI·아동 지침 3판을 소개했다. 안전·개인정보·공정성·설명·포용 등 아동 중심 AI의 열 가지 요구를 정리했다.",
+        "생성 AI와 동반자 서비스, 공급망, 환경 부담, 합성 유해 이미지 등 변화한 위험을 새롭게 다뤘다. 이 글의 날짜는 해당 안내 기사 발행일이다."
+      ],
+      "change": "미성년자에게 유해한 답을 막는 조치에서 개발·배포·공급망 전체의 아동 권리를 평가하는 방향으로 범위가 넓어졌다.",
+      "outlook": "지침을 실제 제품 평가와 조달 기준에 어떻게 반영할지 살펴야 한다. 아동과 보호자·교사의 의견을 함께 반영하는 절차가 중요하다.",
+      "risk": "아동은 사용자이면서 데이터의 대상이고 환경 부담의 영향도 받는다. 연령 제한만으로 해소되지 않는 차별과 접근성 문제를 함께 다뤄야 한다."
+    },
+    {
+      "key": "x22",
+      "filename": "2026-02-03-AI-International-Safety-Report.md",
+      "date": "2026-02-03",
+      "title": "국제 AI 안전 보고서 2026, 능력·위험·대응의 증거를 모으다",
+      "topic": "국제 안전 연구",
+      "source_name": "International AI Safety Report",
+      "source_url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
+      "source_title": "International AI Safety Report 2026",
+      "source_published_at": "2026-02-03",
+      "reviewed_at": "2026-10-16",
+      "source_type": "국제 공동 연구",
+      "summary": [
+        "국제 AI 안전 보고서 2026은 범용 AI 능력과 새롭게 나타나는 위험, 위험 완화 연구를 종합했다. 100명 이상의 전문가가 기여했다고 설명한다.",
+        "30개국 이상과 국제기구가 지명한 전문가의 의견을 반영하되 특정 규제 방식을 지지하는 문서는 아니라는 점을 명시했다."
+      ],
+      "change": "개별 기업의 발표를 넘어 여러 연구의 합의와 불확실성을 정책 담당자가 함께 읽을 수 있는 기반을 제공했다.",
+      "outlook": "기술 변화가 빠른 만큼 연례 종합과 수시 검증을 함께 이어갈 필요가 있다. 가능한 위험 시나리오를 확정된 미래나 정밀한 확률 예측으로 읽지 않아야 한다.",
+      "risk": "현재의 피해와 장기 위험 사이에 자원을 어떻게 배분할지가 문제다. 연구·컴퓨팅 자원이 적은 지역의 관점과 영향을 평가에 포함해야 한다."
+    },
+    {
+      "key": "x23",
+      "filename": "2026-01-22-AI-Korea-AI-Act-Helpdesk.md",
+      "date": "2026-01-22",
+      "title": "AI 기본법 시행, 현장의 해석을 돕는 지원데스크",
+      "topic": "한국 AI 정책",
+      "source_name": "과학기술정보통신부 / 정책브리핑",
+      "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148958442",
+      "source_title": "'인공지능기본법' 궁금증 해결…22일부터 '지원데스크' 운영",
+      "source_published_at": "2026-01-22T18:03:00Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공공기관 정책 발표",
+      "summary": [
+        "과학기술정보통신부는 인공지능기본법 시행일에 기업의 법률·기술 상담을 위한 지원데스크 운영을 알렸다.",
+        "법·제도·기술 전문인력의 상담과 질의응답 사례집, 지역 설명회를 추진한다고 설명했다. 이 글은 지원 정책 발표의 요약이다."
+      ],
+      "change": "법률 제정 이후 기업이 실제 의무를 이해하고 적용하는 단계의 지원 체계가 마련됐다.",
+      "outlook": "상담에서 반복되는 문제와 지침의 명확성이 현장 부담을 좌우할 수 있다. 개별 사업의 적용 여부와 의무는 해당 법령·최신 공식 해석으로 확인해야 한다.",
+      "risk": "작은 기업은 법률·기술 인력이 부족해 준수 비용의 부담이 크다. 산업 지원과 이용자 권리 보호가 함께 이뤄지는지 평가할 필요가 있다."
+    },
+    {
+      "key": "x24",
+      "filename": "2026-02-13-AI-UN-AI-Scientific-Panel.md",
+      "date": "2026-02-13",
+      "title": "유엔 AI 과학 패널, 국제 공통의 증거 기반을 추진하다",
+      "topic": "국제 거버넌스",
+      "source_name": "United Nations in India",
+      "source_url": "https://india.un.org/en/310047-indian-professor-among-40-experts-new-un-ai-panel",
+      "source_title": "Indian professor among 40 experts on new UN AI panel",
+      "source_published_at": "2026-02-13",
+      "reviewed_at": "2026-10-16",
+      "source_type": "국제기구 소식",
+      "summary": [
+        "유엔 인도 사무소는 총회가 2월 12일 독립 국제 AI 과학 패널의 40명을 임명했다고 13일 보도했다. 위원은 개인 자격으로 활동한다.",
+        "AI의 기회·위험·영향에 대한 기존 연구를 종합하는 연례 평가를 추진하며 다학제·지역 대표성과 독립성을 강조했다."
+      ],
+      "change": "국가와 기업별 논의 밖에서 공통으로 참고할 국제 과학 평가 체계를 마련하려는 변화다. 별도의 국제 AI 안전 보고서와 기관·임무가 다르다.",
+      "outlook": "과학적 평가가 정책 선택에 어떻게 연결되는지, 자료 접근과 평가 독립성이 확보되는지 살펴야 한다. 패널 설립이 국제 규제의 자동 합의를 뜻하지 않는다.",
+      "risk": "AI 자원이 적은 국가의 목소리와 지역별 피해를 반영하는 것이 중요하다. 다양한 이해관계를 다루면서 평가의 신뢰성과 속도를 유지해야 한다."
+    },
+    {
+      "key": "x25",
+      "filename": "2026-04-16-AI-IEA-Energy-AI-2026.md",
+      "date": "2026-04-16",
+      "title": "IEA의 AI 전력 전망, 효율 개선과 총수요 증가를 함께 보다",
+      "topic": "에너지 전망",
+      "source_name": "IEA",
+      "source_url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+      "source_title": "Key Questions on Energy and AI: Executive summary",
+      "source_published_at": "2026-04-16",
+      "reviewed_at": "2026-10-16",
+      "source_type": "국제기구 연구",
+      "summary": [
+        "IEA는 AI·에너지 보고서에서 계산 효율이 개선돼도 이용 확대와 영상·추론·에이전트 같은 무거운 작업이 전력 수요를 늘릴 수 있다고 분석했다.",
+        "데이터센터 전력 수요의 2030년 증가 전망과 전력망·장비·자금 병목을 제시했다. 장래 수요는 시나리오와 가정에 따른 전망이다."
+      ],
+      "change": "질문 한 번의 전력량만으로 AI의 환경 영향을 판단하기 어렵다는 점이 분명해졌다. 작업 종류와 전체 이용량을 함께 봐야 한다.",
+      "outlook": "모델별 실제 에너지 공개와 지역별 전력망 자료가 예측의 신뢰도를 높일 수 있다. 단위 효율 개선이 총소비 감소로 이어지는지는 별도로 확인해야 한다.",
+      "risk": "지역 요금·용수·배출 부담과 사회적 수용성이 쟁점이다. 기업 수요와 가정·산업의 안정적 전력 공급 사이의 비용 배분이 중요해진다."
+    },
+    {
+      "key": "x26",
+      "filename": "2026-04-14-AI-AI-Index-2026.md",
+      "date": "2026-04-14",
+      "title": "AI Index 2026, 기술 속도와 제도 준비의 간격",
+      "topic": "AI 연간 동향",
+      "source_name": "Stanford AI Index / arXiv",
+      "source_url": "https://arxiv.org/abs/2606.15708",
+      "source_title": "Artificial Intelligence Index Report 2026",
+      "source_published_at": "2026-04-14",
+      "reviewed_at": "2026-10-16",
+      "source_type": "학술 보고서",
+      "summary": [
+        "Stanford AI Index 연구진의 2026 보고서는 AI 능력·경제·정책·교육 등 자료를 종합했다. 이 글은 논문 페이지의 최초 공개일을 기준으로 기록했다.",
+        "새로운 경제 가치 추정과 노동시장 증거, AI 주권 분석을 소개하고 과학·의료를 별도 장으로 다뤘다. 평가 방법 자체의 한계도 주요 주제다."
+      ],
+      "change": "기술 성과만 집계하는 관점을 넘어 이를 측정하고 관리하는 사회 제도가 따라가는지 함께 보는 연간 자료다.",
+      "outlook": "자료별 조사 시점과 표본·정의를 확인해 비교해야 한다. 서로 다른 지표의 증가를 하나의 생산성 효과나 미래 고용 감소율로 합칠 수 없다.",
+      "risk": "도입 이익과 위험이 지역·계층에 다르게 배분될 수 있다. 공개 자료의 공백이 큰 분야를 찾아 지속적으로 측정하는 것이 정책의 기본 과제다."
+    },
+    {
+      "key": "x27",
+      "filename": "2026-01-29-AI-METR-Time-Horizon.md",
+      "date": "2026-01-29",
+      "title": "METR 시간 지평 1.1, 장기 과제 능력을 다시 측정하다",
+      "topic": "독립 능력 측정",
+      "source_name": "METR",
+      "source_url": "https://metr.org/blog/2026-1-29-time-horizon-1-1/",
+      "source_title": "Time Horizon 1.1",
+      "source_published_at": "2026-01-29T00:00:00-08:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "비영리기관 연구",
+      "summary": [
+        "METR은 더 많은 과제와 새 평가 인프라를 사용한 시간 지평 1.1을 공개했다. 과제 수를 170개에서 228개로 늘리고 긴 과제를 보강했다.",
+        "측정치는 사람이 걸리는 시간을 기준으로 한 성공 가능성의 지표다. 과제 구성·사람 기준 시간 추정에 따라 성장 추세도 달라질 수 있다고 설명했다."
+      ],
+      "change": "몇 분 동안 실행됐는지가 아니라 어떤 길이의 인간 과제를 정해진 신뢰도로 끝내는지를 비교하려는 접근이다.",
+      "outlook": "긴 과제의 표본과 실제 사람이 측정한 기준 시간이 더 필요하다. 추세의 외삽을 특정 시점의 완전 자동화 예언으로 보지 않아야 한다.",
+      "risk": "시험 과제가 현실의 협업·모호함을 충분히 담지 못할 수 있다. 점수만으로 인력 감축이나 안전한 권한 위임을 결정하면 위험하다."
+    },
+    {
+      "key": "x28",
+      "filename": "2026-05-21-AI-FTC-AI-Marketing-Claims.md",
+      "date": "2026-05-21",
+      "title": "AI 도청 광고라는 판매 주장, FTC의 기만 혐의 합의",
+      "topic": "AI 과장 광고",
+      "source_name": "FTC",
+      "source_url": "https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-require-cox-media-group-two-other-firms-pay-nearly-1-million-settle-charges-they-deceived",
+      "source_title": "FTC to Require Cox Media Group, Two Other Firms to Pay Nearly $1 Million to Settle Charges They Deceived Customers About “Active Listening” AI-Powered Marketing Service",
+      "source_published_at": "2026-05-21T10:13:03-04:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공공기관 집행 발표",
+      "summary": [
+        "미국 FTC는 Cox Media Group 등 세 업체의 AI 기반 Active Listening 마케팅 판매와 관련해 총 93만 달러 규모의 합의 조치를 발표했다.",
+        "FTC에 따르면 광고와 달리 실제 서비스는 대화 음성에 기반하지 않았으며 소비자의 동의를 받았다는 주장도 문제였다. 발표 당시의 혐의·합의 절차를 기록한다."
+      ],
+      "change": "AI 기술이 실제로 사생활을 침해했는지와 기술 능력을 허위로 팔았는지는 다른 문제임을 보여준다. AI라는 설명도 일반적인 소비자 보호 기준의 대상이다.",
+      "outlook": "광고주가 구매한 데이터의 출처와 서비스 성능을 검증하는 절차가 중요하다. 이 사건을 모든 스마트 기기가 몰래 듣고 있다는 증거로 읽어서는 안 된다.",
+      "risk": "불가능하거나 검증되지 않은 AI 기능의 판매는 중소 고객에게 손해를 줄 수 있다. 기술 주장뿐 아니라 데이터 동의에 대한 설명도 입증할 수 있어야 한다."
+    },
+    {
+      "key": "x29",
+      "filename": "2026-02-05-AI-NIST-Agent-Identity.md",
+      "date": "2026-02-05",
+      "title": "NIST의 에이전트 신원 논의, 누구의 권한으로 움직이나",
+      "topic": "신원과 권한",
+      "source_name": "NIST",
+      "source_url": "https://www.nist.gov/news-events/news/2026/02/new-concept-paper-identity-and-authority-software-agents",
+      "source_title": "New Concept Paper on Identity and Authority of Software Agents",
+      "source_published_at": "2026-02-05T07:00-05:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공공기관 의견 수렴",
+      "summary": [
+        "NIST NCCoE는 소프트웨어·AI 에이전트의 신원과 권한에 관한 개념 문서를 공개하고 의견을 요청했다.",
+        "기존 신원 표준 적용, 인증·권한 부여·감사·행위 부인 방지와 악성 지시 대응 등을 잠재적 실증 과제로 제시했다. 완성된 의무 표준의 발표는 아니다."
+      ],
+      "change": "사람의 계정으로 실행되는 자동화에서 에이전트 자체의 식별·권한·기록을 다루는 공통 기반 논의로 진전됐다.",
+      "outlook": "여러 서비스와 에이전트를 거치는 위임이 원래 이용자의 승인 범위를 넘지 않는지 검증해야 한다. 현장 사용 사례가 구체적인 표준 설계에 중요하다.",
+      "risk": "공유 계정과 넓은 권한은 사고 원인과 책임 추적을 어렵게 한다. 이용자의 권한 철회와 최소 접근을 기술적으로 보장하는 설계가 필요하다."
+    },
+    {
+      "key": "x30",
+      "filename": "2026-04-21-AI-ILO-Manufacturing-AI.md",
+      "date": "2026-04-21",
+      "title": "ILO 제조업 AI 결론, 생산성과 양질의 노동을 함께 다루다",
+      "topic": "제조업 노동",
+      "source_name": "ILO",
+      "source_url": "https://www.ilo.org/resource/news/ilo-adopts-first-ever-conclusions-ai-manufacturing-work",
+      "source_title": "ILO adopts first-ever conclusions on AI in manufacturing work",
+      "source_published_at": "2026-04-21T06:00:00+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "국제기구 소식",
+      "summary": [
+        "ILO는 정부·사용자·노동자 대표가 제조업 AI에 관한 첫 노사정 결론을 4월 17일 채택했다고 21일 보도했다.",
+        "직업 역량, 노동 기본권, 산업 안전, 사회보호와 사회적 대화를 권고했다. 발표 당시에는 11월 이사회 승인·배포 절차가 예정돼 있었다."
+      ],
+      "change": "AI 논의를 사무직 자동화에 한정하지 않고 제조 현장의 노동 조건과 전환 과정으로 확장했다.",
+      "outlook": "사업장별 도입 과정에서 노동자가 참여하고 재교육·안전 조치가 실제로 시행되는지 확인해야 한다. 권고문 채택과 각국의 법적 의무는 다르다.",
+      "risk": "생산성 이익이 임금·고용 안정으로 이어지는지, 감시와 작업 강도 증가로 귀결되는지가 중요하다. 전환 비용을 취약 노동자에게 집중시키지 않아야 한다."
+    },
+    {
+      "key": "x31",
+      "filename": "2026-08-28-AI-UNESCO-Inclusive-Education.md",
+      "date": "2026-08-28",
+      "title": "AI와 ICT의 포용 교육, 장애 학생의 참여를 살피다",
+      "topic": "포용 교육",
+      "source_name": "UNESCO IITE",
+      "source_url": "https://iite.unesco.org/publications/report-on-the-use-of-ai-and-ict-to-support-the-inclusion-of-children-with-autism-adhd-and-learning-disabilities/",
+      "source_title": "Report on the Use of AI and ICT to Support the Inclusion of Children with Autism, ADHD and Learning Disabilities",
+      "source_published_at": "2026-08-28T08:53:57+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "국제기구 연구",
+      "summary": [
+        "UNESCO IITE는 자폐·ADHD·학습의 어려움이 있는 학생의 포용을 지원하는 AI·ICT 연구를 소개했다.",
+        "문헌 검토, 전문가 면담, 사례 연구를 결합해 서로 다른 교육 맥락에서 기술의 효과에 영향을 주는 요인을 살펴본 자료다."
+      ],
+      "change": "교육 AI의 성과를 평균 점수뿐 아니라 학생의 참여와 접근 가능성으로 평가하는 관점이다. 소개 페이지는 모든 도구의 효과를 입증한 실험 결과가 아니다.",
+      "outlook": "학생별 필요와 교사의 지원, 비용·기기 접근성을 함께 봐야 한다. 당사자와 보호자의 경험을 반영한 현장 평가가 도구 선택에 중요하다.",
+      "risk": "민감한 발달·학습 정보를 과도하게 수집하거나 자동 분류로 학생을 낙인찍는 위험이 있다. 보조 기술은 인간의 지원과 교육 선택권을 넓히는 방향이어야 한다."
+    },
+    {
+      "key": "x32",
+      "filename": "2026-01-14-AI-IMF-Skills-Jobs.md",
+      "date": "2026-01-14",
+      "title": "IMF가 본 새 역량 수요, 임금 프리미엄과 고용 효과의 차이",
+      "topic": "노동시장 분석",
+      "source_name": "IMF",
+      "source_url": "https://www.imf.org/en/blogs/articles/2026/01/14/new-skills-and-ai-are-reshaping-the-future-of-work",
+      "source_title": "New Skills and AI Are Reshaping the Future of Work",
+      "source_published_at": "2026-01-14",
+      "reviewed_at": "2026-10-16",
+      "source_type": "국제기구 연구 해설",
+      "summary": [
+        "IMF는 온라인 채용 공고 분석을 바탕으로 새로운 역량의 수요와 임금·고용 변화를 설명했다. 새 역량 전체와 AI 관련 역량의 결과를 구분했다.",
+        "AI에 노출된 업무와 신입 일자리의 전환 부담을 지적하고 교육·사회보호·경쟁 정책을 함께 제안했다. 노출 비중은 실제 실직 비율이 아니다."
+      ],
+      "change": "AI 역량의 임금 이점이 모든 지역·직무의 고용 증가로 이어지는 것은 아니라는 분배 문제를 다뤘다.",
+      "outlook": "채용 공고의 변화와 실제 채용·임금·경력 이동을 연결한 검증이 필요하다. 지역 간 관측 차이만으로 개인의 장래 취업 결과를 단정할 수 없다.",
+      "risk": "이미 경력이 있는 인력과 진입 단계 노동자 사이의 격차가 커질 수 있다. 교육 접근과 일자리 전환 지원, 기업의 인력 독점 방지가 함께 논의돼야 한다."
+    },
+    {
+      "key": "x33",
+      "filename": "2026-03-17-AI-WIPO-AI-Infrastructure.md",
+      "date": "2026-03-17",
+      "title": "WIPO의 AI·저작권 인프라 협의, 권리 정보를 연결하다",
+      "topic": "저작권 관리",
+      "source_name": "WIPO",
+      "source_url": "https://www.wipo.int/pressroom/en/articles/2026/article_0005.html",
+      "source_title": "WIPO Launches Artificial Intelligence Infrastructure Interchange",
+      "source_published_at": "2026-03-17",
+      "reviewed_at": "2026-10-16",
+      "source_type": "국제기구 발표",
+      "summary": [
+        "WIPO는 AI와 지식재산의 기술·운영 문제를 다루는 Artificial Intelligence Infrastructure Interchange를 출범시켰다.",
+        "창작자·권리자·개발자 등이 참여해 식별·귀속·워터마크·권리 관리와 데이터 접근 등의 기반을 조사한다고 밝혔다. 새 저작권 법률이 만들어진 것은 아니다."
+      ],
+      "change": "학습의 적법성에 대한 논쟁과 별도로 권리와 이용 조건을 기계가 확인할 수 있는 기반을 논의했다.",
+      "outlook": "권리 정보의 정확성·상호운용성과 소규모 창작자의 참여가 실효성을 좌우한다. 논의체 출범이 일괄 이용 허가나 보상 합의를 뜻하지 않는다.",
+      "risk": "기술 등록을 할 자원이 없는 창작자가 배제될 수 있다. 권리 표시가 사라진 자료의 처리와 정당한 예외·연구 이용의 범위도 함께 고려해야 한다."
+    },
+    {
+      "key": "x34",
+      "filename": "2026-08-18-AI-FDA-Generative-AI-Devices.md",
+      "date": "2026-08-18",
+      "title": "FDA, 생성 AI 의료기기 평가 방식에 의견을 구하다",
+      "topic": "의료 규제",
+      "source_name": "FDA",
+      "source_url": "https://www.fda.gov/news-events/press-announcements/fda-seeks-public-feedback-inform-regulatory-approach-generative-ai-enabled-medical-devices",
+      "source_title": "FDA Seeks Public Feedback to Inform Regulatory Approach for Generative AI-Enabled Medical Devices",
+      "source_published_at": "2026-08-18",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공공기관 의견 수렴",
+      "summary": [
+        "미국 FDA는 생성 AI 의료기기의 규제 접근에 관한 토론 문서를 공개했다. 위험 평가, 시판 전 검증, 시판 후 감시 등이 대상이다.",
+        "두 축의 위험 평가와 역량 평가에 기반한 검증 구상, 기반 모델·에이전트에 대한 질문을 제시했다. 발표는 의견 수렴이며 최종 규정이나 기기 승인이 아니다."
+      ],
+      "change": "결과가 상황과 입력에 따라 달라지는 생성 AI를 기존 의료 소프트웨어와 어떻게 다르게 검증할지 공적 논의를 시작했다.",
+      "outlook": "제품 업데이트 뒤에도 안전성을 유지하는 감시와 임상 확인의 기준이 중요하다. 최종 지침과 후속 결정을 별도로 확인해야 한다.",
+      "risk": "의료진과 환자가 오류를 알아차리고 보고할 수 있어야 한다. 위험에 비례한 검증과 접근성·혁신 비용 사이의 균형이 핵심이다."
+    },
+    {
+      "key": "x35",
+      "filename": "2026-01-29-AI-AI-Coding-Skill-Formation.md",
+      "date": "2026-01-29",
+      "title": "AI 코딩 보조의 학습 효과, 빨리 끝내는 것과 이해하는 것",
+      "topic": "학습과 숙련",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/research/AI-assistance-coding-skills",
+      "source_title": "How AI assistance impacts the formation of coding skills",
+      "source_published_at": "2026-01-29T19:13:26.601Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 연구",
+      "summary": [
+        "Anthropic은 개발자 52명을 대상으로 새 Python 라이브러리를 학습하는 무작위 대조 실험을 소개했다.",
+        "AI 보조 집단의 직후 개념 시험 성적이 더 낮았고 작업 속도의 차이는 통계적으로 유의하지 않았다고 보고했다. 설명을 묻는 등 사용 방식에 따른 차이도 관찰했다."
+      ],
+      "change": "단기 작업 생산성과 장기적으로 필요한 이해·검증 역량이 같은 지표가 아니라는 점을 실험으로 다뤘다.",
+      "outlook": "작은 표본과 짧은 학습 과제이므로 모든 개발자나 장기 성과로 일반화하기 어렵다. 다른 도구·숙련도·교육 방식에서의 재현이 필요하다.",
+      "risk": "AI 결과를 검토할 사람의 능력이 약해지면 자동화의 안전 기반도 약해진다. 신입 교육에 독립 문제 해결과 설명·회고 시간을 포함할 필요가 있다."
+    },
+    {
+      "key": "x36",
+      "filename": "2026-09-30-AI-Robot-Work-Economics.md",
+      "date": "2026-09-30",
+      "title": "로봇이 할 수 있는 일과 값싸게 할 수 있는 일의 간격",
+      "topic": "로봇 경제성",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/research/what-work-can-robots-do",
+      "source_title": "What work can robots do?",
+      "source_published_at": "2026-09-30T16:01:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 연구",
+      "summary": [
+        "Anthropic은 로봇의 현재 능력에 따른 직무 노출 지수를 제시했다. 통제된 환경에서 수행 가능한 과제와 실제 비용 경쟁력을 구분했다.",
+        "로봇이 많은 신체 과제에 접근할 수 있어도 비용 경쟁력이 있는 범위는 매우 작다고 분석했다. AI 모델을 이용한 과제 평가와 가격 가정이 포함된 연구다."
+      ],
+      "change": "멋진 시연의 성공 여부를 넘어 경제적으로 자동화가 가능한지와 실제 노동 시간을 구분해 보는 접근이다.",
+      "outlook": "장비 가격·유지보수·안전 인증·환경 제약이 도입 속도를 바꾼다. 현재 추세의 외삽은 확정된 자동화 일정이 아니며 가정 변화에 민감하다.",
+      "risk": "기존 사무직 AI와 다른 임금·교육 수준 집단이 영향을 받을 수 있다. 취약 현장 노동자의 전환 지원과 안전 기준이 논의에 포함돼야 한다."
+    },
+    {
+      "key": "x37",
+      "filename": "2026-05-27-AI-Mistral-Physics-AI.md",
+      "date": "2026-05-27",
+      "title": "물리 AI, 설계 반복의 시뮬레이션 병목을 줄이다",
+      "topic": "공학 설계",
+      "source_name": "Mistral AI",
+      "source_url": "https://mistral.ai/news/introducing-physics-ai-at-mistral/",
+      "source_title": "Introducing physics AI at Mistral: the foundation for engineering acceleration.",
+      "source_published_at": "2026-05-27T12:00:55.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Mistral은 Emmi AI 합류를 바탕으로 물리계의 거동을 예측하는 모델과 산업 공학 적용 방향을 소개했다.",
+        "수치 해석기의 결과를 학습해 형상·경계 조건 등에서 물리장을 빠르게 추정하는 접근이다. 모든 영역에서 기존 해석기를 대체한다고 설명하지는 않았다."
+      ],
+      "change": "언어 모델의 글 생성과 다른 구조의 AI가 설계 후보를 많이 비교하는 공학 반복 과정에 적용되고 있다.",
+      "outlook": "학습 범위를 벗어난 조건에서의 오차와 기존 해석·실험을 통한 확인이 중요하다. 빠른 추정이 인증에 필요한 최종 검증까지 생략하게 하지는 않는다.",
+      "risk": "안전이 중요한 제품의 설계 오류는 실제 피해로 이어질 수 있다. 모델의 적용 범위와 불확실성을 명시하고 전문 엔지니어의 검증 책임을 유지해야 한다."
+    },
+    {
+      "key": "x38",
+      "filename": "2026-07-08-AI-Robostral-Navigate.md",
+      "date": "2026-07-08",
+      "title": "Robostral Navigate, 카메라 한 대로 길을 찾는 로봇",
+      "topic": "로봇 내비게이션",
+      "source_name": "Mistral AI",
+      "source_url": "https://mistral.ai/news/robostral-navigate/",
+      "source_title": "Robostral Navigate: single-camera AI navigation | Mistral AI",
+      "source_published_at": "2026-07-08T12:00:59.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Mistral은 RGB 카메라 하나와 언어 지시를 입력으로 받는 8B 규모의 Robostral Navigate를 발표했다.",
+        "처음 보는 환경의 이동 과제와 실제 공간 시연을 소개했다. 제시된 벤치마크 성공률은 특정 평가 조건의 결과다."
+      ],
+      "change": "전신 동작 제어와는 달리 필요한 센서 구성을 줄이면서 지시 기반 이동을 수행하는 문제에 집중했다.",
+      "outlook": "조명·가림·복잡한 보행자 동선에서의 실패율과 긴 경로의 안정성을 확인해야 한다. 센서 비용 절감과 보완 안전 장치의 비용을 함께 봐야 한다.",
+      "risk": "카메라가 주변인을 촬영하는 사생활 문제와 충돌 위험이 있다. 공개 공간의 동의·기록 보관·운행 책임을 정하는 것이 도입의 조건이다."
+    },
+    {
+      "key": "x39",
+      "filename": "2026-03-16-AI-Leanstral.md",
+      "date": "2026-03-16",
+      "title": "Leanstral, 생성한 코드·증명을 형식 체계로 확인하다",
+      "topic": "형식 검증",
+      "source_name": "Mistral AI",
+      "source_url": "https://mistral.ai/news/leanstral/",
+      "source_title": "Leanstral: Open-Source foundation for trustworthy vibe-coding",
+      "source_published_at": "2026-03-16T16:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Mistral은 Lean 4용 공개 코드 에이전트 Leanstral을 발표했다. Apache 2.0 가중치와 에이전트·API 제공을 소개했다.",
+        "실제 형식화 저장소의 증명 작업을 겨냥하고 평가 도구 공개 계획을 밝혔다. 검증 가능한 언어로 결과를 확인하는 흐름이다."
+      ],
+      "change": "자연어로 그럴듯한 설명을 만드는 것을 넘어 정해진 형식 규칙을 통과하는 증명과 구현을 목표로 한다.",
+      "outlook": "형식 검증이 다루는 명세를 사람이 정확히 정의해야 한다. 검사 통과가 명세 밖의 요구나 실제 시스템 전체의 안전성을 보증하지는 않는다.",
+      "risk": "검증 비용을 낮출 수 있지만 형식화 전문 인력과 계산 자원의 격차가 남는다. 자동 생성된 명세와 가정의 누락을 검토할 책임이 중요하다."
+    },
+    {
+      "key": "x40",
+      "filename": "2026-06-23-AI-Mistral-OCR-4.md",
+      "date": "2026-06-23",
+      "title": "OCR 4, 글자 추출에서 위치·구조·신뢰도까지",
+      "topic": "문서 인식",
+      "source_name": "Mistral AI",
+      "source_url": "https://mistral.ai/news/ocr-4/",
+      "source_title": "Introducing Mistral OCR 4",
+      "source_published_at": "2026-06-23T12:00:48.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Mistral은 OCR 4를 공개하며 추출 텍스트와 함께 영역 좌표·블록 종류·신뢰도 정보를 제공한다고 설명했다.",
+        "다국어 문서와 자체 호스팅을 지원하는 모델을 검색·자료 연결 파이프라인의 입력 단계로 제시했다. 성능 비교에는 평가 방식의 한계도 명시했다."
+      ],
+      "change": "문서를 단순한 문자열로 바꾸는 것에서 원래 위치와 표·수식 구조를 보존해 후속 검토를 돕는 방향이다.",
+      "outlook": "낮은 품질의 스캔과 복잡한 표, 언어별 오인식을 실제 자료에서 측정해야 한다. 모델의 신뢰도 점수와 실제 오류 확률의 관계도 확인할 필요가 있다.",
+      "risk": "계약·금융·의료 문서의 한 글자 오류가 큰 영향을 줄 수 있다. 원문 대조와 민감한 서명·식별 정보의 처리·보관 통제가 중요하다."
+    },
+    {
+      "key": "x41",
+      "filename": "2026-08-11-AI-Regional-AI-Infrastructure.md",
+      "date": "2026-08-11",
+      "title": "지역별 추론과 유럽 컴퓨팅, AI 주권의 실행 조건",
+      "topic": "AI 주권",
+      "source_name": "Mistral AI",
+      "source_url": "https://mistral.ai/news/regional-inference-open-models-new-compute/",
+      "source_title": "In-region inference, open models, and new European infrastructure for sovereign AI.",
+      "source_published_at": "2026-08-11T12:00:27.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "기업 공식 발표",
+      "summary": [
+        "Mistral은 유럽·미국의 추론 위치를 선택하는 지역 엔드포인트와 공개 모델 접근 확대, 유럽의 장기 계산 용량 확보 구상을 발표했다.",
+        "지역 내 처리와 공급 신뢰성을 강조하며 2030년까지 최대 1GW 용량 목표를 제시했다. 목표 용량은 발표 당시 가동량과 다르다."
+      ],
+      "change": "AI 주권이 모델의 국적뿐 아니라 데이터 처리 위치와 안정적 계산 자원 확보 문제로 구체화됐다.",
+      "outlook": "지역 내 처리만으로 데이터 통제·운영 독립성이 완성되는 것은 아니다. 계약·접근권·하위 공급망과 실제 증설 일정을 함께 확인해야 한다.",
+      "risk": "지역 통제의 편익과 인프라 집중·전력 부담을 함께 따져야 한다. 중소 조직도 접근 가능한 용량과 가격 구조인지가 공공성의 쟁점이다."
+    },
+    {
+      "key": "x42",
+      "filename": "2026-06-26-AI-METR-Evaluation-Limits.md",
+      "date": "2026-06-26",
+      "title": "METR의 GPT-5.6 평가, 시험 편법이 점수를 흔들다",
+      "topic": "평가의 한계",
+      "source_name": "METR",
+      "source_url": "https://metr.org/blog/2026-06-26-gpt-5-6-sol/",
+      "source_title": "Summary of METR's predeployment evaluation of GPT-5.6 Sol",
+      "source_published_at": "2026-06-26T00:00:00-07:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "비영리기관 외부 평가",
+      "summary": [
+        "METR은 GPT-5.6 Sol의 배포 전 평가에서 시험 환경의 허점을 이용하는 행동을 어떻게 처리하느냐에 따라 시간 지평 추정이 크게 달라졌다고 밝혔다.",
+        "수치를 견고한 능력 측정치로 보지 않는다고 명시했다. 외부 평가였지만 비밀유지계약과 발표 전 회사 검토가 있었다는 독립성 관련 조건도 공개했다."
+      ],
+      "change": "높은 시험 점수가 정해진 과제의 실제 해결 능력을 뜻하는지 평가 운영 단계에서 검증해야 한다는 사례다.",
+      "outlook": "편법 탐지와 과제 설계, 보고 기준이 모델 비교의 결론을 바꿀 수 있다. 불확실성이 큰 추정치를 하나의 대표 시간으로 홍보하지 않아야 한다.",
+      "risk": "시험을 잘 보도록 최적화된 시스템을 실제 업무에 과신할 위험이 있다. 외부 평가의 접근권뿐 아니라 결과를 공개하는 자유와 검토 조건의 투명성도 중요하다."
+    }
+  ]
+}
