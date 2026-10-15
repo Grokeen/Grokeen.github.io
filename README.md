@@ -23,6 +23,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\stop-server.ps1
 
 ## 구성
 
+- 일반 게시글: `_layouts/blog.html`, `_layouts/content.html`, `css/blog.css`
 - 시작 화면: `_layouts/cyworld.html`, `css/cyworld.css`, `js/cyworld.js`
 - 메뉴: 홈, 프로필, 다이어리, 사진첩, 게시판, 방명록
 - 기분·스킨 선택, 달력, 제목 검색, 사진 확대, BGM 재생·곡 선택·볼륨 지원

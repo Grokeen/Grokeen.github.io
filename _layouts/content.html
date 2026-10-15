@@ -1,82 +1,33 @@
-<!-- 포스트 내용 인덱스 -->
-
-<!DOCTYPE HTML>
-<html lang="ko-KR">
-
-<head>
-  <script src="/js/jquery-2.1.0.min.js"></script>
-</head>
-
-<body>
-  <!-- 헤더 -->
-  <header>
-    {% include header.html %}
+---
+layout: blog
+---
+<article class="article-page" itemscope itemtype="https://schema.org/BlogPosting">
+  <nav class="article-breadcrumb" aria-label="현재 위치">
+    <a href="{{ '/url.html/blogindex/' | relative_url }}">게시글 목록</a>
+    {% if page.categories.size > 0 %}<span aria-hidden="true">/</span><span>{{ page.categories | join: ' · ' | escape }}</span>{% endif %}
+  </nav>
+  <header class="article-header">
+    <p class="section-label">SMALL NOTES</p>
+    <h1 itemprop="headline">{{ page.title | escape }}</h1>
+    {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%Y년 %m월 %d일' }}</time>{% endif %}
   </header>
-
-
-
-  <!-- 본문 시작 -->
-  <div id="container">
-    <!-- 게시물 내용 시작 -->
-    <div id="main" class="post" itemscope itemprop="blogPost">
-      <article itemprop="articleBody">
-        <!-- 블로그 제목 -->
-        <header class="article-info clearfix">
-          <h1 itemprop="name">
-
-            <a href="#" title="{{ page.title }}" itemprop="url">{{ page.title }}</a>
-          </h1>
-          <p class="article-time">
-            <time datetime="{{ page.date }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>
-          </p>
-        </header>
-
-        <!-- 블로그 내용 -->
-        <figure class="highlight bash">
-          <br>
-          <!-- Fixme 마크다운이 css가 적용이 안되게 적용해야함 -->
-          <div class="no-style-markdown">
-            {{ content }}
-          </div>
-          
-          <br>
-        </figure>
-
-        <!-- 블로그 하단 -->
-        <footer class="article-footer clearfix">
-          <div class="article-share" id="share">
-            <div data-url="{{ site.url }}{{ page.url }}" data-title="{{ page.title }} | {{ site.title }}"
-              data-tsina="null" class="share clearfix">
-            </div>
-          </div>
-          
-        </footer>
-      </article>
-    </div>
-    <!-- 게시물 내용 끝 -->
-
-
-
-
-    <!-- 우측 바  -->
-    {% include rightbar.html %}
-
-
+  <div class="article-content" itemprop="articleBody">
+    {% assign article_body = content | strip %}
+    {% if article_body != '' %}
+      {{ content }}
+    {% else %}
+      <p class="empty-article">아직 본문이 작성되지 않은 글입니다.</p>
+    {% endif %}
   </div>
-  <!-- 본문 끝 -->
-
-
-  <!-- 푸터 -->
-  {% include footer.html %}
-
-
-
-
-
-  <!-- 추가 푸터 -->
-  {% include footerPlusMenu.html %}
-
-
-</body>
-
-</html>
+  <footer class="article-navigation" aria-label="게시글 이동">
+    <a href="{{ '/url.html/blogindex/' | relative_url }}">← 게시글 목록으로</a>
+    <div class="adjacent-posts">
+      {% if page.previous and page.previous.layout != 'wedding' %}
+        <a class="previous-post" href="{{ page.previous.url | relative_url }}"><small>이전 글</small><span>{{ page.previous.title | escape }}</span></a>
+      {% endif %}
+      {% if page.next and page.next.layout != 'wedding' %}
+        <a class="next-post" href="{{ page.next.url | relative_url }}"><small>다음 글</small><span>{{ page.next.title | escape }}</span></a>
+      {% endif %}
+    </div>
+  </footer>
+</article>

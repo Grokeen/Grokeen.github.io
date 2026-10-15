@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.title | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/blog.css' | relative_url }}">
+</head>
+<body class="blog-page">
+  <a class="skip-link" href="#main-content">본문 바로가기</a>
+  <div class="blog-shell">
+    <div class="blog-caption"><span aria-hidden="true">●</span> 사이좋은 작은 세상 <span>SMALL NOTES</span></div>
+    <div class="blog-cover">
+      <div class="blog-stitch">
+        <div class="blog-paper">
+          <header class="blog-header">
+            <a class="blog-brand" href="{{ '/' | relative_url }}">작은 기록 보관함 <span aria-hidden="true">♡</span></a>
+            <nav class="blog-nav" aria-label="사이트 메뉴">
+              <a href="{{ '/' | relative_url }}">미니홈피</a>
+              <a href="{{ '/url.html/blogindex/' | relative_url }}">게시글 목록</a>
+              <a href="{{ '/#board' | relative_url }}">글 찾기</a>
+            </nav>
+          </header>
+          <main id="main-content" class="blog-main" tabindex="-1">
+            {{ content }}
+          </main>
+          <footer class="blog-footer">
+            <span>평범해서 더 소중한, 작은 기록들.</span>
+            <a href="#main-content">위로 ↑</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

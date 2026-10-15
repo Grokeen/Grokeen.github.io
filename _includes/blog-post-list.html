@@ -1,0 +1,28 @@
+{% assign blog_posts = site.posts | where_exp: 'post', "post.layout != 'wedding'" %}
+{% if include.only_unpinned %}
+  {% assign blog_posts = blog_posts | where: 'pin', false %}
+{% endif %}
+<section class="post-archive" aria-labelledby="archive-title">
+  <header class="archive-header">
+    <p class="section-label">BOARD</p>
+    <h1 id="archive-title">게시글 모아보기</h1>
+    <p>차곡차곡 담아둔 {{ blog_posts.size }}개의 기록</p>
+  </header>
+  <ol class="archive-list">
+    {% for post in blog_posts %}
+      <li>
+        <article class="archive-entry">
+          <div class="archive-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time>
+            {% if post.pin %}<span class="pinned-label">추천 글</span>{% endif %}
+          </div>
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+          <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 170 | escape }}</p>
+          <a class="entry-link" href="{{ post.url | relative_url }}" aria-label="{{ post.title | escape }} 읽기">글 읽기 <span aria-hidden="true">→</span></a>
+        </article>
+      </li>
+    {% else %}
+      <li class="empty-archive">아직 등록된 게시글이 없어요.</li>
+    {% endfor %}
+  </ol>
+</section>
