@@ -7,6 +7,14 @@ exclude:
   - .jekyll-local
   - .sass-cache
   - _site
+  - _docs
+  - scripts
+  - tests
+  - node_modules
+  - package.json
+  - package-lock.json
+  - git
+  - jekyllTool
   - Gemfile
   - Gemfile.lock
   - README.md

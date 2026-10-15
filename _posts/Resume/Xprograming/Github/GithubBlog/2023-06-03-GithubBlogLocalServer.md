@@ -41,7 +41,7 @@ bundle exec jekyll serve
 ~~~
 ### 첫 번째 오류 발생
 ~~~
-Configuration file: /Users/kim-yongrok/Github_Blog/Grokeen.github.io/_config.yml
+Configuration file: /projects/mini-homepage/_config.yml
                     ------------------------------------------------
       Jekyll 4.3.1   Please append `--trace` to the `serve` command 
                      for any additional information or backtrace. 
@@ -60,7 +60,7 @@ bundler: failed to load command: jekyll (/usr/local/bin/jekyll)
 ~~~
 sudo gem install bundler
 ~~~
-#### Bundler를 사용하여 Jekyll과 관련된 종속성을 설치합니다. 깃허브 블로그 저장소의 루트 디렉토리(예: /Users/kim-yongrok/Github_Blog/Grokeen.github.io)로 이동한 후 다음 명령어를 실행합니다:
+#### Bundler를 사용하여 Jekyll과 관련된 종속성을 설치합니다. 깃허브 블로그 저장소의 루트 디렉토리(예: /projects/mini-homepage)로 이동한 후 다음 명령어를 실행합니다:
 ~~~
 bundle install
 ~~~
@@ -137,7 +137,7 @@ bundle exec jekyll serve
 ~~~
 ### 여섯 번 째 오류 발생, 도루마무인가... 첫번 째 오류 발생
 ~~~
-Configuration file: /Users/kim-yongrok/Github_Blog/Grokeen.github.io/_config.yml
+Configuration file: /projects/mini-homepage/_config.yml
   Dependency Error: Yikes! It looks like you don't have jekyll-sitemap or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. If you've run Jekyll with `bundle exec`, ensure that you have included the jekyll-sitemap gem in your Gemfile as well. The full error message from Ruby is: 'cannot load such file -- jekyll-sitemap' If you run into trouble, you can find helpful resources at https://jekyllrb.com/help/! 
                     ------------------------------------------------
       Jekyll 4.3.1   Please append `--trace` to the `serve` command 
@@ -256,4 +256,4 @@ _layout에서 _layouts로 변경하니 인식된다.
  Liquid 템플릿 문법을 숙지해야 한다는 것을 알았다.
 
 
-[운영서버 로그 확인](https://github.com/Grokeen/Grokeen.github.io/actions)
+[운영서버 로그 확인](https://github.com/OWNER/REPOSITORY/actions)

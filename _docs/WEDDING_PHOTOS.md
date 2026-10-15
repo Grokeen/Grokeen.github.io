@@ -109,7 +109,7 @@ Scene: a quiet garden terrace beside a cream stone wall at golden hour, muted ol
 - 생성·반영 일시: 2026-10-06 00:15:10 KST
 - 생성 방식: 내장 `image_gen` 도구. 별도 API·CLI는 사용하지 않았습니다.
 - 용도: 청첩장 대표 이미지와 갤러리를 확인하기 위한 테스트 사진. 인물과 장면은 가상으로 생성했습니다.
-- 저장 폴더: `D:\kimyongrok\Grokeen.github.io\img\wedding\`
+- 저장 폴더: `C:\projects\mini-homepage\img\wedding\`
 - 웹용 JPEG는 원본 해상도를 유지하고 품질 88로 인코딩했습니다. 사진 내용과 구도는 수정하지 않았습니다.
 - 생성 원본 PNG는 기본 생성 폴더에 유지하고, 작업 폴더의 `.jekyll-local/imagegen-originals/`에도 복사했습니다.
 

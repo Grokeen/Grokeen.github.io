@@ -1,8 +1,8 @@
 # 로컬 서버 실행 가이드
 
 - 문서 작성 일시: 2026-10-04 15:33:14 KST (한국 표준시, UTC+09:00)
-- 저장소: https://github.com/Grokeen/Grokeen.github.io
-- 작업 폴더: `D:\kimyongrok\Grokeen.github.io`
+- 저장소: https://github.com/OWNER/REPOSITORY
+- 작업 폴더: `C:\projects\mini-homepage`
 - 기본 접속 주소: http://localhost:4000
 
 ## 1. 실행 환경
@@ -16,7 +16,7 @@
 | Jekyll | 4.3.4 |
 | Windows 컴파일 도구 | RubyInstaller에 포함된 MSYS2 Devkit |
 
-Ruby 설치 경로는 `D:\kimyongrok\tools\Ruby33-x64`입니다. 실행 스크립트는 PATH에 있는 Ruby를 먼저 찾고, 없으면 이 작업 폴더의 상위 `tools\Ruby33-x64` 경로를 사용합니다.
+Ruby 설치 경로는 `C:\tools\Ruby33-x64`입니다. 실행 스크립트는 PATH에 있는 Ruby를 먼저 찾고, 없으면 상위 `tools\Ruby33-x64`, 시스템 드라이브의 `Ruby33-x64`, 사용자 프로그램 폴더를 확인합니다.
 
 Ruby가 없는 PC에서는 다음 명령으로 Ruby 3.3과 Devkit을 설치한 뒤 새 PowerShell 창을 엽니다.
 
@@ -29,7 +29,7 @@ winget install --id RubyInstallerTeam.RubyWithDevKit.3.3 --exact --source winget
 PowerShell에서 다음 명령을 실행합니다.
 
 ```powershell
-Set-Location "D:\kimyongrok\Grokeen.github.io"
+Set-Location "C:\projects\mini-homepage"
 ```
 
 아래 명령들은 이 폴더에서 실행합니다.
@@ -133,18 +133,18 @@ Get-Content .\.jekyll-local\server.log -Encoding UTF8 -Tail 20 -Wait
 | `Port 4000 is already in use` | 다른 프로그램이 포트를 사용 중인지 확인하거나 `-Port 4001`로 실행합니다. |
 | `Jekyll failed to start` | `.jekyll-local/server-error.log`에서 빌드 오류를 확인합니다. |
 | `Jekyll is still starting` | 시작 확인 제한 시간은 120초입니다. 로그에서 빌드 진행 상황을 확인합니다. |
-| 기존 게시글의 레이아웃 누락·URL 중복 경고 | 이번 구동 확인에서 남아 있던 콘텐츠 경고입니다. 게시글의 레이아웃과 permalink를 별도로 정리해야 합니다. |
+| 기존 게시글의 레이아웃 누락·URL 중복 경고 | 게시글의 레이아웃과 permalink를 확인합니다. |
 
 이번 작업에서 홈페이지, 메뉴 페이지, CSS, 이미지, 피드와 사이트맵의 HTTP 200 응답을 확인했습니다. 자세한 변경 내역은 [업데이트 기록](UPDATE_HISTORY.md)을 참고합니다.
 
 ## 10. 배포용 빌드와 GitHub 업로드
 
-배포용 빌드는 로컬 설정을 제외하고 `_config.yml`만 사용합니다. 이 설정의 사이트 주소는 `https://Grokeen.github.io`이며, 시간대는 `Asia/Seoul`입니다.
+배포용 빌드는 로컬 설정을 제외하고 `_config.yml`만 사용합니다. `url`에 배포 주소를 입력해야 하며, 시간대는 `Asia/Seoul`입니다.
 
 Ruby가 PATH에 등록되어 있지 않은 현재 PC에서는 먼저 다음 명령을 실행합니다. 다른 PC에서는 설치한 Ruby의 `bin` 경로를 사용합니다.
 
 ```powershell
-$env:Path = "D:\kimyongrok\tools\Ruby33-x64\bin;$env:Path"
+$env:Path = "C:\tools\Ruby33-x64\bin;$env:Path"
 ```
 
 저장소 폴더에서 배포용 정적 HTML·CSS·JavaScript·이미지를 생성합니다.
@@ -155,7 +155,7 @@ bundle exec jekyll build --config _config.yml --destination .jekyll-local/produc
 Remove-Item Env:\JEKYLL_ENV
 ```
 
-결과는 `.jekyll-local/production-site/`에 생성됩니다. 기존 `_site/`와 실행 중인 로컬 서버 결과를 덮어쓰지 않습니다. 실행 스크립트, 문서, 설치된 gem과 임시 파일은 배포용 출력에서 제외합니다.
+결과는 `.jekyll-local/production-site/`에 생성됩니다. 실행 중인 로컬 서버 결과를 덮어쓰지 않습니다. `_site/`는 Git에서 제외합니다. 실행 스크립트, 문서, 설치된 gem과 임시 파일은 배포용 출력에서 제외합니다.
 
 검증한 소스와 이미지·문서를 커밋한 뒤 업로드합니다.
 

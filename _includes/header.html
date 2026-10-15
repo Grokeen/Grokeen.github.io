@@ -14,13 +14,13 @@
 		<!-- 로고 사진 -->
 		<div id="imglogo">
 			<a href="/">
-				<img src="/img/logo.svg" alt="Grokeen" title="Grokeen" />
+				<img src="/img/logo.svg" alt="미니홈피" title="미니홈피" />
 			</a>
 		</div>
 
 		<!-- 이름/상태 메세지 -->
 		<div id="textlogo">
-			<h1 class="site-name"><a href="/" title="Grokeen">Grokeen</a></h1>
+			<h1 class="site-name"><a href="/" title="미니홈피">미니홈피</a></h1>
 			<h2 class="blog-motto">슈렉도 헐크처럼</h2>
 		</div>
 
@@ -33,7 +33,7 @@
 		<!-- 상단 카테로그 -->
 		<nav class="animated">
 			<ul>
-				<li><a href="/url.html/index/blogindex.html">Home</a></li>
+				<li><a href="{{ "/url.html/blogindex/" | relative_url }}">Home</a></li>
 				<!-- <li><a href="tag_EX.html">Post</a></li> -->
 				<li>
 
@@ -42,7 +42,6 @@
 						<label>Search</label>
 						<input type="text" id="search" name="q" autocomplete="off" maxlength="20"
 							placeholder="search" />
-						<input type="hidden" name="q" value="site:weibo.com/u/1839008305">
 					</form>
 
 				</li>

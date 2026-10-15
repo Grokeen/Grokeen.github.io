@@ -1,87 +1,93 @@
----
-layout: default
----
-<!DOCTYPE HTML>
-<html lang="ko-KR">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-	<title>{{site.title}}</title>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://example.com;">
-    <link rel="apple-touch-icon" href="/pacman.jpg">
-	<link rel="apple-touch-icon-precomposed" href="/pacman.jpg">
-    <link rel="stylesheet" href="/css/cyworld.css" type="text/css">
-    <!-- <link rel="stylesheet" href="/css/audio.css" type="text/css"> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="작은 방, 작은 기록. 추억을 담는 미니홈피">
+  <title>{{ site.title | escape }}</title>
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/cyworld.css' | relative_url }}">
+  <script src="{{ '/js/cyworld.js' | relative_url }}" defer></script>
 </head>
 <body>
-    <!-- 202405191253 김용록 오디오 css 주석 -->
-    <!-- <div class="player">
-        <div class="control">
-            <i class="fas fa-play player__play"></i>
-        </div>
-        <div class="player__info">
-            처음 뵙겠습니다(with 휘성)_지나
-            <div class="player__bar">
-                <div class="player__progress"></div>
+  <a class="skip-link" href="#main-content">본문 바로가기</a>
+  <div class="desktop">
+    <div class="desktop-caption"><span class="brand-mark">●</span> 사이좋은 작은 세상 <span>MINI HOMEPAGE</span></div>
+    <div class="desktop-layout">
+      <main class="book-cover" id="main-content">
+        <div class="book-stitch"><div class="book-paper">
+          <header class="book-header">
+            <p class="visit-counter"><span>TODAY <b>0</b></span><i>|</i><span>TOTAL <strong>0</strong></span></p>
+            <div class="homepage-heading"><h1>작은 순간들이 모이는 곳 <span>♡</span></h1><span class="homepage-address">나의 미니홈피</span></div>
+          </header>
+          <div class="book-spread">
+            <aside class="profile-paper" aria-label="미니홈피 프로필">
+              <div class="mood-box"><label for="mood">TODAY IS..</label><select id="mood"><option value="happy">☀ 행복</option><option value="calm">☁ 여유</option><option value="excited">✿ 설렘</option><option value="rainy">☂ 센치</option></select></div>
+              <div class="profile-picture"><img src="{{ '/img/cyworld/avatar.svg' | relative_url }}" alt="초록색 옷을 입은 기본 미니미" width="180" height="172"></div>
+              <p class="profile-greeting">어서 와요, 반가워요.<br>잠깐 쉬었다 가도 좋아요 <span> : )</span></p>
+              <p class="profile-quote">평범해서 더 소중한<br>오늘의 조각들.</p>
+              <div class="profile-bottom">
+                <div class="profile-tools"><button type="button" data-open-panel="profile">▸ EDIT</button><button type="button" data-open-panel="diary">HISTORY</button><span>▴ ▾</span></div>
+                <h2>미니홈피 <span>♡</span></h2><p class="profile-description">작은 기록 보관함</p>
+                <label class="wave-label" for="wave-select">일촌 파도타기</label><select id="wave-select"><option value="">파도타기 ୨୧</option><option value="board">게시판 둘러보기</option><option value="photos">사진첩 구경하기</option><option value="guestbook">방명록 남기기</option></select>
+              </div>
+            </aside>
+            <div class="binder-rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <div class="content-paper">
+              <section class="page-panel" id="panel-home" role="tabpanel" aria-labelledby="tab-home">
+                <section class="news-section">
+                  <h2 class="section-title">Updated news <span>작은 소식들</span></h2>
+                  <div class="news-columns">
+                    <ul class="news-list">
+                      {% for post in site.posts limit:3 %}<li><span class="post-badge">게시판</span><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><span class="new-mark">N</span></li>{% endfor %}
+                      <li><span class="post-badge coral">알림</span><button type="button" data-open-panel="guestbook">다녀간 흔적을 남겨주세요 ♡</button></li>
+                    </ul>
+                    <dl class="content-counts"><div><dt>다이어리</dt><dd data-diary-count>0</dd></div><div><dt>사진첩</dt><dd>3</dd></div><div><dt>게시판</dt><dd>{{ site.posts.size }}</dd></div><div><dt>방명록</dt><dd data-guest-count>0</dd></div></dl>
+                  </div>
+                </section>
+                <section class="miniroom-section">
+                  <div class="miniroom-heading"><div role="tablist" aria-label="미니룸 보기"><button id="room-tab-life" type="button" role="tab" aria-selected="false" aria-controls="room-life" tabindex="-1" data-room="life">Minilife</button><button id="room-tab-room" type="button" role="tab" aria-selected="true" aria-controls="room-room" data-room="room">Miniroom</button><button id="room-tab-story" type="button" role="tab" aria-selected="false" aria-controls="room-story" tabindex="-1" data-room="story">Storyroom</button></div><span class="room-weather" aria-label="맑은 날">☀</span></div>
+                  <div id="room-room" class="room-view" role="tabpanel" aria-labelledby="room-tab-room"><div class="room-picture"><img src="{{ '/img/cyworld/cyworld.jpeg' | relative_url }}" alt="책상, 침대와 곰 인형이 있는 아늑한 픽셀 미니룸" width="1280" height="655"></div></div>
+                  <div id="room-life" class="room-view minilife" role="tabpanel" aria-labelledby="room-tab-life" hidden><img src="{{ '/img/cyworld/avatar.svg' | relative_url }}" alt="기본 미니미"><p>오늘도 나만의 속도로 <span>♡</span><small>작은 여유를 챙겨 보세요.</small></p></div>
+                  <div id="room-story" class="room-view storyroom" role="tabpanel" aria-labelledby="room-tab-story" hidden><img src="{{ '/img/cyworld/sunset.svg' | relative_url }}" alt="노을이 지는 픽셀 풍경"><p>오늘의 하늘을 오래 기억하기.</p></div>
+                  <div class="room-toolbar"><span>ㆍ내 미니룸에 놀러 온 걸 환영해요!</span><button type="button" data-open-panel="profile">미니홈피 꾸미기</button></div>
+                </section>
+                <section class="friends-section"><h2 class="section-title">What friends say <span>일촌평</span></h2><form id="friend-form" class="friend-form"><label class="sr-only" for="friend-message">일촌평</label><input id="friend-message" maxlength="80" placeholder="따뜻한 한마디를 남겨주세요." required><button type="submit">확인</button></form><ul id="friend-list" class="friend-list"><li class="empty-friend">아직 일촌평이 없어요. 첫 인사를 남겨주세요 <span>♡</span></li></ul></section>
+              </section>
+              <section class="page-panel" id="panel-profile" role="tabpanel" aria-labelledby="tab-profile" hidden>
+                <h2 class="section-title">Profile <span>미니홈피 이야기</span></h2><div class="profile-intro"><img src="{{ '/img/cyworld/avatar.svg' | relative_url }}" alt="기본 미니미"><h3>반가워요, 여기는 미니홈피예요.</h3><p>좋아하는 풍경, 작은 생각, 소소한 인사를<br>차곡차곡 담아두는 공간.</p><p>서두르지 말고, 편하게 둘러봐 주세요.</p></div>
+                <fieldset class="skin-picker"><legend>오늘은 어떤 색으로 꾸밀까요?</legend><button type="button" class="skin-swatch blue" data-skin="blue" aria-label="하늘색 스킨" aria-pressed="true"></button><button type="button" class="skin-swatch pink" data-skin="pink" aria-label="분홍색 스킨" aria-pressed="false"></button><button type="button" class="skin-swatch green" data-skin="green" aria-label="초록색 스킨" aria-pressed="false"></button></fieldset><p class="small-note">기분과 스킨은 이 창에서 자유롭게 바꿀 수 있어요.</p>
+              </section>
+              <section class="page-panel" id="panel-diary" role="tabpanel" aria-labelledby="tab-diary" hidden>
+                <h2 class="section-title">Diary <span>하루 한 조각</span></h2><div class="calendar-header"><button type="button" id="month-prev" aria-label="이전 달">‹</button><h3 id="calendar-month"></h3><button type="button" id="month-next" aria-label="다음 달">›</button><button type="button" id="calendar-today">오늘</button></div><div class="calendar-weekdays" aria-hidden="true"><span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span></div><div id="calendar-days" class="calendar-days" aria-label="날짜 선택"></div>
+                <form id="diary-form" class="diary-form"><label for="diary-message" id="diary-date"></label><textarea id="diary-message" rows="5" maxlength="1000" placeholder="오늘의 작은 순간을 적어보세요."></textarea><div><span>이 창에서만 간직하는 기록</span><button type="submit">기록하기</button></div><p id="diary-feedback" role="status"></p></form>
+              </section>
+              <section class="page-panel" id="panel-photos" role="tabpanel" aria-labelledby="tab-photos" hidden>
+                <div class="album-header"><h2 class="section-title">Photo album <span>좋아하는 장면들</span></h2><label class="sr-only" for="album-filter">사진첩 선택</label><select id="album-filter"><option value="all">전체 보기</option><option value="room">미니룸</option><option value="landscape">풍경</option></select></div>
+                <div class="photo-grid"><button type="button" class="photo-card" data-album="room" data-photo="{{ '/img/cyworld/cyworld.jpeg' | relative_url }}"><span class="album-room"><img src="{{ '/img/cyworld/cyworld.jpeg' | relative_url }}" alt="나만의 작은 방"></span><strong>나만의 작은 방</strong><span>미니룸 · 01</span></button><button type="button" class="photo-card" data-album="room" data-photo="{{ '/img/cyworld/avatar.svg' | relative_url }}"><span class="album-avatar"><img src="{{ '/img/cyworld/avatar.svg' | relative_url }}" alt="반가운 미니미"></span><strong>반가운 미니미</strong><span>미니룸 · 02</span></button><button type="button" class="photo-card" data-album="landscape" data-photo="{{ '/img/cyworld/sunset.svg' | relative_url }}"><span><img src="{{ '/img/cyworld/sunset.svg' | relative_url }}" alt="노을이 머무는 시간"></span><strong>노을이 머무는 시간</strong><span>풍경 · 01</span></button></div>
+              </section>
+              <section class="page-panel" id="panel-board" role="tabpanel" aria-labelledby="tab-board" hidden>
+                <h2 class="section-title">Board <span>차곡차곡 모은 기록</span></h2><label class="board-search" for="board-search"><span>글 찾기</span><input type="search" id="board-search" placeholder="제목으로 검색" autocomplete="off"></label><p id="board-result" class="small-note" role="status"></p><ol class="board-list">{% for post in site.posts %}<li><a href="{{ post.url | relative_url }}"><span>{{ post.title | escape }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time></a></li>{% endfor %}</ol><p id="board-empty" class="empty-state" hidden>검색한 제목의 글이 없어요.</p>
+              </section>
+              <section class="page-panel" id="panel-guestbook" role="tabpanel" aria-labelledby="tab-guestbook" hidden>
+                <h2 class="section-title">Guest book <span>다녀간 발자국</span></h2><form id="guest-form" class="guest-form"><img src="{{ '/img/cyworld/avatar.svg' | relative_url }}" alt="기본 방문자 미니미"><div><label for="guest-message">방문자님의 한마디</label><textarea id="guest-message" maxlength="300" rows="4" required placeholder="반가운 인사를 남겨주세요 : )"></textarea><div class="guest-form-footer"><span>글은 현재 창에서만 보여요.</span><button type="submit">남기기</button></div></div></form><p id="guest-feedback" class="sr-only" role="status"></p><ol id="guest-list" class="guest-list"></ol><p id="guest-empty" class="empty-state">아직 남겨진 발자국이 없어요.<br>첫 번째 인사를 기다리고 있어요 <span>♡</span></p>
+              </section>
             </div>
-        </div>
-        <div class="player__current">0:00</div>
+          </div>
+        </div></div>
+        <nav class="book-tabs" role="tablist" aria-label="미니홈피 메뉴" aria-orientation="vertical">
+          <button type="button" role="tab" id="tab-home" data-panel="home" aria-controls="panel-home" aria-selected="true">홈</button><button type="button" role="tab" id="tab-profile" data-panel="profile" aria-controls="panel-profile" aria-selected="false" tabindex="-1">프로필</button><button type="button" role="tab" id="tab-diary" data-panel="diary" aria-controls="panel-diary" aria-selected="false" tabindex="-1">다이어리</button><button type="button" role="tab" id="tab-photos" data-panel="photos" aria-controls="panel-photos" aria-selected="false" tabindex="-1">사진첩</button><button type="button" role="tab" id="tab-board" data-panel="board" aria-controls="panel-board" aria-selected="false" tabindex="-1">게시판</button><button type="button" role="tab" id="tab-guestbook" data-panel="guestbook" aria-controls="panel-guestbook" aria-selected="false" tabindex="-1">방명록</button>
+        </nav>
+      </main>
+      <aside class="desktop-sidebar" aria-label="미니홈피 부가 기능">
+        <section class="music-player"><h2><span>♫</span> BGM PLAYER</h2><div class="music-track"><span class="music-disc" aria-hidden="true">♪</span><p id="track-name">처음 뵙겠습니다<small>지나 · with 휘성</small></p></div><div class="music-controls"><button type="button" id="music-prev" aria-label="이전 곡">◀◀</button><button type="button" id="music-play" aria-label="음악 재생" aria-pressed="false">▶</button><button type="button" id="music-next" aria-label="다음 곡">▶▶</button><span id="music-time">0:00</span></div><label class="music-volume"><span>VOL</span><input type="range" id="music-volume" min="0" max="1" step="0.05" value="0.4" aria-label="음악 볼륨"></label><p id="music-status" class="music-status" role="status">재생 버튼을 눌러 음악을 켜세요.</p><audio id="bgm" preload="none"><source src="{{ '/audio/처음 뵙겠습니다(with 휘성)_지나.mp3' | relative_url }}" type="audio/mpeg"></audio><div id="music-playlist" hidden data-first="{{ '/audio/처음 뵙겠습니다(with 휘성)_지나.mp3' | relative_url }}" data-second="{{ '/audio/아이스크림_mc몽.mp3' | relative_url }}"></div></section>
+        <section class="home-status"><h2>나의 작은 미니홈피</h2><dl><div><dt>일촌평</dt><dd id="friend-count">0</dd></div><div><dt>즐거움</dt><dd class="status-meter"><span></span></dd></div><div><dt>도토리</dt><dd>0 <span aria-hidden="true">🌰</span></dd></div></dl><p>마음을 나누는<br>작은 공간 <span>♡</span></p></section>
+        <a class="blog-link" href="{{ '/url.html/blogindex/' | relative_url }}">기술 글 모아보기 <span>↗</span></a><p class="desktop-footer">좋은 하루 되세요.<br><span>HAVE A LOVELY DAY</span></p>
+      </aside>
     </div>
-    <script type="text/javascript" src="/js/audioscript.js"></script>
-     -->
-
-    <!--  -->
-    <div class="container">
-        <audio class="audioplayer" controls autoplay=1 allow="autoplay">
-            <source src="audio/처음 뵙겠습니다(with 휘성)_지나.mp3" type="audio/mpeg">
-        </audio>
-        <div class="containerdetted">
-            <div class="containermain">
-                <!--  -->
-                <div class="content">
-                    <div class="main">
-                        <div class="mini-room">
-                            <img src="img/cyworld/cyworld.jpeg" alt="Mini Room">
-                            </img>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="sidebar">
-                    <div class="menu">
-                        <ul class="mainmenu">
-                            <li><a href="https://github.com/Grokeen">홈</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="/url.html/homeindex/index.html">미니룸</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="mailto:ygreen0516@gmail.com">일촌평</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="/url.html/portfolioindex">프로젝트</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="plus">
-                    <div class="plusimg">
-                        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Grokeen&show_icons=true&locale=en&layout=compact" alt="Grokeen" style="width:30%"/>
-                    </div>
-                    <div class="plustext">
-                        🖥️ Frontend : React<br/>
-                        🔌 Backend : Spring, Django
-                    </div>
-                    <div class="plusinfo">
-                        <img src="https://img.shields.io/github/followers/Grokeen?style=social" style="background-color: white"/>
-                        <img src="https://img.shields.io/twitter/follow/groke_en"/>
-                        <img src="https://komarev.com/ghpvc/?username=Grokeen&style=flat-square"/>
-                    </div>
-                </div>
-                <!--  -->
-            </div>
-        </div>
-    </div>
+    <p class="desktop-bottom">이곳의 모든 작은 순간을 소중히 <span>♡</span></p>
+  </div>
+  <dialog id="photo-dialog" class="photo-dialog" aria-label="사진 크게 보기"><form method="dialog"><button aria-label="사진 닫기">×</button></form><img id="photo-dialog-image" alt=""><p id="photo-dialog-caption"></p></dialog>
+  <noscript><p class="noscript-note">메뉴와 플레이어를 사용하려면 JavaScript를 켜주세요. <a href="{{ '/url.html/blogindex/' | relative_url }}">기술 글 모아보기</a></p></noscript>
 </body>
-
-
 </html>

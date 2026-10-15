@@ -9,8 +9,13 @@ $rubyCommand = Get-Command ruby.exe -ErrorAction SilentlyContinue
 if ($rubyCommand) {
     $rubyPath = $rubyCommand.Source
 } else {
-    $rubyPath = Join-Path $PSScriptRoot '..\tools\Ruby33-x64\bin\ruby.exe'
-    if (-not (Test-Path -LiteralPath $rubyPath)) {
+    $rubyCandidates = @(
+        (Join-Path $PSScriptRoot '..\tools\Ruby33-x64\bin\ruby.exe'),
+        (Join-Path $env:SystemDrive 'Ruby33-x64\bin\ruby.exe'),
+        (Join-Path $env:LOCALAPPDATA 'Programs\Ruby33-x64\bin\ruby.exe')
+    )
+    $rubyPath = $rubyCandidates | Where-Object { Test-Path -LiteralPath $_ } | Select-Object -First 1
+    if (-not $rubyPath) {
         throw 'Ruby was not found. Install Ruby+Devkit and open a new PowerShell window.'
     }
     $rubyPath = (Resolve-Path -LiteralPath $rubyPath).Path
