@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 10] 바코드에서 읽은 문자열 형식 검증하기"
+title: "[병원 원무·행정 공부 10] 입원 결정부터 입원 수속까지의 연결"
 date: 2024-10-24 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 58
@@ -11,63 +11,42 @@ study_unit: 8
 permalink: /study/2024/hospital/10-barcode-parse/
 ---
 
-스캐너가 반환한 문자열을 업무 값으로 읽기 전에 구조를 확인했다. 문자 분리와 실제 대상 조회를 나누었다.
+입원이 필요하다는 판단과 병실 배정·수속을 서로 다른 담당 업무로 정리했다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-바코드는 데이터를 표현하는 수단이며 내용의 의미는 약속한 형식이 정한다. 이 학습 모델은 TEST|방문코드|문서코드 세 부분을 기대한다. 실제 병원 식별 규격이나 GS1 전체 구문을 구현하지 않는다. 스캔 성공 뒤에도 대상 존재·상태·권한을 확인해야 한다.
+입원은 의료진의 결정 이후 예약, 일정 안내, 행정 수속, 병동 안내로 이어진다. 원무는 병실 현황과 필요한 서류를 조정하지만 입원 적응증이나 치료 우선순위를 임의 결정하지 않는다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-bool TryRead(string raw, out string visit, out string document)
-{
-    string[] parts = raw.Split('|');
-    visit = document = "";
-    if (parts.Length != 3 || parts[0] != "TEST" || parts[1].Length == 0 || parts[2].Length == 0)
-        return false;
-    visit = parts[1]; document = parts[2];
-    return true;
-}
-Console.WriteLine(TryRead("TEST|V01|D01", out string visit, out string document));
-Console.WriteLine($"{visit}/{document}");
-Console.WriteLine(TryRead("TEST|V01", out _, out _));
-```
-{% endraw %}
+1. 의료진의 입원 결정과 신청 내역을 확인한다.
+2. 입원 일정과 병실 관련 안내 가능 범위를 확인한다.
+3. 환자에게 수속 장소와 준비 사항을 안내한다.
+4. 본인·자격 및 필요한 행정 서류를 확인한다.
+5. 입원 수속 완료 후 병동으로 연결한다.
 
-## 실행 결과
+## 가상 사례
 
-```text
-True
-V01/D01
-False
-```
+A에게 입원 예약이 있지만 병실 확정 연락은 아직 없다. 특정 병실을 배정받았다고 안내할까?
 
-## 코드를 따라 읽기
+## 사례 풀이
 
-필드 수와 접두사·빈 필드를 검사한다. 두 번째 입력은 구분자가 부족해 실패한다. 실제 입력에 스캐너가 붙이는 줄 종료 문자가 있는지도 규격에 맞춰 처리해야 한다. 원본을 무조건 잘라 맞추기보다 실패 이유를 남기고 재확인하는 흐름을 만든다.
+예약과 병실 확정을 구분한다. 확인되지 않은 병실을 약속하지 않고 담당 부서의 확정 안내 절차를 설명한다.
 
 ## 헷갈린 부분과 주의점
 
-바코드 내용만으로 사람의 신원이나 환자 동일성이 보장되지 않는다. 잘못 붙인 라벨이나 이전 문서의 코드도 정상적으로 읽힐 수 있다.
+입원 예약일과 실제 입원일이 다를 수 있다. 다른 기관의 운영 시간을 그대로 적용하지 않는다.
 
 ## 복습 문제
 
-구분자가 더 붙어 네 필드가 되면 허용할까?
+입원 여부를 원무 창구가 진료 기록 없이 정해도 될까?
 
-**풀이:** 이 예제 계약에서는 거절한다. 확장 형식은 버전을 정해 별도로 처리한다.
+**풀이:** 아니다. 의료진의 결정과 기관의 입원 절차를 확인한다.
 
 ## 참고한 문서
 
-[HL7 FHIR R4 공식 문서](https://hl7.org/fhir/R4/datatypes.html#Identifier)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.snuh.org/content/M001005001.do)
 
----
-
-[← 이전 학습: [병원 업무 공부 09] 요청과 수행 기록을 분리해 추적하기]({{ '/study/2024/hospital/09-order-receipt/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 11] 검체 식별자와 수령 상태 이력 →]({{ '/study/2024/hospital/11-specimen-state/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 09] 건강보험·의료급여·기타 자격을 구분해 안내하기](/study/2024/hospital/09-order-receipt/) · [다음: [병원 원무·행정 공부 11] 입원 서류와 설명 담당을 구분하기](/study/2024/hospital/11-specimen-state/)

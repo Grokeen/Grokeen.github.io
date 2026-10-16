@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 04] 예약 시간 중복을 반열린 구간으로 계산하기"
+title: "[병원 원무·행정 공부 04] 진료 예약을 받을 때 확인할 항목"
 date: 2024-10-05 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 52
@@ -11,59 +11,42 @@ study_unit: 7
 permalink: /study/2024/hospital/04-appointment-overlap/
 ---
 
-예약의 시작과 끝이 같은 경계에서 충돌하는지 규칙을 먼저 정했다. 문자열 시간이 아니라 시각 값으로 비교했다.
+전화로 예약을 받을 때 전달 사항을 빠뜨리지 않도록 확인 순서를 만들었다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-이 학습 모델은 [시작, 끝) 구간을 사용해 끝 시각을 포함하지 않는다. 두 구간의 시작이 상대 끝보다 모두 빠르면 겹친다. 실제 예약은 담당자·장비·준비 시간·중복 허용 정책까지 고려해야 한다. 아래는 같은 자원의 가상 시간 두 개만 비교하는 예제다.
+예약은 진료과·일시·대상자·필요 준비 사항을 맞추는 업무다. 증상만 듣고 확정 진단이나 검사 필요 여부를 단정하지 않는다. 전화 확인과 대면 신분 확인 절차도 구분한다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-bool Overlaps(TimeOnly startA, TimeOnly endA, TimeOnly startB, TimeOnly endB)
-{
-    if (startA >= endA || startB >= endB) throw new ArgumentException("유효한 구간 필요");
-    return startA < endB && startB < endA;
-}
-var start = new TimeOnly(9, 0);
-var end = new TimeOnly(9, 30);
-Console.WriteLine(Overlaps(start, end, new TimeOnly(9, 30), new TimeOnly(10, 0)));
-Console.WriteLine(Overlaps(start, end, new TimeOnly(9, 15), new TimeOnly(9, 45)));
-```
-{% endraw %}
+1. 예약 대상자와 연락 가능한 수단을 기관 절차에 따라 확인한다.
+2. 원하는 진료과와 기존 진료 여부를 확인한다.
+3. 가능한 일시를 제시하고 선택을 재확인한다.
+4. 의뢰서 등 필요한 준비 사항을 안내한다.
+5. 일시·장소·변경 방법을 다시 읽어 확인한다.
 
-## 실행 결과
+## 가상 사례
 
-```text
-False
-True
-```
+A가 다음 주 화요일 오전을 희망했는데 가능한 시간이 오후뿐이다. 희망 시간으로 입력해도 될까?
 
-## 코드를 따라 읽기
+## 사례 풀이
 
-9시30분에 끝나는 예약과 그때 시작하는 예약은 이 모델에서 겹치지 않는다. 중간 15분부터 시작하면 겹친다. 준비·청소 등 완충 시간이 필요한 실제 자원은 점유 구간을 별도로 늘려 계산할 수 있다. 자정 넘는 예약은 날짜까지 포함한 구간으로 바꿔야 한다.
+실제 가능한 오후 시간을 설명하고 동의를 받은 뒤 확정한다. 희망 사항과 확정 예약을 분리해 기록한다.
 
 ## 헷갈린 부분과 주의점
 
-TimeOnly만으로 서로 다른 날짜 예약을 비교하지 않는다. 중복 검사와 저장이 분리되면 동시 요청에서 경합이 생길 수 있다.
+기관별 예약 취소 기한이나 준비물은 다르다. 다른 병원 안내를 그대로 적용하지 않는다.
 
 ## 복습 문제
 
-두 예약이 서로 다른 장비를 사용하면 시간 중복만으로 거절해야 할까?
+예약 안내 끝에 날짜를 다시 읽는 이유는?
 
-**풀이:** 자원과 업무 정책에 따라 다르다. 비교 대상 자원을 먼저 정의해야 한다.
+**풀이:** 요일만 듣고 날짜를 다르게 이해하거나 오전·오후를 혼동하는 오류를 줄이기 위해서다.
 
 ## 참고한 문서
 
-[HL7 FHIR R4 공식 문서](https://hl7.org/fhir/R4/appointment.html)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.snuh.org/content/M001004005.do)
 
----
-
-[← 이전 학습: [병원 업무 공부 03] 등록 자료의 정확 일치와 확인 필요 상태]({{ '/study/2024/hospital/03-registration-match/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 05] 예약 슬롯의 정원과 남은 자리 →]({{ '/study/2024/hospital/05-slot-capacity/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 03] 초진·재진 접수와 등록 정보 확인](/study/2024/hospital/03-registration-match/) · [다음: [병원 원무·행정 공부 05] 예약 변경·취소와 연결된 검사 확인](/study/2024/hospital/05-slot-capacity/)

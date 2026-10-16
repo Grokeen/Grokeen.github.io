@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 07] 예약과 실제 방문 기록 연결하기"
+title: "[병원 원무·행정 공부 07] 중복 등록과 동명이인 기록의 확인"
 date: 2024-10-14 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 55
@@ -11,59 +11,43 @@ study_unit: 7
 permalink: /study/2024/hospital/07-encounter-link/
 ---
 
-예약을 만들었다는 사실과 실제 방문 이력이 생겼다는 사실을 분리했다. 연결은 가능하지만 같은 ID로 덮어쓰지는 않았다.
+환자 번호가 두 개 보인다고 바로 병합하지 않는 이유를 적었다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-FHIR에서 Appointment는 계획된 일정, Encounter는 실제 의료 서비스 상호작용을 표현하는 자원이다. 실제 업무에서는 당일 방문이나 하나의 예약에서 여러 처리 기록이 생기는 경우도 고려해야 한다. 아래는 가상 예약 ID를 참조하는 방문 한 건만 모델링한다.
+중복 후보는 확인 대상이지 중복 확정이 아니다. 병합은 다른 사람의 진료·수납 기록을 섞을 수 있으므로 권한 있는 담당자의 검토와 기관 절차를 거쳐야 한다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-var visit = new Visit("TEST-V01", "TEST-A01");
-Console.WriteLine(visit.Id);
-Console.WriteLine(visit.AppointmentId ?? "예약 연결 없음");
-var walkIn = new Visit("TEST-V02", null);
-Console.WriteLine(walkIn.AppointmentId ?? "예약 연결 없음");
+1. 본인 확인 후 후보 기록의 확인 항목을 대조한다.
+2. 연락처 변경 등 차이의 사유를 본인에게 확인한다.
+3. 확인되지 않은 기록에 진료나 수납을 덧붙이지 않는다.
+4. 중복 관리 담당자에게 근거와 확인된 차이를 전달한다.
+5. 검토 결과와 후속 처리 여부를 확인한다.
 
-// 예제용 형식
-public record Visit(string Id, string? AppointmentId);
-```
-{% endraw %}
+## 가상 사례
 
-## 실행 결과
+이름과 생일이 같고 주소가 다르다. 주소를 최신 값으로 덮으면 될까?
 
-```text
-TEST-V01
-TEST-A01
-예약 연결 없음
-```
+## 사례 풀이
 
-## 코드를 따라 읽기
-
-예약 참조가 없는 방문도 표현할 수 있다. 실제 자원의 필수 항목과 참조 구조를 모두 구현한 FHIR 예제는 아니며 관계의 의미를 익히는 내부 모델이다. 예약 상태 변경과 방문 생성은 한 화면 동작이어도 서로 다른 변경으로 기록할 수 있다.
+동일인 여부가 먼저다. 다른 사람일 가능성을 배제하지 않고 담당 절차로 확인한다. 수정 전후 근거를 남겨야 한다.
 
 ## 헷갈린 부분과 주의점
 
-예약 취소가 이미 수행된 방문 이력을 삭제하는 의미라고 가정하지 않는다. 원본 이력과 잘못 입력한 자료의 정정 정책을 따로 정한다.
+동명이인의 정보를 방문자에게 읽어 주며 비교하지 않는다. 불필요한 타인 정보 노출을 막는다.
 
 ## 복습 문제
 
-예약 ID를 방문 ID로 그대로 재사용하면 어떤 문제가 있을까?
+중복 후보 검색은 병합 승인과 같은가?
 
-**풀이:** 서로 다른 업무 객체의 식별 범위와 관계를 표현하기 어려워지고 다중 방문 등에 취약해질 수 있다.
+**풀이:** 아니다. 후보 탐지와 권한 있는 검토·승인은 별개다.
 
 ## 참고한 문서
 
-[HL7 FHIR R4 공식 문서](https://hl7.org/fhir/R4/encounter.html)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.korea.kr/news/policyNewsView.do?newsId=148928035)
+- [공식 근거·업무 안내 2](https://www.snuh.org/content/M001004005.do)
 
----
-
-[← 이전 학습: [병원 업무 공부 06] 취소 재요청을 같은 결과로 처리하기]({{ '/study/2024/hospital/06-appointment-cancel/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 08] 행정 문서 대기열과 처리 순서 →]({{ '/study/2024/hospital/08-desk-queue/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 06] 당일 방문과 진료 지연 상황 안내](/study/2024/hospital/06-appointment-cancel/) · [다음: [병원 원무·행정 공부 08] 진료의뢰서와 보험 적용 확인](/study/2024/hospital/08-desk-queue/)

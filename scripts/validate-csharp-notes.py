@@ -17,6 +17,9 @@ def main():
     manifest_path = ROOT / (".jekyll-local/content-2024/csharp-notes.json" if draft else "_docs/CSHARP_HOSPITAL_2024_MANIFEST.json")
     data = json.loads(manifest_path.read_text(encoding="utf-8"))
     articles = data if draft else data["articles"]
+    articles = [article for article in articles if
+                (article.get("track") == "csharp" if draft else article.get("language") == "csharp")]
+    assert len(articles) == 48, "Expected 48 C# lessons; hospital administration is a separate procedure course"
     dotnet = os.environ.get("STUDY_DOTNET") or shutil.which("dotnet")
     if not dotnet:
         raise RuntimeError("A .NET 8 SDK is required; set STUDY_DOTNET if necessary")

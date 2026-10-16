@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 22] 동시 수정에서 예상 버전 비교하기"
+title: "[병원 원무·행정 공부 22] 성인 본인의 진료기록 열람·사본 신청"
 date: 2024-11-30 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 70
@@ -11,61 +11,42 @@ study_unit: 9
 permalink: /study/2024/hospital/22-optimistic-version/
 ---
 
-두 화면이 같은 자료를 수정할 때 나중 저장이 먼저 변경한 내용을 덮지 않도록 버전을 비교했다.
+기록 사본 신청은 수납 영수증 출력과 다른 정보 제공 절차로 정리했다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-낙관적 동시성 제어는 읽을 때의 버전과 저장할 때의 현재 버전을 대조해 충돌을 발견한다. 아래 모델은 예상 버전이 맞을 때만 증가시킨다. 실제 DB에서는 비교와 갱신을 같은 원자적 명령으로 수행하고 영향받은 행 수를 확인해야 한다. 단순 메모리 비교는 설명용이다.
+2024년 9월 26일 시행 의료법 시행규칙 제13조의3 제4항은 본인의 기록 열람·사본 요청 시 본인 확인을 규정한다. 요청 기간과 기록 종류를 특정하고 본인 여부를 확인한 뒤 기관 절차로 제공한다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-int currentVersion = 2;
-bool Update(int expectedVersion)
-{
-    if (expectedVersion != currentVersion) return false;
-    currentVersion++;
-    return true;
-}
-Console.WriteLine(Update(2));
-Console.WriteLine(Update(2));
-Console.WriteLine(currentVersion);
-```
-{% endraw %}
+1. 신청자가 환자 본인인지 확인한다.
+2. 필요한 진료 기간·진료과·기록 종류를 확인한다.
+3. 기관의 신청서와 본인 확인 절차를 진행한다.
+4. 발급 범위와 준비 상태를 담당 부서와 확인한다.
+5. 수령자와 제공 범위를 확인해 교부한다.
 
-## 실행 결과
+## 가상 사례
 
-```text
-True
-False
-3
-```
+성인 A가 지난달 특정 검사 결과만 요청했다. 전체 평생 기록을 출력하는 것이 좋을까?
 
-## 코드를 따라 읽기
+## 사례 풀이
 
-첫 저장은 버전 2를 기준으로 성공해 3이 된다. 이전 화면이 같은 2를 보내면 충돌로 거절한다. 실제 화면은 최신 자료를 다시 읽고 사용자가 차이를 확인하도록 해야 한다. 버전을 몰래 최신값으로 바꾸어 재시도하면 충돌 방지 의미가 사라진다.
+필요한 기간과 문서 범위를 재확인해 요청에 맞게 제공한다. 불필요한 의료정보 제공과 불필요한 비용을 줄일 수 있다.
 
 ## 헷갈린 부분과 주의점
 
-비교한 뒤 별도 UPDATE를 보내면 그 사이 다른 저장이 들어올 수 있다. 저장소가 비교 조건을 함께 적용해야 한다.
+본인 확인과 신분증 사본 상시 보관을 같은 뜻으로 해석하지 않는다. 법령과 기관의 보관 근거를 확인한다.
 
 ## 복습 문제
 
-충돌을 무조건 마지막 값으로 덮으면?
+기록 사본 요청은 이름만 맞으면 처리해도 될까?
 
-**풀이:** 다른 사용자의 변경이 사라질 수 있다. 병합·재확인 정책을 정해야 한다.
+**풀이:** 아니다. 본인 확인과 요청 범위를 확인해야 한다.
 
 ## 참고한 문서
 
-[Microsoft 공식 문서 (.NET 8·C# 관련 항목)](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/optimistic-concurrency)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=265647&chrClsCd=010202&efYd=20240926&ancYnChk=0&joNo=001303)
 
----
-
-[← 이전 학습: [병원 업무 공부 21] 기본 키와 중복 자료 거절]({{ '/study/2024/hospital/21-datatable-key/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 23] 수가 판단과 분리한 가상 수납 합계 →]({{ '/study/2024/hospital/23-billing-total/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 21] 진단서·입퇴원확인서·기록 사본을 구분하기](/study/2024/hospital/21-datatable-key/) · [다음: [병원 원무·행정 공부 23] 가족의 진료기록 신청과 동의 확인](/study/2024/hospital/23-billing-total/)

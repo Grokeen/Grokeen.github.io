@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 20] DataTable로 열 자료형과 행 의미 정의하기"
+title: "[병원 원무·행정 공부 20] 미수금 안내와 지원 상담 연결"
 date: 2024-11-23 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 68
@@ -11,60 +11,43 @@ study_unit: 9
 permalink: /study/2024/hospital/20-datatable-schema/
 ---
 
-DB를 연결하기 전에 표의 열과 자료형부터 선언했다. 한 행이 무엇을 뜻하는지 정해야 집계도 맞출 수 있었다.
+미납 내역을 안내할 때 금액 설명과 지원 상담을 구분해 정리했다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-DataTable은 메모리 안의 표 구조를 제공한다. 열마다 자료형을 정하면 행 값의 구조를 표현할 수 있다. 아래는 가상 문서 처리 건의 ID와 페이지 수다. 실제 DB 연결·영구 저장·트랜잭션을 수행하지 않으며 SQL 테이블의 모든 제약을 대신하지 않는다.
+미수금은 대상 진료와 청구·수납 내역의 대조부터 시작한다. 납부 곤란 호소에는 기관의 사회사업·상담 담당 연결을 안내한다. 지원 자격이나 감면을 창구에서 임의 확정하지 않는다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-using System.Data;
+1. 미납 대상 기간과 청구 근거를 확인한다.
+2. 이미 납부했거나 정정 중인 내역이 없는지 확인한다.
+3. 대상자에게 확인된 금액과 문의 방법을 설명한다.
+4. 납부 곤란 사유는 필요한 범위에서 듣고 지원 상담을 연결한다.
+5. 안내 결과와 후속 담당을 기록한다.
 
-using var table = new DataTable("Documents");
-table.Columns.Add("Id", typeof(string));
-table.Columns.Add("Pages", typeof(int));
-table.Rows.Add("TEST-D01", 3);
-Console.WriteLine(table.Rows.Count);
-Console.WriteLine(table.Rows[0]["Id"]);
-Console.WriteLine(table.Columns["Pages"]!.DataType.Name);
-```
-{% endraw %}
+## 가상 사례
 
-## 실행 결과
+A가 납부했다고 주장하며 이체 내역을 제시했다. 먼저 독촉을 계속할까?
 
-```text
-1
-TEST-D01
-Int32
-```
+## 사례 풀이
 
-## 코드를 따라 읽기
-
-문서 한 건을 행 하나로 정의하고 페이지 수를 int 열로 둔다. DataRow의 인덱서는 object 계열 값을 반환하므로 필요한 변환·null 처리를 명확히 해야 한다. !는 이 코드에서 방금 만든 열의 존재를 알고 경고를 억제한 것이며 일반 외부 입력에서 안전을 보장하는 연산자가 아니다.
+입금 대상과 반영 여부를 먼저 대조한다. 다른 입원 건에 반영되었거나 반영이 지연된 상황인지 확인한다.
 
 ## 헷갈린 부분과 주의점
 
-DB의 NULL과 C# null, DataTable의 DBNull을 구분한다. 임의의 값이 없다고 0이나 빈 문자열로 바꾸면 의미가 달라질 수 있다.
+비용 문제 때문에 응급 증상에 대한 의료진 연결을 지연시키지 않는다. 상담 내용은 공개된 대기 공간에서 노출하지 않는다.
 
 ## 복습 문제
 
-테이블을 만들면 실제 병원 DB에도 저장될까?
+상담 연결만으로 지원금 지급이 확정될까?
 
-**풀이:** 아니다. 이 예제는 현재 프로그램 메모리 안에서만 표를 다룬다.
+**풀이:** 아니다. 별도의 자격 심사와 결정 절차가 있다.
 
 ## 참고한 문서
 
-[Microsoft 공식 문서 (.NET 8·C# 관련 항목)](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/datatables)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.snuh.org/content/M001005002.do)
+- [공식 근거·업무 안내 2](https://www.hira.or.kr/bbsDummy.do?brdBltNo=47096&brdScnBltNo=4&pgmid=HIRAA010006011120)
 
----
-
-[← 이전 학습: [병원 업무 공부 19] 일시 실패와 영구 오류를 나누는 재시도]({{ '/study/2024/hospital/19-rpa-retry/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 21] 기본 키와 중복 자료 거절 →]({{ '/study/2024/hospital/21-datatable-key/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 19] 환불 요청의 근거·승인·지급 확인](/study/2024/hospital/19-rpa-retry/) · [다음: [병원 원무·행정 공부 21] 진단서·입퇴원확인서·기록 사본을 구분하기](/study/2024/hospital/21-datatable-key/)

@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 30] 백업 복사와 복구 확인, 해시의 역할"
+title: "[병원 원무·행정 공부 30] 진료비 문의·이의 제기와 공식 확인 절차"
 date: 2024-12-24 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 78
@@ -11,60 +11,43 @@ study_unit: 10
 permalink: /study/2024/hospital/30-backup-restore/
 ---
 
-백업 파일이 있다는 것과 실제로 복구할 수 있다는 것을 분리했다. 작은 메모리 데이터로 동일성 확인만 연습했다.
+비용에 대한 불만을 접수했을 때 바로 옳고 그름을 단정하지 않도록 순서를 적었다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-백업 정책은 접근권한·암호화·보관·분리 저장·복구 절차를 포함한다. SHA-256 해시는 내용이 같은지 비교하는 도구로 쓸 수 있지만 암호화나 백업 성공의 전체 증거는 아니다. 아래는 가상 바이트 배열 복사본을 검증하며 실제 병원 자료나 파일을 복사하지 않는다.
+진료비 문의는 사실 확인, 내부 검토, 결과 설명, 필요 시 공식 확인 안내로 진행한다. 건강보험심사평가원의 진료비 확인은 급여 대상 비용을 비급여로 부담했는지 등을 확인하는 절차다. 신청 자체가 환불 결정은 아니다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-using System.Security.Cryptography;
-using System.Text;
+1. 영수증과 문의한 항목·기간을 확인한다.
+2. 환자의 질문을 요약해 맞게 이해했는지 확인한다.
+3. 관련 청구 담당 부서의 근거와 검토 결과를 확인한다.
+4. 확인된 결과와 후속 문의 방법을 설명한다.
+5. 필요하면 공식 진료비 확인 신청 경로를 안내한다.
 
-byte[] original = Encoding.UTF8.GetBytes("TEST-BACKUP");
-byte[] restored = original.ToArray();
-byte[] left = SHA256.HashData(original);
-byte[] right = SHA256.HashData(restored);
-Console.WriteLine(left.SequenceEqual(right));
-restored[0] = 0;
-Console.WriteLine(left.SequenceEqual(SHA256.HashData(restored)));
-```
-{% endraw %}
+## 가상 사례
 
-## 실행 결과
+A는 세부 항목 한 건을, B는 전체 대기 시간 불편을 제기했다. 두 문의를 같은 부서로만 보낼까?
 
-```text
-True
-False
-```
+## 사례 풀이
 
-## 코드를 따라 읽기
-
-내용을 그대로 복사했을 때 해시가 같고 한 바이트를 바꾸면 달라진다. 실제 복구 검증은 필요한 시점의 자료·키·권한·소프트웨어까지 복원되는지 시험해야 한다. 해시 파일도 바꿀 수 있는 공격자에 대한 무결성 보장은 별도 신뢰 근거가 필요하다.
+비용 산정 문의와 서비스 운영 민원을 구분해 적절한 담당자에게 전달한다. 처리 결과와 아직 남은 질문을 확인한다.
 
 ## 헷갈린 부분과 주의점
 
-해시는 원문을 비밀로 숨기는 암호화가 아니다. 백업 저장소의 개인정보 보호와 복구 접근통제는 따로 적용한다.
+원무가 검토 전 무조건 환불이나 무조건 정당 청구를 약속하지 않는다.
 
 ## 복습 문제
 
-해시가 맞으면 DB가 실제로 기동되고 업무 조회도 된다는 뜻일까?
+진료비 확인 신청 후 결과가 나오기 전에 환불 확정으로 기록할까?
 
-**풀이:** 파일 내용 비교와 업무 복구 가능성은 다르므로 실제 복원 검증이 필요하다.
+**풀이:** 아니다. 접수·심사·결정·실제 환불을 나누어 확인한다.
 
 ## 참고한 문서
 
-[Microsoft 공식 문서 (.NET 8·C# 관련 항목)](https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.sha256.hashdata?view=net-8.0)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.hira.or.kr/rb/npay/index.do?pgmid=HIRAA030009100000)
+- [공식 근거·업무 안내 2](https://www.hira.or.kr/bbsDummy.do?brdBltNo=47096&brdScnBltNo=4&pgmid=HIRAA010006011120)
 
----
-
-[← 이전 학습: [병원 업무 공부 29] 내보내기에 필요한 열만 명시적으로 선택하기]({{ '/study/2024/hospital/29-export-schema/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 31] 연동 자료의 중복·이전 버전 처리 →]({{ '/study/2024/hospital/31-integration-version/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 29] 서류 보관·반환·폐기의 기준 확인](/study/2024/hospital/29-export-schema/) · [다음: [병원 원무·행정 공부 31] 일일 수납 마감과 차이 대조](/study/2024/hospital/31-integration-version/)

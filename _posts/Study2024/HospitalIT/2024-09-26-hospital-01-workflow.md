@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 01] 접수·예약·수행·수납을 서로 다른 업무로 나누기"
+title: "[병원 원무·행정 공부 01] 외래 원무 업무를 예약·접수·진료·수납으로 나누기"
 date: 2024-09-26 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 49
@@ -11,65 +11,43 @@ study_unit: 7
 permalink: /study/2024/hospital/01-workflow/
 ---
 
-병원 업무를 화면 순서 하나로만 외우지 않고 각 단계의 목적과 데이터로 나누었다. 예약이 있다고 실제 방문이 완료된 것은 아니었다.
+외래 창구 업무를 정리하면서 예약 번호만 보고 방문이 끝났다고 판단하면 안 된다는 점부터 적었다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-예약은 계획, 접수는 방문 처리, 수행은 요청된 업무의 진행, 수납은 금액 처리라는 서로 다른 사건이다. 실제 기관마다 명칭과 연결 방식은 다를 수 있다. 아래 모델은 접수 전·접수됨·마감이라는 단순 행정 상태만 사용한다. 임상 판단과 실제 표준의 전체 상태 전이를 구현하지 않는다.
+예약은 방문 계획이고 접수는 당일 방문 확인이다. 진료와 처방 결정은 의료진이 맡으며 원무는 자격 확인, 비용 안내, 서류 발급 등 행정 절차를 연결한다. 기관별 창구 배치는 다르므로 아래는 가상 병원에서 연습한 흐름이다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-DeskState state = DeskState.Created;
-state = Next(state, "접수");
-Console.WriteLine(state);
-state = Next(state, "마감");
-Console.WriteLine(state);
+1. 예약 내역과 방문 목적을 확인한다.
+2. 본인 확인과 해당 진료일의 자격 확인을 진행한다.
+3. 담당 진료과와 접수 완료 여부를 안내한다.
+4. 진료 후 확정된 청구 내역으로 수납하고 영수증을 교부한다.
+5. 추가 예약·증명서가 필요하면 담당 창구를 연결한다.
 
-DeskState Next(DeskState current, string action) => (current, action) switch
-{
-    (DeskState.Created, "접수") => DeskState.CheckedIn,
-    (DeskState.CheckedIn, "마감") => DeskState.Closed,
-    _ => throw new InvalidOperationException("허용되지 않은 전이")
-};
+## 가상 사례
 
-// 예제용 형식
-public enum DeskState { Created, CheckedIn, Closed }
-```
-{% endraw %}
+가상 방문 A는 예약은 있지만 아직 내원하지 않았다. 방문 B는 진료가 끝났고 수납만 남았다. 두 건을 모두 완료로 표시해도 될까?
 
-## 실행 결과
+## 사례 풀이
 
-```text
-CheckedIn
-Closed
-```
-
-## 코드를 따라 읽기
-
-현재 상태와 행동의 쌍으로 다음 상태를 결정한다. 이행할 수 없는 조합은 조용히 통과시키지 않는다. FHIR의 Appointment와 Encounter도 계획과 실제 활동을 구분하는 참고 개념이지만 이 내부 enum이 표준 상태 전체와 같지는 않다. 상태별 변경 권한과 기록도 실제 업무 설계에 포함한다.
+A는 예약 단계, B는 진료 후 수납 대기 단계다. 예약·방문·수납 완료를 각각 확인해야 누락을 찾을 수 있다.
 
 ## 헷갈린 부분과 주의점
 
-완료 문구가 화면에 보였다는 이유만으로 저장·수납·수행이 모두 확정되었다고 판단하지 않는다. 각 처리의 확인 근거를 분리한다.
+행정상 마감과 의학적 치료 종료는 같은 뜻이 아니다. 응급 증상이나 치료 필요 판단을 창구에서 대신하지 않는다.
 
 ## 복습 문제
 
-예약 취소와 방문 접수 취소는 항상 같은 기록일까?
+접수가 끝나면 수납도 끝난 것일까?
 
-**풀이:** 대상과 영향이 다를 수 있으므로 별도 업무 사건으로 구분하고 연결 관계를 확인한다.
+**풀이:** 아니다. 실제 진료·청구 내역에 따른 수납 여부를 별도로 확인한다.
 
 ## 참고한 문서
 
-[HL7 FHIR R4 공식 문서](https://hl7.org/fhir/R4/encounter.html)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.snuh.org/content/M001004005.do)
+- [공식 근거·업무 안내 2](https://www.snuh.org/content/M001005002.do)
 
----
-
-[← 이전 학습: [C# 공부 48] 종합 실습: 가상 접수 자료를 검증해 대기열에 넣기]({{ '/study/2024/csharp/48-csharp-project/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 02] 환자·방문·검체 식별자의 발급 범위 →]({{ '/study/2024/hospital/02-identifier-scope/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [C# 공부 48] 종합 실습: 가상 접수 자료를 검증해 대기열에 넣기](/study/2024/csharp/48-csharp-project/) · [다음: [병원 원무·행정 공부 02] 2024년 본인확인 강화와 접수 안내](/study/2024/hospital/02-identifier-scope/)

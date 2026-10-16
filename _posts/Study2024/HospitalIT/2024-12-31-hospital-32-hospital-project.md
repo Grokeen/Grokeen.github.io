@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 32] 종합 실습: 가상 문서 접수에서 처리 이력까지"
+title: "[병원 원무·행정 공부 32] 원무 인수인계와 미완료 건의 종료 확인"
 date: 2024-12-31 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 80
@@ -11,61 +11,44 @@ study_unit: 10
 permalink: /study/2024/hospital/32-hospital-project/
 ---
 
-마지막에는 검증·중복·처리 결과를 한 흐름으로 묶었다. 실제 병원 시스템에 접속하지 않는 모의 문서 처리기다.
+접수부터 퇴원·서류 발급까지 공부한 내용을 인수인계 사례로 묶었다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-필수 ID를 검사하고 처리 키를 확인한 뒤 결과 이력을 남긴다. 이 프로그램은 가상 문서 ID만 다루고 임상 판정·실제 청구·환자 조회를 하지 않는다. 저장소·권한·동시성·재시도 계약을 붙일 경계를 이해하는 것이 목표다. 앞의 예제들을 무조건 운영에 복사하지 않고 생략한 조건을 확인한다.
+인수인계는 누가 다음 행동을 언제 확인할지 명확히 만드는 일이다. 환자의 상세 진료 내용 전체를 적는 대신 필요한 업무 상태, 근거, 담당 부서, 후속 확인 시점을 남긴다. 완료는 실제 결과를 확인한 뒤 표시한다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-var processed = new HashSet<string>(StringComparer.Ordinal);
-var history = new List<string>();
-foreach (string? id in new string?[] { "TEST-D01", null, "TEST-D01", "TEST-D02" })
-{
-    if (string.IsNullOrWhiteSpace(id)) { history.Add("검토 필요"); continue; }
-    if (!processed.Add(id)) { history.Add("중복 요청"); continue; }
-    history.Add($"완료 {id}");
-}
-foreach (string item in history) Console.WriteLine(item);
-Console.WriteLine($"처리 건수 {processed.Count}");
-```
-{% endraw %}
+1. 미완료 업무를 예약·자격·수납·서류 등으로 분류한다.
+2. 이미 확인한 사실과 미확인 사항을 나눈다.
+3. 다음 담당자와 필요한 후속 행동을 지정한다.
+4. 개인정보는 업무에 필요한 최소 범위로 전달한다.
+5. 처리 결과 확인 후 종료하고 남은 쟁점은 다시 인계한다.
 
-## 실행 결과
+## 가상 사례
 
-```text
-완료 TEST-D01
-검토 필요
-중복 요청
-완료 TEST-D02
-처리 건수 2
-```
+가상 A 건은 환불 승인만 완료, B 건은 사본 출력만 완료, C 건은 예약 변경 요청만 접수되었다. 모두 완료일까?
 
-## 코드를 따라 읽기
+## 사례 풀이
 
-누락은 확인 대상으로, 중복은 별도 응답으로 남기고 정상 두 건을 처리한다. 실제 저장 실패를 넣으면 현재 processed 등록 시점의 한계를 확인할 수 있다. 다음 구현에서는 원자적 저장·재처리·감사 기록·목적별 인가를 추가해 각 계약을 검증해야 한다.
+A는 실제 취소·지급 확인, B는 적법한 수령자 교부 확인, C는 기존 취소와 새 예약 확정 확인이 남았다. 단계 이름과 최종 결과를 구분한다.
 
 ## 헷갈린 부분과 주의점
 
-프로세스 종료 후 복구·실제 장비 출력·외부 API 보장까지 검증한 예제가 아니다. 자동화가 내리는 결정의 범위와 담당자 확인 지점을 명확히 둔다.
+공용 메신저나 개인 저장소에 의료정보를 복사해 인수인계하지 않는다. 담당자가 불명확한 건을 단순히 완료로 닫지 않는다.
 
 ## 복습 문제
 
-저장 전에 처리 키만 완료로 남기면 무슨 문제가 생길까?
+좋은 인수인계에 반드시 필요한 것은?
 
-**풀이:** 저장이 실패한 요청의 재시도까지 막을 수 있다. 상태와 실제 변경의 일관성을 설계해야 한다.
+**풀이:** 현재 상태, 남은 행동, 담당자와 확인 시점이다. 필요한 최소 근거를 함께 남긴다.
 
 ## 참고한 문서
 
-[HL7 FHIR R4 공식 문서](https://hl7.org/fhir/R4/task.html)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.snuh.org/content/M001004005.do)
+- [공식 근거·업무 안내 2](https://www.snuh.org/content/M001005002.do)
+- [공식 근거·업무 안내 3](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=265647&chrClsCd=010202&efYd=20240926&ancYnChk=0&joNo=001303)
 
----
-
-[← 이전 학습: [병원 업무 공부 31] 연동 자료의 중복·이전 버전 처리]({{ '/study/2024/hospital/31-integration-version/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 31] 일일 수납 마감과 차이 대조](/study/2024/hospital/31-integration-version/)

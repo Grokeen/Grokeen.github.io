@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 19] 일시 실패와 영구 오류를 나누는 재시도"
+title: "[병원 원무·행정 공부 19] 환불 요청의 근거·승인·지급 확인"
 date: 2024-11-20 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 67
@@ -11,64 +11,43 @@ study_unit: 9
 permalink: /study/2024/hospital/19-rpa-retry/
 ---
 
-실패하면 무조건 다시 누르는 대신 오류 종류와 최대 횟수를 정했다. 잘못된 대상 ID는 반복해도 정상으로 바뀌지 않는다.
+환불을 단순히 마이너스 수납으로만 기억하지 않도록 단계별로 적었다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-재시도는 일시 오류라고 판단한 경우에 한해 횟수·대기·최종 확인을 두고 적용한다. 아래 모의 작업은 첫 시도에만 TimeoutException을 발생시킨다. 실제 UI 자동화나 네트워크 호출을 하지 않는다. 이미 처리된 작업을 재시도할 수 있으므로 멱등 키와 응답 확인도 함께 필요하다.
+환불 사유 확인, 원거래 대조, 청구 정정 승인, 지급 수단 확인, 실제 지급 확인을 구분한다. 금액 변경 권한과 지급 권한은 기관의 분장에 따른다. 요청자의 설명만으로 즉시 금액을 바꾸지 않는다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-int calls = 0;
-void RunMock()
-{
-    calls++;
-    if (calls == 1) throw new TimeoutException();
-}
-for (int attempt = 1; attempt <= 3; attempt++)
-{
-    try { RunMock(); Console.WriteLine($"성공 {attempt}"); break; }
-    catch (TimeoutException) when (attempt < 3)
-    {
-        Console.WriteLine($"재시도 {attempt}");
-    }
-}
-```
-{% endraw %}
+1. 원거래 영수증과 환불 사유를 확인한다.
+2. 중복 결제·예약 취소·청구 정정 중 해당 사유를 구분한다.
+3. 담당 부서의 정정 및 환불 승인을 확인한다.
+4. 원 결제 수단과 수령 권한에 맞는 지급 방법을 확인한다.
+5. 환불 완료와 남은 잔액을 대조한다.
 
-## 실행 결과
+## 가상 사례
 
-```text
-재시도 1
-성공 2
-```
+가상 이중 결제 두 건이 각각 5만 원이다. 한 건 취소 후 남을 정상 수납은 얼마인가?
 
-## 코드를 따라 읽기
+## 사례 풀이
 
-첫 시간 초과는 제한 안에서 다시 시도하고 둘째 성공에서 반복을 끝낸다. 마지막 시도 실패는 catch 필터를 통과하지 않아 호출자에게 전파된다. 실제 대기에는 지수 백오프·분산 지연 등을 고려할 수 있지만 이 예제는 제어 흐름만 보여 준다.
+정상 거래 한 건인 5만 원이다. 취소 승인만 받고 원무에 두 건이 남아 있지 않은지도 확인한다. 실제 사례는 원거래 증빙으로 대조한다.
 
 ## 헷갈린 부분과 주의점
 
-시간 초과는 원격 작업이 실패했다는 확정 증거가 아닐 수 있다. 무조건 같은 변경을 다시 보내기 전에 처리 결과를 조회할 수 있어야 한다.
+다른 사람의 계좌로 요청하는 경우 임의 지급하지 않고 수령 권한과 기관 절차를 확인한다.
 
 ## 복습 문제
 
-잘못된 계정 권한 오류도 같은 방식으로 계속 재시도할까?
+환불 요청 접수와 환불 완료는 같은 상태인가?
 
-**풀이:** 설정·권한 문제는 원인을 수정해야 하므로 일시 오류와 구분해 처리한다.
+**풀이:** 아니다. 검토·승인·실제 취소 또는 지급 완료를 구분한다.
 
 ## 참고한 문서
 
-[Microsoft 공식 문서 (.NET 8·C# 관련 항목)](https://learn.microsoft.com/en-us/azure/architecture/patterns/retry)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.hira.or.kr/bbsDummy.do?brdBltNo=47096&brdScnBltNo=4&pgmid=HIRAA010006011120)
+- [공식 근거·업무 안내 2](https://www.hira.or.kr/rb/npay/index.do?pgmid=HIRAA030009100000)
 
----
-
-[← 이전 학습: [병원 업무 공부 18] RPA 재실행에서 중복 입력 막는 처리 키]({{ '/study/2024/hospital/18-rpa-idempotency/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 20] DataTable로 열 자료형과 행 의미 정의하기 →]({{ '/study/2024/hospital/20-datatable-schema/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 18] 현금·카드 수납과 승인 확인](/study/2024/hospital/18-rpa-idempotency/) · [다음: [병원 원무·행정 공부 20] 미수금 안내와 지원 상담 연결](/study/2024/hospital/20-datatable-schema/)

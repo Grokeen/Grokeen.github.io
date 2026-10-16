@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 17] OCR 추출값과 사람이 확인한 값 구분하기"
+title: "[병원 원무·행정 공부 17] 진료비 영수증·세부내역서·카드 전표의 차이"
 date: 2024-11-14 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 65
@@ -11,59 +11,42 @@ study_unit: 9
 permalink: /study/2024/hospital/17-ocr-review/
 ---
 
-이미지에서 읽힌 문자를 확정 데이터처럼 바로 저장하지 않기로 했다. 추출·검증·검토 상태를 별도로 두었다.
+증빙을 요청받았을 때 서류의 이름보다 제출 목적부터 확인했다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-OCR은 이미지를 문자로 추정하는 단계다. 형식에 맞아도 원문과 다른 코드일 수 있다. 아래 예제는 필수 문서 ID 누락을 발견하면 Review로 보내는 단순 모델이다. 실제 OCR 엔진이나 의료 영상 분석을 호출하지 않고 추출 결과로 가정한 가상 문자열만 사용한다.
+카드 전표는 결제 수단의 승인 기록이고 진료비 계산서·영수증은 진료비 항목을 보여 준다. 세부산정내역서는 구체적인 항목 확인에 사용한다. 보건복지부령상 영수증 발급과 요청 시 세부내역 제공 절차를 구분해 이해한다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-string Route(string? extractedId, bool confirmedByReviewer)
-{
-    if (string.IsNullOrWhiteSpace(extractedId)) return "Review";
-    return confirmedByReviewer ? "Confirmed" : "Review";
-}
-Console.WriteLine(Route(null, false));
-Console.WriteLine(Route("TEST-D01", false));
-Console.WriteLine(Route("TEST-D01", true));
-```
-{% endraw %}
+1. 필요한 서류와 대상 진료일을 확인한다.
+2. 발급 대상과 요청 권한을 확인한다.
+3. 영수증과 세부내역서의 용도를 설명한다.
+4. 요청 범위에 맞는 서류를 발급한다.
+5. 기간·대상·수령 문서가 맞는지 함께 확인한다.
 
-## 실행 결과
+## 가상 사례
 
-```text
-Review
-Review
-Confirmed
-```
+A가 진료 항목별 비용을 확인하려고 카드 전표를 가져왔다. 무엇을 안내할까?
 
-## 코드를 따라 읽기
+## 사례 풀이
 
-ID가 있더라도 확인을 거치지 않았으면 검토 상태다. 실제 업무에서는 검토 기준·담당자 권한·원문 참조·정정 근거를 남긴다. 단순 bool은 설명용이며 확인자의 신원을 증명하지 않는다. 자동 추출 정확도를 측정하지 않은 상태에서 성능 수치를 만들어 적지 않는다.
+진료비 계산서·영수증과 세부산정내역서가 필요한지 확인한다. 카드 전표만으로는 항목별 비용을 알기 어렵다.
 
 ## 헷갈린 부분과 주의점
 
-높은 신뢰도 점수만으로 필수 정보의 정확성을 보장하지 않는다. 원문 이미지는 개인 정보가 포함될 수 있어 접근·보관 정책도 필요하다.
+보험사별 추가 제출 서류를 병원이 모두 보장한다고 말하지 않는다. 제출처에 필요한 종류를 확인하도록 안내한다.
 
 ## 복습 문제
 
-정규식에 맞는 추출 ID면 원문과 동일하다고 확정할까?
+결제 승인 금액을 확인하면 진료 항목도 알 수 있을까?
 
-**풀이:** 형식 검사와 원문 대조는 다르다. 검토 기준에 따른 확인이 필요하다.
+**풀이:** 아니다. 결제 증빙과 진료비 세부 내역은 목적이 다르다.
 
 ## 참고한 문서
 
-[HL7 FHIR R4 공식 문서](https://hl7.org/fhir/R4/documentreference.html)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.hira.or.kr/bbsDummy.do?brdBltNo=47096&brdScnBltNo=4&pgmid=HIRAA010006011120)
 
----
-
-[← 이전 학습: [병원 업무 공부 16] 문서 업로드 이름·크기·내용 검증 나누기]({{ '/study/2024/hospital/16-upload-metadata/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 18] RPA 재실행에서 중복 입력 막는 처리 키 →]({{ '/study/2024/hospital/18-rpa-idempotency/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 16] 급여·비급여 설명과 확인 범위](/study/2024/hospital/16-upload-metadata/) · [다음: [병원 원무·행정 공부 18] 현금·카드 수납과 승인 확인](/study/2024/hospital/18-rpa-idempotency/)

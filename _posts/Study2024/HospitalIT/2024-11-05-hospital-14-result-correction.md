@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 14] 결과 정정 버전과 원본 이력"
+title: "[병원 원무·행정 공부 14] 퇴원 예정 안내와 필요한 서류 준비"
 date: 2024-11-05 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 62
@@ -11,61 +11,42 @@ study_unit: 8
 permalink: /study/2024/hospital/14-result-correction/
 ---
 
-정정된 값만 덮어쓰면 이전 보고를 추적하기 어렵다고 생각했다. 원본 버전과 새 버전을 함께 남겼다.
+퇴원 당일 창구에서 모든 요청을 처음 받으면 지연될 수 있어 사전 확인 항목을 적었다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-결과의 수정은 새 버전·수정 사유·수행 주체·확인 시각을 포함해 추적할 수 있어야 한다. 아래는 가상 문서 결과의 정수 버전만 모델링한다. 실제 의료 결과 정정·통보·승인 기준은 기관 규정과 관련 표준의 상태 정의를 확인해야 한다.
+퇴원 결정과 복약·치료 설명은 의료진 업무다. 원무는 예정일, 계산 진행, 서류 발급 창구를 연결한다. 의사 작성이 필요한 서류와 행정 확인 서류는 준비 시간이 다를 수 있다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-var versions = new List<ReportVersion>
-{
-    new("TEST-R01", 1, "초안"),
-    new("TEST-R01", 2, "표기 정정")
-};
-var latest = versions.OrderByDescending(item => item.Version).First();
-Console.WriteLine($"최신 {latest.Version}/{latest.Text}");
-Console.WriteLine($"보존 {versions.Count}");
+1. 의료진의 퇴원 예정 안내를 확인한다.
+2. 필요한 증명서와 기록 사본의 종류를 확인한다.
+3. 의사 작성이 필요한 문서는 해당 부서에 요청하도록 연결한다.
+4. 비용 계산 진행과 수납 가능 시점을 확인한다.
+5. 다음 예약과 퇴원 안내는 관련 부서와 확인한다.
 
-// 예제용 형식
-public record ReportVersion(string Id, int Version, string Text);
-```
-{% endraw %}
+## 가상 사례
 
-## 실행 결과
+A가 퇴원 직전에 진단명을 포함한 새 진단서를 요청했다. 원무가 바로 내용을 작성하면 될까?
 
-```text
-최신 2/표기 정정
-보존 2
-```
+## 사례 풀이
 
-## 코드를 따라 읽기
-
-최신 표시는 2번이지만 원본 1번을 목록에서 제거하지 않는다. 버전 순서를 클라이언트가 임의로 증가시키면 동시 수정에서 충돌할 수 있어 저장소가 제어해야 한다. 실제 결과 내용의 임상적 타당성을 이 코드는 판단하지 않는다. 표시와 보존 계약을 분리했다.
+의사의 작성이 필요한 문서인지 확인해 해당 절차로 연결한다. 수납이 완료되었다고 모든 문서가 즉시 발급되는 것은 아니다.
 
 ## 헷갈린 부분과 주의점
 
-내용 해시가 같다고 승인·발행 상태까지 같다는 뜻은 아니다. 상태와 변경 사유도 업무 기록의 일부다.
+원무의 비용 안내를 퇴원약이나 퇴원 후 관리 설명으로 대체하지 않는다.
 
 ## 복습 문제
 
-정정 결과를 저장한 뒤 이전 수신처에는 무엇이 필요할까?
+퇴원 가능 여부와 수납 완료는 같은 판단인가?
 
-**풀이:** 기존 전송과 새 버전의 관계를 알리는 계약과 재통보·확인 절차를 정의해야 한다.
+**풀이:** 아니다. 의료진의 결정과 행정 정산은 연결되지만 별도 절차다.
 
 ## 참고한 문서
 
-[HL7 FHIR R4 공식 문서](https://hl7.org/fhir/R4/diagnosticreport.html)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.snuh.org/content/M001005002.do)
 
----
-
-[← 이전 학습: [병원 업무 공부 13] 결과 데이터의 값·단위·상태 함께 다루기]({{ '/study/2024/hospital/13-result-units/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 15] DICOM의 Study·Series·Instance 계층 →]({{ '/study/2024/hospital/15-dicom-identifiers/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 13] 입원 중간 진료비와 예상 금액 설명](/study/2024/hospital/13-result-units/) · [다음: [병원 원무·행정 공부 15] 퇴원 수납과 정정 내역 확인](/study/2024/hospital/15-dicom-identifiers/)

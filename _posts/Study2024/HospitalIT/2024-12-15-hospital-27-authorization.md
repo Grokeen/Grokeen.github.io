@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 27] 로그인과 자료 접근 권한 분리하기"
+title: "[병원 원무·행정 공부 27] 서류 스캔 전후의 확인과 오분류 방지"
 date: 2024-12-15 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 75
@@ -11,58 +11,42 @@ study_unit: 10
 permalink: /study/2024/hospital/27-authorization/
 ---
 
-계정이 로그인했다는 사실만으로 모든 기록을 읽게 해서는 안 된다고 정리했다. 요청할 때마다 대상 범위를 함께 확인했다.
+문서를 전자화할 때 잘 보이는지만 확인하면 부족하다는 점을 적었다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-인증은 누구인지, 인가는 그 요청을 허용할지 확인하는 단계다. 아래는 가상 역할과 부서가 모두 맞아야 행정 목록 읽기를 허용하는 단순 모델이다. 실제 권한은 담당 관계·행위·대상·목적·긴급 접근 정책 등을 포함할 수 있다. 서버가 요청마다 검사해야 한다.
+스캔 품질뿐 아니라 대상자, 방문 건, 문서 종류, 페이지 누락을 확인해야 한다. 스캔 완료가 원본 폐기 허가를 의미하지 않으며 원본 처리와 보관은 별도 기준을 확인한다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-bool CanRead(string role, string userDepartment, string recordDepartment)
-{
-    return role == "DeskReader" && userDepartment == recordDepartment;
-}
-Console.WriteLine(CanRead("DeskReader", "ADM", "ADM"));
-Console.WriteLine(CanRead("DeskReader", "ADM", "LAB"));
-Console.WriteLine(CanRead("Guest", "ADM", "ADM"));
-```
-{% endraw %}
+1. 대상자와 연결할 방문 건을 확인한다.
+2. 서류 종류와 페이지 수를 확인한다.
+3. 스캔 후 잘림·뒤집힘·판독 가능 여부를 점검한다.
+4. 등록된 대상과 문서 분류를 다시 확인한다.
+5. 원본의 반환·보관은 기관 기준에 따라 처리한다.
 
-## 실행 결과
+## 가상 사례
 
-```text
-True
-False
-False
-```
+양면 두 장 서류를 앞면 두 장만 스캔했다. 이미지가 선명하면 완료일까?
 
-## 코드를 따라 읽기
+## 사례 풀이
 
-역할만 맞거나 부서만 맞는 경우에는 거절한다. 이 규칙은 예제 정책이며 실제 병원 권한 설계와 동일하다는 뜻이 아니다. 화면 메뉴를 숨기는 것은 편의 처리이고 API·자료 저장소의 인가 검사를 대신하지 않는다. 필요 권한을 기본 거절에서 명시적으로 부여한다.
+누락된 뒷면이 있는지 원본과 대조해야 한다. 선명도와 완전성은 별도 확인 항목이다.
 
 ## 헷갈린 부분과 주의점
 
-클라이언트가 보낸 역할·부서를 신뢰해 권한을 결정하지 않는다. 인증된 서버 문맥과 실제 권한 자료를 사용한다.
+판독이 어려운 글자를 추측해 원문 내용을 바꾸지 않는다. 다른 환자 파일에 붙인 오류는 담당자에게 즉시 보고한다.
 
 ## 복습 문제
 
-버튼을 숨기면 사용자가 API를 직접 호출해도 안전할까?
+스캔을 마치면 원본을 바로 폐기해도 될까?
 
-**풀이:** 서버의 대상별 인가 검사가 별도로 필요하다.
+**풀이:** 아니다. 문서 유형별 보관·반환·폐기 근거를 별도로 확인한다.
 
 ## 참고한 문서
 
-[OWASP 공식 가이드](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=265647&chrClsCd=010202&efYd=20240926&ancYnChk=0&joNo=001303)
 
----
-
-[← 이전 학습: [병원 업무 공부 26] 가상 소모품 재고의 유효기간별 정렬]({{ '/study/2024/hospital/26-inventory-expiry/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 28] 감사 기록의 대상·행위·결과와 최소 정보 →]({{ '/study/2024/hospital/28-audit-log/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 26] 기록 발급 범위와 교부 확인 남기기](/study/2024/hospital/26-inventory-expiry/) · [다음: [병원 원무·행정 공부 28] 전화·대기 공간에서의 개인정보 보호](/study/2024/hospital/28-audit-log/)

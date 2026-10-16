@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 12] 라벨 재출력 번호와 대상 ID 구별하기"
+title: "[병원 원무·행정 공부 12] 병실 변경 요청과 확정 안내"
 date: 2024-10-30 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 60
@@ -11,59 +11,43 @@ study_unit: 8
 permalink: /study/2024/hospital/12-label-reprint/
 ---
 
-라벨을 다시 뽑아도 원래 대상은 유지되도록 모델을 나누었다. 출력 횟수는 별도 이력으로 기록했다.
+병실 변경을 비용 문제와 병동 운영 문제로 나누어 확인했다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-대상 식별자는 무엇을 가리키는지, 출력 번호는 몇 번째 발행인지 나타낸다. 재출력 때마다 대상 ID를 바꾸면 기존 처리 기록과 연결이 끊길 수 있다. 실제 라벨 규격·승인·폐기·대조 절차는 기관 정책이 필요하다. 아래는 데이터 연결만 보여 주는 가상 예제다.
+희망 병실 접수, 의료진의 전실 가능 판단, 병상 현황, 비용 안내, 실제 이동은 별도 단계다. 원무가 희망을 접수했다고 바로 이동이 확정되는 것은 아니다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-var first = new Label("TEST-S01", 1);
-var reprint = first with { PrintNumber = 2 };
-Console.WriteLine($"{first.TargetId}/{first.PrintNumber}");
-Console.WriteLine($"{reprint.TargetId}/{reprint.PrintNumber}");
-Console.WriteLine(first.TargetId == reprint.TargetId);
+1. 현재 병실과 변경 희망 사유를 확인한다.
+2. 의료·간호 부서에 이동 가능 여부를 확인한다.
+3. 병상 현황과 배정 승인 절차를 확인한다.
+4. 비용 관련 사항은 확정된 기준으로 안내한다.
+5. 실제 이동 일시와 관련 부서의 처리 결과를 확인한다.
 
-// 예제용 형식
-public record Label(string TargetId, int PrintNumber);
-```
-{% endraw %}
+## 가상 사례
 
-## 실행 결과
+A는 오늘부터 다른 병실 요금이 적용된다고 들었지만 실제 이동은 다음 날이었다. 무엇을 확인할까?
 
-```text
-TEST-S01/1
-TEST-S01/2
-True
-```
+## 사례 풀이
 
-## 코드를 따라 읽기
-
-with로 만든 새 출력 데이터는 대상 ID를 유지하고 출력 번호만 달리한다. 실제 프린터 응답과 물리 출력 완료는 별도 확인이 필요하다. 코드에서 출력 요청을 만들었다는 사실을 라벨이 실제 부착되었다는 사실과 구별한다. 재출력 사유·수행자 기록도 추가할 수 있다.
+희망 접수 시점과 실제 병실 사용 기록, 기관의 산정 기준을 확인해 청구 담당자에게 검토를 요청한다.
 
 ## 헷갈린 부분과 주의점
 
-프린터 재시도로 중복 출력될 수 있다. 스풀러 성공과 실제 업무 완료를 같은 신호로 보지 않는다.
+비용 안내를 이유로 감염 관리나 치료상 배정 기준을 임의 변경하지 않는다.
 
 ## 복습 문제
 
-출력 번호를 환자 ID처럼 써도 될까?
+병실 변경 요청만으로 전실 완료라고 기록할까?
 
-**풀이:** 안 된다. 식별 대상과 발행 사건이 달라 충돌과 잘못된 연결이 생길 수 있다.
+**풀이:** 아니다. 승인·배정·실제 이동을 확인한 후 처리한다.
 
 ## 참고한 문서
 
-[HL7 FHIR R4 공식 문서](https://hl7.org/fhir/R4/datatypes.html#Identifier)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.snuh.org/content/M001005001.do)
+- [공식 근거·업무 안내 2](https://www.snuh.org/content/M001005002.do)
 
----
-
-[← 이전 학습: [병원 업무 공부 11] 검체 식별자와 수령 상태 이력]({{ '/study/2024/hospital/11-specimen-state/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 13] 결과 데이터의 값·단위·상태 함께 다루기 →]({{ '/study/2024/hospital/13-result-units/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 11] 입원 서류와 설명 담당을 구분하기](/study/2024/hospital/11-specimen-state/) · [다음: [병원 원무·행정 공부 13] 입원 중간 진료비와 예상 금액 설명](/study/2024/hospital/13-result-units/)

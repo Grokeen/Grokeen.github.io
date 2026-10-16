@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 21] 기본 키와 중복 자료 거절"
+title: "[병원 원무·행정 공부 21] 진단서·입퇴원확인서·기록 사본을 구분하기"
 date: 2024-11-27 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 69
@@ -11,61 +11,43 @@ study_unit: 9
 permalink: /study/2024/hospital/21-datatable-key/
 ---
 
-같은 ID가 두 번 들어오지 않도록 표의 키 제약을 사용했다. 화면 확인만으로 중복을 막는 방식과 비교했다.
+제출처에서 서류를 받아 오라고 했다는 말만으로 발급 종류를 정하지 않기로 했다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-기본 키는 각 행을 구별하는 열 또는 열 묶음이다. DataTable.PrimaryKey를 설정하면 메모리 표에서 유일성 제약을 적용할 수 있다. Rows.Find는 기본 키로 조회한다. 실제 DB도 적절한 키·고유 제약이 필요하지만 메모리 제약을 설정했다고 원격 저장소에 자동 적용되는 것은 아니다.
+진단서는 의학적 판단이 포함되는 문서이고 입퇴원 사실 확인, 진료비 증빙, 의무기록 사본은 목적이 다르다. 진단명 포함 여부와 작성 담당에 따라 발급 경로가 달라질 수 있다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-using System.Data;
+1. 제출 목적과 제출처가 요구한 문서 종류를 확인한다.
+2. 진단명·기간 등 필요한 기재 범위를 확인한다.
+3. 작성 담당과 발급 가능 절차를 확인한다.
+4. 본인 또는 적법한 신청 권한을 확인한다.
+5. 수령 문서의 대상자·기간·종류를 재확인한다.
 
-using var table = new DataTable();
-var idColumn = table.Columns.Add("Id", typeof(string));
-table.PrimaryKey = new[] { idColumn };
-table.Rows.Add("TEST-D01");
-try { table.Rows.Add("TEST-D01"); }
-catch (ConstraintException) { Console.WriteLine("중복 거절"); }
-Console.WriteLine(table.Rows.Find("TEST-D01") != null);
-Console.WriteLine(table.Rows.Count);
-```
-{% endraw %}
+## 가상 사례
 
-## 실행 결과
+A는 입원 기간 증명이 필요하지만 진단명은 필요 없다고 한다. 무조건 진단서를 권할까?
 
-```text
-중복 거절
-True
-1
-```
+## 사례 풀이
 
-## 코드를 따라 읽기
-
-중복 삽입이 거절되어 원래 한 행만 남는다. 실제 업무에서는 ID의 발급 범위와 정정·재처리의 키를 구별해야 한다. 한 번 실패한 삽입을 성공으로 보여 주지 않고 호출자가 기존 자료인지 확인하도록 응답 계약을 정한다.
+요구된 문서가 입퇴원 사실 확인 서류인지 먼저 확인한다. 필요한 범위를 넘는 의료정보가 담긴 문서를 임의로 선택하지 않는다.
 
 ## 헷갈린 부분과 주의점
 
-환자·방문·검체 등 서로 다른 대상을 같은 기본 키 규칙으로 무조건 묶지 않는다. 키가 같다는 업무상 의미를 먼저 정의한다.
+발급 창구와 비용은 기관별로 다르다. 서류에 필요한 의학적 내용을 원무 직원이 임의 작성하지 않는다.
 
 ## 복습 문제
 
-키 열이 두 개인 복합 키가 필요한 경우는?
+진료비 영수증은 항상 진단서를 대신할 수 있을까?
 
-**풀이:** 기관 범위와 외부 번호처럼 두 값이 함께 유일성을 정하는 경우다.
+**풀이:** 아니다. 증명하려는 사실이 다르므로 제출처 요구를 확인한다.
 
 ## 참고한 문서
 
-[Microsoft 공식 문서 (.NET 8·C# 관련 항목)](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable.primarykey?view=net-8.0)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.snuh.org/content/M001005002.do)
+- [공식 근거·업무 안내 2](https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=265647&chrClsCd=010202&efYd=20240926&ancYnChk=0&joNo=001303)
 
----
-
-[← 이전 학습: [병원 업무 공부 20] DataTable로 열 자료형과 행 의미 정의하기]({{ '/study/2024/hospital/20-datatable-schema/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 22] 동시 수정에서 예상 버전 비교하기 →]({{ '/study/2024/hospital/22-optimistic-version/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 20] 미수금 안내와 지원 상담 연결](/study/2024/hospital/20-datatable-schema/) · [다음: [병원 원무·행정 공부 22] 성인 본인의 진료기록 열람·사본 신청](/study/2024/hospital/22-optimistic-version/)

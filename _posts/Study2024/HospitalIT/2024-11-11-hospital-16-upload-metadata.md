@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 16] 문서 업로드 이름·크기·내용 검증 나누기"
+title: "[병원 원무·행정 공부 16] 급여·비급여 설명과 확인 범위"
 date: 2024-11-11 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 64
@@ -11,60 +11,43 @@ study_unit: 8
 permalink: /study/2024/hospital/16-upload-metadata/
 ---
 
-업로드 파일 이름을 믿지 않고 입력 메타데이터를 따로 검사했다. 확장자는 한 가지 신호일 뿐이었다.
+영수증의 비급여 칸을 보고 모든 비용이 잘못 청구되었다고 단정하지 않도록 정리했다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-업로드 검증은 허용 형식·크기·실제 내용·저장 경로·권한 등 여러 층으로 나뉜다. 아래는 가상 파일명과 길이의 1차 선별만 수행한다. 허용 확장자와 크기 상한은 학습용 규칙이며 악성 파일 탐지나 실제 문서 정합성 검사까지 구현하지 않는다.
+건강보험 자격과 개별 진료 항목의 급여 여부는 별개다. 비급여 표시만으로 적법·부당 여부를 판단할 수 없으며 급여 대상 비용을 비급여로 낸 것인지 확인하는 제도도 있다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-bool AcceptMetadata(string name, long length)
-{
-    string extension = Path.GetExtension(name);
-    return extension.Equals(".pdf", StringComparison.OrdinalIgnoreCase)
-        && length > 0 && length <= 1024 * 1024;
-}
-Console.WriteLine(AcceptMetadata("TEST-DOC01.pdf", 500));
-Console.WriteLine(AcceptMetadata("TEST-DOC02.exe", 500));
-Console.WriteLine(AcceptMetadata("TEST-DOC03.pdf", 0));
-```
-{% endraw %}
+1. 대상 영수증과 진료일을 확인한다.
+2. 문의한 항목을 세부내역서에서 특정한다.
+3. 담당 청구 부서에 적용 기준과 설명을 확인한다.
+4. 환자에게 확인된 내용과 검토 중인 내용을 구분해 전달한다.
+5. 필요하면 건강보험심사평가원의 진료비 확인 절차를 안내한다.
 
-## 실행 결과
+## 가상 사례
 
-```text
-True
-False
-False
-```
+A가 비급여 한 항목의 이유를 물었다. 원무가 영수증 총액만 반복하면 충분할까?
 
-## 코드를 따라 읽기
+## 사례 풀이
 
-PDF 확장자와 양의 크기·상한을 검사한다. 통과한 첫 값도 실제 파일 내용이 안전하거나 올바른 PDF임을 보장하지 않는다. 저장용 파일명은 서버가 생성하고 사용자 제공 이름은 별도 메타데이터로 보관할 수 있다. 실제 스트림 크기도 확인해야 한다.
+해당 항목과 적용 사유를 담당 부서에 확인해 설명해야 한다. 이견이 있으면 공식 확인 절차를 안내할 수 있다.
 
 ## 헷갈린 부분과 주의점
 
-클라이언트가 보낸 Content-Type과 길이를 그대로 신뢰하지 않는다. 경로 결합·권한·다운로드 노출 정책까지 맞춰야 한다.
+진료비 확인을 신청하면 무조건 환불된다고 약속하지 않는다.
 
 ## 복습 문제
 
-document.pdf라는 이름이면 내용 검사를 생략해도 될까?
+비급여라는 글자만으로 부당 청구가 확정될까?
 
-**풀이:** 이름은 자유롭게 바꿀 수 있어 실제 내용·형식·안전성 검증이 추가로 필요하다.
+**풀이:** 아니다. 항목과 적용 기준을 확인한 뒤 판단해야 한다.
 
 ## 참고한 문서
 
-[OWASP 공식 가이드](https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.hira.or.kr/bbsDummy.do?brdBltNo=47096&brdScnBltNo=4&pgmid=HIRAA010006011120)
+- [공식 근거·업무 안내 2](https://www.hira.or.kr/rb/npay/index.do?pgmid=HIRAA030009100000)
 
----
-
-[← 이전 학습: [병원 업무 공부 15] DICOM의 Study·Series·Instance 계층]({{ '/study/2024/hospital/15-dicom-identifiers/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 17] OCR 추출값과 사람이 확인한 값 구분하기 →]({{ '/study/2024/hospital/17-ocr-review/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 15] 퇴원 수납과 정정 내역 확인](/study/2024/hospital/15-dicom-identifiers/) · [다음: [병원 원무·행정 공부 17] 진료비 영수증·세부내역서·카드 전표의 차이](/study/2024/hospital/17-ocr-review/)

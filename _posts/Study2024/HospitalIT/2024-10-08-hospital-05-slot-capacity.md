@@ -1,9 +1,9 @@
 ---
 layout: content
-title: "[병원 업무 공부 05] 예약 슬롯의 정원과 남은 자리"
+title: "[병원 원무·행정 공부 05] 예약 변경·취소와 연결된 검사 확인"
 date: 2024-10-08 09:00:00 +0900
-categories: [HospitalIT]
-tags: [2024학습노트, 병원업무자동화]
+categories: [HospitalAdministration]
+tags: [2024학습노트, 원무행정]
 series: study-2024-csharp-hospital
 study_track: hospital
 study_order: 53
@@ -11,60 +11,42 @@ study_unit: 7
 permalink: /study/2024/hospital/05-slot-capacity/
 ---
 
-예약 개수와 자원 수용량을 분리했다. 한 건을 취소한 뒤 남은 자리 계산도 다시 확인했다.
+진료 예약 하나를 취소할 때 연결된 검사와 선납 내역도 함께 확인하는 습관을 정리했다.
 
-> C# 12·.NET 8 콘솔 프로젝트 기준. Program.cs를 아래 코드 전체로 교체하고 `dotnet run`으로 실행한다. 병원 업무는 가상 자료를 이용한 전산 학습 모델이다.
+> 2024년 학습 날짜로 재구성한 가상 병원의 원무·행정 공부 노트다. 실제 근무 경험이나 개별 기관의 2024년 운영을 재현한 기록은 아니다. 제도는 표시한 당시 기준, 기관별 안내는 일반적인 흐름을 이해하는 참고로 읽는다.
 
 ## 오늘 정리한 개념
 
-Slot은 예약 가능한 시간 단위를 표현하는 참고 개념이다. 아래는 정원 2인 가상 행정 예약 슬롯을 사용한다. 정원·중복 예약 허용·예약 확정 시점은 기관별 규칙이다. 예약을 넣기 전 남은 수를 확인하는 단순 코드와 실제 동시 요청을 원자적으로 처리하는 것은 구별해야 한다.
+예약 변경은 기존 예약 처리와 새 예약 확정을 모두 확인해야 끝난다. 진료·검사·선납은 별도 기록일 수 있어 한 번의 취소가 모든 항목에 적용된다고 가정하면 안 된다.
 
-## 따라 해 보기
+## 업무 절차
 
-{% raw %}
-```csharp
-int capacity = 2;
-var bookings = new HashSet<string>(StringComparer.Ordinal);
-bool Book(string id) => bookings.Count < capacity && bookings.Add(id);
-Console.WriteLine(Book("TEST-A01"));
-Console.WriteLine(Book("TEST-A02"));
-Console.WriteLine(Book("TEST-A03"));
-bookings.Remove("TEST-A01");
-Console.WriteLine(capacity - bookings.Count);
-```
-{% endraw %}
+1. 본인 또는 적법한 요청 권한을 확인한다.
+2. 변경할 진료 일시와 연결 검사·선납 여부를 조회한다.
+3. 검사 준비나 진료과 일정에 미치는 영향은 담당 부서와 확인한다.
+4. 기존 예약 취소와 새 예약 확정을 확인한다.
+5. 환불이 필요하면 수납 담당 절차로 별도 연결한다.
 
-## 실행 결과
+## 가상 사례
 
-```text
-True
-True
-False
-1
-```
+진료 예약만 취소했는데 같은 날 검사 예약이 남아 있다. 처리 완료로 안내해도 될까?
 
-## 코드를 따라 읽기
+## 사례 풀이
 
-두 건이 들어가면 세 번째는 거절되고 하나를 취소하면 빈자리가 1이 된다. 입력 검사·만료된 임시 점유·예약 상태는 생략한 모델이다. 실제 저장소에서는 정원 확인과 추가가 하나의 일관된 처리로 이루어져야 중복 확정을 줄일 수 있다.
+검사의 유지·변경 여부를 담당 부서와 확인해야 한다. 환자가 원한 범위와 실제 처리된 항목을 대조해 안내한다.
 
 ## 헷갈린 부분과 주의점
 
-이 함수는 중복 예약 ID의 멱등 성공 응답까지 구현하지 않는다. 이미 있는 예약을 다시 요청한 경우의 응답을 별도로 정의할 수 있다.
+의료진 판단이 필요한 검사 취소를 원무 담당자가 임의 결정하지 않는다.
 
 ## 복습 문제
 
-두 서버가 동시에 마지막 한 자리를 조회하면?
+예약을 취소하면 선납금도 자동 환불될까?
 
-**풀이:** 둘 다 가능하다고 볼 수 있어 저장소 수준의 동시성 제어가 필요하다.
+**풀이:** 기관 시스템과 결제 상태에 따라 다르므로 환불 완료 여부를 따로 확인한다.
 
 ## 참고한 문서
 
-[HL7 FHIR R4 공식 문서](https://hl7.org/fhir/R4/slot.html)에서 개념과 API의 세부 계약을 확인할 수 있다. 설명과 예제는 학습용으로 구성했다.
+- [공식 근거·업무 안내 1](https://www.snuh.org/content/M001004005.do)
 
----
-
-[← 이전 학습: [병원 업무 공부 04] 예약 시간 중복을 반열린 구간으로 계산하기]({{ '/study/2024/hospital/04-appointment-overlap/' | relative_url }})
-
-[전체 학습 목차]({{ '/study/2024/csharp-hospital/' | relative_url }})
-
-[다음 학습: [병원 업무 공부 06] 취소 재요청을 같은 결과로 처리하기 →]({{ '/study/2024/hospital/06-appointment-cancel/' | relative_url }})
+[전체 학습 목차](/study/2024/csharp-hospital/) · [이전: [병원 원무·행정 공부 04] 진료 예약을 받을 때 확인할 항목](/study/2024/hospital/04-appointment-overlap/) · [다음: [병원 원무·행정 공부 06] 당일 방문과 진료 지연 상황 안내](/study/2024/hospital/06-appointment-cancel/)

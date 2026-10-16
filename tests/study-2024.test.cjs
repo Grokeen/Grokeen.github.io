@@ -25,11 +25,18 @@ test("C# and hospital notes have distinct concepts within May to December 2024 a
     const source = fs.readFileSync(path.join(root, article.file), "utf8").replace(/\r\n/g, "\n");
     assert.ok(source.includes("series: " + manifest.series));
     assert.ok(source.includes("permalink: " + article.url));
-    concepts.push(source.split("## 오늘 정리한 개념\n\n")[1].split("\n\n## 따라 해 보기")[0]);
-    codes.push(source.match(/^```csharp\n([\s\S]*?)^```/m)[1]);
+    concepts.push(source.split("## 오늘 정리한 개념\n\n")[1].split("\n\n## ")[0]);
+    if (article.language === "csharp") codes.push(source.match(/^```csharp\n([\s\S]*?)^```/m)[1]);
+    else {
+      assert.equal(article.track, "hospital");
+      assert.equal(article.language, "procedure");
+      assert.ok(source.includes("## 업무 절차\n\n1. "));
+      assert.ok(source.includes("## 가상 사례"));
+      assert.equal(source.includes("```csharp"), false);
+    }
   }
   assert.equal(new Set(concepts).size, 80);
-  assert.equal(new Set(codes).size, 80);
+  assert.equal(new Set(codes).size, 48);
 });
 
 test("C# and hospital index lists all 80 lessons once and both existing and new courses remain discoverable", () => {
@@ -57,11 +64,19 @@ test("all 2024 lessons render their full explanation, unmodified code, expected 
       assert.equal(document.querySelector(".article-header h1").textContent, article.title);
       assert.equal(document.querySelector(".article-header time").getAttribute("datetime").slice(0, 10), article.date);
       assert.ok(content.textContent.length > 650, article.file);
-      assert.deepEqual([...content.querySelectorAll("h2")].map((h) => h.textContent), ["오늘 정리한 개념", "따라 해 보기", "실행 결과", "코드를 따라 읽기", "헷갈린 부분과 주의점", "복습 문제", "참고한 문서"]);
+      const headings = article.language === "csharp"
+        ? ["오늘 정리한 개념", "따라 해 보기", "실행 결과", "코드를 따라 읽기", "헷갈린 부분과 주의점", "복습 문제", "참고한 문서"]
+        : ["오늘 정리한 개념", "업무 절차", "가상 사례", "사례 풀이", "헷갈린 부분과 주의점", "복습 문제", "참고한 문서"];
+      assert.deepEqual([...content.querySelectorAll("h2")].map((h) => h.textContent), headings);
       const source = fs.readFileSync(path.join(root, article.file), "utf8").replace(/\r\n/g, "\n");
-      const code = source.match(/^```csharp\n([\s\S]*?)^```/m)[1];
-      assert.equal(content.querySelector(".language-csharp pre code, pre code.language-csharp").textContent.replace(/\r\n/g, "\n"), code);
-      assert.equal(content.querySelector(".language-text pre code, pre code.language-text").textContent.replace(/\r\n/g, "\n"), article.expected_output);
+      if (article.language === "csharp") {
+        const code = source.match(/^```csharp\n([\s\S]*?)^```/m)[1];
+        assert.equal(content.querySelector(".language-csharp pre code, pre code.language-csharp").textContent.replace(/\r\n/g, "\n"), code);
+        assert.equal(content.querySelector(".language-text pre code, pre code.language-text").textContent.replace(/\r\n/g, "\n"), article.expected_output);
+      } else {
+        assert.equal(content.querySelectorAll("ol > li").length, 5);
+        assert.ok(content.textContent.includes("가상 병원"));
+      }
       const urls = new Set([...content.querySelectorAll("a[href]")].map((a) => a.getAttribute("href")));
       assert.ok(urls.has(article.source));
       assert.ok(urls.has(manifest.index_url));
