@@ -65,7 +65,7 @@ test("both coding indexes and the board expose all solutions and retain their co
           const d = dom.window.document;
           const content = d.querySelector(".article-content");
           assert.equal(d.querySelector(".article-header h1").textContent, a.title);
-          const source = fs.readFileSync(path.join(root, a.file), "utf8");
+          const source = fs.readFileSync(path.join(root, a.file), "utf8").replace(/\r\n/g, "\n");
           const code = source.match(/^```java\n([\s\S]*?)^```/m)[1];
           assert.equal(content.querySelector(".language-java pre code, pre code.language-java").textContent.replace(/\r\n/g, "\n"), code);
           const headings = [...content.querySelectorAll("h2")].map(h => h.textContent);

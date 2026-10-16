@@ -20,7 +20,7 @@ test("certification notes have 40 information-processing and 32 big-data concept
   const concepts = [];
   for (const article of manifest.articles) {
     assert.ok(article.date >= "2021-01-01" && article.date <= "2023-12-31");
-    const text = fs.readFileSync(path.join(root, article.file), "utf8");
+    const text = fs.readFileSync(path.join(root, article.file), "utf8").replace(/\r\n/g, "\n");
     assert.ok(text.includes("실제 기출문제가 아닌 창작 연습문제"));
     assert.ok(text.includes("permalink: " + article.url));
     concepts.push(text.split("## 오늘 정리한 개념\n\n")[1].split("\n\n## 예제 문제")[0]);

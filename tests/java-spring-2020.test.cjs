@@ -17,7 +17,7 @@ test("2020 Java and Spring course has 80 distinct lessons and respects historica
   for (const a of manifest.articles) {
     assert.ok(a.date >= "2020-01-01" && a.date <= "2020-12-31");
     if (a.track === "spring") assert.ok(a.date >= "2020-10-01");
-    const source = fs.readFileSync(path.join(root, a.file), "utf8");
+    const source = fs.readFileSync(path.join(root, a.file), "utf8").replace(/\r\n/g, "\n");
     assert.ok(source.includes("series: " + manifest.series));
     const code = source.match(/^```java\n([\s\S]*?)^```/m)[1];
     assert.equal(/\bjakarta\.|\brecord\s+[A-Z]|\.toList\(\)/.test(code.replaceAll("Collectors.toList()", "")), false, a.file);
@@ -47,7 +47,7 @@ test("all Java/Spring lessons render the exact executable code, explanation and 
       const content = d.querySelector(".article-content");
       assert.equal(d.querySelector(".article-header h1").textContent, a.title);
       assert.equal(d.querySelector("time").getAttribute("datetime").slice(0, 10), a.date);
-      const source = fs.readFileSync(path.join(root, a.file), "utf8");
+      const source = fs.readFileSync(path.join(root, a.file), "utf8").replace(/\r\n/g, "\n");
       const code = source.match(/^```java\n([\s\S]*?)^```/m)[1];
       assert.equal(content.querySelector(".language-java pre code, pre code.language-java").textContent.replace(/\r\n/g, "\n"), code);
       assert.deepEqual([...content.querySelectorAll("h2")].map(h => h.textContent), ["오늘 정리한 개념", "따라 해 보기", "확인 결과", "코드를 따라 읽기", "헷갈린 부분과 주의점", "복습 문제", "참고한 문서"]);

@@ -19,7 +19,7 @@ test("local-tax study has 120 distinct concepts with ten posts in each month of 
   }
   const concepts = [];
   for (const article of articles) {
-    const source = fs.readFileSync(path.join(root, article.file), "utf8");
+    const source = fs.readFileSync(path.join(root, article.file), "utf8").replace(/\r\n/g, "\n");
     assert.ok(source.includes("2022년 1월 1일 적용 규정을 공통 기준"));
     assert.ok(source.includes("permalink: " + article.url));
     concepts.push(source.split("## 오늘 정리한 개념\n\n")[1].split("\n\n## 가상 사례")[0]);
