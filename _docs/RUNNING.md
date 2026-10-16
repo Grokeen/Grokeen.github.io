@@ -157,13 +157,21 @@ Remove-Item Env:\JEKYLL_ENV
 
 결과는 `.jekyll-local/production-site/`에 생성됩니다. 실행 중인 로컬 서버 결과를 덮어쓰지 않습니다. `_site/`는 Git에서 제외합니다. 실행 스크립트, 문서, 설치된 gem과 임시 파일은 배포용 출력에서 제외합니다.
 
-검증한 소스와 이미지·문서를 커밋한 뒤 업로드합니다.
+검증한 변경 파일만 선택해서 커밋한 뒤 업로드합니다. `main` 푸시는 `.github/workflows/pages.yml`의 빌드·배포를 자동으로 실행합니다.
 
 ```powershell
-git add .
+git add -- <변경한-파일>
 git diff --cached --check
-git commit -m "Update wedding invitation"
+git commit -m "Update site"
 git push origin main
 ```
 
-`.jekyll-local/`의 빌드 결과와 원본 테스트 이미지는 Git에서 제외합니다. 2026-10-06 확인 기준 이 저장소에는 GitHub Pages가 설정되어 있지 않습니다. GitHub 업로드 후 웹사이트를 공개하려면 저장소의 **Settings → Pages**에서 게시 방식을 별도로 설정해야 합니다.
+`.jekyll-local/`의 빌드 결과와 원본 테스트 이미지는 Git에서 제외합니다.
+
+### GitHub Actions를 통한 자동 배포
+
+저장소의 **Settings → Pages → Build and deployment → Source**는 **GitHub Actions**를 사용합니다. 워크플로는 Ruby 3.3과 `Gemfile.lock`의 의존성으로 Jekyll을 빌드하고, Node.js 자동 검사를 실행한 다음 생성된 정적 파일만 업로드·배포합니다. 사이트의 URL과 기본 경로는 Pages 메타데이터로 임시 설정 파일 `.jekyll-local/pages.yml`을 만들어 전달하므로 `_config.local.yml`은 사용하지 않습니다.
+
+**Actions → Build and deploy GitHub Pages**에서 `build`와 `deploy`가 모두 성공했는지 확인합니다. **Run workflow**를 사용하면 소스 수정 없이 재배포할 수 있습니다. 배포 성공 뒤에는 워크플로에 표시된 공개 주소의 홈페이지와 게시글·CSS가 실제로 열리는지 확인합니다.
+
+2026-10-16 장애 확인 시에는 Pages가 `workflow` 방식으로 설정돼 있었지만 저장소에 워크플로 파일과 실행 이력이 없었습니다. 이 때문에 공개 주소가 404를 반환했습니다. Pages 설정이나 소스 업로드만으로 배포가 실행되는 것은 아닙니다.

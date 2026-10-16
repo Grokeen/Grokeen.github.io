@@ -175,6 +175,8 @@ analytics:
 include:
   - .htaccess
 exclude:
+  # Do not republish a legacy post that references removed personal interview images.
+  - _posts/Resume/Xprograming/ChatGPT/GPTers-Update/2023-11-11-upgrade.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor

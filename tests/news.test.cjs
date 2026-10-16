@@ -62,7 +62,7 @@ test("legacy link-only scraps now have readable summaries and retain their saved
   assert.equal(legacy.articles.length, 10);
   for (const article of legacy.articles) {
     const markdown = fs.readFileSync(path.join(newsDir, article.file), "utf8");
-    assert.match(markdown, /^---\nlayout: content\n/);
+    assert.match(markdown, /^---\r?\nlayout: content\r?\n/);
     assert.ok(markdown.includes(article.source_date), article.file);
     assert.ok(markdown.includes("## 핵심 내용") || markdown.includes("## 2023-08-02"), article.file);
     assert.ok(markdown.split("---").slice(2).join("---").length > 500, article.file);
