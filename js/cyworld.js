@@ -238,23 +238,49 @@
   ];
   let trackIndex = 0;
   let playRequest = 0;
+  let awaitingAutoplay = true;
   const playButton = $("#music-play");
+  const startEvents = ["click", "touchend", "keydown"];
+  function stopAutoplay() {
+    awaitingAutoplay = false;
+    audio.autoplay = false;
+    startEvents.forEach((type) => document.removeEventListener(type, startOnInteraction));
+  }
+  function startOnInteraction(event) {
+    if (!awaitingAutoplay || event.defaultPrevented || event.target.closest?.(".music-controls")) return;
+    if (event.type === "keydown" && (event.repeat || event.ctrlKey || event.altKey || event.metaKey || ["Shift", "Control", "Alt", "Meta", "Escape"].includes(event.key))) return;
+    playMusic(true);
+  }
   function syncPlayback() {
     const playing = !audio.paused;
     playButton.textContent = playing ? "Ⅱ" : "▶";
     playButton.setAttribute("aria-label", playing ? "음악 일시정지" : "음악 재생");
     playButton.setAttribute("aria-pressed", String(playing));
   }
-  async function playMusic() {
+  async function playMusic(automatic = false) {
     const request = ++playRequest;
-    try { await audio.play(); if (request === playRequest) $("#music-status").textContent = "작은 방에 음악이 흐르고 있어요."; }
+    try {
+      await audio.play();
+      if (request === playRequest) {
+        stopAutoplay();
+        $("#music-status").textContent = "작은 방에 음악이 흐르고 있어요.";
+      }
+    }
     catch (error) {
-      if (request === playRequest && error.name !== "AbortError") $("#music-status").textContent = "재생할 수 없어요. 다시 재생 버튼을 눌러주세요.";
+      if (request === playRequest && error.name !== "AbortError") {
+        if (automatic && awaitingAutoplay && error.name === "NotAllowedError") {
+          $("#music-status").textContent = "화면을 한 번 누르면 음악이 시작돼요.";
+        } else {
+          stopAutoplay();
+          $("#music-status").textContent = "재생할 수 없어요. 다시 재생 버튼을 눌러주세요.";
+        }
+      }
     }
     syncPlayback();
   }
-  function changeTrack(direction) {
-    const wasPlaying = !audio.paused;
+  function changeTrack(direction, forcePlay = false) {
+    const wasPlaying = forcePlay || !audio.paused || awaitingAutoplay;
+    stopAutoplay();
     playRequest++;
     audio.pause();
     trackIndex = (trackIndex + direction + tracks.length) % tracks.length;
@@ -269,6 +295,7 @@
     else syncPlayback();
   }
   playButton.addEventListener("click", () => {
+    stopAutoplay();
     if (audio.paused) playMusic();
     else { playRequest++; audio.pause(); $("#music-status").textContent = "음악을 잠시 멈췄어요."; }
   });
@@ -278,8 +305,13 @@
   audio.volume = Number($("#music-volume").value);
   audio.addEventListener("play", syncPlayback);
   audio.addEventListener("pause", syncPlayback);
-  audio.addEventListener("ended", () => { changeTrack(1); playMusic(); });
-  audio.addEventListener("error", () => { $("#music-status").textContent = "음악 파일을 불러오지 못했어요. 다음 곡을 선택해 주세요."; syncPlayback(); });
+  audio.addEventListener("ended", () => changeTrack(1, true));
+  audio.addEventListener("error", () => {
+    playRequest++;
+    stopAutoplay();
+    $("#music-status").textContent = "음악 파일을 불러오지 못했어요. 다음 곡을 선택해 주세요.";
+    syncPlayback();
+  });
   audio.addEventListener("timeupdate", () => {
     const seconds = Math.floor(audio.currentTime || 0);
     $("#music-time").textContent = Math.floor(seconds / 60) + ":" + String(seconds % 60).padStart(2, "0");
@@ -288,4 +320,6 @@
   renderCalendar();
   filterBoard();
   showPanel(location.hash.slice(1));
+  startEvents.forEach((type) => document.addEventListener(type, startOnInteraction));
+  playMusic(true);
 })();
