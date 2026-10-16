@@ -31,11 +31,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\stop-server.ps1
 - 방문 카운터와 도토리는 표시용으로 0을 사용합니다. 방문자 추적이나 계정 연동은 없습니다.
 - 청첩장 템플릿: `/wedding/`, [사용 안내](_docs/WEDDING.md)
 
-실행 및 배포 방법은 [실행 가이드](_docs/RUNNING.md), 변경 내역은 [업데이트 기록](_docs/UPDATE_HISTORY.md)를 참고합니다.
-
-## 개인정보와 빌드 결과
-
-이력서·자기소개서·지원 기록·개인 사진과 연락처는 현재 소스에서 제거했습니다. 일반 기술 문서의 개인 경로는 예시로 변경했습니다. 과거 Git 커밋은 별도로 남아 있습니다.
+실행 및 배포 방법은 [실행 가이드](_docs/RUNNING.md), 변경 내역은 [업데이트 기록](_docs/UPDATE_HISTORY.md)를 # 개인정보와 빌드 결과
 
 `_site/`와 `.jekyll-local/`은 Git에서 제외합니다. `_posts` 원문과 내부 문서는 정적 파일로 배포하지 않습니다. 배포 주소는 `_config.yml`의 `url`에 설정하세요.
 
