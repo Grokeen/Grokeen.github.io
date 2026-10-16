@@ -24,24 +24,24 @@ String의 ==는 같은 참조인지 확인하고 equals는 내용을 비교한�
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    String a=new String("note");
-    String b=new String("note");
-    System.out.println(a==b);
+    String a = new String("note");
+    String b = new String("note");
+    System.out.println(a == b);
     System.out.println(a.equals(b));
     a.toUpperCase(Locale.ROOT);
     System.out.println(a);
   }
-
 }
 ```
 {% endraw %}

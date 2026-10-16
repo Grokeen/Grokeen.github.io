@@ -24,27 +24,41 @@ Content-Type은 보낸 본문의 형식이고 Accept는 받고 싶은 응답 형
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    MockMvc mvc=standaloneSetup(new Api()).build();
-    mvc.perform(get("/json").accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk());
-    mvc.perform(get("/json").accept(MediaType.TEXT_PLAIN)).andExpect(status().isNotAcceptable());
+    MockMvc mvc = standaloneSetup(new Api()).build();
+    mvc
+      .perform(get("/json").accept(MediaType.APPLICATION_JSON))
+      .andExpect(status().isOk());
+    mvc
+      .perform(get("/json").accept(MediaType.TEXT_PLAIN))
+      .andExpect(status().isNotAcceptable());
   }
-    @RestController static class Api {@GetMapping(value="/json",produces="application/json") public Map<String,Integer> json(){return Map.of("n",1);}}
+
+  @RestController
+  static class Api {
+
+    @GetMapping(value = "/json", produces = "application/json")
+    public Map<String, Integer> json() {
+      return Map.of("n", 1);
+    }
+  }
 }
 ```
 {% endraw %}

@@ -24,20 +24,26 @@ permalink: /study/2020/java/18-wildcards/
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    List<Integer> values=Arrays.asList(2,3);
+    List<Integer> values = Arrays.asList(2, 3);
     System.out.println(sumNumbers(values));
   }
-    static int sumNumbers(List<? extends Number> values){int sum=0;for(Number n:values)sum+=n.intValue();return sum;}
+
+  static int sumNumbers(List<? extends Number> values) {
+    int sum = 0;
+    for (Number n : values) sum += n.intValue();
+    return sum;
+  }
 }
 ```
 {% endraw %}

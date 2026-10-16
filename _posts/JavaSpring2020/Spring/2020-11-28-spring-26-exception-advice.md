@@ -24,27 +24,48 @@ RestControllerAdvice로 오류 형식 모으기을 예제로 확인하며 정리
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    MockMvc mvc=standaloneSetup(new Api()).setControllerAdvice(new Errors()).build();
-    mvc.perform(get("/fail")).andExpect(status().isBadRequest()).andExpect(jsonPath("$.code").value("INVALID_INPUT"));
+    MockMvc mvc = standaloneSetup(new Api()).setControllerAdvice(new Errors()).build();
+    mvc
+      .perform(get("/fail"))
+      .andExpect(status().isBadRequest())
+      .andExpect(jsonPath("$.code").value("INVALID_INPUT"));
   }
-    @RestController static class Api {@GetMapping("/fail") public String fail(){throw new IllegalArgumentException("internal");}}
-    @RestControllerAdvice static class Errors {@ExceptionHandler(IllegalArgumentException.class) public ResponseEntity<Map<String,String>> bad(){return ResponseEntity.badRequest().body(Map.of("code","INVALID_INPUT"));}}
+
+  @RestController
+  static class Api {
+
+    @GetMapping("/fail")
+    public String fail() {
+      throw new IllegalArgumentException("internal");
+    }
+  }
+
+  @RestControllerAdvice
+  static class Errors {
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<Map<String, String>> bad() {
+      return ResponseEntity.badRequest().body(Map.of("code", "INVALID_INPUT"));
+    }
+  }
 }
 ```
 {% endraw %}

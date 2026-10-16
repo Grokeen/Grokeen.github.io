@@ -24,21 +24,28 @@ CompletableFuture는 나중에 완료될 결과를 표현한다. thenApply는 �
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
-  public static void main(String[] args) throws Exception {
-    java.util.concurrent.CompletableFuture<Integer> a=java.util.concurrent.CompletableFuture.completedFuture(3);
-    java.util.concurrent.CompletableFuture<Integer> b=java.util.concurrent.CompletableFuture.completedFuture(4);
-    System.out.println(a.thenCombine(b,Integer::sum).thenApply(n->n*2).join());
-  }
 
+  public static void main(String[] args) throws Exception {
+    java.util.concurrent.CompletableFuture<Integer> a =
+      java.util.concurrent.CompletableFuture.completedFuture(3);
+    java.util.concurrent.CompletableFuture<Integer> b =
+      java.util.concurrent.CompletableFuture.completedFuture(4);
+    System.out.println(
+      a
+        .thenCombine(b, Integer::sum)
+        .thenApply(n -> n * 2)
+        .join()
+    );
+  }
 }
 ```
 {% endraw %}

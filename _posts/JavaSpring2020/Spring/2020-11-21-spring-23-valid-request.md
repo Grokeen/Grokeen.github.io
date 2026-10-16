@@ -24,28 +24,53 @@ Valid로 웹 입력 제약 실행하기을 예제로 확인하며 정리했다.
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    MockMvc mvc=standaloneSetup(new Api()).build();
-    mvc.perform(post("/notes").contentType(MediaType.APPLICATION_JSON).content("{\"title\":\"\"}")).andExpect(status().isBadRequest());
-    mvc.perform(post("/notes").contentType(MediaType.APPLICATION_JSON).content("{\"title\":\"ok\"}")).andExpect(status().isCreated());
+    MockMvc mvc = standaloneSetup(new Api()).build();
+    mvc
+      .perform(
+        post("/notes").contentType(MediaType.APPLICATION_JSON).content("{\"title\":\"\"}")
+      )
+      .andExpect(status().isBadRequest());
+    mvc
+      .perform(
+        post("/notes")
+          .contentType(MediaType.APPLICATION_JSON)
+          .content("{\"title\":\"ok\"}")
+      )
+      .andExpect(status().isCreated());
   }
-    public static class Input {@javax.validation.constraints.NotBlank public String title;}
-    @RestController static class Api {@PostMapping("/notes") public ResponseEntity<Void> save(@javax.validation.Valid @RequestBody Input in){return ResponseEntity.status(201).build();}}
+
+  public static class Input {
+
+    @javax.validation.constraints.NotBlank
+    public String title;
+  }
+
+  @RestController
+  static class Api {
+
+    @PostMapping("/notes")
+    public ResponseEntity<Void> save(@javax.validation.Valid @RequestBody Input in) {
+      return ResponseEntity.status(201).build();
+    }
+  }
 }
 ```
 {% endraw %}

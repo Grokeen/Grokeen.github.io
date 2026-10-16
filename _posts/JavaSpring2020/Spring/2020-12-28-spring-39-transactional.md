@@ -24,31 +24,88 @@ Transactional 프록시와 런타임 예외을 예제로 확인하며 정리했�
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    try(AnnotationConfigApplicationContext c=new AnnotationConfigApplicationContext(Config.class)){
-     org.springframework.jdbc.core.JdbcTemplate j=c.getBean(org.springframework.jdbc.core.JdbcTemplate.class);j.execute("create table note(id integer)");
-     assertThrows(IllegalStateException.class,()->c.getBean(Service.class).addThenFail());
-     assertEquals(0,j.queryForObject("select count(*) from note",Integer.class));
+    try (
+      AnnotationConfigApplicationContext c = new AnnotationConfigApplicationContext(
+        Config.class
+      )
+    ) {
+      org.springframework.jdbc.core.JdbcTemplate j = c.getBean(
+        org.springframework.jdbc.core.JdbcTemplate.class
+      );
+      j.execute("create table note(id integer)");
+      assertThrows(IllegalStateException.class, () ->
+        c.getBean(Service.class).addThenFail()
+      );
+      assertEquals(0, j.queryForObject("select count(*) from note", Integer.class));
     }
   }
-    public static class Service {final org.springframework.jdbc.core.JdbcTemplate j;Service(org.springframework.jdbc.core.JdbcTemplate j){this.j=j;}@org.springframework.transaction.annotation.Transactional public void addThenFail(){j.update("insert into note values(1)");throw new IllegalStateException();}}
-    @Configuration @org.springframework.transaction.annotation.EnableTransactionManagement static class Config {@Bean(destroyMethod="shutdown") org.springframework.jdbc.datasource.embedded.EmbeddedDatabase ds(){return database();}@Bean org.springframework.jdbc.core.JdbcTemplate jdbc(javax.sql.DataSource d){return new org.springframework.jdbc.core.JdbcTemplate(d);}@Bean org.springframework.transaction.PlatformTransactionManager transactionManager(javax.sql.DataSource d){return new org.springframework.jdbc.datasource.DataSourceTransactionManager(d);}@Bean Service service(org.springframework.jdbc.core.JdbcTemplate j){return new Service(j);}}
-    static org.springframework.jdbc.datasource.embedded.EmbeddedDatabase database(){return new org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder().generateUniqueName(true).setType(org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.H2).build();}
+
+  public static class Service {
+
+    final org.springframework.jdbc.core.JdbcTemplate j;
+
+    Service(org.springframework.jdbc.core.JdbcTemplate j) {
+      this.j = j;
+    }
+
+    @org.springframework.transaction.annotation.Transactional
+    public void addThenFail() {
+      j.update("insert into note values(1)");
+      throw new IllegalStateException();
+    }
+  }
+
+  @Configuration
+  @org.springframework.transaction.annotation.EnableTransactionManagement
+  static class Config {
+
+    @Bean(destroyMethod = "shutdown")
+    org.springframework.jdbc.datasource.embedded.EmbeddedDatabase ds() {
+      return database();
+    }
+
+    @Bean
+    org.springframework.jdbc.core.JdbcTemplate jdbc(javax.sql.DataSource d) {
+      return new org.springframework.jdbc.core.JdbcTemplate(d);
+    }
+
+    @Bean
+    org.springframework.transaction.PlatformTransactionManager transactionManager(
+      javax.sql.DataSource d
+    ) {
+      return new org.springframework.jdbc.datasource.DataSourceTransactionManager(d);
+    }
+
+    @Bean
+    Service service(org.springframework.jdbc.core.JdbcTemplate j) {
+      return new Service(j);
+    }
+  }
+
+  static org.springframework.jdbc.datasource.embedded.EmbeddedDatabase database() {
+    return new org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder()
+      .generateUniqueName(true)
+      .setType(org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.H2)
+      .build();
+  }
 }
 ```
 {% endraw %}

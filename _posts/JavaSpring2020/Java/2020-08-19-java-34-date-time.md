@@ -24,21 +24,21 @@ LocalDate는 시간대나 시각이 없는 달력 날짜다. 날짜를 문자열
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    LocalDate day=LocalDate.of(2020,2,28);
+    LocalDate day = LocalDate.of(2020, 2, 28);
     System.out.println(day.plusDays(1));
     System.out.println(day.plusDays(2));
   }
-
 }
 ```
 {% endraw %}

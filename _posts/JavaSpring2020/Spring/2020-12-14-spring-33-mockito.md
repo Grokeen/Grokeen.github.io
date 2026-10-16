@@ -24,30 +24,49 @@ Mockito로 의존 객체의 반환값 고정하기을 예제로 확인하며 정
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    Lookup service=org.mockito.Mockito.mock(Lookup.class);
+    Lookup service = org.mockito.Mockito.mock(Lookup.class);
     org.mockito.Mockito.when(service.find(7)).thenReturn("seven");
-    MockMvc mvc=standaloneSetup(new Api(service)).build();
+    MockMvc mvc = standaloneSetup(new Api(service)).build();
     mvc.perform(get("/lookup/7")).andExpect(content().string("seven"));
     org.mockito.Mockito.verify(service).find(7);
   }
-    interface Lookup {String find(int id);}
-    @RestController static class Api {final Lookup lookup;Api(Lookup l){lookup=l;}@GetMapping("/lookup/{id}") public String find(@PathVariable("id") int id){return lookup.find(id);}}
+
+  interface Lookup {
+    String find(int id);
+  }
+
+  @RestController
+  static class Api {
+
+    final Lookup lookup;
+
+    Api(Lookup l) {
+      lookup = l;
+    }
+
+    @GetMapping("/lookup/{id}")
+    public String find(@PathVariable("id") int id) {
+      return lookup.find(id);
+    }
+  }
 }
 ```
 {% endraw %}

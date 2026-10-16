@@ -24,21 +24,34 @@ Comparator로 여러 정렬 기준 연결하기을 예제로 확인하며 정리
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    List<Person> a=new ArrayList<>(Arrays.asList(new Person("b",20),new Person("a",20),new Person("c",18)));
-    a.sort(Comparator.comparingInt((Person p)->p.age).thenComparing(p->p.name));
-    for(Person p:a) System.out.println(p.name+":"+p.age);
+    List<Person> a = new ArrayList<>(
+      Arrays.asList(new Person("b", 20), new Person("a", 20), new Person("c", 18))
+    );
+    a.sort(Comparator.comparingInt((Person p) -> p.age).thenComparing(p -> p.name));
+    for (Person p : a) System.out.println(p.name + ":" + p.age);
   }
-    static class Person {final String name;final int age;Person(String name,int age){this.name=name;this.age=age;}}
+
+  static class Person {
+
+    final String name;
+    final int age;
+
+    Person(String name, int age) {
+      this.name = name;
+      this.age = age;
+    }
+  }
 }
 ```
 {% endraw %}

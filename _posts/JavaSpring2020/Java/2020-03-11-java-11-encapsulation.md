@@ -24,21 +24,39 @@ permalink: /study/2020/java/11-encapsulation/
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    Counter c=new Counter(2);
+    Counter c = new Counter(2);
     c.increase();
     System.out.println(c.value());
   }
-    static class Counter { private int n; Counter(int n){if(n<0)throw new IllegalArgumentException();this.n=n;} void increase(){n++;} int value(){return n;} }
+
+  static class Counter {
+
+    private int n;
+
+    Counter(int n) {
+      if (n < 0) throw new IllegalArgumentException();
+      this.n = n;
+    }
+
+    void increase() {
+      n++;
+    }
+
+    int value() {
+      return n;
+    }
+  }
 }
 ```
 {% endraw %}

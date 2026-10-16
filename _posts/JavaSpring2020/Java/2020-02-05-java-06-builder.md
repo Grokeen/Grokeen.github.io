@@ -24,24 +24,24 @@ permalink: /study/2020/java/06-builder/
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    StringBuilder out=new StringBuilder();
-    for(int i=1;i<=3;i++){
-      if(i>1) out.append(",");
+    StringBuilder out = new StringBuilder();
+    for (int i = 1; i <= 3; i++) {
+      if (i > 1) out.append(",");
       out.append(i);
     }
     System.out.println(out);
   }
-
 }
 ```
 {% endraw %}

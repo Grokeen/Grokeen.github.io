@@ -24,27 +24,52 @@ OncePerRequestFilter와 필터 체인을 예제로 확인하며 정리했다.
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    MockMvc mvc=standaloneSetup(new Api()).addFilters(new Stamp()).build();
-    mvc.perform(get("/ping")).andExpect(status().isOk()).andExpect(header().string("X-Study","2020"));
+    MockMvc mvc = standaloneSetup(new Api()).addFilters(new Stamp()).build();
+    mvc
+      .perform(get("/ping"))
+      .andExpect(status().isOk())
+      .andExpect(header().string("X-Study", "2020"));
   }
-    static class Stamp extends org.springframework.web.filter.OncePerRequestFilter {@Override protected void doFilterInternal(javax.servlet.http.HttpServletRequest q,javax.servlet.http.HttpServletResponse r,javax.servlet.FilterChain chain)throws javax.servlet.ServletException,java.io.IOException{r.setHeader("X-Study","2020");chain.doFilter(q,r);}}
-    @RestController static class Api {@GetMapping("/ping") public String ping(){return "ok";}}
+
+  static class Stamp extends org.springframework.web.filter.OncePerRequestFilter {
+
+    @Override
+    protected void doFilterInternal(
+      javax.servlet.http.HttpServletRequest q,
+      javax.servlet.http.HttpServletResponse r,
+      javax.servlet.FilterChain chain
+    ) throws javax.servlet.ServletException, java.io.IOException {
+      r.setHeader("X-Study", "2020");
+      chain.doFilter(q, r);
+    }
+  }
+
+  @RestController
+  static class Api {
+
+    @GetMapping("/ping")
+    public String ping() {
+      return "ok";
+    }
+  }
 }
 ```
 {% endraw %}

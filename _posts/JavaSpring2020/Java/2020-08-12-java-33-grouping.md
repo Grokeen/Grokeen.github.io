@@ -24,20 +24,22 @@ groupingBy와 그룹별 집계을 예제로 확인하며 정리했다.
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    Map<Integer,Long> groups=Stream.of("a","bb","c").collect(Collectors.groupingBy(String::length,TreeMap::new,Collectors.counting()));
+    Map<Integer, Long> groups = Stream.of("a", "bb", "c").collect(
+      Collectors.groupingBy(String::length, TreeMap::new, Collectors.counting())
+    );
     System.out.println(groups);
   }
-
 }
 ```
 {% endraw %}

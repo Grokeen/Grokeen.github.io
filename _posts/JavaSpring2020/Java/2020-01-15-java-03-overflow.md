@@ -24,23 +24,23 @@ int끼리 먼저 계산하면 결과를 long에 넣더라도 이미 오버플로
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    int n=50000;
-    long wrong=n*n;
-    long right=1L*n*n;
+    int n = 50000;
+    long wrong = n * n;
+    long right = 1L * n * n;
     System.out.println(wrong);
     System.out.println(right);
   }
-
 }
 ```
 {% endraw %}

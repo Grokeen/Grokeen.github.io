@@ -24,22 +24,22 @@ AutoCloseable 자원은 try-with-resources에 선언해 정상 종료와 예외 
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    try(BufferedReader reader=new BufferedReader(new StringReader("first\nsecond"))){
+    try (BufferedReader reader = new BufferedReader(new StringReader("first\nsecond"))) {
       System.out.println(reader.readLine());
       System.out.println(reader.readLine());
     }
   }
-
 }
 ```
 {% endraw %}

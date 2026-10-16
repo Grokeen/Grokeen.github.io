@@ -24,28 +24,51 @@ ConfigurationProperties로 묶음 설정 바인딩을 예제로 확인하며 정
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    new org.springframework.boot.test.context.runner.ApplicationContextRunner().withUserConfiguration(Config.class).withPropertyValues("study.limit=8").run(c->{
-     assertEquals(8,c.getBean(Options.class).getLimit());
-    });
+    new org.springframework.boot.test.context.runner.ApplicationContextRunner()
+      .withUserConfiguration(Config.class)
+      .withPropertyValues("study.limit=8")
+      .run(c -> {
+        assertEquals(8, c.getBean(Options.class).getLimit());
+      });
   }
-    @org.springframework.boot.context.properties.ConfigurationProperties(prefix="study") public static class Options {private int limit=3;public int getLimit(){return limit;}public void setLimit(int n){limit=n;}}
-    @Configuration @org.springframework.boot.context.properties.EnableConfigurationProperties(Options.class) static class Config {}
+
+  @org.springframework.boot.context.properties.ConfigurationProperties(prefix = "study")
+  public static class Options {
+
+    private int limit = 3;
+
+    public int getLimit() {
+      return limit;
+    }
+
+    public void setLimit(int n) {
+      limit = n;
+    }
+  }
+
+  @Configuration
+  @org.springframework.boot.context.properties.EnableConfigurationProperties(
+    Options.class
+  )
+  static class Config {}
 }
 ```
 {% endraw %}

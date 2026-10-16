@@ -24,27 +24,39 @@ Spring Boot의 ApplicationContextRunner는 테스트마다 필요한 설정과 �
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    new org.springframework.boot.test.context.runner.ApplicationContextRunner().withUserConfiguration(Config.class).run(c->{
-     assertEquals("ok",c.getBean(String.class));
-    });
+    new org.springframework.boot.test.context.runner.ApplicationContextRunner()
+      .withUserConfiguration(Config.class)
+      .run(c -> {
+        assertEquals("ok", c.getBean(String.class));
+      });
   }
-    @Configuration static class Config {@Bean String value(){return "ok";}}
+
+  @Configuration
+  static class Config {
+
+    @Bean
+    String value() {
+      return "ok";
+    }
+  }
 }
 ```
 {% endraw %}

@@ -24,26 +24,40 @@ ResponseEntity는 응답 상태와 헤더, 본문을 명시할 수 있다. 새 �
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    MockMvc mvc=standaloneSetup(new Api()).build();
-    mvc.perform(post("/items")).andExpect(status().isCreated()).andExpect(header().string("Location","/items/7")).andExpect(content().string("created"));
+    MockMvc mvc = standaloneSetup(new Api()).build();
+    mvc
+      .perform(post("/items"))
+      .andExpect(status().isCreated())
+      .andExpect(header().string("Location", "/items/7"))
+      .andExpect(content().string("created"));
   }
-    @RestController static class Api {@PostMapping("/items") public ResponseEntity<String> create(){return ResponseEntity.created(java.net.URI.create("/items/7")).body("created");}}
+
+  @RestController
+  static class Api {
+
+    @PostMapping("/items")
+    public ResponseEntity<String> create() {
+      return ResponseEntity.created(java.net.URI.create("/items/7")).body("created");
+    }
+  }
 }
 ```
 {% endraw %}

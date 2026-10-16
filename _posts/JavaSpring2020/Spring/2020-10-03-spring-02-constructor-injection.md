@@ -24,29 +24,66 @@ permalink: /study/2020/spring/02-constructor-injection/
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    try(AnnotationConfigApplicationContext c=new AnnotationConfigApplicationContext(Config.class)){
-     assertEquals("saved:A",c.getBean(Service.class).save("A"));
+    try (
+      AnnotationConfigApplicationContext c = new AnnotationConfigApplicationContext(
+        Config.class
+      )
+    ) {
+      assertEquals("saved:A", c.getBean(Service.class).save("A"));
     }
   }
-    static class Repo {String save(String s){return "saved:"+s;}}
-    static class Service {final Repo repo;Service(Repo repo){this.repo=repo;}String save(String s){return repo.save(s);}}
-    @Configuration static class Config {@Bean Repo repo(){return new Repo();}@Bean Service service(Repo repo){return new Service(repo);}}
+
+  static class Repo {
+
+    String save(String s) {
+      return "saved:" + s;
+    }
+  }
+
+  static class Service {
+
+    final Repo repo;
+
+    Service(Repo repo) {
+      this.repo = repo;
+    }
+
+    String save(String s) {
+      return repo.save(s);
+    }
+  }
+
+  @Configuration
+  static class Config {
+
+    @Bean
+    Repo repo() {
+      return new Repo();
+    }
+
+    @Bean
+    Service service(Repo repo) {
+      return new Service(repo);
+    }
+  }
 }
 ```
 {% endraw %}

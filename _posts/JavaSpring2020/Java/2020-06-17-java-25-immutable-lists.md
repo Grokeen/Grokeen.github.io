@@ -24,23 +24,27 @@ List.of는 수정 불가 목록을 만들고 Arrays.asList는 배열 기반의 �
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
-  public static void main(String[] args) throws Exception {
-    List<String> fixed=Arrays.asList("a","b");
-    fixed.set(0,"x");
-    System.out.println(fixed);
-    List<String> frozen=List.of("a","b");
-    try{frozen.set(0,"x");}catch(UnsupportedOperationException e){System.out.println("blocked");}
-  }
 
+  public static void main(String[] args) throws Exception {
+    List<String> fixed = Arrays.asList("a", "b");
+    fixed.set(0, "x");
+    System.out.println(fixed);
+    List<String> frozen = List.of("a", "b");
+    try {
+      frozen.set(0, "x");
+    } catch (UnsupportedOperationException e) {
+      System.out.println("blocked");
+    }
+  }
 }
 ```
 {% endraw %}

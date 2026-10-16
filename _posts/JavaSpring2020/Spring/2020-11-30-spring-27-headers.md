@@ -24,26 +24,39 @@ permalink: /study/2020/spring/27-headers/
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    MockMvc mvc=standaloneSetup(new Api()).build();
-    mvc.perform(get("/trace").header("X-Trace","test-1")).andExpect(status().isOk()).andExpect(header().string("X-Trace","test-1"));
+    MockMvc mvc = standaloneSetup(new Api()).build();
+    mvc
+      .perform(get("/trace").header("X-Trace", "test-1"))
+      .andExpect(status().isOk())
+      .andExpect(header().string("X-Trace", "test-1"));
   }
-    @RestController static class Api {@GetMapping("/trace") public ResponseEntity<String> trace(@RequestHeader("X-Trace") String id){return ResponseEntity.ok().header("X-Trace",id).body("ok");}}
+
+  @RestController
+  static class Api {
+
+    @GetMapping("/trace")
+    public ResponseEntity<String> trace(@RequestHeader("X-Trace") String id) {
+      return ResponseEntity.ok().header("X-Trace", id).body("ok");
+    }
+  }
 }
 ```
 {% endraw %}

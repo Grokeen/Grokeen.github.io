@@ -24,28 +24,46 @@ permalink: /study/2020/spring/35-pagination/
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    MockMvc mvc=standaloneSetup(new Api()).build();
+    MockMvc mvc = standaloneSetup(new Api()).build();
     mvc.perform(get("/pages")).andExpect(jsonPath("$.size").value(10));
-    mvc.perform(get("/pages").param("size","0")).andExpect(status().isBadRequest());
-    mvc.perform(get("/pages").param("page","-1")).andExpect(status().isBadRequest());
+    mvc.perform(get("/pages").param("size", "0")).andExpect(status().isBadRequest());
+    mvc.perform(get("/pages").param("page", "-1")).andExpect(status().isBadRequest());
   }
-    @RestController static class Api {@GetMapping("/pages") public Map<String,Integer> pages(@RequestParam(name="page",defaultValue="0") int p,@RequestParam(name="size",defaultValue="10") int s){if(p<0||s<1||s>50)throw new org.springframework.web.server.ResponseStatusException(org.springframework.http.HttpStatus.BAD_REQUEST);return Map.of("page",p,"size",s);}}
+
+  @RestController
+  static class Api {
+
+    @GetMapping("/pages")
+    public Map<String, Integer> pages(
+      @RequestParam(name = "page", defaultValue = "0") int p,
+      @RequestParam(name = "size", defaultValue = "10") int s
+    ) {
+      if (
+        p < 0 || s < 1 || s > 50
+      ) throw new org.springframework.web.server.ResponseStatusException(
+        org.springframework.http.HttpStatus.BAD_REQUEST
+      );
+      return Map.of("page", p, "size", s);
+    }
+  }
 }
 ```
 {% endraw %}

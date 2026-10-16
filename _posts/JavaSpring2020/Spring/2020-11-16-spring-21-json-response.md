@@ -24,26 +24,40 @@ permalink: /study/2020/spring/21-json-response/
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    MockMvc mvc=standaloneSetup(new Api()).build();
-    mvc.perform(get("/note")).andExpect(status().isOk()).andExpect(jsonPath("$.id").value(1)).andExpect(jsonPath("$.title").value("study"));
+    MockMvc mvc = standaloneSetup(new Api()).build();
+    mvc
+      .perform(get("/note"))
+      .andExpect(status().isOk())
+      .andExpect(jsonPath("$.id").value(1))
+      .andExpect(jsonPath("$.title").value("study"));
   }
-    @RestController static class Api {@GetMapping("/note") public Map<String,Object> note(){return Map.of("id",1,"title","study");}}
+
+  @RestController
+  static class Api {
+
+    @GetMapping("/note")
+    public Map<String, Object> note() {
+      return Map.of("id", 1, "title", "study");
+    }
+  }
 }
 ```
 {% endraw %}

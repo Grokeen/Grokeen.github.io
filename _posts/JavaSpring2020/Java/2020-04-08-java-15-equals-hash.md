@@ -24,21 +24,41 @@ HashSet과 HashMap은 해시값으로 후보를 찾고 equals로 같은 키인�
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    Set<Key> keys=new HashSet<>();
-    keys.add(new Key("A")); keys.add(new Key("A"));
+    Set<Key> keys = new HashSet<>();
+    keys.add(new Key("A"));
+    keys.add(new Key("A"));
     System.out.println(keys.size());
   }
-    static final class Key { final String id; Key(String id){this.id=id;} @Override public boolean equals(Object o){return o instanceof Key && Objects.equals(id,((Key)o).id);} @Override public int hashCode(){return Objects.hash(id);} }
+
+  static final class Key {
+
+    final String id;
+
+    Key(String id) {
+      this.id = id;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+      return o instanceof Key && Objects.equals(id, ((Key) o).id);
+    }
+
+    @Override
+    public int hashCode() {
+      return Objects.hash(id);
+    }
+  }
 }
 ```
 {% endraw %}

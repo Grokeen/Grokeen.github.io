@@ -24,26 +24,39 @@ PathVariable로 자원 식별자 받기을 예제로 확인하며 정리했다.
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    MockMvc mvc=standaloneSetup(new Api()).build();
-    mvc.perform(get("/notes/7")).andExpect(status().isOk()).andExpect(content().string("note-7"));
+    MockMvc mvc = standaloneSetup(new Api()).build();
+    mvc
+      .perform(get("/notes/7"))
+      .andExpect(status().isOk())
+      .andExpect(content().string("note-7"));
   }
-    @RestController static class Api {@GetMapping("/notes/{id}") public String note(@PathVariable("id") long id){return "note-"+id;}}
+
+  @RestController
+  static class Api {
+
+    @GetMapping("/notes/{id}")
+    public String note(@PathVariable("id") long id) {
+      return "note-" + id;
+    }
+  }
 }
 ```
 {% endraw %}

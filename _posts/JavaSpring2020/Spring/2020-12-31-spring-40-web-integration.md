@@ -24,34 +24,80 @@ HTTP 입력과 간단한 저장소를 연결해 성공 응답뿐 아니라 실�
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    org.springframework.jdbc.datasource.embedded.EmbeddedDatabase ds=database();
-    try{
-     org.springframework.jdbc.core.JdbcTemplate j=new org.springframework.jdbc.core.JdbcTemplate(ds);j.execute("create table note(id integer primary key,title varchar(30))");
-     MockMvc mvc=standaloneSetup(new Api(j)).build();
-     mvc.perform(post("/notes").contentType(MediaType.APPLICATION_JSON).content("{\"title\":\"study\"}")).andExpect(status().isCreated());
-     assertEquals("study",j.queryForObject("select title from note where id=1",String.class));
-     mvc.perform(get("/notes/1")).andExpect(content().string("study"));
-    }finally{ds.shutdown();}
+    org.springframework.jdbc.datasource.embedded.EmbeddedDatabase ds = database();
+    try {
+      org.springframework.jdbc.core.JdbcTemplate j =
+        new org.springframework.jdbc.core.JdbcTemplate(ds);
+      j.execute("create table note(id integer primary key,title varchar(30))");
+      MockMvc mvc = standaloneSetup(new Api(j)).build();
+      mvc
+        .perform(
+          post("/notes")
+            .contentType(MediaType.APPLICATION_JSON)
+            .content("{\"title\":\"study\"}")
+        )
+        .andExpect(status().isCreated());
+      assertEquals(
+        "study",
+        j.queryForObject("select title from note where id=1", String.class)
+      );
+      mvc.perform(get("/notes/1")).andExpect(content().string("study"));
+    } finally {
+      ds.shutdown();
+    }
   }
-    public static class Input {@javax.validation.constraints.NotBlank public String title;}
-    @RestController static class Api {final org.springframework.jdbc.core.JdbcTemplate j;Api(org.springframework.jdbc.core.JdbcTemplate j){this.j=j;}@PostMapping("/notes") public ResponseEntity<Void> save(@javax.validation.Valid @RequestBody Input in){j.update("insert into note values(?,?)",1,in.title);return ResponseEntity.status(201).build();}@GetMapping("/notes/{id}") public String get(@PathVariable("id") int id){return j.queryForObject("select title from note where id=?",String.class,id);}}
-    static org.springframework.jdbc.datasource.embedded.EmbeddedDatabase database(){return new org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder().generateUniqueName(true).setType(org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.H2).build();}
+
+  public static class Input {
+
+    @javax.validation.constraints.NotBlank
+    public String title;
+  }
+
+  @RestController
+  static class Api {
+
+    final org.springframework.jdbc.core.JdbcTemplate j;
+
+    Api(org.springframework.jdbc.core.JdbcTemplate j) {
+      this.j = j;
+    }
+
+    @PostMapping("/notes")
+    public ResponseEntity<Void> save(@javax.validation.Valid @RequestBody Input in) {
+      j.update("insert into note values(?,?)", 1, in.title);
+      return ResponseEntity.status(201).build();
+    }
+
+    @GetMapping("/notes/{id}")
+    public String get(@PathVariable("id") int id) {
+      return j.queryForObject("select title from note where id=?", String.class, id);
+    }
+  }
+
+  static org.springframework.jdbc.datasource.embedded.EmbeddedDatabase database() {
+    return new org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder()
+      .generateUniqueName(true)
+      .setType(org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.H2)
+      .build();
+  }
 }
 ```
 {% endraw %}

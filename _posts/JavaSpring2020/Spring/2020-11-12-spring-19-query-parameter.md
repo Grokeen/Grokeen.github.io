@@ -24,27 +24,37 @@ RequestParam과 기본 검색 조건을 예제로 확인하며 정리했다.
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    MockMvc mvc=standaloneSetup(new Api()).build();
+    MockMvc mvc = standaloneSetup(new Api()).build();
     mvc.perform(get("/search")).andExpect(content().string("all"));
-    mvc.perform(get("/search").param("q","java")).andExpect(content().string("java"));
+    mvc.perform(get("/search").param("q", "java")).andExpect(content().string("java"));
   }
-    @RestController static class Api {@GetMapping("/search") public String search(@RequestParam(name="q",defaultValue="all") String q){return q;}}
+
+  @RestController
+  static class Api {
+
+    @GetMapping("/search")
+    public String search(@RequestParam(name = "q", defaultValue = "all") String q) {
+      return q;
+    }
+  }
 }
 ```
 {% endraw %}

@@ -24,21 +24,21 @@ Optional은 값의 부재를 반환 계약에 드러낼 수 있다. orElse는 �
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
-  public static void main(String[] args) throws Exception {
-    Optional<String> name=Optional.of("java");
-    System.out.println(name.map(String::toUpperCase).orElse("NONE"));
-    System.out.println(Optional.<String>empty().orElseGet(()->"fallback"));
-  }
 
+  public static void main(String[] args) throws Exception {
+    Optional<String> name = Optional.of("java");
+    System.out.println(name.map(String::toUpperCase).orElse("NONE"));
+    System.out.println(Optional.<String>empty().orElseGet(() -> "fallback"));
+  }
 }
 ```
 {% endraw %}

@@ -24,28 +24,35 @@ Resource는 파일·클래스패스 등 다양한 입력을 공통 방식으로 
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    org.springframework.core.io.Resource r=new org.springframework.core.io.ByteArrayResource("note".getBytes(java.nio.charset.StandardCharsets.UTF_8));
-    try(java.io.InputStream in=r.getInputStream()){
-     assertEquals("note",new String(in.readAllBytes(),java.nio.charset.StandardCharsets.UTF_8));
+    org.springframework.core.io.Resource r =
+      new org.springframework.core.io.ByteArrayResource(
+        "note".getBytes(java.nio.charset.StandardCharsets.UTF_8)
+      );
+    try (java.io.InputStream in = r.getInputStream()) {
+      assertEquals(
+        "note",
+        new String(in.readAllBytes(), java.nio.charset.StandardCharsets.UTF_8)
+      );
     }
   }
-
 }
 ```
 {% endraw %}

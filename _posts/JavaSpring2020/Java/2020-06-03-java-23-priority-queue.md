@@ -24,21 +24,21 @@ PriorityQueue와 최소값 우선 처리을 예제로 확인하며 정리했다.
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
-  public static void main(String[] args) throws Exception {
-    PriorityQueue<Integer> q=new PriorityQueue<>();
-    q.addAll(Arrays.asList(7,2,5));
-    while(!q.isEmpty()) System.out.println(q.poll());
-  }
 
+  public static void main(String[] args) throws Exception {
+    PriorityQueue<Integer> q = new PriorityQueue<>();
+    q.addAll(Arrays.asList(7, 2, 5));
+    while (!q.isEmpty()) System.out.println(q.poll());
+  }
 }
 ```
 {% endraw %}

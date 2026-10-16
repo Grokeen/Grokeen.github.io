@@ -24,21 +24,21 @@ permalink: /study/2020/java/17-generics/
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    List<String> names=new ArrayList<>();
+    List<String> names = new ArrayList<>();
     names.add("java");
     System.out.println(names.get(0).length());
   }
-
 }
 ```
 {% endraw %}

@@ -24,29 +24,53 @@ HandlerInterceptor의 요청 전후 처리을 예제로 확인하며 정리했�
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    Count interceptor=new Count();
-    MockMvc mvc=standaloneSetup(new Api()).addInterceptors(interceptor).build();
+    Count interceptor = new Count();
+    MockMvc mvc = standaloneSetup(new Api()).addInterceptors(interceptor).build();
     mvc.perform(get("/ping")).andExpect(status().isOk());
-    assertEquals(1,interceptor.count);
+    assertEquals(1, interceptor.count);
   }
-    static class Count implements org.springframework.web.servlet.HandlerInterceptor {int count;@Override public boolean preHandle(javax.servlet.http.HttpServletRequest req,javax.servlet.http.HttpServletResponse res,Object handler){count++;return true;}}
-    @RestController static class Api {@GetMapping("/ping") public String ping(){return "ok";}}
+
+  static class Count implements org.springframework.web.servlet.HandlerInterceptor {
+
+    int count;
+
+    @Override
+    public boolean preHandle(
+      javax.servlet.http.HttpServletRequest req,
+      javax.servlet.http.HttpServletResponse res,
+      Object handler
+    ) {
+      count++;
+      return true;
+    }
+  }
+
+  @RestController
+  static class Api {
+
+    @GetMapping("/ping")
+    public String ping() {
+      return "ok";
+    }
+  }
 }
 ```
 {% endraw %}

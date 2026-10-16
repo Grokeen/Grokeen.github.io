@@ -24,22 +24,25 @@ permalink: /study/2020/java/26-exceptions/
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    for(String s:Arrays.asList("12","bad")){
-      try{System.out.println(Integer.parseInt(s));}
-      catch(NumberFormatException e){System.out.println("invalid");}
+    for (String s : Arrays.asList("12", "bad")) {
+      try {
+        System.out.println(Integer.parseInt(s));
+      } catch (NumberFormatException e) {
+        System.out.println("invalid");
+      }
     }
   }
-
 }
 ```
 {% endraw %}

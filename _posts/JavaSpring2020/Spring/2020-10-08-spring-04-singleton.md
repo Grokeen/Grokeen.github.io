@@ -24,28 +24,43 @@ permalink: /study/2020/spring/04-singleton/
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    try(AnnotationConfigApplicationContext c=new AnnotationConfigApplicationContext(Config.class)){
-     assertSame(c.getBean(Box.class),c.getBean(Box.class));
+    try (
+      AnnotationConfigApplicationContext c = new AnnotationConfigApplicationContext(
+        Config.class
+      )
+    ) {
+      assertSame(c.getBean(Box.class), c.getBean(Box.class));
     }
   }
-    static class Box {}
-    @Configuration static class Config {@Bean Box box(){return new Box();}}
+
+  static class Box {}
+
+  @Configuration
+  static class Config {
+
+    @Bean
+    Box box() {
+      return new Box();
+    }
+  }
 }
 ```
 {% endraw %}

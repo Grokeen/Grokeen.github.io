@@ -24,20 +24,23 @@ Stream의 filter·map·최종 연산을 예제로 확인하며 정리했다.
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    List<Integer> result=Stream.of(1,2,3,4).filter(n->n%2==0).map(n->n*n).collect(Collectors.toList());
+    List<Integer> result = Stream.of(1, 2, 3, 4)
+      .filter(n -> n % 2 == 0)
+      .map(n -> n * n)
+      .collect(Collectors.toList());
     System.out.println(result);
   }
-
 }
 ```
 {% endraw %}

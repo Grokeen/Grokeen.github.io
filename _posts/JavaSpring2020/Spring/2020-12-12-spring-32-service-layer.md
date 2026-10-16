@@ -24,29 +24,51 @@ permalink: /study/2020/spring/32-service-layer/
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    Price service=new Price();
-    assertEquals(110,service.total(100));
-    MockMvc mvc=standaloneSetup(new Api(service)).build();
-    mvc.perform(get("/price").param("n","100")).andExpect(content().string("110"));
+    Price service = new Price();
+    assertEquals(110, service.total(100));
+    MockMvc mvc = standaloneSetup(new Api(service)).build();
+    mvc.perform(get("/price").param("n", "100")).andExpect(content().string("110"));
   }
-    static class Price {int total(int n){return Math.addExact(n,10);}}
-    @RestController static class Api {final Price p;Api(Price p){this.p=p;}@GetMapping("/price") public String total(@RequestParam("n") int n){return Integer.toString(p.total(n));}}
+
+  static class Price {
+
+    int total(int n) {
+      return Math.addExact(n, 10);
+    }
+  }
+
+  @RestController
+  static class Api {
+
+    final Price p;
+
+    Api(Price p) {
+      this.p = p;
+    }
+
+    @GetMapping("/price")
+    public String total(@RequestParam("n") int n) {
+      return Integer.toString(p.total(n));
+    }
+  }
 }
 ```
 {% endraw %}

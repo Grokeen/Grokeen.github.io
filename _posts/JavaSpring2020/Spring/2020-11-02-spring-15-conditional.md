@@ -24,29 +24,55 @@ ConditionalOnMissingBean과 기본 구현을 예제로 확인하며 정리했다
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    new org.springframework.boot.test.context.runner.ApplicationContextRunner().withConfiguration(org.springframework.boot.autoconfigure.AutoConfigurations.of(DefaultConfig.class)).withUserConfiguration(UserConfig.class).run(c->{
-     assertEquals("custom",c.getBean(String.class));
-     assertEquals(1,c.getBeansOfType(String.class).size());
-    });
+    new org.springframework.boot.test.context.runner.ApplicationContextRunner()
+      .withConfiguration(
+        org.springframework.boot.autoconfigure.AutoConfigurations.of(DefaultConfig.class)
+      )
+      .withUserConfiguration(UserConfig.class)
+      .run(c -> {
+        assertEquals("custom", c.getBean(String.class));
+        assertEquals(1, c.getBeansOfType(String.class).size());
+      });
   }
-    @Configuration static class UserConfig {@Bean String custom(){return "custom";}}
-    @Configuration static class DefaultConfig {@Bean @org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean(String.class) String fallback(){return "default";}}
+
+  @Configuration
+  static class UserConfig {
+
+    @Bean
+    String custom() {
+      return "custom";
+    }
+  }
+
+  @Configuration
+  static class DefaultConfig {
+
+    @Bean
+    @org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean(
+      String.class
+    )
+    String fallback() {
+      return "default";
+    }
+  }
 }
 ```
 {% endraw %}

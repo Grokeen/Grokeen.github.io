@@ -24,22 +24,22 @@ ArrayList는 인덱스로 원소를 조회하는 가변 길이 목록이다. Int
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    List<Integer> a=new ArrayList<>(Arrays.asList(10,20,30));
+    List<Integer> a = new ArrayList<>(Arrays.asList(10, 20, 30));
     a.remove(1);
     a.remove(Integer.valueOf(10));
     System.out.println(a);
   }
-
 }
 ```
 {% endraw %}

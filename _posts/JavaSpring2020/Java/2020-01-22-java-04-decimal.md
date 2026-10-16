@@ -24,22 +24,24 @@ BigDecimal로 소수 금액 계산하기을 예제로 확인하며 정리했다.
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
-  public static void main(String[] args) throws Exception {
-    BigDecimal a=new BigDecimal("0.1");
-    BigDecimal b=new BigDecimal("0.2");
-    System.out.println(a.add(b).toPlainString());
-    System.out.println(new BigDecimal("10").divide(new BigDecimal("3"),2,RoundingMode.HALF_UP));
-  }
 
+  public static void main(String[] args) throws Exception {
+    BigDecimal a = new BigDecimal("0.1");
+    BigDecimal b = new BigDecimal("0.2");
+    System.out.println(a.add(b).toPlainString());
+    System.out.println(
+      new BigDecimal("10").divide(new BigDecimal("3"), 2, RoundingMode.HALF_UP)
+    );
+  }
 }
 ```
 {% endraw %}

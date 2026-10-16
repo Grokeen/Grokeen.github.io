@@ -24,21 +24,35 @@ permalink: /study/2020/java/13-inheritance/
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    Animal a=new Cat();
+    Animal a = new Cat();
     System.out.println(a.sound());
   }
-    static class Animal {String sound(){return "?";}}
-    static class Cat extends Animal {@Override String sound(){return "meow";}}
+
+  static class Animal {
+
+    String sound() {
+      return "?";
+    }
+  }
+
+  static class Cat extends Animal {
+
+    @Override
+    String sound() {
+      return "meow";
+    }
+  }
 }
 ```
 {% endraw %}

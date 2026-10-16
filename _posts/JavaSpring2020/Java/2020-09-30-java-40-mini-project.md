@@ -24,21 +24,46 @@ permalink: /study/2020/java/40-mini-project/
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    List<Order> orders=Arrays.asList(new Order("A",10),new Order("B",20),new Order("A",5),new Order("B",-1));
-    Map<String,Integer> totals=orders.stream().filter(o->o.amount>0).collect(Collectors.groupingBy(o->o.code,TreeMap::new,Collectors.summingInt(o->o.amount)));
+    List<Order> orders = Arrays.asList(
+      new Order("A", 10),
+      new Order("B", 20),
+      new Order("A", 5),
+      new Order("B", -1)
+    );
+    Map<String, Integer> totals = orders
+      .stream()
+      .filter(o -> o.amount > 0)
+      .collect(
+        Collectors.groupingBy(
+          o -> o.code,
+          TreeMap::new,
+          Collectors.summingInt(o -> o.amount)
+        )
+      );
     System.out.println(totals);
   }
-    static class Order {final String code;final int amount;Order(String code,int amount){this.code=code;this.amount=amount;}}
+
+  static class Order {
+
+    final String code;
+    final int amount;
+
+    Order(String code, int amount) {
+      this.code = code;
+      this.amount = amount;
+    }
+  }
 }
 ```
 {% endraw %}

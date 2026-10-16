@@ -24,27 +24,47 @@ JSON 직렬화는 공개 필드나 getter를 통해 내부 값을 노출할 수 
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    MockMvc mvc=standaloneSetup(new Api()).build();
-    mvc.perform(get("/account")).andExpect(jsonPath("$.name").value("sample")).andExpect(jsonPath("$.secret").doesNotExist());
+    MockMvc mvc = standaloneSetup(new Api()).build();
+    mvc
+      .perform(get("/account"))
+      .andExpect(jsonPath("$.name").value("sample"))
+      .andExpect(jsonPath("$.secret").doesNotExist());
   }
-    public static class Account {public String name="sample";@com.fasterxml.jackson.annotation.JsonIgnore public String secret="fictional";}
-    @RestController static class Api {@GetMapping("/account") public Account get(){return new Account();}}
+
+  public static class Account {
+
+    public String name = "sample";
+
+    @com.fasterxml.jackson.annotation.JsonIgnore
+    public String secret = "fictional";
+  }
+
+  @RestController
+  static class Api {
+
+    @GetMapping("/account")
+    public Account get() {
+      return new Account();
+    }
+  }
 }
 ```
 {% endraw %}

@@ -24,28 +24,52 @@ Spring 이벤트는 컨텍스트 안의 관심사를 느슨하게 연결할 수 
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    try(AnnotationConfigApplicationContext c=new AnnotationConfigApplicationContext(Config.class)){
-     c.publishEvent("saved");assertEquals("saved",c.getBean(Listener.class).last);
+    try (
+      AnnotationConfigApplicationContext c = new AnnotationConfigApplicationContext(
+        Config.class
+      )
+    ) {
+      c.publishEvent("saved");
+      assertEquals("saved", c.getBean(Listener.class).last);
     }
   }
-    static class Listener {String last;@org.springframework.context.event.EventListener public void on(String s){last=s;}}
-    @Configuration static class Config {@Bean Listener listener(){return new Listener();}}
+
+  static class Listener {
+
+    String last;
+
+    @org.springframework.context.event.EventListener
+    public void on(String s) {
+      last = s;
+    }
+  }
+
+  @Configuration
+  static class Config {
+
+    @Bean
+    Listener listener() {
+      return new Listener();
+    }
+  }
 }
 ```
 {% endraw %}

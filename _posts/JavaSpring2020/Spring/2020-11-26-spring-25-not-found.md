@@ -24,27 +24,40 @@ permalink: /study/2020/spring/25-not-found/
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    MockMvc mvc=standaloneSetup(new Api()).build();
+    MockMvc mvc = standaloneSetup(new Api()).build();
     mvc.perform(get("/items/9")).andExpect(status().isNotFound());
     mvc.perform(get("/items/1")).andExpect(content().string("one"));
   }
-    @RestController static class Api {@GetMapping("/items/{id}") public String get(@PathVariable("id") int id){if(id!=1)throw new org.springframework.web.server.ResponseStatusException(org.springframework.http.HttpStatus.NOT_FOUND);return "one";}}
+
+  @RestController
+  static class Api {
+
+    @GetMapping("/items/{id}")
+    public String get(@PathVariable("id") int id) {
+      if (id != 1) throw new org.springframework.web.server.ResponseStatusException(
+        org.springframework.http.HttpStatus.NOT_FOUND
+      );
+      return "one";
+    }
+  }
 }
 ```
 {% endraw %}

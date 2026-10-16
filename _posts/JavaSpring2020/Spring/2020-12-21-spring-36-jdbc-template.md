@@ -24,31 +24,45 @@ JdbcTemplate는 JDBC 자원 처리와 예외 변환을 도와준다. SQL 자체�
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
-    org.springframework.jdbc.datasource.embedded.EmbeddedDatabase ds=database();
-    try{
-     org.springframework.jdbc.core.JdbcTemplate jdbc=new org.springframework.jdbc.core.JdbcTemplate(ds);
-     jdbc.execute("create table note(id integer primary key,title varchar(30))");
-     assertEquals(1,jdbc.update("insert into note values(?,?)",1,"study"));
-     assertEquals("study",jdbc.queryForObject("select title from note where id=?",String.class,1));
-    }finally{ds.shutdown();}
+    org.springframework.jdbc.datasource.embedded.EmbeddedDatabase ds = database();
+    try {
+      org.springframework.jdbc.core.JdbcTemplate jdbc =
+        new org.springframework.jdbc.core.JdbcTemplate(ds);
+      jdbc.execute("create table note(id integer primary key,title varchar(30))");
+      assertEquals(1, jdbc.update("insert into note values(?,?)", 1, "study"));
+      assertEquals(
+        "study",
+        jdbc.queryForObject("select title from note where id=?", String.class, 1)
+      );
+    } finally {
+      ds.shutdown();
+    }
   }
-    static org.springframework.jdbc.datasource.embedded.EmbeddedDatabase database(){return new org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder().generateUniqueName(true).setType(org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.H2).build();}
+
+  static org.springframework.jdbc.datasource.embedded.EmbeddedDatabase database() {
+    return new org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder()
+      .generateUniqueName(true)
+      .setType(org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.H2)
+      .build();
+  }
 }
 ```
 {% endraw %}

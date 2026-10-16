@@ -24,21 +24,26 @@ Java는 인자 값을 전달한다. 참조형도 참조 값이 복사되므로 �
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    int[] a={1};
+    int[] a = { 1 };
     change(a);
     System.out.println(a[0]);
   }
-    static void change(int[] a){a[0]=7; a=new int[]{9};}
+
+  static void change(int[] a) {
+    a[0] = 7;
+    a = new int[] { 9 };
+  }
 }
 ```
 {% endraw %}

@@ -24,30 +24,57 @@ Bean 초기화·종료 콜백을 예제로 확인하며 정리했다.
 
 {% raw %}
 ```java
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.springframework.context.annotation.*;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
+
 import java.util.*;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.*;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.bind.annotation.*;
 
 public class StudyTest {
+
   @Test
   void study() throws Exception {
     Box box;
-    try(AnnotationConfigApplicationContext c=new AnnotationConfigApplicationContext(Config.class)){
-     box=c.getBean(Box.class);assertEquals("ready",box.state);
+    try (
+      AnnotationConfigApplicationContext c = new AnnotationConfigApplicationContext(
+        Config.class
+      )
+    ) {
+      box = c.getBean(Box.class);
+      assertEquals("ready", box.state);
     }
-    assertEquals("closed",box.state);
+    assertEquals("closed", box.state);
   }
-    static class Box {String state="new";public void start(){state="ready";}public void stop(){state="closed";}}
-    @Configuration static class Config {@Bean(initMethod="start",destroyMethod="stop") Box box(){return new Box();}}
+
+  static class Box {
+
+    String state = "new";
+
+    public void start() {
+      state = "ready";
+    }
+
+    public void stop() {
+      state = "closed";
+    }
+  }
+
+  @Configuration
+  static class Config {
+
+    @Bean(initMethod = "start", destroyMethod = "stop")
+    Box box() {
+      return new Box();
+    }
+  }
 }
 ```
 {% endraw %}

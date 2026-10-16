@@ -24,21 +24,23 @@ mapToInt는 Integer 객체 스트림을 기본형 int 스트림으로 바꾼다.
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    IntSummaryStatistics s=Stream.of("a","bbb","cc").mapToInt(String::length).summaryStatistics();
-    System.out.println(s.getCount()+" "+s.getSum());
+    IntSummaryStatistics s = Stream.of("a", "bbb", "cc")
+      .mapToInt(String::length)
+      .summaryStatistics();
+    System.out.println(s.getCount() + " " + s.getSum());
     System.out.println(s.getMax());
   }
-
 }
 ```
 {% endraw %}

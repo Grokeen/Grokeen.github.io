@@ -24,21 +24,29 @@ permalink: /study/2020/java/14-interfaces/
 
 {% raw %}
 ```java
+import java.io.*;
+import java.math.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
 import java.util.*;
 import java.util.stream.*;
-import java.math.*;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-import java.time.*;
 
 public class Main {
+
   public static void main(String[] args) throws Exception {
-    Fee fee=amount->amount/10;
-    System.out.println(total(100,fee));
+    Fee fee = amount -> amount / 10;
+    System.out.println(total(100, fee));
   }
-    @FunctionalInterface interface Fee {int apply(int amount);}
-    static int total(int amount,Fee fee){return amount+fee.apply(amount);}
+
+  @FunctionalInterface
+  interface Fee {
+    int apply(int amount);
+  }
+
+  static int total(int amount, Fee fee) {
+    return amount + fee.apply(amount);
+  }
 }
 ```
 {% endraw %}
