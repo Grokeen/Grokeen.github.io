@@ -59,6 +59,14 @@ jobs:
       - name: Check study examples
         run: python3 scripts/validate-study-notes.py --require-bash
 
+      - name: Set up .NET 8 for C# examples
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Check C# and hospital workflow examples
+        run: python3 scripts/validate-csharp-notes.py
+
       - name: Upload generated site
         uses: actions/upload-pages-artifact@v4
         with:

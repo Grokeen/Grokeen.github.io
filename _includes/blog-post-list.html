@@ -7,7 +7,7 @@
     <p class="section-label">BOARD</p>
     <h1 id="archive-title">게시글 모아보기</h1>
     <p>차곡차곡 담아둔 {{ blog_posts.size }}개의 기록</p>
-    <p><a href="{{ '/study/2021/' | relative_url }}">2021 파이썬·라즈베리파이 학습 노트 108편 →</a></p>
+    {% include study-series-links.html %}
   </header>
   <ol class="archive-list">
     {% for post in blog_posts %}

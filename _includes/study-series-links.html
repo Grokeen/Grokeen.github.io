@@ -1,0 +1,5 @@
+<nav aria-label="학습 노트 과정">
+  {% for series in site.data.study_series %}
+  <p class="small-note"><a href="{{ series.url | relative_url }}">{{ series.title | escape }} →</a></p>
+  {% endfor %}
+</nav>
