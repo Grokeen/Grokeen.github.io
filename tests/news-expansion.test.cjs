@@ -8,6 +8,7 @@ const site = path.join(root, '.jekyll-local/site');
 const collections = [
   { file: 'HISTORICAL_AI_NEWS_MANIFEST.json', count: 108, index: '/scrap/ai-bigdata-2022-2023/' },
   { file: 'ROBOTICS_NEWS_MANIFEST.json', count: 100, index: '/scrap/robotics/' },
+  { file: 'XR_NEWS_MANIFEST.json', count: 100, index: '/scrap/xr/' },
 ];
 const normalize = value => {
   const url = new URL(value);
@@ -41,7 +42,9 @@ test('expanded news has unique primary events, verified sources and historical d
 });
 
 test('all expanded news renders in the common article shell and collection indexes', () => {
+  const homepage = fs.readFileSync(path.join(site, 'index.html'), 'utf8');
   for (const c of collections) {
+    assert.ok(homepage.includes('href="' + c.index + '"'), c.index + ': board navigation');
     const m = JSON.parse(fs.readFileSync(path.join(root, '_docs', c.file)));
     const index = fs.readFileSync(path.join(site, c.index, 'index.html'), 'utf8');
     for (const a of m.articles) {

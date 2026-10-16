@@ -7,10 +7,14 @@ if (-not (Test-Path -LiteralPath $pidPath)) {
 $serverId = [int](Get-Content -LiteralPath $pidPath)
 $server = Get-CimInstance Win32_Process -Filter "ProcessId = $serverId"
 if ($server) {
-    $localRuby = Join-Path $PSScriptRoot '..\tools\Ruby33-x64\bin\ruby.exe'
     $rubyCommand = Get-Command ruby.exe -ErrorAction SilentlyContinue
-    $rubyPaths = @()
-    if (Test-Path -LiteralPath $localRuby) { $rubyPaths += (Resolve-Path -LiteralPath $localRuby).Path }
+    $rubyCandidates = @(
+        (Join-Path $PSScriptRoot '..\tools\Ruby33-x64\bin\ruby.exe'),
+        (Join-Path $env:SystemDrive 'Ruby33-x64\bin\ruby.exe'),
+        (Join-Path $env:LOCALAPPDATA 'Programs\Ruby33-x64\bin\ruby.exe')
+    )
+    $rubyPaths = @($rubyCandidates | Where-Object { Test-Path -LiteralPath $_ } |
+        ForEach-Object { (Resolve-Path -LiteralPath $_).Path })
     if ($rubyCommand) { $rubyPaths += $rubyCommand.Source }
     if ($server.ExecutablePath -notin $rubyPaths -or $server.CommandLine -notlike '*jekyll serve*') {
         throw "PID $serverId does not match this Jekyll server."

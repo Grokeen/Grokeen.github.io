@@ -68,6 +68,7 @@
               </section>
               <section class="page-panel" id="panel-board" role="tabpanel" aria-labelledby="tab-board" hidden>
                 <h2 class="section-title">Board <span>차곡차곡 모은 기록</span></h2>
+                {% include news-series-links.html %}
                 {% include study-series-links.html %}
                 <label class="board-search" for="board-search"><span>글 찾기</span><input type="search" id="board-search" placeholder="제목으로 검색" autocomplete="off"></label><p id="board-result" class="small-note" role="status"></p><ol class="board-list">{% for post in site.posts %}<li><a href="{{ post.url | relative_url }}"><span>{{ post.title | escape }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time></a></li>{% endfor %}</ol><p id="board-empty" class="empty-state" hidden>검색한 제목의 글이 없어요.</p>
               </section>
