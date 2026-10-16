@@ -1,0 +1,2888 @@
+{
+  "series": "study-local-tax-2022",
+  "index_url": "/study/2022/local-tax/",
+  "date_start": "2022-01-01",
+  "date_end": "2022-12-28",
+  "count": 120,
+  "baseline": "2022-01-01 applicable provisions; later amendments not silently included",
+  "laws": {
+    "tax-basic": {
+      "name": "지방세기본법",
+      "seq": "238259",
+      "effective": "20220101",
+      "revision": "법률 제18654호, 2021.12.28."
+    },
+    "local-tax-act": {
+      "name": "지방세법",
+      "seq": "238261",
+      "effective": "20220101",
+      "revision": "법률 제18655호, 2021.12.28."
+    },
+    "local-tax-decree": {
+      "name": "지방세법 시행령",
+      "seq": "238943",
+      "effective": "20220101",
+      "revision": "대통령령 제32293호, 2021.12.31."
+    },
+    "tax-relief": {
+      "name": "지방세특례제한법",
+      "seq": "238265",
+      "effective": "20220101",
+      "revision": "법률 제18656호, 2021.12.28."
+    },
+    "tax-collection": {
+      "name": "지방세징수법",
+      "seq": "224907",
+      "effective": "20210101",
+      "revision": "법률 제17770호, 2020.12.29. — 2022년 초 적용 조문"
+    }
+  },
+  "articles": [
+    {
+      "file": "_posts/LocalTax2022/2022-01-01-local-tax-001-tax-and-fee.md",
+      "title": "[지방세 공부 001] 지방세와 수수료의 차이",
+      "date": "2022-01-01",
+      "order": 1,
+      "unit": 1,
+      "url": "/study/2022/local-tax/001-tax-and-fee/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 2,
+          "label": "지방세기본법 제2조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000200"
+        },
+        {
+          "law": "tax-basic",
+          "article": 7,
+          "label": "지방세기본법 제7조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000700"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-01-04-local-tax-002-four-laws.md",
+      "title": "[지방세 공부 002] 지방세 관련 네 법률의 역할",
+      "date": "2022-01-04",
+      "order": 2,
+      "unit": 1,
+      "url": "/study/2022/local-tax/002-four-laws/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 1,
+          "label": "지방세기본법 제1조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000100"
+        },
+        {
+          "law": "tax-basic",
+          "article": 3,
+          "label": "지방세기본법 제3조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000300"
+        },
+        {
+          "law": "tax-relief",
+          "article": 1,
+          "label": "지방세특례제한법 제1조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000100"
+        },
+        {
+          "law": "tax-collection",
+          "article": 1,
+          "label": "지방세징수법 제1조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=224907&efYd=20210101&ancYnChk=0&chrClsCd=010202&joNo=000100"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-01-07-local-tax-003-ordinary-purpose.md",
+      "title": "[지방세 공부 003] 보통세 9개와 목적세 2개",
+      "date": "2022-01-07",
+      "order": 3,
+      "unit": 1,
+      "url": "/study/2022/local-tax/003-ordinary-purpose/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 7,
+          "label": "지방세기본법 제7조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000700"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-01-10-local-tax-004-taxing-authority.md",
+      "title": "[지방세 공부 004] 도세·시군세·자치구세 구별",
+      "date": "2022-01-10",
+      "order": 4,
+      "unit": 1,
+      "url": "/study/2022/local-tax/004-taxing-authority/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 6,
+          "label": "지방세기본법 제6조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000600"
+        },
+        {
+          "law": "tax-basic",
+          "article": 8,
+          "label": "지방세기본법 제8조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000800"
+        },
+        {
+          "law": "tax-basic",
+          "article": 9,
+          "label": "지방세기본법 제9조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000900"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-01-13-local-tax-005-tax-requirements.md",
+      "title": "[지방세 공부 005] 과세대상·납세의무자·과세표준·세율",
+      "date": "2022-01-13",
+      "order": 5,
+      "unit": 1,
+      "url": "/study/2022/local-tax/005-tax-requirements/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 2,
+          "label": "지방세기본법 제2조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000200"
+        },
+        {
+          "law": "tax-basic",
+          "article": 34,
+          "label": "지방세기본법 제34조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=003400"
+        }
+      ],
+      "calculation": {
+        "expression": "100000000 * 2 / 100",
+        "expected": "2000000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-01-16-local-tax-006-taxpayer-collector.md",
+      "title": "[지방세 공부 006] 납세의무자와 특별징수의무자",
+      "date": "2022-01-16",
+      "order": 6,
+      "unit": 1,
+      "url": "/study/2022/local-tax/006-taxpayer-collector/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 2,
+          "label": "지방세기본법 제2조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000200"
+        },
+        {
+          "law": "tax-basic",
+          "article": 56,
+          "label": "지방세기본법 제56조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005600"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-01-19-local-tax-007-advalorem-specific.md",
+      "title": "[지방세 공부 007] 종가세와 종량세 계산 단위",
+      "date": "2022-01-19",
+      "order": 7,
+      "unit": 1,
+      "url": "/study/2022/local-tax/007-advalorem-specific/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 2,
+          "label": "지방세기본법 제2조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000200"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 127,
+          "label": "지방세법 제127조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=012700"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 81,
+          "label": "지방세법 제81조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008100"
+        }
+      ],
+      "calculation": {
+        "expression": "200 * 300",
+        "expected": "60000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-01-22-local-tax-008-calculation-stages.md",
+      "title": "[지방세 공부 008] 과세표준에서 납부세액까지의 순서",
+      "date": "2022-01-22",
+      "order": 8,
+      "unit": 1,
+      "url": "/study/2022/local-tax/008-calculation-stages/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 2,
+          "label": "지방세기본법 제2조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000200"
+        },
+        {
+          "law": "tax-basic",
+          "article": 52,
+          "label": "지방세기본법 제52조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005200"
+        }
+      ],
+      "calculation": {
+        "expression": "1000000 - 200000 - 300000",
+        "expected": "500000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-01-25-local-tax-009-ordinance-hierarchy.md",
+      "title": "[지방세 공부 009] 법률·시행령·조례의 위임 관계",
+      "date": "2022-01-25",
+      "order": 9,
+      "unit": 1,
+      "url": "/study/2022/local-tax/009-ordinance-hierarchy/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 4,
+          "label": "지방세기본법 제4조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000400"
+        },
+        {
+          "law": "tax-basic",
+          "article": 5,
+          "label": "지방세기본법 제5조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000500"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-01-28-local-tax-010-effective-date.md",
+      "title": "[지방세 공부 010] 공포일·시행일·적용례를 나누어 읽기",
+      "date": "2022-01-28",
+      "order": 10,
+      "unit": 1,
+      "url": "/study/2022/local-tax/010-effective-date/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 20,
+          "label": "지방세기본법 제20조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-02-01-local-tax-011-substance-over-form.md",
+      "title": "[지방세 공부 011] 명의와 실질 귀속이 다를 때",
+      "date": "2022-02-01",
+      "order": 11,
+      "unit": 2,
+      "url": "/study/2022/local-tax/011-substance-over-form/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 17,
+          "label": "지방세기본법 제17조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001700"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-02-04-local-tax-012-good-faith.md",
+      "title": "[지방세 공부 012] 납세자와 세무공무원의 신의·성실",
+      "date": "2022-02-04",
+      "order": 12,
+      "unit": 2,
+      "url": "/study/2022/local-tax/012-good-faith/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 18,
+          "label": "지방세기본법 제18조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001800"
+        },
+        {
+          "law": "tax-basic",
+          "article": 20,
+          "label": "지방세기본법 제20조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-02-07-local-tax-013-book-evidence.md",
+      "title": "[지방세 공부 013] 장부와 증빙에 근거한 과세",
+      "date": "2022-02-07",
+      "order": 13,
+      "unit": 2,
+      "url": "/study/2022/local-tax/013-book-evidence/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 19,
+          "label": "지방세기본법 제19조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001900"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-02-10-local-tax-014-deadline-holiday.md",
+      "title": "[지방세 공부 014] 기간 계산과 휴일의 기한 특례",
+      "date": "2022-02-10",
+      "order": 14,
+      "unit": 2,
+      "url": "/study/2022/local-tax/014-deadline-holiday/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 23,
+          "label": "지방세기본법 제23조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002300"
+        },
+        {
+          "law": "tax-basic",
+          "article": 24,
+          "label": "지방세기본법 제24조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002400"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-02-13-local-tax-015-filing-timestamp.md",
+      "title": "[지방세 공부 015] 우편 신고와 전자 신고의 접수 시점",
+      "date": "2022-02-13",
+      "order": 15,
+      "unit": 2,
+      "url": "/study/2022/local-tax/015-filing-timestamp/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 24,
+          "label": "지방세기본법 제24조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002400"
+        },
+        {
+          "law": "tax-basic",
+          "article": 25,
+          "label": "지방세기본법 제25조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002500"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-02-16-local-tax-016-service-effect.md",
+      "title": "[지방세 공부 016] 고지서 송달과 효력 발생",
+      "date": "2022-02-16",
+      "order": 16,
+      "unit": 2,
+      "url": "/study/2022/local-tax/016-service-effect/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 28,
+          "label": "지방세기본법 제28조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002800"
+        },
+        {
+          "law": "tax-basic",
+          "article": 30,
+          "label": "지방세기본법 제30조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=003000"
+        },
+        {
+          "law": "tax-basic",
+          "article": 32,
+          "label": "지방세기본법 제32조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=003200"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-02-19-local-tax-017-arise-and-finalize.md",
+      "title": "[지방세 공부 017] 납세의무 성립과 세액 확정",
+      "date": "2022-02-19",
+      "order": 17,
+      "unit": 2,
+      "url": "/study/2022/local-tax/017-arise-and-finalize/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 34,
+          "label": "지방세기본법 제34조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=003400"
+        },
+        {
+          "law": "tax-basic",
+          "article": 35,
+          "label": "지방세기본법 제35조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=003500"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-02-22-local-tax-018-limitation-periods.md",
+      "title": "[지방세 공부 018] 부과 제척기간과 징수권 소멸시효",
+      "date": "2022-02-22",
+      "order": 18,
+      "unit": 2,
+      "url": "/study/2022/local-tax/018-limitation-periods/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 38,
+          "label": "지방세기본법 제38조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=003800"
+        },
+        {
+          "law": "tax-basic",
+          "article": 39,
+          "label": "지방세기본법 제39조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=003900"
+        },
+        {
+          "law": "tax-basic",
+          "article": 40,
+          "label": "지방세기본법 제40조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=004000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-02-25-local-tax-019-amended-return.md",
+      "title": "[지방세 공부 019] 적게 신고한 세금을 수정신고하기",
+      "date": "2022-02-25",
+      "order": 19,
+      "unit": 2,
+      "url": "/study/2022/local-tax/019-amended-return/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 49,
+          "label": "지방세기본법 제49조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=004900"
+        },
+        {
+          "law": "tax-basic",
+          "article": 57,
+          "label": "지방세기본법 제57조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005700"
+        }
+      ],
+      "calculation": {
+        "expression": "1000000 - 800000",
+        "expected": "200000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-02-28-local-tax-020-correction-claim.md",
+      "title": "[지방세 공부 020] 많이 신고한 세금의 경정청구",
+      "date": "2022-02-28",
+      "order": 20,
+      "unit": 2,
+      "url": "/study/2022/local-tax/020-correction-claim/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 50,
+          "label": "지방세기본법 제50조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005000"
+        }
+      ],
+      "calculation": {
+        "expression": "1200000 - 1000000",
+        "expected": "200000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-03-01-local-tax-021-acquisition-meaning.md",
+      "title": "[지방세 공부 021] 취득은 매매만을 뜻하지 않는다",
+      "date": "2022-03-01",
+      "order": 21,
+      "unit": 3,
+      "url": "/study/2022/local-tax/021-acquisition-meaning/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 6,
+          "label": "지방세법 제6조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000600"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 7,
+          "label": "지방세법 제7조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000700"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-03-04-local-tax-022-taxable-assets.md",
+      "title": "[지방세 공부 022] 부동산 밖의 취득세 과세물건",
+      "date": "2022-03-04",
+      "order": 22,
+      "unit": 3,
+      "url": "/study/2022/local-tax/022-taxable-assets/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 6,
+          "label": "지방세법 제6조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000600"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 7,
+          "label": "지방세법 제7조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000700"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 8,
+          "label": "지방세법 제8조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000800"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-03-07-local-tax-023-actual-acquisition.md",
+      "title": "[지방세 공부 023] 등기를 안 했어도 사실상 취득한 경우",
+      "date": "2022-03-07",
+      "order": 23,
+      "unit": 3,
+      "url": "/study/2022/local-tax/023-actual-acquisition/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 7,
+          "label": "지방세법 제7조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000700"
+        },
+        {
+          "law": "local-tax-decree",
+          "article": 20,
+          "label": "지방세법 시행령 제20조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238943&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-03-10-local-tax-024-acquisition-time.md",
+      "title": "[지방세 공부 024] 취득 원인별 취득일의 차이",
+      "date": "2022-03-10",
+      "order": 24,
+      "unit": 3,
+      "url": "/study/2022/local-tax/024-acquisition-time/",
+      "sources": [
+        {
+          "law": "local-tax-decree",
+          "article": 20,
+          "label": "지방세법 시행령 제20조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238943&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-03-13-local-tax-025-acquisition-filing.md",
+      "title": "[지방세 공부 025] 취득세 신고와 일반 60일 기한",
+      "date": "2022-03-13",
+      "order": 25,
+      "unit": 3,
+      "url": "/study/2022/local-tax/025-acquisition-filing/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 18,
+          "label": "지방세법 제18조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001800"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 20,
+          "label": "지방세법 제20조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-03-16-local-tax-026-registration-before-limit.md",
+      "title": "[지방세 공부 026] 등기를 먼저 하면 신고납부도 앞당겨진다",
+      "date": "2022-03-16",
+      "order": 26,
+      "unit": 3,
+      "url": "/study/2022/local-tax/026-registration-before-limit/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 20,
+          "label": "지방세법 제20조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-03-19-local-tax-027-base-before-2023.md",
+      "title": "[지방세 공부 027] 2022년 취득세 과세표준 읽기",
+      "date": "2022-03-19",
+      "order": 27,
+      "unit": 3,
+      "url": "/study/2022/local-tax/027-base-before-2023/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 10,
+          "label": "지방세법 제10조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-03-22-local-tax-028-acquisition-costs.md",
+      "title": "[지방세 공부 028] 취득가격의 직접비용과 간접비용",
+      "date": "2022-03-22",
+      "order": 28,
+      "unit": 3,
+      "url": "/study/2022/local-tax/028-acquisition-costs/",
+      "sources": [
+        {
+          "law": "local-tax-decree",
+          "article": 18,
+          "label": "지방세법 시행령 제18조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238943&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001800"
+        }
+      ],
+      "calculation": {
+        "expression": "200000000 + 5000000",
+        "expected": "205000000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-03-25-local-tax-029-vat-exclusion.md",
+      "title": "[지방세 공부 029] 취득가격에서 부가가치세 분리하기",
+      "date": "2022-03-25",
+      "order": 29,
+      "unit": 3,
+      "url": "/study/2022/local-tax/029-vat-exclusion/",
+      "sources": [
+        {
+          "law": "local-tax-decree",
+          "article": 18,
+          "label": "지방세법 시행령 제18조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238943&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001800"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-03-28-local-tax-030-shared-base.md",
+      "title": "[지방세 공부 030] 공동 취득 지분과 세율 판단 가격",
+      "date": "2022-03-28",
+      "order": 30,
+      "unit": 3,
+      "url": "/study/2022/local-tax/030-shared-base/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 11,
+          "label": "지방세법 제11조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001100"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-04-01-local-tax-031-house-standard-rate.md",
+      "title": "[지방세 공부 031] 일반 주택 유상취득의 가격 구간",
+      "date": "2022-04-01",
+      "order": 31,
+      "unit": 4,
+      "url": "/study/2022/local-tax/031-house-standard-rate/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 11,
+          "label": "지방세법 제11조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001100"
+        },
+        {
+          "law": "local-tax-act",
+          "article": "13의2",
+          "label": "지방세법 제13조의2",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001302"
+        }
+      ],
+      "calculation": {
+        "expression": "500000000 / 100",
+        "expected": "5000000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-04-04-local-tax-032-house-middle-formula.md",
+      "title": "[지방세 공부 032] 6억 초과~9억원 주택의 일반세율 계산식",
+      "date": "2022-04-04",
+      "order": 32,
+      "unit": 4,
+      "url": "/study/2022/local-tax/032-house-middle-formula/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 11,
+          "label": "지방세법 제11조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001100"
+        }
+      ],
+      "calculation": {
+        "expression": "750000000 * (7.5 * 2 / 3 - 3) / 100",
+        "expected": "15000000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-04-07-local-tax-033-multiple-houses.md",
+      "title": "[지방세 공부 033] 다주택 취득 중과의 판단 순서",
+      "date": "2022-04-07",
+      "order": 33,
+      "unit": 4,
+      "url": "/study/2022/local-tax/033-multiple-houses/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": "13의2",
+          "label": "지방세법 제13조의2",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001302"
+        },
+        {
+          "law": "local-tax-act",
+          "article": "13의3",
+          "label": "지방세법 제13조의3",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001303"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-04-10-local-tax-034-corporate-housing.md",
+      "title": "[지방세 공부 034] 법인의 주택 취득과 중과 예외",
+      "date": "2022-04-10",
+      "order": 34,
+      "unit": 4,
+      "url": "/study/2022/local-tax/034-corporate-housing/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": "13의2",
+          "label": "지방세법 제13조의2",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001302"
+        },
+        {
+          "law": "local-tax-act",
+          "article": "13의3",
+          "label": "지방세법 제13조의3",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001303"
+        }
+      ],
+      "calculation": {
+        "expression": "4 + 2 * 4",
+        "expected": "12"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-04-13-local-tax-035-gift-acquisition.md",
+      "title": "[지방세 공부 035] 증여 취득세와 증여세를 구분하기",
+      "date": "2022-04-13",
+      "order": 35,
+      "unit": 4,
+      "url": "/study/2022/local-tax/035-gift-acquisition/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 11,
+          "label": "지방세법 제11조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001100"
+        },
+        {
+          "law": "local-tax-act",
+          "article": "13의2",
+          "label": "지방세법 제13조의2",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001302"
+        }
+      ],
+      "calculation": {
+        "expression": "100000000 * 35 / 1000",
+        "expected": "3500000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-04-16-local-tax-036-inheritance-acquisition.md",
+      "title": "[지방세 공부 036] 상속 취득의 세율과 신고 기산점",
+      "date": "2022-04-16",
+      "order": 36,
+      "unit": 4,
+      "url": "/study/2022/local-tax/036-inheritance-acquisition/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 11,
+          "label": "지방세법 제11조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001100"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 15,
+          "label": "지방세법 제15조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001500"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 20,
+          "label": "지방세법 제20조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002000"
+        }
+      ],
+      "calculation": {
+        "expression": "200000000 * 28 / 1000",
+        "expected": "5600000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-04-19-local-tax-037-deemed-land-use.md",
+      "title": "[지방세 공부 037] 토지 지목변경으로 인한 간주취득",
+      "date": "2022-04-19",
+      "order": 37,
+      "unit": 4,
+      "url": "/study/2022/local-tax/037-deemed-land-use/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 7,
+          "label": "지방세법 제7조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000700"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 10,
+          "label": "지방세법 제10조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001000"
+        },
+        {
+          "law": "local-tax-decree",
+          "article": 20,
+          "label": "지방세법 시행령 제20조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238943&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-04-22-local-tax-038-oligopolistic-shareholder.md",
+      "title": "[지방세 공부 038] 과점주주의 간주취득 구조",
+      "date": "2022-04-22",
+      "order": 38,
+      "unit": 4,
+      "url": "/study/2022/local-tax/038-oligopolistic-shareholder/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 7,
+          "label": "지방세법 제7조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000700"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 10,
+          "label": "지방세법 제10조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001000"
+        },
+        {
+          "law": "tax-basic",
+          "article": 46,
+          "label": "지방세기본법 제46조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=004600"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-04-25-local-tax-039-burdened-gift.md",
+      "title": "[지방세 공부 039] 부담부증여의 유상·무상 부분",
+      "date": "2022-04-25",
+      "order": 39,
+      "unit": 4,
+      "url": "/study/2022/local-tax/039-burdened-gift/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 7,
+          "label": "지방세법 제7조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000700"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-04-28-local-tax-040-temporary-buildings.md",
+      "title": "[지방세 공부 040] 임시건축물 비과세와 존속기간",
+      "date": "2022-04-28",
+      "order": 40,
+      "unit": 4,
+      "url": "/study/2022/local-tax/040-temporary-buildings/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 9,
+          "label": "지방세법 제9조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000900"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 20,
+          "label": "지방세법 제20조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-05-01-local-tax-041-registration-license-parts.md",
+      "title": "[지방세 공부 041] 등록면허세의 등록분과 면허분",
+      "date": "2022-05-01",
+      "order": 41,
+      "unit": 5,
+      "url": "/study/2022/local-tax/041-registration-license-parts/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 23,
+          "label": "지방세법 제23조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002300"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 24,
+          "label": "지방세법 제24조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002400"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-05-04-local-tax-042-acquisition-registration-scope.md",
+      "title": "[지방세 공부 042] 취득 등기와 등록분의 과세 범위",
+      "date": "2022-05-04",
+      "order": 42,
+      "unit": 5,
+      "url": "/study/2022/local-tax/042-acquisition-registration-scope/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 23,
+          "label": "지방세법 제23조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002300"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-05-07-local-tax-043-mortgage-registration.md",
+      "title": "[지방세 공부 043] 저당권 설정 등록분의 채권금액",
+      "date": "2022-05-07",
+      "order": 43,
+      "unit": 5,
+      "url": "/study/2022/local-tax/043-mortgage-registration/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 27,
+          "label": "지방세법 제27조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002700"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 28,
+          "label": "지방세법 제28조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002800"
+        }
+      ],
+      "calculation": {
+        "expression": "100000000 * 2 / 1000",
+        "expected": "200000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-05-10-local-tax-044-company-minimum.md",
+      "title": "[지방세 공부 044] 영리법인 설립 등기의 최저세액",
+      "date": "2022-05-10",
+      "order": 44,
+      "unit": 5,
+      "url": "/study/2022/local-tax/044-company-minimum/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 28,
+          "label": "지방세법 제28조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002800"
+        }
+      ],
+      "calculation": {
+        "expression": "10000000 * 4 / 1000",
+        "expected": "40000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-05-13-local-tax-045-capital-increase.md",
+      "title": "[지방세 공부 045] 증자 등기와 증가 금액",
+      "date": "2022-05-13",
+      "order": 45,
+      "unit": 5,
+      "url": "/study/2022/local-tax/045-capital-increase/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 28,
+          "label": "지방세법 제28조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002800"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-05-16-local-tax-046-registration-prepayment.md",
+      "title": "[지방세 공부 046] 등록분은 등록 전에 신고납부",
+      "date": "2022-05-16",
+      "order": 46,
+      "unit": 5,
+      "url": "/study/2022/local-tax/046-registration-prepayment/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 25,
+          "label": "지방세법 제25조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002500"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 30,
+          "label": "지방세법 제30조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=003000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-05-19-local-tax-047-license-classes.md",
+      "title": "[지방세 공부 047] 면허분의 1종~5종과 지역 구분",
+      "date": "2022-05-19",
+      "order": 47,
+      "unit": 5,
+      "url": "/study/2022/local-tax/047-license-classes/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 23,
+          "label": "지방세법 제23조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002300"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 34,
+          "label": "지방세법 제34조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=003400"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-05-22-local-tax-048-annual-license.md",
+      "title": "[지방세 공부 048] 계속 면허의 1월 1일 갱신 간주",
+      "date": "2022-05-22",
+      "order": 48,
+      "unit": 5,
+      "url": "/study/2022/local-tax/048-annual-license/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 35,
+          "label": "지방세법 제35조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=003500"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-05-25-local-tax-049-new-changed-license.md",
+      "title": "[지방세 공부 049] 신규·변경 면허와 신고납부 시점",
+      "date": "2022-05-25",
+      "order": 49,
+      "unit": 5,
+      "url": "/study/2022/local-tax/049-new-changed-license/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 24,
+          "label": "지방세법 제24조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002400"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 35,
+          "label": "지방세법 제35조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=003500"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-05-28-local-tax-050-license-payment-check.md",
+      "title": "[지방세 공부 050] 면허 부여기관의 납부 확인",
+      "date": "2022-05-28",
+      "order": 50,
+      "unit": 5,
+      "url": "/study/2022/local-tax/050-license-payment-check/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 38,
+          "label": "지방세법 제38조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=003800"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 39,
+          "label": "지방세법 제39조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=003900"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-06-01-local-tax-051-property-scope.md",
+      "title": "[지방세 공부 051] 재산세의 다섯 과세대상",
+      "date": "2022-06-01",
+      "order": 51,
+      "unit": 6,
+      "url": "/study/2022/local-tax/051-property-scope/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 104,
+          "label": "지방세법 제104조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010400"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 105,
+          "label": "지방세법 제105조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010500"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-06-04-local-tax-052-june-first-owner.md",
+      "title": "[지방세 공부 052] 재산세 6월 1일과 사실상 소유자",
+      "date": "2022-06-04",
+      "order": 52,
+      "unit": 6,
+      "url": "/study/2022/local-tax/052-june-first-owner/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 107,
+          "label": "지방세법 제107조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010700"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 114,
+          "label": "지방세법 제114조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=011400"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-06-07-local-tax-053-house-land-building.md",
+      "title": "[지방세 공부 053] 주택과 부속토지의 통합·안분",
+      "date": "2022-06-07",
+      "order": 53,
+      "unit": 6,
+      "url": "/study/2022/local-tax/053-house-land-building/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 104,
+          "label": "지방세법 제104조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010400"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 106,
+          "label": "지방세법 제106조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010600"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 107,
+          "label": "지방세법 제107조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010700"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-06-10-local-tax-054-fair-market-ratio.md",
+      "title": "[지방세 공부 054] 재산세 시가표준액과 공정시장가액비율",
+      "date": "2022-06-10",
+      "order": 54,
+      "unit": 6,
+      "url": "/study/2022/local-tax/054-fair-market-ratio/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 110,
+          "label": "지방세법 제110조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=011000"
+        },
+        {
+          "law": "local-tax-decree",
+          "article": 109,
+          "label": "지방세법 시행령 제109조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238943&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010900"
+        }
+      ],
+      "calculation": {
+        "expression": "300000000 * 60 / 100",
+        "expected": "180000000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-06-13-local-tax-055-land-categories.md",
+      "title": "[지방세 공부 055] 토지의 종합합산·별도합산·분리과세",
+      "date": "2022-06-13",
+      "order": 55,
+      "unit": 6,
+      "url": "/study/2022/local-tax/055-land-categories/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 106,
+          "label": "지방세법 제106조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010600"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 111,
+          "label": "지방세법 제111조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=011100"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-06-16-local-tax-056-general-building.md",
+      "title": "[지방세 공부 056] 일반 건축물 재산세 본세 계산",
+      "date": "2022-06-16",
+      "order": 56,
+      "unit": 6,
+      "url": "/study/2022/local-tax/056-general-building/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 111,
+          "label": "지방세법 제111조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=011100"
+        }
+      ],
+      "calculation": {
+        "expression": "80000000 * 25 / 10000",
+        "expected": "200000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-06-19-local-tax-057-one-house-rate-relief.md",
+      "title": "[지방세 공부 057] 1세대 1주택 재산세 세율 특례",
+      "date": "2022-06-19",
+      "order": 57,
+      "unit": 6,
+      "url": "/study/2022/local-tax/057-one-house-rate-relief/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": "111의2",
+          "label": "지방세법 제111조의2",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=011102"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-06-22-local-tax-058-urban-area-part.md",
+      "title": "[지방세 공부 058] 재산세 도시지역분의 별도 계산",
+      "date": "2022-06-22",
+      "order": 58,
+      "unit": 6,
+      "url": "/study/2022/local-tax/058-urban-area-part/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 112,
+          "label": "지방세법 제112조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=011200"
+        }
+      ],
+      "calculation": {
+        "expression": "100000000 * 14 / 10000",
+        "expected": "140000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-06-25-local-tax-059-property-payment-months.md",
+      "title": "[지방세 공부 059] 재산세 7월·9월 납기의 구분",
+      "date": "2022-06-25",
+      "order": 59,
+      "unit": 6,
+      "url": "/study/2022/local-tax/059-property-payment-months/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 115,
+          "label": "지방세법 제115조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=011500"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-06-28-local-tax-060-property-tax-cap.md",
+      "title": "[지방세 공부 060] 재산세 세 부담 상한의 비교 대상",
+      "date": "2022-06-28",
+      "order": 60,
+      "unit": 6,
+      "url": "/study/2022/local-tax/060-property-tax-cap/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 122,
+          "label": "지방세법 제122조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=012200"
+        }
+      ],
+      "calculation": {
+        "expression": "100000 * 110 / 100",
+        "expected": "110000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-07-01-local-tax-061-vehicle-owner.md",
+      "title": "[지방세 공부 061] 자동차세는 운행 횟수보다 소유 관계",
+      "date": "2022-07-01",
+      "order": 61,
+      "unit": 7,
+      "url": "/study/2022/local-tax/061-vehicle-owner/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 124,
+          "label": "지방세법 제124조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=012400"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 125,
+          "label": "지방세법 제125조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=012500"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 135,
+          "label": "지방세법 제135조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=013500"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-07-04-local-tax-062-car-cc-rate.md",
+      "title": "[지방세 공부 062] 비영업용 승용차의 배기량별 단가",
+      "date": "2022-07-04",
+      "order": 62,
+      "unit": 7,
+      "url": "/study/2022/local-tax/062-car-cc-rate/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 127,
+          "label": "지방세법 제127조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=012700"
+        }
+      ],
+      "calculation": {
+        "expression": "1500 * 140",
+        "expected": "210000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-07-07-local-tax-063-car-boundary.md",
+      "title": "[지방세 공부 063] 1,600cc 경계에서 기본 연세액 비교",
+      "date": "2022-07-07",
+      "order": 63,
+      "unit": 7,
+      "url": "/study/2022/local-tax/063-car-boundary/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 127,
+          "label": "지방세법 제127조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=012700"
+        }
+      ],
+      "calculation": {
+        "expression": "1601 * 200 - 1600 * 140",
+        "expected": "96200"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-07-10-local-tax-064-car-age-reduction.md",
+      "title": "[지방세 공부 064] 차령 3년부터의 승용차 경감",
+      "date": "2022-07-10",
+      "order": 64,
+      "unit": 7,
+      "url": "/study/2022/local-tax/064-car-age-reduction/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 127,
+          "label": "지방세법 제127조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=012700"
+        }
+      ],
+      "calculation": {
+        "expression": "200000 * (1 - (5 - 2) * 5 / 100)",
+        "expected": "170000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-07-13-local-tax-065-electric-car.md",
+      "title": "[지방세 공부 065] 배기량 없는 승용차의 정액 구조",
+      "date": "2022-07-13",
+      "order": 65,
+      "unit": 7,
+      "url": "/study/2022/local-tax/065-electric-car/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 127,
+          "label": "지방세법 제127조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=012700"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-07-16-local-tax-066-car-regular-periods.md",
+      "title": "[지방세 공부 066] 자동차세 정기분과 분할납부",
+      "date": "2022-07-16",
+      "order": 66,
+      "unit": 7,
+      "url": "/study/2022/local-tax/066-car-regular-periods/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 128,
+          "label": "지방세법 제128조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=012800"
+        }
+      ],
+      "calculation": {
+        "expression": "240000 / 2",
+        "expected": "120000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-07-19-local-tax-067-car-transfer-days.md",
+      "title": "[지방세 공부 067] 이전등록 때의 소유기간 일할계산",
+      "date": "2022-07-19",
+      "order": 67,
+      "unit": 7,
+      "url": "/study/2022/local-tax/067-car-transfer-days/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 129,
+          "label": "지방세법 제129조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=012900"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 130,
+          "label": "지방세법 제130조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=013000"
+        }
+      ],
+      "calculation": {
+        "expression": "365000 * 100 / 365",
+        "expected": "100000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-07-22-local-tax-068-car-deregistration.md",
+      "title": "[지방세 공부 068] 폐차 인도와 말소등록 시점",
+      "date": "2022-07-22",
+      "order": 68,
+      "unit": 7,
+      "url": "/study/2022/local-tax/068-car-deregistration/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 128,
+          "label": "지방세법 제128조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=012800"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 130,
+          "label": "지방세법 제130조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=013000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-07-25-local-tax-069-car-annual-discount.md",
+      "title": "[지방세 공부 069] 2022년 연납 공제율과 남은 기간",
+      "date": "2022-07-25",
+      "order": 69,
+      "unit": 7,
+      "url": "/study/2022/local-tax/069-car-annual-discount/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 128,
+          "label": "지방세법 제128조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=012800"
+        },
+        {
+          "law": "local-tax-decree",
+          "article": 125,
+          "label": "지방세법 시행령 제125조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238943&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=012500"
+        }
+      ],
+      "calculation": {
+        "expression": "365000 * 334 / 365 * 10 / 100",
+        "expected": "33400"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-07-28-local-tax-070-car-proof-plate.md",
+      "title": "[지방세 공부 070] 납세 확인과 번호판 영치",
+      "date": "2022-07-28",
+      "order": 70,
+      "unit": 7,
+      "url": "/study/2022/local-tax/070-car-proof-plate/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 131,
+          "label": "지방세법 제131조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=013100"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 132,
+          "label": "지방세법 제132조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=013200"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-08-01-local-tax-071-resident-three-parts.md",
+      "title": "[지방세 공부 071] 주민세 세 가지 과세 구조",
+      "date": "2022-08-01",
+      "order": 71,
+      "unit": 8,
+      "url": "/study/2022/local-tax/071-resident-three-parts/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 74,
+          "label": "지방세법 제74조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007400"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 75,
+          "label": "지방세법 제75조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007500"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-08-04-local-tax-072-personal-resident-date.md",
+      "title": "[지방세 공부 072] 개인분의 7월 1일과 조례 금액",
+      "date": "2022-08-04",
+      "order": 72,
+      "unit": 8,
+      "url": "/study/2022/local-tax/072-personal-resident-date/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 76,
+          "label": "지방세법 제76조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007600"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 78,
+          "label": "지방세법 제78조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007800"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 79,
+          "label": "지방세법 제79조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007900"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-08-07-local-tax-073-personal-exclusions.md",
+      "title": "[지방세 공부 073] 개인분 납세의무자 제외 범위",
+      "date": "2022-08-07",
+      "order": 73,
+      "unit": 8,
+      "url": "/study/2022/local-tax/073-personal-exclusions/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 75,
+          "label": "지방세법 제75조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007500"
+        },
+        {
+          "law": "local-tax-decree",
+          "article": 79,
+          "label": "지방세법 시행령 제79조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238943&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007900"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-08-10-local-tax-074-individual-business-threshold.md",
+      "title": "[지방세 공부 074] 2022년 개인사업주 사업소분 기준",
+      "date": "2022-08-10",
+      "order": 74,
+      "unit": 8,
+      "url": "/study/2022/local-tax/074-individual-business-threshold/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 75,
+          "label": "지방세법 제75조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007500"
+        },
+        {
+          "law": "local-tax-decree",
+          "article": 79,
+          "label": "지방세법 시행령 제79조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238943&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007900"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-08-13-local-tax-075-business-basic-amount.md",
+      "title": "[지방세 공부 075] 사업소분 기본세액과 연면적분 합산",
+      "date": "2022-08-13",
+      "order": 75,
+      "unit": 8,
+      "url": "/study/2022/local-tax/075-business-basic-amount/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 80,
+          "label": "지방세법 제80조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008000"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 81,
+          "label": "지방세법 제81조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008100"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 82,
+          "label": "지방세법 제82조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008200"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 83,
+          "label": "지방세법 제83조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008300"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-08-16-local-tax-076-business-area-330.md",
+      "title": "[지방세 공부 076] 330㎡ 초과 사업소의 전체 면적 계산",
+      "date": "2022-08-16",
+      "order": 76,
+      "unit": 8,
+      "url": "/study/2022/local-tax/076-business-area-330/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 81,
+          "label": "지방세법 제81조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008100"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 82,
+          "label": "지방세법 제82조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008200"
+        }
+      ],
+      "calculation": {
+        "expression": "400 * 250",
+        "expected": "100000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-08-19-local-tax-077-excluded-business-area.md",
+      "title": "[지방세 공부 077] 복리후생 시설과 공동사용 면적",
+      "date": "2022-08-19",
+      "order": 77,
+      "unit": 8,
+      "url": "/study/2022/local-tax/077-excluded-business-area/",
+      "sources": [
+        {
+          "law": "local-tax-decree",
+          "article": 78,
+          "label": "지방세법 시행령 제78조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238943&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007800"
+        }
+      ],
+      "calculation": {
+        "expression": "100 * 3 / 5",
+        "expected": "60"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-08-22-local-tax-078-polluting-business.md",
+      "title": "[지방세 공부 078] 오염물질 배출 사업소 면적 세율",
+      "date": "2022-08-22",
+      "order": 78,
+      "unit": 8,
+      "url": "/study/2022/local-tax/078-polluting-business/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 81,
+          "label": "지방세법 제81조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008100"
+        },
+        {
+          "law": "local-tax-decree",
+          "article": 83,
+          "label": "지방세법 시행령 제83조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238943&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008300"
+        }
+      ],
+      "calculation": {
+        "expression": "400 * 500",
+        "expected": "200000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-08-25-local-tax-079-employee-resident-tax.md",
+      "title": "[지방세 공부 079] 종업원분은 사업주의 급여총액 기준",
+      "date": "2022-08-25",
+      "order": 79,
+      "unit": 8,
+      "url": "/study/2022/local-tax/079-employee-resident-tax/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 75,
+          "label": "지방세법 제75조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007500"
+        },
+        {
+          "law": "local-tax-act",
+          "article": "84의2",
+          "label": "지방세법 제84조의2",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008402"
+        },
+        {
+          "law": "local-tax-act",
+          "article": "84의3",
+          "label": "지방세법 제84조의3",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008403"
+        },
+        {
+          "law": "local-tax-act",
+          "article": "84의6",
+          "label": "지방세법 제84조의6",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008406"
+        }
+      ],
+      "calculation": {
+        "expression": "200000000 * 5 / 1000",
+        "expected": "1000000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-08-28-local-tax-080-employee-exemption-average.md",
+      "title": "[지방세 공부 080] 종업원분 면세점은 최근 급여 월평균",
+      "date": "2022-08-28",
+      "order": 80,
+      "unit": 8,
+      "url": "/study/2022/local-tax/080-employee-exemption-average/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": "84의4",
+          "label": "지방세법 제84조의4",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008404"
+        },
+        {
+          "law": "local-tax-decree",
+          "article": "85의2",
+          "label": "지방세법 시행령 제85조의2",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238943&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008502"
+        }
+      ],
+      "calculation": {
+        "expression": "3000000 * 50",
+        "expected": "150000000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-09-01-local-tax-081-local-income-independent.md",
+      "title": "[지방세 공부 081] 지방소득세와 국세 신고를 구분하기",
+      "date": "2022-09-01",
+      "order": 81,
+      "unit": 9,
+      "url": "/study/2022/local-tax/081-local-income-independent/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 86,
+          "label": "지방세법 제86조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008600"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 95,
+          "label": "지방세법 제95조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009500"
+        },
+        {
+          "law": "local-tax-act",
+          "article": "103의23",
+          "label": "지방세법 제103조의23",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010323"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-09-04-local-tax-082-income-categories.md",
+      "title": "[지방세 공부 082] 종합·퇴직·양도소득의 구분",
+      "date": "2022-09-04",
+      "order": 82,
+      "unit": 9,
+      "url": "/study/2022/local-tax/082-income-categories/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 85,
+          "label": "지방세법 제85조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008500"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 87,
+          "label": "지방세법 제87조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008700"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 90,
+          "label": "지방세법 제90조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-09-07-local-tax-083-income-tax-base.md",
+      "title": "[지방세 공부 083] 매출·소득금액·과세표준의 차이",
+      "date": "2022-09-07",
+      "order": 83,
+      "unit": 9,
+      "url": "/study/2022/local-tax/083-income-tax-base/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 91,
+          "label": "지방세법 제91조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009100"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 93,
+          "label": "지방세법 제93조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009300"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 94,
+          "label": "지방세법 제94조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009400"
+        }
+      ],
+      "calculation": {
+        "expression": "50000000 - 20000000 - 10000000",
+        "expected": "20000000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-09-10-local-tax-084-personal-progressive-rate.md",
+      "title": "[지방세 공부 084] 2022년 종합소득 지방세 누진 계산",
+      "date": "2022-09-10",
+      "order": 84,
+      "unit": 9,
+      "url": "/study/2022/local-tax/084-personal-progressive-rate/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 92,
+          "label": "지방세법 제92조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009200"
+        }
+      ],
+      "calculation": {
+        "expression": "72000 + (20000000 - 12000000) * 15 / 1000",
+        "expected": "192000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-09-13-local-tax-085-income-credit-prepaid.md",
+      "title": "[지방세 공부 085] 소득세 공제·감면과 기납부세액",
+      "date": "2022-09-13",
+      "order": 85,
+      "unit": 9,
+      "url": "/study/2022/local-tax/085-income-credit-prepaid/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 93,
+          "label": "지방세법 제93조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009300"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 94,
+          "label": "지방세법 제94조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009400"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 95,
+          "label": "지방세법 제95조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009500"
+        }
+      ],
+      "calculation": {
+        "expression": "300000 - 50000 - 200000",
+        "expected": "50000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-09-16-local-tax-086-income-filing-correction.md",
+      "title": "[지방세 공부 086] 개인 확정신고와 국세 수정 뒤의 지방세",
+      "date": "2022-09-16",
+      "order": 86,
+      "unit": 9,
+      "url": "/study/2022/local-tax/086-income-filing-correction/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 95,
+          "label": "지방세법 제95조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009500"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 96,
+          "label": "지방세법 제96조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009600"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-09-19-local-tax-087-withholding-ten-percent.md",
+      "title": "[지방세 공부 087] 개인지방소득세 특별징수 10%의 기준",
+      "date": "2022-09-19",
+      "order": 87,
+      "unit": 9,
+      "url": "/study/2022/local-tax/087-withholding-ten-percent/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": "103의13",
+          "label": "지방세법 제103조의13",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010313"
+        }
+      ],
+      "calculation": {
+        "expression": "100000 * 10 / 100",
+        "expected": "10000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-09-22-local-tax-088-corporate-income-rate.md",
+      "title": "[지방세 공부 088] 2022년 법인지방소득세 기본 구간",
+      "date": "2022-09-22",
+      "order": 88,
+      "unit": 9,
+      "url": "/study/2022/local-tax/088-corporate-income-rate/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": "103의19",
+          "label": "지방세법 제103조의19",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010319"
+        },
+        {
+          "law": "local-tax-act",
+          "article": "103의20",
+          "label": "지방세법 제103조의20",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010320"
+        }
+      ],
+      "calculation": {
+        "expression": "100000000 / 100",
+        "expected": "1000000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-09-25-local-tax-089-corporate-filing-allocation.md",
+      "title": "[지방세 공부 089] 법인 신고기한과 여러 사업장 안분",
+      "date": "2022-09-25",
+      "order": 89,
+      "unit": 9,
+      "url": "/study/2022/local-tax/089-corporate-filing-allocation/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 89,
+          "label": "지방세법 제89조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008900"
+        },
+        {
+          "law": "local-tax-act",
+          "article": "103의23",
+          "label": "지방세법 제103조의23",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010323"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-09-28-local-tax-090-capital-gain-filing.md",
+      "title": "[지방세 공부 090] 양도소득 지방세의 별도 예정신고",
+      "date": "2022-09-28",
+      "order": 90,
+      "unit": 9,
+      "url": "/study/2022/local-tax/090-capital-gain-filing/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": "103의5",
+          "label": "지방세법 제103조의5",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=010305"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-10-01-local-tax-091-local-consumption-mechanism.md",
+      "title": "[지방세 공부 091] 지방소비세와 부가가치세의 연결",
+      "date": "2022-10-01",
+      "order": 91,
+      "unit": 10,
+      "url": "/study/2022/local-tax/091-local-consumption-mechanism/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 65,
+          "label": "지방세법 제65조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=006500"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 66,
+          "label": "지방세법 제66조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=006600"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 68,
+          "label": "지방세법 제68조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=006800"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 70,
+          "label": "지방세법 제70조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007000"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 71,
+          "label": "지방세법 제71조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007100"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-10-04-local-tax-092-consumption-2022-transition.md",
+      "title": "[지방세 공부 092] 2022년 지방소비세 23.7%와 부칙",
+      "date": "2022-10-04",
+      "order": 92,
+      "unit": 10,
+      "url": "/study/2022/local-tax/092-consumption-2022-transition/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 69,
+          "label": "지방세법 제69조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=006900"
+        }
+      ],
+      "calculation": {
+        "expression": "1000000 * 237 / 1000",
+        "expected": "237000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-10-07-local-tax-093-leisure-tax-scope.md",
+      "title": "[지방세 공부 093] 레저세는 모든 여가 활동 세금이 아니다",
+      "date": "2022-10-07",
+      "order": 93,
+      "unit": 10,
+      "url": "/study/2022/local-tax/093-leisure-tax-scope/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 40,
+          "label": "지방세법 제40조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=004000"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 41,
+          "label": "지방세법 제41조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=004100"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 43,
+          "label": "지방세법 제43조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=004300"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-10-10-local-tax-094-leisure-base.md",
+      "title": "[지방세 공부 094] 레저세 발매금총액과 순이익",
+      "date": "2022-10-10",
+      "order": 94,
+      "unit": 10,
+      "url": "/study/2022/local-tax/094-leisure-base/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 42,
+          "label": "지방세법 제42조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=004200"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 43,
+          "label": "지방세법 제43조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=004300"
+        }
+      ],
+      "calculation": {
+        "expression": "10000000 * 10 / 100",
+        "expected": "1000000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-10-13-local-tax-095-tobacco-unit.md",
+      "title": "[지방세 공부 095] 담배소비세 종류별 수량 단위",
+      "date": "2022-10-13",
+      "order": 95,
+      "unit": 10,
+      "url": "/study/2022/local-tax/095-tobacco-unit/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 48,
+          "label": "지방세법 제48조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=004800"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 49,
+          "label": "지방세법 제49조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=004900"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 51,
+          "label": "지방세법 제51조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005100"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 52,
+          "label": "지방세법 제52조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005200"
+        }
+      ],
+      "calculation": {
+        "expression": "100 * 1007",
+        "expected": "100700"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-10-16-local-tax-096-tobacco-return.md",
+      "title": "[지방세 공부 096] 미납세 반출·면제·환급의 차이",
+      "date": "2022-10-16",
+      "order": 96,
+      "unit": 10,
+      "url": "/study/2022/local-tax/096-tobacco-return/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 53,
+          "label": "지방세법 제53조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005300"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 54,
+          "label": "지방세법 제54조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005400"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 63,
+          "label": "지방세법 제63조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=006300"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-10-19-local-tax-097-resource-three-parts.md",
+      "title": "[지방세 공부 097] 지역자원시설세의 세 부분",
+      "date": "2022-10-19",
+      "order": 97,
+      "unit": 10,
+      "url": "/study/2022/local-tax/097-resource-three-parts/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 141,
+          "label": "지방세법 제141조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=014100"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 142,
+          "label": "지방세법 제142조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=014200"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 143,
+          "label": "지방세법 제143조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=014300"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 144,
+          "label": "지방세법 제144조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=014400"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-10-22-local-tax-098-groundwater-purpose.md",
+      "title": "[지방세 공부 098] 지하수 용도별 단가와 단위",
+      "date": "2022-10-22",
+      "order": 98,
+      "unit": 10,
+      "url": "/study/2022/local-tax/098-groundwater-purpose/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 142,
+          "label": "지방세법 제142조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=014200"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 145,
+          "label": "지방세법 제145조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=014500"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 146,
+          "label": "지방세법 제146조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=014600"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 147,
+          "label": "지방세법 제147조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=014700"
+        }
+      ],
+      "calculation": {
+        "expression": "100 * 20",
+        "expected": "2000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-10-25-local-tax-099-fire-resource-tax.md",
+      "title": "[지방세 공부 099] 소방분과 토지·건축물의 구별",
+      "date": "2022-10-25",
+      "order": 99,
+      "unit": 10,
+      "url": "/study/2022/local-tax/099-fire-resource-tax/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 142,
+          "label": "지방세법 제142조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=014200"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 145,
+          "label": "지방세법 제145조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=014500"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 146,
+          "label": "지방세법 제146조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=014600"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 147,
+          "label": "지방세법 제147조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=014700"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-10-28-local-tax-100-education-tax-bases.md",
+      "title": "[지방세 공부 100] 지방교육세는 모든 본세의 20%가 아니다",
+      "date": "2022-10-28",
+      "order": 100,
+      "unit": 10,
+      "url": "/study/2022/local-tax/100-education-tax-bases/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 149,
+          "label": "지방세법 제149조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=014900"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 150,
+          "label": "지방세법 제150조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=015000"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 151,
+          "label": "지방세법 제151조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=015100"
+        }
+      ],
+      "calculation": {
+        "expression": "100000 * 30 / 100",
+        "expected": "30000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-11-01-local-tax-101-non-tax-vs-relief.md",
+      "title": "[지방세 공부 101] 비과세와 감면을 구분해 기록하기",
+      "date": "2022-11-01",
+      "order": 101,
+      "unit": 11,
+      "url": "/study/2022/local-tax/101-non-tax-vs-relief/",
+      "sources": [
+        {
+          "law": "tax-relief",
+          "article": 2,
+          "label": "지방세특례제한법 제2조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000200"
+        },
+        {
+          "law": "tax-relief",
+          "article": 3,
+          "label": "지방세특례제한법 제3조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000300"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 9,
+          "label": "지방세법 제9조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000900"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-11-04-local-tax-102-relief-application.md",
+      "title": "[지방세 공부 102] 감면 신청과 증빙 자료",
+      "date": "2022-11-04",
+      "order": 102,
+      "unit": 11,
+      "url": "/study/2022/local-tax/102-relief-application/",
+      "sources": [
+        {
+          "law": "tax-relief",
+          "article": 183,
+          "label": "지방세특례제한법 제183조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=018300"
+        },
+        {
+          "law": "tax-relief",
+          "article": 184,
+          "label": "지방세특례제한법 제184조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=018400"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-11-07-local-tax-103-direct-use.md",
+      "title": "[지방세 공부 103] 직접 사용의 주체와 목적",
+      "date": "2022-11-07",
+      "order": 103,
+      "unit": 11,
+      "url": "/study/2022/local-tax/103-direct-use/",
+      "sources": [
+        {
+          "law": "tax-relief",
+          "article": 2,
+          "label": "지방세특례제한법 제2조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000200"
+        },
+        {
+          "law": "tax-relief",
+          "article": 178,
+          "label": "지방세특례제한법 제178조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=017800"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-11-10-local-tax-104-partial-use.md",
+      "title": "[지방세 공부 104] 일부만 감면 용도로 쓰는 경우",
+      "date": "2022-11-10",
+      "order": 104,
+      "unit": 11,
+      "url": "/study/2022/local-tax/104-partial-use/",
+      "sources": [
+        {
+          "law": "tax-relief",
+          "article": 2,
+          "label": "지방세특례제한법 제2조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000200"
+        },
+        {
+          "law": "tax-relief",
+          "article": 178,
+          "label": "지방세특례제한법 제178조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=017800"
+        }
+      ],
+      "calculation": {
+        "expression": "80 / 200 * 100",
+        "expected": "40"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-11-13-local-tax-105-relief-recapture.md",
+      "title": "[지방세 공부 105] 감면 후 직접 사용·보유와 추징",
+      "date": "2022-11-13",
+      "order": 105,
+      "unit": 11,
+      "url": "/study/2022/local-tax/105-relief-recapture/",
+      "sources": [
+        {
+          "law": "tax-relief",
+          "article": 178,
+          "label": "지방세특례제한법 제178조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=017800"
+        },
+        {
+          "law": "local-tax-act",
+          "article": 20,
+          "label": "지방세법 제20조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-11-16-local-tax-106-overlapping-relief.md",
+      "title": "[지방세 공부 106] 중복 감면은 단순 합산하지 않는다",
+      "date": "2022-11-16",
+      "order": 106,
+      "unit": 11,
+      "url": "/study/2022/local-tax/106-overlapping-relief/",
+      "sources": [
+        {
+          "law": "tax-relief",
+          "article": 180,
+          "label": "지방세특례제한법 제180조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=018000"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-11-19-local-tax-107-minimum-relief-limit.md",
+      "title": "[지방세 공부 107] 면제 규정과 85% 감면 제한",
+      "date": "2022-11-19",
+      "order": 107,
+      "unit": 11,
+      "url": "/study/2022/local-tax/107-minimum-relief-limit/",
+      "sources": [
+        {
+          "law": "tax-relief",
+          "article": "177의2",
+          "label": "지방세특례제한법 제177조의2",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=017702"
+        }
+      ],
+      "calculation": {
+        "expression": "4000000 * 15 / 100",
+        "expected": "600000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-11-22-local-tax-108-relief-sunset.md",
+      "title": "[지방세 공부 108] 감면 일몰과 취득·과세 시점",
+      "date": "2022-11-22",
+      "order": 108,
+      "unit": 11,
+      "url": "/study/2022/local-tax/108-relief-sunset/",
+      "sources": [
+        {
+          "law": "tax-relief",
+          "article": 3,
+          "label": "지방세특례제한법 제3조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=000300"
+        },
+        {
+          "law": "tax-relief",
+          "article": 17,
+          "label": "지방세특례제한법 제17조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=001700"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-11-25-local-tax-109-replacement-acquisition.md",
+      "title": "[지방세 공부 109] 수용 등 대체취득 감면과 초과 가액",
+      "date": "2022-11-25",
+      "order": 109,
+      "unit": 11,
+      "url": "/study/2022/local-tax/109-replacement-acquisition/",
+      "sources": [
+        {
+          "law": "tax-relief",
+          "article": 73,
+          "label": "지방세특례제한법 제73조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007300"
+        }
+      ],
+      "calculation": {
+        "expression": "250000000 - 200000000",
+        "expected": "50000000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-11-28-local-tax-110-electronic-payment-credit.md",
+      "title": "[지방세 공부 110] 전자송달·자동이체 세액공제",
+      "date": "2022-11-28",
+      "order": 110,
+      "unit": 11,
+      "url": "/study/2022/local-tax/110-electronic-payment-credit/",
+      "sources": [
+        {
+          "law": "tax-relief",
+          "article": "92의2",
+          "label": "지방세특례제한법 제92조의2",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238265&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009202"
+        }
+      ],
+      "calculation": {
+        "expression": "800 * 2",
+        "expected": "1600"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-12-01-local-tax-111-late-return.md",
+      "title": "[지방세 공부 111] 처음 신고를 놓쳤을 때의 기한 후 신고",
+      "date": "2022-12-01",
+      "order": 111,
+      "unit": 12,
+      "url": "/study/2022/local-tax/111-late-return/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 51,
+          "label": "지방세기본법 제51조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005100"
+        },
+        {
+          "law": "tax-basic",
+          "article": 57,
+          "label": "지방세기본법 제57조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005700"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-12-04-local-tax-112-filing-penalties.md",
+      "title": "[지방세 공부 112] 무신고·과소신고·납부지연의 구별",
+      "date": "2022-12-04",
+      "order": 112,
+      "unit": 12,
+      "url": "/study/2022/local-tax/112-filing-penalties/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 53,
+          "label": "지방세기본법 제53조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005300"
+        },
+        {
+          "law": "tax-basic",
+          "article": 54,
+          "label": "지방세기본법 제54조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005400"
+        },
+        {
+          "law": "tax-basic",
+          "article": 55,
+          "label": "지방세기본법 제55조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005500"
+        },
+        {
+          "law": "tax-basic",
+          "article": 57,
+          "label": "지방세기본법 제57조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=005700"
+        }
+      ],
+      "calculation": {
+        "expression": "200000 * 10 / 100",
+        "expected": "20000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-12-07-local-tax-113-demand-and-seizure.md",
+      "title": "[지방세 공부 113] 독촉·납부최고·압류의 단계",
+      "date": "2022-12-07",
+      "order": 113,
+      "unit": 12,
+      "url": "/study/2022/local-tax/113-demand-and-seizure/",
+      "sources": [
+        {
+          "law": "tax-collection",
+          "article": 32,
+          "label": "지방세징수법 제32조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=224907&efYd=20210101&ancYnChk=0&chrClsCd=010202&joNo=003200"
+        },
+        {
+          "law": "tax-collection",
+          "article": 33,
+          "label": "지방세징수법 제33조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=224907&efYd=20210101&ancYnChk=0&chrClsCd=010202&joNo=003300"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-12-10-local-tax-114-refund-offset.md",
+      "title": "[지방세 공부 114] 환급 결정·충당·지급의 차이",
+      "date": "2022-12-10",
+      "order": 114,
+      "unit": 12,
+      "url": "/study/2022/local-tax/114-refund-offset/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 60,
+          "label": "지방세기본법 제60조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=006000"
+        },
+        {
+          "law": "tax-basic",
+          "article": 62,
+          "label": "지방세기본법 제62조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=006200"
+        }
+      ],
+      "calculation": {
+        "expression": "100000 - 30000",
+        "expected": "70000"
+      }
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-12-13-local-tax-115-installment-deferral.md",
+      "title": "[지방세 공부 115] 분할납부·기한 연장·징수유예",
+      "date": "2022-12-13",
+      "order": 115,
+      "unit": 12,
+      "url": "/study/2022/local-tax/115-installment-deferral/",
+      "sources": [
+        {
+          "law": "local-tax-act",
+          "article": 118,
+          "label": "지방세법 제118조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238261&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=011800"
+        },
+        {
+          "law": "tax-basic",
+          "article": 26,
+          "label": "지방세기본법 제26조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=002600"
+        },
+        {
+          "law": "tax-collection",
+          "article": 25,
+          "label": "지방세징수법 제25조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=224907&efYd=20210101&ancYnChk=0&chrClsCd=010202&joNo=002500"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-12-16-local-tax-116-taxpayer-advocate.md",
+      "title": "[지방세 공부 116] 납세자보호관과 세무 고충 상담",
+      "date": "2022-12-16",
+      "order": 116,
+      "unit": 12,
+      "url": "/study/2022/local-tax/116-taxpayer-advocate/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 76,
+          "label": "지방세기본법 제76조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007600"
+        },
+        {
+          "law": "tax-basic",
+          "article": 77,
+          "label": "지방세기본법 제77조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=007700"
+        },
+        {
+          "law": "tax-basic",
+          "article": 87,
+          "label": "지방세기본법 제87조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008700"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-12-19-local-tax-117-audit-notice-rights.md",
+      "title": "[지방세 공부 117] 세무조사 사전통지와 조력 받을 권리",
+      "date": "2022-12-19",
+      "order": 117,
+      "unit": 12,
+      "url": "/study/2022/local-tax/117-audit-notice-rights/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 81,
+          "label": "지방세기본법 제81조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008100"
+        },
+        {
+          "law": "tax-basic",
+          "article": 83,
+          "label": "지방세기본법 제83조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008300"
+        },
+        {
+          "law": "tax-basic",
+          "article": 84,
+          "label": "지방세기본법 제84조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008400"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-12-22-local-tax-118-tax-information-privacy.md",
+      "title": "[지방세 공부 118] 과세정보 비밀유지와 목적 제한",
+      "date": "2022-12-22",
+      "order": 118,
+      "unit": 12,
+      "url": "/study/2022/local-tax/118-tax-information-privacy/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 86,
+          "label": "지방세기본법 제86조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008600"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-12-25-local-tax-119-preassessment-review.md",
+      "title": "[지방세 공부 119] 과세전적부심사와 과세 후 불복",
+      "date": "2022-12-25",
+      "order": 119,
+      "unit": 12,
+      "url": "/study/2022/local-tax/119-preassessment-review/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 88,
+          "label": "지방세기본법 제88조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008800"
+        }
+      ]
+    },
+    {
+      "file": "_posts/LocalTax2022/2022-12-28-local-tax-120-appeal-path.md",
+      "title": "[지방세 공부 120] 이의신청·심판청구의 대상과 기간",
+      "date": "2022-12-28",
+      "order": 120,
+      "unit": 12,
+      "url": "/study/2022/local-tax/120-appeal-path/",
+      "sources": [
+        {
+          "law": "tax-basic",
+          "article": 89,
+          "label": "지방세기본법 제89조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=008900"
+        },
+        {
+          "law": "tax-basic",
+          "article": 90,
+          "label": "지방세기본법 제90조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009000"
+        },
+        {
+          "law": "tax-basic",
+          "article": 91,
+          "label": "지방세기본법 제91조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009100"
+        },
+        {
+          "law": "tax-basic",
+          "article": 98,
+          "label": "지방세기본법 제98조",
+          "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=238259&efYd=20220101&ancYnChk=0&chrClsCd=010202&joNo=009800"
+        }
+      ]
+    }
+  ]
+}

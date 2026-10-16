@@ -59,6 +59,9 @@ jobs:
       - name: Check study examples
         run: python3 scripts/validate-study-notes.py --require-bash
 
+      - name: Check historical local-tax example arithmetic
+        run: python3 scripts/validate-tax-notes.py
+
       - name: Set up .NET 8 for C# examples
         uses: actions/setup-dotnet@v6
         with:
