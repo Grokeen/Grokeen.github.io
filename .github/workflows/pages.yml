@@ -67,8 +67,17 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Check C# and hospital workflow examples
+      - name: Check C# language examples
         run: python3 scripts/validate-csharp-notes.py
+
+      - name: Set up Java 11 for historical Java and Spring lessons
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '11'
+
+      - name: Check Java 11 and Spring Boot 2.3.4 examples
+        run: python3 scripts/validate-java-spring-notes.py
 
       - name: Set up Python 3.9 for historical certification examples
         uses: actions/setup-python@v6
