@@ -1,0 +1,10 @@
+# Isolated environment for reproducing the historical study examples.
+numpy==1.20.3
+pandas==1.2.5
+scipy==1.6.3
+scikit-learn==0.24.2
+joblib==1.0.1
+threadpoolctl==2.1.0
+python-dateutil==2.8.1
+pytz==2021.1
+six==1.16.0

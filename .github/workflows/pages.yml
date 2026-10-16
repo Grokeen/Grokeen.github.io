@@ -67,6 +67,17 @@ jobs:
       - name: Check C# and hospital workflow examples
         run: python3 scripts/validate-csharp-notes.py
 
+      - name: Set up Python 3.9 for historical certification examples
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.9'
+
+      - name: Check certification examples in an isolated environment
+        run: |
+          python -m venv .jekyll-local/cert-env
+          .jekyll-local/cert-env/bin/python -m pip install --only-binary=:all: -r scripts/requirements-certification-2021.txt
+          .jekyll-local/cert-env/bin/python scripts/validate-certification-notes.py --require-compilers
+
       - name: Upload generated site
         uses: actions/upload-pages-artifact@v4
         with:
