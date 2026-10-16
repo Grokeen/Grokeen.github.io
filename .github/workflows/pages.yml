@@ -56,6 +56,9 @@ jobs:
       - name: Test generated site
         run: npm test
 
+      - name: Check study examples
+        run: python3 scripts/validate-study-notes.py --require-bash
+
       - name: Upload generated site
         uses: actions/upload-pages-artifact@v4
         with:
