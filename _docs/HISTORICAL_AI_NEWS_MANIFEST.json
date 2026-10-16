@@ -1,0 +1,3059 @@
+{
+  "period_start": "2022-01-01",
+  "period_end": "2023-03-31",
+  "reviewed_at": "2026-10-16",
+  "count": 108,
+  "articles": [
+    {
+      "key": "LaMDA-Grounded-Dialogue",
+      "filename": "2022-01-21-HistoryAI-LaMDA-Grounded-Dialogue.md",
+      "date": "2022-01-21",
+      "title": "LaMDA가 제시한 대화 AI의 세 기준: 품질·안전·근거",
+      "topic": "대화형 AI",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/lamda-towards-safe-grounded-and-high-quality-dialog-models-for-everything/",
+      "source_title": "LaMDA: Towards Safe, Grounded, and High-Quality Dialog Models for Everything",
+      "source_published_at": "2022-01-21",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 LaMDA 연구에서 대화 품질뿐 아니라 안전성과 외부 출처로 뒷받침되는 답변을 별도의 평가 목표로 설명했다. 매끄러운 문장이 곧 사실이라는 뜻은 아니라는 문제의식이다.",
+        "대화에 특화한 언어모델과 외부 지식 활용을 함께 다뤘다. 이는 연구 진전 소개이며 누구나 쓰는 완성된 검색·상담 서비스의 정식 출시 발표와 구분해야 한다."
+      ],
+      "change": "대화 AI의 경쟁 기준이 문장 생성 능력에서 근거 확인과 유해 응답 관리까지 넓어졌다. 기업 도입 비용에도 모델 사용료 외의 평가·검수 작업이 포함될 수 있다.",
+      "outlook": "고객 상담이나 정보 검색에 적용하려면 실제 업무 질문에서 답의 정확성과 출처의 적합성을 반복 측정해야 한다. 사람에게 넘길 기준도 운영 성과를 좌우할 것이다.",
+      "risk": "안전 지표는 개발자가 정한 평가 기준에 영향을 받는다. 특정 언어·집단의 경험이 충분히 반영되는지, 그럴듯한 오답을 사용자가 구별할 수 있는지 확인해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/LaMDA-Grounded-Dialogue/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-01-21-HistoryAI-LaMDA-Grounded-Dialogue.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Meta-RSC-Infrastructure",
+      "filename": "2022-01-24-HistoryAI-Meta-RSC-Infrastructure.md",
+      "date": "2022-01-24",
+      "title": "Meta RSC 발표, 대형 AI 연구의 기반 시설 경쟁",
+      "topic": "AI·연구 인프라",
+      "source_name": "NVIDIA",
+      "source_url": "https://blogs.nvidia.com/blog/meta-ai-supercomputer-dgx/",
+      "source_title": "Meta Works with NVIDIA to Build Massive AI Research Supercomputer",
+      "source_published_at": "2022-01-24T17:05:19+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "NVIDIA가 Meta의 AI Research SuperCluster 구축을 소개했다. 당시 6,080개 A100 GPU가 가동 중이고 추가 확장이 계획됐다.",
+        "완성 후 목표인 1만 6천 GPU와 성능 전망은 미래 계획이었다. 모든 목표가 발표 당일 달성됐다는 의미는 아니다."
+      ],
+      "change": "대형 모델 경쟁에 GPU뿐 아니라 네트워크·스토리지·운영 안정성의 투자가 중요해졌다.",
+      "outlook": "분석: 공동 연구 자원의 규모 차이가 연구 주제와 속도에 영향을 줄 수 있다. 시설 확충 효과는 이용률과 실제 연구 성과로 평가해야 한다.",
+      "risk": "대규모 컴퓨팅의 전력 부담과 자원 집중 문제가 있다. 데이터 접근 통제와 연구 결과의 공익적 환원도 함께 검토할 필요가 있다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Meta-RSC-Infrastructure/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-01-24-HistoryAI-Meta-RSC-Infrastructure.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "OpenAI-Embeddings-Launch",
+      "filename": "2022-01-25-HistoryAI-OpenAI-Embeddings-Launch.md",
+      "date": "2022-01-25",
+      "title": "텍스트·코드를 벡터로: 의미 검색을 API로 제공하다",
+      "topic": "임베딩·검색 데이터",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/introducing-text-and-code-embeddings/",
+      "source_title": "Introducing text and code embeddings | OpenAI",
+      "source_published_at": "2022-01-25",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 텍스트 유사도·텍스트 검색·코드 검색용 임베딩 모델과 API를 소개했다. 문서나 코드를 숫자 벡터로 바꾸어 검색·군집·분류 등의 입력으로 활용하는 기능이다.",
+        "키워드의 동일 여부 외에 학습된 표현 사이 유사도로 자료를 찾는 접근을 제공했다. 벡터가 가깝다는 사실이 두 문장의 사실관계나 업무상 적합성을 보증하는 것은 아니다."
+      ],
+      "change": "조직 내부 문서와 코드의 탐색을 자체 모델 구축 없이 시험할 수 있는 길이 넓어졌다. 활용 비용에는 API 호출 외에 색인 저장·갱신과 검색 품질 평가가 포함될 수 있다.",
+      "outlook": "실제 업무에서는 관련 문서를 놓치는 비율과 잘못 가져오는 비율을 함께 측정해야 한다. 긴 문서 분할과 데이터 변경을 처리하는 방식이 품질을 좌우할 수 있다.",
+      "risk": "문서를 외부 서비스로 전송할 때 자료 이용 범위와 민감성을 검토해야 한다. 의미 검색은 접근 권한을 대신하지 않으므로 사용자별 문서 권한을 유지하는 설계가 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/OpenAI-Embeddings-Launch/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-01-25-HistoryAI-OpenAI-Embeddings-Launch.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "InstructGPT",
+      "filename": "2022-01-27-HistoryAI-InstructGPT.md",
+      "date": "2022-01-27",
+      "title": "InstructGPT, 다음 문장 예측에서 사용자 지시 수행으로",
+      "topic": "지시 학습·사람 피드백",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/instruction-following/",
+      "source_title": "Aligning language models to follow instructions | OpenAI",
+      "source_published_at": "2022-01-27",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 사람의 시범 답변과 여러 출력의 선호 순위를 활용해 조정한 InstructGPT를 소개했다. 사용자가 원하는 작업을 따르도록 개선한 모델을 당시 API의 기본 모델로 배포한다고 밝혔다.",
+        "발표는 지시 준수·사실성·유해 응답 측면의 평가를 제시했다. 특정 평가자의 선호와 완전한 사실 검증은 다르며 오답과 편향이 모두 사라졌다는 발표는 아니다."
+      ],
+      "change": "언어모델의 가치가 큰 학습 규모뿐 아니라 사람의 의도를 반영하는 후속 학습에 달렸다는 점이 부각됐다. 데이터 주석과 평가 기준 관리도 경쟁 요소가 됐다.",
+      "outlook": "실제 고객의 업무 지시에서 평가를 반복하고 지시가 모호할 때의 행동도 검증해야 한다. 선호 점수 개선이 장기적인 업무 성과로 이어지는지는 별도 측정 대상이다.",
+      "risk": "피드백을 제공한 사람의 언어·문화·가치관이 모델 행동에 영향을 줄 수 있다. 누가 기준을 정했는지와 남은 실패 유형을 설명할 책임이 중요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/InstructGPT/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-01-27-HistoryAI-InstructGPT.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "DP-ImageNet-Scale",
+      "filename": "2022-02-01-HistoryAI-DP-ImageNet-Scale.md",
+      "date": "2022-02-01",
+      "title": "대규모 이미지 학습에서도 개인정보 보호와 정확도를 함께 묻다",
+      "topic": "개인정보·학습 인프라",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/applying-differential-privacy-to-large-scale-image-classification/",
+      "source_title": "Applying Differential Privacy to Large Scale Image Classification",
+      "source_published_at": "2022-02-01",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 ImageNet 규모의 이미지 분류에서 차등 개인정보보호를 적용하는 연구 결과와 관련 코드를 소개했다. 모델·학습 설정·전이학습 등을 조합해 정확도와 계산 비용 문제를 다뤘다.",
+        "차등 개인정보보호는 개인 자료의 포함 여부가 학습 결과에 미치는 영향을 수학적으로 제한하는 틀이다. 원자료를 지웠다는 설명이나 단순 이름 제거와는 보장 대상이 다르다."
+      ],
+      "change": "개인정보 보호가 소규모 실험의 부가 기능을 넘어 대규모 모델 학습의 성능·운영 비용과 함께 검토되는 과제가 됐다. 보호 수준과 효용의 균형을 설명할 근거가 필요해졌다.",
+      "outlook": "민감한 자료를 다루는 조직은 정확도뿐 아니라 보호 단위와 매개변수, 사전학습 자료의 취급을 함께 비교해야 한다. 연구 코드가 재현 비용을 줄일 수 있지만 도입 검증은 남는다.",
+      "risk": "수학적 보장이 있다고 모든 정보 처리 위험이 사라지는 것은 아니다. 어떤 자료와 학습 단계에 보장이 적용되는지 불명확하면 익명화가 완성됐다는 잘못된 인상을 줄 수 있다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/DP-ImageNet-Scale/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-02-01-HistoryAI-DP-ImageNet-Scale.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "LM-Red-Teaming",
+      "filename": "2022-02-07-HistoryAI-LM-Red-Teaming.md",
+      "date": "2022-02-07",
+      "title": "언어모델의 약점을 언어모델로 찾는 자동 레드팀 연구",
+      "topic": "안전 평가",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/red-teaming-language-models-with-language-models/",
+      "source_title": "Red Teaming Language Models with Language Models",
+      "source_published_at": "2022-02-07T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "딥마인드는 언어모델이 만든 시험 입력과 유해성 판별을 이용해 다른 모델의 문제 행동을 찾는 연구를 소개했다. 사람이 수작업으로 찾기 어려운 다양한 실패 사례를 보완하는 목적이다.",
+        "원문은 유해 표현·정보 누출·편향·긴 대화의 문제를 검사 대상으로 설명한다. 자동 시험은 여러 안전 기법 중 하나이며 실패를 전부 찾았다는 보장은 아니다."
+      ],
+      "change": "AI 개발비에는 성능 학습뿐 아니라 배포 전후의 위험 탐색 비용이 포함된다. 시험 입력 생성의 자동화는 검토 범위를 넓힐 수 있지만 검수·수정 비용을 없애지는 않는다.",
+      "outlook": "평가용 모델과 유해성 판별기가 같은 유형을 놓치는지 확인해야 한다. 발견한 사례가 실제 개선과 회귀 검사로 이어지는 운영 구조가 중요해질 것이다.",
+      "risk": "자동 기준이 특정 집단의 피해를 놓칠 수 있다. 다양한 사람의 경험과 수동 평가를 함께 사용하고 위험을 발견하는 기술을 악용 차단과 연결해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/LM-Red-Teaming/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-02-07-HistoryAI-LM-Red-Teaming.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "DLT-CDC",
+      "filename": "2022-02-10-HistoryAI-DLT-CDC.md",
+      "date": "2022-02-10",
+      "title": "변경된 데이터만 반영하는 CDC, 레이크하우스 파이프라인으로 들어가다",
+      "topic": "변경 데이터·ETL",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/02/10/databricks-delta-live-tables-announces-support-for-simplified-change-data-capture.html",
+      "source_title": "Databricks Delta Live Tables Announces Support for Simplified Change Data Capture",
+      "source_published_at": "2022-02-10T08:52:05+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks는 Delta Live Tables에서 변경 데이터 캡처 처리를 단순화하는 기능을 소개했다. SQL·Python의 선언적 방식으로 삽입·수정·삭제 사건을 Delta Lake에 반영하도록 지원한다.",
+        "매번 원본 전체를 다시 처리하는 부담을 줄이고 계속 도착하는 운영 데이터의 변화를 적용하는 목적이다. 실제 지연 시간과 비용은 원본 시스템·변경량·파이프라인 구성에 따라 달라진다."
+      ],
+      "change": "분석 플랫폼의 경쟁이 보관된 자료를 조회하는 기능에서 운영 시스템의 변화를 안정적으로 따라가는 기능으로 넓어졌다. 최신 데이터가 필요한 분석·AI의 준비 비용에 영향을 줄 수 있다.",
+      "outlook": "삭제와 순서가 뒤바뀐 사건, 재처리를 어떻게 처리하는지 실제 자료로 검증해야 한다. 단순한 코드 길이보다 복구 가능성과 지연·비용 측정이 도입 판단에 중요하다.",
+      "risk": "복제 파이프라인이 늘면 원본에서 삭제하거나 제한한 정보가 어디에 남는지 추적해야 한다. 데이터 최신성과 개인정보의 적절한 이용을 같은 운영 설계 안에서 다뤄야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/DLT-CDC/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-02-10-HistoryAI-DLT-CDC.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Soft-Prompt-Economics",
+      "filename": "2022-02-10-HistoryAI-Soft-Prompt-Economics.md",
+      "date": "2022-02-10",
+      "title": "모델 전체를 다시 학습하지 않는 소프트 프롬프트의 경제성",
+      "topic": "효율적 학습",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/guiding-frozen-language-models-with-learned-soft-prompts/",
+      "source_title": "Guiding Frozen Language Models with Learned Soft Prompts",
+      "source_published_at": "2022-02-10",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 고정한 언어모델 앞에 학습 가능한 벡터를 붙이는 프롬프트 튜닝을 설명하고 코드·체크포인트를 제공했다. 본문이 다루는 논문은 EMNLP 2021 연구이며 이 글의 날짜는 2022년 설명 게시일이다.",
+        "작업마다 거대한 모델 사본 전체를 저장하는 대신 작은 작업별 프롬프트를 학습하는 접근이다. 사람이 쓰는 자연어 지시문을 손보는 작업과 같은 의미는 아니다."
+      ],
+      "change": "모델 활용 비용을 줄이는 방법이 더 큰 장비 구매 외에 작업별 변경 부분을 작게 유지하는 방향으로 확장됐다. 여러 업무를 서비스하는 조직의 저장·배포 구조에도 영향을 줄 수 있다.",
+      "outlook": "실제 절감 효과는 공유 모델의 추론 비용과 작업별 품질에 달려 있다. 모델 크기·학습 자료가 바뀌어도 같은 효율을 얻는지 비교해야 한다.",
+      "risk": "학습된 벡터의 의미를 사람이 직접 읽기 어렵다는 한계가 있다. 작은 추가 학습이라고 해서 편향이나 민감 자료의 영향 검토까지 생략할 수는 없다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Soft-Prompt-Economics/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-02-10-HistoryAI-Soft-Prompt-Economics.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Fusion-Control-2022",
+      "filename": "2022-02-16-HistoryAI-Fusion-Control-2022.md",
+      "date": "2022-02-16",
+      "title": "핵융합 플라스마 제어 실험에 들어간 강화학습",
+      "topic": "과학·에너지",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/accelerating-fusion-science-through-learned-plasma-control/",
+      "source_title": "Accelerating fusion science through learned plasma control",
+      "source_published_at": "2022-02-16T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "딥마인드와 EPFL의 Swiss Plasma Center는 TCV 토카막의 자기 코일 제어에 심층 강화학습을 적용한 연구를 발표했다. 시뮬레이션에서 학습한 제어기로 플라스마를 유지하고 형태를 바꾸는 실험이다.",
+        "2022년 발표의 핵심은 실험 장치 제어이며 상용 발전 달성이나 전력 판매가 아니다. 비싼 장비의 제한된 실험 시간을 시뮬레이션과 학습으로 보완하는 접근을 보여 줬다."
+      ],
+      "change": "AI의 경제적 가치가 디지털 문서 작업을 넘어 고가의 과학 장비에서 실험 효율을 높이는 방향으로 확장됐다. 실제 비용 절감은 장치 운전과 재현 실험의 결과를 함께 봐야 한다.",
+      "outlook": "다른 장치와 운전 조건에서도 안정적으로 제어할 수 있는지 검증해야 한다. 연구 성과가 발전소 건설·장시간 운전·경제성으로 이어지려면 별도의 단계가 남는다.",
+      "risk": "에너지 문제 해결에 대한 기대가 단기 상용화 주장으로 부풀려질 수 있다. 안전한 제어 범위와 실험의 한계를 공개하고 연구와 실제 에너지 공급을 구분해야 한다.",
+      "source_note": "원문은 2024년 TORAX 관련 수정 사실을 알린다. 이 스크랩은 2022년 2월 16일의 플라스마 제어 연구를 다룬다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Fusion-Control-2022/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-02-16-HistoryAI-Fusion-Control-2022.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "EU-DataAct-Proposal",
+      "filename": "2022-02-23-HistoryAI-EU-DataAct-Proposal.md",
+      "date": "2022-02-23",
+      "title": "EU Data Act 제안, 데이터 접근과 이용의 경제적 권한",
+      "topic": "빅데이터·데이터 정책",
+      "source_name": "European Commission",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/news/data-act-commission-proposes-measures-fair-and-innovative-data-economy",
+      "source_title": "Data Act: Commission proposes measures for a fair and innovative data economy",
+      "source_published_at": "2022-02-22",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 정책 발표",
+      "summary": [
+        "유럽연합 집행위원회가 데이터 접근·이용 조건을 다루는 Data Act를 제안했다. 데이터 기반 혁신과 경쟁 촉진을 목표로 했다.",
+        "2022년 2월은 법안 제안 단계다. 이후 최종 채택된 규정이나 적용 의무가 당시 이미 시행됐다는 뜻은 아니다."
+      ],
+      "change": "데이터를 누가 보유하는가에 더해 누가 접근하고 가치를 만들 수 있는가가 산업 정책의 핵심으로 떠올랐다.",
+      "outlook": "분석: 연결 기기와 서비스의 데이터 이용 시장이 넓어질 수 있다. 제안이 실제 권리로 이어지는 과정은 입법 협상과 집행 설계에 달려 있다.",
+      "risk": "데이터 개방은 개인정보·영업비밀 보호와 충돌할 수 있다. 공유량만 늘리기보다 권리와 책임의 경계를 정해야 한다.",
+      "event_date": "2022-02-23",
+      "source_note": "공식 요약 페이지의 표시는 2022-02-22다. 법안 제안 사건일 2022-02-23은 EU 이사회 공식 후속 기록으로 교차 확인했으며 사건일로 배치했다.",
+      "additional_sources": [
+        {
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2023/11/27/data-act-council-adopts-new-law-on-fair-access-to-and-use-of-data/",
+          "title": "EU 이사회: Background에 2022-02-23 제안일 명시",
+          "date": "2023-11-27"
+        }
+      ],
+      "permalink": "/scrap/ai-bigdata-2022-2023/EU-DataAct-Proposal/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-02-23-HistoryAI-EU-DataAct-Proposal.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "SVO-Probes",
+      "filename": "2022-02-23-HistoryAI-SVO-Probes.md",
+      "date": "2022-02-23",
+      "title": "사진 속 물체를 알아도 행동을 이해한 것은 아니다: SVO-Probes",
+      "topic": "멀티모달 평가 데이터",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/probing-image-language-transformers-for-verb-understanding/",
+      "source_title": "Probing Image-Language Transformers for Verb Understanding",
+      "source_published_at": "2022-02-23T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "딥마인드는 이미지·언어 모델의 동사 이해를 검사하는 SVO-Probes를 소개했다. 주어·동사·목적어 중 하나가 달라지는 비교로 세밀한 관계 이해를 평가한다.",
+        "원문은 4만8,000개 이미지·문장 쌍과 400개 이상 동사를 설명한다. 일반 벤치마크 점수가 높아도 언어의 단서에 기대거나 실제 이미지에 없는 물체를 말할 수 있다는 문제를 다룬다."
+      ],
+      "change": "AI의 평가 자료가 단순 전체 정확도에서 실제 실패 원인을 분리하는 방향으로 발전했다. 이미지 검색·접근성 설명 같은 서비스도 무엇을 이해하는지 검증할 기준이 필요하다.",
+      "outlook": "새 데이터와 다른 촬영 환경에서도 행동 구분 성능이 유지되는지 확인해야 한다. 서비스의 중요한 동작을 세부 평가 항목으로 나누는 작업이 도입 비용에 포함될 수 있다.",
+      "risk": "보조 설명이나 영상 판단의 오류는 이용자의 오해로 이어질 수 있다. 사람과 물체의 관계를 잘못 말하는 실패를 평균 점수 뒤에 숨기지 않는 것이 중요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/SVO-Probes/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-02-23-HistoryAI-SVO-Probes.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Federated-DP-Gboard",
+      "filename": "2022-02-28-HistoryAI-Federated-DP-Gboard.md",
+      "date": "2022-02-28",
+      "title": "연합학습에 수학적 보호를 더한 Gboard의 실서비스 사례",
+      "topic": "연합학습·데이터 보호",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/federated-learning-with-formal-differential-privacy-guarantees/",
+      "source_title": "Federated Learning with Formal Differential Privacy Guarantees",
+      "source_published_at": "2022-02-28",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 스페인어 Gboard의 다음 단어 예측 모델에 연합학습과 정형화한 차등 개인정보보호 보장을 함께 적용했다고 발표했다. 단말의 원자료를 중앙에 모으지 않는 방식과 학습 결과 보호를 결합한 사례다.",
+        "발표는 연합학습만으로 모델의 민감 정보 기억 문제가 자동 해결되지 않는다고 구분한다. 개인정보 최소 수집과 학습 결과의 수학적 보호가 서로 다른 역할을 맡는다."
+      ],
+      "change": "개인정보 보호 기술의 논의가 원자료 위치에서 모델 학습 과정과 결과까지 확장됐다. 서비스 운영에서도 정확도뿐 아니라 보호 범위를 설명하는 작업이 중요해졌다.",
+      "outlook": "비슷한 방식의 확산 여부는 다른 언어와 기기 환경에서도 효용을 유지하는지에 달려 있다. 사용자 단위 보호와 개별 예제 단위 보호의 차이도 도입 비교 항목이 될 것이다.",
+      "risk": "회사 발표의 특정 모델 보장을 모든 Gboard 기능이나 모든 자료 처리로 확대 해석하면 안 된다. 이용자 설명과 동의, 보존 정책은 기술적 보장과 별도로 확인할 문제다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Federated-DP-Gboard/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-02-28-HistoryAI-Federated-DP-Gboard.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Streamlit-Snowflake-Agreement",
+      "filename": "2022-03-02-HistoryAI-Streamlit-Snowflake-Agreement.md",
+      "date": "2022-03-02",
+      "title": "Streamlit의 Snowflake 합류 합의, 파이썬 분석을 앱으로 연결하다",
+      "topic": "빅데이터·데이터 앱",
+      "source_name": "Streamlit",
+      "source_url": "https://discuss.streamlit.io/t/streamlit-snowflake-better-together/22687",
+      "source_title": "Streamlit & Snowflake: Better Together",
+      "source_published_at": "2022-03-02T21:06:45.357Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 창업자 공지",
+      "summary": [
+        "Streamlit 공동창업자가 공식 공지에서 Snowflake에 인수되기로 합의했다고 밝혔다. 파이썬 스크립트를 대화형 앱으로 공유하는 도구의 다음 방향을 설명했다.",
+        "이 게시글은 합의 발표를 기록한다. 후속 인수 완료나 Snowflake 내부 통합 기능의 정식 출시를 같은 사건으로 보지 않는다."
+      ],
+      "change": "분석 코드 작성과 현업 사용자가 결과를 이용하는 화면 사이의 연결이 플랫폼 전략의 일부가 됐다.",
+      "outlook": "분석: 분석가가 시제품을 공유하기 쉬워질 수 있다. 운영 단계에는 인증·배포·비용 관리가 추가로 필요하다.",
+      "risk": "오픈소스 도구의 기업 합류는 지속 투자 기회와 공급사 의존을 함께 만든다. 공개 프로젝트와 유료 서비스의 조건을 구분해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Streamlit-Snowflake-Agreement/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-03-02-HistoryAI-Streamlit-Snowflake-Agreement.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Multimodal-Bottleneck",
+      "filename": "2022-03-15-HistoryAI-Multimodal-Bottleneck.md",
+      "date": "2022-03-15",
+      "title": "영상과 소리의 결합에서도 계산량을 줄이는 설계 경쟁",
+      "topic": "멀티모달·계산 효율",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/multimodal-bottleneck-transformer-mbt-a-new-model-for-modality-fusion/",
+      "source_title": "Multimodal Bottleneck Transformer (MBT): A New Model for Modality Fusion",
+      "source_published_at": "2022-03-15",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 영상과 오디오 사이의 정보 교환을 제한된 병목 표현으로 모으는 Multimodal Bottleneck Transformer를 소개했다. 관련 연구는 NeurIPS 2021에 발표됐고 이 글은 구조와 코드 공개를 설명한다.",
+        "모든 영상·소리 토큰을 무제한으로 서로 비교하기보다 필요한 정보를 압축해 공유한다. 발표는 실험한 영상 분류 과제에서 성능과 계산량의 개선을 제시했다."
+      ],
+      "change": "멀티모달 AI의 발전이 입력 종류를 늘리는 것만으로 결정되지 않고 결합 구조의 효율에도 달렸다는 사례다. 기업의 영상 분석에서는 처리량과 전력 비용이 함께 중요해질 수 있다.",
+      "outlook": "실제 도입에서는 잡음·누락된 소리·다른 촬영 환경에서 품질을 확인해야 한다. 논문 계산량 감소가 동일 비율의 클라우드 청구액 절감으로 이어지는지는 별도 측정 대상이다.",
+      "risk": "영상과 소리를 함께 분석하면 관찰되는 개인 행동 정보도 늘 수 있다. 성능 개선과 감시 범위 확대를 같은 성과로 취급하지 않고 목적·접근 권한을 검토해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Multimodal-Bottleneck/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-03-15-HistoryAI-Multimodal-Bottleneck.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "GopherCite-Evidence",
+      "filename": "2022-03-16-HistoryAI-GopherCite-Evidence.md",
+      "date": "2022-03-16",
+      "title": "GopherCite, 답변에 웹 근거를 붙이고 모르면 답을 보류하다",
+      "topic": "검색·근거 기반 답변",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/gophercite-teaching-language-models-to-support-answers-with-verified-quotes/",
+      "source_title": "GopherCite: Teaching language models to support answers with verified quotes",
+      "source_published_at": "2022-03-16T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "딥마인드는 웹 검색에서 찾은 인용문으로 사실 주장을 뒷받침하도록 학습한 GopherCite를 소개했다. 근거가 충분하지 않을 때 답을 보류하는 행동도 학습 대상으로 삼았다.",
+        "사람의 선호 평가에는 답변이 자료로 얼마나 뒷받침되는지 포함했다. 인용이 붙었다고 그 웹 문서 자체의 사실성이 자동 보증되는 것은 아니라는 한계가 남는다."
+      ],
+      "change": "정보 서비스의 경쟁 요소에 답을 빠르게 생성하는 기능 외에 이용자가 확인할 수 있는 근거가 포함됐다. 기업 지식 검색에서는 출처 접근과 검토 흐름이 중요해질 수 있다.",
+      "outlook": "문장과 인용의 실제 일치, 문서 최신성, 근거 부족 때의 보류 품질을 함께 측정해야 한다. 링크 수만 늘리는 방식으로 신뢰 문제를 해결하기는 어렵다.",
+      "risk": "부정확한 웹 문서를 인용하면 오히려 오답에 권위가 생길 수 있다. 원문을 확인할 수 있는 경로와 개인정보·저작권 취급도 함께 검토해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/GopherCite-Evidence/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-03-16-HistoryAI-GopherCite-Evidence.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "H100-Transformer-Engine",
+      "filename": "2022-03-22-HistoryAI-H100-Transformer-Engine.md",
+      "date": "2022-03-22",
+      "title": "H100 Transformer Engine, 낮은 정밀도 계산으로 학습을 가속하다",
+      "topic": "AI·반도체",
+      "source_name": "NVIDIA",
+      "source_url": "https://blogs.nvidia.com/blog/h100-transformer-engine/",
+      "source_title": "H100 Transformer Engine Supercharges AI Training, Delivering Up to 6x Higher Performance Without Losing Accuracy",
+      "source_published_at": "2022-03-22T15:31:37+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "NVIDIA가 Hopper H100의 Transformer Engine을 설명했다. 계층별 특성에 따라 FP8·FP16 정밀도를 선택하는 방식이다.",
+        "속도 향상은 회사가 제시한 모델·시스템 조건의 결과다. 이후 본문에 추가된 Ada 관련 설명을 2022년 발표로 옮기지 않았다."
+      ],
+      "change": "모델 확대에 필요한 계산을 더 정밀하게 관리하는 하드웨어·소프트웨어 공동 최적화가 부각됐다.",
+      "outlook": "분석: 저정밀 학습의 가치는 처리량과 모델 품질을 함께 유지할 때 커진다. 실제 모델의 수렴과 비용을 검증해야 한다.",
+      "risk": "성능 배수만으로 전력이나 서비스 비용을 추정하면 오류가 생긴다. 특정 가속기와 도구에 대한 의존도도 남는다.",
+      "source_note": "원문은 2023-08-08 Ada 설명 추가를 명시한다. 본문은 2022년 Hopper·H100 기술 발표 범위로 정리했다.",
+      "source_updated_at": "2023-08-08",
+      "permalink": "/scrap/ai-bigdata-2022-2023/H100-Transformer-Engine/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-03-22-HistoryAI-H100-Transformer-Engine.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Translator-Triton-MoE",
+      "filename": "2022-03-22-HistoryAI-Translator-Triton-MoE.md",
+      "date": "2022-03-22",
+      "title": "Microsoft Translator 사례, 큰 모델의 병목을 추론 운영에서 풀다",
+      "topic": "AI·추론 서비스",
+      "source_name": "NVIDIA",
+      "source_url": "https://blogs.nvidia.com/blog/microsoft-translator-triton-inference/",
+      "source_title": "Getting People Talking: Microsoft Improves AI Quality and Efficiency of Translator Using NVIDIA Triton",
+      "source_published_at": "2022-03-22T15:20:42+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "NVIDIA가 Microsoft Translator의 전문가 혼합 모델과 Triton 기반 추론 최적화 사례를 소개했다.",
+        "여러 요청을 묶는 동적 배칭과 연산 라이브러리를 활용했다. 비교 속도는 이 사례의 비최적화 실행 환경을 기준으로 한다."
+      ],
+      "change": "정확한 모델을 만드는 문제에서 지연·처리량 제약 안에 실제 서비스하는 문제로 관심이 이어졌다.",
+      "outlook": "분석: 모델 변경과 요청 배치 설계를 함께 다뤄야 도입 효과가 난다. 사용자 체감 대기 시간도 평균 처리량과 별도로 측정해야 한다.",
+      "risk": "번역 서비스의 오류는 언어별로 다르게 나타난다. 인프라 효율이 높아져도 민감한 통신의 보안과 품질 검토는 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Translator-Triton-MoE/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-03-22-HistoryAI-Translator-Triton-MoE.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "PaLM-540B",
+      "filename": "2022-04-04-HistoryAI-PaLM-540B.md",
+      "date": "2022-04-04",
+      "title": "PaLM 540B, 대형 언어모델 경쟁이 학습 인프라로 이어지다",
+      "topic": "대형 모델·인프라",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/pathways-language-model-palm-scaling-to-540-billion-parameters-for-breakthrough-performance/",
+      "source_title": "Pathways Language Model (PaLM): Scaling to 540 Billion Parameters for Breakthrough Performance",
+      "source_published_at": "2022-04-04",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 5,400억 매개변수 PaLM을 소개했다. Pathways를 이용해 여러 TPU v4 Pod에 걸친 학습을 수행하고 언어·추론·코드 과제의 평가 결과를 제시했다.",
+        "발표는 소수 예시로 작업을 수행하는 능력과 분산 학습 효율을 함께 강조했다. 벤치마크 성과는 연구 결과이며 모든 업무에서 정확하거나 즉시 이용 가능한 제품이라는 뜻은 아니다."
+      ],
+      "change": "모델 크기 경쟁의 뒤에는 여러 가속기를 함께 운영하는 통신·학습 시스템 역량이 있다는 점이 드러났다. AI 투자 판단에서도 모델 숫자와 데이터센터 실행 비용을 함께 볼 필요가 생겼다.",
+      "outlook": "대규모 학습의 성과가 실제 고객 과제에 얼마나 이전되는지, 추론 비용을 줄이면서 품질을 유지할 수 있는지가 관전 포인트다. 소수 예시 성능만으로 운영 검수를 대체하기는 어렵다.",
+      "risk": "거대한 계산 자원에 접근 가능한 조직으로 연구 역량이 집중될 수 있다. 학습 자료의 대표성과 편향, 에너지 사용, 결과 검증 가능성도 규모 확대와 함께 평가해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/PaLM-540B/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-04-04-HistoryAI-PaLM-540B.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "DLT-General-Availability",
+      "filename": "2022-04-05-HistoryAI-DLT-General-Availability.md",
+      "date": "2022-04-05",
+      "title": "Delta Live Tables 정식 제공, 데이터 엔지니어링 운영 부담을 겨냥하다",
+      "topic": "데이터 파이프라인 운영",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/04/05/announcing-generally-availability-of-databricks-delta-live-tables-dlt.html",
+      "source_title": "Announcing General Availability of Databricks’ Delta Live Tables (DLT)",
+      "source_published_at": "2022-04-05T06:00:27+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks는 Delta Live Tables의 AWS·Azure 정식 제공을 발표하고 Google Cloud에서도 공개 이용 가능하다고 설명했다. 배치·스트리밍 데이터 처리와 품질 점검·운영 자동화를 함께 다루는 서비스다.",
+        "발표는 SQL 변환문을 실제 운영 파이프라인으로 유지하는 데 필요한 인프라·관측·오류 처리 부담을 배경으로 제시했다. 모든 클라우드의 제공 단계를 같은 정식 출시로 묶어 읽으면 안 된다."
+      ],
+      "change": "데이터 플랫폼 구매 가치가 처리 엔진 성능 외에 개발·운영 인력의 반복 작업을 얼마나 줄이는지로 확장됐다. 관리형 서비스 비용과 기존 운영 공수를 함께 비교할 필요가 생겼다.",
+      "outlook": "도입 효과는 실패한 실행의 복구와 품질 규칙 운영까지 측정해야 한다. 기업별 기존 파이프라인 복잡도가 달라 발표 사례의 절감률을 그대로 적용하기는 어렵다.",
+      "risk": "운영을 서비스에 맡겨도 잘못된 데이터의 책임이 자동으로 이전되지는 않는다. 품질 기준을 정하는 사람과 오류를 검토하는 절차가 계속 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/DLT-General-Availability/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-04-05-HistoryAI-DLT-General-Availability.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Chinchilla-Compute-Budget",
+      "filename": "2022-04-12-HistoryAI-Chinchilla-Compute-Budget.md",
+      "date": "2022-04-12",
+      "title": "Chinchilla, 같은 계산 예산에서 모델 크기와 학습량을 다시 나누다",
+      "topic": "학습 경제성",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/an-empirical-analysis-of-compute-optimal-large-language-model-training/",
+      "source_title": "An empirical analysis of compute-optimal large language model training",
+      "source_published_at": "2022-04-12T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "딥마인드는 고정된 계산 예산에서 매개변수 수와 학습 토큰 수의 균형을 분석한 Chinchilla 연구를 설명했다. 더 큰 모델만 만드는 대신 더 작은 모델에 더 많은 학습 자료를 사용하는 대안을 비교했다.",
+        "원문은 700억 매개변수 Chinchilla와 2,800억 매개변수 Gopher의 같은 학습 계산량 실험을 제시한다. 게시일은 연구 설명 글의 2022년 4월 12일이며 모든 데이터·장비에 동일한 최적 비율을 정한 규칙은 아니다."
+      ],
+      "change": "AI 투자의 규모 지표가 매개변수 수 하나로 충분하지 않다는 근거가 됐다. 학습 자료의 확보와 계산 자원 배분을 함께 최적화하는 역량이 비용 대비 성능에 영향을 준다.",
+      "outlook": "최적 학습 설정과 실제 서비스의 추론 비용은 별도로 비교해야 한다. 자료 품질·반복 사용·평가 과제가 달라져도 연구의 비용 관계가 유지되는지 확인해야 한다.",
+      "risk": "더 많은 학습 자료를 찾는 경쟁은 저작권·개인정보·언어 대표성 문제를 확대할 수 있다. 효율이라는 이유만으로 자료 수집의 정당성을 생략해서는 안 된다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Chinchilla-Compute-Budget/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-04-12-HistoryAI-Chinchilla-Compute-Budget.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "DALL-E2-Research",
+      "filename": "2022-04-13-HistoryAI-DALL-E2-Research.md",
+      "date": "2022-04-13",
+      "title": "DALL·E 2 연구, 문장과 이미지 표현을 두 단계로 연결하다",
+      "topic": "이미지 생성 연구",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/hierarchical-text-conditional-image-generation-with-clip-latents/",
+      "source_title": "Hierarchical text-conditional image generation with CLIP latents | OpenAI",
+      "source_published_at": "2022-04-13",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 문장에서 CLIP 이미지 표현을 만들고 그 표현으로 이미지를 생성하는 두 단계 구조의 연구를 공개했다. 이 스크랩의 날짜는 해당 논문 소개의 2022년 4월 13일이다.",
+        "이미지 표현을 이용한 변형과 언어 기반 조작, 확산 방식의 생성 실험을 설명한다. 연구 구조 공개와 이용자 대상 서비스·요금·접근 범위 발표는 별도 사건이다."
+      ],
+      "change": "이미지 제작의 초기 아이디어 탐색을 자연어로 시도할 가능성이 커졌다. 다만 논문 품질과 실제 편집자가 요구하는 반복 수정·일관성·시간 비용은 같은 지표가 아니다.",
+      "outlook": "생성 결과가 요구한 내용과 스타일을 얼마나 유지하는지 실제 제작 과제로 평가할 필요가 있다. 이미지의 다양성과 정확한 제어 사이의 균형도 관전 포인트다.",
+      "risk": "학습 이미지와 결과물의 권리, 특정 작가·인물의 모방 문제를 함께 논의해야 한다. 시각적으로 자연스럽다는 사실이 자료 이용의 정당성을 입증하지는 않는다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/DALL-E2-Research/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-04-13-HistoryAI-DALL-E2-Research.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Unity-Catalog-Preview",
+      "filename": "2022-04-20-HistoryAI-Unity-Catalog-Preview.md",
+      "date": "2022-04-20",
+      "title": "Unity Catalog 제한 공개, 데이터·AI 자산의 권한 관리가 통합되다",
+      "topic": "데이터 거버넌스",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/04/20/announcing-gated-public-preview-of-unity-catalog-on-aws-and-azure.html",
+      "source_title": "Announcing Gated Public Preview of Unity Catalog on AWS and Azure",
+      "source_published_at": "2022-04-20T07:10:53+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks는 AWS·Azure에서 Unity Catalog의 제한된 공개 미리보기를 발표했다. 테이블뿐 아니라 여러 데이터·AI 자산을 공통 권한·발견·감사 체계로 관리하려는 방향을 설명했다.",
+        "2022년 4월 20일의 사건은 미리보기다. 현재 원문 상단에 정식 제공 후속 안내가 있더라도 이를 당시 정식 출시로 바꾸어 기록하지 않는다."
+      ],
+      "change": "멀티클라우드와 여러 분석 도구를 쓰는 조직에서 분산된 권한·메타데이터 관리 비용을 줄이는 경쟁이 부각됐다. 관리 화면의 통합과 실제 정책 집행 범위를 함께 비교해야 한다.",
+      "outlook": "파일·테이블·모델 등 자산별 지원 범위와 기존 접근 체계의 이관 비용이 중요하다. 권한 변경이 실제 조회·공유 경로에 일관되게 반영되는지 검증할 필요가 있다.",
+      "risk": "중앙 관리가 쉬워지면 잘못 설정한 광범위 권한의 영향도 커질 수 있다. 세밀한 역할 분리와 감사 기록, 데이터 소유자의 책임을 명확히 해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Unity-Catalog-Preview/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-04-20-HistoryAI-Unity-Catalog-Preview.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Databricks-SQL-GCP",
+      "filename": "2022-04-25-HistoryAI-Databricks-SQL-GCP.md",
+      "date": "2022-04-25",
+      "title": "Google Cloud로 확장한 Databricks SQL의 공개 미리보기",
+      "topic": "멀티클라우드·분석",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/04/25/introducing-databricks-sql-on-google-cloud-now-in-public-preview.html",
+      "source_title": "Introducing Databricks SQL on Google Cloud – Now in Public Preview",
+      "source_published_at": "2022-04-25T14:00:40+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks는 Google Cloud에서 SQL 분석 서비스의 공개 미리보기를 발표했다. 표준 SQL, BI 도구 연결, 편집·시각화 기능을 레이크하우스에서 사용하는 방향이다.",
+        "발표는 저장과 계산의 분리 및 사용자 관리 연동 등을 설명했다. 공개 미리보기와 정식 제공은 운영 지원·제약을 확인하는 기준이 다르므로 구분해야 한다."
+      ],
+      "change": "분석 도구 선택지가 다른 클라우드로 넓어지며 기존 데이터 위치와 업무 도구를 함께 고려한 경쟁이 강화됐다. 단순 쿼리 속도보다 이관·연결·관리의 총비용이 중요할 수 있다.",
+      "outlook": "실제 쿼리와 BI 동시 요청에서 지연·비용을 비교해야 한다. 다른 클라우드와 같은 기능이 언제 어디까지 제공되는지 확인하는 것도 도입 판단의 일부다.",
+      "risk": "멀티클라우드가 자동으로 종속성을 없애 주지는 않는다. 권한 정책과 자료 이동, 서비스 장애 대응 책임이 여러 제공자 사이에서 모호해지지 않도록 해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Databricks-SQL-GCP/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-04-25-HistoryAI-Databricks-SQL-GCP.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Flamingo-Few-Shot",
+      "filename": "2022-04-28-HistoryAI-Flamingo-Few-Shot.md",
+      "date": "2022-04-28",
+      "title": "Flamingo, 몇 개의 시각 예시로 새로운 질문에 답하다",
+      "topic": "멀티모달·작업 전환",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/tackling-multiple-tasks-with-a-single-visual-language-model/",
+      "source_title": "Tackling multiple tasks with a single visual language model",
+      "source_published_at": "2022-04-28T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "딥마인드는 이미지·영상·텍스트를 섞어 입력받는 Flamingo를 소개했다. 미리 학습한 시각 표현과 언어모델을 연결하고 과제별 소수 예시로 여러 시각·언어 작업을 수행하도록 연구했다.",
+        "발표는 정해진 16개 과제의 few-shot 평가를 제시했다. 새로운 작업마다 대규모 별도 주석과 모델 튜닝을 해야 하는 부담을 줄이려는 접근이다."
+      ],
+      "change": "시각 AI의 경제성에서 개별 과제별 모델 구축 비용을 공유 모델과 예시 기반 전환으로 줄일 가능성이 제기됐다. 단일 모델의 유연성과 실제 과제 품질을 함께 평가할 필요가 있다.",
+      "outlook": "실제 업무의 이미지와 질문이 평가 자료에서 얼마나 다른지가 중요하다. 적은 예시만으로도 원하는 행동을 안정적으로 끌어내는지, 추론 비용은 감당 가능한지 확인해야 한다.",
+      "risk": "이미지 설명의 편향과 그럴듯한 오답은 여전히 남는다. 접근성·분류 업무에 적용할 때 오류를 수정할 수 있는 절차와 이용자의 이해를 돕는 표시가 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Flamingo-Few-Shot/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-04-28-HistoryAI-Flamingo-Few-Shot.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Feature-Store-GA",
+      "filename": "2022-04-29-HistoryAI-Feature-Store-GA.md",
+      "date": "2022-04-29",
+      "title": "Feature Store 정식 제공, 학습용 변수를 팀의 공통 자산으로 만들다",
+      "topic": "MLOps·데이터 재사용",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/04/29/announcing-general-availability-of-databricks-feature-store.html",
+      "source_title": "Announcing General Availability of Databricks Feature Store",
+      "source_published_at": "2022-04-29T08:00:24+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks는 Feature Store의 정식 제공을 발표했다. 머신러닝 입력 특성을 정의·발견·재사용하고 학습·배치 추론·온라인 저장소 연결에 활용하는 기능을 설명했다.",
+        "발표는 팀마다 비슷한 전처리를 다시 만들거나 학습과 실제 추론에서 계산 방식이 달라지는 문제를 배경으로 제시했다. 공통 저장소는 이러한 불일치를 줄이도록 지원한다."
+      ],
+      "change": "모델 개발의 반복 비용을 줄이는 경쟁이 알고리즘 외에 특성 데이터의 공유·버전 관리로 넓어졌다. 재사용이 늘수록 한 특성 변경의 영향 범위를 추적하는 능력도 중요해진다.",
+      "outlook": "실제 효과는 시간 기준의 올바른 학습 자료 생성과 온라인 최신성에 달려 있다. 공통 특성을 쓰는 모델들이 같은 정의를 유지하는지 운영 과정에서 확인해야 한다.",
+      "risk": "재사용 가능한 변수라고 해서 모든 예측 목적에 사용해도 되는 것은 아니다. 민감 특성의 간접 표현과 목적 외 이용, 오래된 변수의 편향을 검토할 책임이 남는다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Feature-Store-GA/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-04-29-HistoryAI-Feature-Store-GA.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "OPT175B-Research",
+      "filename": "2022-05-03-HistoryAI-OPT175B-Research.md",
+      "date": "2022-05-03",
+      "title": "OPT-175B 공개, 대형 언어 모델 연구의 재현성을 넓히다",
+      "topic": "AI·연구 공개",
+      "source_name": "Meta AI",
+      "source_url": "https://ai.meta.com/blog/democratizing-access-to-large-scale-language-models-with-opt-175b/",
+      "source_title": "Democratizing access to large-scale language models with OPT-175B",
+      "source_published_at": "2022-05-03",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Meta가 1,750억 매개변수 OPT-175B와 작은 비교 모델, 학습 코드·개발 기록을 공개하는 연구 계획을 발표했다.",
+        "대형 모델 접근은 연구 목적 비상업 라이선스와 신청 조건을 따랐다. 누구나 무제한 상업 활용할 수 있다는 뜻은 아니다."
+      ],
+      "change": "유료 API 결과만 관찰하던 연구자에게 모델 내부와 학습 과정의 검증 경로가 늘었다.",
+      "outlook": "분석: 공개 기록은 실패 비용과 편향 연구를 줄이는 데 도움이 될 수 있다. 실제 접근성은 실행 자원과 승인 절차에도 달려 있다.",
+      "risk": "공개 데이터로 학습했다는 사실은 개인정보나 차별 문제가 없다는 보장이 아니다. 모델 사용 조건과 데이터 평가가 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/OPT175B-Research/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-05-03-HistoryAI-OPT175B-Research.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "AWS-Marketplace-PayAsYouGo",
+      "filename": "2022-05-10-HistoryAI-AWS-Marketplace-PayAsYouGo.md",
+      "date": "2022-05-10",
+      "title": "AWS 마켓플레이스 종량제, 레이크하우스 도입 경로를 줄이다",
+      "topic": "빅데이터·구매 방식",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/05/10/building-a-lakehouse-faster-on-aws-with-databricks-announcing-our-new-pay-as-you-go-offering.html",
+      "source_title": "Building a Lakehouse Faster on AWS With Databricks: Announcing Our New Pay-as-You-Go Offering",
+      "source_published_at": "2022-05-10T06:00:35+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks가 AWS 마켓플레이스를 통한 종량제 도입 방식을 발표했다. 기존 AWS 계정·역할과 통합 청구를 활용하는 경로다.",
+        "당시 발표는 AWS 지출 약정과 연결되는 구매 편의도 설명했다. 2022년 조건에 대한 기록이며 현재 요금표를 뜻하지 않는다."
+      ],
+      "change": "데이터 플랫폼 경쟁이 처리 기능에서 계약·조달 절차와 도입 시간으로 넓어졌다.",
+      "outlook": "분석: 작은 팀의 시험 도입은 쉬워질 수 있다. 실제 비용 비교에는 컴퓨팅·저장·전송료를 함께 넣어야 한다.",
+      "risk": "사용량 과금은 유휴 자원을 줄일 여지가 있지만 예산 상한을 보장하지 않는다. 접근 권한과 비용 경보가 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/AWS-Marketplace-PayAsYouGo/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-05-10-HistoryAI-AWS-Marketplace-PayAsYouGo.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Databricks-Workflows",
+      "filename": "2022-05-10-HistoryAI-Databricks-Workflows.md",
+      "date": "2022-05-10",
+      "title": "분석·학습 작업을 함께 묶는 Databricks Workflows",
+      "topic": "워크플로·운영 자동화",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/05/10/introducing-databricks-workflows.html",
+      "source_title": "Introducing Databricks Workflows",
+      "source_published_at": "2022-05-10T08:00:43+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks는 데이터 수집·SQL·노트북·모델 학습 등의 작업을 연결하는 관리형 Workflows를 소개했다. 처리 플랫폼과 작업 순서 관리·관측을 가깝게 결합하는 방향이다.",
+        "발표는 외부 오케스트레이션 도구를 별도로 운영할 때 생기는 인프라와 관측의 복잡성을 문제로 제시했다. 관리형이라는 설명이 모든 작업의 신뢰성을 자동 보증하는 것은 아니다."
+      ],
+      "change": "기업 데이터 업무의 비용이 계산 작업 하나보다 여러 작업의 의존관계·실패·재실행 관리에서 커질 수 있다는 점을 겨냥했다. 플랫폼 내부 통합과 외부 도구 유연성 사이의 선택이 중요해졌다.",
+      "outlook": "정상 실행 시간뿐 아니라 부분 실패 뒤 복구와 중복 처리 방지를 검증해야 한다. 작업이 늘어날 때 관측과 접근 권한을 일관되게 관리할 수 있는지가 관전 포인트다.",
+      "risk": "자동화가 여러 시스템에 연쇄적으로 영향을 주면 작은 데이터 오류의 범위도 커진다. 책임자와 중단·재처리 기준을 명확히 하고 업무 검토를 생략하지 않아야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Databricks-Workflows/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-05-10-HistoryAI-Databricks-Workflows.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Chain-of-Thought",
+      "filename": "2022-05-11-HistoryAI-Chain-of-Thought.md",
+      "date": "2022-05-11",
+      "title": "정답 예시에서 풀이 과정 예시로: Chain of Thought의 변화",
+      "topic": "추론·프롬프트",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/language-models-perform-reasoning-via-chain-of-thought/",
+      "source_title": "Language Models Perform Reasoning via Chain of Thought",
+      "source_published_at": "2022-05-11",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 여러 단계의 풀이 예시를 보여 주는 Chain of Thought 프롬프팅이 일부 대형 언어모델의 추론 과제 성능을 높인다고 설명했다. 모델 가중치를 다시 학습하지 않고 입력 예시를 바꾸는 접근이다.",
+        "발표는 산술·상식 추론 등의 실험과 모델 규모에 따른 차이를 다뤘다. 모든 크기와 과제에서 같은 개선을 보장하거나 생성한 설명이 내부 계산을 그대로 드러낸다고 입증한 것은 아니다."
+      ],
+      "change": "AI 활용의 성능 개선 수단에 모델 교체 외에 예시와 평가 설계가 포함됐다. 다만 출력이 길어지면 토큰 비용과 검토 시간도 함께 늘 수 있다.",
+      "outlook": "현업에서는 최종 정답률을 독립적으로 측정해야 한다. 설명이 길고 설득력 있다는 이유만으로 회계 계산이나 업무 판단을 승인하는 흐름은 별도 검증이 필요하다.",
+      "risk": "유창한 풀이가 잘못된 결론에 대한 신뢰를 높일 수 있다. 교육에서는 답을 확인하는 도구와 출처를 함께 쓰고 사용자가 오류를 발견할 여지를 남기는 것이 중요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Chain-of-Thought/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-05-11-HistoryAI-Chain-of-Thought.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Gato-Generalist",
+      "filename": "2022-05-12-HistoryAI-Gato-Generalist.md",
+      "date": "2022-05-12",
+      "title": "Gato, 글·게임·로봇 동작을 같은 모델로 다루는 실험",
+      "topic": "다중 작업 모델",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/a-generalist-agent/",
+      "source_title": "A Generalist Agent",
+      "source_published_at": "2022-05-12T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "딥마인드는 같은 네트워크와 가중치로 대화·이미지 설명·게임·로봇 팔 동작 등을 수행하는 Gato를 소개했다. 서로 다른 관찰과 출력을 토큰 시퀀스로 표현하는 방식이다.",
+        "발표는 여러 자료와 환경을 함께 학습한 정책의 가능성을 보여 줬다. 여러 작업을 수행한다는 사실이 사람 수준의 범용 지능이나 모든 현장에 대한 적응을 입증하는 것은 아니다."
+      ],
+      "change": "분야마다 별도 모델을 만드는 접근에 더해 공통 모델과 자료 표현을 재사용하려는 방향이 제시됐다. 장기적으로 개발 중복을 줄일 가능성이 있지만 작업별 품질 비교가 먼저다.",
+      "outlook": "서로 다른 작업 학습이 도움을 주는지 방해하는지, 새 환경으로 이전할 때 추가 비용이 얼마나 드는지 확인해야 한다. 시연의 폭과 실제 운영 신뢰성을 함께 측정할 필요가 있다.",
+      "risk": "한 모델이 물리 행동까지 수행하면 실패의 영향이 커진다. 범용이라는 표현에 과도한 기대를 싣기보다 작업별 권한과 안전 범위를 명확히 해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Gato-Generalist/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-05-12-HistoryAI-Gato-Generalist.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "EU-DataGovernance-Approval",
+      "filename": "2022-05-16-HistoryAI-EU-DataGovernance-Approval.md",
+      "date": "2022-05-16",
+      "title": "EU Data Governance Act 승인, 신뢰할 수 있는 데이터 공유 구조",
+      "topic": "빅데이터·데이터 중개",
+      "source_name": "Council of the EU",
+      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2022/05/16/le-conseil-approuve-l-acte-sur-la-gouvernance-des-donnees/",
+      "source_title": "Council approves Data Governance Act - Consilium",
+      "source_published_at": "2022-05-16",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 정책 발표",
+      "summary": [
+        "EU 이사회가 Data Governance Act를 승인했다. 보호되는 공공 데이터의 재이용, 데이터 중개 서비스, 공익 목적 데이터 제공의 틀을 다뤘다.",
+        "이 날짜는 이사회 승인일이다. 서명·관보 게재·발효·적용은 구분되며 발표는 발효 후 15개월 뒤 적용을 설명했다."
+      ],
+      "change": "공유 데이터를 늘리는 정책에서 중개자의 신뢰성과 목적 제한을 갖춘 운영 구조로 관심이 넓어졌다.",
+      "outlook": "분석: 연구와 산업 협력의 기반을 만들 수 있다. 데이터 보유기관의 기술 역량과 참여자의 신뢰가 실효성을 좌우한다.",
+      "risk": "공익 목적이나 중개 플랫폼이라는 이름만으로 개인정보 보호가 보장되지는 않는다. 재이용 범위와 기밀 유지·감사가 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/EU-DataGovernance-Approval/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-05-16-HistoryAI-EU-DataGovernance-Approval.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Label-DP",
+      "filename": "2022-05-25-HistoryAI-Label-DP.md",
+      "date": "2022-05-25",
+      "title": "보호할 정보가 라벨일 때, 개인정보 학습의 조건이 달라진다",
+      "topic": "데이터 보호·학습 조건",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/deep-learning-with-label-differential-privacy/",
+      "source_title": "Deep Learning with Label Differential Privacy",
+      "source_published_at": "2022-05-25",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 입력 자체는 공개되어 있고 정답 라벨만 민감하다고 가정하는 LabelDP 연구를 설명했다. 원문의 논문은 NeurIPS 2021 연구이며 이 글은 2022년 연구 소개다.",
+        "입력과 라벨 모두를 보호하는 일반적인 학습 조건보다 보장 범위를 좁혀 효용을 개선하는 접근이다. 발표의 성능 차이는 서로 다른 보호 가정을 전제로 읽어야 한다."
+      ],
+      "change": "개인정보 기술의 성능 비교에서 무엇을 보호하는지가 핵심 계약임을 보여 준다. 기업이 정확도 숫자만 비교하면 보장 범위가 다른 기술을 동등하게 평가할 수 있다.",
+      "outlook": "활용 여부는 원래 입력이 실제로 공개 가능한 자료인지에 달려 있다. 데이터 분류와 민감성 판단을 먼저 하고 필요한 보호 단위를 정해야 한다.",
+      "risk": "라벨 보호를 전체 개인 기록의 보호로 설명하면 과장이다. 사진·거래 내용처럼 입력 자체가 민감한 상황에서는 이 가정을 그대로 적용할 수 없다는 한계를 분명히 해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Label-DP/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-05-25-HistoryAI-Label-DP.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "HPE-Champollion",
+      "filename": "2022-05-26-HistoryAI-HPE-Champollion.md",
+      "date": "2022-05-26",
+      "title": "프랑스 Champollion 가동, 산업 AI를 시험하는 공동 기반",
+      "topic": "AI·산업 연구",
+      "source_name": "NVIDIA",
+      "source_url": "https://blogs.nvidia.com/blog/hpe-ai-supercomputer-france/",
+      "source_title": "Deciphering the Future: HPE Switches on AI Supercomputer in France",
+      "source_published_at": "2022-05-26T12:00:53+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "NVIDIA가 HPE의 프랑스 그르노블 Champollion AI 슈퍼컴퓨터 가동을 소개했다. 160개 A100 GPU와 학습 소프트웨어를 결합했다.",
+        "고객이 자체 업무를 시험·벤치마크하는 연구·산업용 환경으로 설명했다. 신약이나 물류 개선은 활용 가능성의 예시다."
+      ],
+      "change": "기업이 직접 시설 전체를 구축하기 전에 대규모 AI 작업을 검증하는 경로가 확대됐다.",
+      "outlook": "분석: 실험 자원의 공유는 초기 투자 부담을 낮출 수 있다. 실제 접근 조건과 지원 인력·데이터 이동 비용을 따져야 한다.",
+      "risk": "첨단 시설의 혜택이 특정 조직에 집중될 수 있다. 공적 연구 지원의 배분과 에너지 사용을 투명하게 살펴야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/HPE-Champollion/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-05-26-HistoryAI-HPE-Champollion.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "StreamingQA-Knowledge-Time",
+      "filename": "2022-05-26-HistoryAI-StreamingQA-Knowledge-Time.md",
+      "date": "2022-05-26",
+      "title": "새 뉴스가 생기면 AI 지식은 어떻게 바뀌나: StreamingQA",
+      "topic": "지식 갱신·뉴스 데이터",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/dynamic-language-understanding-adaptation-to-new-knowledge-in-parametric-and-semi-parametric-models/",
+      "source_title": "Dynamic language understanding: adaptation to new knowledge in parametric and semi-parametric models",
+      "source_published_at": "2022-05-26T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "딥마인드는 시간에 따라 새로 생기는 지식을 평가하는 StreamingQA와 인터넷 검색을 연결하는 언어모델 연구를 소개했다. 정적 지식의 한 시점 평가와 실제 최신 정보 질문의 차이를 다룬다.",
+        "StreamingQA는 날짜가 붙은 뉴스 기사와 질문을 이용한다. 검색 자료를 추가하면 새 정보에 빨리 접근할 수 있지만 기반 모델 자체가 낡았을 때 성능 한계가 남는다는 점도 설명했다."
+      ],
+      "change": "AI 운영에서 최신성은 모델 크기와 다른 관리 과제다. 검색 색인 갱신, 자료 시점, 모델 재학습을 어떻게 조합할지가 지속 비용과 답변 품질을 좌우할 수 있다.",
+      "outlook": "같은 질문도 어느 날짜 기준인지 명확히 평가해야 한다. 검색 결과에 새 기사를 넣는 것과 변경 내용을 올바르게 이해하는 능력이 함께 개선되는지 확인할 필요가 있다.",
+      "risk": "오래된 정보를 현재 사실처럼 제시하면 이용자의 결정이 왜곡될 수 있다. 출처 날짜와 기준 시점을 표시하고 서로 충돌하는 자료를 다루는 절차가 중요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/StreamingQA-Knowledge-Time/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-05-26-HistoryAI-StreamingQA-Knowledge-Time.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Unity-Data-Lineage",
+      "filename": "2022-06-08-HistoryAI-Unity-Data-Lineage.md",
+      "date": "2022-06-08",
+      "title": "데이터가 어디서 와서 어디에 쓰이는지, 계보 추적 미리보기",
+      "topic": "데이터 계보·품질",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/06/08/announcing-the-availability-of-data-lineage-with-unity-catalog.html",
+      "source_title": "Announcing the Availability of Data Lineage With Unity Catalog",
+      "source_published_at": "2022-06-08T14:00:06+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks는 Unity Catalog의 데이터 계보 기능을 미리보기로 발표했다. 원본에서 변환·테이블·소비처로 이어지는 관계를 파악해 변경 영향과 오류 원인을 추적하는 기능이다.",
+        "현재 원문에는 이후 정식 제공 안내가 있지만 2022년 6월 8일의 발표 범위는 미리보기다. 접근 권한 관리와 데이터 흐름의 관찰은 서로 연결되면서도 다른 관리 기능이다."
+      ],
+      "change": "데이터 자산을 많이 보유하는 것과 변경 영향을 설명할 수 있는 것은 다른 역량이다. 계보 정보는 오류 진단과 이관 시의 수작업 조사 비용을 줄이는 데 활용될 수 있다.",
+      "outlook": "추적 가능한 도구·작업의 범위와 빠진 연결을 확인해야 한다. 자동 수집된 관계가 실제 업무 의미와 맞는지, 데이터가 바뀌어도 갱신되는지가 중요하다.",
+      "risk": "계보 화면이 있다는 이유로 개인정보 이용이나 규정 준수가 자동 확인되는 것은 아니다. 정확한 메타데이터와 접근 통제, 근거 문서를 함께 관리해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Unity-Data-Lineage/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-06-08-HistoryAI-Unity-Data-Lineage.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Scanned-Objects",
+      "filename": "2022-06-14-HistoryAI-Scanned-Objects.md",
+      "date": "2022-06-14",
+      "title": "가정용 사물 3D 데이터, 로봇과 시뮬레이션의 학습 재료가 되다",
+      "topic": "3D 데이터셋",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/scanned-objects-by-google-research-a-dataset-of-3d-scanned-common-household-items/",
+      "source_title": "Scanned Objects by Google Research: A Dataset of 3D-Scanned Common Household Items",
+      "source_published_at": "2022-06-14",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 일상 물체 1,000개 이상을 스캔한 Scanned Objects 데이터셋을 소개했다. 물체의 형태와 외관을 시각·물리 시뮬레이션에 활용하도록 구성한 공개 연구 자원이다.",
+        "발표는 웹 이미지 수집만으로 얻기 어려운 3차원 물체 자료와 실제 로봇 자료 수집의 비용 문제를 배경으로 설명했다. 모델 파일이 있다는 사실과 현실의 물리 동작이 완벽히 재현되는 것은 구분해야 한다."
+      ],
+      "change": "AI 경쟁의 기반에 모델뿐 아니라 품질 좋은 3D 자산을 만드는 수집·검수 공정이 포함됐다. 공통 자료는 작은 연구팀이 시뮬레이션 환경을 준비하는 초기 비용을 줄일 수 있다.",
+      "outlook": "같은 자산을 사용해도 재질·마찰·센서 설정에 따라 결과가 달라질 수 있다. 시뮬레이션에서 익힌 동작이 실제 물체로 이전되는지 검증해야 한다.",
+      "risk": "자료의 이용 조건과 실제 환경 대표성을 확인해야 한다. 특정 물체만 풍부한 데이터셋에서 좋은 결과를 얻었다고 모든 생활 공간에서 안전한 로봇이 완성된 것은 아니다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Scanned-Objects/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-06-14-HistoryAI-Scanned-Objects.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Snowflake-Native-Framework",
+      "filename": "2022-06-14-HistoryAI-Snowflake-Native-Framework.md",
+      "date": "2022-06-14",
+      "title": "Snowflake Native Application Framework, 데이터를 옮기지 않는 앱 배포",
+      "topic": "빅데이터·앱 유통",
+      "source_name": "Snowflake",
+      "source_url": "https://www.snowflake.com/en/blog/introducing-snowflake-native-application-framework/",
+      "source_title": "Introducing the Snowflake Native Application Framework",
+      "source_published_at": "2022-06-14",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Snowflake가 고객 계정 안에서 실행되는 앱을 만들고 마켓플레이스로 배포하는 Native Application Framework를 발표했다.",
+        "당시 프레임워크는 비공개 미리보기였고 Streamlit 통합은 개발 중이었다. 거래 처리용 Unistore와는 다른 앱 배포 주제다."
+      ],
+      "change": "고객 데이터를 서비스로 복사하기보다 앱 코드를 데이터가 있는 곳으로 보내는 유통 방식이 강조됐다.",
+      "outlook": "분석: 데이터 이동과 조달 절차가 줄 수 있다. 앱 권한·업데이트·운영 로그를 누가 관리할지 명확히 해야 한다.",
+      "risk": "고객 계정에서 실행돼도 앱에 과도한 권한을 주면 노출 위험이 생긴다. 공급자의 코드 보호와 고객의 감사 가능성 사이 조정이 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Snowflake-Native-Framework/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-06-14-HistoryAI-Snowflake-Native-Framework.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Snowflake-Unistore",
+      "filename": "2022-06-14-HistoryAI-Snowflake-Unistore.md",
+      "date": "2022-06-14",
+      "title": "Unistore 발표, 거래 데이터와 분석 데이터의 경계를 줄이다",
+      "topic": "빅데이터·데이터베이스",
+      "source_name": "Snowflake",
+      "source_url": "https://www.snowflake.com/en/news/press-releases/snowflake-launches-new-unistore-workload-to-drive-next-phase-of-innovation-with-transactional-and-analytical-data-together-in-the-data-cloud-2/",
+      "source_title": "Snowflake Launches New Unistore Workload to Drive Next Phase of Innovation With Transactional and Analytical Data Together in the Data Cloud",
+      "source_published_at": "2022-06-14",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Snowflake가 Unistore와 Hybrid Tables를 발표했다. 단일 행 처리와 분석을 같은 플랫폼에서 연결하려는 방향이다.",
+        "당시 Hybrid Tables는 비공개 미리보기였다. 거래 데이터베이스 기능이 모든 고객에게 정식 제공된 날로 읽어서는 안 된다."
+      ],
+      "change": "분석 저장소가 업무 앱의 상태와 거래 처리까지 다루려는 확장이 제시됐다.",
+      "outlook": "분석: 데이터 이동과 중복 관리가 줄 수 있다. 거래 지연·동시성·복구 요구를 실제 업무 조건에서 검증해야 한다.",
+      "risk": "한 플랫폼에 업무가 집중되면 장애와 공급자 의존의 영향이 커질 수 있다. 통합만으로 데이터 품질과 권한 문제가 해결되지는 않는다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Snowflake-Unistore/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-06-14-HistoryAI-Snowflake-Unistore.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Spark-33-Runtime11",
+      "filename": "2022-06-15-HistoryAI-Spark-33-Runtime11.md",
+      "date": "2022-06-15",
+      "title": "Spark 3.3 기반 Runtime 11.0, 쿼리와 Python 작업의 개선을 묶다",
+      "topic": "분산 처리·개발 생산성",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/06/15/introducing-apache-spark-3-3-for-databricks-runtime-11-0.html",
+      "source_title": "Introducing Apache Spark™ 3.3 for Databricks Runtime 11.0",
+      "source_published_at": "2022-06-15T07:15:33+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks는 Runtime 11.0에서 Apache Spark 3.3을 제공한다고 소개했다. 조인 처리, pandas API 범위, SQL 호환성, 오류 처리와 프로파일링의 개선을 설명했다.",
+        "발표의 일부 속도 수치는 특정 자료·쿼리·장비 조건의 벤치마크다. 모든 Spark 작업이 같은 배수로 빨라진다는 의미로 일반화할 수 없다."
+      ],
+      "change": "분산 처리 엔진의 경쟁은 실행 속도와 함께 기존 SQL·Python 작업을 옮기는 개발 비용을 줄이는 방향으로 진행됐다. 버전 업그레이드의 이득은 실제 워크로드로 비교해야 한다.",
+      "outlook": "조인 선택도와 통계, 복잡한 자료형, 사용자 함수가 있는 작업에서 회귀 검사가 필요하다. 실행 시간 외에 개발자가 오류를 진단하는 시간도 성과 측정에 포함할 수 있다.",
+      "risk": "분석 결과가 같게 나오는지 확인하지 않고 빠른 버전으로만 바꾸면 의사결정 오류가 생길 수 있다. 호환성 변화와 결과 검증의 책임을 분명히 해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Spark-33-Runtime11/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-06-15-HistoryAI-Spark-33-Runtime11.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Copilot-Individual-GA",
+      "filename": "2022-06-21-HistoryAI-Copilot-Individual-GA.md",
+      "date": "2022-06-21",
+      "title": "GitHub Copilot 개인 정식 출시, 코드 제안의 구독화",
+      "topic": "AI·개발 생산성",
+      "source_name": "GitHub",
+      "source_url": "https://github.blog/changelog/2022-06-21-github-copilot-is-now-available-to-individual-developers/",
+      "source_title": "GitHub Copilot is now available to individual developers",
+      "source_published_at": "2022-06-21T10:05:08-07:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "GitHub가 편집기에서 코드를 제안하는 Copilot을 개인 개발자에게 정식 제공했다. 기술 미리보기에서 유료 구독 서비스로 전환했다.",
+        "당시 월 10달러·연 100달러와 일부 학생·오픈소스 관리자 무료 조건을 안내했다. 이는 출시 당시 조건이다."
+      ],
+      "change": "AI 코드 생성이 연구 시연을 넘어 일상적인 개발 도구의 구매 항목이 됐다.",
+      "outlook": "분석: 작성 시간 절감과 검토 시간 증가를 함께 측정해야 한다. 개발자의 가치는 요구사항 판단과 검증으로 넓어질 수 있다.",
+      "risk": "그럴듯한 제안에 보안 취약점이나 라이선스 문제가 섞일 수 있다. 비밀정보 입력을 피하고 사람이 코드 책임을 맡아야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Copilot-Individual-GA/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-06-21-HistoryAI-Copilot-Individual-GA.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Auto-Arborist",
+      "filename": "2022-06-22-HistoryAI-Auto-Arborist.md",
+      "date": "2022-06-22",
+      "title": "도시 나무 260만 그루 데이터가 기후·행정 분석에 연결되다",
+      "topic": "공공 데이터·기후",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/mapping-urban-trees-across-north-america-with-the-auto-arborist-dataset/",
+      "source_title": "Mapping Urban Trees Across North America with the Auto Arborist Dataset",
+      "source_published_at": "2022-06-22",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 북미 23개 도시의 공개 수목 조사와 거리·항공 영상을 연결한 Auto Arborist 데이터셋을 소개했다. 약 260만 그루 자료를 통해 도시별 수종 인식과 지역 차이를 연구한다.",
+        "발표는 사람이 수행하는 수목 조사의 비용과 도시 녹지 정보의 불균형을 문제로 제시했다. 단순 영상 분류를 넘어 서로 다른 도시로 모델이 일반화되는지 평가하는 자료다."
+      ],
+      "change": "빅데이터의 경제적 활용이 광고·판매 예측에서 도시 자산 관리와 기후 적응으로 확장되는 사례다. 공공 기록과 영상의 연결 품질이 분석 가치에 직접 영향을 준다.",
+      "outlook": "실제 예산 배분에 쓰려면 누락 지역과 수종 오분류를 확인해야 한다. 자동 조사가 현장 인력을 어디까지 보완할 수 있는지 실제 유지관리 비용으로 비교할 필요가 있다.",
+      "risk": "자료가 많은 도시의 성능이 자료가 부족한 지역에 그대로 적용되지 않을 수 있다. 녹지 격차를 줄이려는 분석이 관측이 쉬운 지역에만 투자하는 근거가 되지 않도록 해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Auto-Arborist/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-06-22-HistoryAI-Auto-Arborist.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Databricks-Marketplace-Plan",
+      "filename": "2022-06-28-HistoryAI-Databricks-Marketplace-Plan.md",
+      "date": "2022-06-28",
+      "title": "데이터만 파는 시장에서 분석 자산을 함께 유통하는 마켓플레이스로",
+      "topic": "데이터 유통·사업모델",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/06/28/introducing-databricks-marketplace-an-open-marketplace-for-all-data-and-ai-assets.html",
+      "source_title": "Introducing Databricks Marketplace",
+      "source_published_at": "2022-06-28T10:33:02+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks는 데이터셋과 노트북·대시보드·모델 등 관련 자산을 교환하는 Marketplace를 발표했다. Delta Sharing을 기반으로 활용 맥락과 분석 방법을 함께 전달하는 방향이다.",
+        "원문에는 출시를 기대하는 파트너와 공급자 참여 안내가 포함되어 있다. 2022년 6월 28일의 구상 발표와 이후 정식 서비스 제공 시점은 구분해야 한다."
+      ],
+      "change": "데이터 거래의 비용이 파일 전달만 아니라 적합성 평가와 이해·활용 준비에서 발생한다는 점을 겨냥했다. 설명과 분석 자산을 묶으면 구매자의 탐색 비용을 줄일 가능성이 있다.",
+      "outlook": "실제 거래에서는 자료 갱신·품질·계약 범위와 도구 호환성이 중요하다. 개방적 공유가 다른 플랫폼 이용자의 실제 접근과 운영 비용을 얼마나 개선하는지 확인해야 한다.",
+      "risk": "데이터를 상품화할 권리와 제3자 개인정보는 별도 검토 대상이다. 설명 자료가 풍부하더라도 출처·이용 목적·재배포 조건이 불명확하면 신뢰할 수 있는 거래가 어렵다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Databricks-Marketplace-Plan/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-06-28-HistoryAI-Databricks-Marketplace-Plan.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Lakehouse-Clean-Rooms",
+      "filename": "2022-06-28-HistoryAI-Lakehouse-Clean-Rooms.md",
+      "date": "2022-06-28",
+      "title": "원자료를 넘기지 않는 공동 분석, 데이터 클린룸 구상",
+      "topic": "데이터 협업·개인정보",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/06/28/introducing-data-cleanrooms-for-the-lakehouse.html",
+      "source_title": "Introducing Data Clean Rooms for the Lakehouse",
+      "source_published_at": "2022-06-28T10:31:36+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks는 레이크하우스에서 여러 조직이 자료를 연결해 분석하는 데이터 클린룸 구상을 소개했다. 데이터 공유·접근 제어·신뢰된 계산 환경을 결합하는 설계를 설명한다.",
+        "원문은 광고 효과 측정과 파트너 분석 등의 수요를 배경으로 제시했다. 이 발표를 현재의 모든 관리형 클린룸 기능이 당시 전면 정식 출시됐다는 기록으로 읽지 않는다."
+      ],
+      "change": "외부 자료의 가치와 원자료 제공의 위험 사이에서 통제된 공동 계산이 새로운 데이터 사업 방식으로 부각됐다. 복제·연결·검토 비용을 함께 줄일 수 있는지가 경제적 쟁점이다.",
+      "outlook": "허용한 질의와 결과의 범위를 실제로 통제하는지 확인해야 한다. 기술 구성뿐 아니라 참여 조직의 책임과 목적, 반복 분석의 정보 노출 가능성을 함께 평가할 필요가 있다.",
+      "risk": "원자료를 직접 볼 수 없더라도 집계 결과를 조합해 개인을 추정할 위험이 남을 수 있다. 클린룸이라는 이름만으로 동의·권리·재식별 문제가 해결되었다고 설명해서는 안 된다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Lakehouse-Clean-Rooms/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-06-28-HistoryAI-Lakehouse-Clean-Rooms.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "SQL-Serverless-AWS-Preview",
+      "filename": "2022-06-28-HistoryAI-SQL-Serverless-AWS-Preview.md",
+      "date": "2022-06-28",
+      "title": "SQL 서버리스 공개 미리보기, 대기·유휴 자원 비용을 줄이려는 경쟁",
+      "topic": "서버리스·분석 비용",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/06/28/databricks-sql-serverless-now-available-on-aws.html",
+      "source_title": "Databricks SQL Serverless Now Available on AWS",
+      "source_published_at": "2022-06-28T08:30:53+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks는 AWS에서 SQL 서버리스 계산의 공개 미리보기를 발표했다. 자원 준비·확장과 관리 작업을 서비스가 처리해 분석에 집중하도록 하는 방향이다.",
+        "현재 원문 상단의 정식 제공 후속 안내와 2022년 6월 28일 미리보기를 구분해야 한다. 비용 개선 사례는 고객 환경과 사용 패턴에 따라 달라지는 회사 측 설명이다."
+      ],
+      "change": "분석 비용의 경쟁 단위가 실행 장비 사양에서 유휴 시간과 운영 공수까지 넓어졌다. 서버리스 단가와 실제 가동 패턴을 함께 계산해야 총비용을 비교할 수 있다.",
+      "outlook": "짧은 요청·동시 급증·긴 배치가 섞인 실제 이용에서 지연과 청구를 측정할 필요가 있다. 필요한 보안·네트워크 기능과 지역별 제공 범위도 확인 대상이다.",
+      "risk": "인프라 관리를 추상화해도 데이터 접근과 예산 통제는 필요하다. 예상보다 많은 자동 실행이나 쿼리 오류의 비용을 누가 감지·중단할지 정해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/SQL-Serverless-AWS-Preview/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-06-28-HistoryAI-SQL-Serverless-AWS-Preview.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "MLflow-Pipelines",
+      "filename": "2022-06-29-HistoryAI-MLflow-Pipelines.md",
+      "date": "2022-06-29",
+      "title": "MLflow Pipelines, 모델 실험을 반복 가능한 운영 절차로",
+      "topic": "AI·MLOps",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/06/29/introducing-mlflow-pipelines-with-mlflow-2-0.html",
+      "source_title": "Introducing MLflow Pipelines with MLflow 2.0",
+      "source_published_at": "2022-06-29T12:19:58+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks가 MLflow 2.0의 방향과 Pipelines를 소개했다. 데이터 준비·학습·검증을 단계와 템플릿으로 묶는 방식이다.",
+        "발표 당일 첫 구현은 회귀 모델용 템플릿을 제공했다. MLflow 2.0 전체가 이미 정식 출시됐다는 의미는 아니다."
+      ],
+      "change": "노트북의 일회성 실행에서 코드·설정·실행 이력을 함께 관리하는 모델 운영으로 무게가 이동했다.",
+      "outlook": "분석: 공통 절차를 재사용하면 배포 시간을 줄일 수 있다. 데이터 변경과 실패 시 복구까지 검증하는 팀이 유리하다.",
+      "risk": "같은 절차를 재현해도 편향된 데이터나 잘못된 목표가 정당화되지는 않는다. 승인 책임과 모델 감시가 남는다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/MLflow-Pipelines/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-06-29-HistoryAI-MLflow-Pipelines.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Delta-Lake-Open-Commitment",
+      "filename": "2022-06-30-HistoryAI-Delta-Lake-Open-Commitment.md",
+      "date": "2022-06-30",
+      "title": "Delta Lake 전면 오픈소스화 발표, 데이터 형식의 개방성 경쟁",
+      "topic": "빅데이터·개방형 저장",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/06/30/open-sourcing-all-of-delta-lake.html",
+      "source_title": "Open Sourcing All of Delta Lake",
+      "source_published_at": "2022-06-30T17:59:24+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks가 Delta Lake 2.0을 통해 기존 전용 기능까지 공개하겠다는 계획과 기여 내용을 발표했다. ZOrder와 변경 데이터 피드 등이 포함됐다.",
+        "이 글은 6월 30일 공개 방침 발표를 기록한다. 후속 버전의 배포 완료일이나 모든 플랫폼 기능의 무료화를 뜻하지 않는다."
+      ],
+      "change": "트랜잭션을 지원하는 데이터 레이크의 경쟁 기준에 개방형 프로토콜과 엔진 간 호환성이 더해졌다.",
+      "outlook": "분석: 저장 형식을 공유하면 이전 선택지가 늘어난다. 실제 이식성은 커넥터·버전·운영 도구를 함께 비교해야 한다.",
+      "risk": "공개 라이선스만으로 서비스 종속이 사라지지는 않는다. 권한 체계와 독자 기능을 많이 쓰면 이전 비용이 남는다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Delta-Lake-Open-Commitment/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-06-30-HistoryAI-Delta-Lake-Open-Commitment.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Minerva-Math",
+      "filename": "2022-06-30-HistoryAI-Minerva-Math.md",
+      "date": "2022-06-30",
+      "title": "Minerva, 수학 기호를 보존한 학습 자료의 가치를 드러내다",
+      "topic": "수학 추론·데이터 품질",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/minerva-solving-quantitative-reasoning-problems-with-language-models/",
+      "source_title": "Minerva: Solving Quantitative Reasoning Problems with Language Models",
+      "source_published_at": "2022-06-30",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 PaLM을 수학·과학 자료로 추가 학습한 Minerva를 소개했다. 수식 표현을 보존한 자료와 단계별 답변·여러 답의 비교 같은 기법을 조합해 정량 추론 과제를 평가했다.",
+        "본문은 외부 계산기 없이 언어와 수학 기호로 풀이를 생성하는 방식을 설명한다. 정답률 개선은 발표된 평가 범위의 결과이며 수학적 증명 검증기를 대체한다는 뜻은 아니다."
+      ],
+      "change": "데이터 정제에서 수식과 서식을 무조건 지우면 중요한 의미가 사라질 수 있다는 점이 부각됐다. 분야별 AI에서는 자료의 양과 함께 표현을 보존하는 전문적 전처리가 경쟁 요소다.",
+      "outlook": "교육·연구 보조 활용은 틀린 계산과 전개를 찾아내는 검증 절차에 달려 있다. 여러 후보 답이 일치하더라도 공통 오류 가능성을 별도로 평가해야 한다.",
+      "risk": "학습용 풀이가 맞아 보이면 사용자가 검산을 생략할 수 있다. 평가 자료의 범위와 실패 유형을 공개하고 실제 학습을 돕는 방식으로 사용해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Minerva-Math/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-06-30-HistoryAI-Minerva-Math.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "NLLB200",
+      "filename": "2022-07-06-HistoryAI-NLLB200.md",
+      "date": "2022-07-06",
+      "title": "NLLB-200, 적은 데이터의 언어까지 번역 범위를 넓히다",
+      "topic": "AI·언어 접근성",
+      "source_name": "Meta AI",
+      "source_url": "https://ai.meta.com/research/publications/no-language-left-behind-scaling-human-centered-machine-translation/",
+      "source_title": "No Language Left Behind: Scaling Human-Centered Machine Translation",
+      "source_published_at": "2022-07-06",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구 소개",
+      "summary": [
+        "Meta가 200개 언어를 다루는 NLLB 연구를 발표했다. 저자원 언어의 데이터 수집과 조건부 계산 모델을 함께 다뤘다.",
+        "Flores-200을 이용한 4만 개 이상의 번역 방향 평가와 유해 표현 평가를 설명했다. 성능 향상 수치는 해당 벤치마크 기준이다."
+      ],
+      "change": "많은 자료를 가진 언어 중심의 경쟁에서 언어별 데이터 불균형을 줄이는 과제로 관심이 넓어졌다.",
+      "outlook": "분석: 지역 언어 콘텐츠의 정보 접근과 서비스 확장이 가능해질 수 있다. 분야별 용어와 지역 맥락은 원어민 검증이 필요하다.",
+      "risk": "낮은 번역 정확도가 소수 언어 사용자의 권리나 공공정보 이해를 해칠 수 있다. 평균 점수만으로 모든 언어 품질을 판단해서는 안 된다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/NLLB200/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-07-06-HistoryAI-NLLB200.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Spark-Connect-Proposal",
+      "filename": "2022-07-07-HistoryAI-Spark-Connect-Proposal.md",
+      "date": "2022-07-07",
+      "title": "Spark Connect 제안, 분석 클라이언트와 서버를 분리하다",
+      "topic": "빅데이터·분산 처리",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/07/07/introducing-spark-connect-the-power-of-apache-spark-everywhere.html",
+      "source_title": "Introducing Spark Connect - The Power of Apache Spark, Everywhere",
+      "source_published_at": "2022-07-07T11:12:53+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks가 Spark Connect의 클라이언트·서버 분리 설계를 설명했다. DataFrame 연산을 논리 계획으로 보내고 결과를 돌려받는 구조다.",
+        "당시에는 커뮤니티가 개선 제안을 채택하고 향후 Spark 버전의 실험 API를 준비하는 단계였다. 즉시 정식 사용 가능한 기능 발표는 아니다."
+      ],
+      "change": "사용자 코드와 드라이버가 밀접하게 얽힌 구조를 풀어 IDE·언어·서버 업그레이드의 독립성을 높이려 했다.",
+      "outlook": "분석: 원격 분석 개발이 편해질 수 있다. 프로토콜 호환성과 클라이언트 기능 범위가 확산을 좌우할 것이다.",
+      "risk": "원격 연결 지점에는 인증·암호화·쿼리 제한이 필요하다. 프로세스 분리만으로 다중 사용자 보안이 완성되지는 않는다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Spark-Connect-Proposal/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-07-07-HistoryAI-Spark-Connect-Proposal.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "BLOOM-BigScience",
+      "filename": "2022-07-12-HistoryAI-BLOOM-BigScience.md",
+      "date": "2022-07-12",
+      "title": "BLOOM 공개, 다국어 대형 모델을 공동 연구로 만들다",
+      "topic": "AI·공동 연구",
+      "source_name": "Hugging Face·BigScience",
+      "source_url": "https://huggingface.co/blog/bloom",
+      "source_title": "🌸 Introducing The World's Largest Open Multilingual Language Model: BLOOM 🌸",
+      "source_published_at": "2022-07-12T00:00:00.101Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "BigScience가 1,760억 매개변수 BLOOM을 공개했다. 46개 자연어와 13개 프로그래밍 언어를 다루도록 학습했다.",
+        "모델과 중간 체크포인트·옵티마이저 상태를 공유하고 Responsible AI License 조건에 따른 활용을 안내했다."
+      ],
+      "change": "대형 모델 개발을 단일 기업의 비공개 프로젝트 외에 다기관 공동 연구로 수행하는 사례가 됐다.",
+      "outlook": "분석: 재현 연구와 언어별 평가 기회가 늘 수 있다. 모델 실행 비용과 언어별 성능 격차가 이용 범위를 좌우한다.",
+      "risk": "학습에 포함된 언어 수가 모든 사용자의 동등한 품질을 보장하지 않는다. 사용 제한과 데이터 기여자의 권리도 살펴야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/BLOOM-BigScience/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-07-12-HistoryAI-BLOOM-BigScience.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Redshift-Serverless-GA",
+      "filename": "2022-07-12-HistoryAI-Redshift-Serverless-GA.md",
+      "date": "2022-07-12",
+      "title": "Redshift Serverless 정식 제공, 분석 용량 관리의 자동화",
+      "topic": "빅데이터·서버리스",
+      "source_name": "AWS",
+      "source_url": "https://aws.amazon.com/blogs/aws/amazon-redshift-serverless-now-generally-available-with-new-capabilities/",
+      "source_title": "Amazon Redshift Serverless – Now Generally Available with New Capabilities",
+      "source_published_at": "2022-07-12T08:00:31-07:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "AWS가 Amazon Redshift Serverless의 정식 제공을 알렸다. 데이터 웨어하우스 인프라를 직접 관리하지 않고 분석하는 방식이다.",
+        "데이터·사용자 설정의 namespace와 계산 자원의 workgroup을 분리하고 쿼리 감시 규칙 등을 소개했다. 발표 당시 제공 지역과 조건이 기준이다."
+      ],
+      "change": "분석팀이 상시 클러스터 용량을 잡아두는 부담에서 업무별 사용량과 비용을 관리하는 방식으로 이동했다.",
+      "outlook": "분석: 수요가 불규칙한 분석에 유용할 수 있다. 서버리스가 항상 저렴한 것은 아니므로 실제 실행량·저장·전송비를 비교해야 한다.",
+      "risk": "관리 자동화가 데이터 접근 책임까지 없애지는 않는다. 공개 엔드포인트·IAM 권한·예산 통제를 함께 설정해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Redshift-Serverless-GA/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-07-12-HistoryAI-Redshift-Serverless-GA.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "DALL-E-Diversity-Mitigation",
+      "filename": "2022-07-18-HistoryAI-DALL-E-Diversity-Mitigation.md",
+      "date": "2022-07-18",
+      "title": "이미지 생성의 인물 다양성을 조정한 DALL·E 2 업데이트",
+      "topic": "편향·제품 운영",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/reducing-bias-and-improving-safety-in-dall-e-2/",
+      "source_title": "Reducing bias and improving safety in DALL·E 2 | OpenAI",
+      "source_published_at": "2022-07-18",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 인종·성별을 따로 지정하지 않은 인물 요청에서 생성 결과의 다양성을 높이는 시스템 차원의 기법을 적용한다고 밝혔다. 연구 미리보기 이용자의 피드백을 반영한 업데이트다.",
+        "발표는 내부 평가의 개선과 필터·모니터링 조정을 설명했다. 내부 지표 하나의 개선을 모든 직업·문화권의 편향 해소로 확대할 수는 없다."
+      ],
+      "change": "생성 AI의 제품 품질에 이미지 선명도 외에 어떤 사람을 어떻게 표현하는지가 포함됐다. 이용자 피드백을 모으고 결과 분포를 관리하는 운영 비용도 중요해졌다.",
+      "outlook": "서로 다른 언어와 직업 요청에서도 같은 방향의 개선이 나타나는지 독립 평가가 필요하다. 사용자의 의도를 유지하면서 기본 표현을 조정하는 기준도 설명해야 한다.",
+      "risk": "대표성을 어떤 분포로 정의할지에 사회적 판단이 들어간다. 다양성을 높이는 조정이 다른 고정관념이나 부적절한 단순화를 만들지 않는지 확인할 필요가 있다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/DALL-E-Diversity-Mitigation/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-07-18-HistoryAI-DALL-E-Diversity-Mitigation.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "DALL-E-Paid-Beta",
+      "filename": "2022-07-20-HistoryAI-DALL-E-Paid-Beta.md",
+      "date": "2022-07-20",
+      "title": "DALL·E 베타 확대, 생성 이미지가 유료 사용 모델로 들어가다",
+      "topic": "생성 AI 사업모델",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/dall-e-now-available-in-beta/",
+      "source_title": "DALL·E now available in beta | OpenAI",
+      "source_published_at": "2022-07-20",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 대기 이용자를 순차적으로 초대하는 DALL·E 베타 확대와 크레딧 구매 방식을 발표했다. 연구 미리보기에서 실제 이용 규모와 비용을 관리하는 서비스 단계로 이동한 사건이다.",
+        "발표는 생성 이미지의 상업적 사용을 허용하는 서비스 조건도 설명했다. 이는 제공자의 이용 조건이며 각 결과물의 저작권 성립이나 제3자 권리를 일괄 보증한 것은 아니다."
+      ],
+      "change": "이미지 생성의 상용화에서 계산 자원 소비를 사용량 단위로 과금하는 모델이 드러났다. 제작자는 생성 횟수뿐 아니라 원하는 결과까지의 반복 시도와 편집 비용을 계산할 필요가 생겼다.",
+      "outlook": "유료 이용이 실제 제작 공정의 시간을 얼마나 줄이는지가 지속 수요를 결정할 것이다. 공개 베타의 접근 확대와 모든 기능의 운영 안정성은 별도로 확인해야 한다.",
+      "risk": "창작자에게 기회를 넓히는 동시에 기존 이미지 노동의 단가와 권리 문제를 바꿀 수 있다. 이용 허용 문구와 법적 권리·책임을 구분해 이해하는 일이 중요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/DALL-E-Paid-Beta/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-07-20-HistoryAI-DALL-E-Paid-Beta.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "AlphaFold-Database-200M",
+      "filename": "2022-07-28-HistoryAI-AlphaFold-Database-200M.md",
+      "date": "2022-07-28",
+      "title": "AlphaFold 예측 구조 2억 개 공개, 생명과학 데이터 접근이 넓어지다",
+      "topic": "과학 데이터·공개 인프라",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/alphafold-reveals-the-structure-of-the-protein-universe/",
+      "source_title": "AlphaFold reveals the structure of the protein universe",
+      "source_published_at": "2022-07-28T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "딥마인드와 EMBL-EBI는 AlphaFold 데이터베이스를 2억 개 이상의 단백질 예측 구조로 확장한다고 발표했다. 생물 종 전반의 구조 정보에 접근하고 대량 내려받을 수 있는 범위를 넓혔다.",
+        "공개된 값은 AI가 예측한 구조다. 실험으로 모든 구조와 기능이 확인되었거나 신약의 효과·안전성이 검증됐다는 뜻은 아니다."
+      ],
+      "change": "과학 연구팀이 구조 후보를 얻는 초기 탐색 비용을 낮출 수 있는 공통 자원이 확대됐다. 데이터 접근이 쉬워져도 연구 성과의 가치는 후속 실험과 생물학적 해석에서 결정된다.",
+      "outlook": "실제 연구에서 어떤 질문의 시간을 줄이고 어떤 한계가 남는지 추적해야 한다. 예측 신뢰도와 복합체·상호작용 같은 별도 과제의 범위를 구분하는 것이 중요하다.",
+      "risk": "공개 자원의 혜택을 누릴 계산·실험 역량은 기관마다 다르다. 데이터 개방이 연구 접근의 모든 격차를 해소한다고 보기보다 후속 검증과 활용 지원도 함께 논의해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/AlphaFold-Database-200M/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-07-28-HistoryAI-AlphaFold-Database-200M.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Photon-GA",
+      "filename": "2022-08-03-HistoryAI-Photon-GA.md",
+      "date": "2022-08-03",
+      "title": "Photon 정식 출시, 데이터 분석 비용 경쟁은 실행 엔진으로",
+      "topic": "빅데이터·쿼리 엔진",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/08/03/announcing-photon-engine-general-availability-on-the-databricks-lakehouse-platform.html",
+      "source_title": "Announcing Photon Engine General Availability on the Databricks Lakehouse Platform",
+      "source_published_at": "2022-08-03T08:30:22+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks가 주요 클라우드에서 Photon 엔진의 정식 제공을 발표했다. SQL뿐 아니라 DataFrame과 일부 스트리밍 작업까지 적용 범위를 설명했다.",
+        "벡터화 정렬·윈도 함수 등의 개선과 고객 사례를 제시했다. 속도와 비용 수치는 회사가 선택한 실험·사례 조건에 따른 결과다."
+      ],
+      "change": "저장 데이터를 옮기기보다 같은 레이크 위에서 계산을 효율화하는 경쟁이 두드러졌다.",
+      "outlook": "분석: 쿼리 지연과 사용량을 함께 낮출 수 있는지 대표 업무로 재측정해야 한다. 빠른 실행이 항상 낮은 총비용을 뜻하지는 않는다.",
+      "risk": "지원하지 않는 연산과 요금 차이를 빠뜨리면 과장된 절감 추정이 된다. 벤치마크 조건과 재현성을 공개할 필요가 있다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Photon-GA/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-08-03-HistoryAI-Photon-GA.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Pinterest-Recommender-GPU",
+      "filename": "2022-08-04-HistoryAI-Pinterest-Recommender-GPU.md",
+      "date": "2022-08-04",
+      "title": "Pinterest GPU 추천 사례, 모델 확대와 서비스 비용의 균형",
+      "topic": "AI·추천 시스템",
+      "source_name": "NVIDIA",
+      "source_url": "https://blogs.nvidia.com/blog/pinterest-gpu-acceleration-recommenders/",
+      "source_title": "Pinterest Boosts Home Feed Engagement 16% With Switch to GPU Acceleration of Recommenders",
+      "source_published_at": "2022-08-04T16:00:33+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "NVIDIA가 Pinterest의 추천 추론을 CPU에서 GPU로 전환한 사례를 소개했다. 큰 모델을 지연 제약 안에서 제공하도록 파이프라인을 바꿨다.",
+        "참여도와 추론 효율 개선 수치는 회사·고객이 보고한 사례 결과다. 모든 추천 서비스에 동일한 증가율이 적용되지는 않는다."
+      ],
+      "change": "추천 모델의 정확도 경쟁이 요청 배치·임베딩 조회·인프라 비용 설계와 연결됐다.",
+      "outlook": "분석: 같은 예산으로 복잡한 모델을 운영할 여지가 있다. 클릭 증가가 사용자의 장기 만족과 같은지는 별도 평가해야 한다.",
+      "risk": "참여 시간만 최적화하면 과도한 이용이나 편향된 노출을 키울 수 있다. 개인정보 최소화와 추천 제어권이 중요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Pinterest-Recommender-GPU/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-08-04-HistoryAI-Pinterest-Recommender-GPU.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "FTC-Surveillance-ANPR",
+      "filename": "2022-08-11-HistoryAI-FTC-Surveillance-ANPR.md",
+      "date": "2022-08-11",
+      "title": "FTC 상업 감시 규칙 검토, 데이터 수익화의 사회적 비용",
+      "topic": "빅데이터·개인정보 정책",
+      "source_name": "Federal Trade Commission",
+      "source_url": "https://www.ftc.gov/legal-library/browse/federal-register-notices/commercial-surveillance-data-security-rulemaking",
+      "source_title": "Commercial Surveillance and Data Security Rulemaking",
+      "source_published_at": "2022-08-11",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 정책 의견 수렴",
+      "summary": [
+        "미국 FTC가 상업적 감시와 데이터 보안에 관한 규칙 제정 사전 공고를 내고 공개 의견을 요청했다.",
+        "개인 정보의 수집·분석·수익화가 만드는 소비자 피해와 필요한 보호조치를 물었다. 사전 의견 수렴이 최종 규칙의 시행을 뜻하지 않는다."
+      ],
+      "change": "데이터 활용의 매출 효과와 함께 과도한 추적·유출·차별의 비용을 규제 절차에서 다루려 했다.",
+      "outlook": "분석: 기업은 수집 범위와 보존·보안 관행을 설명할 필요가 커질 수 있다. 정책의 실제 영향은 후속 절차와 집행으로 확인해야 한다.",
+      "risk": "동의를 받았다는 형식만으로 취약한 이용자의 피해가 사라지지 않는다. 데이터 최소화와 오용 방지·피해 구제 설계가 필요하다.",
+      "source_note": "페이지의 문서 Date 항목 2022-08-11을 사용했다. HTML 생성 메타데이터의 2022-08-05와 구분했다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/FTC-Surveillance-ANPR/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-08-11-HistoryAI-FTC-Surveillance-ANPR.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "OptFormer",
+      "filename": "2022-08-18-HistoryAI-OptFormer.md",
+      "date": "2022-08-18",
+      "title": "과거 실험 기록을 다음 실험의 자산으로: OptFormer",
+      "topic": "실험 데이터·학습 최적화",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/optformer-towards-universal-hyperparameter-optimization-with-transformers/",
+      "source_title": "OptFormer: Towards Universal Hyperparameter Optimization with Transformers",
+      "source_published_at": "2022-08-18",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글과 딥마인드는 대규모 최적화 이력을 활용해 하이퍼파라미터 탐색을 학습하는 OptFormer를 소개했다. 숫자뿐 아니라 작업 설명과 매개변수 이름 같은 텍스트도 표현에 포함한다.",
+        "서로 다른 탐색 공간에서 얻은 과거 실험 기록을 이용해 다음 후보와 목적값을 예측하는 연구다. 모든 모델의 최적 설정을 자동 보장하는 범용 제품 발표는 아니다."
+      ],
+      "change": "실험 로그가 단순한 보관 기록을 넘어 다음 학습의 비용을 줄일 수 있는 데이터 자산으로 바뀌는 방향이다. 반복적인 시행착오에 쓰는 계산 예산을 관리하는 도구가 중요해졌다.",
+      "outlook": "실제 절감은 새 과제가 과거 기록과 얼마나 다른지에 달려 있다. 실험 정의·실패 기록·비용 측정을 표준화해야 이전 경험을 재사용하기 쉽다.",
+      "risk": "큰 조직만 축적한 실험 이력을 독점하면 효율 격차가 커질 수 있다. 과거에 자주 시도한 설정의 편향이 새로운 접근 탐색을 제한하는지도 확인할 필요가 있다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/OptFormer/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-08-18-HistoryAI-OptFormer.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "StableDiffusion-Public",
+      "filename": "2022-08-22-HistoryAI-StableDiffusion-Public.md",
+      "date": "2022-08-22",
+      "title": "Stable Diffusion 공개, 이미지 모델을 직접 실행하는 생태계",
+      "topic": "AI·이미지 생성",
+      "source_name": "Stability AI",
+      "source_url": "https://stability.ai/news-updates/stable-diffusion-public-release",
+      "source_title": "Stable Diffusion Public Release",
+      "source_published_at": "2022-08-22T18:06:20+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Stability AI가 Stable Diffusion의 공개 배포를 알렸다. 모델 가중치와 코드·모델 카드를 제공하고 당시 권장 가중치는 v1.4라고 안내했다.",
+        "CreativeML OpenRAIL-M은 상업·비상업 활용을 허용하면서 사용 제한과 배포 시 조건 전달을 요구했다. 아무 제한 없는 라이선스는 아니다."
+      ],
+      "change": "이미지를 원격 서비스에 요청하는 방식 외에 모델을 직접 실행·수정하는 선택지가 커졌다.",
+      "outlook": "분석: 특화 모델과 도구 생태계가 확장될 수 있다. 하드웨어 비용과 운영·안전 관리 부담도 사용자가 맡게 된다.",
+      "risk": "학습 자료의 저작권과 비동의 이미지 생성 문제는 라이선스 허용 범위와 별개다. 안전 분류기도 모든 오용을 막지는 못한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/StableDiffusion-Public/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-08-22-HistoryAI-StableDiffusion-Public.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "DALL-E-Outpainting",
+      "filename": "2022-08-31-HistoryAI-DALL-E-Outpainting.md",
+      "date": "2022-08-31",
+      "title": "이미지 바깥을 이어 그리는 Outpainting, 편집 흐름을 바꾸다",
+      "topic": "생성 편집·창작 도구",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/dall-e-introducing-outpainting/",
+      "source_title": "DALL·E: Introducing outpainting | OpenAI",
+      "source_published_at": "2022-08-31",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 기존 이미지 경계 밖으로 장면을 확장하는 Outpainting을 공개했다. 자연어 설명과 원래 이미지의 그림자·반사·질감 같은 시각 정보를 참고하는 기능이다.",
+        "이미지 내부를 바꾸는 편집과 달리 원래 구도를 더 넓은 장면으로 확장하는 작업을 제공했다. 원래 그림을 보존하면서 추가 영역을 만드는 창작 흐름의 변화다."
+      ],
+      "change": "이미지 생성이 새 그림 한 장 만들기에서 기존 자산을 다른 화면 비율과 구성으로 재가공하는 도구로 넓어졌다. 실제 가치는 수정 일관성과 후편집 시간에서 평가할 수 있다.",
+      "outlook": "확장된 영역이 원래 장면의 의미와 원근을 유지하는지 확인해야 한다. 자동 결과를 그대로 사용하는 경우와 사람이 수정하는 경우의 총 작업 시간을 비교할 필요가 있다.",
+      "risk": "사진이나 보도 이미지를 확장하면 실제로 존재하지 않은 주변 장면이 생길 수 있다. 창작 편집과 사실 기록을 구분하고 결과물의 변경 사실을 알리는 기준이 중요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/DALL-E-Outpainting/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-08-31-HistoryAI-DALL-E-Outpainting.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Patent-Semantic-Data",
+      "filename": "2022-08-31-HistoryAI-Patent-Semantic-Data.md",
+      "date": "2022-08-31",
+      "title": "특허 검색의 언어 장벽을 낮추는 문구 유사도 데이터",
+      "topic": "특허·전문 데이터",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/announcing-the-patent-phrase-similarity-dataset/",
+      "source_title": "Announcing the Patent Phrase Similarity Dataset",
+      "source_published_at": "2022-08-31",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 특허 문구 사이 의미 유사도를 사람이 평가한 Patent Phrase Similarity 데이터셋을 공개했다. 특허 분류 맥락과 약 5만 쌍의 문구 평가를 포함한다.",
+        "같은 개념을 다른 기술 용어로 표현하거나 같은 단어가 분야별로 다른 뜻을 가지는 문제를 다뤘다. 일반 문장용 모델을 전문 문서 검색에 그대로 적용할 때의 한계를 평가하는 자료다."
+      ],
+      "change": "데이터 양이 많은 전문 시장에서는 키워드 검색을 의미 기반 검색으로 보완하는 가치가 커질 수 있다. 모델을 비교할 공개 평가 자료가 생기면 개발·검증 비용을 줄이는 데 도움이 된다.",
+      "outlook": "실제 특허 조사에서 누락을 줄이는지, 분야가 바뀌어도 성능을 유지하는지가 중요하다. 유사 문구 탐지가 권리 범위에 대한 법적 판단을 대신하는 것은 아니다.",
+      "risk": "검색 결과를 과신하면 중요한 선행 문헌을 놓칠 수 있다. 전문 검토와 검색 기록의 추적 가능성을 유지하고 데이터 이용 조건도 확인해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Patent-Semantic-Data/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-08-31-HistoryAI-Patent-Semantic-Data.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Whisper-Open-Models",
+      "filename": "2022-09-21-HistoryAI-Whisper-Open-Models.md",
+      "date": "2022-09-21",
+      "title": "Whisper 공개, 다국어 음성 인식의 연구·개발 접근이 넓어지다",
+      "topic": "음성 AI·공개 모델",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/whisper/",
+      "source_title": "Introducing Whisper | OpenAI",
+      "source_published_at": "2022-09-21",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 웹에서 모은 다국어·다중 작업 음성 자료 68만 시간으로 학습한 Whisper와 추론 코드를 공개했다. 여러 언어의 받아쓰기와 영어 번역을 다루는 음성 인식 모델이다.",
+        "발표는 다양한 억양·잡음 환경에서의 강건성을 설명하면서 특정 벤치마크에 특화한 모델을 모든 항목에서 이기는 것은 아니라고 구분했다. 모델 공개가 모든 언어·환경의 정확도를 보장하지는 않는다."
+      ],
+      "change": "음성 기능을 시험하는 개발자가 공통 모델을 직접 활용할 선택지가 늘었다. 외부 API 사용과 자체 실행의 장비·운영 비용을 비교할 수 있는 기반도 넓어졌다.",
+      "outlook": "실제 도입은 업종별 용어·억양·녹음 품질에서 오류를 측정해야 한다. 받아쓰기 결과를 교정하는 시간까지 포함해 비용 절감 효과를 판단할 필요가 있다.",
+      "risk": "녹음에는 민감한 대화가 포함될 수 있다. 수집 동의와 접근 범위, 오인식 정정 절차를 마련하고 중요한 의사결정에 자동 전사문을 무검토로 쓰지 않도록 해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Whisper-Open-Models/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-09-21-HistoryAI-Whisper-Open-Models.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Sparrow-Dialogue-Rules",
+      "filename": "2022-09-22-HistoryAI-Sparrow-Dialogue-Rules.md",
+      "date": "2022-09-22",
+      "title": "Sparrow, 도움 되는 답변과 규칙 준수를 따로 학습하다",
+      "topic": "대화형 AI·안전",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/building-safer-dialogue-agents/",
+      "source_title": "Building safer dialogue agents",
+      "source_published_at": "2022-09-22T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "딥마인드는 사람의 선호 피드백과 규칙 위반 평가를 이용하는 대화 연구 모델 Sparrow를 소개했다. 필요한 경우 웹 검색 근거를 활용하고 부적절한 질문에는 응답을 제한하도록 연구했다.",
+        "원문은 이를 연구 모델이자 개념 검증으로 명시한다. 답변이 그럴듯하고 근거에 지지되는지에 대한 평가와 사실의 완전한 검증이 같은 일은 아니라는 한계를 설명한다."
+      ],
+      "change": "대화 서비스의 제품화에 유용성 점수 외에 행동 규칙과 검증 체계가 필요하다는 점이 부각됐다. 사람 피드백 수집과 기준 관리도 개발 과정의 비용과 책임에 포함된다.",
+      "outlook": "규칙이 실제 이용자의 다양한 상황에 맞는지, 근거가 불충분할 때 적절히 보류하는지 평가해야 한다. 연구실 대화와 대규모 공개 서비스의 실패율은 별도로 확인해야 한다.",
+      "risk": "규칙을 누가 정하고 어떤 피해를 우선하는지가 사회적 쟁점이다. 일부 질문을 차단했다는 사실만으로 차별·오정보 위험이 모두 해결되었다고 해석해서는 안 된다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Sparrow-Dialogue-Rules/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-09-22-HistoryAI-Sparrow-Dialogue-Rules.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "DALL-E-Waitlist-Removed",
+      "filename": "2022-09-28-HistoryAI-DALL-E-Waitlist-Removed.md",
+      "date": "2022-09-28",
+      "title": "DALL·E 베타 대기명단 해제, 이용자 접근 장벽이 낮아지다",
+      "topic": "서비스 확산",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/dall-e-now-available-without-waitlist/",
+      "source_title": "DALL·E now available without waitlist | OpenAI",
+      "source_published_at": "2022-09-28",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 DALL·E 베타의 가입 대기명단을 없애 즉시 가입할 수 있도록 한다고 발표했다. 연구 미리보기와 순차 초대 이후 접근 범위를 넓힌 사건이다.",
+        "발표 당시 이미지 API는 일부 고객과 시험 중이라고 설명했다. 웹 도구의 가입 확대와 개발자 API의 공개 범위를 같은 날짜의 사건으로 합치지 않아야 한다."
+      ],
+      "change": "생성 이미지 서비스가 제한된 초대 경험에서 더 넓은 이용자 시장으로 이동했다. 접근 확대는 사용량뿐 아니라 지원·유해성 관리·계산 수요의 확대를 동반할 수 있다.",
+      "outlook": "장기적 수요는 첫 시도의 신기함에서 반복 사용 가치로 이어지는지에 달려 있다. 전문 제작자의 편집 과정과 일반 이용자의 사용 양상이 어떻게 다른지 볼 필요가 있다.",
+      "risk": "사용자가 많아지면 편향·권리·허위 이미지 문제도 더 다양한 상황에서 드러난다. 안전 필터와 이의 제기 절차가 실제 이용 규모를 따라가는지 확인해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/DALL-E-Waitlist-Removed/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-09-28-HistoryAI-DALL-E-Waitlist-Removed.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "MakeAVideo-Research",
+      "filename": "2022-09-29-HistoryAI-MakeAVideo-Research.md",
+      "date": "2022-09-29",
+      "title": "Make-A-Video, 텍스트 이미지 생성에서 짧은 영상으로",
+      "topic": "AI·영상 생성",
+      "source_name": "Meta AI",
+      "source_url": "https://ai.meta.com/blog/generative-ai-text-to-video/",
+      "source_title": "Introducing Make-A-Video: An AI system that generates videos from text",
+      "source_published_at": "2022-09-29",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Meta가 글로 짧은 영상을 만드는 Make-A-Video 연구를 발표했다. 텍스트·이미지 쌍과 텍스트가 붙지 않은 영상의 움직임 정보를 결합했다.",
+        "연구 논문과 결과를 공유하고 데모 공개를 계획하는 단계였다. 상용 영상 서비스의 정식 출시는 아니다."
+      ],
+      "change": "정지 이미지의 의미 표현을 시간에 따른 움직임 생성으로 확장하는 접근을 보였다.",
+      "outlook": "분석: 스토리보드와 짧은 시안 제작의 진입 장벽이 낮아질 수 있다. 긴 영상의 일관성과 정밀 제어는 별도 과제로 남는다.",
+      "risk": "실제 사건처럼 보이는 합성 영상은 허위정보와 초상권 문제를 키울 수 있다. 출처 표시와 동의 체계가 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/MakeAVideo-Research/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-09-29-HistoryAI-MakeAVideo-Research.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "AlphaTensor-Algorithms",
+      "filename": "2022-10-05-HistoryAI-AlphaTensor-Algorithms.md",
+      "date": "2022-10-05",
+      "title": "AlphaTensor, AI가 행렬 곱셈 알고리즘을 탐색하다",
+      "topic": "알고리즘·계산 인프라",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/discovering-novel-algorithms-with-alphatensor/",
+      "source_title": "Discovering novel algorithms with AlphaTensor",
+      "source_published_at": "2022-10-05T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "딥마인드는 행렬 곱셈 알고리즘을 탐색하는 AlphaTensor 연구를 Nature에 발표했다고 밝혔다. AlphaZero 계열의 탐색 아이디어를 수학적 알고리즘 발견에 적용한 사례다.",
+        "원문은 특정 크기와 조건에서 효율적인 알고리즘을 찾고 검증하는 성과를 설명한다. 모든 행렬 연산이 즉시 같은 비율로 빨라지거나 일반적인 최적 복잡도가 완전히 해결됐다는 뜻은 아니다."
+      ],
+      "change": "AI가 계산 자원을 소비하는 도구에서 계산 방법 자체를 개선하는 연구 도구로도 활용됐다. 널리 쓰이는 연산의 작은 개선은 실제 장비에서 재현될 때 누적 경제 효과를 낼 수 있다.",
+      "outlook": "실제 이득은 행렬 크기·수치 형식·하드웨어 구현에 달려 있다. 수학적 연산 수의 개선과 서비스 전체의 속도·비용 절감을 구분해 측정해야 한다.",
+      "risk": "새 알고리즘의 정확성과 재현 가능성을 독립적으로 확인할 수 있어야 한다. 발표를 범용 계산 성능의 무제한 개선으로 홍보하면 기술 투자 판단을 왜곡할 수 있다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/AlphaTensor-Algorithms/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-10-05-HistoryAI-AlphaTensor-Algorithms.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "AudioLM",
+      "filename": "2022-10-06-HistoryAI-AudioLM.md",
+      "date": "2022-10-06",
+      "title": "AudioLM, 문자 전사 없이 음성·음악을 이어 만드는 연구",
+      "topic": "오디오 생성",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/audiolm-a-language-modeling-approach-to-audio-generation/",
+      "source_title": "AudioLM: a Language Modeling Approach to Audio Generation",
+      "source_published_at": "2022-10-06",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 오디오만 듣고 음성과 피아노 소리의 구조를 학습하는 AudioLM을 소개했다. 의미적 구조와 음향 품질을 다루는 두 종류 토큰을 활용하는 방식이다.",
+        "발표는 자연스러운 장기 흐름을 갖춘 오디오 생성 연구와 함께 합성 오디오를 식별하는 모델 개발도 설명했다. 일반 이용자 대상 음성 서비스의 정식 출시는 아니다."
+      ],
+      "change": "생성 AI의 범위가 텍스트와 정지 이미지에서 소리의 흐름으로 확장됐다. 콘텐츠 제작에는 새로운 보조 수단이 될 수 있지만 음질·편집 제어·추론 비용의 실제 수준을 함께 봐야 한다.",
+      "outlook": "원하는 내용을 정확히 제어하고 긴 결과에서도 구조를 유지하는지가 상용화의 관전 포인트다. 실험 음원과 실제 제작 업무의 평가 기준을 구분할 필요가 있다.",
+      "risk": "특정 목소리나 연주 특성의 모방은 동의·권리·사칭 문제와 연결될 수 있다. 합성 탐지 연구가 있다는 사실만으로 모든 악용을 막을 수 있다고 보기는 어렵다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/AudioLM/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-10-06-HistoryAI-AudioLM.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "BIS-AdvancedChip-Controls",
+      "filename": "2022-10-07-HistoryAI-BIS-AdvancedChip-Controls.md",
+      "date": "2022-10-07",
+      "title": "미국 첨단 칩 수출통제 발표, AI 인프라의 지정학적 변수",
+      "topic": "AI·반도체 공급망",
+      "source_name": "U.S. BIS",
+      "source_url": "https://www.bis.gov/press-release/commerce-implements-new-export-controls-advanced-computing-semiconductor-manufacturing-items-peoples",
+      "source_title": "Commerce Implements New Export Controls on Advanced Computing and Semiconductor Manufacturing Items to the People’s Republic of China (PRC)",
+      "source_published_at": "2022-10-07",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 정책 발표",
+      "summary": [
+        "미국 BIS가 중국 관련 첨단 컴퓨팅 칩·슈퍼컴퓨터·반도체 제조 품목 등의 수출통제 변경을 발표했다.",
+        "통제는 항목별로 10월 7일·12일·21일 등에 단계적으로 효력이 발생한다고 설명했다. 모든 조항이 같은 날 적용되는 단순한 전면 금지는 아니다."
+      ],
+      "change": "AI 계산 자원의 조달에 성능·가격 외에 국가별 공급망과 규제 조건이 큰 변수로 들어왔다.",
+      "outlook": "분석: 기업은 대체 자원과 장기 조달 계획을 검토할 수 있다. 산업 영향은 실제 허가·제품 설계·정책 변화에 따라 달라진다.",
+      "risk": "연구 협력 제한과 공급망 분절의 비용이 발생할 수 있다. 이 글은 당시 발표의 기록이며 현재 거래의 법적 판단 기준은 아니다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/BIS-AdvancedChip-Controls/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-10-07-HistoryAI-BIS-AdvancedChip-Controls.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Microsoft-Designer-Preview",
+      "filename": "2022-10-12-HistoryAI-Microsoft-Designer-Preview.md",
+      "date": "2022-10-12",
+      "title": "Microsoft Designer 발표, 이미지 생성이 디자인 편집에 들어오다",
+      "topic": "AI·창작 도구",
+      "source_name": "Microsoft",
+      "source_url": "https://www.microsoft.com/en-us/copilot/blog/2022/10/12/new-tools-from-microsoft-365-edge-and-bing-bridge-the-gap-between-productivity-and-creativity/",
+      "source_title": "New tools from Microsoft 365, Edge, and Bing bridge the gap between productivity and creativity",
+      "source_published_at": "2022-10-12T14:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Microsoft가 DALL·E 2 등을 활용하는 Designer를 발표하고 무료 웹 미리보기의 조기 접근 신청을 안내했다.",
+        "이미지 생성뿐 아니라 문구·레이아웃 조합을 돕는 디자인 앱이다. 당시 미리보기에는 계획된 모든 기능이 포함되지 않았다."
+      ],
+      "change": "모델에 이미지를 요청하는 기능이 문서·소셜 콘텐츠 제작 흐름으로 들어왔다.",
+      "outlook": "분석: 소규모 조직의 시안 제작 비용이 줄 수 있다. 차별화는 결과를 고르는 안목과 브랜드 일관성 관리에 남는다.",
+      "risk": "학습 자료의 권리와 유사 이미지 생성 문제는 편집 도구 통합만으로 해결되지 않는다. 상업 배포 전 검토가 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Microsoft-Designer-Preview/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-10-12-HistoryAI-Microsoft-Designer-Preview.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "OSU-AI-Research-Center",
+      "filename": "2022-10-14-HistoryAI-OSU-AI-Research-Center.md",
+      "date": "2022-10-14",
+      "title": "오리건주립대 AI 연구 시설 계획, 대학의 계산 자원 투자",
+      "topic": "AI·교육 인프라",
+      "source_name": "NVIDIA",
+      "source_url": "https://blogs.nvidia.com/blog/ai-supercomputer-oregon-state/",
+      "source_title": "AI Supercomputer to Power $200 Million Oregon State University Innovation Complex",
+      "source_published_at": "2022-10-15T04:30:04+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "NVIDIA가 오리건주립대의 2억 달러 규모 혁신 시설 계획과 슈퍼컴퓨터 활용 구상을 소개했다.",
+        "기후·해양·재료·로봇 연구 등 학제 간 활용을 목표로 했다. 기사 당시에는 미래 시설과 기대 효과에 관한 계획이었다."
+      ],
+      "change": "대학 연구와 교육의 경쟁력에 대규모 계산 자원과 학제 간 공동 이용 기반이 포함됐다.",
+      "outlook": "분석: 학생의 실험 접근 기회가 넓어질 수 있다. 교육 효과는 장비 규모보다 이용 배분·교육 과정·운영 지원에 달려 있다.",
+      "risk": "기부와 특정 공급사 기술에 대한 의존이 연구 방향을 좁힐 수 있다. 유지비와 공정한 자원 배분을 함께 검토해야 한다.",
+      "source_note": "본문 표시일은 2022-10-14이며 JSON-LD는 UTC 환산으로 2022-10-15를 담고 있다. 게시글은 본문의 현지 날짜를 사용했다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/OSU-AI-Research-Center/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-10-14-HistoryAI-OSU-AI-Research-Center.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "DALL-E-API-Public-Beta",
+      "filename": "2022-11-03-HistoryAI-DALL-E-API-Public-Beta.md",
+      "date": "2022-11-03",
+      "title": "DALL·E API 공개 베타, 이미지 생성이 다른 앱의 기능이 되다",
+      "topic": "플랫폼·개발자 생태계",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/dall-e-api-now-available-in-public-beta/",
+      "source_title": "DALL·E API now available in public beta | OpenAI",
+      "source_published_at": "2022-11-03",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 DALL·E API의 공개 베타를 발표했다. 개발자가 이미지 생성·편집 기능을 자신의 서비스와 제품에 연결할 수 있도록 접근 범위를 넓혔다.",
+        "발표는 디자인·쇼핑 등 초기 적용 사례와 기본적인 콘텐츠 제한을 설명했다. API 제공자의 필터가 있어도 이를 사용하는 앱의 목적과 이용자 보호 설계가 자동으로 완성되는 것은 아니다."
+      ],
+      "change": "생성 AI의 유통 경로가 개별 웹사이트 방문에서 기존 앱 안의 기능으로 확장됐다. 모델 제공자와 응용 서비스 사이의 비용·수익 배분 구조가 중요해졌다.",
+      "outlook": "개발자는 생성당 비용과 지연, 품질 편차를 자신의 고객 경험에 맞게 측정해야 한다. 서비스 장애나 사용 제한 변화가 앱 전체에 미치는 영향도 도입 기준이 될 수 있다.",
+      "risk": "생성물이 여러 앱으로 퍼지면 출처와 수정 이력을 이용자가 알기 어려워질 수 있다. 제3자 권리와 오용 대응 책임을 각 서비스의 흐름에서 명확히 해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/DALL-E-API-Public-Beta/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-11-03-HistoryAI-DALL-E-API-Public-Beta.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Skycatch-Industrial-Data",
+      "filename": "2022-11-03-HistoryAI-Skycatch-Industrial-Data.md",
+      "date": "2022-11-03",
+      "title": "Skycatch 산업 데이터, 센서 원본을 현장의 분석 정보로",
+      "topic": "빅데이터·산업 분석",
+      "source_name": "NVIDIA",
+      "source_url": "https://blogs.nvidia.com/blog/skycatch-vision-ai-digital-twins/",
+      "source_title": "Unearthing Data: Vision AI Startup Digs Into Digital Twins for Mining and Construction",
+      "source_published_at": "2022-11-03T15:00:05+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "NVIDIA가 Skycatch의 광산·건설 현장 데이터 처리와 디지털 트윈 사례를 소개했다. 드론·라이다 자료를 모아 3차원 현장과 연결했다.",
+        "엣지에서 큰 원본을 분석 정보로 줄이는 흐름을 설명했다. 처리 성능과 시험 시간 절감은 고객이 보고한 수치다."
+      ],
+      "change": "현장의 대규모 시각 자료를 저장하는 데서 작업자가 이해할 수 있는 공간 정보로 바꾸는 단계가 강조됐다.",
+      "outlook": "분석: 원격 현장 관리와 위험 지점 탐지에 도움이 될 수 있다. 가상 환경과 실제 현장의 차이를 지속적으로 보정해야 한다.",
+      "risk": "센서 사각지대와 오래된 데이터는 잘못된 안전 판단을 낳을 수 있다. 작업자 감시 범위와 수집 동의를 관리할 필요가 있다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Skycatch-Industrial-Data/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-11-03-HistoryAI-Skycatch-Industrial-Data.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Snowpark-Python-GA",
+      "filename": "2022-11-07-HistoryAI-Snowpark-Python-GA.md",
+      "date": "2022-11-07",
+      "title": "Snowpark for Python 정식 제공, 분석 코드를 데이터 가까이",
+      "topic": "빅데이터·파이썬 분석",
+      "source_name": "Snowflake",
+      "source_url": "https://www.snowflake.com/en/news/press-releases/snowflake-disrupts-application-development-with-general-availability-of-snowpark-for-python-native-streamlit-support-and-more-2/",
+      "source_title": "Snowflake Disrupts Application Development with General Availability of Snowpark for Python, Native Streamlit Support, and More",
+      "source_published_at": "2022-11-07",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Snowflake가 Snowpark for Python의 정식 제공을 발표했다. 파이썬으로 데이터 파이프라인과 모델 작업을 플랫폼 내부에서 수행하는 범위를 넓혔다.",
+        "같은 공지의 Streamlit 내부 통합은 개발 중이었다. 제목에 함께 나온 모든 기능이 정식 출시됐다고 해석하지 않는다."
+      ],
+      "change": "SQL 중심 분석 환경에 파이썬 개발 생태계를 연결해 데이터 이동을 줄이려는 경쟁이 진행됐다.",
+      "outlook": "분석: 익숙한 언어로 데이터 근처에서 계산할 수 있다. 지원 패키지·실행 제약·총비용을 기존 방식과 비교해야 한다.",
+      "risk": "패키지 의존성과 실행 권한이 늘면 공급망과 데이터 접근 위험도 바뀐다. 재현 가능한 환경과 승인 절차가 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Snowpark-Python-GA/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-11-07-HistoryAI-Snowpark-Python-GA.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "ReAct",
+      "filename": "2022-11-08-HistoryAI-ReAct.md",
+      "date": "2022-11-08",
+      "title": "ReAct, 답변 생성에 외부 행동과 관찰을 연결하다",
+      "topic": "도구 활용·에이전트",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/react-synergizing-reasoning-and-acting-in-language-models/",
+      "source_title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "source_published_at": "2022-11-08",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 언어모델이 문제를 정리하는 텍스트와 외부 환경에 대한 행동을 번갈아 생성하는 ReAct 연구를 소개했다. 검색 결과 같은 관찰을 다음 행동 결정에 반영하는 구조다.",
+        "단순히 내부 지식으로 설명을 이어 가는 방식과 외부 행동만 생성하는 방식을 결합했다. 발표는 정해진 추론·의사결정 과제의 평가를 제시한 것이며 범용 업무 자동화의 완성을 뜻하지 않는다."
+      ],
+      "change": "AI 제품의 가치가 문장을 쓰는 기능에서 외부 정보를 확인하며 작업을 수행하는 흐름으로 넓어졌다. 운영 비용에는 도구 호출과 결과 검증, 실패 복구도 포함될 수 있다.",
+      "outlook": "실제 서비스에서는 행동 권한과 중단 조건을 명확히 해야 한다. 외부 응답이 잘못되거나 작업이 길어질 때도 목표를 유지하는지 평가할 필요가 있다.",
+      "risk": "언어모델이 행동을 실행하면 오답이 외부 시스템 변경으로 이어질 수 있다. 실행 전 검토, 최소 권한, 감사 기록을 어떻게 설계하는지가 중요한 사회적·운영적 쟁점이다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/ReAct/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-11-08-HistoryAI-ReAct.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Emergent-Ability-Study",
+      "filename": "2022-11-10-HistoryAI-Emergent-Ability-Study.md",
+      "date": "2022-11-10",
+      "title": "모델을 키우면 능력이 갑자기 나타나는가: 당시의 창발성 연구",
+      "topic": "모델 평가·규모",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/characterizing-emergent-phenomena-in-large-language-models/",
+      "source_title": "Characterizing Emergent Phenomena in Large Language Models",
+      "source_published_at": "2022-11-10",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 모델 규모에 따라 일부 과제 성능이 완만하게 늘지 않고 특정 지점에서 크게 바뀌는 현상을 정리했다. 원문은 이를 작은 모델에는 없고 큰 모델에 나타나는 능력이라는 연구 관점으로 설명한다.",
+        "발표는 여러 과제의 관측 결과를 제시했다. 모든 능력이 같은 임계점에서 나타나거나 규모를 늘리면 원하는 업무 능력이 반드시 생긴다는 예측은 아니다."
+      ],
+      "change": "미래 성능을 작은 모델의 추세만으로 단순 외삽하기 어렵다는 문제가 AI 투자·평가에 제기됐다. 동시에 매개변수 수 하나만으로 제품 가치를 판단할 수 없다는 뜻이기도 하다.",
+      "outlook": "과제 구성과 평가 방식에 따라 관측이 달라지는지 재현 검증이 필요하다. 기업은 특정 벤치마크의 급상승을 자신의 업무 품질 향상과 별도로 측정해야 한다.",
+      "risk": "능력이 예상 밖으로 달라지면 유용성뿐 아니라 악용 가능성도 다시 평가해야 한다. 연구 용어를 인간 지능 전체가 갑자기 완성된다는 주장으로 확대하지 않는 것이 중요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Emergent-Ability-Study/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-11-10-HistoryAI-Emergent-Ability-Study.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Data-Cards-Playbook",
+      "filename": "2022-11-17-HistoryAI-Data-Cards-Playbook.md",
+      "date": "2022-11-17",
+      "title": "데이터의 출처와 한계를 문서화하는 Data Cards Playbook",
+      "topic": "데이터 거버넌스",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/the-data-cards-playbook-a-toolkit-for-transparency-in-dataset-documentation/",
+      "source_title": "The Data Cards Playbook: A Toolkit for Transparency in Dataset Documentation",
+      "source_published_at": "2022-11-17",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 데이터셋의 출처·수집·주석·평가·의도된 사용을 정리하는 Data Cards를 실제 조직에서 작성하도록 돕는 Playbook을 소개했다. 여러 팀에 흩어진 맥락을 전달하는 데 초점을 둔다.",
+        "서식 하나를 채우는 것보다 누가 어떤 정보를 필요로 하고 어떤 절차로 모을지를 함께 설계하는 접근이다. 데이터 투명성을 위한 설명·협업 도구이지 자동 규제 인증은 아니다."
+      ],
+      "change": "빅데이터 자산의 가치에 보유량 외에 출처와 사용 조건을 설명할 수 있는 능력이 포함됐다. 문서화가 잘되면 후속 팀의 중복 조사와 부적절한 재사용을 줄일 수 있다.",
+      "outlook": "데이터가 바뀔 때 문서도 갱신되는지, 의사결정자가 실제로 이해하는지가 성과를 좌우한다. 작성 비용을 일회성 보고가 아니라 관리 절차에 연결해야 한다.",
+      "risk": "문서가 있다는 사실만으로 편향·동의 문제가 해결되지는 않는다. 빠진 이해관계자의 관점과 불확실성을 숨기지 않고 문서 내용의 진실성을 검토할 책임이 남는다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Data-Cards-Playbook/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-11-17-HistoryAI-Data-Cards-Playbook.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "dbt-Cloud-Native-Adapter",
+      "filename": "2022-11-17-HistoryAI-dbt-Cloud-Native-Adapter.md",
+      "date": "2022-11-17",
+      "title": "dbt Cloud 전용 어댑터, 레이크하우스 데이터 변환을 연결하다",
+      "topic": "빅데이터·분석 개발",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/11/17/introducing-native-high-performance-integration-dbt-cloud.html",
+      "source_title": "Introducing a Native, High-performance Integration With dbt Cloud",
+      "source_published_at": "2022-11-17T05:21:35+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks와 dbt가 dbt Cloud의 dbt-databricks 어댑터 지원을 발표했다. Unity Catalog의 3단계 이름 공간을 활용한다.",
+        "새 프로젝트는 새 어댑터를 사용하고 기존 프로젝트는 이전이 필요하다고 안내했다. 단순한 이름 변경에 그치지 않는 통합이다."
+      ],
+      "change": "SQL 변환의 테스트·문서화와 플랫폼의 권한 관리가 같은 개발 흐름에서 만났다.",
+      "outlook": "분석: 분석 엔지니어의 협업 비용을 줄일 여지가 있다. 기존 모델의 동작과 권한을 시험 환경에서 비교하는 이전 절차가 중요하다.",
+      "risk": "자동 기본값이 조직의 접근 통제를 대신하지는 않는다. 잘못된 모델 의존성이나 권한 이전은 데이터 노출로 이어질 수 있다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/dbt-Cloud-Native-Adapter/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-11-17-HistoryAI-dbt-Cloud-Native-Adapter.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Ingestion-Time-Clustering",
+      "filename": "2022-11-18-HistoryAI-Ingestion-Time-Clustering.md",
+      "date": "2022-11-18",
+      "title": "수집 시간 클러스터링, 시계열 데이터 배치의 자동화",
+      "topic": "빅데이터·저장 최적화",
+      "source_name": "Databricks",
+      "source_url": "https://www.databricks.com/blog/2022/11/18/introducing-ingestion-time-clustering-dbr-112.html",
+      "source_title": "Introducing Ingestion Time Clustering with Databricks SQL and Databricks Runtime 11.2",
+      "source_published_at": "2022-11-18T05:05:06+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Databricks가 SQL과 Runtime 11.2의 수집 시간 클러스터링을 소개했다. 데이터가 들어온 순서를 활용해 파일 배치를 개선하는 접근이다.",
+        "파티션·Z-order를 직접 설계하는 부담을 줄이고 시간 조건 쿼리의 불필요한 읽기를 줄이려 했다. 회사의 성능 수치를 모든 데이터에 일반화할 수는 없다."
+      ],
+      "change": "분석 성능 개선이 쿼리 작성뿐 아니라 쓰기 시점의 데이터 배치로 이동했다.",
+      "outlook": "분석: 순차 수집되는 사실 테이블에 유용할 수 있다. 늦게 도착한 데이터나 시간 이외의 검색 조건에서는 별도 검증이 필요하다.",
+      "risk": "입력 시간과 사건 발생 시간을 혼동하면 결과 해석이 틀릴 수 있다. 최적화가 원본 데이터의 품질이나 보존 정책을 해결하지는 않는다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Ingestion-Time-Clustering/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-11-18-HistoryAI-Ingestion-Time-Clustering.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "CICERO-Diplomacy",
+      "filename": "2022-11-22-HistoryAI-CICERO-Diplomacy.md",
+      "date": "2022-11-22",
+      "title": "CICERO, 언어 협상과 전략 판단을 결합하다",
+      "topic": "AI·협력 에이전트",
+      "source_name": "Meta AI",
+      "source_url": "https://ai.meta.com/blog/cicero-ai-negotiates-persuades-and-cooperates-with-people/",
+      "source_title": "CICERO: An AI agent that negotiates, persuades, and cooperates with people",
+      "source_published_at": "2022-11-22",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Meta가 전략 게임 Diplomacy에서 자연어 대화와 전략 엔진을 결합한 CICERO를 발표했다.",
+        "온라인 게임 평가에서 높은 성적을 보고하고 코드와 논문을 공유했다. 제한된 게임 성과를 현실 외교나 협상 능력으로 일반화할 수는 없다."
+      ],
+      "change": "대화의 자연스러움뿐 아니라 상대 행동을 예상하고 계획과 발화를 맞추는 능력을 평가했다.",
+      "outlook": "분석: 사람과 협력하는 보조 도구의 연구 방향을 보여준다. 현실 적용에는 불완전한 규칙과 책임 체계에 대한 검증이 더 필요하다.",
+      "risk": "설득 능력은 이용자를 조작하는 수단이 될 수도 있다. 상대에게 AI 사용을 알리고 목표와 행동 범위를 제한할 필요가 있다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/CICERO-Diplomacy/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-11-22-HistoryAI-CICERO-Diplomacy.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "StableDiffusion2",
+      "filename": "2022-11-24-HistoryAI-StableDiffusion2.md",
+      "date": "2022-11-24",
+      "title": "Stable Diffusion 2.0, 텍스트 인코더와 이미지 제어의 변화",
+      "topic": "AI·생성 모델 개선",
+      "source_name": "Stability AI",
+      "source_url": "https://stability.ai/news-updates/stable-diffusion-v2-release",
+      "source_title": "Stable Diffusion 2.0 Release",
+      "source_published_at": "2022-11-24T01:27:33+0000",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Stability AI가 Stable Diffusion 2.0을 공개했다. OpenCLIP 텍스트 인코더와 새 학습 구성을 적용했다.",
+        "512·768 해상도 모델과 업스케일링·깊이 기반 이미지 변환 등 여러 기능을 소개했다. 회사의 품질 평가는 사용 목적별 재검증이 필요하다."
+      ],
+      "change": "같은 이름의 모델 계열에서도 입력 표현과 학습 자료가 바뀌면 생성 결과와 제어 방식이 달라질 수 있음을 보여줬다.",
+      "outlook": "분석: 기능 확장과 함께 기존 프롬프트·미세조정 자산의 호환성 점검이 중요해진다. 버전 교체 비용까지 비교해야 한다.",
+      "risk": "필터링이 권리 분쟁이나 편향을 전부 제거하지는 않는다. 모델 버전과 생성 이력을 남겨 결과 책임을 추적할 필요가 있다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/StableDiffusion2/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-11-24-HistoryAI-StableDiffusion2.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "UL2R-Model-Repair",
+      "filename": "2022-11-29-HistoryAI-UL2R-Model-Repair.md",
+      "date": "2022-11-29",
+      "title": "기존 언어모델을 이어 학습하는 UL2R, 처음부터 다시 만들기 외의 선택",
+      "topic": "학습 비용·모델 재사용",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/better-language-models-without-massive-compute/",
+      "source_title": "Better Language Models Without Massive Compute",
+      "source_published_at": "2022-11-29",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 기존 언어모델에 추가 사전학습을 적용하는 UL2R과 지시문 학습을 결합하는 연구를 소개했다. 이미 만든 모델의 가중치를 활용해 여러 평가 과제의 성능을 개선하는 접근이다.",
+        "발표는 PaLM 계열 실험에서 추가 계산으로 얻은 효과를 설명했다. 작은 추가 계산 비율은 해당 실험의 기준이며 모든 조직의 전체 학습비가 같은 비율로 줄어든다는 뜻은 아니다."
+      ],
+      "change": "대규모 모델의 경제성이 매번 더 큰 모델을 처음부터 학습하는 경쟁으로만 결정되지 않는다는 사례다. 기존 체크포인트를 관리하고 추가 학습 전략을 비교하는 역량이 중요해졌다.",
+      "outlook": "추가 학습이 새 과제 성능을 높이면서 기존 능력을 유지하는지 확인해야 한다. 서비스 추론 비용과 데이터 준비 비용까지 포함해 실제 총비용을 비교할 필요가 있다.",
+      "risk": "거대 기반 모델을 가진 조직과 그렇지 못한 조직의 출발점 차이는 남는다. 성능 향상 수치와 접근 가능성·검증 가능성을 함께 공개하는 것이 중요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/UL2R-Model-Repair/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-11-29-HistoryAI-UL2R-Model-Repair.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Athena-Spark",
+      "filename": "2022-11-30-HistoryAI-Athena-Spark.md",
+      "date": "2022-11-30",
+      "title": "Athena에 Apache Spark, SQL 밖으로 넓어진 서버리스 분석",
+      "topic": "빅데이터·분석 실행",
+      "source_name": "AWS",
+      "source_url": "https://aws.amazon.com/blogs/aws/new-amazon-athena-for-apache-spark/",
+      "source_title": "New — Amazon Athena for Apache Spark",
+      "source_published_at": "2022-11-30T08:55:19-08:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "AWS가 Amazon Athena for Apache Spark를 발표했다. 노트북과 API로 Spark 작업을 실행하고 기반 자원 관리를 줄이는 기능이다.",
+        "기존 Athena SQL과 다른 계산 방식이다. 시작 속도와 비용 설명은 회사가 제시한 당시 환경·제공 지역에 따른다."
+      ],
+      "change": "같은 데이터 레이크를 SQL뿐 아니라 프로그래밍 기반 탐색과 복잡한 변환에도 활용하는 경로가 늘었다.",
+      "outlook": "분석: 분석가의 실험 준비 시간을 줄일 수 있다. 세션 사용량과 데이터 읽기 비용을 구분해 측정해야 한다.",
+      "risk": "노트북에서 민감정보를 쉽게 복사하거나 과도한 자원을 사용할 수 있다. 작업 권한과 결과 저장 위치를 관리해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Athena-Spark/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-11-30-HistoryAI-Athena-Spark.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "ChatGPT-Debut-20221130",
+      "filename": "2022-11-30-HistoryAI-ChatGPT-Debut-20221130.md",
+      "date": "2022-11-30",
+      "title": "2022년 11월 30일, ChatGPT 등장: 대화가 AI 사용의 입구가 되다",
+      "topic": "ChatGPT 등장·대중화",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/chatgpt/",
+      "source_title": "Introducing ChatGPT | OpenAI",
+      "source_published_at": "2022-11-30",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 2022년 11월 30일 ChatGPT를 무료 연구 미리보기로 공개했다. 사용자가 후속 질문을 이어 가고 이전 대화 맥락을 바탕으로 답변을 받는 대화형 경험을 제시했다.",
+        "공식 소개는 GPT-3.5 계열 모델을 바탕으로 사람의 대화 예시와 여러 응답의 비교 평가를 활용해 조정했다고 설명한다. 기존 언어모델 연구와 API의 축적이 대화 인터페이스로 연결된 사건이다.",
+        "초기 발표부터 그럴듯한 오답, 질문 표현에 따른 민감성, 유해 응답과 편향 같은 한계를 명시했다. 연구 미리보기의 공개는 검증이 끝난 사실 검색기의 출시를 의미하지 않는다."
+      ],
+      "change": "일반 이용자가 코드를 작성하지 않고도 문서 초안·질문·코딩 도움 등을 시험할 수 있는 입구가 넓어졌다. 기업 입장에서는 모델 성능 외에 자연어 인터페이스가 수요를 만드는 중요한 요소로 떠올랐다.",
+      "outlook": "반복 사용이 실제 업무 시간을 줄이는지, 검수 비용을 포함해도 생산성이 개선되는지 확인해야 한다. 확산 이후의 유료화와 개발자 연동은 각각 별도 발표일의 변화로 추적할 필요가 있다.",
+      "risk": "자연스러운 대화가 정확성에 대한 과신을 만들 수 있다. 학습·평가·업무에서의 책임, 개인 자료 입력, 결과물의 권리와 노동 변화가 함께 논의되어야 한다. 초기 등장 시점의 기대와 확인된 한계를 같이 읽는 것이 중요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/ChatGPT-Debut-20221130/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-11-30-HistoryAI-ChatGPT-Debut-20221130.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "EU-AIAct-Council-Position",
+      "filename": "2022-12-06-HistoryAI-EU-AIAct-Council-Position.md",
+      "date": "2022-12-06",
+      "title": "EU AI Act 이사회 입장 채택, 위험 기반 규제 협상의 진전",
+      "topic": "AI·규제 협상",
+      "source_name": "Council of the EU",
+      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2022/12/06/artificial-intelligence-act-council-calls-for-promoting-safe-ai-that-respects-fundamental-rights/",
+      "source_title": "Artificial Intelligence Act: Council calls for promoting safe AI that respects fundamental rights - Consilium",
+      "source_published_at": "2022-12-06",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 정책 발표",
+      "summary": [
+        "EU 이사회가 AI Act에 대한 일반 접근, 즉 공통 협상 입장을 채택했다. 위험 기반 분류와 기본권·안전 보호 방향을 설명했다.",
+        "범용 AI의 고위험 시스템 통합과 책임 배분도 논의했다. 2022년 12월은 최종 법률의 발효나 전면 적용일이 아니다."
+      ],
+      "change": "개별 서비스의 사후 대응을 넘어 AI 공급망의 역할과 위험에 따른 의무를 정하는 논의가 구체화됐다.",
+      "outlook": "분석: 개발사는 제품 용도와 위험을 문서화할 필요가 커질 수 있다. 실제 의무는 이후 입법 협상 결과와 적용 시점을 확인해야 한다.",
+      "risk": "위험 분류가 형식화되면 실제 피해를 놓칠 수 있다. 중소기업의 대응 비용과 피해자의 구제 가능성을 함께 살펴야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/EU-AIAct-Council-Position/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-12-06-HistoryAI-EU-AIAct-Council-Position.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "AlphaCode-Science",
+      "filename": "2022-12-08-HistoryAI-AlphaCode-Science.md",
+      "date": "2022-12-08",
+      "title": "AlphaCode의 경쟁 프로그래밍 성과, 코드 생성의 평가 범위를 넓히다",
+      "topic": "코드 생성·평가",
+      "source_name": "Google DeepMind",
+      "source_url": "https://deepmind.google/blog/competitive-programming-with-alphacode/",
+      "source_title": "Competitive programming with AlphaCode",
+      "source_published_at": "2022-12-08T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "딥마인드는 AlphaCode가 대규모 코드 후보 생성과 선별을 결합해 경쟁 프로그래밍 문제를 해결하는 연구를 설명했다. 학습 자료 이후의 Codeforces 대회를 이용해 문제 해결 능력을 평가했다.",
+        "원문은 최초 공개가 2022년 2월 2일이고 Science 게재에 맞춰 12월 8일 내용을 수정했다고 명시한다. 여기서는 표시된 12월 8일 기사와 연구 공개 경위를 함께 정리한다."
+      ],
+      "change": "코드 AI 평가가 짧은 코드 완성에서 새로운 알고리즘 문제의 해결로 넓어졌다. 다만 많은 후보를 생성·검사하는 연구 비용과 개발자의 실제 작업 시간을 줄이는 효과는 별도로 봐야 한다.",
+      "outlook": "현업 도구로 이어지려면 저장소 맥락·요구사항 변경·보안·유지보수까지 다뤄야 한다. 대회 점수와 실제 소프트웨어 개발 생산성을 직접 등치하기는 어렵다.",
+      "risk": "테스트를 통과하는 코드도 요구사항이나 안전 조건을 놓칠 수 있다. AI 코드를 검토하는 역량과 평가 자료의 오염·라이선스 관리가 중요해질 수 있다.",
+      "source_note": "최초 공개 2022-02-02, 현재 원문의 표시·수정일 2022-12-08을 구분했다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/AlphaCode-Science/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-12-08-HistoryAI-AlphaCode-Science.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "RT1-Scale-Data",
+      "filename": "2022-12-13-HistoryAI-RT1-Scale-Data.md",
+      "date": "2022-12-13",
+      "title": "RT-1, 로봇 제어를 대규모 실제 동작 데이터로 학습하다",
+      "topic": "로봇 학습·데이터 수집",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/rt-1-robotics-transformer-for-real-world-control-at-scale/",
+      "source_title": "RT-1: Robotics Transformer for real-world control at scale",
+      "source_published_at": "2022-12-13",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 영상과 자연어 지시를 입력받아 로봇 동작을 출력하는 RT-1을 소개했다. 13대 로봇으로 17개월 동안 모은 약 13만 에피소드와 700개 이상 작업의 학습 자료를 설명했다.",
+        "발표는 실시간 제어를 위한 표현과 여러 환경·물체에 대한 일반화 실험을 다루고 코드를 공개했다. 특정 실험 범위의 성과이며 가정·사업장 모든 작업의 자동화 완료는 아니다."
+      ],
+      "change": "로봇 AI의 경쟁 요소가 기계 사양 외에 실제 동작 데이터를 지속적으로 모으는 체계로 넓어졌다. 자료 수집의 시간·인력·장비 운영 비용이 모델 개발비의 중요한 부분임을 보여 준다.",
+      "outlook": "다른 로봇이나 현장에서도 같은 자료와 모델을 활용할 수 있는지가 핵심이다. 성공률뿐 아니라 실패 복구와 사람의 개입 빈도를 측정해야 실제 경제성을 판단할 수 있다.",
+      "risk": "물리 환경의 오류는 정보 오류보다 직접적인 피해로 이어질 수 있다. 공개 코드와 연구 성공률을 안전 인증이나 무인 운영 보장으로 해석하지 않아야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/RT1-Scale-Data/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-12-13-HistoryAI-RT1-Scale-Data.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Ada-002-Embeddings",
+      "filename": "2022-12-15-HistoryAI-Ada-002-Embeddings.md",
+      "date": "2022-12-15",
+      "title": "검색·유사도·코드용 표현을 하나로 묶은 ada-002",
+      "topic": "임베딩·운영 비용",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/new-and-improved-embedding-model/",
+      "source_title": "New and improved embedding model | OpenAI",
+      "source_published_at": "2022-12-15",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 text-embedding-ada-002가 다섯 개로 나뉜 기존 검색·유사도·코드 검색 역할을 통합한다고 발표했다. 더 긴 입력 길이와 작은 벡터 크기, 당시의 가격 인하를 함께 설명했다.",
+        "원문은 일부 평가에서의 개선과 분류 벤치마크의 예외를 구분했다. 새 모델이 모든 과제에서 언제나 우수하다는 발표로 읽어서는 안 된다."
+      ],
+      "change": "임베딩 서비스 경쟁이 정확도뿐 아니라 API 단순화와 벡터 저장·검색 비용까지 포함하게 됐다. 검색 시스템에서는 모델 변경과 기존 색인의 재생성 비용을 함께 계산해야 한다.",
+      "outlook": "새 표현으로 바꿀 때 실제 문서 질의의 검색 품질과 저장량을 비교해야 한다. 기존 벡터와 새 벡터를 같은 공간으로 섞어도 되는지 모델 계약을 확인할 필요가 있다.",
+      "risk": "비용이 낮아지면 더 많은 개인·기업 문서를 색인할 유인이 커질 수 있다. 목적에 맞는 자료 범위와 권한, 보존 정책을 비용 절감과 함께 검토해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Ada-002-Embeddings/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-12-15-HistoryAI-Ada-002-Embeddings.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "ConstitutionalAI",
+      "filename": "2022-12-15-HistoryAI-ConstitutionalAI.md",
+      "date": "2022-12-15",
+      "title": "Constitutional AI, 명시적 원칙과 AI 피드백으로 안전 학습",
+      "topic": "AI·정렬 연구",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/constitutional-ai-harmlessness-from-ai-feedback",
+      "source_title": "Constitutional AI: Harmlessness from AI feedback",
+      "source_published_at": "2022-12-15T08:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구 소개",
+      "summary": [
+        "Anthropic이 원칙 목록에 따라 답변을 비평·수정하고 AI 선호 피드백을 활용하는 Constitutional AI 연구를 발표했다.",
+        "지도 학습과 강화 학습 단계를 결합해 유해성 라벨에 필요한 사람의 작업을 줄이는 방법을 시험했다. 모든 인간 판단을 없앤다는 주장은 아니다."
+      ],
+      "change": "안전 학습의 기준을 개별 선호 라벨뿐 아니라 명시적으로 정한 원칙과 연결하려 했다.",
+      "outlook": "분석: 평가 규모를 늘리는 데 도움이 될 수 있다. 원칙의 선택과 예외 처리 방식도 공개적으로 검증해야 한다.",
+      "risk": "원칙을 정하는 집단의 가치가 모델 전체에 반영될 수 있다. AI가 평가한 답변을 다시 학습하는 과정의 오류 누적도 살펴야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/ConstitutionalAI/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-12-15-HistoryAI-ConstitutionalAI.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "CALM-Adaptive-Inference",
+      "filename": "2022-12-16-HistoryAI-CALM-Adaptive-Inference.md",
+      "date": "2022-12-16",
+      "title": "쉬운 다음 단어에는 계산을 덜 쓰는 CALM의 추론 비용 접근",
+      "topic": "추론 효율",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/accelerating-text-generation-with-confident-adaptive-language-modeling-calm/",
+      "source_title": "Accelerating text generation with Confident Adaptive Language Modeling (CALM)",
+      "source_published_at": "2022-12-16",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 다음 토큰 예측의 난도에 따라 일부 계산 단계를 일찍 종료하는 CALM을 소개했다. 매 생성 단계에서 같은 계산량을 쓰는 대신 필요한 경우에 더 많은 계층을 사용한다.",
+        "연구는 중간 예측의 확신도와 출력 품질 기준을 연결하는 방식을 설명했다. T5 기반 실험과 통계적 보정 조건의 결과이며 모든 언어모델에 즉시 같은 속도 향상을 보장하지 않는다."
+      ],
+      "change": "생성 AI의 지속 비용을 줄이는 연구가 모델 크기 축소뿐 아니라 요청 내부의 계산 배분으로 확장됐다. 지연 시간과 응답 품질의 관계를 운영 목표로 조정하는 방향이다.",
+      "outlook": "실제 서비스에서는 쉬운 질문과 어려운 질문을 잘 구분하는지, 긴 답변의 품질을 유지하는지 확인해야 한다. 실험 속도와 실제 장비·동시 요청 환경의 성능은 따로 측정할 필요가 있다.",
+      "risk": "너무 일찍 종료하면 취약한 언어·과제에서 오류가 늘 수 있다. 평균 성능만으로 품질을 판단하지 말고 이용자 집단별 손실과 예외 처리도 확인해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/CALM-Adaptive-Inference/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2022-12-16-HistoryAI-CALM-Adaptive-Inference.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "AI-Disinformation-Report",
+      "filename": "2023-01-11-HistoryAI-AI-Disinformation-Report.md",
+      "date": "2023-01-11",
+      "title": "언어모델이 허위정보 생산비를 낮출 수 있다는 공동 보고서",
+      "topic": "정보 환경·사회적 위험",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/forecasting-misuse/",
+      "source_title": "Forecasting potential misuses of language models for disinformation campaigns and how to reduce risk | OpenAI",
+      "source_published_at": "2023-01-11",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI·Georgetown CSET·Stanford Internet Observatory 연구진은 언어모델이 기만적 영향력 활동에 악용될 가능성과 완화 방안을 분석한 보고서를 공개했다.",
+        "보고서는 콘텐츠 생산의 비용·규모·맞춤화가 달라질 수 있는 경로와 모델 개발·접근·배포·이용자 인식 단계의 대응을 논의한다. 미래 위험 시나리오를 분석한 자료이며 모든 예상이 이미 발생했다는 기록은 아니다."
+      ],
+      "change": "텍스트 생성 비용 하락은 정상적인 업무 지원뿐 아니라 기만적 콘텐츠 생산의 경제성도 바꿀 수 있다. 플랫폼과 사회가 부담할 탐지·검증 비용을 함께 보는 관점이 제시됐다.",
+      "outlook": "실제 영향은 모델 접근성, 배포 경로, 이용자의 반응과 대응 규범에 따라 달라질 것이다. 기술 탐지 하나의 성능보다 여러 단계의 대응을 비교할 필요가 있다.",
+      "risk": "위험 완화를 이유로 표현·익명성·접근권을 과도하게 제한할 수 있다는 문제도 남는다. 보고서가 제시한 방안은 효과·실현 가능성·부작용을 함께 평가할 대상으로 읽어야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/AI-Disinformation-Report/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-01-11-HistoryAI-AI-Disinformation-Report.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Azure-OpenAI-GA",
+      "filename": "2023-01-17-HistoryAI-Azure-OpenAI-GA.md",
+      "date": "2023-01-17",
+      "title": "Azure OpenAI 정식 제공, 기업용 생성 AI의 접근 절차",
+      "topic": "AI·클라우드",
+      "source_name": "Microsoft Azure",
+      "source_url": "https://azure.microsoft.com/en-us/blog/general-availability-of-azure-openai-service-expands-access-to-large-advanced-ai-models-with-added-enterprise-benefits/",
+      "source_title": "General availability of Azure OpenAI Service expands access to large, advanced AI models with added enterprise benefits",
+      "source_published_at": "2023-01-17T00:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Microsoft의 1월 17일 게시물은 Azure OpenAI Service의 정식 제공을 알렸다. GPT-3.5·Codex·DALL·E 2 등과 기업용 인프라를 결합했다.",
+        "정식 제공에도 사용 목적을 설명하는 접근 신청이 필요했다. ChatGPT의 해당 서비스 제공은 이 글에서 향후 계획이었다."
+      ],
+      "change": "모델 성능뿐 아니라 권한·운영·계약을 포함하는 기업용 생성 AI 시장이 커졌다.",
+      "outlook": "분석: 기존 클라우드 업무와 연결하는 도입이 늘 수 있다. 사용 승인과 지역·모델별 제공 조건을 따로 확인해야 한다.",
+      "risk": "기업용이라는 표현이 잘못된 답변이나 민감정보 유출을 없애지는 않는다. 입력 제한과 결과 검토 책임이 필요하다.",
+      "source_note": "원문에 현재 표시된 게시일 2023-01-17을 사용했다. 국가별 공지나 행사 시각과 혼동하지 않았다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Azure-OpenAI-GA/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-01-17-HistoryAI-Azure-OpenAI-GA.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Microsoft-OpenAI-Partnership",
+      "filename": "2023-01-23-HistoryAI-Microsoft-OpenAI-Partnership.md",
+      "date": "2023-01-23",
+      "title": "Microsoft·OpenAI 협력 확대, 모델과 클라우드의 결합",
+      "topic": "AI·산업 투자",
+      "source_name": "Microsoft",
+      "source_url": "https://blogs.microsoft.com/blog/2023/01/23/microsoftandopenaiextendpartnership/",
+      "source_title": "Microsoft and OpenAI extend partnership",
+      "source_published_at": "2023-01-23T14:01:51+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Microsoft가 OpenAI와 장기 협력의 3단계를 발표했다. 공식 표현은 다년간 수십억 달러 규모 투자다.",
+        "AI 슈퍼컴퓨팅 확대와 제품 통합, 당시 Azure의 독점 클라우드 공급 역할을 설명했다. 공식 문서가 밝히지 않은 정확한 투자액은 단정하지 않는다."
+      ],
+      "change": "대규모 모델 개발 경쟁이 학습 알고리즘과 클라우드 자본의 결합으로 확대됐다.",
+      "outlook": "분석: 인프라 접근성은 모델 기업의 경쟁력에 영향을 줄 수 있다. 제휴의 효과는 실제 제품과 서비스 수익으로 확인해야 한다.",
+      "risk": "컴퓨팅과 유통 채널의 집중은 신규 기업의 진입 장벽과 의존도를 높일 수 있다. 발표 당시 계약을 현재 조건으로 읽어서는 안 된다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Microsoft-OpenAI-Partnership/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-01-23-HistoryAI-Microsoft-OpenAI-Partnership.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "NIST-AIRMF1",
+      "filename": "2023-01-26-HistoryAI-NIST-AIRMF1.md",
+      "date": "2023-01-26",
+      "title": "NIST AI RMF 1.0, AI 위험을 조직의 운영 절차로 관리하다",
+      "topic": "AI·위험 관리",
+      "source_name": "NIST",
+      "source_url": "https://www.nist.gov/news-events/news/2023/01/nist-risk-management-framework-aims-improve-trustworthiness-artificial",
+      "source_title": "NIST Risk Management Framework Aims to Improve Trustworthiness of Artificial Intelligence",
+      "source_published_at": "2023-01-26T07:00-05:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 지침 발표",
+      "summary": [
+        "NIST가 AI Risk Management Framework 1.0을 공개했다. 설계·개발·배포·이용 조직을 위한 자발적 지침이다.",
+        "Govern·Map·Measure·Manage의 네 기능으로 맥락 파악과 측정·대응을 연결한다. 강제 인증이나 모든 위험 제거를 보장하는 제도는 아니다."
+      ],
+      "change": "AI 신뢰성을 정확도 한 숫자가 아니라 조직 책임과 지속적인 위험 관리 문제로 다뤘다.",
+      "outlook": "분석: 업무별 위험을 기록하고 평가하는 공통 언어가 될 수 있다. 실제 효과는 담당자·측정 기준·개선 권한을 갖출 때 나타난다.",
+      "risk": "체크리스트 작성만으로 공정성이나 안전이 달성되지는 않는다. 영향을 받는 사람의 이의 제기와 현장 감시가 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/NIST-AIRMF1/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-01-26-HistoryAI-NIST-AIRMF1.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "ChatGPT-Plus-Pilot",
+      "filename": "2023-02-01-HistoryAI-ChatGPT-Plus-Pilot.md",
+      "date": "2023-02-01",
+      "title": "ChatGPT Plus 시범 구독, 무료 연구 경험에 유료 선택지가 생기다",
+      "topic": "구독·사업모델",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/chatgpt-plus/",
+      "source_title": "Introducing ChatGPT Plus | OpenAI",
+      "source_published_at": "2023-02-01",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 ChatGPT Plus 시범 구독을 월 20달러로 발표했다. 혼잡 시간의 접근, 더 빠른 응답, 새 기능 우선 접근을 당시 구독 혜택으로 제시했다.",
+        "2023년 2월 1일의 초기 발표와 미국 외 접근을 확대한 2월 10일 후속 안내를 구분해야 한다. 무료 이용도 계속 제공하겠다고 설명했으며 이 가격은 당시 발표의 역사적 금액이다."
+      ],
+      "change": "대화형 생성 AI가 무료 연구 미리보기에서 유료 구독을 함께 운영하는 서비스로 이동했다. 응답 품질 외에 접근 안정성과 속도가 지불 의사의 요소로 드러났다.",
+      "outlook": "구독의 지속 가치는 이용자가 절감한 시간과 업무 효용, 검수 부담에 달려 있다. 개인 구독 수요와 기업의 보안·관리 요구가 어떻게 달라지는지 추적할 필요가 있다.",
+      "risk": "유료 여부가 결과의 사실성을 보증하지는 않는다. 접근 격차와 교육·업무에서의 이용 기회, 서비스 변경 시 이용자 설명이 함께 논의되어야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/ChatGPT-Plus-Pilot/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-02-01-HistoryAI-ChatGPT-Plus-Pilot.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Flan-Collection",
+      "filename": "2023-02-01-HistoryAI-Flan-Collection.md",
+      "date": "2023-02-01",
+      "title": "Flan Collection, 지시를 따르는 모델의 학습 자료를 더 공개하다",
+      "topic": "공개 데이터·지시 학습",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/the-flan-collection-advancing-open-source-methods-for-instruction-tuning/",
+      "source_title": "The Flan Collection: Advancing open source methods for instruction tuning",
+      "source_published_at": "2023-02-01",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 지시문 학습에 쓰는 과제·템플릿·방법을 정리한 확장 Flan Collection을 공개했다. 다양한 작업과 입력 형식을 섞는 데이터 구성 방식을 분석했다.",
+        "발표는 기존 공개 자료와의 평가 비교와 과제 혼합의 영향을 설명했다. 학습 자료를 공개하는 일과 모든 기반 모델의 가중치·상업 이용 권리를 함께 제공하는 일은 별개다."
+      ],
+      "change": "대화형 AI를 만드는 장벽이 모델 접근뿐 아니라 적절한 지시 학습 자료의 확보에 있다는 점이 드러났다. 공통 자료와 방법의 공개는 연구 재현과 비교 비용을 낮출 수 있다.",
+      "outlook": "공개 자료를 사용하는 팀은 과제 중복과 평가 자료 오염을 확인해야 한다. 자료의 다양성이 실제 사용자의 언어와 업무 요구까지 반영하는지도 중요한 평가 항목이다.",
+      "risk": "여러 데이터셋을 합쳤다고 각 원자료의 이용 조건과 편향이 사라지지 않는다. 공개 범위와 라이선스, 누가 빠져 있는지에 대한 설명이 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Flan-Collection/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-02-01-HistoryAI-Flan-Collection.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Bing-Chat-Preview",
+      "filename": "2023-02-07-HistoryAI-Bing-Chat-Preview.md",
+      "date": "2023-02-07",
+      "title": "새 Bing 미리보기, 검색 결과에서 대화형 답변으로",
+      "topic": "AI·검색 시장",
+      "source_name": "Microsoft",
+      "source_url": "https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/",
+      "source_title": "Reinventing search with a new AI-powered Microsoft Bing and Edge, your copilot for the web",
+      "source_published_at": "2023-02-07T18:45:14+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Microsoft가 AI 기반 Bing과 Edge를 발표했다. 웹 검색·요약·대화·콘텐츠 작성을 연결했다.",
+        "당일은 데스크톱 제한 미리보기와 대기 명단 단계였다. 일반적인 링크 검색을 모든 사용자에게 즉시 대체한 출시는 아니다."
+      ],
+      "change": "검색 경쟁에 답변 구성 능력과 대화 맥락이 더해졌다. 출처 링크를 포함하는 사용 경험도 강조됐다.",
+      "outlook": "분석: 검색 광고와 콘텐츠 유입 방식이 달라질 수 있다. 실제 영향은 답변 신뢰도와 이용자 선택에 달려 있다.",
+      "risk": "출처가 있어도 요약이 원문을 왜곡할 수 있다. 잘못된 답변과 언론·창작자에 대한 보상 문제가 함께 남는다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Bing-Chat-Preview/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-02-07-HistoryAI-Bing-Chat-Preview.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "LLaMA-Research-Release",
+      "filename": "2023-02-24-HistoryAI-LLaMA-Research-Release.md",
+      "date": "2023-02-24",
+      "title": "LLaMA 연구 공개, 작은 모델과 많은 학습 데이터의 선택",
+      "topic": "AI·기반 모델",
+      "source_name": "Meta AI",
+      "source_url": "https://ai.meta.com/blog/large-language-model-llama-meta-ai/",
+      "source_title": "Introducing LLaMA: A foundational, 65-billion-parameter large language model",
+      "source_published_at": "2023-02-24",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Meta가 70억~650억 매개변수의 LLaMA 기반 모델을 발표했다. 작은 모델을 더 많은 토큰으로 학습하는 접근을 설명했다.",
+        "최초 LLaMA는 연구용 비상업 라이선스와 개별 승인 방식이었다. 후속 Llama 2의 조건을 이 날짜에 적용하지 않는다."
+      ],
+      "change": "매개변수 규모를 늘리는 경쟁과 함께 학습량·추론 자원 사이의 효율 비교가 부각됐다.",
+      "outlook": "분석: 연구와 미세조정 실험의 자원 부담을 줄일 가능성이 있다. 실제 배포에는 추론 메모리와 라이선스를 함께 검토해야 한다.",
+      "risk": "기반 모델은 사실 오류와 유해 출력을 그대로 가질 수 있다. 모델 공개가 완성된 안전한 챗봇 제공을 뜻하지는 않는다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/LLaMA-Research-Release/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-02-24-HistoryAI-LLaMA-Research-Release.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Dataset-Search-Discovery",
+      "filename": "2023-02-28-HistoryAI-Dataset-Search-Discovery.md",
+      "date": "2023-02-28",
+      "title": "데이터셋도 검색 결과에서 찾는다: 메타데이터의 경제적 가치",
+      "topic": "데이터 검색·유통",
+      "source_name": "Google Research",
+      "source_url": "https://research.google/blog/datasets-at-your-fingertips-in-google-search/",
+      "source_title": "Datasets at your fingertips in Google Search",
+      "source_published_at": "2023-02-28",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "구글은 일반 검색에서 데이터셋을 더 쉽게 찾도록 Dataset Search 기반 결과를 제공한다고 설명했다. 발표 당시 1만3,000개 이상 웹사이트의 4,500만 개 이상 데이터셋을 색인한다고 밝혔다.",
+        "검색은 자료 설명·이용 조건·시간·공간 범위 등 기계가 읽을 수 있는 메타데이터에 의존한다. 실제 자료는 연결된 저장소에서 제공되며 검색에 노출된다는 사실이 품질 보증을 뜻하지 않는다."
+      ],
+      "change": "데이터 활용의 비용에는 분석 외에 적합한 자료를 찾고 사용할 수 있는지 판단하는 탐색 비용이 포함된다. 표준 메타데이터가 자료의 재사용 가능성과 발견성을 높이는 기반으로 부각됐다.",
+      "outlook": "자료 제공자는 갱신 주기·범위·다운로드 형식과 이용 조건을 정확히 적어야 한다. 검색 결과가 실제 접근 가능한 자료와 연결되는지도 관리 과제다.",
+      "risk": "널리 색인된 자료만 쉽게 보이면 공개 역량이 약한 지역·기관의 정보는 덜 활용될 수 있다. 검색 순위와 자료 대표성, 개인정보 포함 여부를 별도로 검토해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Dataset-Search-Discovery/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-02-28-HistoryAI-Dataset-Search-Discovery.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "GPT35-Whisper-APIs",
+      "filename": "2023-03-01-HistoryAI-GPT35-Whisper-APIs.md",
+      "date": "2023-03-01",
+      "title": "GPT-3.5 Turbo·Whisper API 공개, 대화·음성 기능이 앱 안으로 들어가다",
+      "topic": "개발자 플랫폼",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/introducing-chatgpt-and-whisper-apis/",
+      "source_title": "Introducing ChatGPT and Whisper APIs | OpenAI",
+      "source_published_at": "2023-03-01",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 2023년 3월 1일 대화형 gpt-3.5-turbo와 Whisper 음성 인식 모델의 API 제공을 발표했다. 개발자가 자신의 앱에서 언어·음성 기능을 연결할 수 있는 경로가 확대됐다.",
+        "초기 공지는 API 제공과 개발자 데이터·안정성 관련 안내를 함께 설명했다. 현재 원문은 2024년 4월 명칭 수정이 반영되어 있어 공개일은 당시 공식 개발자 공지와 대조했다."
+      ],
+      "change": "생성 AI가 별도 채팅 화면을 넘어 쇼핑·학습·고객 서비스의 구성 요소로 확장될 조건이 생겼다. API 사용량과 응용 서비스의 고객 가치 사이 관계가 사업모델의 핵심이 됐다.",
+      "outlook": "개발자는 지연·비용·버전 변화·응답 오류를 자신의 서비스 요구에 맞게 평가해야 한다. 시연 가능한 기능과 반복적으로 운영할 수 있는 기능을 구분할 필요가 있다.",
+      "risk": "앱 이용자는 뒤에서 어떤 AI와 데이터 처리가 이루어지는지 알기 어려울 수 있다. 입력 자료와 보존·이용 범위를 설명하고 오류를 정정하는 책임을 서비스 흐름에 포함해야 한다.",
+      "source_updated_at": "2024-04-24",
+      "source_note": "2023-03-01 공식 API 공개 공지와 대조했다. 현재 블로그는 2024-04-24 명칭 수정일을 Updated로 표시한다.",
+      "additional_sources": [
+        {
+          "url": "https://community.openai.com/t/introducing-chatgpt-and-whisper-apis/80485",
+          "title": "당시 공식 개발자 커뮤니티 API 공개 공지",
+          "date": "2023-03-01"
+        }
+      ],
+      "permalink": "/scrap/ai-bigdata-2022-2023/GPT35-Whisper-APIs/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-03-01-HistoryAI-GPT35-Whisper-APIs.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Claude-Introduction",
+      "filename": "2023-03-14-HistoryAI-Claude-Introduction.md",
+      "date": "2023-03-14",
+      "title": "Claude 첫 소개, 생성 AI 경쟁의 선택지가 늘다",
+      "topic": "AI·대화 서비스",
+      "source_name": "Anthropic",
+      "source_url": "https://www.anthropic.com/news/introducing-claude",
+      "source_title": "Introducing Claude",
+      "source_published_at": "2023-03-14T07:00:00.000Z",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Anthropic이 Claude와 가볍고 빠른 Claude Instant를 소개했다. 파트너 비공개 시험을 거쳐 채팅 인터페이스와 API의 활용을 넓힌다고 알렸다.",
+        "요약·검색·글쓰기·코딩 등을 사용 사례로 제시했다. 신뢰성과 안전성에 관한 평가는 회사와 초기 고객의 보고다."
+      ],
+      "change": "기업이 비교할 생성 AI 모델과 가격·속도 선택지가 늘어났다. 하나의 모델에 모든 업무를 맡기는 접근을 재검토할 계기가 됐다.",
+      "outlook": "분석: 업무별 품질·비용 평가와 공급자 교체 가능성이 중요해질 수 있다. 실제 이용 조건은 접근 승인과 계약을 확인해야 한다.",
+      "risk": "안전 연구에 기반했다는 설명이 사실 정확성을 보장하지는 않는다. 민감한 업무에는 근거 확인과 사람의 최종 판단이 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Claude-Introduction/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-03-14-HistoryAI-Claude-Introduction.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "GPT4-Initial-Release",
+      "filename": "2023-03-14-HistoryAI-GPT4-Initial-Release.md",
+      "date": "2023-03-14",
+      "title": "GPT-4 공개, 추론 성능과 멀티모달 입력이 다음 경쟁점이 되다",
+      "topic": "모델 성능·멀티모달",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/gpt-4-research/",
+      "source_title": "GPT-4 | OpenAI",
+      "source_published_at": "2023-03-14",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 GPT-4를 텍스트·이미지 입력과 텍스트 출력을 다루는 대형 멀티모달 모델로 소개했다. 전문·학술 평가의 성과와 안전성 개선을 제시하면서 남은 한계도 설명했다.",
+        "2023년 3월 14일에는 텍스트 기능을 ChatGPT Plus와 대기명단 기반 API로 공개했다. 이미지 입력은 넓은 제공을 준비하는 단계였으므로 당시 모든 이용자가 바로 쓸 수 있었다고 기록하면 안 된다."
+      ],
+      "change": "모델 경쟁이 대화의 자연스러움에서 복잡한 지시·추론·시각 입력 처리로 확장됐다. 기업은 벤치마크 성과와 자신의 문서·업무에서 얻는 실효 성능을 구분해야 한다.",
+      "outlook": "배포 범위가 넓어질 때 추론 비용과 지연, 실패 유형이 어떻게 달라지는지 확인해야 한다. 평가 체계를 공개해 외부의 결함 발견을 받아들이는 과정도 관전 포인트다.",
+      "risk": "시험 점수는 자격·전문가 책임을 대신하지 않는다. 환각·사회적 편향·적대적 입력의 한계를 명시하고 중요한 결과의 검토와 책임 소재를 유지해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/GPT4-Initial-Release/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-03-14-HistoryAI-GPT4-Initial-Release.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Microsoft365-Copilot-Announcement",
+      "filename": "2023-03-16-HistoryAI-Microsoft365-Copilot-Announcement.md",
+      "date": "2023-03-16",
+      "title": "Microsoft 365 Copilot 발표, 사무 문서와 조직 데이터의 연결",
+      "topic": "AI·사무 업무",
+      "source_name": "Microsoft",
+      "source_url": "https://news.microsoft.com/source/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work-2/",
+      "source_title": "Introducing Microsoft 365 Copilot: your copilot for work",
+      "source_published_at": "2023-03-16T07:00:00+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Microsoft가 Word·Excel·PowerPoint·Outlook·Teams에 생성 AI를 결합하는 Microsoft 365 Copilot을 발표했다.",
+        "조직 데이터와 앱을 넘나드는 Business Chat도 소개했다. 당시에는 일부 기업 고객 대상 시험 단계였다."
+      ],
+      "change": "독립된 챗봇에서 문서·메일·회의 맥락을 사용하는 업무 보조로 적용 범위가 넓어졌다.",
+      "outlook": "분석: 초안과 회의 요약에 드는 시간이 줄 수 있다. 생산성은 검토·수정 시간과 권한 정리 비용까지 포함해 측정해야 한다.",
+      "risk": "잘못 공유된 사내 문서가 검색과 요약에서 더 쉽게 노출될 수 있다. 직원 감시와 평가에 사용될 때는 별도 통제가 필요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Microsoft365-Copilot-Announcement/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-03-16-HistoryAI-Microsoft365-Copilot-Announcement.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "CV-CUDA-Beta",
+      "filename": "2023-03-21-HistoryAI-CV-CUDA-Beta.md",
+      "date": "2023-03-21",
+      "title": "CV-CUDA 베타 발표, 영상 AI의 전후처리 병목을 줄이다",
+      "topic": "AI·영상 데이터 처리",
+      "source_name": "NVIDIA",
+      "source_url": "https://blogs.nvidia.com/blog/cv-cuda-ai-computer-vision/",
+      "source_title": "NVIDIA Announces Microsoft, Tencent, Baidu Adopting CV-CUDA for Computer Vision AI",
+      "source_published_at": "2023-03-21T15:20:23+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "NVIDIA가 CV-CUDA의 공개 베타 계획과 Microsoft·Tencent·Baidu의 적용 사례를 발표했다. GPU 기반 영상 전처리·후처리 라이브러리다.",
+        "신경망 추론 외에 크기 변경·색 변환 등 주변 작업을 가속하는 것이 초점이다. 회사의 처리량·비용 수치는 지정된 조건의 비교다."
+      ],
+      "change": "GPU에서 모델만 빠르게 돌려도 CPU 전후처리가 전체 속도를 제한할 수 있다는 운영 문제가 부각됐다.",
+      "outlook": "분석: 영상 분석의 비용 평가는 전체 파이프라인을 기준으로 해야 한다. 데이터 복사와 배치 방식에 따라 효과가 달라진다.",
+      "risk": "더 저렴한 영상 처리는 대규모 감시를 쉽게 만들 수도 있다. 합법적 수집·보존 기간·목적 제한을 함께 관리해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/CV-CUDA-Beta/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-03-21-HistoryAI-CV-CUDA-Beta.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "NeMo-Enterprise-Knowledge",
+      "filename": "2023-03-21-HistoryAI-NeMo-Enterprise-Knowledge.md",
+      "date": "2023-03-21",
+      "title": "NeMo 기업 데이터 연결, 모델의 학습 시점 한계를 보완하다",
+      "topic": "AI·기업 지식 검색",
+      "source_name": "NVIDIA",
+      "source_url": "https://blogs.nvidia.com/blog/nemo-large-language-models-enterprise-data/",
+      "source_title": "Mind the Gap: Large Language Models Get Smarter With Enterprise Data",
+      "source_published_at": "2023-03-21T15:41:25+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "NVIDIA가 AI Foundations의 NeMo 서비스와 기업 자체 데이터를 연결하는 구상을 소개했다. 매번 모델을 처음부터 학습하지 않고 최신 정보를 활용하려는 접근이다.",
+        "응답 근거 표시와 업무 범위 제어, 기업 검색·고객 지원 등의 활용을 설명했다. 발표를 모든 기능의 일반 제공 완료로 해석하지 않는다."
+      ],
+      "change": "모델이 기억한 정보만 쓰는 방식에서 조직의 최신 자료를 참고하는 업무 보조로 확장됐다.",
+      "outlook": "분석: 사내 지식 탐색에 유용할 수 있다. 답변의 질은 자료 최신성·검색 품질·문서 권한을 함께 관리해야 높아진다.",
+      "risk": "검색된 문서가 잘못됐거나 접근 권한이 넓으면 오류와 노출이 증폭될 수 있다. 문서에 숨은 악성 지시도 검토 대상이다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/NeMo-Enterprise-Knowledge/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-03-21-HistoryAI-NeMo-Enterprise-Knowledge.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Tokyo1-DrugDiscovery",
+      "filename": "2023-03-21-HistoryAI-Tokyo1-DrugDiscovery.md",
+      "date": "2023-03-21",
+      "title": "Tokyo-1 계획, 일본 제약 산업이 AI 계산 자원을 공유하다",
+      "topic": "AI·제약 연구",
+      "source_name": "NVIDIA",
+      "source_url": "https://blogs.nvidia.com/blog/generative-ai-supercomputer-pharmaceutical-industry/",
+      "source_title": "Mitsui and NVIDIA Announce Japan’s First Generative AI Supercomputer for Pharmaceutical Industry",
+      "source_published_at": "2023-03-21T16:15:08+00:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "Mitsui와 NVIDIA가 제약 연구용 Tokyo-1 슈퍼컴퓨터 계획을 발표했다. Xeureka가 운영하고 H100 기반 자원을 제공할 예정이었다.",
+        "분자 동역학·화학 언어 모델·분자 생성 등을 지원하고 그해 후반 가동을 예상했다. 기사 날짜는 가동 완료일이 아니다."
+      ],
+      "change": "제약 기업이 공통 계산 기반을 이용해 AI 모델과 시뮬레이션을 시험하는 산업 협력이 제시됐다.",
+      "outlook": "분석: 후보 물질 탐색의 반복 속도를 높일 가능성이 있다. 개발 기간 단축은 실험·임상·규제 검증을 거쳐 확인해야 한다.",
+      "risk": "생성한 분자의 유효성과 안전성은 계산 결과만으로 입증되지 않는다. 연구 자료의 기밀성과 생물학적 오용 가능성도 관리해야 한다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Tokyo1-DrugDiscovery/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-03-21-HistoryAI-Tokyo1-DrugDiscovery.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "ChatGPT-Plugins-Alpha",
+      "filename": "2023-03-23-HistoryAI-ChatGPT-Plugins-Alpha.md",
+      "date": "2023-03-23",
+      "title": "ChatGPT 플러그인 시험 공개, 답변에서 외부 도구 연결로",
+      "topic": "도구 연동·플랫폼",
+      "source_name": "OpenAI",
+      "source_url": "https://openai.com/index/chatgpt-plugins/",
+      "source_title": "ChatGPT plugins | OpenAI",
+      "source_published_at": "2023-03-23",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 연구·제품 발표",
+      "summary": [
+        "OpenAI는 2023년 3월 23일 ChatGPT 플러그인의 초기 지원을 발표했다. 최신 정보 조회·계산·제3자 서비스 연결을 위한 실험으로 작은 이용자·개발자 집단과 대기명단부터 접근을 확대했다.",
+        "자체 브라우징·코드 실행 도구와 검색 연동 예제를 함께 소개했다. 이 글은 2023년 당시 시험 공개의 기록이며 현재 제품의 이용 방법이나 전체 제공 범위를 설명하는 안내는 아니다."
+      ],
+      "change": "AI가 생성한 글을 사람이 다른 앱에 옮기는 흐름에서 모델이 도구를 선택하고 결과를 받는 플랫폼으로 확장될 가능성이 제시됐다. 응용 서비스와 모델 사이의 연결 표준과 수익 구조가 중요해졌다.",
+      "outlook": "실제 효용은 도구 선택의 정확성, 권한 관리, 실패 시 복구에 달려 있다. 제한된 시험에서 얻은 결과가 규모를 늘렸을 때도 유지되는지 단계별 검증이 필요하다.",
+      "risk": "외부 입력의 잘못된 지시나 오해가 정보 누출·의도하지 않은 행동으로 이어질 수 있다. 이용자가 실행 내용을 이해하고 통제할 수 있는 표시와 검토 절차가 중요하다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/ChatGPT-Plugins-Alpha/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-03-23-HistoryAI-ChatGPT-Plugins-Alpha.md",
+      "source_verification": {
+        "method": "web",
+        "http_status": null,
+        "direct_fetch_status": 403,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "UK-AI-Whitepaper",
+      "filename": "2023-03-29-HistoryAI-UK-AI-Whitepaper.md",
+      "date": "2023-03-29",
+      "title": "영국 AI 백서, 분야별 규제기관과 다섯 원칙을 제시하다",
+      "topic": "AI·정책 설계",
+      "source_name": "UK Government",
+      "source_url": "https://www.gov.uk/government/news/uk-unveils-world-leading-approach-to-innovation-in-first-artificial-intelligence-white-paper-to-turbocharge-growth",
+      "source_title": "UK unveils world leading approach to innovation in first artificial intelligence white paper to turbocharge growth",
+      "source_published_at": "2023-03-29T00:15:00+01:00",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 정책 발표",
+      "summary": [
+        "영국 정부가 AI 규제 백서를 발표했다. 안전·투명성·공정성·책임·이의 제기를 중심으로 기존 분야별 규제기관이 접근하도록 제안했다.",
+        "단일 새 규제기관 대신 맥락별 적용을 강조하고 의견 수렴을 진행했다. 백서 제안이 곧바로 완성된 강제 법률이 된 것은 아니다."
+      ],
+      "change": "AI 규제에서 통합 법제와 분야별 집행 사이의 설계 선택이 뚜렷해졌다.",
+      "outlook": "분석: 산업별 특성을 반영할 수 있지만 기관 간 해석과 감독 공백을 조정해야 한다. 혁신 효과와 피해 구제를 함께 평가해야 한다.",
+      "risk": "원칙이 추상적이면 이용자가 구체적인 권리를 행사하기 어렵다. 책임 주체와 이의 제기 경로를 실제 서비스에 연결할 필요가 있다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/UK-AI-Whitepaper/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-03-29-HistoryAI-UK-AI-Whitepaper.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    },
+    {
+      "key": "Italy-ChatGPT-TemporaryLimit",
+      "filename": "2023-03-31-HistoryAI-Italy-ChatGPT-TemporaryLimit.md",
+      "date": "2023-03-31",
+      "title": "이탈리아 개인정보 감독기구, ChatGPT 데이터 처리에 임시 제한",
+      "topic": "AI·개인정보",
+      "source_name": "Garante per la protezione dei dati personali",
+      "source_url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9870847",
+      "source_title": "Artificial intelligence: stop to ChatGPT by the Italian SA",
+      "source_published_at": "2023-03-31",
+      "reviewed_at": "2026-10-16",
+      "source_type": "공식 감독기관 발표",
+      "summary": [
+        "이탈리아 감독기구가 OpenAI의 이탈리아 이용자 데이터 처리에 즉시 임시 제한을 부과하고 조사 개시를 알렸다.",
+        "학습 데이터 처리의 법적 근거·정보 제공·부정확한 개인 데이터·연령 확인을 문제로 제기했다. 이는 감독기관의 당시 판단과 조사 사유다."
+      ],
+      "change": "생성 AI 서비스의 빠른 확산이 기존 개인정보 권리와 실제 집행의 문제로 연결됐다.",
+      "outlook": "분석: 서비스 기업은 학습·운영 데이터의 근거와 이용자 권리 절차를 설명해야 한다. 시장 진입 속도만으로 지속 운영이 보장되지는 않는다.",
+      "risk": "사실과 다른 개인 정보 생성도 당사자에게 피해를 줄 수 있다. 당시 임시 조치를 현재의 영구 금지나 최종 결론으로 일반화하지 않는다.",
+      "source_note": "게시글은 2023-03-31 보도자료 날짜다. 원문이 링크한 결정문은 2023-03-30이며 구분했다.",
+      "permalink": "/scrap/ai-bigdata-2022-2023/Italy-ChatGPT-TemporaryLimit/",
+      "file": "_posts/Resume/etc/경제신문스크랩/2023-03-31-HistoryAI-Italy-ChatGPT-TemporaryLimit.md",
+      "source_verification": {
+        "method": "direct HTTP",
+        "http_status": 200,
+        "direct_fetch_status": null,
+        "reviewed_at": "2026-10-16"
+      }
+    }
+  ]
+}
