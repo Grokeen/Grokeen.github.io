@@ -175,6 +175,17 @@ analytics:
 include:
   - .htaccess
 exclude:
+  - _posts/Resume/Xprograming/Java/CodingTest/2024-03-24-S1.7562.md
+  - _posts/Resume/Xprograming/Java/CodingTest/2024-03-24-S2.4963.md
+  - _posts/Resume/Xprograming/Java/CodingTest/2024-03-24-S3.3273.md
+  - _posts/Resume/Xprograming/Java/CodingTest/2024-03-24-S4.10814.md
+  - _posts/Resume/Xprograming/Java/CodingTest/2024-03-24-S4.2839.md
+  - _posts/Resume/Xprograming/Java/CodingTest/2024-03-24-❌G4.17281.md
+  - _posts/Resume/Xprograming/Java/CodingTest/2024-03-24-❌S1.1931.md
+  - _posts/Resume/Xprograming/Java/CodingTest/2024-03-24-❌S3.1463.md
+  - _posts/Resume/Xprograming/Java/CodingTest/2024-04-26-B2.분산처리.md
+  - _posts/Resume/Xprograming/Java/CodingTest/2024-04-29-B3.별찍기7.md
+  - _posts/Resume/Xprograming/Java/CodingTest/2024-04-26-백준과깃허브연동.md
   # Do not republish a legacy post that references removed personal interview images.
   - _posts/Resume/Xprograming/ChatGPT/GPTers-Update/2023-11-11-upgrade.md
   - "*.sublime-project"

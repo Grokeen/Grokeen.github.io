@@ -1,0 +1,661 @@
+{
+  "series": "company-coding",
+  "index_url": "/study/company-coding/",
+  "counts": {
+    "kit": 32,
+    "kakao": 4,
+    "total": 36
+  },
+  "checked": "2026-10-16",
+  "selection": "Official Programmers high-score Kit + officially labelled Kakao public problems; no employer-specific frequency estimates",
+  "articles": [
+    {
+      "id": 42576,
+      "title": "[기업 코테 대비] 완주하지 못한 선수",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42576/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42576.md",
+      "order": 1,
+      "unit": 1,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42576",
+      "topic": "해시",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "a\nsolo\n"
+        ]
+      ]
+    },
+    {
+      "id": 42577,
+      "title": "[기업 코테 대비] 전화번호 목록",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42577/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42577.md",
+      "order": 2,
+      "unit": 1,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42577",
+      "topic": "해시·정렬",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "false\ntrue\n"
+        ]
+      ]
+    },
+    {
+      "id": 42578,
+      "title": "[기업 코테 대비] 의상",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42578/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42578.md",
+      "order": 3,
+      "unit": 1,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42578",
+      "topic": "해시·경우의 수",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "5\n1\n"
+        ]
+      ]
+    },
+    {
+      "id": 42579,
+      "title": "[기업 코테 대비] 베스트앨범",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42579/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42579.md",
+      "order": 4,
+      "unit": 1,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42579",
+      "topic": "해시·다중 정렬",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "[2, 0, 1, 3]\n[0, 1]\n"
+        ]
+      ]
+    },
+    {
+      "id": 42586,
+      "title": "[기업 코테 대비] 기능개발",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42586/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42586.md",
+      "order": 5,
+      "unit": 2,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42586",
+      "topic": "스택·큐",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "[3]\n[1, 2]\n"
+        ]
+      ]
+    },
+    {
+      "id": 42587,
+      "title": "[기업 코테 대비] 프로세스",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42587/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42587.md",
+      "order": 6,
+      "unit": 2,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42587",
+      "topic": "큐·우선순위",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "1\n5\n"
+        ]
+      ]
+    },
+    {
+      "id": 42584,
+      "title": "[기업 코테 대비] 주식가격",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42584/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42584.md",
+      "order": 7,
+      "unit": 2,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42584",
+      "topic": "단조 스택",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "[1, 1, 0]\n[0]\n"
+        ]
+      ]
+    },
+    {
+      "id": 42583,
+      "title": "[기업 코테 대비] 다리를 지나는 트럭",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42583/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42583.md",
+      "order": 8,
+      "unit": 2,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42583",
+      "topic": "큐·이벤트 시뮬레이션",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "8\n3\n"
+        ]
+      ]
+    },
+    {
+      "id": 42626,
+      "title": "[기업 코테 대비] 더 맵게",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42626/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42626.md",
+      "order": 9,
+      "unit": 3,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42626",
+      "topic": "힙",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "2\n-1\n"
+        ]
+      ]
+    },
+    {
+      "id": 42627,
+      "title": "[기업 코테 대비] 디스크 컨트롤러",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42627/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42627.md",
+      "order": 10,
+      "unit": 3,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42627",
+      "topic": "힙·작업 스케줄링",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "3\n3\n"
+        ]
+      ]
+    },
+    {
+      "id": 42628,
+      "title": "[기업 코테 대비] 이중우선순위큐",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42628/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42628.md",
+      "order": 11,
+      "unit": 3,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42628",
+      "topic": "정렬 Map",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "[5, -2]\n[0, 0]\n"
+        ]
+      ]
+    },
+    {
+      "id": 42748,
+      "title": "[기업 코테 대비] K번째수",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42748/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42748.md",
+      "order": 12,
+      "unit": 4,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42748",
+      "topic": "정렬·구간",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "[2, 5]\n[7]\n"
+        ]
+      ]
+    },
+    {
+      "id": 42746,
+      "title": "[기업 코테 대비] 가장 큰 수",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42746/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42746.md",
+      "order": 13,
+      "unit": 4,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42746",
+      "topic": "정렬·문자열",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "12121\n0\n"
+        ]
+      ]
+    },
+    {
+      "id": 42747,
+      "title": "[기업 코테 대비] H-Index",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42747/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42747.md",
+      "order": 14,
+      "unit": 4,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42747",
+      "topic": "정렬·경계",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "2\n0\n"
+        ]
+      ]
+    },
+    {
+      "id": 42840,
+      "title": "[기업 코테 대비] 모의고사",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42840/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42840.md",
+      "order": 15,
+      "unit": 5,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42840",
+      "topic": "완전 탐색·주기",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "[3]\n[1, 2, 3]\n"
+        ]
+      ]
+    },
+    {
+      "id": 42839,
+      "title": "[기업 코테 대비] 소수 찾기",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42839/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42839.md",
+      "order": 16,
+      "unit": 5,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42839",
+      "topic": "완전 탐색·중복 제거",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "3\n1\n"
+        ]
+      ]
+    },
+    {
+      "id": 42842,
+      "title": "[기업 코테 대비] 카펫",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42842/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42842.md",
+      "order": 17,
+      "unit": 5,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42842",
+      "topic": "완전 탐색·약수",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "[8, 3]\n[4, 4]\n"
+        ]
+      ]
+    },
+    {
+      "id": 42862,
+      "title": "[기업 코테 대비] 체육복",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42862/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42862.md",
+      "order": 18,
+      "unit": 6,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42862",
+      "topic": "탐욕법",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "5\n2\n"
+        ]
+      ]
+    },
+    {
+      "id": 42860,
+      "title": "[기업 코테 대비] 조이스틱",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42860/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42860.md",
+      "order": 19,
+      "unit": 6,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42860",
+      "topic": "탐욕법·경로 비교",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "2\n3\n0\n"
+        ]
+      ]
+    },
+    {
+      "id": 42883,
+      "title": "[기업 코테 대비] 큰 수 만들기",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42883/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42883.md",
+      "order": 20,
+      "unit": 6,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42883",
+      "topic": "탐욕법·단조 스택",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "345\n543\n"
+        ]
+      ]
+    },
+    {
+      "id": 42885,
+      "title": "[기업 코테 대비] 구명보트",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42885/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42885.md",
+      "order": 21,
+      "unit": 6,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42885",
+      "topic": "탐욕법·투 포인터",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "2\n2\n"
+        ]
+      ]
+    },
+    {
+      "id": 42895,
+      "title": "[기업 코테 대비] N으로 표현",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42895/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42895.md",
+      "order": 22,
+      "unit": 7,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42895",
+      "topic": "동적 계획법·Set",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "3\n1\n"
+        ]
+      ]
+    },
+    {
+      "id": 42898,
+      "title": "[기업 코테 대비] 등굣길",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42898/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42898.md",
+      "order": 23,
+      "unit": 7,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42898",
+      "topic": "동적 계획법·격자",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "2\n2\n"
+        ]
+      ]
+    },
+    {
+      "id": 42897,
+      "title": "[기업 코테 대비] 도둑질",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42897/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42897.md",
+      "order": 24,
+      "unit": 7,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42897",
+      "topic": "동적 계획법·원형",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "6\n3\n"
+        ]
+      ]
+    },
+    {
+      "id": 43238,
+      "title": "[기업 코테 대비] 입국심사",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/43238/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-43238.md",
+      "order": 25,
+      "unit": 8,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/43238",
+      "topic": "이분 탐색",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "4\n5\n"
+        ]
+      ]
+    },
+    {
+      "id": 43236,
+      "title": "[기업 코테 대비] 징검다리",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/43236/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-43236.md",
+      "order": 26,
+      "unit": 8,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/43236",
+      "topic": "이분 탐색·탐욕 판정",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "4\n10\n"
+        ]
+      ]
+    },
+    {
+      "id": 43165,
+      "title": "[기업 코테 대비] 타겟 넘버",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/43165/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-43165.md",
+      "order": 27,
+      "unit": 9,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/43165",
+      "topic": "DFS",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "3\n1\n"
+        ]
+      ]
+    },
+    {
+      "id": 43162,
+      "title": "[기업 코테 대비] 네트워크",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/43162/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-43162.md",
+      "order": 28,
+      "unit": 9,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/43162",
+      "topic": "BFS·연결 요소",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "2\n2\n"
+        ]
+      ]
+    },
+    {
+      "id": 43163,
+      "title": "[기업 코테 대비] 단어 변환",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/43163/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-43163.md",
+      "order": 29,
+      "unit": 9,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/43163",
+      "topic": "BFS·문자열 그래프",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "3\n0\n"
+        ]
+      ]
+    },
+    {
+      "id": 43164,
+      "title": "[기업 코테 대비] 여행경로",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/43164/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-43164.md",
+      "order": 30,
+      "unit": 9,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/43164",
+      "topic": "그래프·사전순 오일러 경로",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "[ICN, AAA, ICN, BBB]\n[ICN, AAA, ICN]\n"
+        ]
+      ]
+    },
+    {
+      "id": 49189,
+      "title": "[기업 코테 대비] 가장 먼 노드",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/49189/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-49189.md",
+      "order": 31,
+      "unit": 10,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/49189",
+      "topic": "그래프·BFS",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "2\n1\n"
+        ]
+      ]
+    },
+    {
+      "id": 49191,
+      "title": "[기업 코테 대비] 순위",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/49191/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-49191.md",
+      "order": 32,
+      "unit": 10,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/49191",
+      "topic": "그래프·추이 폐쇄",
+      "kind": "official-kit",
+      "cases": [
+        [
+          "",
+          "3\n0\n"
+        ]
+      ]
+    },
+    {
+      "id": 42888,
+      "title": "[기업 코테 대비] 오픈채팅방",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/42888/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-42888.md",
+      "order": 33,
+      "unit": 11,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/42888",
+      "topic": "카카오 공개 기출·해시",
+      "kind": "kakao-public",
+      "cases": [
+        [
+          "",
+          "[B님이 들어왔습니다., B님이 나갔습니다., B님이 들어왔습니다.]\n[Y님이 들어왔습니다.]\n"
+        ]
+      ]
+    },
+    {
+      "id": 64061,
+      "title": "[기업 코테 대비] 크레인 인형뽑기 게임",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/64061/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-64061.md",
+      "order": 34,
+      "unit": 11,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/64061",
+      "topic": "카카오 공개 기출·스택",
+      "kind": "kakao-public",
+      "cases": [
+        [
+          "",
+          "2\n0\n"
+        ]
+      ]
+    },
+    {
+      "id": 72410,
+      "title": "[기업 코테 대비] 신규 아이디 추천",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/72410/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-72410.md",
+      "order": 35,
+      "unit": 11,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/72410",
+      "topic": "카카오 공개 기출·문자열",
+      "kind": "kakao-public",
+      "cases": [
+        [
+          "",
+          "abc__\naaa\n"
+        ]
+      ]
+    },
+    {
+      "id": 92334,
+      "title": "[기업 코테 대비] 신고 결과 받기",
+      "date": "2026-10-16",
+      "url": "/study/company-coding/92334/",
+      "file": "_posts/CompanyCoding/2026-10-16-company-92334.md",
+      "order": 36,
+      "unit": 11,
+      "source": "https://school.programmers.co.kr/learn/courses/30/lessons/92334",
+      "topic": "카카오 공개 기출·집합",
+      "kind": "kakao-public",
+      "cases": [
+        [
+          "",
+          "[1, 0, 1]\n[0, 0, 0]\n"
+        ]
+      ]
+    }
+  ]
+}

@@ -79,6 +79,9 @@ jobs:
       - name: Check Java 11 and Spring Boot 2.3.4 examples
         run: python3 scripts/validate-java-spring-notes.py
 
+      - name: Check Baekjoon and separate company coding examples
+        run: python3 scripts/validate-coding-notes.py
+
       - name: Set up Python 3.9 for historical certification examples
         uses: actions/setup-python@v6
         with:
