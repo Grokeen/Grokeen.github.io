@@ -7,6 +7,7 @@ const root = path.resolve(__dirname, '..');
 const site = path.join(root, '.jekyll-local/site');
 const collections = [
   { file: 'HISTORICAL_AI_NEWS_MANIFEST.json', count: 108, index: '/scrap/ai-bigdata-2022-2023/' },
+  { file: 'ROBOTICS_NEWS_MANIFEST.json', count: 100, index: '/scrap/robotics/' },
 ];
 const normalize = value => {
   const url = new URL(value);
